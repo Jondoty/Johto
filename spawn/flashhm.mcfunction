@@ -1,1 +1,1 @@
-give @s minecraft:fireworks 16 0 {display:{Name:"HM05: Flash",Lore:["Illuminates the user's vision for","fifteen minutes, and gets rid of","a player's blindness."]},ench:[{id:"2",lvl:"1"}],HideFlags:1}
+give @s minecraft:firework_rocket{display:{Name:'[{"text":"HM05: Flash","italic":false}]',Lore:['[{"text":"Illuminates the user\'s vision for","italic":false}]','[{"text":"fifteen minutes.","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 16

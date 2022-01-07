@@ -1,26 +1,29 @@
 #Sets Gamerules
 gamerule doDaylightCycle true
-difficulty 0
-scoreboard teams add default
+difficulty peaceful
+team add default
 gamerule doFireTick false
 gamerule commandBlockOutput false
 scoreboard objectives setdisplay sidebar
 scoreboard objectives setdisplay list
+gamemode adventure @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6,gamemode=survival]
+gamemode adventure @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6,gamemode=creative]
+gamemode adventure @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6,gamemode=spectator]
 
-#tps player to lobby if they have a Deaths score (and thus glitched back into the spawn)
-tellraw @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6,score_Deaths_min=1] {"text":"Death detected, not clearing data or giving initial scores...","italic":true,"color":"gray"}
-tp @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6,score_Deaths_min=1] -977 66 -365.0 -91 21
-scoreboard players set @a[score_Deaths_min=1] Deaths 0
+#tps player to lobby if they have a Deaths score and initial values (and thus glitched back into the spawn)
+tellraw @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6,scores={Deaths=1..},tag=InitialTags] {"text":"Death detected, not clearing data or giving initial scores...","italic":true,"color":"gray"}
+tp @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6,scores={Deaths=1..},tag=InitialTags] -977 66 -365.0 -91 21
+scoreboard players set @a[scores={Deaths=1..},tag=InitialTags] Deaths 0
 
 
 tellraw @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] ["",{"text":"Starting adventure...","italic":true,"color":"gray"}]
 
 #Gives starting items
-execute @e[x=-801,y=64,z=-284,dy=3,type=armor_stand] ~ ~ ~ givemoney @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] 2000
-execute @e[x=-801,y=64,z=-284,dy=3,type=armor_stand] ~ ~ ~ completeallquests @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6]
-give @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] written_book 1 0 {pages:["{\"text\":\"Welcome to Pixelmon Johto!\\n\\nThis map contains the Johto and Kanto regions, and follows the story of Pokemon Gold, Silver, and Crystal, with events and elements from HeartGold/ SoulSilver and Let's Go Eevee/Pikachu.\"}","{\"text\":\"Throughout the regions, there are 16 gyms to fight and collect the badges of. \\n\\nWhen you have the eight badges from the Johto region, you can challenge the Elite Four and gain access to Kanto afterwards.\"}","{\"text\":\"After collecting all the badges from Kanto, the player gains access to Mt. Silver, with a trainer named Red being the final boss of the map.\"}","{\"text\":\"Items, trainers, and events are scattered around the regions to collect and battle, based off the main games.\\n\\nSearch every corner of the map, you never know what you might find!\"}"],title:"Pixelmon Johto",author:Jond,display:{Lore:["Info about the map!"]}}
-give @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] minecraft:carrot_on_a_stick 1 0 {display:{Name:"Radio",Lore:["A device that plays music for the user.","To listen, select in your hotbar. Each","slot is a different station to listen to.","","Station 2 or Off-Hand: Location-specific tunes.","Station 4: Lucky Number Show.","Station 5: Mysterious Transmission.","Station 6: Buena's Password.","Station 7: Pokémon Music.","Station 8: Poké Flute.","","Right click to end current song.","","1   2   3   4   5   6   7   8   9"]}}
-give @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] pixelmon:old_Running_Boots 1
+###execute as @e[x=-801,y=64,z=-284,dy=3,type=armor_stand] run givemoney @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] 2000
+###execute as @e[x=-801,y=64,z=-284,dy=3,type=armor_stand] run completeallquests @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6]
+give @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] written_book{pages:["{\"text\":\"Welcome to Pixelmon Johto!\\n\\nThis map contains the Johto and Kanto regions, and follows the story of Pokemon Gold, Silver, and Crystal, with events and elements from HeartGold/ SoulSilver and Let's Go Eevee/Pikachu.\"}","{\"text\":\"Throughout the regions, there are 16 gyms to fight and collect the badges of. \\n\\nWhen you have the eight badges from the Johto region, you can challenge the Elite Four and gain access to Kanto afterwards.\"}","{\"text\":\"After collecting all the badges from Kanto, the player gains access to Mt. Silver, with a trainer named Red being the final boss of the map.\"}","{\"text\":\"Items, trainers, and events are scattered around the regions to collect and battle, based off the main games.\\n\\nSearch every corner of the map, you never know what you might find!\"}"],title:"Pixelmon Johto",author:Jond,display:{Lore:["Info about the map!"]}}
+give @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] minecraft:carrot_on_a_stick{display:{Name:"Radio",Lore:["A device that plays music for the user.","To listen, select in your hotbar. Each","slot is a different station to listen to.","","Station 2 or Off-Hand: Location-specific tunes.","Station 4: Lucky Number Show.","Station 5: Mysterious Transmission.","Station 6: Buena's Password.","Station 7: Pokémon Music.","Station 8: Poké Flute.","","Right click to end current song.","","1   2   3   4   5   6   7   8   9"]}}
+###give @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] pixelmon:old_Running_Boots
 
 
 #Sets Spawnpoint
@@ -28,12 +31,12 @@ spawnpoint @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] -723 69 -485
 
 
 #Removes event-based tags
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Red
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove HoennStarters
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove SinnohLegend
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove EXPNCard
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove RadioCard
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove GuideTour
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Red
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove HoennStarters
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove SinnohLegend
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove EXPNCard
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove RadioCard
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove GuideTour
 
 
 #Removes Mega Stone objectives if present, to be unlocked by Oak later
@@ -58,29 +61,29 @@ scoreboard players reset @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] Tyranitarite
 
 
 #Removes Gym Leader win Tags
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove JohtoBadges
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove AllGyms
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Falkner
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Bugsy
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Whitney
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Morty
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Chuck
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Jasmine
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Pryce
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Clair
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Brock
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Misty
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Surge
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Sabrina
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Erika
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Janine
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Blaine
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Blue
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove JohtoBadges
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove AllGyms
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Falkner
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Bugsy
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Whitney
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Morty
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Chuck
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Jasmine
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Pryce
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Clair
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Brock
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Misty
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Surge
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Sabrina
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Erika
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Janine
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Blaine
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Blue
 
 
 
 #Sets default scores for players
-scoreboard teams join default @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6]
+team join default @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6]
 
 scoreboard players set @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] DialogueTrigger 0
 scoreboard players set @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] TalkTime 0
@@ -111,6 +114,7 @@ scoreboard players set @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] rng 0
 scoreboard players set @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] Sleeping 0
 scoreboard players set @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] SSState 0
 scoreboard players set @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] TownDisplay 0
+scoreboard players set @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] click 0
 
 
 
@@ -196,7 +200,6 @@ scoreboard players set @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] Bulbasaur 0
 scoreboard players set @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] CelebiTimeTravel 0
 scoreboard players set @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] Charmander 0
 scoreboard players set @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] Clair 0
-scoreboard players set @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] click 0
 scoreboard players set @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] Copycat 0
 scoreboard players set @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] DarkCave 0
 scoreboard players set @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] E4 0
@@ -247,16 +250,16 @@ scoreboard players set @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] Trainer 0
 scoreboard players set @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] VillagerClick 0
 
 
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove SilverOlivine
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove MortyBadge
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove HoennSoundsCD
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove SinnohSoundsCD
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove ChuckBadge
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove StarterAch
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove RocketMug
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove OakWelcome
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove TMCase
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove PoliceTalk
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove SilverOlivine
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove MortyBadge
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove HoennSoundsCD
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove SinnohSoundsCD
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove ChuckBadge
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove StarterAch
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove RocketMug
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove OakWelcome
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove TMCase
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove PoliceTalk
 
 recipe give @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] *
 
@@ -265,260 +268,260 @@ recipe give @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] *
 
 
 #Removes existing Dialogue tags
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue1
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue2
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue3
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue4
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue5
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue6
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue7
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue8
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue9
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue10
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue11
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue12
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue13
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue14
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue15
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue16
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue17
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue18
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue19
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue20
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue21
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue22
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue23
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue24
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue25
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue26
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue27
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue28
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue29
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue30
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue31
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue32
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue33
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue34
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue35
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue36
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue37
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue38
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue39
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue40
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue41
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue42
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue43
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue44
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue45
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue46
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue47
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue48
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue49
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue50
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue51
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue52
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue53
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue54
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue55
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue56
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue57
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue58
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue59
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue60
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue61
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue62
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue63
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue64
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue65
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue66
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue67
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue68
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue69
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue70
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue71
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue72
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue73
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue74
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue75
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue76
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue77
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue78
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue79
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue80
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue81
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue82
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue83
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue84
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue85
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue86
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue87
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue88
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue89
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue90
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue91
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue92
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue93
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue94
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue95
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue96
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue97
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue98
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue99
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue100
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue101
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue102
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue103
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue104
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue105
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue106
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue107
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue108
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue109
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue110
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue111
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue112
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue113
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue114
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue115
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue116
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue117
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue118
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue119
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue120
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue121
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue122
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue123
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue124
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue125
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue126
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue127
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue128
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue129
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue130
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue131
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue132
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue133
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue134
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue135
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue136
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue137
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue138
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue139
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue140
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue141
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue142
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue143
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue144
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue145
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue146
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue147
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue148
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue149
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue150
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue151
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue152
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue153
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue154
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue155
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue156
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue157
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue158
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue159
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue160
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue161
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue162
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue163
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue164
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue165
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue166
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue167
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue168
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue169
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue170
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue171
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue172
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue173
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue174
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue175
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue176
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue177
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue178
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue179
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue180
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue181
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue182
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue183
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue184
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue185
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue186
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue187
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue188
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue189
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue190
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue191
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue192
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue193
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue194
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue195
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue196
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue197
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue198
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue199
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue200
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue201
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue202
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue203
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue204
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue205
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue206
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue207
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue208
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue209
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue210
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue211
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue212
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue213
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue214
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue215
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue216
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue217
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue218
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue219
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue220
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue221
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue222
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue223
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue224
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue225
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue226
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue227
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue228
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue229
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue230
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue231
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue232
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue233
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue234
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue235
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue236
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue237
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue238
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue239
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue240
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue241
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue242
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue243
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue244
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue245
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue246
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue247
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue248
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue249
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue250
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue1
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue2
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue3
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue4
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue5
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue6
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue7
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue8
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue9
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue10
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue11
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue12
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue13
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue14
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue15
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue16
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue17
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue18
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue19
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue20
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue21
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue22
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue23
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue24
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue25
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue26
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue27
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue28
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue29
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue30
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue31
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue32
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue33
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue34
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue35
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue36
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue37
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue38
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue39
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue40
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue41
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue42
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue43
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue44
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue45
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue46
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue47
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue48
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue49
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue50
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue51
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue52
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue53
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue54
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue55
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue56
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue57
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue58
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue59
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue60
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue61
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue62
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue63
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue64
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue65
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue66
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue67
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue68
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue69
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue70
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue71
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue72
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue73
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue74
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue75
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue76
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue77
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue78
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue79
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue80
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue81
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue82
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue83
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue84
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue85
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue86
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue87
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue88
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue89
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue90
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue91
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue92
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue93
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue94
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue95
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue96
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue97
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue98
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue99
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue100
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue101
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue102
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue103
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue104
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue105
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue106
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue107
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue108
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue109
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue110
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue111
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue112
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue113
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue114
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue115
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue116
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue117
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue118
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue119
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue120
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue121
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue122
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue123
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue124
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue125
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue126
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue127
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue128
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue129
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue130
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue131
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue132
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue133
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue134
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue135
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue136
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue137
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue138
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue139
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue140
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue141
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue142
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue143
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue144
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue145
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue146
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue147
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue148
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue149
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue150
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue151
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue152
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue153
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue154
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue155
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue156
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue157
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue158
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue159
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue160
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue161
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue162
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue163
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue164
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue165
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue166
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue167
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue168
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue169
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue170
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue171
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue172
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue173
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue174
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue175
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue176
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue177
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue178
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue179
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue180
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue181
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue182
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue183
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue184
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue185
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue186
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue187
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue188
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue189
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue190
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue191
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue192
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue193
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue194
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue195
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue196
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue197
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue198
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue199
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue200
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue201
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue202
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue203
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue204
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue205
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue206
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue207
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue208
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue209
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue210
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue211
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue212
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue213
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue214
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue215
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue216
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue217
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue218
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue219
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue220
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue221
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue222
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue223
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue224
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue225
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue226
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue227
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue228
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue229
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue230
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue231
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue232
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue233
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue234
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue235
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue236
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue237
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue238
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue239
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue240
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue241
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue242
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue243
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue244
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue245
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue246
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue247
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue248
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue249
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] remove Dialogue250
 
 
 #Gives InitialTags score to check for later in case of an issue
-scoreboard players tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] add InitialTags
+tag @a[x=-783,y=63,z=-248,dx=5,dy=5,dz=6] add InitialTags
 
 
 #TPs to lobby

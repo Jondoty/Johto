@@ -25,32 +25,32 @@
 
 
 #Rolls RNG Score
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players set @e[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 0
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 1
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 2
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 4
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 8
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 16
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 32
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 64
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players set @e[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 0
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 1
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 2
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 4
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 8
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 16
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 32
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 64
 
-scoreboard players operation @a[score_TallGrass_min=1] rng = @e[x=-867,y=69,z=-200,dy=3] rng
+scoreboard players operation @a[scores={TallGrass=1..}] rng = @e[x=-867,y=69,z=-200,dy=3] rng
 
 #Adds success tag if rng roll is under 7/128 (5.4% success chance)
-scoreboard players tag @a[score_TallGrass_min=1,score_rng_min=0,score_rng=7] add EonEncounterSuccess
+tag @a[scores={TallGrass=1..,rng=0..7}] add EonEncounterSuccess
 
 
 
 #Rolls RNG score again for species
 #Rolls RNG Score
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players set @e[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 0
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 1
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 2
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 4
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 8
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 16
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 32
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 64
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players set @e[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 0
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 1
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 2
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 4
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 8
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 16
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 32
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 64
 
 scoreboard players operation @a[tag=EonEncounterSuccess] rng = @e[x=-867,y=69,z=-200,dy=3] rng
 
@@ -61,23 +61,23 @@ scoreboard players operation @a[tag=EonEncounterSuccess] rng = @e[x=-867,y=69,z=
 #Latios and Latias Success
 
 #Latios
-execute @a[tag=EonEncounterSuccess,score_Latios=0,score_LatiosCD=0,score_EonEncounter_min=1,score_rng_min=0,score_rng=63] ~ ~1 ~ pokespawn Latios lvl:45 gr:7
-execute @a[tag=EonEncounterSuccess,score_Latios=0,score_LatiosCD=0,score_EonEncounter_min=1,score_rng_min=0,score_rng=63] ~ ~ ~ playsound latios record @s ~ ~ ~ 1 1 1
-execute @a[tag=EonEncounterSuccess,score_Latios=0,score_LatiosCD=0,score_EonEncounter_min=1,score_rng_min=0,score_rng=63] ~ ~ ~ tellraw @s {"text":"Latios jumped out at you!"}
-execute @a[tag=EonEncounterSuccess,score_Latios=0,score_LatiosCD=0,score_EonEncounter_min=1,score_rng_min=0,score_rng=63] ~ ~ ~ scoreboard players set @s Latios 1
-execute @a[tag=EonEncounterSuccess,score_Latios_min=1,score_LatiosCD=0,score_EonEncounter_min=1,score_rng_min=0,score_rng=63] ~ ~ ~ scoreboard players tag @s remove EonEncounterSuccess
+###execute as @a[tag=EonEncounterSuccess,scores={LatiosCD=0,EonEncounter=1..,rng=0..63}] run pokespawn Latios lvl:45 gr:7
+execute as @a[tag=EonEncounterSuccess,scores={LatiosCD=0,EonEncounter=1..,rng=0..63}] run playsound latios record @s ~ ~ ~ 1 1 1
+execute as @a[tag=EonEncounterSuccess,scores={LatiosCD=0,EonEncounter=1..,rng=0..63}] run tellraw @s {"text":"Latios jumped out at you!"}
+execute as @a[tag=EonEncounterSuccess,scores={LatiosCD=0,EonEncounter=1..,rng=0..63}] run scoreboard players set @s Latios 1
+execute as @a[tag=EonEncounterSuccess,scores={Latios=1..,LatiosCD=0,EonEncounter=1..,rng=0..63}] run tag @s remove EonEncounterSuccess
 
 
 #Latias
-execute @a[tag=EonEncounterSuccess,score_Latias=0,score_LatiasCD=0,score_EonEncounter_min=1,score_rng_min=64,score_rng=127] ~ ~1 ~ pokespawn Latias lvl:45 gr:7
-execute @a[tag=EonEncounterSuccess,score_Latias=0,score_LatiasCD=0,score_EonEncounter_min=1,score_rng_min=64,score_rng=127] ~ ~ ~ playsound latias record @s ~ ~ ~ 1 1 1
-execute @a[tag=EonEncounterSuccess,score_Latias=0,score_LatiasCD=0,score_EonEncounter_min=1,score_rng_min=64,score_rng=127] ~ ~ ~ tellraw @s {"text":"Latias jumped out at you!"}
-execute @a[tag=EonEncounterSuccess,score_Latias=0,score_LatiasCD=0,score_EonEncounter_min=1,score_rng_min=64,score_rng=127] ~ ~ ~ scoreboard players set @s Latias 1
-execute @a[tag=EonEncounterSuccess,score_Latias_min=1,score_LatiasCD=0,score_EonEncounter_min=1,score_rng_min=64,score_rng=127] ~ ~ ~ scoreboard players tag @s remove EonEncounterSuccess
+###execute as @a[tag=EonEncounterSuccess,scores={Latias=0,LatiasCD=0,EonEncounter=1..,rng=64..127}] run pokespawn Latias lvl:45 gr:7
+execute as @a[tag=EonEncounterSuccess,scores={Latias=0,LatiasCD=0,EonEncounter=1..,rng=64..127}] run playsound latias record @s ~ ~ ~ 1 1 1
+execute as @a[tag=EonEncounterSuccess,scores={Latias=0,LatiasCD=0,EonEncounter=1..,rng=64..127}] run tellraw @s {"text":"Latias jumped out at you!"}
+execute as @a[tag=EonEncounterSuccess,scores={Latias=0,LatiasCD=0,EonEncounter=1..,rng=64..127}] run scoreboard players set @s Latias 1
+execute as @a[tag=EonEncounterSuccess,scores={Latias=1..,LatiasCD=0,EonEncounter=1..,rng=64..127}] run tag @s remove EonEncounterSuccess
 
 
 #Gives players with both Latios and Latias a score of EonEncounter 2
-scoreboard players set @a[score_Latios_min=1,score_Latias_min=1] EonEncounter 2
+scoreboard players set @a[scores={Latios=1..,Latias=1..}] EonEncounter 2
 
 
 
@@ -87,34 +87,34 @@ scoreboard players set @a[score_Latios_min=1,score_Latias_min=1] EonEncounter 2
 #Dog Trio
 
 #Rolls initial RNG Score
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players set @e[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 0
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 1
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 2
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 4
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 8
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 16
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 32
-execute @a[score_TallGrass_min=1,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 64
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players set @e[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 0
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 1
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 2
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 4
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 8
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 16
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 32
+execute as @a[scores={TallGrass=1..},limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 64
 
-scoreboard players operation @a[score_TallGrass_min=1,score_DogEncounter_min=1,score_DogEncounter=1] rng = @e[x=-867,y=69,z=-200,dy=3] rng
+scoreboard players operation @a[scores={TallGrass=1..,DogEncounter=1}] rng = @e[x=-867,y=69,z=-200,dy=3] rng
 
 
 #Adds success tag if rng roll is under 7/128 (5.4% success chance)
-scoreboard players tag @a[score_TallGrass_min=1,score_rng_min=0,score_rng=7] add DogEncounterSuccess
+tag @a[scores={TallGrass=1..,rng=0..7}] add DogEncounterSuccess
 
 
 
 
 #Rolls RNG score again for species
 #Rolls RNG Score
-execute @a[tag=DogEncounterSuccess,c=1] ~ ~ ~ scoreboard players set @e[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 0
-execute @a[tag=DogEncounterSuccess,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 1
-execute @a[tag=DogEncounterSuccess,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 2
-execute @a[tag=DogEncounterSuccess,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 4
-execute @a[tag=DogEncounterSuccess,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 8
-execute @a[tag=DogEncounterSuccess,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 16
-execute @a[tag=DogEncounterSuccess,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 32
-execute @a[tag=DogEncounterSuccess,c=1] ~ ~ ~ scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,type=armor_stand] rng 64
+execute as @a[tag=DogEncounterSuccess,limit=1] run scoreboard players set @e[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 0
+execute as @a[tag=DogEncounterSuccess,limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 1
+execute as @a[tag=DogEncounterSuccess,limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 2
+execute as @a[tag=DogEncounterSuccess,limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 4
+execute as @a[tag=DogEncounterSuccess,limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 8
+execute as @a[tag=DogEncounterSuccess,limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 16
+execute as @a[tag=DogEncounterSuccess,limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 32
+execute as @a[tag=DogEncounterSuccess,limit=1] run scoreboard players add @r[x=-867,y=69,z=-202,dy=4,dz=2,limit=1] rng 64
 
 scoreboard players operation @a[tag=DogEncounterSuccess] rng = @e[x=-867,y=69,z=-200,dy=3] rng
 
@@ -123,19 +123,19 @@ scoreboard players operation @a[tag=DogEncounterSuccess] rng = @e[x=-867,y=69,z=
 
 
 #Raikou
-execute @a[tag=DogEncounterSuccess,score_Raikou=0,score_RaikouCD=0,score_DogEncounter_min=1,score_DogEncounter=1,score_rng_min=0,score_rng=63] ~ ~3 ~ pokespawn Raikou lvl:45 gr:7
-execute @a[tag=DogEncounterSuccess,score_Raikou=0,score_RaikouCD=0,score_DogEncounter_min=1,score_DogEncounter=1,score_rng_min=0,score_rng=63] ~ ~ ~ playsound raikou record @s ~ ~ ~ 1 1 1
-execute @a[tag=DogEncounterSuccess,score_Raikou=0,score_RaikouCD=0,score_DogEncounter_min=1,score_DogEncounter=1,score_rng_min=0,score_rng=63] ~ ~ ~ tellraw @s {"text":"Raikou jumped out at you!"}
-execute @a[tag=DogEncounterSuccess,score_Raikou=0,score_RaikouCD=0,score_DogEncounter_min=1,score_DogEncounter=1,score_rng_min=0,score_rng=63] ~ ~ ~ scoreboard players set @s Raikou 1
-execute @a[tag=DogEncounterSuccess,score_Raikou_min=1,score_RaikouCD=0,score_DogEncounter_min=1,score_DogEncounter=1,score_rng_min=0,score_rng=63] ~ ~ ~ scoreboard players tag @s remove DogEncounterSuccess
+###execute as @a[tag=DogEncounterSuccess,scores={Raikou=0,RaikouCD=0,DogEncounter=1,rng=0..63}] run pokespawn Raikou lvl:45 gr:7
+execute as @a[tag=DogEncounterSuccess,scores={Raikou=0,RaikouCD=0,DogEncounter=1,rng=0..63}] run playsound raikou record @s ~ ~ ~ 1 1 1
+execute as @a[tag=DogEncounterSuccess,scores={Raikou=0,RaikouCD=0,DogEncounter=1,rng=0..63}] run tellraw @s {"text":"Raikou jumped out at you!"}
+execute as @a[tag=DogEncounterSuccess,scores={Raikou=0,RaikouCD=0,DogEncounter=1,rng=0..63}] run scoreboard players set @s Raikou 1
+execute as @a[tag=DogEncounterSuccess,scores={Raikou=1..,RaikouCD=0,DogEncounter=1,rng=0..63}] run tag @s remove DogEncounterSuccess
 
 
 #Entei
-execute @a[tag=DogEncounterSuccess,score_Entei=0,score_EnteiCD=0,score_DogEncounter_min=1,score_DogEncounter=1,score_rng_min=64,score_rng=127] ~ ~3 ~ pokespawn Entei lvl:45 gr:7
-execute @a[tag=DogEncounterSuccess,score_Entei=0,score_EnteiCD=0,score_DogEncounter_min=1,score_DogEncounter=1,score_rng_min=64,score_rng=127] ~ ~ ~ playsound entei record @s ~ ~ ~ 1 1 1
-execute @a[tag=DogEncounterSuccess,score_Entei=0,score_EnteiCD=0,score_DogEncounter_min=1,score_DogEncounter=1,score_rng_min=64,score_rng=127] ~ ~ ~ tellraw @s {"text":"Entei jumped out at you!"}
-execute @a[tag=DogEncounterSuccess,score_Entei=0,score_EnteiCD=0,score_DogEncounter_min=1,score_DogEncounter=1,score_rng_min=64,score_rng=127] ~ ~ ~ scoreboard players set @s Entei 1
-execute @a[tag=DogEncounterSuccess,score_Entei_min=1,score_EnteiCD=0,score_DogEncounter_min=1,score_DogEncounter=1,score_rng_min=64,score_rng=127] ~ ~ ~ scoreboard players tag @s remove DogEncounterSuccess
+###execute as @a[tag=DogEncounterSuccess,scores={Entei=0,EnteiCD=0,DogEncounter=1,rng=64..127}] run pokespawn Entei lvl:45 gr:7
+execute as @a[tag=DogEncounterSuccess,scores={Entei=0,EnteiCD=0,DogEncounter=1,rng=64..127}] run playsound entei record @s ~ ~ ~ 1 1 1
+execute as @a[tag=DogEncounterSuccess,scores={Entei=0,EnteiCD=0,DogEncounter=1,rng=64..127}] run tellraw @s {"text":"Entei jumped out at you!"}
+execute as @a[tag=DogEncounterSuccess,scores={Entei=0,EnteiCD=0,DogEncounter=1,rng=64..127}] run scoreboard players set @s Entei 1
+execute as @a[tag=DogEncounterSuccess,scores={Entei_min=1..,EnteiCD=0,DogEncounter=1,rng=64..127}] run tag @s remove DogEncounterSuccess
 
 
 #Suicune
@@ -148,7 +148,7 @@ execute @a[tag=DogEncounterSuccess,score_Entei_min=1,score_EnteiCD=0,score_DogEn
 
 
 #Gives players with all dogs a score of DogEncounter 2
-scoreboard players set @a[score_Entei_min=1,score_Raikou_min=1] DogEncounter 2
+scoreboard players set @a[scores={Entei=1..,Raikou=1..}] DogEncounter 2
 
 
 
@@ -164,13 +164,13 @@ scoreboard players set @a[score_Entei_min=1,score_Raikou_min=1] DogEncounter 2
 
 
 
-scoreboard players tag @a[score_TallGrass_min=1] add GrassRoll
-scoreboard players set @a[score_TallGrass_min=1] Air 0
-scoreboard players set @a[score_TallGrass_min=1] TallGrass 0
+tag @a[scores={TallGrass=1..}] add GrassRoll
+scoreboard players set @a[scores={TallGrass=1..}] Air 0
+scoreboard players set @a[scores={TallGrass=1..}] TallGrass 0
 
 
-scoreboard players tag @a[score_TallGrass_min=1] remove DogEncounterSuccess
-scoreboard players tag @a[score_TallGrass_min=1] remove EonEncounterSuccess
+tag @a[scores={TallGrass=1..}] remove DogEncounterSuccess
+tag @a[scores={TallGrass=1..}] remove EonEncounterSuccess
 
 
 

@@ -1,256 +1,256 @@
 #Adds dialogue tags to not trigger most story events.
 
-scoreboard players tag @s add Dialogue1
-scoreboard players tag @s add Dialogue2
-scoreboard players tag @s add Dialogue3
-#scoreboard players tag @s add Dialogue4
-#scoreboard players tag @s add Dialogue5
-scoreboard players tag @s add Dialogue6
-scoreboard players tag @s add Dialogue7
-scoreboard players tag @s add Dialogue8
-scoreboard players tag @s add Dialogue9
-scoreboard players tag @s add Dialogue10
-#scoreboard players tag @s add Dialogue11
-#scoreboard players tag @s add Dialogue12
-scoreboard players tag @s add Dialogue13
-scoreboard players tag @s add Dialogue14
-scoreboard players tag @s add Dialogue15
-scoreboard players tag @s add Dialogue16
-#scoreboard players tag @s add Dialogue17
-#scoreboard players tag @s add Dialogue18
-scoreboard players tag @s add Dialogue19
-scoreboard players tag @s add Dialogue20
-scoreboard players tag @s add Dialogue21
-scoreboard players tag @s add Dialogue22
-scoreboard players tag @s add Dialogue23
-scoreboard players tag @s add Dialogue24
-scoreboard players tag @s add Dialogue25
-scoreboard players tag @s add Dialogue26
-#scoreboard players tag @s add Dialogue27
-#scoreboard players tag @s add Dialogue28
-scoreboard players tag @s add Dialogue29
-scoreboard players tag @s add Dialogue30
-scoreboard players tag @s add Dialogue31
-scoreboard players tag @s add Dialogue32
-scoreboard players tag @s add Dialogue33
-scoreboard players tag @s add Dialogue34
-scoreboard players tag @s add Dialogue35
-#scoreboard players tag @s add Dialogue36
-#scoreboard players tag @s add Dialogue37
-#scoreboard players tag @s add Dialogue38
-scoreboard players tag @s add Dialogue39
-scoreboard players tag @s add Dialogue40
-scoreboard players tag @s add Dialogue41
-scoreboard players tag @s add Dialogue42
-scoreboard players tag @s add Dialogue43
-#scoreboard players tag @s add Dialogue44
-#scoreboard players tag @s add Dialogue45
-#scoreboard players tag @s add Dialogue46
-#scoreboard players tag @s add Dialogue47
-scoreboard players tag @s add Dialogue48
-#scoreboard players tag @s add Dialogue49
-scoreboard players tag @s add Dialogue50
-scoreboard players tag @s add Dialogue51
-scoreboard players tag @s add Dialogue52
-scoreboard players tag @s add Dialogue53
-scoreboard players tag @s add Dialogue54
-scoreboard players tag @s add Dialogue55
-scoreboard players tag @s add Dialogue56
-scoreboard players tag @s add Dialogue57
-scoreboard players tag @s add Dialogue58
-scoreboard players tag @s add Dialogue59
-scoreboard players tag @s add Dialogue60
-scoreboard players tag @s add Dialogue61
-scoreboard players tag @s add Dialogue62
-scoreboard players tag @s add Dialogue63
-scoreboard players tag @s add Dialogue64
-scoreboard players tag @s add Dialogue65
-scoreboard players tag @s add Dialogue66
-scoreboard players tag @s add Dialogue67
-scoreboard players tag @s add Dialogue68
-scoreboard players tag @s add Dialogue69
-scoreboard players tag @s add Dialogue70
-scoreboard players tag @s add Dialogue71
-scoreboard players tag @s add Dialogue72
-#scoreboard players tag @s add Dialogue73
-#scoreboard players tag @s add Dialogue74
-scoreboard players tag @s add Dialogue75
-scoreboard players tag @s add Dialogue76
-#scoreboard players tag @s add Dialogue77
-#scoreboard players tag @s add Dialogue78
-#scoreboard players tag @s add Dialogue79
-scoreboard players tag @s add Dialogue80
-scoreboard players tag @s add Dialogue81
-scoreboard players tag @s add Dialogue82
-scoreboard players tag @s add Dialogue83
-scoreboard players tag @s add Dialogue84
-scoreboard players tag @s add Dialogue85
-scoreboard players tag @s add Dialogue86
-scoreboard players tag @s add Dialogue87
-scoreboard players tag @s add Dialogue88
-scoreboard players tag @s add Dialogue89
-scoreboard players tag @s add Dialogue90
-scoreboard players tag @s add Dialogue91
-scoreboard players tag @s add Dialogue92
-scoreboard players tag @s add Dialogue93
-scoreboard players tag @s add Dialogue94
-scoreboard players tag @s add Dialogue95
-scoreboard players tag @s add Dialogue96
-scoreboard players tag @s add Dialogue97
-scoreboard players tag @s add Dialogue98
-scoreboard players tag @s add Dialogue99
-scoreboard players tag @s add Dialogue100
-scoreboard players tag @s add Dialogue101
-#scoreboard players tag @s add Dialogue102
-#scoreboard players tag @s add Dialogue103
-#scoreboard players tag @s add Dialogue104
-scoreboard players tag @s add Dialogue105
-scoreboard players tag @s add Dialogue106
-scoreboard players tag @s add Dialogue107
-scoreboard players tag @s add Dialogue108
-scoreboard players tag @s add Dialogue109
-scoreboard players tag @s add Dialogue110
-#scoreboard players tag @s add Dialogue111
-#scoreboard players tag @s add Dialogue112
-scoreboard players tag @s add Dialogue113
-#scoreboard players tag @s add Dialogue114
-#scoreboard players tag @s add Dialogue115
-#scoreboard players tag @s add Dialogue116
-#scoreboard players tag @s add Dialogue117
-#scoreboard players tag @s add Dialogue118
-#scoreboard players tag @s add Dialogue119
-#scoreboard players tag @s add Dialogue120
-#scoreboard players tag @s add Dialogue121
-#scoreboard players tag @s add Dialogue122
-#scoreboard players tag @s add Dialogue123
-#scoreboard players tag @s add Dialogue124
-#scoreboard players tag @s add Dialogue125
-#scoreboard players tag @s add Dialogue126
-#scoreboard players tag @s add Dialogue127
-#scoreboard players tag @s add Dialogue128
-#scoreboard players tag @s add Dialogue129
-scoreboard players tag @s add Dialogue130
-scoreboard players tag @s add Dialogue131
-#scoreboard players tag @s add Dialogue132
-scoreboard players tag @s add Dialogue133
-scoreboard players tag @s add Dialogue134
-scoreboard players tag @s add Dialogue135
-#scoreboard players tag @s add Dialogue136
-scoreboard players tag @s add Dialogue137
-#scoreboard players tag @s add Dialogue138
-scoreboard players tag @s add Dialogue139
-#scoreboard players tag @s add Dialogue140
-#scoreboard players tag @s add Dialogue141
-scoreboard players tag @s add Dialogue142
-#scoreboard players tag @s add Dialogue143
-#scoreboard players tag @s add Dialogue144
-scoreboard players tag @s add Dialogue145
-scoreboard players tag @s add Dialogue146
-scoreboard players tag @s add Dialogue147
-scoreboard players tag @s add Dialogue148
-scoreboard players tag @s add Dialogue149
-#scoreboard players tag @s add Dialogue150
-#scoreboard players tag @s add Dialogue151
-#scoreboard players tag @s add Dialogue152
-#scoreboard players tag @s add Dialogue153
-#scoreboard players tag @s add Dialogue154
-#scoreboard players tag @s add Dialogue155
-scoreboard players tag @s add Dialogue156
-scoreboard players tag @s add Dialogue157
-#scoreboard players tag @s add Dialogue158
-#scoreboard players tag @s add Dialogue159
-#scoreboard players tag @s add Dialogue160
-scoreboard players tag @s add Dialogue161
-scoreboard players tag @s add Dialogue162
-scoreboard players tag @s add Dialogue163
-scoreboard players tag @s add Dialogue164
-scoreboard players tag @s add Dialogue165
-scoreboard players tag @s add Dialogue166
-#scoreboard players tag @s add Dialogue167
-scoreboard players tag @s add Dialogue168
-scoreboard players tag @s add Dialogue169
-scoreboard players tag @s add Dialogue170
-scoreboard players tag @s add Dialogue171
-scoreboard players tag @s add Dialogue172
-scoreboard players tag @s add Dialogue173
-scoreboard players tag @s add Dialogue174
-scoreboard players tag @s add Dialogue175
-scoreboard players tag @s add Dialogue176
-scoreboard players tag @s add Dialogue177
-scoreboard players tag @s add Dialogue178
-scoreboard players tag @s add Dialogue179
-scoreboard players tag @s add Dialogue180
-scoreboard players tag @s add Dialogue181
-scoreboard players tag @s add Dialogue182
-scoreboard players tag @s add Dialogue183
-scoreboard players tag @s add Dialogue184
-scoreboard players tag @s add Dialogue185
-scoreboard players tag @s add Dialogue186
-scoreboard players tag @s add Dialogue187
-scoreboard players tag @s add Dialogue188
-scoreboard players tag @s add Dialogue189
-scoreboard players tag @s add Dialogue190
-scoreboard players tag @s add Dialogue191
-scoreboard players tag @s add Dialogue192
-scoreboard players tag @s add Dialogue193
-scoreboard players tag @s add Dialogue194
-scoreboard players tag @s add Dialogue195
-scoreboard players tag @s add Dialogue196
-scoreboard players tag @s add Dialogue197
-scoreboard players tag @s add Dialogue198
-scoreboard players tag @s add Dialogue199
-scoreboard players tag @s add Dialogue200
-scoreboard players tag @s add Dialogue201
-scoreboard players tag @s add Dialogue202
-scoreboard players tag @s add Dialogue203
-scoreboard players tag @s add Dialogue204
-scoreboard players tag @s add Dialogue205
-scoreboard players tag @s add Dialogue206
-scoreboard players tag @s add Dialogue207
-scoreboard players tag @s add Dialogue208
-scoreboard players tag @s add Dialogue209
-scoreboard players tag @s add Dialogue210
-scoreboard players tag @s add Dialogue211
-scoreboard players tag @s add Dialogue212
-scoreboard players tag @s add Dialogue213
-scoreboard players tag @s add Dialogue214
-scoreboard players tag @s add Dialogue215
-scoreboard players tag @s add Dialogue216
-scoreboard players tag @s add Dialogue217
-scoreboard players tag @s add Dialogue218
-scoreboard players tag @s add Dialogue219
-scoreboard players tag @s add Dialogue220
-scoreboard players tag @s add Dialogue221
-scoreboard players tag @s add Dialogue222
-scoreboard players tag @s add Dialogue223
-scoreboard players tag @s add Dialogue224
-scoreboard players tag @s add Dialogue225
-scoreboard players tag @s add Dialogue226
-scoreboard players tag @s add Dialogue227
-scoreboard players tag @s add Dialogue228
-scoreboard players tag @s add Dialogue229
-scoreboard players tag @s add Dialogue230
-scoreboard players tag @s add Dialogue231
-scoreboard players tag @s add Dialogue232
-scoreboard players tag @s add Dialogue233
-scoreboard players tag @s add Dialogue234
-scoreboard players tag @s add Dialogue235
-scoreboard players tag @s add Dialogue236
-scoreboard players tag @s add Dialogue237
-scoreboard players tag @s add Dialogue238
-scoreboard players tag @s add Dialogue239
-scoreboard players tag @s add Dialogue240
-scoreboard players tag @s add Dialogue241
-scoreboard players tag @s add Dialogue242
-scoreboard players tag @s add Dialogue243
-scoreboard players tag @s add Dialogue244
-scoreboard players tag @s add Dialogue245
-scoreboard players tag @s add Dialogue246
-scoreboard players tag @s add Dialogue247
-scoreboard players tag @s add Dialogue248
-scoreboard players tag @s add Dialogue249
-scoreboard players tag @s add Dialogue250
+tag @s add Dialogue1
+tag @s add Dialogue2
+tag @s add Dialogue3
+#tag @s add Dialogue4
+#tag @s add Dialogue5
+tag @s add Dialogue6
+tag @s add Dialogue7
+tag @s add Dialogue8
+tag @s add Dialogue9
+tag @s add Dialogue10
+#tag @s add Dialogue11
+#tag @s add Dialogue12
+tag @s add Dialogue13
+tag @s add Dialogue14
+tag @s add Dialogue15
+tag @s add Dialogue16
+#tag @s add Dialogue17
+#tag @s add Dialogue18
+tag @s add Dialogue19
+tag @s add Dialogue20
+tag @s add Dialogue21
+tag @s add Dialogue22
+tag @s add Dialogue23
+tag @s add Dialogue24
+tag @s add Dialogue25
+tag @s add Dialogue26
+#tag @s add Dialogue27
+#tag @s add Dialogue28
+tag @s add Dialogue29
+tag @s add Dialogue30
+tag @s add Dialogue31
+tag @s add Dialogue32
+tag @s add Dialogue33
+tag @s add Dialogue34
+tag @s add Dialogue35
+#tag @s add Dialogue36
+#tag @s add Dialogue37
+#tag @s add Dialogue38
+tag @s add Dialogue39
+tag @s add Dialogue40
+tag @s add Dialogue41
+tag @s add Dialogue42
+tag @s add Dialogue43
+#tag @s add Dialogue44
+#tag @s add Dialogue45
+#tag @s add Dialogue46
+#tag @s add Dialogue47
+tag @s add Dialogue48
+#tag @s add Dialogue49
+tag @s add Dialogue50
+tag @s add Dialogue51
+tag @s add Dialogue52
+tag @s add Dialogue53
+tag @s add Dialogue54
+tag @s add Dialogue55
+tag @s add Dialogue56
+tag @s add Dialogue57
+tag @s add Dialogue58
+tag @s add Dialogue59
+tag @s add Dialogue60
+tag @s add Dialogue61
+tag @s add Dialogue62
+tag @s add Dialogue63
+tag @s add Dialogue64
+tag @s add Dialogue65
+tag @s add Dialogue66
+tag @s add Dialogue67
+tag @s add Dialogue68
+tag @s add Dialogue69
+tag @s add Dialogue70
+tag @s add Dialogue71
+tag @s add Dialogue72
+#tag @s add Dialogue73
+#tag @s add Dialogue74
+tag @s add Dialogue75
+tag @s add Dialogue76
+#tag @s add Dialogue77
+#tag @s add Dialogue78
+#tag @s add Dialogue79
+tag @s add Dialogue80
+tag @s add Dialogue81
+tag @s add Dialogue82
+tag @s add Dialogue83
+tag @s add Dialogue84
+tag @s add Dialogue85
+tag @s add Dialogue86
+tag @s add Dialogue87
+tag @s add Dialogue88
+tag @s add Dialogue89
+tag @s add Dialogue90
+tag @s add Dialogue91
+tag @s add Dialogue92
+tag @s add Dialogue93
+tag @s add Dialogue94
+tag @s add Dialogue95
+tag @s add Dialogue96
+tag @s add Dialogue97
+tag @s add Dialogue98
+tag @s add Dialogue99
+tag @s add Dialogue100
+tag @s add Dialogue101
+#tag @s add Dialogue102
+#tag @s add Dialogue103
+#tag @s add Dialogue104
+tag @s add Dialogue105
+tag @s add Dialogue106
+tag @s add Dialogue107
+tag @s add Dialogue108
+tag @s add Dialogue109
+tag @s add Dialogue110
+#tag @s add Dialogue111
+#tag @s add Dialogue112
+tag @s add Dialogue113
+#tag @s add Dialogue114
+#tag @s add Dialogue115
+#tag @s add Dialogue116
+#tag @s add Dialogue117
+#tag @s add Dialogue118
+#tag @s add Dialogue119
+#tag @s add Dialogue120
+#tag @s add Dialogue121
+#tag @s add Dialogue122
+#tag @s add Dialogue123
+#tag @s add Dialogue124
+#tag @s add Dialogue125
+#tag @s add Dialogue126
+#tag @s add Dialogue127
+#tag @s add Dialogue128
+#tag @s add Dialogue129
+tag @s add Dialogue130
+tag @s add Dialogue131
+#tag @s add Dialogue132
+tag @s add Dialogue133
+tag @s add Dialogue134
+tag @s add Dialogue135
+#tag @s add Dialogue136
+tag @s add Dialogue137
+#tag @s add Dialogue138
+tag @s add Dialogue139
+#tag @s add Dialogue140
+#tag @s add Dialogue141
+tag @s add Dialogue142
+#tag @s add Dialogue143
+#tag @s add Dialogue144
+tag @s add Dialogue145
+tag @s add Dialogue146
+tag @s add Dialogue147
+tag @s add Dialogue148
+tag @s add Dialogue149
+#tag @s add Dialogue150
+#tag @s add Dialogue151
+#tag @s add Dialogue152
+#tag @s add Dialogue153
+#tag @s add Dialogue154
+#tag @s add Dialogue155
+tag @s add Dialogue156
+tag @s add Dialogue157
+#tag @s add Dialogue158
+#tag @s add Dialogue159
+#tag @s add Dialogue160
+tag @s add Dialogue161
+tag @s add Dialogue162
+tag @s add Dialogue163
+tag @s add Dialogue164
+tag @s add Dialogue165
+tag @s add Dialogue166
+#tag @s add Dialogue167
+tag @s add Dialogue168
+tag @s add Dialogue169
+tag @s add Dialogue170
+tag @s add Dialogue171
+tag @s add Dialogue172
+tag @s add Dialogue173
+tag @s add Dialogue174
+tag @s add Dialogue175
+tag @s add Dialogue176
+tag @s add Dialogue177
+tag @s add Dialogue178
+tag @s add Dialogue179
+tag @s add Dialogue180
+tag @s add Dialogue181
+tag @s add Dialogue182
+tag @s add Dialogue183
+tag @s add Dialogue184
+tag @s add Dialogue185
+tag @s add Dialogue186
+tag @s add Dialogue187
+tag @s add Dialogue188
+tag @s add Dialogue189
+tag @s add Dialogue190
+tag @s add Dialogue191
+tag @s add Dialogue192
+tag @s add Dialogue193
+tag @s add Dialogue194
+tag @s add Dialogue195
+tag @s add Dialogue196
+tag @s add Dialogue197
+tag @s add Dialogue198
+tag @s add Dialogue199
+tag @s add Dialogue200
+tag @s add Dialogue201
+tag @s add Dialogue202
+tag @s add Dialogue203
+tag @s add Dialogue204
+tag @s add Dialogue205
+tag @s add Dialogue206
+tag @s add Dialogue207
+tag @s add Dialogue208
+tag @s add Dialogue209
+tag @s add Dialogue210
+tag @s add Dialogue211
+tag @s add Dialogue212
+tag @s add Dialogue213
+tag @s add Dialogue214
+tag @s add Dialogue215
+tag @s add Dialogue216
+tag @s add Dialogue217
+tag @s add Dialogue218
+tag @s add Dialogue219
+tag @s add Dialogue220
+tag @s add Dialogue221
+tag @s add Dialogue222
+tag @s add Dialogue223
+tag @s add Dialogue224
+tag @s add Dialogue225
+tag @s add Dialogue226
+tag @s add Dialogue227
+tag @s add Dialogue228
+tag @s add Dialogue229
+tag @s add Dialogue230
+tag @s add Dialogue231
+tag @s add Dialogue232
+tag @s add Dialogue233
+tag @s add Dialogue234
+tag @s add Dialogue235
+tag @s add Dialogue236
+tag @s add Dialogue237
+tag @s add Dialogue238
+tag @s add Dialogue239
+tag @s add Dialogue240
+tag @s add Dialogue241
+tag @s add Dialogue242
+tag @s add Dialogue243
+tag @s add Dialogue244
+tag @s add Dialogue245
+tag @s add Dialogue246
+tag @s add Dialogue247
+tag @s add Dialogue248
+tag @s add Dialogue249
+tag @s add Dialogue250
 
 
 #Gym Leaders beaten
-scoreboard players tag @s add
+#tag @s add

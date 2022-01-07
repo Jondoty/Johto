@@ -1,9 +1,9 @@
 tellraw @a[tag=!InitialTags] {"text":"Initial scoreboard values required to run the map not found. TPing to spawn...","italic":true,"color":"gray"}
-tp @a[type=player,tag=!InitialTags] -780 64 -245
+tp @a[tag=!InitialTags] -780 64 -245
 
-scoreboard players set @a[x=-518,y=65,z=196,r=10,score_ER_min=1] ER 0
-scoreboard players set @a[z=-517,y=64,z=193,r=5,score_EscapeRope_min=1] EscapeRope 0
-scoreboard players set @a[x=-614,y=50,z=333,r=10,score_ER=!5] ER 5
+scoreboard players set @a[x=-518,y=65,z=196,distance=..10,scores={ER=1..}] ER 0
+scoreboard players set @a[x=-517,y=64,z=193,distance=..5,scores={EscapeRope=1..}] EscapeRope 0
+scoreboard players set @a[x=-614,y=50,z=333,distance=..10,scores={ER=5}] ER 5
 
 #Lobby to New Bark Town/Oak Welcome area
 scoreboard players set @a[x=-958,y=66,z=-366,dy=2,dz=1,tag=!Dialogue1] DialogueTrigger 1
@@ -19,29 +19,29 @@ tp @a[x=-958,y=66,z=-366,dy=2,dz=1,tag=Dialogue1] -724 69 -491
 
 #Goldenrod City Radio Tower Exterior
 #Removes Lucky Number Show dialogue if present
-scoreboard players set @a[x=553,y=64,z=-345,dx=3,dy=2,tag=Dialogue25] remove Dialogue25
+tag @a[x=553,y=64,z=-345,dx=3,dy=2,tag=Dialogue25] remove Dialogue25
 
 #Rocket Takeover Area
-execute @a[x=553,y=64,z=-345,dx=3,dy=2,tag=Dialogue64] ~ ~ ~ execute @s[tag=!Dialogue72] ~ ~ ~ playsound door ambient @s ~ ~ ~ 100 1 1
-execute @a[x=553,y=64,z=-345,dx=3,dy=2,tag=Dialogue64] ~ ~ ~ execute @s[tag=!Dialogue72] ~ ~ ~ scoreboard players set @s click 1
-execute @a[x=553,y=64,z=-345,dx=3,dy=2,tag=Dialogue64] ~ ~ ~ execute @s[tag=!Dialogue72] ~ ~ ~ tp @s 525 31 -248
+execute as @a[x=553,y=64,z=-345,dx=3,dy=2,tag=Dialogue64,tag=!Dialogue72] run playsound door ambient @s ~ ~ ~ 100 1 1
+execute as @a[x=553,y=64,z=-345,dx=3,dy=2,tag=Dialogue64,tag=!Dialogue72] run scoreboard players set @s click 1
+execute as @a[x=553,y=64,z=-345,dx=3,dy=2,tag=Dialogue64,tag=!Dialogue72] run tp @s 525 31 -248
 
 #Pre-Takeover
-execute @a[x=553,y=64,z=-345,dx=3,dy=2,tag=!Dialogue64] ~ ~ ~ execute @s[tag=!Dialogue72] ~ ~ ~ playsound door ambient @s ~ ~ ~ 100 1 1
-execute @a[x=553,y=64,z=-345,dx=3,dy=2,tag=!Dialogue64] ~ ~ ~ execute @s[tag=!Dialogue72] ~ ~ ~ tp @s 525 31 -274
+execute as @a[x=553,y=64,z=-345,dx=3,dy=2,tag=!Dialogue64,tag=!Dialogue72] run playsound door ambient @s ~ ~ ~ 100 1 1
+execute as @a[x=553,y=64,z=-345,dx=3,dy=2,tag=!Dialogue64,tag=!Dialogue72] run tp @s 525 31 -274
 
 #Post-Takeover
-execute @a[x=553,y=64,z=-345,dx=3,dy=2,tag=Dialogue72] ~ ~ ~ playsound door ambient @s ~ ~ ~ 100 1 1
-execute @a[x=553,y=64,z=-345,dx=3,dy=2,tag=Dialogue72] ~ ~ ~ tp @s 525 31 -274
+execute as @a[x=553,y=64,z=-345,dx=3,dy=2,tag=Dialogue72] run playsound door ambient @s ~ ~ ~ 100 1 1
+execute as @a[x=553,y=64,z=-345,dx=3,dy=2,tag=Dialogue72] run tp @s 525 31 -274
 
 #Return to Goldenrod
 playsound door ambient @a[x=524,y=31,z=-275,dx=2,dy=2] ~ ~ ~ 100 1 1
-execute @a[x=524,y=31,z=-275,dx=2,dy=2] ~ ~ ~ scoreboard players tag @s remove Dialogue178
-execute @a[x=524,y=31,z=-275,dx=2,dy=2] ~ ~ ~ scoreboard players tag @s remove Dialogue179
-execute @a[x=524,y=31,z=-275,dx=2,dy=2] ~ ~ ~ scoreboard players tag @s remove Dialogue180
-execute @a[x=524,y=31,z=-275,dx=2,dy=2] ~ ~ ~ scoreboard players tag @s remove Dialogue181
-execute @a[x=524,y=31,z=-275,dx=2,dy=2] ~ ~ ~ scoreboard players tag @s remove Dialogue182
-execute @a[x=524,y=31,z=-275,dx=2,dy=2] ~ ~ ~ scoreboard players tag @s remove Dialogue183
+execute as @a[x=524,y=31,z=-275,dx=2,dy=2] run tag @s remove Dialogue178
+execute as @a[x=524,y=31,z=-275,dx=2,dy=2] run tag @s remove Dialogue179
+execute as @a[x=524,y=31,z=-275,dx=2,dy=2] run tag @s remove Dialogue180
+execute as @a[x=524,y=31,z=-275,dx=2,dy=2] run tag @s remove Dialogue181
+execute as @a[x=524,y=31,z=-275,dx=2,dy=2] run tag @s remove Dialogue182
+execute as @a[x=524,y=31,z=-275,dx=2,dy=2] run tag @s remove Dialogue183
 tp @a[x=524,y=31,z=-275,dx=2,dy=2] 555 64 -346
 
 
@@ -73,19 +73,19 @@ playsound door ambient @a[x=1597,y=87,z=-426,dx=3,dy=3] ~ ~ ~ 100 1 1
 scoreboard players set @a[x=1597,y=87,z=-426,dx=3,dy=3] click 1
 tp @a[x=1597,y=87,z=-426,dx=3,dy=3] -1173 64 -237
 
-execute @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,score_DialogueTrigger=0,score_TalkTime=0] ~ ~ ~ execute @a[x=-1174,y=64,z=-238,dx=2,dy=2] ~ ~ ~ fill -1196 63 -231 -1150 63 -186 minecraft:stained_hardened_clay 9 replace minecraft:stained_glass
-execute @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,score_DialogueTrigger=0,score_TalkTime=0] ~ ~ ~ playsound door ambient @a[x=-1174,y=64,z=-238,dx=2,dy=2] ~ ~ ~ 100 1 1
-execute @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,score_DialogueTrigger=0,score_TalkTime=0] ~ ~ ~ scoreboard players set @a[x=-1174,y=64,z=-238,dx=2,dy=2] click 1
-execute @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,score_DialogueTrigger=0,score_TalkTime=0] ~ ~ ~ tp @a[x=-1174,y=64,z=-238,dx=2,dy=2] 1599 87 -427
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=0,TalkTime=0}] run execute at @a[x=-1174,y=64,z=-238,dx=2,dy=2] run fill -1196 63 -231 -1150 63 -186 minecraft:cyan_terracotta
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=0,TalkTime=0}] run playsound door ambient @a[x=-1174,y=64,z=-238,dx=2,dy=2] ~ ~ ~ 100 1 1
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=0,TalkTime=0}] run scoreboard players set @a[x=-1174,y=64,z=-238,dx=2,dy=2] click 1
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=0,TalkTime=0}] run tp @a[x=-1174,y=64,z=-238,dx=2,dy=2] 1599 87 -427
 
 
 #Ruins of Alph Main Portal
 
 #to Fake Ruins
-execute @a[x=205,y=64,z=-145,dx=3,dy=3,tag=Dialogue168] ~ ~ ~ playsound door ambient @s[tag=!SinnohLegend] ~ ~ ~ 100 1 1
-execute @a[x=205,y=64,z=-145,dx=3,dy=3,tag=Dialogue168] ~ ~ ~ scoreboard players set @s click 1
-execute @a[x=205,y=64,z=-145,dx=3,dy=3,tag=Dialogue168] ~ ~ ~ effect @s[tag=!SinnohLegend] minecraft:blindness 1 1
-execute @a[x=205,y=64,z=-145,dx=3,dy=3,tag=Dialogue168] ~ ~ ~ tp @s[tag=!SinnohLegend] -978 60 -144
+execute as @a[x=205,y=64,z=-145,dx=3,dy=3,tag=Dialogue168,tag=!SinnohLegend] run playsound door ambient @s ~ ~ ~ 100 1 1
+execute as @a[x=205,y=64,z=-145,dx=3,dy=3,tag=Dialogue168,tag=!SinnohLegend] run scoreboard players set @s click 1
+execute as @a[x=205,y=64,z=-145,dx=3,dy=3,tag=Dialogue168,tag=!SinnohLegend] run effect give @s minecraft:blindness 1 1
+execute as @a[x=205,y=64,z=-145,dx=3,dy=3,tag=Dialogue168,tag=!SinnohLegend] run tp @s -978 60 -144
 
 playsound door ambient @a[x=205,y=64,z=-145,dx=3,dy=3] ~ ~ ~ 100 1 1
 scoreboard players set @a[x=205,y=64,z=-145,dx=3,dy=3] click 1
@@ -93,7 +93,7 @@ tp @a[x=205,y=64,z=-145,dx=3,dy=3] 196 43 -126
 
 
 #tp out
-execute @a[x=194,y=43,z=-127,dx=3,dy=3,tag=SinnohLegend] ~ ~ ~ tp @e[x=201,y=37,z=-118,dy=3,type=pixelmon:npc_chatting] -699 86 -242
+execute as @a[x=194,y=43,z=-127,dx=3,dy=3,tag=SinnohLegend] run tp @e[x=201,y=37,z=-118,dy=3,nbt=!{pixelmon:npc_chatting}] -699 86 -242
 playsound door ambient @a[x=194,y=43,z=-127,dx=3,dy=3] ~ ~ ~ 100 1 1
 scoreboard players set @a[x=194,y=43,z=-127,dx=3,dy=3] click 1
 tp @a[x=194,y=43,z=-127,dx=3,dy=3] 207 64 -146
@@ -102,20 +102,20 @@ tp @a[x=194,y=43,z=-127,dx=3,dy=3] 207 64 -146
 
 
 #Pokemon League Elite Four Entrance
-scoreboard players tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue99
-scoreboard players tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue98
-scoreboard players tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue97
-scoreboard players tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue96
-scoreboard players tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue95
-scoreboard players tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue94
-scoreboard players tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue93
-scoreboard players tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue92
-scoreboard players tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue91
-scoreboard players tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue90
-scoreboard players tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue89
-scoreboard players tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue88
-scoreboard players tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue87
-scoreboard players tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue86
+tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue99
+tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue98
+tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue97
+tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue96
+tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue95
+tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue94
+tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue93
+tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue92
+tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue91
+tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue90
+tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue89
+tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue88
+tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue87
+tag @a[x=-1283,y=84,z=353,dx=12,dy=5] remove Dialogue86
 
 #Non-Rematch Track
 playsound door ambient @a[x=-1283,y=84,z=353,dx=12,dy=5] ~ ~ ~ 100 1 1
@@ -133,19 +133,19 @@ tp @a[x=-1342,y=64,z=372,dx=4,dy=4] -1277 84 352
 
 
 #National Park
-tellraw @a[x=466,y=64,z=63,dy=2,dz=2,score_BugContest_min=1] ["",{"text":"You can't leave an active Bug Contest!","color":"white","italic":true}]
-tellraw @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,score_BugContest_min=1] ["",{"text":"You can't leave an active Bug Contest!","color":"white","italic":true}]
+tellraw @a[x=466,y=64,z=63,dy=2,dz=2,scores={BugContest=1..}] ["",{"text":"You can't leave an active Bug Contest!","color":"white","italic":true}]
+tellraw @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,scores={BugContest=1..}] ["",{"text":"You can't leave an active Bug Contest!","color":"white","italic":true}]
 
-playsound door ambient @a[x=466,y=64,z=63,dy=2,dz=2,score_BugContest=0] ~ ~ ~ 100 1 1
-playsound door ambient @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,score_BugContest=0] ~ ~ ~ 10 1 1
+playsound door ambient @a[x=466,y=64,z=63,dy=2,dz=2,scores={BugContest=0}] ~ ~ ~ 100 1 1
+playsound door ambient @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,scores={BugContest=0}] ~ ~ ~ 10 1 1
 
-tp @a[x=466,y=64,z=63,dy=2,dz=2,score_BugContest_min=1] ~5 ~ ~
-scoreboard players set @a[x=466,y=64,z=63,dy=2,dz=2,score_BugContest=0] click 1
-tp @a[x=466,y=64,z=63,dy=2,dz=2,score_BugContest=0] 430 64 -13
+tp @a[x=466,y=64,z=63,dy=2,dz=2,scores={BugContest=1..}] ~5 ~ ~
+scoreboard players set @a[x=466,y=64,z=63,dy=2,dz=2,scores={BugContest=0}] click 1
+tp @a[x=466,y=64,z=63,dy=2,dz=2,scores={BugContest=0}] 430 64 -13
 
-tp @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,score_BugContest_min=1] ~ ~ ~5
-scoreboard players set @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,score_BugContest=0] click 1
-tp @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,score_BugContest=0] 511 64 -77
+tp @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,scores={BugContest=1..}] ~ ~ ~5
+scoreboard players set @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,scores={BugContest=0}] click 1
+tp @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,scores={BugContest=0}] 511 64 -77
 
 #Tp In
 playsound door ambient @a[x=431,y=64,z=-14,dy=2,dz=2] ~ ~ ~ 100 1 1
@@ -161,17 +161,9 @@ tp @a[x=510,y=64,z=-76,dx=2,dy=2] 572 64 -43
 #Mt. Silver
 
 #Tells player a message based on which items they hold
-scoreboard players tag @a[x=-1026,y=86,z=349,dx=3,dy=3,score_PalkiaCD=0] add LustrousOrbTalk {Inventory:[{id:"pixelmon:lustrous_orb"}]}
-tellraw @a[x=-1026,y=86,z=349,dx=3,dy=3,score_PalkiaCD=0,tag=LustrousOrbTalk] ["",{"text":"Your Lustrous Orb is reacting to the alter!","color":"white","italic":true}]
-scoreboard players tag @a[x=-1026,y=86,z=349,dx=3,dy=3,score_PalkiaCD=0] remove LustrousOrbTalk
-
-scoreboard players tag @a[x=-1026,y=86,z=349,dx=3,dy=3,score_GiratinaCD=0] add GriseousOrbTalk {Inventory:[{id:"pixelmon:griseous_orb"}]}
-tellraw @a[x=-1026,y=86,z=349,dx=3,dy=3,score_GiratinaCD=0,tag=GriseousOrbTalk] ["",{"text":"Your Griseous Orb is reacting to the alter!","color":"white","italic":true}]
-scoreboard players tag @a[x=-1026,y=86,z=349,dx=3,dy=3,score_GiratinaCD=0] remove GriseousOrbTalk
-
-scoreboard players tag @a[x=-1026,y=86,z=349,dx=3,dy=3,score_DialgaCD=0] add AdamantOrbTalk {Inventory:[{id:"pixelmon:adamant_orb"}]}
-tellraw @a[x=-1026,y=86,z=349,dx=3,dy=3,score_DialgaCD=0,tag=AdamantOrbTalk] ["",{"text":"Your Adamant Orb is reacting to the alter!","color":"white","italic":true}]
-scoreboard players tag @a[x=-1026,y=86,z=349,dx=3,dy=3,score_DialgaCD=0] remove AdamantOrbTalk
+tellraw @a[x=-1026,y=86,z=349,dx=3,dy=3,scores={PalkiaCD=0},nbt={Inventory:[{id:"pixelmon:lustrous_orb"}]}] ["",{"text":"Your Lustrous Orb is reacting to the alter!","color":"white","italic":true}]
+tellraw @a[x=-1026,y=86,z=349,dx=3,dy=3,scores={GiratinaCD=0},nbt={Inventory:[{id:"pixelmon:griseous_orb"}]}] ["",{"text":"Your Griseous Orb is reacting to the alter!","color":"white","italic":true}]
+tellraw @a[x=-1026,y=86,z=349,dx=3,dy=3,scores={DialgaCD=0},nbt={Inventory:[{id:"pixelmon:adamant_orb"}]}] ["",{"text":"Your Adamant Orb is reacting to the alter!","color":"white","italic":true}]
 
 playsound door ambient @a[x=-1026,y=86,z=349,dx=3,dy=3] ~ ~ ~ 100 1 1
 tp @a[x=-1026,y=86,z=349,dx=3,dy=3] -944 175 196
@@ -184,19 +176,19 @@ tp @a[x=-945,y=175,z=195,dx=3,dy=3] -1025 86 348
 
 
 #Magnet Train Goldenrod City
-execute @a[x=526,y=72,z=-339,dy=3,tag=!MagnetPass,score_TalkTime=0] ~ ~ ~ tellraw @s {"text":"A Magnet Pass is required to ride on the Magnet Train!","italic":true,"color":"gray"}
-execute @a[x=526,y=72,z=-339,dy=3,tag=!MagnetPass] ~ ~ ~ tp @s ~ ~ ~6
+execute as @a[x=526,y=72,z=-339,dy=3,tag=!MagnetPass,scores={TalkTime=0}] run tellraw @s {"text":"A Magnet Pass is required to ride on the Magnet Train!","italic":true,"color":"gray"}
+execute as @a[x=526,y=72,z=-339,dy=3,tag=!MagnetPass] run tp @s ~ ~ ~6
 
-execute @a[x=526,y=72,z=-339,dy=3,tag=MagnetPass,score_TalkTime=0] ~ ~ ~ scoreboard players tag @s remove Dialogue207
-execute @a[x=526,y=72,z=-339,dy=3,tag=MagnetPass,score_TalkTime=0] ~ ~ ~ scoreboard players set @s DialogueTrigger 207
+execute as @a[x=526,y=72,z=-339,dy=3,tag=MagnetPass,scores={TalkTime=0}] run tag @s remove Dialogue207
+execute as @a[x=526,y=72,z=-339,dy=3,tag=MagnetPass,scores={TalkTime=0}] run scoreboard players set @s DialogueTrigger 207
 
 
 #Magnet Train Saffron City
-execute @a[x=-2673,y=72,z=408,dy=3,tag=!MagnetPass,score_TalkTime=0] ~ ~ ~ tellraw @s {"text":"A Magnet Pass is required to ride on the Magnet Train!","italic":true,"color":"gray"}
-execute @a[x=-2673,y=72,z=408,dy=3,tag=!MagnetPass] ~ ~ ~ tp @s ~ ~ ~6
+execute as @a[x=-2673,y=72,z=408,dy=3,tag=!MagnetPass,scores={TalkTime=0}] run tellraw @s {"text":"A Magnet Pass is required to ride on the Magnet Train!","italic":true,"color":"gray"}
+execute as @a[x=-2673,y=72,z=408,dy=3,tag=!MagnetPass] run tp @s ~ ~ ~6
 
-execute @a[x=-2673,y=72,z=408,dy=3,tag=MagnetPass,score_TalkTime=0] ~ ~ ~ scoreboard players tag @s remove Dialogue208
-execute @a[x=-2673,y=72,z=408,dy=3,tag=MagnetPass,score_TalkTime=0] ~ ~ ~ scoreboard players set @s DialogueTrigger 208
+execute as @a[x=-2673,y=72,z=408,dy=3,tag=MagnetPass,scores={TalkTime=0}] run tag @s remove Dialogue208
+execute as @a[x=-2673,y=72,z=408,dy=3,tag=MagnetPass,scores={TalkTime=0}] run scoreboard players set @s DialogueTrigger 208
 
 
 
@@ -218,7 +210,7 @@ tp @a[x=-3105,y=44,z=561,dx=4,dy=4] -3259 64 569
 #Violet City
 
 playsound door ambient @a[x=86,y=64,z=-63,dx=4,dy=4] ~ ~ ~ 100 1 1
-scoreboard players tag @a[x=86,y=64,z=-63,dx=4,dy=4] remove GymVictory
+tag @a[x=86,y=64,z=-63,dx=4,dy=4] remove GymVictory
 scoreboard players set @a[x=86,y=64,z=-63,dx=4,dy=4] click 1
 tp @a[x=86,y=64,z=-63,dx=4,dy=4] -791 65 530
 
@@ -230,13 +222,13 @@ tp @a[x=-795,y=65,z=529,dx=9,dy=5] 88 64 -64
 
 #--------------------------------------------------
 #Azalea Town
-tellraw @a[x=355,y=64,z=-762,dx=4,dy=4,tag=!Dialogue16,score_TalkTime=0] {"text":"Bugsy is away right now! Kurt should be watching the town.","italic":true}
-tp @a[x=355,y=64,z=-762,dx=4,dy=4,score_Kurt_min=0,tag=!Dialogue16] ~ ~ ~-5
+tellraw @a[x=355,y=64,z=-762,dx=4,dy=4,tag=!Dialogue16,scores={TalkTime=0}] {"text":"Bugsy is away right now! Kurt should be watching the town.","italic":true}
+tp @a[x=355,y=64,z=-762,dx=4,dy=4,scores={Kurt=0..},tag=!Dialogue16] ~ ~ ~-5
 
-playsound door ambient @a[x=355,y=64,z=-762,dx=4,dy=4,tag=Dialogue16,score_TalkTime=0] ~ ~ ~ 100 1 1
-scoreboard players tag @a[x=355,y=64,z=-762,dx=4,dy=4,tag=Dialogue16,score_TalkTime=0] remove GymVictory
-scoreboard players set @a[x=355,y=64,z=-762,dx=4,dy=4,tag=Dialogue16,score_TalkTime=0] click 1
-tp @a[x=355,y=64,z=-762,dx=4,dy=4,tag=Dialogue16,score_TalkTime=0] -855 65 530
+playsound door ambient @a[x=355,y=64,z=-762,dx=4,dy=4,tag=Dialogue16,scores={TalkTime=0}] ~ ~ ~ 100 1 1
+tag @a[x=355,y=64,z=-762,dx=4,dy=4,tag=Dialogue16,scores={TalkTime=0}] remove GymVictory
+scoreboard players set @a[x=355,y=64,z=-762,dx=4,dy=4,tag=Dialogue16,scores={TalkTime=0}] click 1
+tp @a[x=355,y=64,z=-762,dx=4,dy=4,tag=Dialogue16,scores={TalkTime=0}] -855 65 530
 
 playsound door ambient @a[x=-859,y=65,z=529,dx=9,dy=5] ~ ~ ~ 100 1 1
 scoreboard players set @a[x=-859,y=65,z=529,dx=9,dy=5] click 1
@@ -247,7 +239,7 @@ tp @a[x=-859,y=65,z=529,dx=9,dy=5] 357 64 -763
 #--------------------------------------------------
 #Goldenrod City
 playsound door ambient @a[x=446,y=64,z=-312,dx=4,dy=4] ~ ~ ~ 100 1 1
-scoreboard players tag @a[x=446,y=64,z=-312,dx=4,dy=4] remove GymVictory
+tag @a[x=446,y=64,z=-312,dx=4,dy=4] remove GymVictory
 scoreboard players set @a[x=446,y=64,z=-312,dx=4,dy=4] click 1
 tp @a[x=446,y=64,z=-312,dx=4,dy=4] -916 65 530
 
@@ -259,7 +251,7 @@ tp @a[x=-920,y=65,z=529,dx=9,dy=6] 448 64 -313
 #--------------------------------------------------
 #Ecruteak City
 playsound door ambient @a[x=435,y=64,z=184,dx=4,dy=3] ~ ~ ~ 100 1 1
-scoreboard players tag @a[x=435,y=64,z=184,dx=4,dy=3] remove GymVictory
+tag @a[x=435,y=64,z=184,dx=4,dy=3] remove GymVictory
 scoreboard players set @a[x=435,y=64,z=184,dx=4,dy=3] click 1
 tp @a[x=435,y=64,z=184,dx=4,dy=3] -1060 65 530
 
@@ -271,7 +263,7 @@ tp @a[x=-1064,y=65,z=529,dx=9,dy=6] 437 64 183
 #--------------------------------------------------
 #Cianwood City
 playsound door ambient @a[x=1267,y=64,z=-469,dx=4,dy=3] ~ ~ ~ 100 1 1
-scoreboard players tag @a[x=1267,y=64,z=-469,dx=4,dy=3] remove GymVictory
+tag @a[x=1267,y=64,z=-469,dx=4,dy=3] remove GymVictory
 scoreboard players set @a[x=1267,y=64,z=-469,dx=4,dy=3] click 1
 tp @a[x=1267,y=64,z=-469,dx=4,dy=3] -1190 65 530
 
@@ -286,7 +278,7 @@ tellraw @a[x=807,y=64,z=16,dx=4,dy=3,tag=!Dialogue42] {"text":"Jasmine is not cu
 tp @a[x=807,y=64,z=16,dx=4,dy=3,tag=!Dialogue42] ~ ~ ~-10
 
 playsound door ambient @a[x=807,y=64,z=16,dx=4,dy=3,tag=Dialogue42] ~ ~ ~ 100 1 1
-scoreboard players tag @a[x=807,y=64,z=16,dx=4,dy=3,tag=Dialogue42] remove GymVictory
+tag @a[x=807,y=64,z=16,dx=4,dy=3,tag=Dialogue42] remove GymVictory
 scoreboard players set @a[x=807,y=64,z=16,dx=4,dy=3,tag=Dialogue42] click 1
 tp @a[x=807,y=64,z=16,dx=4,dy=3,tag=Dialogue42] -1126 65 530
 
@@ -305,7 +297,7 @@ tp @a[x=-128,y=64,z=161,dx=4,dy=3,tag=!Dialogue64] ~ ~ ~-5
 
 #Post-Rocket HQ
 playsound door ambient @a[x=-128,y=64,z=161,dx=4,dy=3,tag=Dialogue64] ~ ~ ~ 100 1 1
-scoreboard players tag @a[x=-128,y=64,z=161,dx=4,dy=3,tag=Dialogue64] remove GymVictory
+tag @a[x=-128,y=64,z=161,dx=4,dy=3,tag=Dialogue64] remove GymVictory
 scoreboard players set @a[x=-128,y=64,z=161,dx=4,dy=3,tag=Dialogue64] click 1
 tp @a[x=-128,y=64,z=161,dx=4,dy=3,tag=Dialogue64] -789 65 642
 
@@ -318,12 +310,12 @@ tp @a[x=-793,y=65,z=641,dx=9,dy=6] -126 64 160
 #--------------------------------------------------
 #Blackthorn City
 
-tellraw @a[x=-646,y=64,z=274,dx=4,dy=3,tag=!Dialogue72,score_Cooldown=0] {"text":"<Lass> I am sorry. Clair, our Gym Leader, entered the Dragon's Den behind the Gym. I have no idea when our Leader will return."}
+tellraw @a[x=-646,y=64,z=274,dx=4,dy=3,tag=!Dialogue72,scores={Cooldown=0}] {"text":"<Lass> I am sorry. Clair, our Gym Leader, entered the Dragon's Den behind the Gym. I have no idea when our Leader will return."}
 scoreboard players add @a[x=-646,y=64,z=274,dx=4,dy=3,tag=!Dialogue72] Cooldown 25
 tp @a[x=-646,y=64,z=274,dx=4,dy=3,tag=!Dialogue72] ~ ~ ~-5
 
 playsound door ambient @a[x=-646,y=64,z=274,dx=4,dy=3,tag=Dialogue72] ~ ~ ~ 100 1 1
-scoreboard players tag @a[x=-646,y=64,z=274,dx=4,dy=3,tag=Dialogue72] remove GymVictory
+tag @a[x=-646,y=64,z=274,dx=4,dy=3,tag=Dialogue72] remove GymVictory
 scoreboard players set @a[x=-646,y=64,z=274,dx=4,dy=3,tag=Dialogue72] click 1
 tp @a[x=-646,y=64,z=274,dx=4,dy=3,tag=Dialogue72] -854 65 642
 
@@ -336,7 +328,7 @@ tp @a[x=-858,y=65,z=641,dx=9,dy=6] -644 64 273
 #--------------------------------------------------
 #Pewter City
 playsound door ambient @a[x=-1654,y=64,z=647,dx=4,dy=3] ~ ~ ~ 100 1 1
-scoreboard players tag @a[x=-1654,y=64,z=647,dx=4,dy=3] remove GymVictory
+tag @a[x=-1654,y=64,z=647,dx=4,dy=3] remove GymVictory
 scoreboard players set @a[x=-1654,y=64,z=647,dx=4,dy=3] click 1
 tp @a[x=-1654,y=64,z=647,dx=4,dy=3] -955 65 642
 
@@ -349,7 +341,7 @@ tp @a[x=-959,y=65,z=641,dx=9,dy=6] -1651 64 646
 #Cerulean City
 
 #Cleared Gym
-scoreboard players tag @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=!Dialogue113] remove GymVictory
+tag @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=!Dialogue113] remove GymVictory
 tellraw @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=!Dialogue113] {"text":"A sign reads: \"Since Misty's out, we'll be away too.\" - Gym Trainers","italic":true}
 scoreboard players set @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=!Dialogue113] click 1
 tp @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=!Dialogue113] -1185 65 738
@@ -359,7 +351,7 @@ tp @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=!Dialogue113] -1185 65 738
 
 #Real Gym
 playsound door ambient @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=Dialogue113] ~ ~ ~ 100 1 1
-scoreboard players tag @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=Dialogue113] remove GymVictory
+tag @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=Dialogue113] remove GymVictory
 scoreboard players set @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=Dialogue113] click 1
 tp @a[x=-2788,y=64,z=722,dx=4,dy=3,tag=Dialogue113] -1004 65 642
 
@@ -368,14 +360,14 @@ playsound door ambient @a[x=-1008,y=65,z=641,dx=9,dy=6] ~ ~ ~ 100 1 1
 scoreboard players set @a[x=-1008,y=65,z=641,dx=9,dy=6] click 1
 tp @a[x=-1008,y=65,z=641,dx=9,dy=6] -2786 64 721
 
-playsound door ambient @a[x=-1189,y=65,z=737,dx=9,dy=6,score_TalkTime=0] ~ ~ ~ 100 1 1
-scoreboard players set @a[x=-1189,y=65,z=737,dx=9,dy=6,score_TalkTime=0] click 1
-tp @a[x=-1189,y=65,z=737,dx=9,dy=6,score_TalkTime=0] -2786 64 721
+playsound door ambient @a[x=-1189,y=65,z=737,dx=9,dy=6,scores={TalkTime=0}] ~ ~ ~ 100 1 1
+scoreboard players set @a[x=-1189,y=65,z=737,dx=9,dy=6,scores={TalkTime=0}] click 1
+tp @a[x=-1189,y=65,z=737,dx=9,dy=6,scores={TalkTime=0}] -2786 64 721
 
 #--------------------------------------------------
 #Vermilion City
 playsound door ambient @a[x=-2707,y=64,z=-83,dx=4,dy=3] ~ ~ ~ 100 1 1
-scoreboard players tag @a[x=-2707,y=64,z=-83,dx=4,dy=3] remove GymVictory
+tag @a[x=-2707,y=64,z=-83,dx=4,dy=3] remove GymVictory
 scoreboard players set @a[x=-2707,y=64,z=-83,dx=4,dy=3] click 1
 tp @a[x=-2707,y=64,z=-83,dx=4,dy=3] -1051 64 642
 
@@ -386,7 +378,7 @@ tp @a[x=-1055,y=64,z=641,dx=9,dy=6] -2705 64 -84
 #--------------------------------------------------
 #Celadon City
 playsound door ambient @a[x=-2284,y=64,z=290,dx=4,dy=3] ~ ~ ~ 100 1 1
-scoreboard players tag @a[x=-2284,y=64,z=290,dx=4,dy=3] remove GymVictory
+tag @a[x=-2284,y=64,z=290,dx=4,dy=3] remove GymVictory
 scoreboard players set @a[x=-2284,y=64,z=290,dx=4,dy=3] click 1
 tp @a[x=-2284,y=64,z=290,dx=4,dy=3] -1099 64 642
 
@@ -400,7 +392,7 @@ tp @a[x=-1102,y=64,z=641,dx=9,dy=6] -2282 64 289
 #--------------------------------------------------
 #Fuchsia City
 playsound door ambient @a[x=-2326,y=64,z=-608,dx=4,dy=3] ~ ~ ~ 100 1 1
-scoreboard players tag @a[x=-2326,y=64,z=-608,dx=4,dy=3] remove GymVictory
+tag @a[x=-2326,y=64,z=-608,dx=4,dy=3] remove GymVictory
 scoreboard players set @a[x=-2326,y=64,z=-608,dx=4,dy=3] click 1
 tp @a[x=-2326,y=64,z=-608,dx=4,dy=3] -1147 64 642
 
@@ -411,7 +403,7 @@ tp @a[x=-1150,y=64,z=641,dx=9,dy=6] -2324 64 -609
 #--------------------------------------------------
 #Saffron City
 playsound door ambient @a[x=-2815,y=64,z=409,dx=4,dy=3] ~ ~ ~ 100 1 1
-scoreboard players tag @a[x=-2815,y=64,z=409,dx=4,dy=3] remove GymVictory
+tag @a[x=-2815,y=64,z=409,dx=4,dy=3] remove GymVictory
 scoreboard players set @a[x=-2815,y=64,z=409,dx=4,dy=3] click 1
 tp @a[x=-2815,y=64,z=409,dx=4,dy=3] -966 64 738
 
@@ -422,7 +414,7 @@ tp @a[x=-968,y=64,z=737,dx=9,dy=6] -2813 64 408
 #--------------------------------------------------
 #Cinnabar
 playsound door ambient @a[x=-1730,y=64,z=-859,dx=4,dy=3] ~ ~ ~ 100 1 1
-scoreboard players tag @a[x=-1730,y=64,z=-859,dx=4,dy=3] remove GymVictory
+tag @a[x=-1730,y=64,z=-859,dx=4,dy=3] remove GymVictory
 scoreboard players set @a[x=-1730,y=64,z=-859,dx=4,dy=3] click 1
 tp @a[x=-1730,y=64,z=-859,dx=4,dy=3] -1077 64 738
 
@@ -434,7 +426,7 @@ tp @a[x=-1080,y=64,z=737,dx=9,dy=6] -1728 64 -860
 #--------------------------------------------------
 #Viridian
 playsound door ambient @a[x=-1751,y=64,z=95,dx=4,dy=3] ~ ~ ~ 100 1 1
-scoreboard players tag @a[x=-1751,y=64,z=95,dx=4,dy=3] remove GymVictory
+tag @a[x=-1751,y=64,z=95,dx=4,dy=3] remove GymVictory
 scoreboard players set @a[x=-1751,y=64,z=95,dx=4,dy=3] click 1
 tp @a[x=-1751,y=64,z=95,dx=4,dy=3] -1131 65 738
 
@@ -536,10 +528,10 @@ tp @a[x=303,y=72,z=-566,dz=4,dy=3] 232 64 -225 -180 ~0
 #--------------------------------------------------
 
 #Ilex Forest Azalea Entrance
-playsound door ambient @a[x=431,y=64,z=-735,dy=2,dz=3,score_TalkTime=0] ~ ~ ~ 100 1 1
-scoreboard players set @a[x=431,y=64,z=-735,dy=2,dz=3,score_TalkTime=0] EscapeRope 8
-scoreboard players set @a[x=431,y=64,z=-735,dy=2,dz=3,score_TalkTime=0] click 1
-tp @a[x=431,y=64,z=-735,dy=2,dz=3,score_TalkTime=0] 633 64 -759
+playsound door ambient @a[x=431,y=64,z=-735,dy=2,dz=3,scores={TalkTime=0}] ~ ~ ~ 100 1 1
+scoreboard players set @a[x=431,y=64,z=-735,dy=2,dz=3,scores={TalkTime=0}] EscapeRope 8
+scoreboard players set @a[x=431,y=64,z=-735,dy=2,dz=3,scores={TalkTime=0}] click 1
+tp @a[x=431,y=64,z=-735,dy=2,dz=3,scores={TalkTime=0}] 633 64 -759
 
 
 playsound door ambient @a[x=632,y=64,z=-761,dy=2,dz=3] ~ ~ ~ 100 1 1
@@ -693,7 +685,7 @@ tp @a[x=-744,y=49,z=302,dx=3,dy=3] -743 64 284
 #Victory Road Gate Entrance
 
 #Gym Badge check:
-execute @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=Falkner] ~ ~ ~ execute @s[tag=Bugsy] ~ ~ ~ execute @s[tag=Whitney] ~ ~ ~ execute @s[tag=Morty] ~ ~ ~ execute @s[tag=Chuck] ~ ~ ~ execute @s[tag=Jasmine] ~ ~ ~ execute @s[tag=Pryce] ~ ~ ~ scoreboard players tag @s[tag=Clair] add JohtoBadges
+tag @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=Falkner,tag=Bugsy,tag=Whitney,tag=Morty,tag=Chuck,tag=Jasmine,tag=Pryce,tag=Clair] add JohtoBadges
 
 tellraw @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!JohtoBadges] {"text":"You still need to beat the following Gym Leaders:","italic":true,"color":"gray"}
 tellraw @a[x=-1260,y=64,z=118,dx=3,dy=3,tag=!Falkner] {"text":"Falkner","italic":true,"color":"gray"}
@@ -726,7 +718,7 @@ tp @a[x=-1328,y=64,z=115,dx=3,dy=3] -1448 51 533 ~180 ~0
 
 
 #Before Silver is defeated
-tellraw @a[x=-1450,y=51,z=534,dx=3,dy=3,tag=!Dialogue85,score_TalkTime=0] ["",{"text":"<"},{"text":"Silver","color":"red"},{"text":"> Come on, "},{"selector":"@p[x=-1450,y=51,z=534,dx=3,dy=3,tag=!Dialogue85,score_TalkTime=0]"},{"text":"! Let's battle!"}]
+tellraw @a[x=-1450,y=51,z=534,dx=3,dy=3,tag=!Dialogue85,scores={TalkTime=0}] ["",{"text":"<"},{"text":"Silver","color":"red"},{"text":"> Come on, "},{"selector":"@p[x=-1450,y=51,z=534,dx=3,dy=3,tag=!Dialogue85,score_TalkTime=0]"},{"text":"! Let's battle!"}]
 tp @a[x=-1450,y=51,z=534,dx=3,dy=3,tag=!Dialogue85] ~ ~ ~-5
 
 playsound door ambient @a[x=-1450,y=51,z=534,dx=3,dy=3] ~ ~ ~ 100 1 1
@@ -910,7 +902,7 @@ tp @a[x=253,y=63,z=-165,dx=3,dy=3] 209 50 -133
 
 #Ruins North Gate
 playsound door ambient @a[x=224,y=64,z=-101,dx=2,dy=2] ~ ~ ~ 100 1 1
-scoreboard players set  @a[x=224,y=64,z=-101,dx=2,dy=2] click 1
+scoreboard players set @a[x=224,y=64,z=-101,dx=2,dy=2] click 1
 tp @a[x=224,y=64,z=-101,dx=2,dy=2] 262 64 -63
 
 playsound door ambient @a[x=261,y=64,z=-64,dx=2,dy=2] ~ ~ ~ 100 1 1
