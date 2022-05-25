@@ -1,0 +1,131 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "richboy.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Mega Stone Seller"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Hello there! I specialize in rare stones. Would you like to take a look?",
+      "goodbye": "Please come again!"
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:abomasite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:absolite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:aggronite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:audinite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:banettite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:blastoisinite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:blazikenite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:cameruptite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:charizardite_x",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:charizardite_y",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:diancite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:galladite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:garchompite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:gardevoirite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:glalitite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:lopunnite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:lucarionite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:manectite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:mawilite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:medichamite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:metagrossite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:sablenite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:salamencite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:sceptilite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:sharpedonite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:swampertite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:venusaurite",
+      "variation": false
+    }
+  ]
+}

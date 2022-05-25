@@ -1,8 +1,0 @@
-scoreboard players set @e[x=-867,y=69,z=-207,dy=4,dz=2,type=armor_stand] rng 0
-scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,type=armor_stand] rng 1
-scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,type=armor_stand] rng 2
-scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,type=armor_stand] rng 4
-scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,type=armor_stand] rng 8
-scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,type=armor_stand] rng 16
-scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,type=armor_stand] rng 32
-scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,type=armor_stand] rng 64

@@ -1,0 +1,27 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "streetthug.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Shady Merchant"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "How would you like to have this tasty, nutritious SlowpokeTail? For you right now, just $1,000,000! You'll want this!",
+      "goodbye": "Tch! I thought kids these days were loaded..."
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:slowpoke_tail",
+      "variation": false
+    }
+  ]
+}

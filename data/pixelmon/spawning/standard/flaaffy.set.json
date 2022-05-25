@@ -1,0 +1,55 @@
+{
+  "id": "Flaaffy",
+  "spawnInfos": [
+    {
+      "spec": "species:Flaaffy"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 14,
+      "maxLevel": 16,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": -59, "maxX": -4, "minZ": 154, "maxZ": 177,
+        "baseBlocks": ["minecraft:tall_grass"]
+      },
+      "rarity": 10.0
+    },
+
+    {
+      "spec": "species:Flaaffy"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 15,
+      "maxLevel": 17,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": -224, "maxX": -79, "minZ": 303, "maxZ": 523,
+        "times": [ "DAWN", "DUSK", "NIGHT" ],
+        "baseBlocks": ["minecraft:tall_grass"]
+      },
+      "rarity": 30.0
+    },
+    {
+      "spec": "species:Flaaffy"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 15,
+      "maxLevel": 17,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": -224, "maxX": -79, "minZ": 303, "maxZ": 523,
+        "times": [ "DAY" ],
+        "baseBlocks": ["minecraft:tall_grass"]
+      },
+      "rarity": 40.0
+    }
+
+
+  ]
+}

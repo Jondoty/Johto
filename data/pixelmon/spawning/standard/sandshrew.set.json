@@ -1,0 +1,35 @@
+{
+  "id": "Sandshrew",
+  "spawnInfos": [
+    {
+      "spec": "species:Sandshrew",
+      "stringLocationTypes": [
+        "Underground"
+      ],
+      "minLevel": 4,
+      "maxLevel": 6,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": 233, "maxX": 322, "minZ": -639, "maxZ": -478,
+        "baseBlocks": ["minecraft:stained_hardened_clay"]
+      },
+      "rarity": 30.0
+    },
+
+
+    {
+      "spec": "species:Sandshrew",
+      "stringLocationTypes": [
+        "Underground"
+      ],
+      "minLevel": 6,
+      "maxLevel": 12,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": -2261, "maxX": -2159, "minZ": 769, "maxZ": 853,
+        "baseBlocks": ["minecraft:stone", "minecraft:sand"]
+      },
+      "rarity": 20.0
+    }
+  ]
+}

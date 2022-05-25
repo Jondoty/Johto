@@ -1,0 +1,27 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "npcchat1.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Candy Salesman"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Hiya, kid! I see you're new in Mahogany Town. Since you're new, you should try a yummy RageCandyBar! Right now, it can be yours for just $300! Want one?",
+      "goodbye": "Oh, fine then..."
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:rage_candy_bar",
+      "variation": false
+    }
+  ]
+}

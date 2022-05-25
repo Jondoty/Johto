@@ -1,0 +1,39 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shopman.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Poké Mart Clerk"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Welcome! What do you need?",
+      "goodbye": "Please come again!"
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:poke_ball",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:potion",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:antidote",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:paralyze_heal",
+      "variation": false
+    }
+  ]
+}

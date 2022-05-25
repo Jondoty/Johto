@@ -1,0 +1,63 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shopman.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Poké Mart Clerk"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Welcome! What do you need?",
+      "goodbye": "Please come again!"
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:fire_stone",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:water_stone",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:thunder_stone",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:leaf_stone",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:moon_stone",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:sun_stone",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:dawn_stone",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:dusk_stone",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:shiny_stone",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:ever_stone",
+      "variation": false
+    }
+  ]
+}

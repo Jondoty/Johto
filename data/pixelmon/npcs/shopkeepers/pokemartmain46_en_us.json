@@ -1,0 +1,87 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shopman.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Bike Clerk"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Our Bicycles are first-rate! You can ride them anywhere.",
+      "goodbye": "Come again soon!"
+    }
+  ],
+  "items": [
+    {
+      "name": "Bike0",
+      "variation": false
+    },
+    {
+      "name": "Bike1",
+      "variation": false
+    },
+    {
+      "name": "Bike2",
+      "variation": false
+    },
+    {
+      "name": "Bike3",
+      "variation": false
+    },
+    {
+      "name": "Bike4",
+      "variation": false
+    },
+    {
+      "name": "Bike5",
+      "variation": false
+    },
+    {
+      "name": "Bike6",
+      "variation": false
+    },
+    {
+      "name": "Bike7",
+      "variation": false
+    },
+    {
+      "name": "Bike8",
+      "variation": false
+    },
+    {
+      "name": "Bike9",
+      "variation": false
+    },
+    {
+      "name": "Bike10",
+      "variation": false
+    },
+    {
+      "name": "Bike11",
+      "variation": false
+    },
+    {
+      "name": "Bike12",
+      "variation": false
+    },
+    {
+      "name": "Bike13",
+      "variation": false
+    },
+    {
+      "name": "Bike14",
+      "variation": false
+    },
+    {
+      "name": "Bike15",
+      "variation": false
+    }
+  ]
+}

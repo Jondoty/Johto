@@ -1,0 +1,35 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shopman.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "\"Poké Mart Clerk\""
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Huh? You hear wind blowing into this room? That is...just me whistling. Enough about that. Why don't you buy something?",
+      "goodbye": "Come back soon."
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:tiny_mushroom",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:poke_ball",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:potion",
+      "variation": false
+    }
+  ]
+}

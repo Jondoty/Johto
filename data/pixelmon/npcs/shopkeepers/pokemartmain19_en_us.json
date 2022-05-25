@@ -1,0 +1,27 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "rancher.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Moomoo Farms Rancher"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "How'd you like my Moomoo Milk? It's my pride and joy, there. Give it to Pokémon to restore HP!",
+      "goodbye": "Come back anytime!"
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:moomoo_milk",
+      "variation": false
+    }
+  ]
+}

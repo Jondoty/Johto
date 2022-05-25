@@ -1,0 +1,63 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shopman.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Poké Mart Clerk"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Welcome! What do you need?",
+      "goodbye": "Please come again!"
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:dubious_disc",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:electirizer",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:kings_rock",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:magmarizer",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:metal_coat",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:protector",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:up-grade",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:dragon_scale",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:razor_fang",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:razor_claw",
+      "variation": false
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shopman.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Poké Mart Clerk"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Welcome! What do you need?",
+      "goodbye": "Please come again!"
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:tm21",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:tm27",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:tm87",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:tm163",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:tm12",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:tm41",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:tm20",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:tm28",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:tm162",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:tm156",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:tm161",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:tm164",
+      "variation": false
+    }
+
+  ]
+}

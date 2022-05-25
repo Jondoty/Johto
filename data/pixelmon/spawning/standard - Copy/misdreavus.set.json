@@ -1,0 +1,42 @@
+{
+  "id": "Misdreavus",
+  "spawnInfos": [
+    {
+      "spec": "species:Misdreavus",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 10,
+      "maxLevel": 30,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "roofed",
+          "evil"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Misdreavus palette:pink",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 10,
+      "maxLevel": 30,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "roofed"
+        ]
+      },
+      "rarity": 0
+    }
+  ]
+}

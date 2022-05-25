@@ -1,0 +1,47 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shopman.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Poké Mart Clerk"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Welcome! What do you need?",
+      "goodbye": "Please come again!"
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:protein",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:iron",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:calcium",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:zinc",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:carbos",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:hp_up",
+      "variation": false
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shopman.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Poké Mart Clerk"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Welcome! What do you need?",
+      "goodbye": "Please come again!"
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:poke_ball",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:great_ball",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:ultra_ball",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:premier_ball",
+      "variation": false
+    },
+    {
+      "name": "minecraft:ender_eye",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:repel",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:super_repel",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:max_repel",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:pokemail_grass",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:pokemail_flame",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:pokemail_bubble",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:pokemail_space",
+      "variation": false
+    }
+  ]
+}

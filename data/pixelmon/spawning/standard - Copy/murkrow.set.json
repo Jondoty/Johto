@@ -1,0 +1,48 @@
+{
+  "id": "Murkrow",
+  "spawnInfos": [
+    {
+      "spec": "species:Murkrow",
+      "stringLocationTypes": [
+        "Tree Top",
+        "Headbutt"
+      ],
+      "minLevel": 5,
+      "maxLevel": 29,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "DUSK",
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "all forests",
+          "swamps",
+          "evil"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Murkrow",
+      "stringLocationTypes": [
+        "Air"
+      ],
+      "minLevel": 5,
+      "maxLevel": 29,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "DUSK",
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "all forests",
+          "swamps",
+          "evil"
+        ]
+      },
+      "rarity": 0
+    }
+  ]
+}

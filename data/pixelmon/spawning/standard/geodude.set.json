@@ -1,0 +1,342 @@
+{
+  "id": "Geodude",
+  "spawnInfos": [
+    {
+      "spec": "species:Geodude",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 23,
+      "maxLevel": 27,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:ever_stone",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+          "minX": -650, "maxX": -535, "minZ": -298, "maxZ": 95,
+          "baseBlocks": ["minecraft:tall_grass"]
+      },
+      "rarity": 30.0
+    },
+
+
+    {
+      "spec": "species:Geodude",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 2,
+      "maxLevel": 4,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:ever_stone",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+          "minX": -521, "maxX": -409, "minZ": -468, "maxZ": -319,
+          "times": [ "DAWN", "DUSK", "DAY" ],
+          "baseBlocks": ["minecraft:tall_grass"]
+      },
+      "rarity": 40.0
+    },
+    {
+      "spec": "species:Geodude",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 2,
+      "maxLevel": 4,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:ever_stone",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+          "minX": -521, "maxX": -409, "minZ": -468, "maxZ": -319,
+          "times": [ "NIGHT" ],
+          "baseBlocks": ["minecraft:tall_grass"]
+      },
+      "rarity": 45.0
+    },
+
+
+
+    {
+      "spec": "species:Geodude",
+      "stringLocationTypes": [
+        "Underground"
+      ],
+      "minLevel": 4,
+      "maxLevel": 6,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:ever_stone",
+          "percentChance": 5
+        }
+        ],
+      "condition": {
+        "minX": 233, "maxX": 322, "minZ": -639, "maxZ": -478,
+        "baseBlocks": ["minecraft:stained_hardened_clay"]
+      },
+      "rarity": 10.0
+    },
+
+
+    {
+      "spec": "species:Geodude",
+      "stringLocationTypes": [
+        "Underground"
+      ],
+      "minLevel": 2,
+      "maxLevel": 4,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:ever_stone",
+          "percentChance": 5
+        }
+        ],
+      "condition": {
+        "minX": -418, "maxX": -206, "minZ": -191, "maxZ": -11,
+        "baseBlocks": ["minecraft:stained_hardened_clay"]
+      },
+      "rarity": 60.0
+    },
+    {
+      "spec": "species:Geodude",
+      "stringLocationTypes": [
+        "Underground"
+      ],
+      "minLevel": 23,
+      "maxLevel": 25,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:ever_stone",
+          "percentChance": 5
+        }
+        ],
+      "condition": {
+        "minX": -437, "maxX": -280, "minZ": -10, "maxZ": 128,
+          "baseBlocks": ["minecraft:stained_hardened_clay", "minecraft:hardened_clay"]
+      },
+      "rarity": 30.0
+    },
+
+
+    {
+      "spec": "species:Geodude",
+      "stringLocationTypes": [
+        "Land",
+        "Underground"
+      ],
+      "minLevel": 14,
+      "maxLevel": 16,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:ever_stone",
+          "percentChance": 5
+        }
+        ],
+      "condition": {
+        "minX": -22, "maxX": 206, "minY": 42, "maxY": 66, "minZ": 217, "maxZ": 301,
+          "baseBlocks": ["minecraft:stained_hardened_clay"]
+      },
+      "rarity": 5.0
+    },
+    {
+      "spec": "species:Geodude",
+      "stringLocationTypes": [
+        "Land",
+        "Underground"
+      ],
+      "minLevel": 14,
+      "maxLevel": 16,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:ever_stone",
+          "percentChance": 5
+        }
+        ],
+      "condition": {
+        "minX": -22, "maxX": 206, "minY": 42, "maxY": 66, "minZ": 302, "maxZ": 493,
+          "baseBlocks": ["minecraft:stained_hardened_clay"]
+      },
+      "rarity": 50.0
+    },
+    {
+      "spec": "species:Geodude",
+      "stringLocationTypes": [
+        "Land",
+        "Underground"
+      ],
+      "minLevel": 28,
+      "maxLevel": 30,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:ever_stone",
+          "percentChance": 5
+        }
+        ],
+      "condition": {
+        "minX": -22, "maxX": 206, "minY": 69, "maxY": 82, "minZ": 217, "maxZ": 565,
+          "baseBlocks": ["minecraft:stained_hardened_clay"]
+      },
+      "rarity": 20.0
+    },
+    {
+      "spec": "species:Geodude",
+      "stringLocationTypes": [
+        "Land",
+        "Underground"
+      ],
+      "minLevel": 15,
+      "maxLevel": 17,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:ever_stone",
+          "percentChance": 5
+        }
+        ],
+      "condition": {
+        "minX": -22, "maxX": 206, "minY": 27, "maxY": 42, "minZ": 217, "maxZ": 404,
+          "baseBlocks": ["minecraft:stained_hardened_clay"]
+      },
+      "rarity": 10.0
+    },
+
+
+    {
+      "spec": "species:Geodude",
+      "stringLocationTypes": [
+        "Land",
+        "Underground"
+      ],
+      "minLevel": 10,
+      "maxLevel": 13,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:ever_stone",
+          "percentChance": 5
+        }
+        ],
+      "condition": {
+        "minX": -3401, "maxX": -3191, "minY": 28, "maxY": 54, "minZ": 528, "maxZ": 701,
+        "baseBlocks": ["minecraft:dirt", "minecraft:soul_sand"]
+      },
+      "rarity": 30.0
+    },
+
+
+
+    {
+      "spec": "species:Geodude",
+      "stringLocationTypes": [
+        "Underground"
+      ],
+      "minLevel": 6,
+      "maxLevel": 12,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:ever_stone",
+          "percentChance": 5
+        }
+        ],
+      "condition": {
+        "minX": -2261, "maxX": -2159, "minZ": 769, "maxZ": 853,
+        "baseBlocks": ["minecraft:stone", "minecraft:sand"]
+      },
+      "rarity": 30.0
+    },
+
+
+
+    {
+      "spec": "species:Geodude",
+        "form": 1
+      ,
+      "stringLocationTypes": [
+        "Land",
+        "Rock Smash"
+      ],
+      "minLevel": 10,
+      "maxLevel": 25,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:cell_battery",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "stringBiomes": [
+          "mutated_extreme_hills",
+          "mutated_savanna",
+          "ultra_deep_sea"
+        ]
+      },
+      "rarity": 0.0
+    },
+    {
+      "spec": "species:Geodude",
+        "form": 0
+      ,
+      "stringLocationTypes": [
+        "Underground"
+      ],
+      "minLevel": 10,
+      "maxLevel": 25,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:ever_stone",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "maxY": 70
+      },
+      "rarity": 0.0
+    },
+    {
+      "spec": "species:Geodude",
+        "form": 1
+      ,
+      "stringLocationTypes": [
+        "Underground"
+      ],
+      "minLevel": 10,
+      "maxLevel": 25,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:cell_battery",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "stringBiomes": [
+          "mountainous",
+          "savannas",
+          "freezing mountains"
+        ],
+        "maxY": 70
+      },
+      "rarity": 0.0
+    }
+  ]
+}

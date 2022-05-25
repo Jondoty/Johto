@@ -1,0 +1,31 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shopman.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Backpack Merchant"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Welcome! What do you need?",
+      "goodbye": "Please come again!"
+    }
+  ],
+  "items": [
+    {
+      "name": "minecraft:white_shulker_box",
+      "variation": false
+    },
+    {
+      "name": "minecraft:diamond_pickaxe",
+      "variation": false
+    }
+  ]
+}

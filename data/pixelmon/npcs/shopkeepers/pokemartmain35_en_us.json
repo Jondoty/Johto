@@ -1,0 +1,35 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shopman.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Poké Mart Clerk"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Welcome! What do you need?",
+      "goodbye": "Please come again!"
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:pokemail_air",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:dusk_ball",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:quick_ball",
+      "variation": false
+    }
+  ]
+}

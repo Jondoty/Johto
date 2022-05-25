@@ -1,0 +1,27 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shopman.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Radio Seller"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Hello! This is just a test, but would you like another radio?",
+      "goodbye": "Glad it seems to be working!"
+    }
+  ],
+  "items": [
+    {
+      "name": "minecraft:carrot_on_a_stick",
+      "variation": false
+    }
+  ]
+}

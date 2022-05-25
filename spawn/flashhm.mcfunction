@@ -1,1 +1,0 @@
-give @s minecraft:firework_rocket{display:{Name:'[{"text":"HM05: Flash","italic":false}]',Lore:['[{"text":"Illuminates the user\'s vision for","italic":false}]','[{"text":"fifteen minutes.","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 16

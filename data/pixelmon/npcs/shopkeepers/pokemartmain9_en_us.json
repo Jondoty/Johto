@@ -1,0 +1,91 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shopman.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Poké Mart Clerk"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "I have travled the world for these exotic plates! Interested in one?",
+      "goodbye": "See you next time."
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:meadow_plate",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:flame_plate",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:splash_plate",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:sky_plate",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:insect_plate",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:toxic_plate",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:zap_plate",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:mind_plate",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:stone_plate",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:earth_plate",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:dread_plate",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:spooky_plate",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:iron_plate",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:fist_plate",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:icicle_plate",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:draco_plate",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:pixie_plate",
+      "variation": false
+    }
+  ]
+}

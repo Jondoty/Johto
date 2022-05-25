@@ -1,0 +1,51 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shopman.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Poké Mart Clerk"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Welcome! What do you need?",
+      "goodbye": "Please come again!"
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:x_speed",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:x_attack",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:x_defence",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:dire_hit",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:x_accuracy",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:x_special_attack",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:x_special_defence",
+      "variation": false
+    }
+  ]
+}

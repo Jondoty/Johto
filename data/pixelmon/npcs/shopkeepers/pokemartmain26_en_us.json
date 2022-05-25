@@ -1,0 +1,59 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "oldwoman.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Grandma"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Whistle...whistle... Are you bothered by that noise? That's me. My false teeth don't fit right, and the gap makes the noise. Enough about that. Why don't you buy something?",
+      "goodbye": "Is that right? Well, come back anytime! Hee hee!"
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:rage_candy_bar",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:great_ball",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:super_potion",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:hyper_potion",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:antidote",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:paralyze_heal",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:super_potion",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:revive",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:pokemail_air",
+      "variation": false
+    }
+  ]
+}

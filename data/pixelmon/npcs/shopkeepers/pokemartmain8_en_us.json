@@ -1,0 +1,39 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shopman.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Poké Mart Clerk"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Welcome to the Herbal Shop. Would you like to try our items?",
+      "goodbye": "See you next time."
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:heal_powder",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:energy_powder",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:energy_root",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:revival_herb",
+      "variation": false
+    }
+  ]
+}

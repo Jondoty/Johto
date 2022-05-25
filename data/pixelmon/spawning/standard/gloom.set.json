@@ -1,0 +1,55 @@
+{
+  "id": "Gloom",
+  "spawnInfos": [
+    {
+      "spec": "species:Gloom"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 31,
+      "maxLevel": 35,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": 1406, "maxX": 1436, "minZ": -373, "maxZ": -349,
+        "baseBlocks": ["minecraft:tall_grass"]
+      },
+      "rarity": 5.0
+    },
+
+
+    {
+      "spec": "species:Gloom"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 21,
+      "maxLevel": 24,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": 1575, "maxX": 1618, "minZ": -296, "maxZ": -248,
+        "baseBlocks": ["minecraft:tall_grass"]
+      },
+      "rarity": 20.0
+    },
+
+
+    {
+      "spec": "species:Gloom"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 12,
+      "maxLevel": 15,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": -2775, "maxX": -2724, "minZ": 542, "maxZ": 614,
+        "baseBlocks": ["minecraft:tall_grass"]
+      },
+      "rarity": 10.0
+    }
+
+  ]
+}

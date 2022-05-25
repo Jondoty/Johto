@@ -1,0 +1,31 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "npcchat1.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Daycare Gent"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Welcome to the Daycare!",
+      "goodbye": "See you next time."
+    }
+  ],
+"items": [
+  {
+    "name": "minecraft:egg",
+    "variation": false
+  },
+  {
+    "name": "pixelmon:ranch",
+    "variation": false
+  }
+]
+}

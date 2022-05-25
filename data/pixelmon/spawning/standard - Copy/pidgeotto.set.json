@@ -1,0 +1,46 @@
+{
+  "id": "Pidgeotto",
+  "spawnInfos": [
+    {
+      "spec": "species:Pidgeotto",
+      "stringLocationTypes": [
+        "Air",
+        "Headbutt"
+      ],
+      "minLevel": 16,
+      "maxLevel": 36,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "forests",
+          "plains",
+          "taigas"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Pidgeotto palette:pink",
+      "stringLocationTypes": [
+        "Air"
+      ],
+      "minLevel": 16,
+      "maxLevel": 36,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "forests",
+          "plains",
+          "taigas"
+        ]
+      },
+      "rarity": 0
+    }
+  ]
+}
