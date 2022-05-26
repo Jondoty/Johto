@@ -2,9 +2,8 @@
   "id": "Hippopotas Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Hippopotas"
-      },
+      "spec": "species:Hippopotas"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -19,9 +18,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Hippowdon"
-      },
+      "spec": "species:Hippowdon"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

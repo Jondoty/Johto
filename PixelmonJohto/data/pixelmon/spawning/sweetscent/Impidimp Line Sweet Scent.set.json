@@ -2,9 +2,8 @@
   "id": "Impidimp Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Impidimp"
-      },
+      "spec": "species:Impidimp"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -25,9 +24,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Morgrem"
-      },
+      "spec": "species:Morgrem"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

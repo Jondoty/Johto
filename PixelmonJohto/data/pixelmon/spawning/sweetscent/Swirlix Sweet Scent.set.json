@@ -2,9 +2,8 @@
   "id": "Swirlix Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Swirlix"
-      },
+      "spec": "species:Swirlix"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

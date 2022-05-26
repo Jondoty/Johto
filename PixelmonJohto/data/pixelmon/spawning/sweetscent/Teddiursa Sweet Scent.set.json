@@ -2,9 +2,8 @@
   "id": "Teddiursa Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Teddiursa"
-      },
+      "spec": "species:Teddiursa"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -19,9 +18,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Ursaring"
-      },
+      "spec": "species:Ursaring"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

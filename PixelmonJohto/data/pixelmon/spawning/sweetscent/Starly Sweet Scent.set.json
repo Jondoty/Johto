@@ -2,9 +2,8 @@
   "id": "Starly Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Starly"
-      },
+      "spec": "species:Starly"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

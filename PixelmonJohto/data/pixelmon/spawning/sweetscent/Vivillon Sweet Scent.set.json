@@ -2,10 +2,9 @@
   "id": "Vivillon Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Vivillon",
+      "spec": "species:Vivillon",
         "form": 19
-      },
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

@@ -1,3 +1,13 @@
+
+#Entities are moving and I don't want them to
+effect give @e[type=pixelmon:npc_trainer] minecraft:slowness 1000 100 true
+effect give @e[type=pixelmon:npc_chatting] minecraft:slowness 1000 100 true
+effect give @e[type=pixelmon:npc_nursejoy] minecraft:slowness 1000 100 true
+effect give @e[type=pixelmon:npc_shopkeeper] minecraft:slowness 1000 100 true
+effect give @e[type=pixelmon:npc_trader] minecraft:slowness 1000 100 true
+effect give @e[type=pixelmon:npc_tutor] minecraft:slowness 1000 100 true
+
+
 #Item Clears
 clear @a[gamemode=adventure] minecraft:ender_pearl
 clear @a[gamemode=adventure] minecraft:oak_log
@@ -32,7 +42,7 @@ execute as @a[scores={ArceusCD=1}] run scoreboard players remove @s ArceusCD 1
 #Dialga Returning a Red Chain
 execute as @a[scores={DialgaCD=1}] run playsound minecraft:entity.lightning.thunder ambient @s ~ ~ ~ 10 1 1
 execute as @a[scores={DialgaCD=1}] run playsound minecraft:entity.lightning.impact ambient @s ~ ~ ~ 10 1 1
-execute @a[scores={DialgaCD=1}] run give @s pixelmon:red_chain{display:{Lore:["A chain used in summoning Dialga,","Palkia and Giratina at an alter."]}}
+execute as @a[scores={DialgaCD=1}] run give @s pixelmon:red_chain{display:{Lore:["A chain used in summoning Dialga,","Palkia and Giratina at an alter."]}}
 execute as @a[scores={DialgaCD=1}] run playsound dialga ambient @s ~ ~ ~ 1000 1 1
 execute as @a[scores={DialgaCD=1}] run scoreboard players remove @s DialgaCD 1
 

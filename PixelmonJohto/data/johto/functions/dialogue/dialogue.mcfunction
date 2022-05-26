@@ -66,12 +66,12 @@
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#Scans and removes DialogueTrigger score if player already has specific Dialogue tag
+#Ends dialogues and scans for duplicate dialogues, will stop dialogue if tag is present while also having equal dialogue number.
 
-execute as @s[scores={score_DialogueTrigger=1..,TalkTime=0}] run function johto:dialogue/duplicateend
+execute as @s run function johto:dialogue/enddialogue
 
 #Adds timings
-scoreboard players add @a[scores={DialogueTrigger=1..}] TalkTime 1
+scoreboard players add @s[scores={DialogueTrigger=1..}] TalkTime 1
 
 
 
@@ -106,7 +106,7 @@ tellraw @s[scores={DialogueTrigger=1,TalkTime=87}] {"text":"<Professor Oak> A wo
 tellraw @s[scores={DialogueTrigger=1,TalkTime=95}] {"text":"<Professor Oak> Let's go! I'll be seeing you later!"}
 
 #Tp return statue
-execute as @s[scores={DialogueTrigger=1,TalkTime=102}] run tp @e[x=-965,y=65,z=-407,dy=2,dz=1,type=pixelmon:statue] -744 75 -242
+execute as @s[scores={DialogueTrigger=1,TalkTime=102}] run tp @e[x=-965,y=65,z=-407,dx=1,dy=2,dz=1,type=pixelmon:statue] -744 75 -242
 
 #tp player to New Bark Town
 execute as @s[scores={DialogueTrigger=1,TalkTime=103}] run playsound flee ambient @s ~ ~ ~ 100 1 1
@@ -114,8 +114,6 @@ execute as @s[scores={DialogueTrigger=1,TalkTime=103}] run tp @s -724 69 -491
 execute as @s[scores={DialogueTrigger=1,TalkTime=103}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=1,TalkTime=103..}] add Dialogue1
-scoreboard players set @s[tag=Dialogue1] TalkTime 0
-scoreboard players set @s[tag=Dialogue1] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Mom's opening dialogue when you walk downstairs
@@ -126,8 +124,6 @@ tellraw @s[scores={DialogueTrigger=2,TalkTime=8}] {"text":"<Mom> Our neighbor, P
 tellraw @s[scores={DialogueTrigger=2,TalkTime=17}] {"text":"<Mom> He said he wanted you to do something for him."}
 
 tag @s[scores={DialogueTrigger=2,TalkTime=103..}] add Dialogue2
-scoreboard players set @s[tag=Dialogue2] TalkTime 0
-scoreboard players set @s[tag=Dialogue2] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Professor Elm's first Dialogue
@@ -146,8 +142,6 @@ tellraw @s[scores={DialogueTrigger=3,TalkTime=66}] {"text":"<Professor Elm> Go o
 execute as @s[scores={DialogueTrigger=3,TalkTime=66}] run clone -686 62 -487 -690 62 -487 -689 65 -479
 
 tag @s[scores={DialogueTrigger=3,TalkTime=66..}] add Dialogue3
-scoreboard players set @s[tag=Dialogue3] TalkTime 0
-scoreboard players set @s[tag=Dialogue3] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Professor Elm post-Starters
@@ -162,8 +156,6 @@ execute as @s[scores={DialogueTrigger=4,TalkTime=35}] run give @s pixelmon:potio
 tellraw @s[scores={DialogueTrigger=4,TalkTime=40}] ["",{"text":"<"},{"text":"Elm's Aide","color":"gray"},{"text":"> There are only two of us, so we're always busy."}]
 
 tag @s[scores={DialogueTrigger=4,TalkTime=40..}] add Dialogue4
-scoreboard players set @s[tag=Dialogue4] TalkTime 0
-scoreboard players set @s[tag=Dialogue4] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #https://youtu.be/HQEaaIuyKAM?t=943
@@ -211,8 +203,6 @@ execute as @s[scores={DialogueTrigger=5,TalkTime=190}] run scoreboard players se
 tellraw @s[scores={DialogueTrigger=5,TalkTime=190}] ["",{"text":"<"},{"text":"Mr. Pokémon","color":"gray"},{"text":"> I'm depending on you!"}]
 
 tag @s[scores={DialogueTrigger=5,TalkTime=190..}] add Dialogue5
-scoreboard players set @s[tag=Dialogue5] TalkTime 0
-scoreboard players set @s[tag=Dialogue5] DialogueTrigger 0
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #
 #Silver Cherrygrove first battle pre-battle
@@ -230,8 +220,6 @@ tellraw @s[scores={DialogueTrigger=6,TalkTime=20}] {"text":"< . . . > Don't you 
 execute as @s[scores={DialogueTrigger=6,TalkTime=30}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=6,TalkTime=30..}] add Dialogue6
-scoreboard players set @s[tag=Dialogue6] TalkTime 0
-scoreboard players set @s[tag=Dialogue6] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Silver Cherrygrove first battle post-battle
@@ -251,8 +239,6 @@ execute as @s[scores={DialogueTrigger=7,TalkTime=17}] run tp @e[x=-300,y=64,z=-5
 execute as @s[scores={DialogueTrigger=7,TalkTime=17}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=7,TalkTime=17..}] add Dialogue7
-scoreboard players set @s[tag=Dialogue7] TalkTime 0
-scoreboard players set @s[tag=Dialogue7] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Elm after visiting Mr. Pokémon
@@ -305,8 +291,6 @@ tellraw @s[scores={DialogueTrigger=8,TalkTime=178}] ["",{"text":"<"},{"text":"El
 tellraw @s[scores={DialogueTrigger=8,TalkTime=186}] ["",{"text":"<"},{"text":"Elm's Aide","color":"gray"},{"text":"> Throw Poké Balls at wild Pokémon to get them."}]
 
 tag @s[scores={DialogueTrigger=8,TalkTime=186..}] add Dialogue8
-scoreboard players set @s[tag=Dialogue8] TalkTime 0
-scoreboard players set @s[tag=Dialogue8] DialogueTrigger 0
 
 #Starter Invisibility post-Silver
 #execute as @s[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,tag=Dialogue5,score_StarterPick_min=2,score_StarterPick=2] run /effect give @e[x=-685,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue] minecraft:invisibility 10 1 true
@@ -337,8 +321,6 @@ execute as @s[scores={DialogueTrigger=9,TalkTime=64}] run tp @e[x=57,y=103,z=29,
 
 
 tag @s[scores={DialogueTrigger=9,TalkTime=64..}] add Dialogue9
-scoreboard players set @s[tag=Dialogue9] TalkTime 0
-scoreboard players set @s[tag=Dialogue9] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Elder Li post-battle
@@ -355,8 +337,6 @@ tellraw @s[scores={DialogueTrigger=10,TalkTime=17}] {"text":"<Elder Li> Flash il
 tellraw @s[scores={DialogueTrigger=10,TalkTime=25}] {"text":"<Elder Li> I hope you learn and grow from your journey."}
 
 tag @s[scores={DialogueTrigger=10,TalkTime=25..}] add Dialogue10
-scoreboard players set @s[tag=Dialogue10] TalkTime 0
-scoreboard players set @s[tag=Dialogue10] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Falkner Pre-battle
@@ -369,8 +349,6 @@ tellraw @s[scores={DialogueTrigger=11,TalkTime=26}] {"text":"<Falkner> I'll show
 execute as @s[scores={DialogueTrigger=11,TalkTime=26}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=10,TalkTime=26..}] add Dialogue11
-scoreboard players set @s[tag=Dialogue11] TalkTime 0
-scoreboard players set @s[tag=Dialogue11] DialogueTrigger 0
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -402,8 +380,6 @@ tellraw @s[scores={DialogueTrigger=12,TalkTime=55}] {"text":"<Falkner> There are
 tellraw @s[scores={DialogueTrigger=12,TalkTime=64}] {"text":"<Falkner> As for your next move... I would suggest Azalea Town."}
 
 tag @s[scores={DialogueTrigger=12TalkTime=64..}] add Dialogue12
-scoreboard players set @s[tag=Dialogue12] TalkTime 0
-scoreboard players set @s[tag=Dialogue12] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Elm's Aide giving Togepi Egg after Falkner
@@ -425,8 +401,6 @@ execute as @s[scores={DialogueTrigger=13,TalkTime=50}] run tp @e[x=11,y=63,z=-10
 execute as @s[scores={DialogueTrigger=13,TalkTime=50}] run particle cloud 11 64 -100 1 1 1 1 100
 
 tag @s[scores={DialogueTrigger=13,TalkTime=50..}] add Dialogue13
-scoreboard players set @s[tag=Dialogue13] TalkTime 0
-scoreboard players set @s[tag=Dialogue13] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Kurt first encounter in his house
@@ -450,8 +424,6 @@ execute as @s[scores={DialogueTrigger=14,TalkTime=68}] run tp @e[x=371,y=63,z=-6
 execute as @s[scores={DialogueTrigger=14,TalkTime=68}] run particle cloud 371 64 -698 1 1 1 1 100
 
 tag @s[scores={DialogueTrigger=14,TalkTime=68..}] add Dialogue14
-scoreboard players set @s[tag=Dialogue14] TalkTime 0
-scoreboard players set @s[tag=Dialogue14] DialogueTrigger 0
 
 #tps out Kurt trader villagers if player hasn't completed the Well quest
 #execute as @p[x=371,y=64,z=-698,distance=..25,tag=!Dialogue16] run /tp @e[x=-726,y=90,z=-242,dy=3,type=pixelmon:npc_chatting] 371 64 -698
@@ -480,8 +452,6 @@ tellraw @s[scores={DialogueTrigger=15,TalkTime=34}] ["",{"text":"<Kurt> Ah, it c
 
 
 tag @s[scores={DialogueTrigger=15,TalkTime=34..}] add Dialogue15
-scoreboard players set @s[tag=Dialogue15] TalkTime 0
-scoreboard players set @s[tag=Dialogue15] DialogueTrigger 0
 
 #Exterior guard tp in
 #execute as @p[x=244,y=56,z=-714,distance=..25,tag=!Dialogue14] run tp @e[x=-750,y=90,z=-242,dy=3,type=pixelmon:npc_chatting] 247 54 -714
@@ -539,8 +509,6 @@ tellraw @s[scores={DialogueTrigger=16,TalkTime=78}] {"text":"<Kurt> I make Balls
 tellraw @s[scores={DialogueTrigger=16,TalkTime=83}] {"text":"<Kurt> Collect them from trees and bring 'em to me. I'll make Balls out of them."}
 
 tag @s[scores={DialogueTrigger=16,TalkTime=83..}] add Dialogue16
-scoreboard players set @s[tag=Dialogue16] TalkTime 0
-scoreboard players set @s[tag=Dialogue16] DialogueTrigger 0
 
 #tp villager traders in
 #execute as @p[x=371,y=64,z=-698,distance=..25,tag=Dialogue16,score_TalkTime=0] run tp @e[x=-724,y=90,z=-242,dy=3,type=villager,name=Kurt,limit=1] 371.0 64 -698
@@ -557,8 +525,6 @@ tellraw @s[scores={DialogueTrigger=17,TalkTime=19}] {"text":"<Bugsy> Let me demo
 execute as @s[scores={DialogueTrigger=17,TalkTime=27}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=17,TalkTime=27..}] add Dialogue17
-scoreboard players set @s[tag=Dialogue17] TalkTime 0
-scoreboard players set @s[tag=Dialogue17] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Bugsy Post-battle Dialogue
@@ -571,7 +537,7 @@ execute as @s[scores={DialogueTrigger=18,TalkTime=1}] run clear @s minecraft:net
 #gives Badge
 execute as @s[scores={DialogueTrigger=18,TalkTime=1}] run stopsound @s record
 execute as @s[scores={DialogueTrigger=18,TalkTime=1}] run playsound badge ambient @s ~ ~ ~ 100 1 1
-execute as @s[scores={DialogueTrigger=18,TalkTime=1}] run give @s pixelmon:hive_Badge 1
+execute as @s[scores={DialogueTrigger=18,TalkTime=1}] run give @s pixelmon:hive_badge 1
 execute as @s[scores={DialogueTrigger=18,TalkTime=9}] run scoreboard players set @s click 1
 execute as @s[scores={DialogueTrigger=18,TalkTime=9}] run advancement grant @s only johto:badge2
 
@@ -586,8 +552,6 @@ tellraw @s[scores={DialogueTrigger=18,TalkTime=37}] {"text":"<Bugsy> It lets you
 tellraw @s[scores={DialogueTrigger=18,TalkTime=47}] {"text":"<Bugsy> Isn't that great?"}
 
 tag @s[scores={DialogueTrigger=18,TalkTime=47..}] add Dialogue18
-scoreboard players set @s[tag=Dialogue18] TalkTime 0
-scoreboard players set @s[tag=Dialogue18] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Azalea Town Silver pre-battle
@@ -607,8 +571,6 @@ tellraw @s[scores={DialogueTrigger=19,TalkTime=25}] ["",{"text":"<"},{"text":"Si
 execute as @s[scores={DialogueTrigger=19,TalkTime=25}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=19,TalkTime=25..}] add Dialogue19
-scoreboard players set @s[tag=Dialogue19] TalkTime 0
-scoreboard players set @s[tag=Dialogue19] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Azalea Town Silver post-battle
@@ -635,8 +597,6 @@ execute as @s[scores={DialogueTrigger=20,TalkTime=57}] run tp @e[x=402,y=64,z=-7
 execute as @s[scores={DialogueTrigger=20,TalkTime=57}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=20,TalkTime=57..}] add Dialogue20
-scoreboard players set @s[tag=Dialogue20] TalkTime 0
-scoreboard players set @s[tag=Dialogue20] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Ilex Forest HM Merchant before Farfetch'd is found
@@ -648,8 +608,7 @@ tellraw @s[scores={DialogueTrigger=21,TalkTime=9}] {"text":"<Charcoal Apprentice
 tellraw @s[scores={DialogueTrigger=21,TalkTime=17}] {"text":"<Charcoal Apprentice> It's too big, dark and scary for me..."}
 
 tag @s[scores={DialogueTrigger=21,TalkTime=17..}] add Dialogue21
-scoreboard players set @s[tag=Dialogue21] TalkTime 0
-scoreboard players set @s[tag=Dialogue21] DialogueTrigger 0
+
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #https://youtu.be/HQEaaIuyKAM?t=6325
@@ -677,8 +636,6 @@ execute as @s[scores={DialogueTrigger=22,TalkTime=60}] run tp @e[x=625,y=63,z=-7
 execute as @s[scores={DialogueTrigger=22,TalkTime=60}] run scoreboard players set @s Farfetchd 2
 
 tag @s[scores={DialogueTrigger=22,TalkTime=60..}] add Dialogue22
-scoreboard players set @s[tag=Dialogue22] TalkTime 0
-scoreboard players set @s[tag=Dialogue22] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Bike Shop Clerk giving player a bicycle
@@ -695,8 +652,6 @@ execute as @s[scores={DialogueTrigger=23,TalkTime=37}] run scoreboard players se
 execute as @s[scores={DialogueTrigger=23,TalkTime=37}] run scoreboard players set @s BicycleCD 25
 
 tag @s[scores={DialogueTrigger=23,TalkTime=37..}] add Dialogue23
-scoreboard players set @s[tag=Dialogue23] TalkTime 0
-scoreboard players set @s[tag=Dialogue23] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Bicycle Follow-up call
@@ -708,8 +663,6 @@ tellraw @s[scores={DialogueTrigger=26,TalkTime=25}] {"text":"<Bicycle Clerk> As 
 execute as @s[scores={DialogueTrigger=26,TalkTime=25}] run scoreboard players set @s Bicycle 2
 
 tag @s[scores={DialogueTrigger=26,TalkTime=25..}] add Dialogue26
-scoreboard players set @s[tag=Dialogue26] TalkTime 0
-scoreboard players set @s[tag=Dialogue26] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Charcoal Kiln after player finds Farfetch'd
@@ -723,8 +676,6 @@ tellraw @s[scores={DialogueTrigger=24,TalkTime=22}] {"text":"<Charcoal Apprentic
 tellraw @s[scores={DialogueTrigger=24,TalkTime=31}] {"text":"<Charcoal Apprentice> You're the coolest, man!"}
 
 tag @s[scores={DialogueTrigger=24,TalkTime=31..}] add Dialogue24
-scoreboard players set @s[tag=Dialogue24] TalkTime 0
-scoreboard players set @s[tag=Dialogue24] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #https://youtu.be/HQEaaIuyKAM?t=7812
@@ -737,8 +688,6 @@ tellraw @s[scores={DialogueTrigger=25,TalkTime=11}] {"text":"<DJ Reed> If you ge
 tellraw @s[scores={DialogueTrigger=25,TalkTime=18}] {"text":"<DJ Reed> Throw out a Pokémon, and let see if you have a match."}
 
 tag @s[scores={DialogueTrigger=25,TalkTime=18..}] add Dialogue25
-scoreboard players set @s[tag=Dialogue25] TalkTime 0
-scoreboard players set @s[tag=Dialogue25] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Goldenrod City Gym Whitney Opening Dialogue
@@ -751,8 +700,6 @@ tellraw @s[scores={DialogueTrigger=27,TalkTime=24}] {"text":"<Whitney> I'm warni
 execute as @s[scores={DialogueTrigger=27,TalkTime=24}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=27,TalkTime=24..}] add Dialogue27
-scoreboard players set @s[tag=Dialogue27] TalkTime 0
-scoreboard players set @s[tag=Dialogue27] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Whitney lose dialogue
@@ -793,8 +740,6 @@ tellraw @s[scores={DialogueTrigger=28,TalkTime=114}] {"text":"<Whitney> Isn't it
 tellraw @s[scores={DialogueTrigger=28,TalkTime=123}] {"text":"<Whitney> Ah, that was a good cry! Come for a visit again! Bye-bye!"}
 
 tag @s[scores={DialogueTrigger=28,TalkTime=123..}] add Dialogue28
-scoreboard players set @s[tag=Dialogue28] TalkTime 0
-scoreboard players set @s[tag=Dialogue28] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Flower Shop lady after beating Whitney
@@ -807,8 +752,6 @@ execute as @s[scores={DialogueTrigger=29,TalkTime=24}] run give @s minecraft:rab
 tellraw @s[scores={DialogueTrigger=29,TalkTime=30}] {"text":"<Shop Clerk> Lalala lalalala. Have plenty of water, my lovely!"}
 
 tag @s[scores={DialogueTrigger=29,TalkTime=30..}] add Dialogue29
-scoreboard players set @s[tag=Dialogue29] TalkTime 0
-scoreboard players set @s[tag=Dialogue29] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Sudowoodo Spawn
@@ -826,8 +769,6 @@ execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run advancement grant @s 
 execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run playsound pixelmon:pixelmon.mob.sudowoodo hostile @s ~ ~ ~ 100 1 1
 
 tag @s[scores={DialogueTrigger=30,TalkTime=25..}] add Dialogue30
-scoreboard players set @s[tag=Dialogue30] TalkTime 0
-scoreboard players set @s[tag=Dialogue30] DialogueTrigger 0
 
 #Sudowoodo Return Statue
 #execute as @s[x=332,y=64,z=-16,distance=..30,tag=!Dialogue30,score_TalkTime=0] run /tp @e[x=-791,y=79,z=-244,dy=3,type=pixelmon:statue] 333 64 -17
@@ -860,8 +801,6 @@ execute as @s[scores={DialogueTrigger=31,TalkTime=55}] run tp @e[x=343,y=63,z=21
 execute as @s[scores={DialogueTrigger=31,TalkTime=55}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=31,TalkTime=55..}] add Dialogue31
-scoreboard players set @s[tag=Dialogue31] TalkTime 0
-scoreboard players set @s[tag=Dialogue31] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #HM Surf Guy before battling the Kimono Girls
@@ -872,8 +811,6 @@ tellraw @s[scores={DialogueTrigger=32,TalkTime=11}] {"text":"<...> I always chal
 tellraw @s[scores={DialogueTrigger=32,TalkTime=21}] {"text":"<...> Lad! If you can defeat all the Kimono Girls, I'll give you a gift."}
 
 tag @s[scores={DialogueTrigger=32,TalkTime=21..}] add Dialogue32
-scoreboard players set @s[tag=Dialogue32] TalkTime 0
-scoreboard players set @s[tag=Dialogue32] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #HM Surf Guy after battling the Kimono Girls
@@ -887,8 +824,6 @@ execute as @s[scores={DialogueTrigger=33,TalkTime=24}] run give @s pixelmon:hm3
 tellraw @s[scores={DialogueTrigger=33,TalkTime=26}] {"text":"<...> That's Surf. It's a move that lets Pokémon swim across water."}
 
 tag @s[scores={DialogueTrigger=33,TalkTime=26..}] add Dialogue33
-scoreboard players set @s[tag=Dialogue33] TalkTime 0
-scoreboard players set @s[tag=Dialogue33] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Ecruteak Burned Tower Silver pre-battle
@@ -909,8 +844,6 @@ tellraw @s[scores={DialogueTrigger=34,TalkTime=49}] ["",{"text":"<"},{"text":"Si
 execute as @s[scores={DialogueTrigger=34,TalkTime=59}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=34,TalkTime=59..}] add Dialogue34
-scoreboard players set @s[tag=Dialogue34] TalkTime 0
-scoreboard players set @s[tag=Dialogue34] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Ecruteak Burned Tower Silver post-battle
@@ -932,8 +865,6 @@ execute as @s[scores={DialogueTrigger=35,TalkTime=23}] run particle cloud 441 64
 execute as @s[scores={DialogueTrigger=35,TalkTime=23}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=35,TalkTime=23..}] add Dialogue35
-scoreboard players set @s[tag=Dialogue35] TalkTime 0
-scoreboard players set @s[tag=Dialogue35] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Legendary Dog statues
@@ -967,8 +898,6 @@ execute as @s[scores={DialogueTrigger=36,TalkTime=22}] run advancement grant @s 
 execute as @s[scores={DialogueTrigger=36,TalkTime=22}] run execute as @e[x=-809,y=78,z=-246,dx=14,dy=5,dz=4,type=pixelmon:statue] run data modify entity @s {statueTexture:3s,Animate:0b}
 
 tag @s[scores={DialogueTrigger=36,TalkTime=22..}] add Dialogue36
-scoreboard players set @s[tag=Dialogue36] TalkTime 0
-scoreboard players set @s[tag=Dialogue36] DialogueTrigger 0
 
 
 #Dog Statue Resets
@@ -989,8 +918,6 @@ tellraw @s[scores={DialogueTrigger=37,TalkTime=50}] {"text":"<Morty> You're goin
 execute as @s[scores={DialogueTrigger=37,TalkTime=50}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=37,TalkTime=50..}] add Dialogue37
-scoreboard players set @s[tag=Dialogue37] TalkTime 0
-scoreboard players set @s[tag=Dialogue37] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Eceuteak City Gym Morty post-battle
@@ -1016,8 +943,6 @@ tellraw @s[scores={DialogueTrigger=38,TalkTime=40}] {"text":"<Morty> I see... Yo
 tellraw @s[scores={DialogueTrigger=38,TalkTime=49}] {"text":"<Morty> And you have witnessed much more than me. I envy you for that..."}
 
 tag @s[scores={DialogueTrigger=38,TalkTime=49..}] add Dialogue38
-scoreboard players set @s[tag=Dialogue38] TalkTime 0
-scoreboard players set @s[tag=Dialogue38] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Silver outside Olivine City Gym
@@ -1040,8 +965,6 @@ execute as @s[scores={DialogueTrigger=39,TalkTime=53}] run tp @e[x=809,y=63,z=14
 execute as @s[scores={DialogueTrigger=39,TalkTime=53}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=39,TalkTime=53..}] add Dialogue39
-scoreboard players set @s[tag=Dialogue39] TalkTime 0
-scoreboard players set @s[tag=Dialogue39] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Olivine Lighthouse Ampharos is sick
@@ -1061,8 +984,6 @@ tellraw @s[scores={DialogueTrigger=40,TalkTime=29}] {"text":"<Jasmine> But that'
 tellraw @s[scores={DialogueTrigger=40,TalkTime=39}] {"text":"<Jasmine> ...May I ask you to get some medicine for me? Please?"}
 
 tag @s[scores={DialogueTrigger=40,TalkTime=39..}] add Dialogue40
-scoreboard players set @s[tag=Dialogue40] TalkTime 0
-scoreboard players set @s[tag=Dialogue40] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Cianwood City Medicine Doctor
@@ -1076,8 +997,6 @@ execute as @s[scores={DialogueTrigger=41,TalkTime=23}] run give @s minecraft:mus
 tellraw @s[scores={DialogueTrigger=41,TalkTime=27}] {"text":"<Pharmacy Doctor> My Secretpotion is a tad too strong. I only offer it in an emergency."}
 
 tag @s[scores={DialogueTrigger=41,TalkTime=27..}] add Dialogue41
-scoreboard players set @s[tag=Dialogue41] TalkTime 0
-scoreboard players set @s[tag=Dialogue41] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Olivine Lighthouse curing Ampharos
@@ -1112,8 +1031,6 @@ execute as @s[scores={DialogueTrigger=42,TalkTime=59}] run tp @e[x=705,y=119,z=-
 execute as @s[scores={DialogueTrigger=42,TalkTime=59}] run advancement grant @s only johto:lighthousepokemon
 
 tag @s[scores={DialogueTrigger=42,TalkTime=59..}] add Dialogue42
-scoreboard players set @s[tag=Dialogue42] TalkTime 0
-scoreboard players set @s[tag=Dialogue42] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Cianwood Chuck's Wife post-badge
@@ -1127,8 +1044,6 @@ tellraw @s[scores={DialogueTrigger=43,TalkTime=21}] {"text":"<Chuck's Wife> My h
 tellraw @s[scores={DialogueTrigger=43,TalkTime=29}] {"text":"<Chuck's Wife> That's good, since he was getting a little chubby."}
 
 tag @s[scores={DialogueTrigger=43,TalkTime=29..}] add Dialogue43
-scoreboard players set @s[tag=Dialogue43] TalkTime 0
-scoreboard players set @s[tag=Dialogue43] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Cianwood Chuck pre-battle
@@ -1164,8 +1079,6 @@ execute as @s[scores={DialogueTrigger=44,TalkTime=60}] run clone -721 64 -324 -7
 execute as @s[scores={DialogueTrigger=44,TalkTime=60}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=44,TalkTime=60..}] add Dialogue44
-scoreboard players set @s[tag=Dialogue44] TalkTime 0
-scoreboard players set @s[tag=Dialogue44] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Cianwood Chuck post-battle
@@ -1194,8 +1107,6 @@ tellraw @s[scores={DialogueTrigger=45,TalkTime=44}] {"text":"<Chuck> Wahahah! I 
 tellraw @s[scores={DialogueTrigger=45,TalkTime=52}] {"text":"<Chuck> From now on, I'm going to train 24 hours a day!"}
 
 tag @s[scores={DialogueTrigger=45,TalkTime=52..}] add Dialogue45
-scoreboard players set @s[tag=Dialogue45] TalkTime 0
-scoreboard players set @s[tag=Dialogue45] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Olivine City Jasmine Gym pre-battle
@@ -1210,8 +1121,6 @@ tellraw @s[scores={DialogueTrigger=46,TalkTime=41}] {"text":"<Jasmine> ...Um... 
 execute as @s[scores={DialogueTrigger=46,TalkTime=41}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=46,TalkTime=41..}] add Dialogue46
-scoreboard players set @s[tag=Dialogue46] TalkTime 0
-scoreboard players set @s[tag=Dialogue46] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Olivine City Jasmine Gym post-battle
@@ -1237,8 +1146,6 @@ execute as @s[scores={DialogueTrigger=47,TalkTime=28}] run give @s pixelmon:tm_g
 tellraw @s[scores={DialogueTrigger=47,TalkTime=32}] {"text":"<Jasmine> You could use that TM to teach Iron Tail."}
 
 tag @s[scores={DialogueTrigger=47,TalkTime=32..}] add Dialogue47
-scoreboard players set @s[tag=Dialogue47] TalkTime 0
-scoreboard players set @s[tag=Dialogue47] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Team Rocket mugging player
@@ -1256,14 +1163,12 @@ tellraw @s[scores={DialogueTrigger=48,TalkTime=5}] {"text":"<Rocket Grunt> Hold 
 tellraw @s[scores={DialogueTrigger=48,TalkTime=12}] {"text":"<Rocket Grunt> The toll is $1000 to go through."}
 
 execute as @s[scores={DialogueTrigger=48,TalkTime=17}] run data modify entity @e[limit=1,x=-801,y=64,z=-284,dy=3,type=armor_stand] {CustomName:'{"text":"Team Rocket"}'}
-execute as @s[scores={DialogueTrigger=48,TalkTime=17}] run execute @e[x=-801,y=64,z=-284,dy=3,type=armor_stand] run givemoney @a[scores={DialogueTrigger=48,TalkTime=17}] -1000
+execute as @s[scores={DialogueTrigger=48,TalkTime=17}] run execute as @e[x=-801,y=64,z=-284,dy=3,type=armor_stand] run givemoney @a[scores={DialogueTrigger=48,TalkTime=17}] -1000
 execute as @s[scores={DialogueTrigger=48,TalkTime=18}] run data modify entity @e[limit=1,x=-801,y=64,z=-284,dy=3,type=armor_stand] {CustomName:'{"text":"Pixelmon Johto"}'}
 
 tellraw @s[scores={DialogueTrigger=48,TalkTime=23}] {"text":"<Rocket Grunt> Thank you very much!"}
 
 tag @s[scores={DialogueTrigger=48,TalkTime=23..}] add Dialogue48
-scoreboard players set @s[tag=Dialogue48] TalkTime 0
-scoreboard players set @s[tag=Dialogue48] DialogueTrigger 0
 
 #Grunts tp away after Rocket HQ is beaten
 #/execute as @p[x=-187,y=64,z=352,distance=..30,tag=Dialogue64] run tp @e[x=-809,y=92,z=-242,dy=3,type=pixelmon:npc_chatting] -181 64 352
@@ -1277,7 +1182,7 @@ scoreboard players set @s[tag=Dialogue48] DialogueTrigger 0
 #Statue reset:
 #execute as @s[x=-169,y=65,z=645,distance=..100,tag=!Dialogue49,score_TalkTime=0] run tp @e[x=-765,y=66,z=-244,dy=3,type=pixelmon:statue] -167 62 632
 
-execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run execute at @a[type=pixelmon:statue,x=-167,y=62,z=632,distance=..2] run particle cloud ~ ~ ~ 3 3 3 1 200
+execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run particle cloud -167 62 632 3 3 3 1 200
 execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run tp @e[type=pixelmon:statue,x=-167,y=62,z=632,distance=..2] -765 66 -244
 execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run pokebattle @s Gyarados,s,lvl:30,gr:7
 execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run playsound gyarados hostile @s ~ ~ ~ 1 1 1
@@ -1286,8 +1191,6 @@ execute as @s[scores={DialogueTrigger=49,TalkTime=2}] run playsound shiny hostil
 execute as @s[scores={DialogueTrigger=49,TalkTime=2}] run advancement grant @s only johto:rocket2
 
 tag @s[scores={DialogueTrigger=49,TalkTime=2..}] add Dialogue49
-scoreboard players set @s[tag=Dialogue49] TalkTime 0
-scoreboard players set @s[tag=Dialogue49] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Mr. Pokémon asking about the Red Scale if player brings it to him
@@ -1301,8 +1204,6 @@ tellraw @s[scores={DialogueTrigger=50,TalkTime=25}] ["",{"text":"["},{"text":"Ye
 execute as @s[scores={DialogueTrigger=50,TalkTime=25}] run scoreboard players enable @s TriggerCommand
 
 tag @s[scores={DialogueTrigger=50,TalkTime=25..}] add Dialogue50
-scoreboard players set @s[tag=Dialogue50] TalkTime 0
-scoreboard players set @s[tag=Dialogue50] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Lance at Lake of Rage post-Gyarados
@@ -1320,8 +1221,6 @@ execute as @s[scores={DialogueTrigger=51,TalkTime=35}] run scoreboard players en
 
 
 tag @s[scores={DialogueTrigger=51,TalkTime=35..}] add Dialogue51
-scoreboard players set @s[tag=Dialogue51] TalkTime 0
-scoreboard players set @s[tag=Dialogue51] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Lance at Lake of Rage yes I'll help
@@ -1335,8 +1234,6 @@ execute as @s[scores={DialogueTrigger=52,TalkTime=31}] run particle cloud -159 6
 execute as @s[scores={DialogueTrigger=52,TalkTime=31}] run tp @e[x=-159,y=63,z=590,dy=3,type=pixelmon:npc_chatting] -807 93 -242
 
 tag @s[scores={DialogueTrigger=52,TalkTime=31..}] add Dialogue52
-scoreboard players set @s[tag=Dialogue52] TalkTime 0
-scoreboard players set @s[tag=Dialogue52] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Lance in lobby of Mahogany Town house
@@ -1371,8 +1268,6 @@ execute as @s[scores={DialogueTrigger=53,TalkTime=44}] run tp @e[x=-164,y=63,z=1
 
 
 tag @s[scores={DialogueTrigger=53,TalkTime=44..}] add Dialogue53
-scoreboard players set @s[tag=Dialogue53] TalkTime 0
-scoreboard players set @s[tag=Dialogue53] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -1411,8 +1306,6 @@ execute as @s[scores={DialogueTrigger=54,TalkTime=26}] run particle cloud -83 45
 execute as @s[scores={DialogueTrigger=54,TalkTime=26}] run tp @e[x=-83,y=44,z=169,dy=3,type=pixelmon:npc_chatting] -803 93 -242
 
 tag @s[scores={DialogueTrigger=54,TalkTime=26..}] add Dialogue54
-scoreboard players set @s[tag=Dialogue54] TalkTime 0
-scoreboard players set @s[tag=Dialogue54] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Lance discovering passwords
@@ -1431,8 +1324,6 @@ execute as @s[scores={DialogueTrigger=55,TalkTime=36}] run particle cloud -149 3
 execute as @s[scores={DialogueTrigger=55,TalkTime=36}] run tp @e[x=-149,y=33,z=165,dy=3,type=pixelmon:npc_chatting] -801 93 -242
 
 tag @s[scores={DialogueTrigger=55,TalkTime=36..}] add Dialogue55
-scoreboard players set @s[tag=Dialogue55] TalkTime 0
-scoreboard players set @s[tag=Dialogue55] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Rocket Password 1
@@ -1443,8 +1334,6 @@ tellraw @s[scores={DialogueTrigger=56,TalkTime=1}] ["",{"text":"<Rocket Grunt> T
 #tag @s add RocketPW1
 
 tag @s[scores={DialogueTrigger=56,TalkTime=1..}] add Dialogue56
-scoreboard players set @s[tag=Dialogue56] TalkTime 0
-scoreboard players set @s[tag=Dialogue56] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Rocket Password 2
@@ -1455,8 +1344,6 @@ tellraw @s[scores={DialogueTrigger=57,TalkTime=1}] ["",{"text":"<Rocket Grunt> T
 #tag @s add RocketPW2
 
 tag @s[scores={DialogueTrigger=57,TalkTime=1..}] add Dialogue57
-scoreboard players set @s[tag=Dialogue57] TalkTime 0
-scoreboard players set @s[tag=Dialogue57] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Rocket Password 3 (Murkrow post-battle)
@@ -1466,8 +1353,6 @@ tellraw @s[scores={DialogueTrigger=58,TalkTime=1}] ["",{"text":"<Murkrow> The pa
 #tag @s add RocketPW3
 
 tag @s[scores={DialogueTrigger=58,TalkTime=1..}] add Dialogue58
-scoreboard players set @s[tag=Dialogue58] TalkTime 0
-scoreboard players set @s[tag=Dialogue58] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Silver in Team Tocket HQ
@@ -1493,8 +1378,6 @@ execute as @s[scores={DialogueTrigger=59,TalkTime=76}] run tp @e[x=-82,y=33,z=18
 execute as @s[scores={DialogueTrigger=59,TalkTime=76}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=59,TalkTime=76..}] add Dialogue59
-scoreboard players set @s[tag=Dialogue59] TalkTime 0
-scoreboard players set @s[tag=Dialogue59] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Rocket Executive pre-battle
@@ -1506,8 +1389,6 @@ tellraw @s[scores={DialogueTrigger=60,TalkTime=20}] {"text":"<Rocket Executive> 
 tellraw @s[scores={DialogueTrigger=60,TalkTime=33}] {"text":"<Rocket Executive> I won't let anyone disturb this place!"}
 
 tag @s[scores={DialogueTrigger=60,TalkTime=33..}] add Dialogue60
-scoreboard players set @s[tag=Dialogue60] TalkTime 0
-scoreboard players set @s[tag=Dialogue60] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Rocket Executive post-battle
@@ -1529,8 +1410,6 @@ execute as @s[scores={DialogueTrigger=61,TalkTime=24}] run tp @e[x=-99,y=33,z=20
 tellraw @s[scores={DialogueTrigger=61,TalkTime=28}] {"text":"Murkrow is looking at you...","italic":true}
 
 tag @s[scores={DialogueTrigger=61,TalkTime=28..}] add Dialogue61
-scoreboard players set @s[tag=Dialogue61] TalkTime 0
-scoreboard players set @s[tag=Dialogue61] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Lance and Ariana talking, pre-Ariana battle
@@ -1548,8 +1427,6 @@ tellraw @s[scores={DialogueTrigger=62,TalkTime=10}] ["",{"text":"<"},{"text":"Ar
 tellraw @s[scores={DialogueTrigger=62,TalkTime=20}] ["",{"text":"<"},{"text":"Ariana","color":"gray"},{"text":"> As the interim boss in place of Giovanni, I'll show you how wrong it is to meddle with Team Rocket!"}]
 
 tag @s[scores={DialogueTrigger=62,TalkTime=20..}] add Dialogue62
-scoreboard players set @s[tag=Dialogue62] TalkTime 0
-scoreboard players set @s[tag=Dialogue62] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Ariana Lose
@@ -1615,25 +1492,23 @@ execute as @s[scores={DialogueTrigger=63,TalkTime=147}] run tp @e[x=-118,y=45,z=
 
 #tps in Electrode 1
 execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run tp @e[x=-92,y=45,z=186,dx=1,dy=2,dz=1,type=pixelmon:statue] -816.0 93 -146.0
-execute as @s[scores={DialogueTrigger=63,TalkTime=147}] run execute @e[x=-92,y=45,z=186,dx=1,dy=5,dz=1,type=armor_stand] run pokespawn Electrode lvl:22 gr:7
+execute as @s[scores={DialogueTrigger=63,TalkTime=147}] run execute at @e[x=-92,y=45,z=186,dx=1,dy=5,dz=1,type=armor_stand] run pokespawn Electrode lvl:22 gr:7
 execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=186,dx=1,dy=5,dz=1,type=armor_stand] run data modify entity @e[limit=1,x=-92,y=45,z=186,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] {NoAI:1}
 execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=186,dx=1,dy=5,dz=1,type=armor_stand] run tp @e[x=-92,y=45,z=186,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] ~ ~ ~ 180 ~
 
 #tps in Electrode 2
 execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run tp @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,type=pixelmon:statue] -816.0 93 -151.0
-execute as @s[scores={DialogueTrigger=63,TalkTime=147}] run execute @e[x=-92,y=45,z=194,dx=1,dy=5,dz=1,type=armor_stand] run pokespawn Electrode lvl:22 gr:7
+execute as @s[scores={DialogueTrigger=63,TalkTime=147}] run execute at @e[x=-92,y=45,z=194,dx=1,dy=5,dz=1,type=armor_stand] run pokespawn Electrode lvl:22 gr:7
 execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=194,dx=1,dy=5,dz=1,type=armor_stand] run data modify entity @e[limit=1,x=-92,y=45,z=194,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] {NoAI:1}
 execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=194,dx=1,dy=5,dz=1,type=armor_stand] run tp @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] ~ ~ ~ 180 ~
 
 #tps in Electrode 3
 execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run tp @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,type=pixelmon:statue] -816.0 93 -156.0
-execute as @s[scores={DialogueTrigger=63,TalkTime=147}] run execute @e[x=-92,y=45,z=202,dx=1,dy=5,dz=1,type=armor_stand] run pokespawn Electrode lvl:22 gr:7
+execute as @s[scores={DialogueTrigger=63,TalkTime=147}] run execute at @e[x=-92,y=45,z=202,dx=1,dy=5,dz=1,type=armor_stand] run pokespawn Electrode lvl:22 gr:7
 execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=202,dx=1,dy=5,dz=1,type=armor_stand] run data modify entity @e[limit=1,x=-92,y=45,z=202,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] {NoAI:1}
 execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=202,dx=1,dy=5,dz=1,type=armor_stand] run tp @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] ~ ~ ~ 180 ~
 
 tag @s[scores={DialogueTrigger=63,TalkTime=148..}] add Dialogue63
-scoreboard players set @s[tag=Dialogue63] TalkTime 0
-scoreboard players set @s[tag=Dialogue63] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Lance generator room final talk
@@ -1666,8 +1541,6 @@ execute as @s[scores={DialogueTrigger=63,TalkTime=86}] run tp @e[x=-118,y=45,z=1
 execute as @s[scores={DialogueTrigger=63,TalkTime=86}] run advancement grant @s only johto:rocket3
 
 tag @s[scores={DialogueTrigger=64,TalkTime=86..}] add Dialogue64
-scoreboard players set @s[tag=Dialogue64] TalkTime 0
-scoreboard players set @s[tag=Dialogue64] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Admin Room gate
@@ -1711,8 +1584,6 @@ tellraw @a[scores={DialogueTrigger=65,TalkTime=27}] {"text":"<Rocket Executive> 
 tellraw @a[scores={DialogueTrigger=65,TalkTime=36}] {"text":"<Rocket Executive> Sure, I'll tell you. But only if you can beat me!"}
 
 tag @s[scores={DialogueTrigger=65,TalkTime=36..}] add Dialogue65
-scoreboard players set @s[tag=Dialogue65] TalkTime 0
-scoreboard players set @s[tag=Dialogue65] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Radio Tower Takeover fake director post-battle
@@ -1725,8 +1596,6 @@ tellraw @s[scores={DialogueTrigger=66,TalkTime=17}] {"text":"<Rocket Executive> 
 execute as @s[scores={DialogueTrigger=66,TalkTime=17}] run give @s minecraft:music_disc_far{display:{Name:"Basement Key",Lore:["A key that opens a door in","the Goldenrod Tunnel"]},HideFlags:36}
 
 tag @s[scores={DialogueTrigger=66,TalkTime=33..}] add Dialogue66
-scoreboard players set @s[tag=Dialogue66] TalkTime 0
-scoreboard players set @s[tag=Dialogue66] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Silver in Goldenrod Underground pre-battle
@@ -1744,8 +1613,6 @@ tellraw @s[scores={DialogueTrigger=67,TalkTime=27}] ["",{"text":"<"},{"text":"Si
 execute as @s[scores={DialogueTrigger=67,TalkTime=35}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=67,TalkTime=35..}] add Dialogue67
-scoreboard players set @s[tag=Dialogue67] TalkTime 0
-scoreboard players set @s[tag=Dialogue67] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Silver in Goldenrod Underground post-battle
@@ -1766,8 +1633,6 @@ execute as @s[scores={DialogueTrigger=68,TalkTime=48}] run tp @e[x=481,y=47,z=-3
 execute as @s[scores={DialogueTrigger=68,TalkTime=48}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=68,TalkTime=48..}] add Dialogue68
-scoreboard players set @s[tag=Dialogue68] TalkTime 0
-scoreboard players set @s[tag=Dialogue68] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Radio Tower director underground
@@ -1794,8 +1659,6 @@ tellraw @s[scores={DialogueTrigger=69,TalkTime=75}] {"text":"<Director> Please s
 #tag @s add CardKey
 
 tag @s[scores={DialogueTrigger=69,TalkTime=75..}] add Dialogue69
-scoreboard players set @s[tag=Dialogue69] TalkTime 0
-scoreboard players set @s[tag=Dialogue69] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Radio Tower Ariana post-battle
@@ -1807,8 +1670,6 @@ tellraw @s[scores={DialogueTrigger=70,TalkTime=8}] {"text":"<Ariana> A brat like
 tellraw @s[scores={DialogueTrigger=70,TalkTime=17}] {"text":"<Ariana> That's too bad. I really admire your power."}
 
 tag @s[scores={DialogueTrigger=70,TalkTime=17..}] add Dialogue70
-scoreboard players set @s[tag=Dialogue70] TalkTime 0
-scoreboard players set @s[tag=Dialogue70] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Radio Tower Executive Archer pre-battle
@@ -1822,8 +1683,6 @@ tellraw @s[scores={DialogueTrigger=71,TalkTime=32}] {"text":"<Archer> We are goi
 tellraw @s[scores={DialogueTrigger=71,TalkTime=40}] {"text":"<Archer> I won't allow you to interfere with our plans."}
 
 tag @s[scores={DialogueTrigger=71,TalkTime=40..}] add Dialogue71
-scoreboard players set @s[tag=Dialogue71] TalkTime 0
-scoreboard players set @s[tag=Dialogue71] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Radio Tower Archer post-battle
@@ -1857,8 +1716,6 @@ execute as @s[scores={DialogueTrigger=72,TalkTime=107}] run tp @e[x=503,y=54,z=-
 execute as @s[scores={DialogueTrigger=72,TalkTime=107}] run advancement grant @s only johto:rocket4
 
 tag @s[scores={DialogueTrigger=72,TalkTime=107..}] add Dialogue72
-scoreboard players set @s[tag=Dialogue72] TalkTime 0
-scoreboard players set @s[tag=Dialogue72] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Rocket Takeover Shutter Gate
@@ -1889,8 +1746,6 @@ tellraw @s[scores={DialogueTrigger=73,TalkTime=37}] {"text":"<Pryce> I, Pryce - 
 execute as @s[scores={DialogueTrigger=73,TalkTime=37}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=73,TalkTime=37..}] add Dialogue73
-scoreboard players set @s[tag=Dialogue73] TalkTime 0
-scoreboard players set @s[tag=Dialogue73] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Mahogany Town Pryce defeat dialogue
@@ -1921,8 +1776,6 @@ tellraw @s[scores={DialogueTrigger=74,TalkTime=60}] {"text":"<Pryce> When the ic
 tellraw @s[scores={DialogueTrigger=74,TalkTime=68}] {"text":"<Pryce> You and your Pokémon will be together for many years to come. Cherish your time together!"}
 
 tag @s[scores={DialogueTrigger=74,TalkTime=74..}] add Dialogue74
-scoreboard players set @s[tag=Dialogue74] TalkTime 0
-scoreboard players set @s[tag=Dialogue74] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Radio Tower Post-Rocket Takeover gift
@@ -1932,8 +1785,6 @@ tellraw @s[scores={DialogueTrigger=75,TalkTime=1}] {"text":"<Radio Worker> Thank
 execute as @s[scores={DialogueTrigger=75,TalkTime=4}] run give @s pixelmon:tm_gen2{tm:11}
 
 tag @s[scores={DialogueTrigger=75,TalkTime=4..}] add Dialogue75
-scoreboard players set @s[tag=Dialogue75] TalkTime 0
-scoreboard players set @s[tag=Dialogue75] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Route 43 gate reward after beating Team Rocket in their HQ
@@ -1958,8 +1809,6 @@ tellraw @s[scores={DialogueTrigger=77,TalkTime=20}] {"text":"<Clair> ...Fine. Le
 execute as @s[scores={DialogueTrigger=77,TalkTime=20}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=77,TalkTime=20..}] add Dialogue77
-scoreboard players set @s[tag=Dialogue77] TalkTime 0
-scoreboard players set @s[tag=Dialogue77] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Blackthorn City Clair post-battle
@@ -1979,8 +1828,6 @@ tellraw @s[scores={DialogueTrigger=78,TalkTime=50}] {"text":"<Clair> If you can 
 tellraw @s[scores={DialogueTrigger=78,TalkTime=58}] {"text":"<Clair> Until then, I won't give you a Badge."}
 
 tag @s[scores={DialogueTrigger=78,TalkTime=58..}] add Dialogue78
-scoreboard players set @s[tag=Dialogue78] TalkTime 0
-scoreboard players set @s[tag=Dialogue78] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Dragons Den Clair giving badge
@@ -2017,8 +1864,6 @@ execute as @s[scores={DialogueTrigger=79,TalkTime=96}] run tp @e[x=-688,y=73,z=5
 execute as @s[scores={DialogueTrigger=79,TalkTime=96}] run particle cloud -688 74 540 1 1 1 1 100
 
 tag @s[scores={DialogueTrigger=79,TalkTime=96..}] add Dialogue79
-scoreboard players set @s[tag=Dialogue79] TalkTime 0
-scoreboard players set @s[tag=Dialogue79] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Elm calling about the Master Ball after leaving Dragons Den
@@ -2032,8 +1877,6 @@ tellraw @s[scores={DialogueTrigger=80,TalkTime=10}] {"text":"<Professor Elm> I h
 tellraw @s[scores={DialogueTrigger=80,TalkTime=20}] {"text":"<Professor Elm> See you later!"}
 
 tag @s[scores={DialogueTrigger=80,TalkTime=20..}] add Dialogue80
-scoreboard players set @s[tag=Dialogue80] TalkTime 0
-scoreboard players set @s[tag=Dialogue80] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Elm giving the Master Ball
@@ -2050,8 +1893,6 @@ tellraw @s[scores={DialogueTrigger=81,TalkTime=38}] {"text":"<Professor Elm> It'
 tellraw @s[scores={DialogueTrigger=81,TalkTime=46}] ["",{"text":"<Professor Elm> I think you can make better use of it than I can, "},{"selector":"@s"},{"text":"!"}]
 
 tag @s[scores={DialogueTrigger=81,TalkTime=46..}] add Dialogue81
-scoreboard players set @s[tag=Dialogue81] TalkTime 0
-scoreboard players set @s[tag=Dialogue81] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Post-Falkner call from Elm
@@ -2064,8 +1905,6 @@ tellraw @s[scores={DialogueTrigger=82,TalkTime=4}] ["",{"text":"<Professor Elm> 
 tellraw @s[scores={DialogueTrigger=82,TalkTime=13}] {"text":"<Professor Elm> My assistant is at the Pokémon Center in Violet City. Could you talk to him?"}
 
 tag @s[scores={DialogueTrigger=82,TalkTime=13..}] add Dialogue82
-scoreboard players set @s[tag=Dialogue82] TalkTime 0
-scoreboard players set @s[tag=Dialogue82] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Route 27 first steps into Kanto
@@ -2076,8 +1915,6 @@ tellraw @s[scores={DialogueTrigger=83,TalkTime=9}] {"text":"<Hiker> You've taken
 tellraw @s[scores={DialogueTrigger=83,TalkTime=16}] {"text":"<Hiker> Check your Town Map and see."}
 
 tag @s[scores={DialogueTrigger=83,TalkTime=16..}] add Dialogue83
-scoreboard players set @s[tag=Dialogue83] TalkTime 0
-scoreboard players set @s[tag=Dialogue83] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Silver Victory Road pre-battle
@@ -2096,8 +1933,6 @@ tellraw @s[scores={DialogueTrigger=84,TalkTime=35}] ["",{"text":"<"},{"text":"Si
 execute as @s[scores={DialogueTrigger=84,TalkTime=35}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=84,TalkTime=35..}] add Dialogue84
-scoreboard players set @s[tag=Dialogue84] TalkTime 0
-scoreboard players set @s[tag=Dialogue84] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Silver Victory Road post-battle
@@ -2121,8 +1956,6 @@ execute as @s[scores={DialogueTrigger=85,TalkTime=70}] run tp @e[x=-1449,y=51,z=
 execute as @s[scores={DialogueTrigger=85,TalkTime=70}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=85,TalkTime=70..}] add Dialogue85
-scoreboard players set @s[tag=Dialogue85] TalkTime 0
-scoreboard players set @s[tag=Dialogue85] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Elite Four Will opening dialogue
@@ -2135,8 +1968,6 @@ tellraw @s[scores={DialogueTrigger=86,TalkTime=23}] {"text":"<Will> And, at last
 tellraw @s[scores={DialogueTrigger=86,TalkTime=35}] {"text":"<Will> Losing is not an option!"}
 
 tag @s[scores={DialogueTrigger=86,TalkTime=35..}] add Dialogue86
-scoreboard players set @s[tag=Dialogue86] TalkTime 0
-scoreboard players set @s[tag=Dialogue86] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Elite Four Will defeat dialogue
@@ -2149,8 +1980,6 @@ tellraw @s[scores={DialogueTrigger=87,TalkTime=10}] {"text":"<Will> I will conti
 tellraw @s[scores={DialogueTrigger=87,TalkTime=20}] {"text":"<Will> Now, move on and experience the true ferocity of the Elite Four."}
 
 tag @s[scores={DialogueTrigger=87,TalkTime=20..}] add Dialogue87
-scoreboard players set @s[tag=Dialogue87] TalkTime 0
-scoreboard players set @s[tag=Dialogue87] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Elite Four Koga opening dialogue
@@ -2164,8 +1993,6 @@ tellraw @s[scores={DialogueTrigger=88,TalkTime=27}] {"text":"<Koga> Prepare to b
 tellraw @s[scores={DialogueTrigger=88,TalkTime=37}]  {"text":"<Koga> Pokémon are not merely about brute force--you shall see soon enough!"}
 
 tag @s[scores={DialogueTrigger=88,TalkTime=20..}] add Dialogue88
-scoreboard players set @s[tag=Dialogue88] TalkTime 0
-scoreboard players set @s[tag=Dialogue88] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Elite Four Koga defeat dialogue
@@ -2192,8 +2019,6 @@ tellraw @s[scores={DialogueTrigger=90,TalkTime=26}] {"text":"<Bruno> Hm? I see n
 tellraw @s[scores={DialogueTrigger=90,TalkTime=36}] {"text":"<Bruno> Ready? You will bow down to our overwhelming power! Hoo hah!"}
 
 tag @s[scores={DialogueTrigger=90,TalkTime=36..}] add Dialogue90
-scoreboard players set @s[tag=Dialogue90] TalkTime 0
-scoreboard players set @s[tag=Dialogue90] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Elite Four Bruno defeat dialogue
@@ -2205,8 +2030,6 @@ tellraw @s[scores={DialogueTrigger=91,TalkTime=1}] {"text":"<Bruno> Having lost,
 tellraw @s[scores={DialogueTrigger=91,TalkTime=10}] {"text":"<Bruno> Go face your next challenge!"}
 
 tag @s[scores={DialogueTrigger=91,TalkTime=10..}] add Dialogue91
-scoreboard players set @s[tag=Dialogue91] TalkTime 0
-scoreboard players set @s[tag=Dialogue91] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Elite Four Karen opening dialogue
@@ -2218,8 +2041,6 @@ tellraw @s[scores={DialogueTrigger=92,TalkTime=12}] {"text":"<Karen> I'm known f
 tellraw @s[scores={DialogueTrigger=92,TalkTime=23}] {"text":"<Karen> Just try to entertain me. Let's go."}
 
 tag @s[scores={DialogueTrigger=92,TalkTime=23..}] add Dialogue92
-scoreboard players set @s[tag=Dialogue92] TalkTime 0
-scoreboard players set @s[tag=Dialogue92] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Elite Four Karen defeat dialogue
@@ -2233,8 +2054,6 @@ tellraw @s[scores={DialogueTrigger=93,TalkTime=25}] {"text":"<Karen> I like your
 tellraw @s[scores={DialogueTrigger=93,TalkTime=33}] {"text":"<Karen> Go on -- the Champion is waiting."}
 
 tag @s[scores={DialogueTrigger=93,TalkTime=33..}] add Dialogue93
-scoreboard players set @s[tag=Dialogue93] TalkTime 0
-scoreboard players set @s[tag=Dialogue93] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Elite Four Lance opening dialogue
@@ -2249,8 +2068,6 @@ tellraw @s[scores={DialogueTrigger=94,TalkTime=35}] {"text":"<Lance> As the most
 tellraw @s[scores={DialogueTrigger=94,TalkTime=45}] {"text":"<Lance> I, Lance the dragon master, accept your challenge!"}
 
 tag @s[scores={DialogueTrigger=94,TalkTime=45..}] add Dialogue94
-scoreboard players set @s[tag=Dialogue94] TalkTime 0
-scoreboard players set @s[tag=Dialogue94] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Elite Four Lance losing dialogue
@@ -2264,8 +2081,6 @@ tellraw @s[scores={DialogueTrigger=95,TalkTime=20}] {"text":"<Lance> As a Traine
 tellraw @s[scores={DialogueTrigger=95,TalkTime=30}] {"text":"<Lance> You have earned it. Walk through the door behind me to the Hall of Fame."}
 
 tag @s[scores={DialogueTrigger=95,TalkTime=30..}] add Dialogue95
-scoreboard players set @s[tag=Dialogue95] TalkTime 0
-scoreboard players set @s[tag=Dialogue95] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Hall of Fame Lance opening dialogue
@@ -2279,8 +2094,6 @@ tellraw @s[scores={DialogueTrigger=96,TalkTime=18}] ["",{"text":"["},{"text":"Ye
 execute as @s[scores={DialogueTrigger=96,TalkTime=18}] run scoreboard players enable @s TriggerCommand
 
 tag @s[scores={DialogueTrigger=96,TalkTime=18..}] add Dialogue96
-scoreboard players set @s[tag=Dialogue96] TalkTime 0
-scoreboard players set @s[tag=Dialogue96] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Hall of Fame yes, generate statues & open space
@@ -2290,8 +2103,6 @@ tellraw @s[scores={DialogueTrigger=97,TalkTime=1}] {"text":"<Lance> Excellent! T
 tellraw @s[scores={DialogueTrigger=97,TalkTime=12}] {"text":"<Lance> If your team is less than six, press the button near the healer when you are done!"}
 
 tag @s[scores={DialogueTrigger=97,TalkTime=12..}] add Dialogue97
-scoreboard players set @s[tag=Dialogue97] TalkTime 0
-scoreboard players set @s[tag=Dialogue97] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Hall of Fame Credits
@@ -2333,8 +2144,6 @@ execute as @s[scores={DialogueTrigger=98,TalkTime=58}] run execute as @e[x=-803,
 execute as @s[scores={DialogueTrigger=98,TalkTime=58}] run scoreboard players set @s[tag=Dialogue97] DialogueTrigger 99
 
 tag @s[scores={DialogueTrigger=98,TalkTime=58..}] add Dialogue98
-scoreboard players set @s[tag=Dialogue98] TalkTime 0
-scoreboard players set @s[tag=Dialogue98] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Continued if player places statues from Dialogue98
@@ -2359,8 +2168,6 @@ execute as @s[scores={DialogueTrigger=99,TalkTime=67}] run tag @s remove Dialogu
 execute as @s[scores={DialogueTrigger=99,TalkTime=67}] run tp @s -721 69 -493
 
 tag @s[scores={DialogueTrigger=99,TalkTime=67..}] add Dialogue99
-scoreboard players set @s[tag=Dialogue99] TalkTime 0
-scoreboard players set @s[tag=Dialogue99] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Professor Elm call after the Pokémon League
@@ -2373,8 +2180,6 @@ tellraw @s[scores={DialogueTrigger=100,TalkTime=4}] ["",{"text":"<Professor Elm>
 tellraw @s[scores={DialogueTrigger=100,TalkTime=13}] {"text":"<Professor Elm> Could you swing by my Lab? See you later!"}
 
 tag @s[scores={DialogueTrigger=100,TalkTime=13..}] add Dialogue100
-scoreboard players set @s[tag=Dialogue100] TalkTime 0
-scoreboard players set @s[tag=Dialogue100] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Professor Elm after the Elite Four, giving SS Ticket
@@ -2390,8 +2195,6 @@ tellraw @s[scores={DialogueTrigger=101,TalkTime=37}] {"text":"<Professor Elm> Af
 tellraw @s[scores={DialogueTrigger=101,TalkTime=47}] {"text":"<Professor Elm> Give my regards to Professor Oak in Kanto!"}
 
 tag @s[scores={DialogueTrigger=101,TalkTime=47..}] add Dialogue101
-scoreboard players set @s[tag=Dialogue101] TalkTime 0
-scoreboard players set @s[tag=Dialogue101] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Mr Pokémon giving an orb after the Elite Four
@@ -2422,8 +2225,6 @@ tellraw @s[scores={DialogueTrigger=102,TalkTime=47}] {"text":"<Mr. Pokémon> Pro
 tellraw @s[scores={DialogueTrigger=102,TalkTime=57}] {"text":"<Mr. Pokémon> I'm sure you can solve the mystery of the Orb and the secret of the ruins."}
 
 tag @s[scores={DialogueTrigger=102,TalkTime=13..}] add Dialogue102
-scoreboard players set @s[tag=Dialogue102] TalkTime 0
-scoreboard players set @s[tag=Dialogue102] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Whirl Islands Lugia Spawn
@@ -2439,8 +2240,6 @@ execute as @s[scores={DialogueTrigger=103,TalkTime=16}] run execute at @e[x=1250
 execute as @s[scores={DialogueTrigger=103,TalkTime=16}] run playsound lugia record @s ~ ~ ~ 1000 1 1
 
 tag @s[scores={DialogueTrigger=103,TalkTime=16..}] add Dialogue103
-scoreboard players set @s[tag=Dialogue103] TalkTime 0
-scoreboard players set @s[tag=Dialogue103] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Tin Tower Ho-Oh Spawn
@@ -2463,8 +2262,6 @@ execute as @s[scores={DialogueTrigger=104,TalkTime=13}] run scoreboard players s
 execute as @s[scores={DialogueTrigger=104,TalkTime=13}] run setblock -861 64 -307 minecraft:iron_block
 
 tag @s[scores={DialogueTrigger=104,TalkTime=13..}] add Dialogue104
-scoreboard players set @s[tag=Dialogue104] TalkTime 0
-scoreboard players set @s[tag=Dialogue104] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Whirl Islands Friday Lapras
@@ -2483,8 +2280,6 @@ execute as @s[scores={DialogueTrigger=105,TalkTime=1}] run tp @e[x=1229,y=108,z=
 execute as @s[scores={DialogueTrigger=105,TalkTime=1}] run playsound lapras ambient @s ~ ~ ~ 1000 1 1
 
 tag @s[scores={DialogueTrigger=105,TalkTime=1..}] add Dialogue105
-scoreboard players set @s[tag=Dialogue105] TalkTime 0
-scoreboard players set @s[tag=Dialogue105] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Obtaining the GS ball from Goldenrod City Poke Center
@@ -2498,8 +2293,6 @@ execute as @s[scores={DialogueTrigger=106,TalkTime=24}] run give @s pixelmon:gs_
 tellraw @s[scores={DialogueTrigger=106,TalkTime=29}] {"text":"<Nurse Joy> Please do come again!"}
 
 tag @s[scores={DialogueTrigger=106,TalkTime=29..}] add Dialogue106
-scoreboard players set @s[tag=Dialogue106] TalkTime 0
-scoreboard players set @s[tag=Dialogue106] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Kurt inspecting the GS Ball
@@ -2511,8 +2304,6 @@ tellraw @s[scores={DialogueTrigger=107,TalkTime=10}] {"text":"<Kurt> It looks a 
 tellraw @s[scores={DialogueTrigger=107,TalkTime=21}] {"text":"<Kurt> Let me check it for you. "}
 
 tag @s[scores={DialogueTrigger=107,TalkTime=21..}] add Dialogue107
-scoreboard players set @s[tag=Dialogue107] TalkTime 0
-scoreboard players set @s[tag=Dialogue107] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Kurt after he's inspected the ball for a day (or until the daily commands run)
@@ -2534,8 +2325,6 @@ execute as @s[scores={DialogueTrigger=108,TalkTime=3}] run setblock -861 64 -305
 #execute as @s[x=617,y=66,z=-696,distance=..20,tag=Dialogue108,limit=1] run particle reddust 617 66 -696.5 -1 1 0 1
 
 tag @s[scores={DialogueTrigger=108,TalkTime=53..}] add Dialogue108
-scoreboard players set @s[tag=Dialogue108] TalkTime 0
-scoreboard players set @s[tag=Dialogue108] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Ilex Forest Shrine when player can throw the GS ball into it
@@ -2547,8 +2336,6 @@ tellraw @s[scores={DialogueTrigger=109,TalkTime=16}] {"text":"Oh? What is this? 
 tellraw @s[scores={DialogueTrigger=109,TalkTime=24}] {"text":"It looks like the GS Ball would fit inside it.","italic":true}
 
 tag @s[scores={DialogueTrigger=109,TalkTime=24..}] add Dialogue109
-scoreboard players set @s[tag=Dialogue109] TalkTime 0
-scoreboard players set @s[tag=Dialogue109] DialogueTrigger 0
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2563,8 +2350,6 @@ tellraw @s[scores={DialogueTrigger=111,TalkTime=13}] {"text":"<Brock> I'm an exp
 tellraw @s[scores={DialogueTrigger=111,TalkTime=26}] {"text":"<Brock> You'll have a hard time inflicting any damage. Come on!"}
 
 tag @s[scores={DialogueTrigger=111,TalkTime=26..}] add Dialogue111
-scoreboard players set @s[tag=Dialogue111] TalkTime 0
-scoreboard players set @s[tag=Dialogue111] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Brock post-battle
@@ -2592,8 +2377,6 @@ tellraw @s[scores={DialogueTrigger=112,TalkTime=56}] {"text":"<Brock> Just wait 
 
 
 tag @s[scores={DialogueTrigger=112,TalkTime=56..}] add Dialogue112
-scoreboard players set @s[tag=Dialogue112] TalkTime 0
-scoreboard players set @s[tag=Dialogue112] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Misty near Bill's House
@@ -2616,8 +2399,6 @@ execute as @s[scores={DialogueTrigger=113,TalkTime=60}] run particle cloud -3060
 execute as @s[scores={DialogueTrigger=113,TalkTime=60}] run tp @e[x=-3060,y=63,z=956,dy=3,type=pixelmon:npc_chatting] -815 85 -240
 
 tag @s[scores={DialogueTrigger=113,TalkTime=60..}] add Dialogue113
-scoreboard players set @s[tag=Dialogue113] TalkTime 0
-scoreboard players set @s[tag=Dialogue113] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Misty pre-battle
@@ -2628,8 +2409,6 @@ tellraw @s[scores={DialogueTrigger=114,TalkTime=8}] {"text":"<Misty> You may hav
 tellraw @s[scores={DialogueTrigger=114,TalkTime=20}] {"text":"<Misty> My Water-type Pokémon are tough!"}
 
 tag @s[scores={DialogueTrigger=114,TalkTime=20..}] add Dialogue114
-scoreboard players set @s[tag=Dialogue114] TalkTime 0
-scoreboard players set @s[tag=Dialogue114] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Misty post-battle
@@ -2657,8 +2436,6 @@ tellraw @s[scores={DialogueTrigger=115,TalkTime=43}] {"text":"<Misty> You've man
 tellraw @s[scores={DialogueTrigger=115,TalkTime=51}] {"text":"<Misty> I'm sure you have a good use for it."}
 
 tag @s[scores={DialogueTrigger=115,TalkTime=51..}] add Dialogue115
-scoreboard players set @s[tag=Dialogue115] TalkTime 0
-scoreboard players set @s[tag=Dialogue115] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Surge pre-battle
@@ -2670,8 +2447,6 @@ tellraw @s[scores={DialogueTrigger=116,TalkTime=22}] {"text":"<Surge> I've never
 tellraw @s[scores={DialogueTrigger=116,TalkTime=30}] {"text":"<Surge> I'll zap you just like I do all my enemies in battle!"}
 
 tag @s[scores={DialogueTrigger=116,TalkTime=30..}] add Dialogue116
-scoreboard players set @s[tag=Dialogue116] TalkTime 0
-scoreboard players set @s[tag=Dialogue116] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Surge post-battle
@@ -2697,8 +2472,6 @@ tellraw @s[scores={DialogueTrigger=117,TalkTime=35}] {"text":"<Surge> That TM co
 tellraw @s[scores={DialogueTrigger=117,TalkTime=44}] {"text":"<Surge> When you go north, you will see a big city called Saffron!"}
 
 tag @s[scores={DialogueTrigger=117,TalkTime=44..}] add Dialogue117
-scoreboard players set @s[tag=Dialogue117] TalkTime 0
-scoreboard players set @s[tag=Dialogue117] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Erika pre-battle
@@ -2712,8 +2485,6 @@ tellraw @s[scores={DialogueTrigger=118,TalkTime=33}] {"text":"<Erika> Oh. I'm so
 tellraw @s[scores={DialogueTrigger=118,TalkTime=44}] {"text":"<Erika> I have been training myself on not only flower arrangement but also Pokémon battle. I shall not lose."}
 
 tag @s[scores={DialogueTrigger=118,TalkTime=44..}] add Dialogue118
-scoreboard players set @s[tag=Dialogue118] TalkTime 0
-scoreboard players set @s[tag=Dialogue118] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Erika post-battle
@@ -2742,8 +2513,6 @@ tellraw @s[scores={DialogueTrigger=119,TalkTime=59}] {"text":"<Erika> Losing lea
 tellraw @s[scores={DialogueTrigger=119,TalkTime=66}] {"text":"<Erika> But knowing that there are strong Trainers spurs me to do better..."}
 
 tag @s[scores={DialogueTrigger=119,TalkTime=66..}] add Dialogue119
-scoreboard players set @s[tag=Dialogue119] TalkTime 0
-scoreboard players set @s[tag=Dialogue119] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Janine pre-battle
@@ -2754,8 +2523,6 @@ tellraw @s[scores={DialogueTrigger=120,TalkTime=8}] {"text":"<Janine> I'm only j
 tellraw @s[scores={DialogueTrigger=120,TalkTime=16}] {"text":"<Janine> Janine of Fuchsia Gym, that's me!"}
 
 tag @s[scores={DialogueTrigger=120,TalkTime=16..}] add Dialogue120
-scoreboard players set @s[tag=Dialogue120] TalkTime 0
-scoreboard players set @s[tag=Dialogue120] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Janine post-battle
@@ -2783,8 +2550,6 @@ tellraw @s[scores={DialogueTrigger=121,TalkTime=44}] {"text":"<Janine> I'm going
 tellraw @s[scores={DialogueTrigger=121,TalkTime=52}] {"text":"<Janine> I want to become much better than both my father and you!"}
 
 tag @s[scores={DialogueTrigger=121,TalkTime=52..}] add Dialogue121
-scoreboard players set @s[tag=Dialogue121] TalkTime 0
-scoreboard players set @s[tag=Dialogue121] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Sabrina pre-battle
@@ -2797,8 +2562,6 @@ tellraw @s[scores={DialogueTrigger=122,TalkTime=23}] {"text":"<Sabrina> I don’
 tellraw @s[scores={DialogueTrigger=122,TalkTime=36}] {"text":"<Sabrina> Since you wish it, I will show you my psychic powers!"}
 
 tag @s[scores={DialogueTrigger=122,TalkTime=36..}] add Dialogue122
-scoreboard players set @s[tag=Dialogue122] TalkTime 0
-scoreboard players set @s[tag=Dialogue122] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Sabrina post-battle
@@ -2829,8 +2592,6 @@ tellraw @s[scores={DialogueTrigger=123,TalkTime=73}] {"text":"<Sabrina> Your lov
 tellraw @s[scores={DialogueTrigger=123,TalkTime=81}] {"text":"<Sabrina> The ability to love, I think, is some kind of psychic ability..."}
 
 tag @s[scores={DialogueTrigger=123,TalkTime=81..}] add Dialogue123
-scoreboard players set @s[tag=Dialogue123] TalkTime 0
-scoreboard players set @s[tag=Dialogue123] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Blaine pre-battle
@@ -2841,8 +2602,6 @@ tellraw @s[scores={DialogueTrigger=124,TalkTime=11}] {"text":"<Blaine> My fiery 
 tellraw @s[scores={DialogueTrigger=124,TalkTime=21}] {"text":"<Blaine> You better have Burn Heal!"}
 
 tag @s[scores={DialogueTrigger=124,TalkTime=21..}] add Dialogue124
-scoreboard players set @s[tag=Dialogue124] TalkTime 0
-scoreboard players set @s[tag=Dialogue124] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Blaine post-battle
@@ -2868,8 +2627,6 @@ tellraw @s[scores={DialogueTrigger=125,TalkTime=34}] {"text":"<Blaine> I did los
 tellraw @s[scores={DialogueTrigger=125,TalkTime=42}] {"text":"<Blaine> My Fire-type Pokémon will be even stronger! Just you watch!"}
 
 tag @s[scores={DialogueTrigger=125,TalkTime=42..}] add Dialogue125
-scoreboard players set @s[tag=Dialogue125] TalkTime 0
-scoreboard players set @s[tag=Dialogue125] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Blue pre-battle
@@ -2881,8 +2638,6 @@ tellraw @s[scores={DialogueTrigger=126,TalkTime=18}] {"text":"<Blue> Hey, don't 
 tellraw @s[scores={DialogueTrigger=126,TalkTime=25}] {"text":"<Blue> I'll know if you are good or not by battling you right now."}
 
 tag @s[scores={DialogueTrigger=126,TalkTime=25..}] add Dialogue126
-scoreboard players set @s[tag=Dialogue126] TalkTime 0
-scoreboard players set @s[tag=Dialogue126] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Blue post-battle
@@ -2910,8 +2665,6 @@ tellraw @s[scores={DialogueTrigger=127,TalkTime=49}] {"text":"<Blue> ... All rig
 tellraw @s[scores={DialogueTrigger=127,TalkTime=57}] {"text":"<Blue> You are a good trainer. But I'm going to beat you someday. Don't you forget it!"}
 
 tag @s[scores={DialogueTrigger=127,TalkTime=57..}] add Dialogue127
-scoreboard players set @s[tag=Dialogue127] TalkTime 0
-scoreboard players set @s[tag=Dialogue127] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Red Opening Dialogue
@@ -2920,8 +2673,6 @@ scoreboard players set @s[tag=Dialogue127] DialogueTrigger 0
 tellraw @s[scores={DialogueTrigger=128,TalkTime=1}] {"text":"<Red> .................. .................."}
 
 tag @s[scores={DialogueTrigger=128,TalkTime=1..}] add Dialogue128
-scoreboard players set @s[tag=Dialogue128] TalkTime 0
-scoreboard players set @s[tag=Dialogue128] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Red defeat Dialogue
@@ -2942,8 +2693,6 @@ execute as @s[scores={DialogueTrigger=129,TalkTime=15}] run advancement grant @s
 execute as @s[scores={DialogueTrigger=129,TalkTime=15}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=129,TalkTime=15..}] add Dialogue129
-scoreboard players set @s[tag=Dialogue129] TalkTime 0
-scoreboard players set @s[tag=Dialogue129] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Mt Moon Silver pre-battle
@@ -2954,8 +2703,6 @@ tellraw @s[scores={DialogueTrigger=130,TalkTime=9}] ["",{"text":"<"},{"text":"Si
 tellraw @s[scores={DialogueTrigger=130,TalkTime=20}] ["",{"text":"<"},{"text":"Silver","color":"red"},{"text":"> "},{"selector":"@s"},{"text":"! I know you are strong... But... I can't help but challenge you!"}]
 
 tag @s[scores={DialogueTrigger=130,TalkTime=20..}] add Dialogue130
-scoreboard players set @s[tag=Dialogue130] TalkTime 0
-scoreboard players set @s[tag=Dialogue130] DialogueTrigger 0
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2983,8 +2730,6 @@ execute as @s[scores={DialogueTrigger=131,TalkTime=57}] run tp @e[x=-2200,y=64,z
 execute as @s[scores={DialogueTrigger=131,TalkTime=57}] run tp @e[x=-2200,y=64,z=800,distance=..2,type=pixelmon:npc_trainer,scores={StarterPick=1}] -770 93 -242
 
 tag @s[scores={DialogueTrigger=131,TalkTime=57..}] add Dialogue131
-scoreboard players set @s[tag=Dialogue131] TalkTime 0
-scoreboard players set @s[tag=Dialogue131] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Jirachi Give (Any Pokémon Center after all gyms are beaten)
@@ -2995,8 +2740,6 @@ execute as @s[scores={DialogueTrigger=132,TalkTime=4}] run pokegive @s Jirachi l
 execute as @s[scores={DialogueTrigger=132,TalkTime=4}] run give @s pixelmon:gold_bottle_cap{display:{Lore:["A beautiful bottle cap that gives off","a golden gleam. Some people are","happy to receive one."]}}
 
 tag @s[scores={DialogueTrigger=132,TalkTime=4..}] add Dialogue132
-scoreboard players set @s[tag=Dialogue132] TalkTime 0
-scoreboard players set @s[tag=Dialogue132] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Copycat First Talk
@@ -3014,8 +2757,7 @@ tellraw @s[scores={DialogueTrigger=133,TalkTime=29}] {"text":"<Copycat> Pardon? 
 tellraw @s[scores={DialogueTrigger=133,TalkTime=37}] {"text":"<Copycat> But I'm really worried... What if someone finds it?"}
 
 tag @s[scores={DialogueTrigger=133,TalkTime=37..}] add Dialogue133
-scoreboard players set @s[tag=Dialogue133] TalkTime 0
-scoreboard players set @s[tag=Dialogue133] DialogueTrigger 0
+
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Vermilion City Pokémon Fan after speaking with Copycat
@@ -3033,8 +2775,7 @@ execute as @s[scores={DialogueTrigger=134,TalkTime=31}] run give @s minecraft:mu
 tellraw @s[scores={DialogueTrigger=134,TalkTime=36}] {"text":"<Poke Fan> I'll befriend a real Clefairy on my own one day. No worries!"}
 
 tag @s[scores={DialogueTrigger=134,TalkTime=36..}] add Dialogue134
-scoreboard players set @s[tag=Dialogue134] TalkTime 0
-scoreboard players set @s[tag=Dialogue134] DialogueTrigger 0
+
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Saffron City Bringing Copycat her doll
@@ -3054,8 +2795,6 @@ tellraw @s[scores={DialogueTrigger=135,TalkTime=27}] {"text":"<Copycat> That's t
 tellraw @s[scores={DialogueTrigger=135,TalkTime=34}] {"text":"<Copycat> The rail company man gave me that when they tore down our old house for the Station."}
 
 tag @s[scores={DialogueTrigger=135,TalkTime=34..}] add Dialogue135
-scoreboard players set @s[tag=Dialogue135] TalkTime 0
-scoreboard players set @s[tag=Dialogue135] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Vermilion Steven Latios/Latias Intro
@@ -3096,8 +2835,6 @@ execute as @s[scores={DialogueTrigger=136,TalkTime=106}] run advancement grant @
 tellraw @s[scores={DialogueTrigger=136,TalkTime=106}] {"text":"You can now find Latios and Latias anytime in the wild grass!","italic":true}
 
 tag @s[scores={DialogueTrigger=136,TalkTime=106..}] add Dialogue136
-scoreboard players set @s[tag=Dialogue136] TalkTime 0
-scoreboard players set @s[tag=Dialogue136] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Saffron City Silph Co Steven Stone Hoenn Starters, Post Red
@@ -3123,8 +2860,6 @@ tellraw @s[scores={DialogueTrigger=137,TalkTime=56}] ["",{"text":"<Steven> Which
 execute as @s[scores={DialogueTrigger=137,TalkTime=56}] run scoreboard players enable @s TriggerCommand
 
 tag @s[scores={DialogueTrigger=137,TalkTime=56..}] add Dialogue137
-scoreboard players set @s[tag=Dialogue137] TalkTime 0
-scoreboard players set @s[tag=Dialogue137] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Steven after giving a Hoenn Starter
@@ -3139,8 +2874,6 @@ execute as @s[scores={DialogueTrigger=138,TalkTime=26}] run particle cloud -2763
 execute as @s[scores={DialogueTrigger=138,TalkTime=26}] run tp @e[x=-2763,y=63,z=329,dy=3,type=pixelmon:npc_chatting] -736 91 -242
 
 tag @s[scores={DialogueTrigger=138,TalkTime=26..}] add Dialogue138
-scoreboard players set @s[tag=Dialogue138] TalkTime 0
-scoreboard players set @s[tag=Dialogue138] DialogueTrigger 0
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -3157,8 +2890,6 @@ tellraw @s[scores={DialogueTrigger=139,TalkTime=19}] {"text":"<Steven> Hey! Why 
 tellraw @s[scores={DialogueTrigger=139,TalkTime=26}] {"text":"<Steven> I've been looking for Forretress. I can trade my Beldum for it."}
 
 tag @s[scores={DialogueTrigger=139,TalkTime=26..}] add Dialogue139
-scoreboard players set @s[tag=Dialogue139] TalkTime 0
-scoreboard players set @s[tag=Dialogue139] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Manaphy Egg Sailor Event
@@ -3171,8 +2902,6 @@ tellraw @s[scores={DialogueTrigger=140,TalkTime=26}] {"text":"<Sailor> Please ta
 execute as @s[scores={DialogueTrigger=140,TalkTime=31}] run pokegive @s Manaphy egg lvl:5
 
 tag @s[scores={DialogueTrigger=140,TalkTime=31..}] add Dialogue140
-scoreboard players set @s[tag=Dialogue140] TalkTime 0
-scoreboard players set @s[tag=Dialogue140] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Elm giving the Shiny Charm post-Red
@@ -3190,8 +2919,6 @@ execute as @s[scores={DialogueTrigger=141,TalkTime=26}] run data merge entity @e
 tellraw @s[scores={DialogueTrigger=141,TalkTime=32}] {"text":"<Professor Elm> Having a Shiny Charm will improve your chances of finding a Shiny Pokémon!"}
 
 tag @s[scores={DialogueTrigger=141,TalkTime=32..}] add Dialogue141
-scoreboard players set @s[tag=Dialogue141] TalkTime 0
-scoreboard players set @s[tag=Dialogue141] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Sleeping Snorlax in Kanto blocking the way
@@ -3212,8 +2939,6 @@ execute as @s[scores={DialogueTrigger=142,TalkTime=45}] run particle cloud -2894
 execute as @s[scores={DialogueTrigger=142,TalkTime=45}] run pokebattle @s Snorlax,lvl:50,gr:7
 
 tag @s[scores={DialogueTrigger=142,TalkTime=45..}] add Dialogue142
-scoreboard players set @s[tag=Dialogue142] TalkTime 0
-scoreboard players set @s[tag=Dialogue142] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Mr. Pokémon after encounter with Kyogre or Groudon, depends on orb
@@ -3231,8 +2956,6 @@ tellraw @s[scores={DialogueTrigger=143,TalkTime=11,Kyogre=1..}] {"text":"<Mr. Po
 execute as @s[scores={DialogueTrigger=143,TalkTime=15,Kyogre=1..}] run give @s minecraft:golden_horse_armor{display:{Lore:["A shiny red orb that is said","to have a legend tied to it. It's","known to have a deep connection","with the Hoenn region."]}}
 
 tag @s[scores={DialogueTrigger=143,TalkTime=15..}] add Dialogue143
-scoreboard players set @s[tag=Dialogue143] TalkTime 0
-scoreboard players set @s[tag=Dialogue143] DialogueTrigger 0
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -3245,8 +2968,6 @@ execute as @s[scores={DialogueTrigger=144,TalkTime=12}] run give @s minecraft:di
 tellraw @s[scores={DialogueTrigger=144,TalkTime=19}] {"text":"<Mr. Pokémon> Fascinating! Thank you for doing all this."}
 
 tag @s[scores={DialogueTrigger=144,TalkTime=19..}] add Dialogue144
-scoreboard players set @s[tag=Dialogue144] TalkTime 0
-scoreboard players set @s[tag=Dialogue144] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Chuck on the way to the Embedded Tower after talking with Mr. Pokémon
@@ -3270,8 +2991,6 @@ execute as @s[scores={DialogueTrigger=145,TalkTime=78}] run particle cloud 1317 
 execute as @s[scores={DialogueTrigger=145,TalkTime=78}] run tp @e[x=1317,y=63,z=-370,dy=3,type=pixelmon:npc_chatting] -718 91 -242
 
 tag @s[scores={DialogueTrigger=145,TalkTime=78..}] add Dialogue145
-scoreboard players set @s[tag=Dialogue145] TalkTime 0
-scoreboard players set @s[tag=Dialogue145] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Sidequest bringing a person a Pokémon sprite
@@ -3283,8 +3002,6 @@ tellraw @s[scores={DialogueTrigger=146,TalkTime=10}] ["",{"text":"["},{"text":"Y
 execute as @s[scores={DialogueTrigger=146,TalkTime=9..10}] run scoreboard players enable @s TriggerCommand
 
 tag @s[scores={DialogueTrigger=146,TalkTime=10..}] add Dialogue146
-scoreboard players set @s[tag=Dialogue146] TalkTime 0
-scoreboard players set @s[tag=Dialogue146] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Accepting Spearow quest
@@ -3301,8 +3018,6 @@ tellraw @s[scores={DialogueTrigger=147,TalkTime=32}] {"text":"<Randy> Route 31! 
 tellraw @s[scores={DialogueTrigger=147,TalkTime=41}] {"text":"<Randy> I wonder if it's been cleared?"}
 
 tag @s[scores={DialogueTrigger=147,TalkTime=41..}] add Dialogue147
-scoreboard players set @s[tag=Dialogue147] TalkTime 0
-scoreboard players set @s[tag=Dialogue147] DialogueTrigger 0
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -3326,8 +3041,6 @@ tellraw @s[scores={DialogueTrigger=148,TalkTime=81}] {"text":"<Randy's Friend> T
 tellraw @s[scores={DialogueTrigger=148,TalkTime=90}] {"text":"<Randy's Friend> This is a move to sleep and recover HP."}
 
 tag @s[scores={DialogueTrigger=148,TalkTime=90..}] add Dialogue148
-scoreboard players set @s[tag=Dialogue148] TalkTime 0
-scoreboard players set @s[tag=Dialogue148] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Visiting Randy again after bringing Spearow
@@ -3341,8 +3054,6 @@ execute as @s[scores={DialogueTrigger=149,TalkTime=28}] run give @s pixelmon:hp_
 tellraw @s[scores={DialogueTrigger=149,TalkTime=34}] {"text":"<Randy> My pal was snoozing, right? Heh, he's always sleeping."}
 
 tag @s[scores={DialogueTrigger=149,TalkTime=34..}] add Dialogue149
-scoreboard players set @s[tag=Dialogue149] TalkTime 0
-scoreboard players set @s[tag=Dialogue149] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #150-153, armor stand events
@@ -3360,8 +3071,6 @@ tellraw @s[scores={DialogueTrigger=153,TalkTime=42}] {"text":"<Professor Oak> Yo
 tellraw @s[scores={DialogueTrigger=153,TalkTime=50}] {"text":"<Professor Oak> Choose one and it'll be yours! ...Go ahead!"}
 
 tag @s[scores={DialogueTrigger=153,TalkTime=50..}] add Dialogue153
-scoreboard players set @s[tag=Dialogue153] TalkTime 0
-scoreboard players set @s[tag=Dialogue153] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #After Professor Oak giving Kanto Starter, gives Mega Ring
@@ -3412,8 +3121,6 @@ execute as @s[scores={DialogueTrigger=154,TalkTime=93}] run advancement grant @s
 tellraw @s[scores={DialogueTrigger=154,TalkTime=93}] {"text":"You can now find wild mega stones, scattered around Johto and Kanto!","italic":true,"color":"gray"}
 
 tag @s[scores={DialogueTrigger=154,TalkTime=93..}] add Dialogue154
-scoreboard players set @s[tag=Dialogue154] TalkTime 0
-scoreboard players set @s[tag=Dialogue154] DialogueTrigger 0
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -3426,8 +3133,6 @@ execute as @s[scores={DialogueTrigger=155,TalkTime=14}] run give @s pixelmon:tm_
 tellraw @s[scores={DialogueTrigger=155,TalkTime=18}] {"text":"<Black Belt> It contains make-'em-faint Rock Smash. Use it well!"}
 
 tag @s[scores={DialogueTrigger=155,TalkTime=18..}] add Dialogue155
-scoreboard players set @s[tag=Dialogue155] TalkTime 0
-scoreboard players set @s[tag=Dialogue155] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Hoenn Sounds
@@ -3498,8 +3203,6 @@ execute as @s[scores={DialogueTrigger=156,TalkTime=1..45,MusicCooldown=0}] run t
 
 
 tag @s[scores={DialogueTrigger=156,TalkTime=46..}] add Dialogue156
-scoreboard players set @s[tag=Dialogue156] TalkTime 0
-scoreboard players set @s[tag=Dialogue156] DialogueTrigger 0
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -3567,8 +3270,6 @@ execute as @s[scores={DialogueTrigger=156,TalkTime=40}] run tp @r[limit=1,x=-867
 execute as @s[scores={DialogueTrigger=157,TalkTime=1..45,MusicCooldown=0}] run tag @s add EndDialogue
 
 tag @s[scores={DialogueTrigger=157,TalkTime=38..}] add Dialogue157
-scoreboard players set @s[tag=Dialogue157] TalkTime 0
-scoreboard players set @s[tag=Dialogue157] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Articuno Spawn
@@ -3579,13 +3280,11 @@ scoreboard players set @s[tag=Dialogue157] DialogueTrigger 0
 
 execute as @s[scores={DialogueTrigger=158,TalkTime=1}] run playsound articuno hostile @s ~ ~ ~ 10 1 1
 execute as @s[scores={DialogueTrigger=158,TalkTime=1}] run particle cloud -2054 19 -835 1 1 1 1 500
+execute as @s[scores={DialogueTrigger=158,TalkTime=1}] run execute at @e[type=armor_stand,x=-2054,y=19,z=-835,distance=..1] run pokespawn Articuno gr:7 lvl:50
 execute as @s[scores={DialogueTrigger=158,TalkTime=1}] run tp @e[type=pixelmon:statue,x=-2054,y=19,z=-835,distance=..1] -767 79 -244
-execute as @s[scores={DialogueTrigger=158,TalkTime=1}] run execute @e[type=armor_stand,x=-2054,y=19,z=-835,distance=..1] run pokespawn Articuno gr:7 lvl:50
 execute as @s[scores={DialogueTrigger=158,TalkTime=1}] run scoreboard players set @s Articuno 1
 
 tag @s[scores={DialogueTrigger=158,TalkTime=1..}] add Dialogue158
-scoreboard players set @s[tag=Dialogue158] TalkTime 0
-scoreboard players set @s[tag=Dialogue158] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Zapdos Spawn
@@ -3595,14 +3294,12 @@ scoreboard players set @s[tag=Dialogue158] DialogueTrigger 0
 #execute as @s[x=-3239,y=64,z=571,distance=..50,score_Zapdos=0,score_ZapdosCD=0,score_TalkTime=0,tag=AllGyms] run tp @e[x=-773,y=79,z=-244,distance=..1,type=pixelmon:statue] -3239 64 571
 
 execute as @s[scores={DialogueTrigger=159,TalkTime=1}] run playsound zapdos hostile @s ~ ~ ~ 10 1 1
-execute as @s[scores={DialogueTrigger=159,TalkTime=1}] run execute @e[type=pixelmon:statue,x=-3239,y=64,z=571,distance=..1] run pokespawn Zapdos gr:7 lvl:50
+execute as @s[scores={DialogueTrigger=159,TalkTime=1}] run execute at @e[type=pixelmon:statue,x=-3239,y=64,z=571,distance=..1] run pokespawn Zapdos gr:7 lvl:50
 execute as @s[scores={DialogueTrigger=159,TalkTime=1}] run particle cloud -3239 64 571 1 1 1 0.15 1000
 execute as @s[scores={DialogueTrigger=159,TalkTime=1}] run tp @e[type=pixelmon:statue,x=-3239,y=64,z=571,distance=..1] -773 79 -244
 execute as @s[scores={DialogueTrigger=159,TalkTime=1}] run scoreboard players set @s Zapdos 1
 
 tag @s[scores={DialogueTrigger=159,TalkTime=1..}] add Dialogue159
-scoreboard players set @s[tag=Dialogue159] TalkTime 0
-scoreboard players set @s[tag=Dialogue159] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Moltres Spawn
@@ -3613,14 +3310,12 @@ scoreboard players set @s[tag=Dialogue159] DialogueTrigger 0
 
 execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run playsound moltres hostile @s ~ ~ ~ 10 1 1
 execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run particle cloud -1379 51 522 1 1 1 0.15 1000
+execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run execute at @e[type=armor_stand,x=-1379,y=51,z=522,distance=..1] run pokespawn Moltres gr:7 lvl:50
 execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run tp @e[type=pixelmon:statue,x=-1379,y=51,z=522,distance=..1] -779 79 -244
-execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run execute @e[type=armor_stand,x=-1379,y=51,z=522,distance=..1] run pokespawn Moltres gr:7 lvl:50
 execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run scoreboard players set @s Moltres 1
 execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run particle flame -1379 51 522 0 0 0 1 10
 
 tag @s[scores={DialogueTrigger=160,TalkTime=1..}] add Dialogue160
-scoreboard players set @s[tag=Dialogue160] TalkTime 0
-scoreboard players set @s[tag=Dialogue160] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Celebi Time Travel Event beginning prompt
@@ -3631,8 +3326,6 @@ tellraw @s[scores={DialogueTrigger=161,TalkTime=1}] ["",{"text":"Celebi is react
 execute as @s[scores={DialogueTrigger=161,TalkTime=1..2}] run scoreboard players enable @s TriggerCommand
 
 tag @s[scores={DialogueTrigger=161,TalkTime=2..}] add Dialogue161
-scoreboard players set @s[tag=Dialogue161] TalkTime 0
-scoreboard players set @s[tag=Dialogue161] DialogueTrigger 0
 
 #Celebi might be interested
 #testfor @s[x=617,y=64,z=-699,distance=..15,score_Celebi_min=1,tag=!Dialogue161]
@@ -3703,8 +3396,6 @@ tellraw @s[scores={DialogueTrigger=162,TalkTime=87}] {"text":"<Lyra> Celebi must
 tellraw @s[scores={DialogueTrigger=162,TalkTime=95}] ["",{"text":"<Lyra> "},{"selector":"@s"},{"text":", there is someone else here besides us! Let's go find out who!"}]
 
 tag @s[scores={DialogueTrigger=162,TalkTime=95..}] add Dialogue162
-scoreboard players set @s[tag=Dialogue162] TalkTime 0
-scoreboard players set @s[tag=Dialogue162] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Celebi Time Travel Giovanni and Silver
@@ -3743,8 +3434,6 @@ execute as @s[scores={DialogueTrigger=163,TalkTime=172}] run particle cloud 278 
 execute as @s[scores={DialogueTrigger=163,TalkTime=172}] run tp @e[x=278,y=63,z=726,dy=3,type=pixelmon:npc_chatting] -731 71 -242
 
 tag @s[scores={DialogueTrigger=163,TalkTime=8..}] add Dialogue163
-scoreboard players set @s[tag=Dialogue163] TalkTime 0
-scoreboard players set @s[tag=Dialogue163] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Lyra after hearing Silver/Giovanni story
@@ -3798,8 +3487,6 @@ tellraw @s[scores={DialogueTrigger=164,TalkTime=200}] ["",{"text":"<"},{"text":"
 tellraw @s[scores={DialogueTrigger=164,TalkTime=208}] ["",{"text":"<"},{"text":"Giovanni","color":"gray"},{"text":"> Team Rocket will be born again, and I will rule the world!"}]
 
 tag @s[scores={DialogueTrigger=164,TalkTime=208..}] add Dialogue164
-scoreboard players set @s[tag=Dialogue164] TalkTime 0
-scoreboard players set @s[tag=Dialogue164] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Giovanni post-battle
@@ -3866,8 +3553,6 @@ execute as @s[scores={DialogueTrigger=165,TalkTime=158}] run tp @e[x=621,y=63,z=
 execute as @s[scores={DialogueTrigger=165,TalkTime=158}] run advancement grant @s only johto:rocket5
 
 tag @s[scores={DialogueTrigger=165,TalkTime=158..}] add Dialogue165
-scoreboard players set @s[tag=Dialogue165] TalkTime 0
-scoreboard players set @s[tag=Dialogue165] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Celebi's Return Home option:
@@ -3893,8 +3578,6 @@ execute as @s[scores={DialogueTrigger=166,TalkTime=10}] run tp @e[x=-705,y=85,z=
 execute as @s[scores={DialogueTrigger=166,TalkTime=7}] run summon minecraft:item 176 64 -141 {Item:{id:"pixelmon:azure_flute",Count:1,tag:{display:{Lore:["A flute that puts out echoing","sounds that do not seem to be of","this world. No one knows who made","it. It seems to call to the","highest mountains."]}}},Age:-32768,PickupDelay:32767}
 
 tag @s[scores={DialogueTrigger=166,TalkTime=7..}] add Dialogue166
-scoreboard players set @s[tag=Dialogue166] TalkTime 0
-scoreboard players set @s[tag=Dialogue166] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Archeologist giving Azure Flute
@@ -3912,8 +3595,6 @@ tellraw @s[scores={DialogueTrigger=167,TalkTime=27}] {"text":"<Archaeologist> Th
 tellraw @s[scores={DialogueTrigger=167,TalkTime=38}] {"text":"<Archaeologist> Is there a mountain in this region that may have a similar connection?"}
 
 tag @s[scores={DialogueTrigger=167,TalkTime=38..}] add Dialogue167
-scoreboard players set @s[tag=Dialogue167] TalkTime 0
-scoreboard players set @s[tag=Dialogue167] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Post-catching Arceus
@@ -3930,9 +3611,6 @@ tellraw @s[scores={DialogueTrigger=168,TalkTime=48}] {"text":"<Archaeologist> I 
 execute as @s[scores={DialogueTrigger=168,TalkTime=48}] run setblock -689 90 -242 minecraft:redstone_block
 
 tag @s[scores={DialogueTrigger=168,TalkTime=48..}] add Dialogue168
-scoreboard players set @s[tag=Dialogue168] TalkTime 0
-scoreboard players set @s[tag=Dialogue168] DialogueTrigger 0
-
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Inside fake ruins, tps into Sinjoh Ruins
 #scoreboard players set @a[x=-992,y=0,z=-172,dx=45,dy=70,dz=60,score_TalkTime=0] DialogueTrigger 169
@@ -3977,8 +3655,6 @@ execute as @s[scores={DialogueTrigger=169,TalkTime=115}] run tp @e[type=pixelmon
 execute as @s[scores={DialogueTrigger=169,TalkTime=115}] run particle cloud -1044 61 -181 1 1 1 1 100
 
 tag @s[scores={DialogueTrigger=169,TalkTime=115..}] add Dialogue169
-scoreboard players set @s[tag=Dialogue169] TalkTime 0
-scoreboard players set @s[tag=Dialogue169] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Hiker Continuation in the house
@@ -3992,8 +3668,6 @@ tellraw @s[scores={DialogueTrigger=170,TalkTime=45}] {"text":"<Hiker> The ancien
 tellraw @s[scores={DialogueTrigger=170,TalkTime=58}] {"text":"<Hiker> That is proof that people from Johto and Sinnoh blended together as a group."}
 
 tag @s[scores={DialogueTrigger=170,TalkTime=58..}] add Dialogue170
-scoreboard players set @s[tag=Dialogue170] TalkTime 0
-scoreboard players set @s[tag=Dialogue170] DialogueTrigger 0
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -4022,8 +3696,6 @@ execute as @s[scores={DialogueTrigger=171,TalkTime=110}] run particle cloud -108
 execute as @s[scores={DialogueTrigger=171,TalkTime=110}] run tp @e[x=-1081,y=61,z=-224,distance=..1,limit=1,type=pixelmon:npc_chatting] -815 65 -235
 
 tag @s[scores={DialogueTrigger=171,TalkTime=58..}] add Dialogue171
-scoreboard players set @s[tag=Dialogue171] TalkTime 0
-scoreboard players set @s[tag=Dialogue171] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Sinjoh Altar Cynthia
@@ -4060,8 +3732,6 @@ tellraw @s[scores={DialogueTrigger=172,TalkTime=151}] {"text":"<Cynthia> It seem
 tellraw @s[scores={DialogueTrigger=172,TalkTime=163}] {"text":"<Cynthia> You'll want to be well prepared."}
 
 tag @s[scores={DialogueTrigger=172,TalkTime=163..}] add Dialogue172
-scoreboard players set @s[tag=Dialogue172] TalkTime 0
-scoreboard players set @s[tag=Dialogue172] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Dialogues 173-175 Summoning Sinnoh Legends
@@ -4087,8 +3757,6 @@ execute as @s[scores={DialogueTrigger=176,TalkTime=88}] run tp @e[x=-1046,y=48,z
 execute as @s[scores={DialogueTrigger=176,TalkTime=88}] run particle cloud -1046 48 -111 1 1 1 1 100
 
 tag @s[scores={DialogueTrigger=176,TalkTime=88..}] add Dialogue176
-scoreboard players set @s[tag=Dialogue176] TalkTime 0
-scoreboard players set @s[tag=Dialogue176] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Abra taking player home
@@ -4113,8 +3781,6 @@ tellraw @s[scores={DialogueTrigger=177,TalkTime=50}] {"text":"<Archaeologist> I 
 execute as @s[scores={DialogueTrigger=177,TalkTime=50}] run advancement grant @s only johto:event8
 
 tag @s[scores={DialogueTrigger=177,TalkTime=50..}] add Dialogue177
-scoreboard players set @s[tag=Dialogue177] TalkTime 0
-scoreboard players set @s[tag=Dialogue177] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Radio Tower Quiz prompt
@@ -4142,8 +3808,6 @@ execute as @s[scores={DialogueTrigger=178,TalkTime=1}] run tag @s remove Dialogu
 execute as @s[scores={DialogueTrigger=178,TalkTime=1}] run scoreboard players set @s Cooldown 20
 
 tag @s[scores={DialogueTrigger=178,TalkTime=1..}] add Dialogue178
-scoreboard players set @s[tag=Dialogue178] TalkTime 0
-scoreboard players set @s[tag=Dialogue178] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Radio Tower Quiz First Question
@@ -4163,8 +3827,6 @@ execute as @s[scores={DialogueTrigger=179,TalkTime=1}] run tag @s remove Dialogu
 execute as @s[scores={DialogueTrigger=179,TalkTime=1}] run tag @s remove Dialogue183
 
 tag @s[scores={DialogueTrigger=179,TalkTime=1..}] add Dialogue179
-scoreboard players set @s[tag=Dialogue179] TalkTime 0
-scoreboard players set @s[tag=Dialogue179] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Radio Tower Quiz Second Question
@@ -4177,8 +3839,6 @@ execute as @s[scores={DialogueTrigger=180,TalkTime=7}] run scoreboard players en
 tellraw @s[scores={DialogueTrigger=180,TalkTime=7}] ["",{"text":"["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 17"}},{"text":"] \u0020 \u0020 ["},{"text":"No","color":"red","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 15"}},{"text":"]"}]
 
 tag @s[scores={DialogueTrigger=180,TalkTime=7..}] add Dialogue180
-scoreboard players set @s[tag=Dialogue180] TalkTime 0
-scoreboard players set @s[tag=Dialogue180] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Radio Tower Quiz Third Question
@@ -4191,8 +3851,6 @@ execute as @s[scores={DialogueTrigger=181,TalkTime=7}] run scoreboard players en
 tellraw @s[scores={DialogueTrigger=181,TalkTime=7}] ["",{"text":"["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 15"}},{"text":"] \u0020 \u0020 ["},{"text":"No","color":"red","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 18"}},{"text":"]"}]
 
 tag @s[scores={DialogueTrigger=181,TalkTime=7..}] add Dialogue181
-scoreboard players set @s[tag=Dialogue181] TalkTime 0
-scoreboard players set @s[tag=Dialogue181] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Radio Tower Quiz Fourth Question
@@ -4205,8 +3863,6 @@ execute as @s[scores={DialogueTrigger=182,TalkTime=7}] run scoreboard players en
 tellraw @s[scores={DialogueTrigger=182,TalkTime=7}] ["",{"text":"["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 19"}},{"text":"] \u0020 \u0020 ["},{"text":"No","color":"red","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 15"}},{"text":"]"}]
 
 tag @s[scores={DialogueTrigger=182,TalkTime=7..}] add Dialogue182
-scoreboard players set @s[tag=Dialogue182] TalkTime 0
-scoreboard players set @s[tag=Dialogue182] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Radio Tower Quiz Fifth Question
@@ -4219,8 +3875,6 @@ execute as @s[scores={DialogueTrigger=183,TalkTime=7}] run scoreboard players en
 tellraw @s[scores={DialogueTrigger=183,TalkTime=7}] ["",{"text":"["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 15"}},{"text":"] \u0020 \u0020 ["},{"text":"No","color":"red","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 20"}},{"text":"]"}]
 
 tag @s[scores={DialogueTrigger=183,TalkTime=7..}] add Dialogue183
-scoreboard players set @s[tag=Dialogue183] TalkTime 0
-scoreboard players set @s[tag=Dialogue183] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Radio Tower Quiz all correct
@@ -4233,9 +3887,6 @@ tellraw @s[scores={DialogueTrigger=184,TalkTime=10}] {"text":"<Radio Tower Clerk
 execute as @s[scores={DialogueTrigger=184,TalkTime=10}] run tag @s add RadioCard
 
 tag @s[scores={DialogueTrigger=184,TalkTime=7..}] add Dialogue184
-scoreboard players set @s[tag=Dialogue184] TalkTime 0
-scoreboard players set @s[tag=Dialogue184] DialogueTrigger 0
-
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Lucky Number Show Roll
 #execute as @s[score_TriggerCommand_min=76,score_TriggerCommand=76] run scoreboard players set @s DialogueTrigger 185
@@ -4276,19 +3927,17 @@ execute as @s[scores={DialogueTrigger=185,TalkTime=14,rng=111..127}] run give @s
 
 #Master Ball
 tellraw @s[scores={DialogueTrigger=185,TalkTime=14,rng=64}] {"text":"<DJ Reed> Wow! You have a perfect match of all five numbers! We have a grand prize winner! You have won a Master Ball!"}
-execute as @s[scores={DialogueTrigger=185,TalkTime=14,rng=64}] run give @s pixelmon:Master_Ball
+execute as @s[scores={DialogueTrigger=185,TalkTime=14,rng=64}] run give @s pixelmon:master_ball
 execute as @s[scores={DialogueTrigger=185,TalkTime=14,rng=64}] run playsound minecraft:entity.firework.twinkle ambient @s ~ ~ ~ 1 1 1
 
 tellraw @s[scores={DialogueTrigger=185,TalkTime=14,rng=109..110}] {"text":"<DJ Reed> Wow! You have a perfect match of all five numbers! We have a grand prize winner! You have won a Master Ball!"}
-execute as @s[scores={DialogueTrigger=185,TalkTime=14,rng=109..110}] run give @s pixelmon:Master_Ball
+execute as @s[scores={DialogueTrigger=185,TalkTime=14,rng=109..110}] run give @s pixelmon:master_ball
 execute as @s[scores={DialogueTrigger=185,TalkTime=14,rng=109..110}] run playsound minecraft:entity.firework.twinkle ambient @s ~ ~ ~ 1 1 1
 
 execute as @s[scores={DialogueTrigger=185,TalkTime=14}] run tag @s add LuckyNumberCD
 tellraw @s[scores={DialogueTrigger=185,TalkTime=24}] {"text":"<DJ Reed> Tune in again tomorrow and see me for another chance at a prize!"}
 
 tag @s[scores={DialogueTrigger=185,TalkTime=24..}] add Dialogue185
-scoreboard players set @s[tag=Dialogue185] TalkTime 0
-scoreboard players set @s[tag=Dialogue185] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Beauty Salon Pamper
@@ -4326,8 +3975,6 @@ execute as @s[scores={DialogueTrigger=186,TalkTime=15}] run tag @s add BeautyCD
 execute as @s[scores={DialogueTrigger=186,TalkTime=15}] run tag @s remove BeautySalon
 
 tag @s[scores={DialogueTrigger=186,TalkTime=15..}] add Dialogue186
-scoreboard players set @s[tag=Dialogue186] TalkTime 0
-scoreboard players set @s[tag=Dialogue186] DialogueTrigger 0
 
 
 #Prompt:
@@ -4353,8 +4000,6 @@ tellraw @s[scores={DialogueTrigger=187,TalkTime=28}] {"text":"<Monika> You shoul
 tellraw @s[scores={DialogueTrigger=187,TalkTime=35}] {"text":"<Monika> My brothers and sisters are all over the place. See if you could find them all!"}
 
 tag @s[scores={DialogueTrigger=187,TalkTime=35..}] add Dialogue187
-scoreboard players set @s[tag=Dialogue187] TalkTime 0
-scoreboard players set @s[tag=Dialogue187] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Tuscany - Route 29 (Tuesday)
@@ -4376,8 +4021,6 @@ tellraw @s[scores={DialogueTrigger=188,TalkTime=37}] {"text":"<Tuscany> Have you
 tellraw @s[scores={DialogueTrigger=188,TalkTime=44}] {"text":"<Tuscany> Or my younger brother, Wesley? I am the second of seven children."}
 
 tag @s[scores={DialogueTrigger=188,TalkTime=44..}] add Dialogue188
-scoreboard players set @s[tag=Dialogue188] TalkTime 0
-scoreboard players set @s[tag=Dialogue188] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Wesley - Lake of Rage (Wednesday)
@@ -4398,8 +4041,6 @@ tellraw @s[scores={DialogueTrigger=189,TalkTime=25}] {"text":"<Wesley> Since you
 tellraw @s[scores={DialogueTrigger=189,TalkTime=34}] {"text":"<Wesley> Or did you just get lucky?"}
 
 tag @s[scores={DialogueTrigger=189,TalkTime=34..}] add Dialogue189
-scoreboard players set @s[tag=Dialogue189] TalkTime 0
-scoreboard players set @s[tag=Dialogue189] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Arthur - Route 36 (Thursday)
@@ -4418,8 +4059,6 @@ execute as @s[scores={DialogueTrigger=190,TalkTime=14}] run give @s pixelmon:har
 tellraw @s[scores={DialogueTrigger=190,TalkTime=17}] {"text":"<Arthur> A Pokémon that uses Rock-type moves should hold on to that. It pumps up Rock-type attacks."}
 
 tag @s[scores={DialogueTrigger=190,TalkTime=17..}] add Dialogue190
-scoreboard players set @s[tag=Dialogue190] TalkTime 0
-scoreboard players set @s[tag=Dialogue190] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Frieda - Route 32 (Friday)
@@ -4440,8 +4079,6 @@ tellraw @s[scores={DialogueTrigger=191,TalkTime=28}] {"text":"<Frieda> Oh! It's 
 tellraw @s[scores={DialogueTrigger=191,TalkTime=37}] {"text":"<Frieda> I love Friday. No doubt about it! Don't you think it's great too?"}
 
 tag @s[scores={DialogueTrigger=191,TalkTime=37..}] add Dialogue191
-scoreboard players set @s[tag=Dialogue191] TalkTime 0
-scoreboard players set @s[tag=Dialogue191] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Santos - Blackthorn City (Saturday)
@@ -4461,8 +4098,6 @@ tellraw @s[scores={DialogueTrigger=192,TalkTime=20}] {"text":"<Santos> Ground-ty
 tellraw @s[scores={DialogueTrigger=192,TalkTime=30}] {"text":"<Santos> ... See you again on another Saturday..."}
 
 tag @s[scores={DialogueTrigger=192,TalkTime=30..}] add Dialogue192
-scoreboard players set @s[tag=Dialogue192] TalkTime 0
-scoreboard players set @s[tag=Dialogue192] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Sunny - Route 37 (Sunday)
@@ -4483,8 +4118,6 @@ tellraw @s[scores={DialogueTrigger=193,TalkTime=34}] {"text":"<Sunny> A Pokémon
 tellraw @s[scores={DialogueTrigger=193,TalkTime=42}] {"text":"<Sunny> My sis Monica said it powers up Electric-type moves!"}
 
 tag @s[scores={DialogueTrigger=193,TalkTime=42..}] add Dialogue193
-scoreboard players set @s[tag=Dialogue193] TalkTime 0
-scoreboard players set @s[tag=Dialogue193] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Route 25 Trainers after beating all 6
@@ -4496,8 +4129,6 @@ tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Ace Trainer Kevin>
 execute as @s[scores={DialogueTrigger=194,TalkTime=5}] run give @s pixelmon:nugget
 
 tag @s[scores={DialogueTrigger=194,TalkTime=5..}] add Dialogue194
-scoreboard players set @s[tag=Dialogue194] TalkTime 0
-scoreboard players set @s[tag=Dialogue194] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Bill's Grandfather housesitting opening dialogue
@@ -4508,8 +4139,6 @@ tellraw @s[scores={DialogueTrigger=195,TalkTime=10}] {"text":"<Bill's Grandfathe
 execute as @s[scores={DialogueTrigger=195,TalkTime=10}] run scoreboard players set @s BillGP 1
 
 tag @s[scores={DialogueTrigger=195,TalkTime=10..}] add Dialogue195
-scoreboard players set @s[tag=Dialogue195] TalkTime 0
-scoreboard players set @s[tag=Dialogue195] DialogueTrigger 0
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -4537,8 +4166,6 @@ execute as @s[scores={DialogueTrigger=196,TalkTime=13,BillGP=1..5}] run scoreboa
 execute as @s[scores={DialogueTrigger=196,TalkTime=13,BillGP=1..5}] run scoreboard players set @s Cooldown 45
 
 tag @s[scores={DialogueTrigger=196,TalkTime=13..}] add Dialogue196
-scoreboard players set @s[tag=Dialogue196] TalkTime 0
-scoreboard players set @s[tag=Dialogue196] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Bug Catching Contest intro
@@ -4610,14 +4237,12 @@ tellraw @s[scores={DialogueTrigger=198,TalkTime=1714}] {"text":"<Park Worker> Pl
 execute as @s[scores={DialogueTrigger=198,TalkTime=1714}] run scoreboard players set @s BugPoints 0
 
 #Tps in random trainers and statues
-execute as @s[scores={DialogueTrigger=198,TalkTime=1715}] run tp @r[x=-855,y=64,z=-153,dx=5,dy=2,dz=5,type=pixelmon:npc_chatting,limit=1] 471 64 61
-execute as @s[scores={DialogueTrigger=198,TalkTime=1715}] run tp @r[x=-855,y=64,z=-153,dx=5,dy=2,dz=5,type=pixelmon:npc_chatting,limit=1] 481 64 61
-execute as @s[scores={DialogueTrigger=198,TalkTime=1715}] run tp @r[x=-848,y=64,z=-153,dx=5,dy=2,dz=5,type=pixelmon:statue,limit=1] 471 64 63
-execute as @s[scores={DialogueTrigger=198,TalkTime=1715}] run tp @r[x=-848,y=64,z=-153,dx=5,dy=2,dz=5,type=pixelmon:statue,limit=1] 481 64 63
+execute as @s[scores={DialogueTrigger=198,TalkTime=1715}] run tp @r[x=-855,y=64,z=-153,dx=5,dy=2,dz=5,limit=1] 471 64 61
+execute as @s[scores={DialogueTrigger=198,TalkTime=1715}] run tp @r[x=-855,y=64,z=-153,dx=5,dy=2,dz=5,limit=1] 481 64 61
+execute as @s[scores={DialogueTrigger=198,TalkTime=1715}] run tp @r[x=-848,y=64,z=-153,dx=5,dy=2,dz=5,limit=1] 471 64 63
+execute as @s[scores={DialogueTrigger=198,TalkTime=1715}] run tp @r[x=-848,y=64,z=-153,dx=5,dy=2,dz=5,limit=1] 481 64 63
 
 tag @s[scores={DialogueTrigger=198,TalkTime=1715..}] add Dialogue198
-scoreboard players set @s[tag=Dialogue198] TalkTime 0
-scoreboard players set @s[tag=Dialogue198] DialogueTrigger 0
 
 
 
@@ -4700,20 +4325,19 @@ execute as @s[scores={DialogueTrigger=199,TalkTime=29},tag=First] run scoreboard
 
 execute as @s[scores={DialogueTrigger=199,TalkTime=29},tag=First] run scoreboard players operation @s rng = @e[x=-867,y=69,z=-205,dy=3,type=armor_stand] rng
 
-execute as @s[scores={DialogueTrigger=199,TalkTime=33,rng=0..32}] run give @s[tag=First] pixelmon:sun_Stone
+execute as @s[scores={DialogueTrigger=199,TalkTime=33,rng=0..32}] run give @s[tag=First] pixelmon:sun_stone
 execute as @s[scores={DialogueTrigger=199,TalkTime=33,rng=33..96}] run give @s[tag=First] pixelmon:shiny_stone
 execute as @s[scores={DialogueTrigger=199,TalkTime=33,rng=97..127}] run give @s[tag=First] pixelmon:oval_stone
 
 #2nd Place Prize
-execute as @s[scores={DialogueTrigger=199,TalkTime=33}] run give @s[tag=Second] pixelmon:Ever_Stone
+execute as @s[scores={DialogueTrigger=199,TalkTime=33}] run give @s[tag=Second] pixelmon:ever_stone
 
 #3rd Place Prize
-xecute as @s[scores={DialogueTrigger=199,TalkTime=33}] run give @s[tag=Third] pixelmon:shed_shell
+execute as @s[scores={DialogueTrigger=199,TalkTime=33}] run give @s[tag=Third] pixelmon:shed_shell
 
 
 
 #Clears Sport Ball stuff
-execute as @s[scores={DialogueTrigger=199,TalkTime=34..35}] run clear @s pixelmon:sport_ball_disc
 execute as @s[scores={DialogueTrigger=199,TalkTime=34..35}] run clear @s pixelmon:sport_ball_lid
 execute as @s[scores={DialogueTrigger=199,TalkTime=34..35}] run clear @s pixelmon:sport_ball
 
@@ -4733,8 +4357,6 @@ execute as @s[scores={DialogueTrigger=199,TalkTime=38}] run tag @s remove Third
 execute as @s[scores={DialogueTrigger=199,TalkTime=38}] run tag @s remove Dialogue198
 
 tag @s[scores={DialogueTrigger=199,TalkTime=38..}] add Dialogue199
-scoreboard players set @s[tag=Dialogue199] TalkTime 0
-scoreboard players set @s[tag=Dialogue199] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Odd Egg Rolls
@@ -4777,8 +4399,6 @@ tellraw @s[scores={DialogueTrigger=200,TalkTime=2}] ["",{"text":"You recieved an
 execute as @s[scores={DialogueTrigger=200,TalkTime=2}] run tag @s remove OddEggHave
 
 tag @s[scores={DialogueTrigger=200,TalkTime=2..}] add Dialogue200
-scoreboard players set @s[tag=Dialogue200] TalkTime 0
-scoreboard players set @s[tag=Dialogue200] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Safari Zone clone in commands
@@ -4836,8 +4456,6 @@ execute as @s[scores={DialogueTrigger=201,TalkTime=1..120}] run function custom:
 #execute as @s[scores={DialogueTrigger=201,TalkTime=119}] run clear @s minecraft:filled_map 249 64
 
 tag @s[scores={DialogueTrigger=201,TalkTime=119..}] add Dialogue201
-scoreboard players set @s[tag=Dialogue201] TalkTime 0
-scoreboard players set @s[tag=Dialogue201] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Safari Zone tear down commands
@@ -4863,7 +4481,6 @@ execute as @s[scores={DialogueTrigger=202,TalkTime=1..65}] run function custom:s
 
 #Final cleanup
 execute as @s[scores={DialogueTrigger=202,TalkTime=65}] run clear @s pixelmon:safari_ball
-execute as @s[scores={DialogueTrigger=202,TalkTime=65}] run clear @s pixelmon:safari_ball_disc
 execute as @s[scores={DialogueTrigger=202,TalkTime=65}] run clear @s pixelmon:safari_ball_lid
 execute as @s[scores={DialogueTrigger=202,TalkTime=65}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=5,dz=10,type=armor_stand] BiomeID 0
 execute as @s[scores={DialogueTrigger=202,TalkTime=65}] run tag @e[x=-792,y=65,z=-284,dy=3,type=armor_stand] remove SafariActive
@@ -4875,8 +4492,6 @@ tellraw @s[scores={DialogueTrigger=202,TalkTime=65}] ["",{"text":"Thank you for 
 execute as @s[scores={DialogueTrigger=202,TalkTime=65}] run advancement grant @s only johto:event2
 
 tag @s[scores={DialogueTrigger=202,TalkTime=65..}] add Dialogue202
-scoreboard players set @s[tag=Dialogue202] TalkTime 0
-scoreboard players set @s[tag=Dialogue202] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #PokeManiac Kirk giving Shuckle, Cianwood City
@@ -4891,8 +4506,6 @@ execute as @s[scores={DialogueTrigger=203,TalkTime=40}] run pokegive @s Shuckle 
 execute as @s[scores={DialogueTrigger=203,TalkTime=40}] run playsound egghatch ambient @s ~ ~ ~ 10 1 1
 
 tag @s[scores={DialogueTrigger=203,TalkTime=40..}] add Dialogue203
-scoreboard players set @s[tag=Dialogue203] TalkTime 0
-scoreboard players set @s[tag=Dialogue203] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Bill in Ecruteak City Pokemon Center
@@ -4915,8 +4528,6 @@ execute as @s[scores={DialogueTrigger=204,TalkTime=62}] run particle cloud 337 6
 execute as @s[scores={DialogueTrigger=204,TalkTime=62}] run tp @e[x=337,y=63,z=191,dy=3,type=pixelmon:npc_chatting] -815 70 -235
 
 tag @s[scores={DialogueTrigger=204,TalkTime=62..}] add Dialogue204
-scoreboard players set @s[tag=Dialogue204] TalkTime 0
-scoreboard players set @s[tag=Dialogue204] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Bill's house in Goldenrod City after talking with him in Ecruteak
@@ -4941,8 +4552,6 @@ tellraw @s[scores={DialogueTrigger=205,TalkTime=62}] {"text":"<Bill> I used to d
 tellraw @s[scores={DialogueTrigger=205,TalkTime=70}] {"text":"<Bill> Both the GTS and Nintendo Wi-Fi Connection were inspired by my machine that transfers things!"}
 
 tag @s[scores={DialogueTrigger=205,TalkTime=70..}] add Dialogue205
-scoreboard players set @s[tag=Dialogue205] TalkTime 0
-scoreboard players set @s[tag=Dialogue205] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Battle Tower Win commands
@@ -4984,25 +4593,25 @@ execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players op
 
 #Tps in new trainer depending on Battle_Streak score and rng score for some
 #100% Group 1
-execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=0..20}] run tp @r[x=881,y=46,z=69,dx=2,dy=2,dz=2,type=pixelmon:npc_trainer,limit=1] 910 100 67.0 90 ~
+execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=0..20}] run tp @r[x=881,y=46,z=69,dx=2,dy=2,dz=2,limit=1] 910 100 67.0 90 ~
 
 #50% Group 1, 50% Group 2
-execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=21..40,rng=0..63}] run tp @r[x=881,y=46,z=69,dx=2,dy=2,dz=2,type=pixelmon:npc_trainer,limit=1] 910 100 67.0 90 ~
-execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=21..40,rng=64..}] run tp @r[x=886,y=46,z=69,dx=2,dy=2,dz=2,type=pixelmon:npc_trainer,limit=1] 910 100 67.0 90 ~
+execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=21..40,rng=0..63}] run tp @r[x=881,y=46,z=69,dx=2,dy=2,dz=2,limit=1] 910 100 67.0 90 ~
+execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=21..40,rng=64..}] run tp @r[x=886,y=46,z=69,dx=2,dy=2,dz=2,limit=1] 910 100 67.0 90 ~
 
 #100% Group 2
-execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=41..60}] run tp @r[x=886,y=46,z=69,dx=2,dy=2,dz=2,type=pixelmon:npc_trainer,limit=1] 910 100 67.0 90 ~
+execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=41..60}] run tp @r[x=886,y=46,z=69,dx=2,dy=2,dz=2,limit=1] 910 100 67.0 90 ~
 
 #50% Group 2, 50% Group 3
-execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=61..80,rng=0..63}] run tp @r[x=886,y=46,z=69,dx=2,dy=2,dz=2,type=pixelmon:npc_trainer,limit=1] 910 100 67.0 90 ~
-execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=61..80,rng=64..}] run tp @r[x=891,y=46,z=69,dx=2,dy=2,dz=2,type=pixelmon:npc_trainer,limit=1] 910 100 67.0 90 ~
+execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=61..80,rng=0..63}] run tp @r[x=886,y=46,z=69,dx=2,dy=2,dz=2,limit=1] 910 100 67.0 90 ~
+execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=61..80,rng=64..}] run tp @r[x=891,y=46,z=69,dx=2,dy=2,dz=2,limit=1] 910 100 67.0 90 ~
 
 #100% Group 3
-execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=81..100}] run tp @r[x=891,y=46,z=69,dx=2,dy=2,dz=2,type=pixelmon:npc_trainer,limit=1] 910 100 67.0 90 ~
+execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=81..100}] run tp @r[x=891,y=46,z=69,dx=2,dy=2,dz=2,limit=1] 910 100 67.0 90 ~
 
 #75% Group 3, 25% Group 4
-execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=101..,rng=0..102}] run tp @r[x=891,y=46,z=69,dx=2,dy=2,dz=2,type=pixelmon:npc_trainer,limit=1] 910 100 67.0 90 ~
-execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=101..,rng=103..}] run tp @r[x=896,y=46,z=69,dx=2,dy=2,dz=2,type=pixelmon:npc_trainer,limit=1] 910 100 67.0 90 ~
+execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=101..,rng=0..102}] run tp @r[x=891,y=46,z=69,dx=2,dy=2,dz=2,limit=1] 910 100 67.0 90 ~
+execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=101..,rng=103..}] run tp @r[x=896,y=46,z=69,dx=2,dy=2,dz=2,limit=1] 910 100 67.0 90 ~
 
 #Rotates npcs
 execute as @s[scores={DialogueTrigger=206,TalkTime=5}] run data merge entity @e[limit=1,x=910,y=99,z=66,dy=3,dz=1,type=pixelmon:npc_trainer] {TrainerRotation:90.0f}
@@ -5014,8 +4623,6 @@ execute as @s[scores={DialogueTrigger=206,TalkTime=5}] run data merge entity @e[
 #execute as @s[score_DialogueTrigger_min=206,score_DialogueTrigger=206,tag=!Dialogue206,score_TalkTime_min=5,score_TalkTime=5] run execute @e[x=910,y=99,z=66,dy=2,dz=1,type=pixelmon:npc_trainer,score_Battle_Streak_min=4,score_Battle_Streak=4] run say Group 4
 
 tag @s[scores={DialogueTrigger=206,TalkTime=5..}] add Dialogue206
-scoreboard players set @s[tag=Dialogue206] TalkTime 0
-scoreboard players set @s[tag=Dialogue206] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Magnet Train, Goldenrod to Saffron
@@ -5031,8 +4638,6 @@ execute as @s[scores={DialogueTrigger=207,TalkTime=10}] run title @s title {"tex
 execute as @s[scores={DialogueTrigger=207,TalkTime=10}] run title @s subtitle {"text":"Shining Big City","italic":true}
 
 tag @s[scores={DialogueTrigger=207,TalkTime=10..}] add Dialogue207
-scoreboard players set @s[tag=Dialogue207] TalkTime 0
-scoreboard players set @s[tag=Dialogue207] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Magnet Train, Saffron to Goldenrod
@@ -5048,8 +4653,6 @@ execute as @s[scores={DialogueTrigger=208,TalkTime=10}] run title @s title {"tex
 execute as @s[scores={DialogueTrigger=208,TalkTime=10}] run title @s subtitle {"text":"A Happening Big City","italic":true}
 
 tag @s[scores={DialogueTrigger=208,TalkTime=10..}] add Dialogue208
-scoreboard players set @s[tag=Dialogue208] TalkTime 0
-scoreboard players set @s[tag=Dialogue208] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Guide Gent first prompt
@@ -5063,8 +4666,6 @@ tellraw @s[scores={DialogueTrigger=209,TalkTime=17}] {"text":"[No]","color":"red
 execute as @s[scores={DialogueTrigger=209,TalkTime=17}] run scoreboard players enable @s TriggerCommand
 
 tag @s[scores={DialogueTrigger=209,TalkTime=17..}] add Dialogue209
-scoreboard players set @s[tag=Dialogue209] TalkTime 0
-scoreboard players set @s[tag=Dialogue209] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Guide Gent Tour
@@ -5076,8 +4677,6 @@ tellraw @s[scores={DialogueTrigger=210,TalkTime=11}] {"text":"<Guide Gent> You'l
 execute as @s[scores={DialogueTrigger=210,TalkTime=20}] run fill -735 84 -242 -736 84 -242 minecraft:redstone_block
 
 tag @s[scores={DialogueTrigger=210,TalkTime=20..}] add Dialogue210
-scoreboard players set @s[tag=Dialogue210] TalkTime 0
-scoreboard players set @s[tag=Dialogue210] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Guide Gent Tour
@@ -5088,8 +4687,6 @@ tellraw @s[scores={DialogueTrigger=211,TalkTime=8}] {"text":"<Guide Gent> They s
 execute as @s[scores={DialogueTrigger=211,TalkTime=18}] run fill -738 84 -242 -739 84 -242 minecraft:redstone_block
 
 tag @s[scores={DialogueTrigger=211,TalkTime=18..}] add Dialogue211
-scoreboard players set @s[tag=Dialogue211] TalkTime 0
-scoreboard players set @s[tag=Dialogue211] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Guide Gent Tour
@@ -5100,8 +4697,6 @@ tellraw @s[scores={DialogueTrigger=212,TalkTime=11}] {"text":"<Guide Gent> If yo
 execute as @s[scores={DialogueTrigger=212,TalkTime=20}] run fill -744 84 -242 -741 84 -242 minecraft:redstone_block
 
 tag @s[scores={DialogueTrigger=212,TalkTime=20..}] add Dialogue212
-scoreboard players set @s[tag=Dialogue212] TalkTime 0
-scoreboard players set @s[tag=Dialogue212] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Guide Gent Tour
@@ -5112,8 +4707,6 @@ tellraw @s[scores={DialogueTrigger=197,TalkTime=9}] {"text":"<Guide Gent> Some P
 execute as @s[scores={DialogueTrigger=197,TalkTime=17}] run fill -746 84 -242 -750 84 -242 minecraft:redstone_block
 
 tag @s[scores={DialogueTrigger=197,TalkTime=17..}] add Dialogue197
-scoreboard players set @s[tag=Dialogue197] TalkTime 0
-scoreboard players set @s[tag=Dialogue197] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Guide Gent Tour
@@ -5127,8 +4720,6 @@ execute as @s[scores={DialogueTrigger=213,TalkTime=26}] run fill -752 84 -242 -7
 execute as @s[scores={DialogueTrigger=213,TalkTime=26}] run tag @s add GuideTour
 
 tag @s[scores={DialogueTrigger=213,TalkTime=26..}] add Dialogue213
-scoreboard players set @s[tag=Dialogue213] TalkTime 0
-scoreboard players set @s[tag=Dialogue213] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #SS Aqua Voyage
@@ -5188,8 +4779,6 @@ execute as @s[scores={DialogueTrigger=214,TalkTime=1..750},nbt={Sleeping:1b}] ru
 
 
 tag @s[scores={DialogueTrigger=214,TalkTime=800..}] add Dialogue214
-scoreboard players set @s[tag=Dialogue214] TalkTime 0
-scoreboard players set @s[tag=Dialogue214] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Power Plant Manager before finding the part
@@ -5200,8 +4789,6 @@ tellraw @s[scores={DialogueTrigger=215,TalkTime=9}] {"text":"<Power Plant Manage
 tellraw @s[scores={DialogueTrigger=215,TalkTime=19}] {"text":"<Power Plant Manager> If I catch him, he's going to see what I can do with my Charge Beam!"}
 
 tag @s[scores={DialogueTrigger=215,TalkTime=19..}] add Dialogue215
-scoreboard players set @s[tag=Dialogue215] TalkTime 0
-scoreboard players set @s[tag=Dialogue215] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Power Plant police officer after speaking with the manager
@@ -5212,8 +4799,6 @@ tellraw @s[scores={DialogueTrigger=216,TalkTime=8}] ["",{"text":"<"},{"text":"Po
 tellraw @s[scores={DialogueTrigger=216,TalkTime=17}] ["",{"text":"<"},{"text":"Policeman","color":"aqua"},{"text":"> Could I ask for your cooperation? The shady character was hanging around the Cerulean Gym..."}]
 
 tag @s[scores={DialogueTrigger=216,TalkTime=17..}] add Dialogue216
-scoreboard players set @s[tag=Dialogue216] TalkTime 0
-scoreboard players set @s[tag=Dialogue216] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Rocket Grunt in Cerulean Gym
@@ -5238,8 +4823,6 @@ execute as @s[scores={DialogueTrigger=217,TalkTime=36}] run particle cloud -1185
 execute as @s[scores={DialogueTrigger=217,TalkTime=36}] run tp @e[x=-1185,y=64,z=743,dy=3,type=pixelmon:npc_chatting] -815 75 -235
 
 tag @s[scores={DialogueTrigger=217,TalkTime=36..}] add Dialogue217
-scoreboard players set @s[tag=Dialogue217] TalkTime 0
-scoreboard players set @s[tag=Dialogue217] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #https://youtu.be/IXZ95n5MmZo?list=PL961810F87071AC37&t=373
@@ -5257,8 +4840,6 @@ tellraw @s[scores={DialogueTrigger=218,TalkTime=40}] {"text":"<Rocket Grunt> But
 tellraw @s[scores={DialogueTrigger=218,TalkTime=50}] {"text":"<Rocket Grunt> You understand? Battle begin we do!"}
 
 tag @s[scores={DialogueTrigger=218,TalkTime=50..}] add Dialogue218
-scoreboard players set @s[tag=Dialogue218] TalkTime 0
-scoreboard players set @s[tag=Dialogue218] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Rocket Grunt post-battle
@@ -5280,8 +4861,6 @@ execute as @s[scores={DialogueTrigger=219,TalkTime=80}] run particle cloud -2743
 execute as @s[scores={DialogueTrigger=219,TalkTime=80}] run tp @e[x=-2743,y=65,z=870,dy=3,type=pixelmon:npc_trainer] -815 75 -233
 
 tag @s[scores={DialogueTrigger=219,TalkTime=80..}] add Dialogue219
-scoreboard players set @s[tag=Dialogue219] TalkTime 0
-scoreboard players set @s[tag=Dialogue219] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Power Plant machine part in Cerulean Gym
@@ -5293,8 +4872,6 @@ execute as @s[scores={DialogueTrigger=220,TalkTime=1}] run give @s minecraft:mus
 execute as @s[scores={DialogueTrigger=220,TalkTime=1}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 10 1 1
 
 tag @s[scores={DialogueTrigger=220,TalkTime=1..}] add Dialogue220
-scoreboard players set @s[tag=Dialogue220] TalkTime 0
-scoreboard players set @s[tag=Dialogue220] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Bringing Power Plant manager the part back
@@ -5312,8 +4889,6 @@ tellraw @s[scores={DialogueTrigger=221,TalkTime=50}] {"text":"<Power Plant Manag
 execute as @s[scores={DialogueTrigger=221,TalkTime=50}] run advancement grant @s only johto:event9
 
 tag @s[scores={DialogueTrigger=221,TalkTime=50..}] add Dialogue221
-scoreboard players set @s[tag=Dialogue221] TalkTime 0
-scoreboard players set @s[tag=Dialogue221] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Professor Oak giving access to Mt. Silver after you obtain all the badges
@@ -5331,8 +4906,6 @@ tellraw @s[scores={DialogueTrigger=222,TalkTime=58}] ["",{"text":"<Professor Oak
 tellraw @s[scores={DialogueTrigger=222,TalkTime=67}] {"text":"<Professor Oak> Go to the Pokémon League Reception Gate. You can reach Mt. Silver from there."}
 
 tag @s[scores={DialogueTrigger=222,TalkTime=67..}] add Dialogue222
-scoreboard players set @s[tag=Dialogue222] TalkTime 0
-scoreboard players set @s[tag=Dialogue222] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Lavendar Town Radio Director after Power Plant
@@ -5347,8 +4920,6 @@ execute as @s[scores={DialogueTrigger=223,TalkTime=27}] run tag @s add EXPNCard
 tellraw @s[scores={DialogueTrigger=223,TalkTime=36}] {"text":"<Radio Director> With that thing, you can tune in to even more radio programs here in Kanto. Gahahahaha!"}
 
 tag @s[scores={DialogueTrigger=223,TalkTime=36..}] add Dialogue223
-scoreboard players set @s[tag=Dialogue223] TalkTime 0
-scoreboard players set @s[tag=Dialogue223] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Team Rocket's Announcement when Radio Tower is occupied, overwrites existing radio shows
@@ -5360,8 +4931,6 @@ tellraw @s[scores={DialogueTrigger=224,TalkTime=10}] ["",{"text":"\u266a\u266b\u
 tellraw @s[scores={DialogueTrigger=224,TalkTime=20}] ["",{"text":"\u266a\u266b\u266c "},{"text":"[Radio] ","color":"aqua"},{"text":"<Team Rocket> ...Giovanni? ...Can you hear us? We have finally made it!...","italic":true},{"text":"\u266a\u266b\u266c"}]
 
 tag @s[scores={DialogueTrigger=224,TalkTime=20..}] add Dialogue224
-scoreboard players set @s[tag=Dialogue224] TalkTime 0
-scoreboard players set @s[tag=Dialogue224] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Buena's Password Item
@@ -5401,8 +4970,6 @@ execute as @s[scores={DialogueTrigger=225,TalkTime=13}] run tag @s add BuenasPas
 tellraw @s[scores={DialogueTrigger=225,TalkTime=20}] {"text":"<DJ Buena> My drawings are daily! Tune in and come back tomorrow for another prize!"}
 
 tag @s[scores={DialogueTrigger=225,TalkTime=20..}] add Dialogue225
-scoreboard players set @s[tag=Dialogue225] TalkTime 0
-scoreboard players set @s[tag=Dialogue225] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Eusine Burned Tower first dialogue
@@ -5425,8 +4992,6 @@ execute as @s[scores={DialogueTrigger=226,TalkTime=73}] run particle cloud 445 6
 execute as @s[scores={DialogueTrigger=226,TalkTime=73}] run tp @e[x=445,y=63,z=304,dy=3,type=pixelmon:npc_chatting] -815 75 -228
 
 tag @s[scores={DialogueTrigger=226,TalkTime=73..}] add Dialogue226
-scoreboard players set @s[tag=Dialogue226] TalkTime 0
-scoreboard players set @s[tag=Dialogue226] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Suicune Second Encounter Cianwood City pre-battle
@@ -5455,8 +5020,6 @@ tellraw @s[scores={DialogueTrigger=227,TalkTime=50}] {"text":"<Eusine> I've deci
 tellraw @s[scores={DialogueTrigger=227,TalkTime=59}] ["",{"text":"<Eusine> Come on, "},{"selector":"@s"},{"text":". Let's battle now!"}]
 
 tag @s[scores={DialogueTrigger=227,TalkTime=59..}] add Dialogue227
-scoreboard players set @s[tag=Dialogue227] TalkTime 0
-scoreboard players set @s[tag=Dialogue227] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Suicune Second Encounter Cianwood City post-battle
@@ -5476,8 +5039,6 @@ execute as @s[scores={DialogueTrigger=228,TalkTime=27}] run particle cloud 1251 
 execute as @s[scores={DialogueTrigger=228,TalkTime=27}] run tp @e[x=1251,y=63,z=-307,dy=3,type=pixelmon:npc_trainer] -815 75 -226
 
 tag @s[scores={DialogueTrigger=228,TalkTime=27..}] add Dialogue228
-scoreboard players set @s[tag=Dialogue228] TalkTime 0
-scoreboard players set @s[tag=Dialogue228] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Suicune Mt. Mortar encounter
@@ -5511,8 +5072,6 @@ execute as @s[scores={DialogueTrigger=229,TalkTime=76}] run particle cloud 94 64
 execute as @s[scores={DialogueTrigger=229,TalkTime=76}] run tp @e[x=94,y=63,z=153,dy=3,type=pixelmon:npc_chatting] -815 75 -224
 
 tag @s[scores={DialogueTrigger=229,TalkTime=76..}] add Dialogue229
-scoreboard players set @s[tag=Dialogue229] TalkTime 0
-scoreboard players set @s[tag=Dialogue229] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Suicune Vermilion Port encounter
@@ -5544,8 +5103,6 @@ execute as @s[scores={DialogueTrigger=230,TalkTime=47}] run particle cloud -2816
 execute as @s[scores={DialogueTrigger=230,TalkTime=47}] run tp @e[x=-2816,y=63,z=-89,dy=3,type=pixelmon:npc_chatting] -815 75 -222
 
 tag @s[scores={DialogueTrigger=230,TalkTime=47..}] add Dialogue230
-scoreboard players set @s[tag=Dialogue230] TalkTime 0
-scoreboard players set @s[tag=Dialogue230] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Suicune Route 14 encounter
@@ -5580,9 +5137,6 @@ execute as @s[scores={DialogueTrigger=231,TalkTime=77}] run particle cloud -2963
 execute as @s[scores={DialogueTrigger=231,TalkTime=77}] run tp @e[x=-2963,y=63,z=-463,dy=3,type=pixelmon:npc_chatting] -815 75 -220
 
 tag @s[scores={DialogueTrigger=231,TalkTime=77..}] add Dialogue231
-scoreboard players set @s[tag=Dialogue231] TalkTime 0
-scoreboard players set @s[tag=Dialogue231] DialogueTrigger 0
-
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Suicune Route 25 encounter pre-catch
@@ -5602,8 +5156,6 @@ tellraw @s[scores={DialogueTrigger=232,TalkTime=29}] {"text":"<Eusine> Take a lo
 tellraw @s[scores={DialogueTrigger=232,TalkTime=37}] {"text":"<Eusine> It has been waiting for a battle with a worthy Trainer to whom it can entrust itself!"}
 
 tag @s[scores={DialogueTrigger=232,TalkTime=37..}] add Dialogue232
-scoreboard players set @s[tag=Dialogue232] TalkTime 0
-scoreboard players set @s[tag=Dialogue232] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Suicune Spawn after Eusine talk
@@ -5617,8 +5169,6 @@ execute as @s[scores={DialogueTrigger=233,TalkTime=1}] run particle cloud -3111 
 execute as @s[scores={DialogueTrigger=233,TalkTime=1..2}] run tp @e[x=-3111,y=64,z=989,distance=..3,type=pixelmon:statue] -817 81 -147
 
 tag @s[scores={DialogueTrigger=233,TalkTime=2..}] add Dialogue233
-scoreboard players set @s[tag=Dialogue233] TalkTime 0
-scoreboard players set @s[tag=Dialogue233] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Suicune Route 25 encounter post-catch
@@ -5638,9 +5188,6 @@ execute as @s[scores={DialogueTrigger=234,TalkTime=33}] run particle cloud -3094
 execute as @s[scores={DialogueTrigger=234,TalkTime=33}] run tp @e[x=-3094,y=63,z=989,dy=3,type=pixelmon:npc_chatting] -815 75 -218
 
 tag @s[scores={DialogueTrigger=234,TalkTime=33..}] add Dialogue234
-scoreboard players set @s[tag=Dialogue234] TalkTime 0
-scoreboard players set @s[tag=Dialogue234] DialogueTrigger 0
-
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Use for timing tests
 #Test Timing Dialogue
@@ -5748,9 +5295,7 @@ tellraw @s[scores={DialogueTrigger=1000,TalkTime=99}] {"text":"99"}
 tellraw @s[scores={DialogueTrigger=1000,TalkTime=100}] {"text":"100"}
 
 tag @s[scores={DialogueTrigger=1000,TalkTime=100..}] add Dialogue1000
-scoreboard players set @s[tag=Dialogue1000] TalkTime 0
-scoreboard players set @s[tag=Dialogue1000] DialogueTrigger 0
-tag @s[tag=Dialogue1000] remove Dialogue1000
+
 
 
 
@@ -5760,6 +5305,6 @@ tag @s[tag=Dialogue1000] remove Dialogue1000
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #EndDialogue tag, ends a dialogue without finishing. Trigger may take over again as tag is not given
 
-scoreboard players set @a[scores={DialogueTrigger=1..},tag=EndDialogue] DialogueTrigger 0
-scoreboard players set @a[scores={TalkTime=1..},tag=EndDialogue] TalkTime 0
-tag @a[tag=EndDialogue] remove EndDialogue
+scoreboard players set @s[scores={DialogueTrigger=1..},tag=EndDialogue] DialogueTrigger 0
+scoreboard players set @s[scores={TalkTime=1..},tag=EndDialogue] TalkTime 0
+tag @s[tag=EndDialogue] remove EndDialogue

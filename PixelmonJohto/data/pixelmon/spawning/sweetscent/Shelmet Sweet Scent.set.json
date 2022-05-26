@@ -2,9 +2,8 @@
   "id": "Shelmet Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Shelmet"
-      },
+      "spec": "species:Shelmet"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

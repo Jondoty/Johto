@@ -2,9 +2,8 @@
   "id": "Natu Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Natu"
-      },
+      "spec": "species:Natu"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

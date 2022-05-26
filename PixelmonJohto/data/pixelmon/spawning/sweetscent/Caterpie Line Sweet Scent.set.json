@@ -2,9 +2,8 @@
   "id": "Caterpie Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Caterpie"
-      },
+      "spec": "species:Caterpie"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -25,9 +24,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Metapod"
-      },
+      "spec": "species:Metapod"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -42,9 +40,8 @@
 
 
     {
-      "spec": {
-        "name": "Butterfree"
-      },
+      "spec": "species:Butterfree"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -59,9 +56,8 @@
 
 
     {
-      "spec": {
-        "name": "Butterfree"
-      },
+      "spec": "species:Butterfree"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

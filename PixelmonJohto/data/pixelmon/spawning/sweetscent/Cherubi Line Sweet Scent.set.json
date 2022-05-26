@@ -2,9 +2,8 @@
   "id": "Cherubi Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Cherubi"
-      },
+      "spec": "species:Cherubi"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -20,10 +19,9 @@
 
 
     {
-      "spec": {
-        "name": "Cherrim",
+      "spec": "species:Cherrim",
         "form": 0
-      },
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -46,10 +44,9 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Cherrim",
+      "spec": "species:Cherrim",
         "form": 1
-      },
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

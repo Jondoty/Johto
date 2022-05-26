@@ -2,9 +2,8 @@
   "id": "Whismur Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Whismur"
-      },
+      "spec": "species:Whismur"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

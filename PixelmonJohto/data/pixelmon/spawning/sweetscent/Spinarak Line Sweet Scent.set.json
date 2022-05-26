@@ -2,9 +2,8 @@
   "id": "Spinarak Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -36,9 +35,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -53,9 +51,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -70,9 +67,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -87,9 +83,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -104,9 +99,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -121,9 +115,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -138,9 +131,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -155,9 +147,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -172,9 +163,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -189,9 +179,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -206,9 +195,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -223,9 +211,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -240,9 +227,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -257,9 +243,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -274,9 +259,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -289,9 +273,8 @@
       "rarity": 30.0
     },
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -306,9 +289,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -323,9 +305,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -340,9 +321,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -357,9 +337,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -374,9 +353,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -391,9 +369,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -408,9 +385,8 @@
 
 
     {
-      "spec": {
-        "name": "Spinarak"
-      },
+      "spec": "species:Spinarak"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

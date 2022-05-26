@@ -31,7 +31,7 @@ execute as @a[scores={TriggerCommand=9}] run tellraw @s {"text":"<Clerk> Let's b
 execute as @a[scores={TriggerCommand=9}] run scoreboard players set @s BattleTower 1
 execute as @a[scores={TriggerCommand=9}] run tp @s 894 100 67.0 -90 ~
 execute as @a[scores={TriggerCommand=9}] run scoreboard players set @s Battle_Streak 0
-execute as @a[scores={TriggerCommand=9}] run tp @r[x=881,y=46,z=69,dx=2,dy=2,dz=2,type=pixelmon:npc_trainer,limit=1] 910 100 67.0 90 ~
+execute as @a[scores={TriggerCommand=9}] run execute as @r[x=881,y=46,z=69,dx=2,dy=2,dz=2] run tp @s 910 100 67.0 90 ~
 
 #Resets Battle Streak armor stand to 0
 execute as @a[scores={TriggerCommand=9}] run kill @e[x=903,y=100,z=77,distance=..5,type=armor_stand]
@@ -466,7 +466,7 @@ execute as @a[scores={TriggerCommand=72}] run scoreboard players set @s TriggerC
 #scoreboard players set @a TriggerCommand 73 {Inventory:[{id:"minecraft:diamond_leggings"}]}
 execute as @a[scores={TriggerCommand=73}] run clear @s minecraft:diamond_leggings
 execute as @a[scores={TriggerCommand=73}] run tellraw @s {"text":"You can encounter Giratina again in a half an hour.","italic":true}
-execute as @a[scores={TriggerCommand=73}] run give @s pixelmon:Griseous_orb{display:{Lore:["A glowing orb containing","the essence of Giratina"]}}
+execute as @a[scores={TriggerCommand=73}] run give @s pixelmon:griseous_orb{display:{Lore:["A glowing orb containing","the essence of Giratina"]}}
 execute as @a[scores={TriggerCommand=73}] run scoreboard players set @s GiratinaCD 7
 execute as @a[scores={TriggerCommand=73}] run scoreboard players set @s TriggerCommand 0
 

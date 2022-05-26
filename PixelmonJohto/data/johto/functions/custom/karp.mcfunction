@@ -36,8 +36,8 @@ execute at @e[x=-197,y=63,z=568,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,name=Magi
 
 
 #Gives player a prize if the Karp is big enough
-execute at @e[x=-197,y=63,z=568,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,name=Magikarp,scores={KarpCD=5}] run give @a[x=-188,y=64,z=573,distance=..25,scores={KarpCD=0}] pixelmon:ether 1 0
-execute at @e[x=-197,y=63,z=568,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,name=Magikarp,scores={KarpCD=7}] run give @a[x=-188,y=64,z=573,distance=..25,scores={KarpCD=0}] pixelmon:elixir 1 0
+execute at @e[x=-197,y=63,z=568,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,name=Magikarp,scores={KarpCD=5}] run give @a[x=-188,y=64,z=573,distance=..25,scores={KarpCD=0}] pixelmon:ether 1
+execute at @e[x=-197,y=63,z=568,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,name=Magikarp,scores={KarpCD=7}] run give @a[x=-188,y=64,z=573,distance=..25,scores={KarpCD=0}] pixelmon:elixir 1
 
 execute at @e[x=-197,y=63,z=568,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,name=Magikarp,scores={KarpCD=5..7}] run scoreboard players set @a[x=-188,y=64,z=573,distance=..25,scores={KarpCD=0}] Cooldown 15
 execute at @e[x=-197,y=63,z=568,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,name=Magikarp,scores={KarpCD=5..7}] run scoreboard players set @a[x=-188,y=64,z=573,distance=..25,scores={KarpCD=0}] KarpCD 29

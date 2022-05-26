@@ -2,9 +2,8 @@
   "id": "Yamper Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Yamper"
-      },
+      "spec": "species:Yamper"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -20,12 +19,11 @@
           "savannas"
         ]
       },
-      "rarity": 100.0
+      "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Boltund"
-      },
+      "spec": "species:Boltund"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

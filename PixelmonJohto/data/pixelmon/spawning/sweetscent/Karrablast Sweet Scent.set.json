@@ -2,9 +2,8 @@
   "id": "Karrablast Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Karrablast"
-      },
+      "spec": "species:Karrablast"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

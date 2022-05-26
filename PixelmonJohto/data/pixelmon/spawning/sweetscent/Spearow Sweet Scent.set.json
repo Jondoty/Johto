@@ -2,9 +2,8 @@
   "id": "Spearow Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Spearow"
-      },
+      "spec": "species:Spearow"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -19,9 +18,8 @@
 
 
     {
-      "spec": {
-        "name": "Spearow"
-      },
+      "spec": "species:Spearow"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -36,9 +34,8 @@
 
 
     {
-      "spec": {
-        "name": "Spearow"
-      },
+      "spec": "species:Spearow"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -53,9 +50,8 @@
 
 
     {
-      "spec": {
-        "name": "Spearow"
-      },
+      "spec": "species:Spearow"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -70,9 +66,8 @@
 
 
     {
-      "spec": {
-        "name": "Spearow"
-      },
+      "spec": "species:Spearow"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -87,9 +82,8 @@
 
 
     {
-      "spec": {
-        "name": "Spearow"
-      },
+      "spec": "species:Spearow"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -104,9 +98,8 @@
 
 
     {
-      "spec": {
-        "name": "Spearow"
-      },
+      "spec": "species:Spearow"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -121,9 +114,8 @@
 
 
     {
-      "spec": {
-        "name": "Spearow"
-      },
+      "spec": "species:Spearow"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -138,9 +130,8 @@
 
 
     {
-      "spec": {
-        "name": "Spearow"
-      },
+      "spec": "species:Spearow"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -155,9 +146,8 @@
 
 
     {
-      "spec": {
-        "name": "Spearow"
-      },
+      "spec": "species:Spearow"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

@@ -2,9 +2,8 @@
   "id": "Oddish Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Oddish"
-      },
+      "spec": "species:Oddish"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

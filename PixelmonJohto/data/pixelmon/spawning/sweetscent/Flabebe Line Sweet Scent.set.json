@@ -2,9 +2,8 @@
   "id": "Flabebe Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Flabebe"
-      },
+      "spec": "species:Flabebe"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -20,10 +19,9 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Floette",
+      "spec": "species:Floette",
         "form": 0
-      },
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -39,10 +37,9 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Floette",
+      "spec": "species:Floette",
         "form": 1
-      },
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -58,10 +55,9 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Floette",
+      "spec": "species:Floette",
         "form": 2
-      },
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -77,10 +73,9 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Floette",
+      "spec": "species:Floette",
         "form": 3
-      },
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -96,10 +91,9 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Floette",
+      "spec": "species:Floette",
         "form": 4
-      },
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -115,10 +109,9 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Floette",
+      "spec": "species:Floette",
         "form": 5
-      },
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -134,9 +127,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Florges"
-      },
+      "spec": "species:Florges"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

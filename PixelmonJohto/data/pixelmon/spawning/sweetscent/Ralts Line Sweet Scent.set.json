@@ -2,9 +2,8 @@
   "id": "Ralts Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Ralts"
-      },
+      "spec": "species:Ralts"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -22,9 +21,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Kirlia"
-      },
+      "spec": "species:Kirlia"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

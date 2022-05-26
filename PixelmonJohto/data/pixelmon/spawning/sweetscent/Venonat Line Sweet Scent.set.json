@@ -2,9 +2,8 @@
   "id": "Venonat Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Venonat"
-      },
+      "spec": "species:Venonat"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -19,9 +18,8 @@
 
 
     {
-      "spec": {
-        "name": "Venonat"
-      },
+      "spec": "species:Venonat"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -36,9 +34,8 @@
 
 
     {
-      "spec": {
-        "name": "Venomoth"
-      },
+      "spec": "species:Venomoth"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

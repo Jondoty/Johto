@@ -248,3 +248,9 @@ scoreboard players set @s[scores={DialogueTrigger=247},tag=Dialogue247] Dialogue
 scoreboard players set @s[scores={DialogueTrigger=248},tag=Dialogue248] DialogueTrigger 0
 scoreboard players set @s[scores={DialogueTrigger=249},tag=Dialogue249] DialogueTrigger 0
 scoreboard players set @s[scores={DialogueTrigger=250},tag=Dialogue250] DialogueTrigger 0
+
+
+scoreboard players set @s[scores={DialogueTrigger=1000},tag=Dialogue1000] DialogueTrigger 0
+tag @s[tag=Dialogue1000] remove Dialogue1000
+
+scoreboard players set @s[scores={DialogueTrigger=0,TalkTime=1..}] TalkTime 0

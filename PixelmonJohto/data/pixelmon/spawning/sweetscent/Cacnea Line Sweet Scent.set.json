@@ -2,9 +2,8 @@
   "id": "Cacnea Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Cacnea"
-      },
+      "spec": "species:Cacnea"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -30,9 +29,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Cacturne"
-      },
+      "spec": "species:Cacturne"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

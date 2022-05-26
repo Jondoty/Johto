@@ -2,9 +2,8 @@
   "id": "Gossifleur Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Gossifleur"
-      },
+      "spec": "species:Gossifleur"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -23,9 +22,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Eldegoss"
-      },
+      "spec": "species:Eldegoss"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

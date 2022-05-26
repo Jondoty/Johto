@@ -1,5 +1,5 @@
 #Runs TriggerCommand Function
-execute as @a[scores={TriggerCommand=1..}] run function johto:world/triggercommands
+execute as @a[scores={TriggerCommand=1..}] run function johto:triggers/triggercommands
 
 #Hall of Fame Function
 execute as @a[tag=Dialogue97] run function johto:custom/halloffame
@@ -8,7 +8,7 @@ execute as @a[tag=Dialogue97] run function johto:custom/halloffame
 scoreboard players remove @a[scores={Cooldown=1..}] Cooldown 1
 
 #Runs relog function if player is found with relog score
-execute as @a[scores={Relog=1..}] run function johto:custom/relog
+execute as @a[scores={Relog=1..}] run function johto:triggers/relog
 
 #TownTitles function
 execute as @e[name=TownTitles,type=minecraft:armor_stand] run execute as @a[distance=0..30,scores={TownDisplay=0}] run function johto:custom/towntitles
@@ -22,6 +22,30 @@ execute as @a[x=1590,y=74,z=-129,dx=10,dy=5,dz=10] run function johto:custom/saf
 #Battle Tower Win events
 tag @a[x=875,y=99,z=50,dx=55,dy=20,dz=27,tag=Dialogue206] remove Dialogue206
 scoreboard players set @a[x=875,y=99,z=50,dx=55,dy=20,dz=27,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 206
+
+#---------------------
+
+#Boss levels if enabled
+#No modified levels
+execute at @a[scores={Boss=0}] run execute as @e[distance=..20,type=pixelmon:npc_trainer] run data merge entity @s {BossTier: "notboss"}
+
+#Equal levels
+execute at @a[scores={Boss=1}] run execute as @e[distance=..20,type=pixelmon:npc_trainer] run data merge entity @s {BossTier: "equal"}
+
+#Common (+5)
+execute at @a[scores={Boss=2}] run execute as @e[distance=..20,type=pixelmon:npc_trainer] run data merge entity @s {BossTier: "common"}
+
+#Uncommon (+10)
+execute at @a[scores={Boss=3}] run execute as @e[distance=..20,type=pixelmon:npc_trainer] run data merge entity @s {BossTier: "uncommon"}
+
+#rare (+20)
+execute at @a[scores={Boss=4}] run execute as @e[distance=..20,type=pixelmon:npc_trainer] run data merge entity @s {BossTier: "rare"}
+
+
+#---------------------
+
+
+
 
 #-------------------------------------------------------------------------------------------------------------------------
 #Music-based commands
@@ -52,15 +76,22 @@ scoreboard players set @a[scores={click=1..}] MusicCooldown 0
 scoreboard players set @a[scores={click=1..}] click 0
 
 
+
+
+#Adds repel for times like Pokemon Lullaby
+tag @a[tag=RepelEffect,scores={MusicCooldown=0}] remove RepelEffect
+effect give @a[tag=RepelEffect] pixelmon:repel 10 1 true
+
+
 #-------------------------------------------------------------------------------------------------------------------------
 
 #Runs HMs/Important Items
 
 #Fly
-execute as @a[scores={Fly=1..}] run function johto:world/fly
+execute as @a[scores={Fly=1..}] run function johto:hms/fly
 
 #Fly Map Refresh
-execute at @p[x=1169,y=252,z=619,distance=0..40] run function johto:world/flymap
+execute at @p[x=1169,y=252,z=619,distance=0..40] run function johto:hms/flymap
 
 #Flash
 
@@ -106,7 +137,6 @@ scoreboard players set @a[scores={TalkTime=0},nbt={Inventory:[{id:"minecraft:egg
 
 #Runs primary dialogue functions
 execute as @e[scores={DialogueTrigger=1..}] run function johto:dialogue/dialogue
-
 
 
 #Dialogue 1 - Oak Welcome
@@ -865,7 +895,7 @@ scoreboard players set @a[x=1249,y=63,z=-300,dx=9,dy=5,dz=10,tag=Dialogue226,tag
 execute at @a[x=1256,y=64,z=-296,distance=..50,scores={TalkTime=0,DogEncounter=1..},tag=Dialogue226,tag=!Dialogue227] run tp @e[x=-817,y=80,z=-171,dy=3,type=pixelmon:statue] 1256 64 -296
 
 #Dialogue228 - Cianwood City Eucine post-battle
-scoreboard players set @a[x=1256,y=64,z=-296,distance=..20,scores={TalkTime=0},tag=!Dialogue228,type=pixelmon:npc_trainer] DialogueTrigger 228
+scoreboard players set @a[x=1256,y=64,z=-296,distance=..20,scores={TalkTime=0},tag=!Dialogue228] DialogueTrigger 228
 execute at @a[x=1251,y=64,z=-307,distance=..20,scores={TalkTime=0},tag=Dialogue227,tag=!Dialogue228] run tp @e[x=-815,y=74,z=-226,dy=3,type=pixelmon:npc_trainer] 1251 64 -307
 
 #Dialogue229 - Mt. Mortar Suicune encounter

@@ -1,39 +1,39 @@
-scoreboard players tag @s add Dialogue1
-scoreboard players tag @s add Dialogue2
+tag @s add Dialogue1
+tag @s add Dialogue2
 #3 gets you a Pokemon
-scoreboard players tag @s add Dialogue4
-scoreboard players tag @s add Dialogue5
-scoreboard players tag @s add Dialogue6
-scoreboard players tag @s add Dialogue7
-scoreboard players tag @s add Dialogue8
+tag @s add Dialogue4
+tag @s add Dialogue5
+tag @s add Dialogue6
+tag @s add Dialogue7
+tag @s add Dialogue8
 #9-10 gives flash
-scoreboard players tag @s add Dialogue11
-scoreboard players tag @s add Dialogue12
-scoreboard players tag @s add Dialogue13
-scoreboard players tag @s add Dialogue14
-scoreboard players tag @s add Dialogue15
-scoreboard players tag @s add Dialogue16
-scoreboard players tag @s add Dialogue17
-scoreboard players tag @s add Dialogue18
+tag @s add Dialogue11
+tag @s add Dialogue12
+tag @s add Dialogue13
+tag @s add Dialogue14
+tag @s add Dialogue15
+tag @s add Dialogue16
+tag @s add Dialogue17
+tag @s add Dialogue18
 
 
 
 
 
 #Gym Leaders
-scoreboard players tag @s add Falkner
-give @s pixelmon:Zephyr_Badge 1
-scoreboard players tag @s add Bugsy
-give @s pixelmon:hive_Badge 1
+tag @s add Falkner
+give @s pixelmon:zephyr_badge 1
+tag @s add Bugsy
+give @s pixelmon:hive_badge 1
 
 
 
 
 #Items obtained from story NPCs
 give @s pixelmon:potion 5
-give @s pixelmon:tm_gen4 1 0 {tm:51}
-execute @s ~ ~ ~ pokegive @s Togepi lvl:1 egg
-give @s pixelmon:tm_gen4 1 0 {tm:89}
+give @s pixelmon:tm_gen4{tm:51}
+execute as @s run pokegive @s Togepi lvl:1 egg
+give @s pixelmon:tm_gen4{tm:89}
 
 
 

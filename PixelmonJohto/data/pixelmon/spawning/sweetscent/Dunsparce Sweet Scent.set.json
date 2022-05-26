@@ -2,9 +2,8 @@
   "id": "Dunsparce Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Dunsparce"
-      },
+      "spec": "species:Dunsparce"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

@@ -2,9 +2,8 @@
   "id": "Weedle Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Weedle"
-      },
+      "spec": "species:Weedle"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -23,9 +22,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Kakuna"
-      },
+      "spec": "species:Kakuna"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -41,9 +39,8 @@
 
 
     {
-      "spec": {
-        "name": "Beedrill"
-      },
+      "spec": "species:Beedrill"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -58,9 +55,8 @@
 
 
     {
-      "spec": {
-        "name": "Beedrill"
-      },
+      "spec": "species:Beedrill"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

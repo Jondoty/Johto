@@ -2,9 +2,8 @@
   "id": "Snover Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Snover"
-      },
+      "spec": "species:Snover"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -20,9 +19,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Abomasnow"
-      },
+      "spec": "species:Abomasnow"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

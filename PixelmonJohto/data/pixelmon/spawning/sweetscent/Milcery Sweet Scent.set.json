@@ -2,9 +2,8 @@
   "id": "Milcery Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Milcery"
-      },
+      "spec": "species:Milcery"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

@@ -2,9 +2,8 @@
   "id": "Nincada Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Nincada"
-      },
+      "spec": "species:Nincada"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

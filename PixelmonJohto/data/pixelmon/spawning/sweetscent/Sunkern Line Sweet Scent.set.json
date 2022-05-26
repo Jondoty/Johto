@@ -2,9 +2,8 @@
   "id": "Sunkern Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Sunkern"
-      },
+      "spec": "species:Sunkern"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -22,9 +21,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Sunflora"
-      },
+      "spec": "species:Sunflora"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

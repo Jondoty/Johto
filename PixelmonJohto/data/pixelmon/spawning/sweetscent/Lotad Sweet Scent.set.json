@@ -2,9 +2,8 @@
   "id": "Lotad Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Lotad"
-      },
+      "spec": "species:Lotad"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

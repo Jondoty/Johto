@@ -2,9 +2,8 @@
   "id": "Cubchoo Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Cubchoo"
-      },
+      "spec": "species:Cubchoo"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -19,9 +18,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Beartic"
-      },
+      "spec": "species:Beartic"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

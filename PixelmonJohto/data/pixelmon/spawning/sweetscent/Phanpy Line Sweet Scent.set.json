@@ -2,9 +2,8 @@
   "id": "Phanpy Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Phanpy"
-      },
+      "spec": "species:Phanpy"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -22,9 +21,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Donphan"
-      },
+      "spec": "species:Donphan"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

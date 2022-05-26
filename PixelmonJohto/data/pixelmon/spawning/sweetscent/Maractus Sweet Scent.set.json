@@ -2,9 +2,8 @@
   "id": "Maractus Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Maractus"
-      },
+      "spec": "species:Maractus"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

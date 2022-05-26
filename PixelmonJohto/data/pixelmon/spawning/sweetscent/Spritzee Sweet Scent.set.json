@@ -2,9 +2,8 @@
   "id": "Spritzee Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Spritzee"
-      },
+      "spec": "species:Spritzee"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

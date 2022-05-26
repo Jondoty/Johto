@@ -2,9 +2,8 @@
   "id": "Bounsweet Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Bounsweet"
-      },
+      "spec": "species:Bounsweet"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -24,9 +23,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Steenee"
-      },
+      "spec": "species:Steenee"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -52,9 +50,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Tsareena"
-      },
+      "spec": "species:Tsareena"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

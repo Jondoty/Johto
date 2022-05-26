@@ -2,9 +2,8 @@
   "id": "Wurmple Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Wurmple"
-      },
+      "spec": "species:Wurmple"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -29,9 +28,8 @@
 
 
     {
-      "spec": {
-        "name": "Wurmple"
-      },
+      "spec": "species:Wurmple"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -56,9 +54,8 @@
 
 
     {
-      "spec": {
-        "name": "Wurmple"
-      },
+      "spec": "species:Wurmple"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -83,9 +80,8 @@
 
 
     {
-      "spec": {
-        "name": "Wurmple"
-      },
+      "spec": "species:Wurmple"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -110,9 +106,8 @@
 
 
     {
-      "spec": {
-        "name": "Wurmple"
-      },
+      "spec": "species:Wurmple"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -135,9 +130,8 @@
       "rarity": 20.0
     },
     {
-      "spec": {
-        "name": "Wurmple"
-      },
+      "spec": "species:Wurmple"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -162,9 +156,8 @@
 
 
     {
-      "spec": {
-        "name": "Wurmple"
-      },
+      "spec": "species:Wurmple"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -189,9 +182,8 @@
 
 
     {
-      "spec": {
-        "name": "Wurmple"
-      },
+      "spec": "species:Wurmple"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -216,9 +208,8 @@
 
 
     {
-      "spec": {
-        "name": "Wurmple"
-      },
+      "spec": "species:Wurmple"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -243,9 +234,8 @@
 
 
     {
-      "spec": {
-        "name": "Wurmple"
-      },
+      "spec": "species:Wurmple"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -270,9 +260,8 @@
 
 
     {
-      "spec": {
-        "name": "Wurmple"
-      },
+      "spec": "species:Wurmple"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -297,9 +286,8 @@
 
 
     {
-      "spec": {
-        "name": "Wurmple"
-      },
+      "spec": "species:Wurmple"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -324,9 +312,8 @@
 
 
     {
-      "spec": {
-        "name": "Wurmple"
-      },
+      "spec": "species:Wurmple"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -351,9 +338,8 @@
 
 
     {
-      "spec": {
-        "name": "Silcoon"
-      },
+      "spec": "species:Silcoon"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -373,9 +359,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Beautifly"
-      },
+      "spec": "species:Beautifly"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -396,9 +381,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Cascoon"
-      },
+      "spec": "species:Cascoon"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -418,9 +402,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Dustox"
-      },
+      "spec": "species:Dustox"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

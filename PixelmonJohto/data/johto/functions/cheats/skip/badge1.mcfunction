@@ -1,14 +1,14 @@
-scoreboard players tag @s add Dialogue1
-scoreboard players tag @s add Dialogue2
+tag @s add Dialogue1
+tag @s add Dialogue2
 #3 gets you a Pokemon
-scoreboard players tag @s add Dialogue4
-scoreboard players tag @s add Dialogue5
-scoreboard players tag @s add Dialogue6
-scoreboard players tag @s add Dialogue7
-scoreboard players tag @s add Dialogue8
+tag @s add Dialogue4
+tag @s add Dialogue5
+tag @s add Dialogue6
+tag @s add Dialogue7
+tag @s add Dialogue8
 #9-10 gives flash
-scoreboard players tag @s add Dialogue11
-scoreboard players tag @s add Dialogue12
+tag @s add Dialogue11
+tag @s add Dialogue12
 
 
 
@@ -18,8 +18,8 @@ scoreboard players tag @s add Dialogue12
 
 
 #Gym Leaders
-scoreboard players tag @s add Falkner
-give @s pixelmon:Zephyr_Badge 1
+tag @s add Falkner
+give @s pixelmon:zephyr_badge 1
 
 
 
@@ -28,7 +28,7 @@ give @s pixelmon:Zephyr_Badge 1
 
 #Items obtained from story NPCs
 give @s pixelmon:potion 5
-give @s pixelmon:tm_gen4 1 0 {tm:51}
+give @s pixelmon:tm_gen4{tm:51}
 
 
 

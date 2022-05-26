@@ -2,9 +2,8 @@
   "id": "Morpeko Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Morpeko"
-      },
+      "spec": "species:Morpeko"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

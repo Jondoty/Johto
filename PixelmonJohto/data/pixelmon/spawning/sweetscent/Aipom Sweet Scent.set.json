@@ -2,9 +2,8 @@
   "id": "Aipom Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Aipom"
-      },
+      "spec": "species:Aipom"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -19,9 +18,8 @@
 
 
     {
-      "spec": {
-        "name": "Aipom"
-      },
+      "spec": "species:Aipom"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -36,9 +34,8 @@
 
 
     {
-      "spec": {
-        "name": "Aipom"
-      },
+      "spec": "species:Aipom"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -53,9 +50,8 @@
 
 
     {
-      "spec": {
-        "name": "Aipom"
-      },
+      "spec": "species:Aipom"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -70,9 +66,8 @@
 
 
     {
-      "spec": {
-        "name": "Aipom"
-      },
+      "spec": "species:Aipom"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -87,9 +82,8 @@
 
 
     {
-      "spec": {
-        "name": "Aipom"
-      },
+      "spec": "species:Aipom"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

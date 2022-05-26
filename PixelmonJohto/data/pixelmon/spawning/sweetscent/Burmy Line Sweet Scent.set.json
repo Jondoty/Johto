@@ -2,9 +2,8 @@
   "id": "Burmy Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Burmy"
-      },
+      "spec": "species:Burmy"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -20,9 +19,8 @@
 
 
     {
-      "spec": {
-        "name": "Wormadam"
-      },
+      "spec": "species:Wormadam"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -41,9 +39,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Mothim"
-      },
+      "spec": "species:Mothim"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

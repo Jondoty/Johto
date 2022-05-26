@@ -2,9 +2,8 @@
   "id": "Roselia Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Roselia"
-      },
+      "spec": "species:Roselia"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

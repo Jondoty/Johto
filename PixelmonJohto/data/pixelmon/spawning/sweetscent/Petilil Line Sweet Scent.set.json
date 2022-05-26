@@ -2,9 +2,8 @@
   "id": "Petilil Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Petilil"
-      },
+      "spec": "species:Petilil"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -23,9 +22,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Lilligant"
-      },
+      "spec": "species:Lilligant"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

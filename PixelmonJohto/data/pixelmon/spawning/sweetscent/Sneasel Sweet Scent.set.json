@@ -2,9 +2,8 @@
   "id": "Sneasel Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Sneasel"
-      },
+      "spec": "species:Sneasel"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

@@ -2,9 +2,8 @@
   "id": "Shroomish Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Shroomish"
-      },
+      "spec": "species:Shroomish"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

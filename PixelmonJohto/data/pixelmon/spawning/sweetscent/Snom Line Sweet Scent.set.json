@@ -2,9 +2,8 @@
   "id": "Snom Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Snom"
-      },
+      "spec": "species:Snom"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -25,9 +24,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Frosmoth"
-      },
+      "spec": "species:Frosmoth"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

@@ -2,9 +2,8 @@
   "id": "Pinsir Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Pinsir"
-      },
+      "spec": "species:Pinsir"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

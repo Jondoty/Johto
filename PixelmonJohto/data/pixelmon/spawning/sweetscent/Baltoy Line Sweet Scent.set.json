@@ -2,9 +2,8 @@
   "id": "Baltoy Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Baltoy"
-      },
+      "spec": "species:Baltoy"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -29,9 +28,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Claydol"
-      },
+      "spec": "species:Claydol"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

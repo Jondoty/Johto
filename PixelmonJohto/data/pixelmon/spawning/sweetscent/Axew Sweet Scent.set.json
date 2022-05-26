@@ -2,9 +2,8 @@
   "id": "Axew Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Axew"
-      },
+      "spec": "species:Axew"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

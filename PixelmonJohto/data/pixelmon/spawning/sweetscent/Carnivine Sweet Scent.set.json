@@ -2,9 +2,8 @@
   "id": "Carnivine Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Carnivine"
-      },
+      "spec": "species:Carnivine"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

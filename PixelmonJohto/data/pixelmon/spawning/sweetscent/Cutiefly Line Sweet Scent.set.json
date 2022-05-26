@@ -2,9 +2,8 @@
   "id": "Cutiefly Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Cutiefly"
-      },
+      "spec": "species:Cutiefly"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -23,9 +22,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Ribombee"
-      },
+      "spec": "species:Ribombee"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

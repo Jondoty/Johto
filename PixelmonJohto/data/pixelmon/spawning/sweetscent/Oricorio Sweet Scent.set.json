@@ -2,10 +2,7 @@
   "id": "Oricorio Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Oricorio",
-        "form": 0
-      },
+      "spec": "species:Oricorio",
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -28,10 +25,7 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Oricorio",
-        "form": 1
-      },
+      "spec": "species:Oricorio",
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -49,10 +43,7 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Oricorio",
-        "form": 2
-      },
+      "spec": "species:Oricorio",
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -70,10 +61,7 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Oricorio",
-        "form": 3
-      },
+      "spec": "species:Oricorio",
       "stringLocationTypes": [
         "Sweet Scent"
       ],

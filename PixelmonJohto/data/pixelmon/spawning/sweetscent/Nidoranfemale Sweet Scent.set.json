@@ -2,9 +2,8 @@
   "id": "Nidoranfemale Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Nidoranfemale"
-      },
+      "spec": "species:Nidoranfemale"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

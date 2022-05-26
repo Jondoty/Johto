@@ -2,9 +2,8 @@
   "id": "Vanillite Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Vanillite"
-      },
+      "spec": "species:Vanillite"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -19,9 +18,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Vanillish"
-      },
+      "spec": "species:Vanillish"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -36,9 +34,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Vanilluxe"
-      },
+      "spec": "species:Vanilluxe"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

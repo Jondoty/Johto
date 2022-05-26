@@ -2,9 +2,8 @@
   "id": "Applin Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Applin"
-      },
+      "spec": "species:Applin"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

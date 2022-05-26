@@ -2,9 +2,8 @@
   "id": "Pineco Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -19,9 +18,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -36,9 +34,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -53,9 +50,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -70,9 +66,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -87,9 +82,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -104,9 +98,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -121,9 +114,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -138,9 +130,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -155,9 +146,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -172,9 +162,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -189,9 +178,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -206,9 +194,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -223,9 +210,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -240,9 +226,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -257,9 +242,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -274,9 +258,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -291,9 +274,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -308,9 +290,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -325,9 +306,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -342,9 +322,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -359,9 +338,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -374,9 +352,8 @@
       "rarity": 30.0
     },
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -391,9 +368,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -408,9 +384,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -425,9 +400,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -442,9 +416,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -459,9 +432,8 @@
 
 
     {
-      "spec": {
-        "name": "Pineco"
-      },
+      "spec": "species:Pineco"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

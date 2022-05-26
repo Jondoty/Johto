@@ -2,9 +2,8 @@
   "id": "Mothim Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Mothim"
-      },
+      "spec": "species:Mothim"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

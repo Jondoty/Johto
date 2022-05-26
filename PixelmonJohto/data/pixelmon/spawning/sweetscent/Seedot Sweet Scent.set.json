@@ -2,9 +2,8 @@
   "id": "Seedot Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Seedot"
-      },
+      "spec": "species:Seedot"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

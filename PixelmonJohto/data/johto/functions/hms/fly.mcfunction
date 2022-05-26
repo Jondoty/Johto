@@ -56,6 +56,7 @@ scoreboard players set @a[x=-3131,y=35,z=561,dx=42,dy=20,dz=36,scores={Fly=1..}]
 
 
 #Successful Fly:
+execute as @a[scores={Fly=1..}] run function johto:spawn/flyhm
 tp @a[scores={Fly=1..}] 1169 255 613
 scoreboard players set @a[scores={Fly=1..}] EscapeRope 0
 tag @a[scores={Fly=1..}] remove GymVictory

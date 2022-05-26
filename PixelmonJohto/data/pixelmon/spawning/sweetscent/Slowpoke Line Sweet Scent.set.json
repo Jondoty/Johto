@@ -2,10 +2,9 @@
   "id": "Slowpoke Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Slowpoke",
+      "spec": "species:Slowpoke",
         "form": 0
-      },
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -32,82 +31,10 @@
         "stringBiomes": [
           "freezing"
         ]
-      },
-      "rarity": 0.0
+      }
     },
     {
-      "spec": {
-        "name": "Slowpoke",
-        "form": 2
-	  },
-      "stringLocationTypes": [
-        "Sweet Scent"
-      ],
-      "minLevel": 3,
-      "maxLevel": 16,
-      "typeID": "pokemon",
-      "heldItems": [
-        {
-          "itemID": "pixelmon:lagging_tail",
-          "percentChance": 5
-        }
-      ],
-      "condition": {
-        "times": [
-          "DAWN",
-          "MORNING"
-        ],
-        "stringBiomes": [
-          "river",
-          "beaches"
-        ]
-      },
-      "anticondition": {
-        "stringBiomes": [
-          "freezing"
-        ]
-      },
-      "rarity": 0.0
-    },
-    {
-      "spec": {
-        "name": "Slowbro",
-        "form": 0
-      },
-      "stringLocationTypes": [
-        "Sweet Scent"
-      ],
-      "minLevel": 37,
-      "maxLevel": 50,
-      "typeID": "pokemon",
-      "heldItems": [
-        {
-          "itemID": "pixelmon:kings_rock",
-          "percentChance": 5
-        }
-      ],
-      "condition": {
-        "times": [
-          "AFTERNOON",
-          "DUSK"
-        ],
-        "stringBiomes": [
-          "river",
-          "beaches"
-        ]
-      },
-      "anticondition": {
-        "stringBiomes": [
-          "freezing"
-        ]
-      },
-      "rarity": 0.0
-    },
-    {
-      "spec": {
-        "name": "Slowbro",
-        "form": 2
-      },
+      "spec": "species:Slowbro",
       "stringLocationTypes": [
         "Sweet Scent"
       ],

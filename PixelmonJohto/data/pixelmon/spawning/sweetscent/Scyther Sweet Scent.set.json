@@ -2,9 +2,8 @@
   "id": "Scyther Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Scyther"
-      },
+      "spec": "species:Scyther"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

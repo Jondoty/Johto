@@ -2,9 +2,8 @@
   "id": "Zubat Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Zubat"
-      },
+      "spec": "species:Zubat"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

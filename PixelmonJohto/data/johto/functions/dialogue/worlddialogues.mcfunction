@@ -130,7 +130,7 @@ execute as @e[scores={DialogueTrigger=152,TalkTime=7}] run execute at @e[x=-1196
 execute as @e[scores={DialogueTrigger=152,TalkTime=7}] run kill @e[x=-1173,y=63,z=-230,dy=2,dz=25,tag=Despawn,type=minecraft:item]
 
 #Summons Rayquaza
-execute @e[scores={DialogueTrigger=152,TalkTime=7}] run execute @e[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53,type=armor_stand] run pokespawn Rayquaza lvl:50
+execute as @e[scores={DialogueTrigger=152,TalkTime=7}] run execute at @e[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53,type=armor_stand] run pokespawn Rayquaza lvl:50
 execute as @e[scores={DialogueTrigger=152,TalkTime=7}] run playsound rayquaza hostile @a[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53] ~ ~ ~ 1 1 1
 execute as @e[scores={DialogueTrigger=152,TalkTime=7}] run data modify entity @e[limit=1,x=-1196,y=63,z=-230,dx=46,dy=20,dz=53,type=pixelmon:pixelmon,name=Rayquaza] {Rotation:[179.99f,0.0f]}
 
@@ -309,7 +309,7 @@ execute as @e[scores={DialogueTrigger=175,TalkTime=23}] run particle cloud -1044
 execute as @e[scores={DialogueTrigger=175,TalkTime=23}] run kill @e[x=-1044,y=50,z=-93,distance=..1,type=item]
 execute as @e[scores={DialogueTrigger=175,TalkTime=23}] run playsound entity.generic.explode ambient @a[scores={TriggerCommand=14}] ~ ~ ~ 10 1 1
 execute as @e[scores={DialogueTrigger=175,TalkTime=23}] run tellraw @a[scores={TriggerCommand=14}] {"text":"The mysterious round object took the shape of a Pokémon!"}
-execute @e[scores={DialogueTrigger=175,TalkTime=23}] run pokegive @a[scores={TriggerCommand=14},tag=!SinnohLegend] Giratina lvl:1 gr:7
+execute as @e[scores={DialogueTrigger=175,TalkTime=23}] run pokegive @a[scores={TriggerCommand=14},tag=!SinnohLegend] Giratina lvl:1 gr:7
 execute as @e[scores={DialogueTrigger=175,TalkTime=23}] run tag @a[scores={TriggerCommand=14}] add SinnohLegend
 
 #Turns on motion data tp down item

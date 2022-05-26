@@ -2,9 +2,8 @@
   "id": "Slakoth Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Slakoth"
-      },
+      "spec": "species:Slakoth"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],

@@ -2,9 +2,8 @@
   "id": "Lillipup Line Sweet Scent",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "Lillipup"
-      },
+      "spec": "species:Lillipup"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -22,9 +21,8 @@
       "rarity": 0.0
     },
     {
-      "spec": {
-        "name": "Herdier"
-      },
+      "spec": "species:Herdier"
+      ,
       "stringLocationTypes": [
         "Sweet Scent"
       ],
