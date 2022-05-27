@@ -18,7 +18,7 @@
       ],
       "condition": {
         "minX": -2261, "maxX": -2159, "minZ": 769, "maxZ": 853,
-        "baseBlocks": ["minecraft:stone", "minecraft:sand"]
+        "neededNearbyBlocks": ["minecraft:stone", "minecraft:sand"]
       },
       "rarity": 5.0
     }

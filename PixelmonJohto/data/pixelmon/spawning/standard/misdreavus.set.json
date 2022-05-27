@@ -14,7 +14,7 @@
       "condition": {
         "minX": -1039, "maxX": -932, "maxY": 98, "minZ": 233, "maxZ": 364,
         "times": [ "NIGHT" ],
-        "baseBlocks": ["minecraft:stained_hardened_clay"]
+        "neededNearbyBlocks": ["minecraft:stained_hardened_clay"]
       },
       "rarity": 30.0
     }

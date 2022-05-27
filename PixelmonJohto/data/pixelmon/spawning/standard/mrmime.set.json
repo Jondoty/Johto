@@ -13,7 +13,7 @@
       "condition": {
         "minX": -1767, "maxX": -1620, "minZ": -831, "maxZ": -328,
         "times": [ "DAWN", "DUSK", "NIGHT" ],
-        "baseBlocks": ["minecraft:tall_grass"]
+        "neededNearbyBlocks": ["minecraft:grass"]
       },
       "rarity": 5.0
     },
@@ -29,7 +29,7 @@
       "condition": {
         "minX": -1767, "maxX": -1620, "minZ": -831, "maxZ": -328,
         "times": [ "DAY" ],
-        "baseBlocks": ["minecraft:tall_grass"]
+        "neededNearbyBlocks": ["minecraft:grass"]
       },
       "rarity": 10.0
     }

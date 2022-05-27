@@ -29,7 +29,7 @@
         {
           "multiplier": 1.5,
           "condition": {
-            "baseBlocks": [
+            "neededNearbyBlocks": [
               "minecraft:dandelion"
             ]
           }

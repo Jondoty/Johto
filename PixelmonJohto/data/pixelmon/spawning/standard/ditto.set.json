@@ -12,7 +12,7 @@
       "typeID": "pokemon",
       "condition": {
           "minX": 422, "maxX": 512, "minZ": -721, "maxZ": -488,
-          "baseBlocks": ["minecraft:tall_grass"]
+          "neededNearbyBlocks": ["minecraft:grass"]
       },
       "rarity": 5.0
     },
@@ -28,7 +28,7 @@
       "typeID": "pokemon",
       "condition": {
           "minX": 426, "maxX": 492, "minZ": -252, "maxZ": -94,
-          "baseBlocks": ["minecraft:tall_grass"]
+          "neededNearbyBlocks": ["minecraft:grass"]
       },
       "rarity": 4.0
     },
@@ -44,7 +44,7 @@
       "typeID": "pokemon",
       "condition": {
           "minX": 1406, "maxX": 1436, "minZ": -373, "maxZ": -349,
-          "baseBlocks": ["minecraft:tall_grass"]
+          "neededNearbyBlocks": ["minecraft:grass"]
       },
       "rarity": 41.0
     },
@@ -63,7 +63,7 @@
       "condition": {
         "minX": -2667, "maxX": -2535, "minY": 62, "maxY": 71, "minZ": 822, "maxZ": 897,
         "times": [ "DAWN", "DUSK", "DAY" ],
-        "baseBlocks": ["minecraft:stone", "minecraft:cobblestone"]
+        "neededNearbyBlocks": ["minecraft:stone", "minecraft:cobblestone"]
       },
       "rarity": 11.0
     },
@@ -80,7 +80,7 @@
       "condition": {
         "minX": -2667, "maxX": -2535, "minY": 62, "maxY": 71, "minZ": 822, "maxZ": 897,
         "times": [ "NIGHT" ],
-        "baseBlocks": ["minecraft:stone", "minecraft:cobblestone"]
+        "neededNearbyBlocks": ["minecraft:stone", "minecraft:cobblestone"]
       },
       "rarity": 10.0
     },
@@ -99,7 +99,7 @@
     "typeID": "pokemon",
     "condition": {
       "minX": -2667, "maxX": -2535, "minY": 72, "maxY": 87, "minZ": 822, "maxZ": 897,
-      "baseBlocks": ["minecraft:stone"]
+      "neededNearbyBlocks": ["minecraft:stone"]
     },
     "rarity": 10.0
   },
@@ -117,7 +117,7 @@
     "typeID": "pokemon",
     "condition": {
       "minX": -2667, "maxX": -2535, "minY": 47, "maxY": 61, "minZ": 822, "maxZ": 897,
-        "baseBlocks": ["minecraft:stone", "minecraft:cobblestone"]
+        "neededNearbyBlocks": ["minecraft:stone", "minecraft:cobblestone"]
     },
     "rarity": 10.0
   },
@@ -135,7 +135,7 @@
     "typeID": "pokemon",
     "condition": {
       "minX": -1583, "maxX": -1468, "minY": 42, "maxY": 59, "minZ": -895, "maxZ": -826,
-      "baseBlocks": ["minecraft:wool"]
+      "neededNearbyBlocks": ["minecraft:wool"]
     },
     "rarity": 1.0
   },
@@ -151,7 +151,7 @@
     "typeID": "pokemon",
     "condition": {
       "minX": -1583, "maxX": -1468, "minY": 0, "maxY": 41, "minZ": -895, "maxZ": -826,
-      "baseBlocks": ["minecraft:planks"]
+      "neededNearbyBlocks": ["minecraft:planks"]
     },
     "rarity": 10.0
   }

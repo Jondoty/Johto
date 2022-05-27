@@ -28,7 +28,7 @@
         {
           "multiplier": 2,
           "condition": {
-            "baseBlocks": [
+            "neededNearbyBlocks": [
               "minecraft:lily_pad",
               "byg:tiny_lilypads"
             ]

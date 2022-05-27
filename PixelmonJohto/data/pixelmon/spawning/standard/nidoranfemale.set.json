@@ -12,7 +12,7 @@
       "typeID": "pokemon",
       "condition": {
         "minX": 488, "maxX": 509, "minZ": -248, "maxZ": -200,
-        "baseBlocks": ["minecraft:tall_grass"]
+        "neededNearbyBlocks": ["minecraft:grass"]
       },
       "rarity": 30.0
     },
@@ -28,7 +28,7 @@
       "typeID": "pokemon",
       "condition": {
         "minX": 371, "maxX": 406, "minZ": -46, "maxZ": -27,
-        "baseBlocks": ["minecraft:tall_grass"]
+        "neededNearbyBlocks": ["minecraft:grass"]
       },
       "rarity": 30.0
     }

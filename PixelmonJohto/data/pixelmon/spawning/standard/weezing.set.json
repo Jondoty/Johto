@@ -19,7 +19,7 @@
       ],
       "condition": {
         "minX": -1583, "maxX": -1468, "minY": 42, "maxY": 59, "minZ": -895, "maxZ": -826,
-        "baseBlocks": ["minecraft:wool"]
+        "neededNearbyBlocks": ["minecraft:wool"]
       },
       "rarity": 5.0
     },
@@ -41,7 +41,7 @@
       ],
       "condition": {
       "minX": -1583, "maxX": -1468, "minY": 0, "maxY": 41, "minZ": -895, "maxZ": -826,
-        "baseBlocks": ["minecraft:planks"]
+        "neededNearbyBlocks": ["minecraft:planks"]
       },
       "rarity": 10.0
     }

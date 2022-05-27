@@ -12,7 +12,7 @@
       "typeID": "pokemon",
       "condition": {
         "minX": 489, "maxX": 703, "minZ": 178, "maxZ": 292,
-        "baseBlocks": ["minecraft:tall_grass"]
+        "neededNearbyBlocks": ["minecraft:grass"]
       },
       "rarity": 1.0
     }

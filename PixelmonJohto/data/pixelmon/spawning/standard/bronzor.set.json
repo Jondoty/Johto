@@ -68,7 +68,7 @@
         {
           "multiplier": 2,
           "condition": {
-            "baseBlocks": [
+            "neededNearbyBlocks": [
               "minecraft:iron_ore"
             ]
           }

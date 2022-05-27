@@ -17,7 +17,7 @@
       ],
       "condition": {
         "minX": 231, "maxX": 327, "minY": 16, "maxY": 54, "minZ": -731, "maxZ": -647,
-        "baseBlocks": ["minecraft:stained_hardened_clay"]
+        "neededNearbyBlocks": ["minecraft:stained_hardened_clay"]
       },
       "rarity": 15.0
     },
@@ -81,7 +81,7 @@
       ],
       "condition": {
         "minX": -977, "maxX": -859, "minZ": -482, "maxZ": -420,
-        "baseBlocks": ["minecraft:stained_hardened_clay"]
+        "neededNearbyBlocks": ["minecraft:stained_hardened_clay"]
       },
       "rarity": 15.0
     },

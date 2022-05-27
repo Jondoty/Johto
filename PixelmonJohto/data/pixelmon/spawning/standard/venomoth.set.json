@@ -18,7 +18,7 @@
       ],
       "condition": {
         "minX": -2724, "maxX": -2700, "minZ": 862, "maxZ": 930,
-        "baseBlocks": ["minecraft:tall_grass"]
+        "neededNearbyBlocks": ["minecraft:grass"]
       },
       "rarity": 5.0
     },
@@ -41,7 +41,7 @@
       ],
       "condition": {
         "minX": -2856, "maxX": -2816, "minZ": 997, "maxZ": 1017,
-        "baseBlocks": ["minecraft:tall_grass"]
+        "neededNearbyBlocks": ["minecraft:grass"]
       },
       "rarity": 20.0
     }

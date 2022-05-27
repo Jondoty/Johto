@@ -56,7 +56,7 @@
         {
           "multiplier": 2,
           "condition": {
-            "baseBlocks": [
+            "neededNearbyBlocks": [
               "minecraft:coal_ore"
             ]
           }

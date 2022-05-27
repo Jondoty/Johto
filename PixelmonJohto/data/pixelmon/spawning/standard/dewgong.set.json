@@ -13,7 +13,7 @@
       "typeID": "pokemon",
       "condition": {
         "minX": -2128, "maxX": -2022, "minY": 25, "maxY": 32, "minZ": -889, "maxZ": -825,
-        "baseBlocks": ["minecraft:stained_hardened_clay"]
+        "neededNearbyBlocks": ["minecraft:stained_hardened_clay"]
       },
       "rarity": 24.0
     },
@@ -29,7 +29,7 @@
       "typeID": "pokemon",
       "condition": {
         "minX": -2128, "maxX": -2022, "minY": 0, "maxY": 24, "minZ": -889, "maxZ": -825,
-        "baseBlocks": ["minecraft:stained_hardened_clay"]
+        "neededNearbyBlocks": ["minecraft:stained_hardened_clay"]
       },
       "rarity": 24.0
     }

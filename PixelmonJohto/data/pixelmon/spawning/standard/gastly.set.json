@@ -13,7 +13,7 @@
       "condition": {
         "minX": 45, "maxX": 74, "minY": 83, "maxY": 110, "minZ": 5, "maxZ": 34,
         "times": [ "NIGHT" ],
-        "baseBlocks": ["minecraft:planks"]
+        "neededNearbyBlocks": ["minecraft:planks"]
       },
       "rarity": 85.0
     },
@@ -32,7 +32,7 @@
       "condition": {
         "minX": 240, "maxX": 273, "minY": 70, "maxY": 112, "minZ": 297, "maxZ": 330,
         "times": [ "NIGHT" ],
-        "baseBlocks": ["minecraft:planks"]
+        "neededNearbyBlocks": ["minecraft:planks"]
       },
       "rarity": 80.0
     },
@@ -71,7 +71,7 @@
         {
           "multiplier": 2,
           "condition": {
-            "baseBlocks": [
+            "neededNearbyBlocks": [
               "minecraft:oak_planks"
             ]
           }

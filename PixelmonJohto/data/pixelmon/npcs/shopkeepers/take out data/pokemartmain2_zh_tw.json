@@ -1,0 +1,33 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shoplady3.png"
+    },
+    {
+      "name": "shoplady4.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "珍妮特"
+    },
+    {
+      "name": "莎莉"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "您好，歡迎來到友好商店，您需要幫忙嗎？",
+      "goodbye": "再見，歡迎再度光臨。"
+    },
+    {
+      "hello": "嗨，您好嗎？歡迎來到友好商店，如果需要幫忙記得說一聲。",
+      "goodbye": "很高興見到您，祝您有個美好的一天！"
+    }
+  ],
+  "items": [
+  ]
+}

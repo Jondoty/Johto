@@ -13,7 +13,7 @@
         "times": [
           "DAY"
         ],
-        "baseBlocks": [
+        "neededNearbyBlocks": [
           "beach"
         ],
         "stringBiomes": [
@@ -41,7 +41,7 @@
         "weathers": [
           "STORM"
         ],
-        "baseBlocks": [
+        "neededNearbyBlocks": [
           "beach"
         ],
         "stringBiomes": [

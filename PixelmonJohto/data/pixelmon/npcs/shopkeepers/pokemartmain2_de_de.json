@@ -1,0 +1,33 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shoplady3.png"
+    },
+    {
+      "name": "shoplady4.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Janet"
+    },
+    {
+      "name": "Sally"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Hi, willkommen im Pokémarkt. Brauchst du Hilfe?",
+      "goodbye": "Tschüss. Besuche uns jederzeit erneut."
+    },
+    {
+      "hello": "Hi, wie gehts dir? Willkommen im Pokémarkt. Gebe bescheid wenn du Hilfe brauchst.",
+      "goodbye": "Schön dich gesehen zu haben. Habe einen schönen Tag!"
+    }
+  ],
+  "items": [
+  ]
+}

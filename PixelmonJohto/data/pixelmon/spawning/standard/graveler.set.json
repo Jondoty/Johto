@@ -17,7 +17,7 @@
       ],
       "condition": {
           "minX": -650, "maxX": -535, "minZ": -298, "maxZ": 95,
-          "baseBlocks": ["minecraft:tall_grass"]
+          "neededNearbyBlocks": ["minecraft:grass"]
       },
       "rarity": 40.0
     },
@@ -40,7 +40,7 @@
       ],
       "condition": {
           "minX": -437, "maxX": -280, "minZ": -10, "maxZ": 128,
-          "baseBlocks": ["minecraft:stained_hardened_clay", "minecraft:hardened_clay"]
+          "neededNearbyBlocks": ["minecraft:stained_hardened_clay", "minecraft:hardened_clay"]
       },
       "rarity": 20.0
     },
@@ -63,7 +63,7 @@
       ],
       "condition": {
           "minX": -22, "maxX": 206, "minY": 69, "maxY": 82, "minZ": 217, "maxZ": 565,
-          "baseBlocks": ["minecraft:stained_hardened_clay"]
+          "neededNearbyBlocks": ["minecraft:stained_hardened_clay"]
       },
       "rarity": 30.0
     },
@@ -86,7 +86,7 @@
       ],
       "condition": {
           "minX": -1014, "maxX": -941, "maxY": 98, "minZ": 101, "maxZ": 232,
-          "baseBlocks": ["minecraft:stained_hardened_clay"]
+          "neededNearbyBlocks": ["minecraft:stained_hardened_clay"]
       },
       "rarity": 30.0
     },
@@ -111,7 +111,7 @@
       ],
       "condition": {
         "minX": -1534, "maxX": -1320, "minY": 1, "maxY": 55, "minZ": 366, "maxZ": 546,
-        "baseBlocks": ["minecraft:stained_hardened_clay", "minecraft:gravel"]
+        "neededNearbyBlocks": ["minecraft:stained_hardened_clay", "minecraft:gravel"]
       },
       "rarity": 30.0
     }

@@ -10,7 +10,7 @@
       "maxLevel": 50,
       "typeID": "pokemon",
       "condition": {
-        "baseBlocks": [
+        "neededNearbyBlocks": [
           "pixelmon:moss_rock"
         ],
         "stringBiomes": [
@@ -36,7 +36,7 @@
         "weathers": [
           "STORM"
         ],
-        "baseBlocks": [
+        "neededNearbyBlocks": [
           "pixelmon:moss_rock"
         ],
         "stringBiomes": [

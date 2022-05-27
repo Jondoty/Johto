@@ -1,0 +1,82 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shopman2.png"
+    },
+    {
+      "name": "shopman.png"
+    },
+    {
+      "name": "shopman3.png"
+    },
+    {
+      "name": "shopman4.png"
+    },
+    {
+      "name": "shopman5.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Charles"
+    },
+    {
+      "name": "Eito"
+    },
+    {
+      "name": "Sig. Benson"
+    },
+    {
+      "name": "Sig. Wong"
+    },
+    {
+      "name": "James"
+    },
+    {
+      "name": "Digby"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Benvenuto nel mio Pokémon Market. Spero trovi qualcosa che ti piaccia!",
+      "goodbye": "Arrivederci e alla prossima."
+    },
+    {
+      "hello": "Ciao, benvenuto nel Pokémon Market. Come posso aiutarti?",
+      "goodbye": "Grazie per gli acquisti al Pokémon Market. Buona giornata."
+    },
+    {
+      "hello": "Ciao! Benvenuto nel mio Pokémon Market. Solo i migliori prodotti Pokémon in vendita qui!",
+      "goodbye": "Grazie per gli acquisti nel mio negozio."
+    },
+    {
+      "hello": "Benvenuto nel mio Pokémon Market. Bella giornata per fare shopping, non è vero?",
+      "goodbye": "Torna presto!"
+    },
+    {
+      "hello": "Ciao, benvenuto al Pokémon Market! Abbiamo molte offerte speciali oggi!",
+      "goodbye": "Verrai a trovarci di nuovo, vero?"
+    },
+    {
+      "hello": "Ehilà, benvenuto nel Pokémon Market. Cerchi qualcosa di speciale?",
+      "goodbye": "Okay, ci vediamo la prossima volta."
+    },
+    {
+      "hello": "Come stai? Benvenuto nel nostro Pokémon Market! Abbiamo strumenti fantastici per i tuoi Pokémon.",
+      "goodbye": "Goodbye, amico mio. Torna quando vuoi."
+    },
+    {
+      "hello": "Ciao, guarda il nostro Pokémon Market! Oggi abbiamo alcuni utili strumenti per i tuoi Pokémon.",
+      "goodbye": "Torna presto, ok? Ci conto!"
+    },
+    {
+      "hello": "Ciao, sto cercando il miglior Pokémon Market? Beh, l'hai appena trovato!",
+      "goodbye": "Te ne vai così presto? Bene, assicurati di tornare quanto prima!"
+    }
+  ],
+  "items": [
+  ]
+}

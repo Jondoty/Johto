@@ -19,7 +19,7 @@
       ],
       "condition": {
         "minX": 432, "maxX": 452, "minY": 63, "maxY": 70, "minZ": 309, "maxZ": 329,
-        "baseBlocks": ["minecraft:planks"]
+        "neededNearbyBlocks": ["minecraft:planks"]
       },
       "rarity": 35.0
     },
@@ -41,7 +41,7 @@
       ],
       "condition": {
         "minX": 432, "maxX": 452, "minY": 56, "maxY": 62, "minZ": 309, "maxZ": 329,
-        "baseBlocks": ["minecraft:stone"]
+        "neededNearbyBlocks": ["minecraft:stone"]
       },
       "rarity": 50.0
     },
@@ -66,7 +66,7 @@
       ],
       "condition": {
         "minX": -1583, "maxX": -1468, "minY": 42, "maxY": 59, "minZ": -895, "maxZ": -826,
-        "baseBlocks": ["minecraft:wool"]
+        "neededNearbyBlocks": ["minecraft:wool"]
       },
       "rarity": 40.0
     },
@@ -88,7 +88,7 @@
       ],
       "condition": {
       "minX": -1583, "maxX": -1468, "minY": 0, "maxY": 41, "minZ": -895, "maxZ": -826,
-        "baseBlocks": ["minecraft:planks"]
+        "neededNearbyBlocks": ["minecraft:planks"]
       },
       "rarity": 30.0
     }

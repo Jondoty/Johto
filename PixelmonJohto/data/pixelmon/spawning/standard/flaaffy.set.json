@@ -12,7 +12,7 @@
       "typeID": "pokemon",
       "condition": {
         "minX": -59, "maxX": -4, "minZ": 154, "maxZ": 177,
-        "baseBlocks": ["minecraft:tall_grass"]
+        "neededNearbyBlocks": ["minecraft:grass"]
       },
       "rarity": 10.0
     },
@@ -29,7 +29,7 @@
       "condition": {
         "minX": -224, "maxX": -79, "minZ": 303, "maxZ": 523,
         "times": [ "DAWN", "DUSK", "NIGHT" ],
-        "baseBlocks": ["minecraft:tall_grass"]
+        "neededNearbyBlocks": ["minecraft:grass"]
       },
       "rarity": 30.0
     },
@@ -45,7 +45,7 @@
       "condition": {
         "minX": -224, "maxX": -79, "minZ": 303, "maxZ": 523,
         "times": [ "DAY" ],
-        "baseBlocks": ["minecraft:tall_grass"]
+        "neededNearbyBlocks": ["minecraft:grass"]
       },
       "rarity": 40.0
     }

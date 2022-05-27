@@ -17,7 +17,7 @@
       ],
       "condition": {
         "minX": -2611, "maxX": -2570, "minZ": 349, "maxZ": 379,
-        "baseBlocks": ["minecraft:tall_grass"]
+        "neededNearbyBlocks": ["minecraft:grass"]
       },
       "rarity": 5.0
     },
@@ -42,7 +42,7 @@
       "condition": {
         "minX": -2667, "maxX": -2535, "minY": 62, "maxY": 71, "minZ": 822, "maxZ": 897,
         "times": [ "DAWN", "DUSK", "DAY" ],
-        "baseBlocks": ["minecraft:stone", "minecraft:cobblestone"]
+        "neededNearbyBlocks": ["minecraft:stone", "minecraft:cobblestone"]
       },
       "rarity": 14.0
     },
@@ -64,7 +64,7 @@
       "condition": {
         "minX": -2667, "maxX": -2535, "minY": 62, "maxY": 71, "minZ": 822, "maxZ": 897,
         "times": [ "NIGHT" ],
-        "baseBlocks": ["minecraft:stone", "minecraft:cobblestone"]
+        "neededNearbyBlocks": ["minecraft:stone", "minecraft:cobblestone"]
       },
       "rarity": 4.0
     }

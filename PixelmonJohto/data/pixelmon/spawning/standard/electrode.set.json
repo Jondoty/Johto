@@ -13,7 +13,7 @@
       "typeID": "pokemon",
       "condition": {
         "minX": -2667, "maxX": -2535, "minY": 62, "maxY": 71, "minZ": 822, "maxZ": 897,
-        "baseBlocks": ["minecraft:stone", "minecraft:cobblestone"]
+        "neededNearbyBlocks": ["minecraft:stone", "minecraft:cobblestone"]
       },
       "rarity": 5.0
     },
@@ -31,7 +31,7 @@
       "typeID": "pokemon",
       "condition": {
         "minX": -2667, "maxX": -2535, "minY": 72, "maxY": 87, "minZ": 822, "maxZ": 897,
-        "baseBlocks": ["minecraft:stone"]
+        "neededNearbyBlocks": ["minecraft:stone"]
       },
       "rarity": 5.0
     },
@@ -49,7 +49,7 @@
       "typeID": "pokemon",
       "condition": {
         "minX": -2667, "maxX": -2535, "minY": 47, "maxY": 61, "minZ": 822, "maxZ": 897,
-        "baseBlocks": ["minecraft:stone", "minecraft:cobblestone"]
+        "neededNearbyBlocks": ["minecraft:stone", "minecraft:cobblestone"]
       },
       "rarity": 5.0
     }

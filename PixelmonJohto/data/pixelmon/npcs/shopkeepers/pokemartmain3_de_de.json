@@ -1,0 +1,27 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shoplady4.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Suki"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Hallo, kann ich dir helfen Pokémonequpment zu finden? Wir haben ein paar schöne Schnäppchen.",
+      "goodbye": "Danke für deinen Einkauf. Wir freuen uns dich bald erneut zu bedienen."
+    },
+    {
+      "hello": "Willkommen im Pokémarkt. Suchst du nach etwas bestimmten?",
+      "goodbye": "Tschüss! Besuche uns gern erneut!"
+    }
+  ],
+  "items": [
+  ]
+}

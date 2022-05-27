@@ -21,7 +21,7 @@
         {
           "multiplier": 1.5,
           "condition": {
-            "baseBlocks": [
+            "neededNearbyBlocks": [
               "minecraft:tall_grass_path"
             ]
           }

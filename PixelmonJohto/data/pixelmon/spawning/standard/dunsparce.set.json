@@ -12,7 +12,7 @@
       "typeID": "pokemon",
       "condition": {
         "minX": -418, "maxX": -206, "minZ": -191, "maxZ": -11,
-        "baseBlocks": ["minecraft:stained_hardened_clay"]
+        "neededNearbyBlocks": ["minecraft:stained_hardened_clay"]
       },
       "rarity": 1.0
     },

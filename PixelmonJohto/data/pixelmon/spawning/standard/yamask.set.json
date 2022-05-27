@@ -27,7 +27,7 @@
         {
           "multiplier": 2,
           "condition": {
-            "baseBlocks": [
+            "neededNearbyBlocks": [
               "minecraft:sandstone"
             ]
           }
@@ -61,7 +61,7 @@
         {
           "multiplier": 2,
           "condition": {
-            "baseBlocks": [
+            "neededNearbyBlocks": [
               "minecraft:sandstone"
             ]
           }
@@ -116,7 +116,7 @@
         {
           "multiplier": 2,
           "condition": {
-            "baseBlocks": [
+            "neededNearbyBlocks": [
               "minecraft:red_sandstone"
             ]
           }
@@ -150,7 +150,7 @@
         {
           "multiplier": 2,
           "condition": {
-            "baseBlocks": [
+            "neededNearbyBlocks": [
               "minecraft:red_sandstone"
             ]
           }

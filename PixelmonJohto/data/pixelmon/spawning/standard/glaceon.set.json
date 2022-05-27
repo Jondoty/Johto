@@ -10,7 +10,7 @@
       "maxLevel": 50,
       "typeID": "pokemon",
       "condition": {
-        "baseBlocks": [
+        "neededNearbyBlocks": [
           "pixelmon:ice_rock"
         ],
         "weathers": [

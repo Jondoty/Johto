@@ -1,0 +1,23 @@
+{
+  "data": {
+    "type": "PokemartSecond"
+  },
+  "textures": [
+    {
+      "name": "shoplady2.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Mme. Benoit"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Bienvenue dans notre beau magasin. La qualité de ce Pokémart est insurpassable.",
+      "goodbye": "Je vous remercie de votre visite chez Pokémart."
+    }
+  ],
+  "items": [
+  ]
+}

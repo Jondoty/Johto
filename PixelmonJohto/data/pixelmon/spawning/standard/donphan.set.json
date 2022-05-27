@@ -12,7 +12,7 @@
       "typeID": "pokemon",
       "condition": {
         "minX": -1188, "maxX": -906, "minZ": -11, "maxZ": 84,
-        "baseBlocks": ["minecraft:tall_grass"]
+        "neededNearbyBlocks": ["minecraft:grass"]
       },
       "rarity": 20.0
     },
@@ -30,7 +30,7 @@
       "typeID": "pokemon",
       "condition": {
         "minX": -1014, "maxX": -941, "maxY": 98, "minZ": 101, "maxZ": 232,
-        "baseBlocks": ["minecraft:stained_hardened_clay"]
+        "neededNearbyBlocks": ["minecraft:stained_hardened_clay"]
       },
       "rarity": 30.0
     },
@@ -48,7 +48,7 @@
       "typeID": "pokemon",
       "condition": {
         "minX": -1039, "maxX": -932, "maxY": 98, "minZ": 233, "maxZ": 364,
-        "baseBlocks": ["minecraft:stained_hardened_clay"]
+        "neededNearbyBlocks": ["minecraft:stained_hardened_clay"]
       },
       "rarity": 20.0
     },
@@ -67,7 +67,7 @@
       "typeID": "pokemon",
       "condition": {
         "minX": -1534, "maxX": -1320, "minY": 1, "maxY": 55, "minZ": 366, "maxZ": 546,
-        "baseBlocks": ["minecraft:stained_hardened_clay", "minecraft:gravel"]
+        "neededNearbyBlocks": ["minecraft:stained_hardened_clay", "minecraft:gravel"]
       },
       "rarity": 20.0
     }

@@ -13,7 +13,7 @@
       "typeID": "pokemon",
       "condition": {
         "minX": -3401, "maxX": -3191, "minY": 28, "maxY": 54, "minZ": 528, "maxZ": 701,
-        "baseBlocks": ["minecraft:dirt", "minecraft:soul_sand"]
+        "neededNearbyBlocks": ["minecraft:dirt", "minecraft:soul_sand"]
       },
       "rarity": 5.0
     }

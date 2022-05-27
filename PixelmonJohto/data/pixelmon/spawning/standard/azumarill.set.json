@@ -10,7 +10,7 @@
       "maxLevel": 50,
       "typeID": "pokemon",
       "condition": {
-        "baseBlocks": [
+        "neededNearbyBlocks": [
           "minecraft:sand",
           "biomesoplenty:white_sand",
           "byg:white_sand"
@@ -35,7 +35,7 @@
       "maxLevel": 50,
       "typeID": "pokemon",
       "condition": {
-        "baseBlocks": [
+        "neededNearbyBlocks": [
           "minecraft:sand",
           "biomesoplenty:white_sand",
           "byg:white_sand"
