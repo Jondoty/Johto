@@ -10,6 +10,8 @@ gamemode adventure @s[gamemode=survival]
 gamemode adventure @s[gamemode=creative]
 gamemode adventure @s[gamemode=spectator]
 
+tag @s add Temp
+
 #tps player to lobby if they have a Deaths score and initial values (and thus glitched back into the spawn)
 tellraw @s[scores={Deaths=1..},tag=InitialTags] {"text":"Death detected, not clearing data or giving initial scores...","italic":true,"color":"gray"}
 tp @s[scores={Deaths=1..},tag=InitialTags] -977 66 -365.0 -91 21
@@ -19,11 +21,13 @@ scoreboard players set @s[scores={Deaths=1..},tag=InitialTags] Deaths 0
 tellraw @s ["",{"text":"Starting adventure...","italic":true,"color":"gray"}]
 
 #Gives starting items
-execute as @e[x=-801,y=64,z=-284,dy=3,type=armor_stand] run givemoney @s 2000
+execute as @e[x=-801,y=64,z=-284,dy=3,type=armor_stand] run givemoney @a[tag=Temp] 2000
 execute as @e[x=-801,y=64,z=-284,dy=3,type=armor_stand] run completeallquests @s
 give @s written_book{pages:["{\"text\":\"Welcome to Pixelmon Johto!\\n\\nThis map contains the Johto and Kanto regions, and follows the story of Pokemon Gold, Silver, and Crystal, with events and elements from HeartGold/ SoulSilver and Let's Go Eevee/Pikachu.\"}","{\"text\":\"Throughout the regions, there are 16 gyms to fight and collect the badges of. \\n\\nWhen you have the eight badges from the Johto region, you can challenge the Elite Four and gain access to Kanto afterwards.\"}","{\"text\":\"After collecting all the badges from Kanto, the player gains access to Mt. Silver, with a trainer named Red being the final boss of the map.\"}","{\"text\":\"Items, trainers, and events are scattered around the regions to collect and battle, based off the main games.\\n\\nSearch every corner of the map, you never know what you might find!\"}"],title:"Pixelmon Johto",author:Jond,display:{Lore:["Info about the map!"]}}
-give @s minecraft:carrot_on_a_stick{display:{Name:"Radio",Lore:["A device that plays music for the user.","To listen, select in your hotbar. Each","slot is a different station to listen to.","","Station 2 or Off-Hand: Location-specific tunes.","Station 4: Lucky Number Show.","Station 5: Mysterious Transmission.","Station 6: Buena's Password.","Station 7: Pokémon Music.","Station 8: Poké Flute.","","Right click to end current song.","","1   2   3   4   5   6   7   8   9"]}}
+give @s carrot_on_a_stick{display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]',Lore:['[{"text":"A device that plays music for the user. Place in a different slot to change which radio station the device plays. Right click to end current song.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Station 2 or Off-Hand: Location-specific tunes.","italic":false}]','[{"text":"Station 4: Lucky Number Show.","italic":false}]','[{"text":"Station 5: Mysterious Transmission.","italic":false}]','[{"text":"Station 6: Buena\'s Password.","italic":false}]','[{"text":"Station 7: Pokémon Music.","italic":false}]','[{"text":"Station 8: Poké Flute.","italic":false}]','[{"text":"","italic":false}]','[{"text":"","italic":false}]','[{"text":"1   2   3   4   5   6   7   8   9","italic":false}]']}} 1
 give @s pixelmon:old_running_boots
+give @s pixelmon:white_poke_bag
+give @s pixelmon:blackbadgecase
 
 
 #Sets Spawnpoint
@@ -260,6 +264,7 @@ tag @s remove RocketMug
 tag @s remove OakWelcome
 tag @s remove TMCase
 tag @s remove PoliceTalk
+tag @s remove BadgeCaseTip
 
 recipe give @s *
 
@@ -523,6 +528,7 @@ tag @s remove Dialogue250
 #Gives InitialTags score to check for later in case of an issue
 tag @s add InitialTags
 
+tag @s remove Temp
 
 #TPs to lobby
 tp @s[tag=InitialTags] -977 66 -365.0 -91 21
