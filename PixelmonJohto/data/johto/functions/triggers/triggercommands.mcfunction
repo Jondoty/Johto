@@ -503,7 +503,8 @@ execute as @a[scores={TriggerCommand=76}] run scoreboard players set @s TriggerC
 execute as @a[scores={TriggerCommand=80..86,StarterPick=1..}] run clear @s pixelmon:fire_stone_sword
 execute as @a[scores={TriggerCommand=80..86,StarterPick=1..}] run clear @s pixelmon:leaf_stone_sword
 execute as @a[scores={TriggerCommand=80..86,StarterPick=1..}] run clear @s pixelmon:water_stone_sword
-execute as @a[scores={TriggerCommand=80..86,StarterPick=1..}] run tellraw @s {"text":"You already picked your starter!","italic":true}
+execute as @a[scores={TriggerCommand=80..86,StarterPick=1..}] run tellraw @s {"text":"You already picked your starter!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=80..86,StarterPick=1..}] run clone -686 62 -487 -690 62 -487 -689 65 -479
 execute as @a[scores={TriggerCommand=80..86,StarterPick=1..}] run scoreboard players set @s TriggerCommand 0
 
 
