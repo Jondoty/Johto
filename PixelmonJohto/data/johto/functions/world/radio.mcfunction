@@ -48,7 +48,39 @@ tag @e[type=pixelmon:npc_trainer,tag=!GymLeader,name=Blaine] add GymLeader
 tag @e[type=pixelmon:npc_trainer,tag=!GymLeader,name=Blue] add GymLeader
 
 
+#-----------------------Dialogue Based------------
+
+#First Silver encounter, plays its NPC theme before its battle theme
+playsound rivaltalk record @a[scores={MusicCooldown=0,DialogueTrigger=6..7}] ~ ~ ~ 1 1 1
+scoreboard players set @a[scores={MusicCooldown=0,DialogueTrigger=6..7}] MusicCooldown 70
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #-----------------------Entity/Tag Based------------
+
+
 #Bicycle music
 
 #Adds Bicycle tag if player is riding on one
