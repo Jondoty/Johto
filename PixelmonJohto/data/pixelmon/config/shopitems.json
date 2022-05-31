@@ -23,6 +23,70 @@
       "sell": 550
     },
     {
+      "name": "pixelmon:white_poke_bag",
+      "buy": 1000
+    },
+    {
+      "name": "pixelmon:orange_poke_bag",
+      "buy": 1000
+    },
+    {
+      "name": "pixelmon:magenta_poke_bag",
+      "buy": 1000
+    },
+    {
+      "name": "pixelmon:light_blue_poke_bag",
+      "buy": 1000
+    },
+    {
+      "name": "pixelmon:yellow_poke_bag",
+      "buy": 1000
+    },
+    {
+      "name": "pixelmon:lime_poke_bag",
+      "buy": 1000
+    },
+    {
+      "name": "pixelmon:pink_poke_bag",
+      "buy": 1000
+    },
+    {
+      "name": "pixelmon:gray_poke_bag",
+      "buy": 1000
+    },
+    {
+      "name": "pixelmon:light_gray_poke_bag",
+      "buy": 1000
+    },
+    {
+      "name": "pixelmon:cyan_poke_bag",
+      "buy": 1000
+    },
+    {
+      "name": "pixelmon:purple_poke_bag",
+      "buy": 1000
+    },
+    {
+      "name": "pixelmon:blue_poke_bag",
+      "buy": 1000
+    },
+    {
+      "name": "pixelmon:brown_poke_bag",
+      "buy": 1000
+    },
+    {
+      "name": "pixelmon:green_poke_bag",
+      "buy": 1000
+    },
+    {
+      "name": "pixelmon:red_poke_bag",
+      "buy": 1000
+    },
+    {
+      "name": "pixelmon:black_poke_bag",
+      "buy": 1000
+    },
+    {
       "name": "minecraft:egg",
       "buy": 1600
     },
@@ -142,11 +206,6 @@
       "name": "pixelmon:mach_bike",
       "buy": 3000,
       "sell": 3000
-    },
-    {
-      "name": "minecraft:diamond_pickaxe",
-      "nbtData": "{display:{Name:\"Backpack Breaker\",Lore:[\"A pickaxe to pack up a backpack,\",\"and bring it with you after use.\"]},CanDestroy:[\"minecraft:white_shulker_box\"]}",
-      "buy": 1500
     },
     {
       "name": "minecraft:carrot_on_a_stick",
