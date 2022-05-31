@@ -112,6 +112,7 @@ execute as @s[scores={DialogueTrigger=1,TalkTime=102}] run tp @e[x=-965,y=65,z=-
 execute as @s[scores={DialogueTrigger=1,TalkTime=103}] run playsound flee ambient @s ~ ~ ~ 100 1 1
 execute as @s[scores={DialogueTrigger=1,TalkTime=103}] run tp @s -724 69 -491
 execute as @s[scores={DialogueTrigger=1,TalkTime=103}] run scoreboard players set @s click 1
+tellraw @s[scores={DialogueTrigger=1,TalkTime=103}] {"text":"Tip: You can return to the lobby at any time using that button in your room!","italic":true,"color":"gray"}
 
 tag @s[scores={DialogueTrigger=1,TalkTime=103..}] add Dialogue1
 
@@ -170,7 +171,7 @@ tellraw @s[scores={DialogueTrigger=5,TalkTime=8}] ["",{"text":"<"},{"text":"Mr. 
 tellraw @s[scores={DialogueTrigger=5,TalkTime=15}] ["",{"text":"<"},{"text":"Mr. Pokémon","color":"gray"},{"text":"> This is what I want Professor Elm to examine."}]
 
 #Gives Mystery Egg item
-execute as @s[scores={DialogueTrigger=5,TalkTime=20}] run give @s minecraft:music_disc_wait{display:{Name:"Mystery Egg",Lore:["An egg found at the daycare.","I wonder what could be inside?"]},HideFlags:36}
+execute as @s[scores={DialogueTrigger=5,TalkTime=20}] run give @s music_disc_wait{display:{Name:'[{"text":"Mystery Egg","italic":false}]',Lore:['[{"text":"An egg found at the daycare.","italic":false}]','[{"text":"I wonder what could be inside?","italic":false}]']},HideFlags:36} 1
 
 tellraw @s[scores={DialogueTrigger=5,TalkTime=23}] ["",{"text":"<"},{"text":"Mr. Pokémon","color":"gray"},{"text":"> I know a couple who run a Pokémon Daycare service."}]
 tellraw @s[scores={DialogueTrigger=5,TalkTime=30}] ["",{"text":"<"},{"text":"Mr. Pokémon","color":"gray"},{"text":"> They gave me that egg. I was intrigued, so I sent mail to Professor Elm."}]
@@ -209,6 +210,7 @@ tag @s[scores={DialogueTrigger=5,TalkTime=190..}] add Dialogue5
 #scoreboard players set @a[x=-300,y=64,z=-509,distance=..20,tag=Dialogue5,score_TalkTime=0] DialogueTrigger 6
 
 #tp Silver in
+execute as @s[scores={DialogueTrigger=6,TalkTime=1}] run scoreboard players set @s click 1
 execute as @s[scores={DialogueTrigger=6,TalkTime=1,StarterPick=1}] run tp @e[x=-760,y=84,z=-242,dy=10,type=pixelmon:npc_trainer,scores={StarterPick=1}] -300 64 -509
 execute as @s[scores={DialogueTrigger=6,TalkTime=1,StarterPick=2}] run tp @e[x=-760,y=84,z=-242,dy=10,type=pixelmon:npc_trainer,scores={StarterPick=2}] -300 64 -509
 execute as @s[scores={DialogueTrigger=6,TalkTime=1,StarterPick=3}] run tp @e[x=-760,y=84,z=-242,dy=10,type=pixelmon:npc_trainer,scores={StarterPick=3}] -300 64 -509
@@ -228,6 +230,7 @@ tag @s[scores={DialogueTrigger=6,TalkTime=30..}] add Dialogue6
 #execute as @s[x=-300,y=64,z=-509,distance=..10,tag=Dialogue6,score_StarterPick_min=2,score_StarterPick=2] run execute @s[tag=!Dialogue7] run tp @e[x=-760,y=84,z=-242,dy=10,type=pixelmon:npc_trainer,score_StarterPick_min=2,score_StarterPick=2] -300 64 -509
 #execute as @s[x=-300,y=64,z=-509,distance=..10,tag=Dialogue6,score_StarterPick_min=3,score_StarterPick=3] run execute @s[tag=!Dialogue7] run tp @e[x=-760,y=84,z=-242,dy=10,type=pixelmon:npc_trainer,score_StarterPick_min=3,score_StarterPick=3] -300 64 -509
 
+execute as @s[scores={DialogueTrigger=7,TalkTime=1}] run scoreboard players set @s click 1
 execute as @s[scores={DialogueTrigger=7,TalkTime=1}] run clear @s minecraft:nether_brick
 tellraw @s[scores={DialogueTrigger=7,TalkTime=2}] {"text":"< . . . > \u2026Humph! That was a waste of time."}
 tellraw @s[scores={DialogueTrigger=7,TalkTime=9}] {"text":"< . . . > \u2026Do you want to know who I am? I'm going to be the world's greatest Pokémon Trainer."}
@@ -348,7 +351,7 @@ tellraw @s[scores={DialogueTrigger=11,TalkTime=19}] {"text":"<Falkner> I won't a
 tellraw @s[scores={DialogueTrigger=11,TalkTime=26}] {"text":"<Falkner> I'll show you the real power of the magnificent bird Pokémon!"}
 execute as @s[scores={DialogueTrigger=11,TalkTime=26}] run scoreboard players set @s click 1
 
-tag @s[scores={DialogueTrigger=10,TalkTime=26..}] add Dialogue11
+tag @s[scores={DialogueTrigger=11,TalkTime=26..}] add Dialogue11
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -379,7 +382,7 @@ tellraw @s[scores={DialogueTrigger=12,TalkTime=47}] {"text":"<Falkner> TM51 cont
 tellraw @s[scores={DialogueTrigger=12,TalkTime=55}] {"text":"<Falkner> There are Pokémon Gyms in cities and towns ahead. Make good use of them!"}
 tellraw @s[scores={DialogueTrigger=12,TalkTime=64}] {"text":"<Falkner> As for your next move... I would suggest Azalea Town."}
 
-tag @s[scores={DialogueTrigger=12TalkTime=64..}] add Dialogue12
+tag @s[scores={DialogueTrigger=12,TalkTime=64..}] add Dialogue12
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Elm's Aide giving Togepi Egg after Falkner
