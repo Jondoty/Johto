@@ -33,6 +33,10 @@ execute as @a[x=1590,y=74,z=-129,dx=10,dy=5,dz=10] run function johto:custom/saf
 tag @a[x=875,y=99,z=50,dx=55,dy=20,dz=27,tag=Dialogue206] remove Dialogue206
 scoreboard players set @a[x=875,y=99,z=50,dx=55,dy=20,dz=27,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 206
 
+
+#MusicTitles function, tracks player around map checking for new areas or music
+execute as @a[scores={TalkTime=0}] run function johto:world/musictitles
+
 #---------------------
 
 #Boss levels if enabled
@@ -313,6 +317,7 @@ scoreboard players set @a[x=11,y=64,z=-100,distance=0..7,scores={TalkTime=0},tag
 scoreboard players set @a[x=354,y=63,z=-704,dx=19,dy=5,dz=8,tag=!Dialogue14,scores={TalkTime=0}] DialogueTrigger 14
 
 #tps out villagers
+execute at @p[x=371,y=64,z=-698,distance=0..25,tag=!Dialogue16,scores={TalkTime=0}] run tp @e[x=371,y=63,z=-698,dy=3,type=pixelmon:npc_chatting] 371 64 -698
 execute at @p[x=371,y=64,z=-698,distance=0..25,tag=!Dialogue16] run tp @e[x=370,y=64,z=-699,dx=1,dy=3,dz=1,type=villager,limit=1] -724 91 -242
 execute at @p[x=371,y=64,z=-698,distance=0..25,tag=!Dialogue16] run tp @e[x=370,y=64,z=-699,dx=1,dy=3,dz=1,type=villager,limit=1] -722 91 -242
 

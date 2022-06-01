@@ -48,35 +48,6 @@ tag @e[type=pixelmon:npc_trainer,tag=!GymLeader,name=Blaine] add GymLeader
 tag @e[type=pixelmon:npc_trainer,tag=!GymLeader,name=Blue] add GymLeader
 
 
-#-----------------------Dialogue Based------------
-
-#First Silver encounter, plays its NPC theme before its battle theme
-playsound rivaltalk record @a[scores={MusicCooldown=0,DialogueTrigger=6..7}] ~ ~ ~ 1 1 1
-scoreboard players set @a[scores={MusicCooldown=0,DialogueTrigger=6..7}] MusicCooldown 70
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #-----------------------Entity/Tag Based------------
 
@@ -163,6 +134,11 @@ playsound cherrygrovetour record @s[scores={MusicCooldown=0,DialogueTrigger=197}
 scoreboard players set @s[scores={MusicCooldown=0,DialogueTrigger=197}] MusicCooldown 76
 
 
+#First Silver encounter, plays its NPC theme before its battle theme
+playsound rivaltalk record @a[scores={MusicCooldown=0,DialogueTrigger=6..7}] ~ ~ ~ 1 1 1
+scoreboard players set @a[scores={MusicCooldown=0,DialogueTrigger=6..7}] MusicCooldown 70
+
+
 
 
 
@@ -174,6 +150,10 @@ scoreboard players set @s[scores={MusicCooldown=0,DialogueTrigger=197}] MusicCoo
 #--------------High priority-------------
 
 
+#Pokemon Centers
+execute at @e[type=armor_stand,name=PokeCenter] run playsound pokemoncenter record @a[dx=17,dy=15,dz=14,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+execute at @e[type=armor_stand,name=PokeCenter] run scoreboard players set @a[dx=17,dy=15,dz=14,scores={MusicCooldown=0}] MusicCooldown 93
+
 #Cinnabar Island
 playsound ceruleancity record @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
 scoreboard players set @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicCooldown=0}] MusicCooldown 202
@@ -183,10 +163,6 @@ scoreboard players set @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicCoo
 playsound oakwelcome record @s[x=-972,y=63,z=-410,dx=10,dy=10,dz=10,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
 scoreboard players set @s[x=-972,y=63,z=-410,dx=10,dy=10,dz=10,scores={MusicCooldown=0}] MusicCooldown 100
 
-
-#Pokemon Centers
-execute at @e[type=armor_stand,name=PokeCenter] run playsound pokemoncenter record @s[dx=17,dy=15,dz=14,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-execute at @e[type=armor_stand,name=PokeCenter] run scoreboard players set @s[dx=17,dy=15,dz=14,scores={MusicCooldown=0}] MusicCooldown 93
 
 
 #Ruins of Alph Cave Interiors
@@ -479,8 +455,8 @@ scoreboard players set @s[x=87,y=50,z=719,dx=44,dy=20,dz=44,scores={MusicCooldow
 
 
 #Slowpoke Well
-playsound darkcave record @s[x=229,y=0,z=-729,dx=92,dy=60,dz=76,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=229,y=0,z=-729,dx=92,dy=60,dz=76,scores={MusicCooldown=0}] MusicCooldown 194
+playsound darkcave record @s[x=229,y=0,z=-729,dx=92,dy=58,dz=76,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=229,y=0,z=-729,dx=92,dy=58,dz=76,scores={MusicCooldown=0}] MusicCooldown 194
 
 
 #Dark Cave
@@ -573,7 +549,7 @@ playsound route27 record @s[x=-1152,y=0,z=-588,dx=190,dy=240,dz=128,scores={Musi
 scoreboard players set @s[x=-1152,y=0,z=-588,dx=190,dy=240,dz=128,scores={MusicCooldown=0}] MusicCooldown 151
 
 
-#Rpite 27
+#Route 27
 playsound route27 record @s[x=-1343,y=0,z=-588,dx=190,dy=240,dz=128,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
 scoreboard players set @s[x=-1343,y=0,z=-588,dx=190,dy=240,dz=128,scores={MusicCooldown=0}] MusicCooldown 151
 
@@ -622,6 +598,10 @@ scoreboard players set @s[x=-3224,y=0,z=275,dx=354,dy=240,dz=156,scores={MusicCo
 playsound route10 record @s[x=-3350,y=60,z=627,dx=513,dy=180,dz=173,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
 scoreboard players set @s[x=-3350,y=60,z=627,dx=513,dy=180,dz=173,scores={MusicCooldown=0}] MusicCooldown 154
 
+#Route 10 (overlaps with old R9)
+playsound route10 record @s[x=-3338,y=60,z=387,dx=116,dy=256,dz=396,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=-3338,y=60,z=387,dx=116,dy=256,dz=396,scores={MusicCooldown=0}] MusicCooldown 154
+
 
 #Route 11
 playsound route12 record @s[x=-3261,y=0,z=-118,dx=376,dy=240,dz=118,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
@@ -663,8 +643,8 @@ playsound ceruleancity record @s[x=-1785,y=0,z=553,dx=261,dy=240,dz=208,scores={
 scoreboard players set @s[x=-1785,y=0,z=553,dx=261,dy=240,dz=208,scores={MusicCooldown=0}] MusicCooldown 202
 
 #Mt. Moon
-playsound mtmoon record @s[x=-2250,y=0,z=722,dx=130,dy=240,dz=94,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=-2250,y=0,z=722,dx=130,dy=240,dz=94,scores={MusicCooldown=0}] MusicCooldown 63
+playsound mtmoon record @s[x=-2250,y=0,z=772,dx=130,dy=240,dz=130,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=-2250,y=0,z=772,dx=130,dy=240,dz=130,scores={MusicCooldown=0}] MusicCooldown 63
 
 
 #Route 25
@@ -772,7 +752,7 @@ playsound unioncave record @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={Musi
 scoreboard players set @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={MusicCooldown=0}] MusicCooldown 174
 
 
-#Route 36
+#Route 35
 playsound route32 record @s[x=349,y=0,z=-266,dx=239,dy=240,dz=198,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
 scoreboard players set @s[x=349,y=0,z=-266,dx=239,dy=240,dz=198,scores={MusicCooldown=0}] MusicCooldown 117
 
@@ -872,8 +852,8 @@ scoreboard players set @s[x=75,y=0,z=-671,dx=154,dy=240,dz=88,scores={MusicCoold
 
 
 #New Bark Town
-playsound newbarktown record @s[x=-771,y=0,z=-577,dx=121,dy=240,dz=132,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=-771,y=0,z=-577,dx=121,dy=240,dz=132,scores={MusicCooldown=0}] MusicCooldown 121
+playsound newbarktown record @s[x=-753,y=0,z=-577,dx=103,dy=240,dz=132,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=-753,y=0,z=-577,dx=103,dy=240,dz=132,scores={MusicCooldown=0}] MusicCooldown 121
 
 
 #Flymap Cooldown only to prevent function spamming
