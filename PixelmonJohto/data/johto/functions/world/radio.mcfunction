@@ -768,8 +768,8 @@ scoreboard players set @s[x=100,y=0,z=-90,dx=90,dy=66,dz=190,scores={MusicCooldo
 
 
 #Violet City
-playsound olivinecity record @s[x=-42,y=0,z=-161,dx=141,dy=66,dz=261,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=-42,y=0,z=-161,dx=141,dy=66,dz=261,scores={MusicCooldown=0}] MusicCooldown 166
+playsound olivinecity record @s[x=-42,y=0,z=-161,dx=141,dy=256,dz=261,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=-42,y=0,z=-161,dx=141,dy=256,dz=261,scores={MusicCooldown=0}] MusicCooldown 166
 
 
 #Goldenrod City

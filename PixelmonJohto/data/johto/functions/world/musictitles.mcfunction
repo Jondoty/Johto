@@ -3,6 +3,8 @@
 #Refreshes the music, !Indoors needed for most general-purpose areas, skips if player is within a targeted building
 #Applies the current tag of where player is. Indoor areas take priority at the end
 
+#All interiors should be a number 200+
+#If 1..199 is applied, can ignore effect when player walks out of interior buildings (like Pokemon Center not showing town title every time)
 
 #tags if player is in an interior if applicable
 tag @s[x=-693,y=63,z=-490,dx=19,dy=5,dz=19] add Indoors
@@ -29,14 +31,14 @@ title @s[x=870,y=0,z=-480,dx=281,dy=240,dz=199,scores={MusicTitles=1..99}] actio
 title @s[x=870,y=0,z=-480,dx=281,dy=240,dz=199,scores={MusicTitles=101..199}] actionbar {"text":"Whirl Islands"}
 title @s[x=1120,y=0,z=120,dx=245,dy=240,dz=280,scores={MusicTitles=1..98}] actionbar {"text":"Whirl Islands"}
 title @s[x=1120,y=0,z=120,dx=245,dy=240,dz=280,scores={MusicTitles=100..199}] actionbar {"text":"Whirl Islands"}
-title @s[x=-42,y=0,z=-161,dx=141,dy=66,dz=261,scores={MusicTitles=1..96}] actionbar {"text":"Violet City"}
-title @s[x=-42,y=0,z=-161,dx=141,dy=66,dz=261,scores={MusicTitles=98..199}] actionbar {"text":"Violet City"}
-title @s[x=-1800,y=0,z=-44,dx=191,dy=240,dz=166,scores={MusicTitles=1..97}] actionbar {"text":"Viridian City"}
-title @s[x=-1800,y=0,z=-44,dx=191,dy=240,dz=166,scores={MusicTitles=99..199}] actionbar {"text":"Viridian City"}
-title @s[x=100,y=0,z=-90,dx=90,dy=66,dz=190,scores={MusicTitles=1..96}] actionbar {"text":"Violet City"}
-title @s[x=100,y=0,z=-90,dx=90,dy=66,dz=190,scores={MusicTitles=98..199}] actionbar {"text":"Violet City"}
-title @s[x=-2884,y=0,z=-200,dx=273,dy=240,dz=239,scores={MusicTitles=1..95}] actionbar {"text":"Vermilion City"}
-title @s[x=-2884,y=0,z=-200,dx=273,dy=240,dz=239,scores={MusicTitles=97..199}] actionbar {"text":"Vermilion City"}
+#title @s[x=-42,y=0,z=-161,dx=141,dy=256,dz=261,scores={MusicTitles=1..96}] actionbar {"text":"Violet City"}
+#title @s[x=-42,y=0,z=-161,dx=141,dy=256,dz=261,scores={MusicTitles=98..199}] actionbar {"text":"Violet City"}
+#title @s[x=-1800,y=0,z=-44,dx=191,dy=240,dz=166,scores={MusicTitles=1..97}] actionbar {"text":"Viridian City"}
+#title @s[x=-1800,y=0,z=-44,dx=191,dy=240,dz=166,scores={MusicTitles=99..199}] actionbar {"text":"Viridian City"}
+#title @s[x=100,y=0,z=-90,dx=90,dy=256,dz=190,scores={MusicTitles=1..96}] actionbar {"text":"Violet City"}
+#title @s[x=100,y=0,z=-90,dx=90,dy=256,dz=190,scores={MusicTitles=98..199}] actionbar {"text":"Violet City"}
+#title @s[x=-2884,y=0,z=-200,dx=273,dy=240,dz=239,scores={MusicTitles=1..95}] actionbar {"text":"Vermilion City"}
+#title @s[x=-2884,y=0,z=-200,dx=273,dy=240,dz=239,scores={MusicTitles=97..199}] actionbar {"text":"Vermilion City"}
 title @s[x=-1531,y=0,z=372,dx=204,dy=61,dz=173,scores={MusicTitles=1..95}] actionbar {"text":"Victory Road"}
 title @s[x=-1531,y=0,z=372,dx=204,dy=61,dz=173,scores={MusicTitles=97..199}] actionbar {"text":"Victory Road"}
 title @s[x=230,y=0,z=-642,dx=95,dy=240,dz=167,scores={MusicTitles=1..94}] actionbar {"text":"Union Cave"}
@@ -49,8 +51,8 @@ title @s[x=-1099,y=0,z=-252,dx=102,dy=100,dz=189,scores={MusicTitles=1..91}] act
 title @s[x=-1099,y=0,z=-252,dx=102,dy=100,dz=189,scores={MusicTitles=93..199}] actionbar {"text":"Sinjoh Ruins"}
 title @s[x=-2200,y=0,z=-986,dx=250,dy=59,dz=208,scores={MusicTitles=1..90}] actionbar {"text":"Seafoam Islands"}
 title @s[x=-2200,y=0,z=-986,dx=250,dy=59,dz=208,scores={MusicTitles=92..199}] actionbar {"text":"Seafoam Islands"}
-title @s[x=-2871,y=0,z=235,dx=252,dy=240,dz=205,scores={MusicTitles=1..89}] actionbar {"text":"Saffron City"}
-title @s[x=-2871,y=0,z=235,dx=252,dy=240,dz=205,scores={MusicTitles=91..199}] actionbar {"text":"Saffron City"}
+#title @s[x=-2871,y=0,z=235,dx=252,dy=240,dz=205,scores={MusicTitles=1..89}] actionbar {"text":"Saffron City"}
+#title @s[x=-2871,y=0,z=235,dx=252,dy=240,dz=205,scores={MusicTitles=91..199}] actionbar {"text":"Saffron City"}
 title @s[x=1499,y=64,z=-209,dx=169,dy=256,dz=112,scores={MusicTitles=1..88}] actionbar {"text":"Safari Zone Gate"}
 title @s[x=1499,y=64,z=-209,dx=169,dy=256,dz=112,scores={MusicTitles=90..199}] actionbar {"text":"Safari Zone Gate"}
 title @s[x=1403,y=0,z=-95,dx=379,dy=240,dz=201,scores={MusicTitles=1..87}] actionbar {"text":"Safari Zone"}
@@ -195,14 +197,14 @@ title @s[x=-1574,y=0,z=-895,dx=114,dy=63,dz=73,scores={MusicTitles=1..35}] actio
 title @s[x=-1574,y=0,z=-895,dx=114,dy=63,dz=73,scores={MusicTitles=37..199}] actionbar {"text":"Pokemon Mansion"}
 title @s[x=-1222,y=0,z=500,dx=470,dy=240,dz=342,scores={MusicTitles=1..34}] actionbar {"text":"Pokemon Gym"}
 title @s[x=-1222,y=0,z=500,dx=470,dy=240,dz=342,scores={MusicTitles=36..199}] actionbar {"text":"Pokemon Gym"}
-title @s[x=-1785,y=0,z=553,dx=261,dy=240,dz=208,scores={MusicTitles=1..33}] actionbar {"text":"Pewter City"}
-title @s[x=-1785,y=0,z=553,dx=261,dy=240,dz=208,scores={MusicTitles=35..199}] actionbar {"text":"Pewter City"}
-title @s[x=-1765,y=0,z=-404,dx=145,dy=240,dz=154,scores={MusicTitles=1..32}] actionbar {"text":"Pallet Town"}
-title @s[x=-1765,y=0,z=-404,dx=145,dy=240,dz=154,scores={MusicTitles=34..199}] actionbar {"text":"Pallet Town"}
-title @s[x=639,y=0,z=-239,dx=197,dy=240,dz=279,scores={MusicTitles=1..31}] actionbar {"text":"Olivine City"}
-title @s[x=639,y=0,z=-239,dx=197,dy=240,dz=279,scores={MusicTitles=33..199}] actionbar {"text":"Olivine City"}
-title @s[x=-753,y=0,z=-577,dx=103,dy=240,dz=132,scores={MusicTitles=1..30}] actionbar {"text":"New Bark Town"}
-title @s[x=-753,y=0,z=-577,dx=103,dy=240,dz=132,scores={MusicTitles=32..199}] actionbar {"text":"New Bark Town"}
+#title @s[x=-1785,y=0,z=553,dx=261,dy=240,dz=208,scores={MusicTitles=1..33}] actionbar {"text":"Pewter City"}
+#title @s[x=-1785,y=0,z=553,dx=261,dy=240,dz=208,scores={MusicTitles=35..199}] actionbar {"text":"Pewter City"}
+#title @s[x=-1765,y=0,z=-404,dx=145,dy=240,dz=154,scores={MusicTitles=1..32}] actionbar {"text":"Pallet Town"}
+#title @s[x=-1765,y=0,z=-404,dx=145,dy=240,dz=154,scores={MusicTitles=34..199}] actionbar {"text":"Pallet Town"}
+#title @s[x=639,y=0,z=-239,dx=197,dy=240,dz=279,scores={MusicTitles=1..31}] actionbar {"text":"Olivine City"}
+#title @s[x=639,y=0,z=-239,dx=197,dy=240,dz=279,scores={MusicTitles=33..199}] actionbar {"text":"Olivine City"}
+#title @s[x=-753,y=0,z=-577,dx=103,dy=240,dz=132,scores={MusicTitles=1..30}] actionbar {"text":"New Bark Town"}
+#title @s[x=-753,y=0,z=-577,dx=103,dy=240,dz=132,scores={MusicTitles=32..199}] actionbar {"text":"New Bark Town"}
 title @s[x=463,y=0,z=-67,dx=175,dy=240,dz=203,scores={MusicTitles=1..29}] actionbar {"text":"National Park"}
 title @s[x=463,y=0,z=-67,dx=175,dy=240,dz=203,scores={MusicTitles=31..199}] actionbar {"text":"National Park"}
 title @s[x=-1043,y=60,z=102,dx=135,dy=100,dz=270,scores={MusicTitles=1..28}] actionbar {"text":"Mt. Silver"}
@@ -213,38 +215,38 @@ title @s[x=-83,y=0,z=220,dx=318,dy=240,dz=180,scores={MusicTitles=1..27}] action
 title @s[x=-83,y=0,z=220,dx=318,dy=240,dz=180,scores={MusicTitles=29..199}] actionbar {"text":"Mt. Mortar"}
 title @s[x=-2250,y=0,z=772,dx=130,dy=240,dz=130,scores={MusicTitles=1..26}] actionbar {"text":"Mt. Moon"}
 title @s[x=-2250,y=0,z=772,dx=130,dy=240,dz=130,scores={MusicTitles=28..199}] actionbar {"text":"Mt. Moon"}
-title @s[x=-214,y=64,z=125,dx=117,dy=240,dz=119,scores={MusicTitles=1..25}] actionbar {"text":"Mahogany Town"}
-title @s[x=-214,y=64,z=125,dx=117,dy=240,dz=119,scores={MusicTitles=27..199}] actionbar {"text":"Mahogany Town"}
+#title @s[x=-214,y=64,z=125,dx=117,dy=240,dz=119,scores={MusicTitles=1..25}] actionbar {"text":"Mahogany Town"}
+#title @s[x=-214,y=64,z=125,dx=117,dy=240,dz=119,scores={MusicTitles=27..199}] actionbar {"text":"Mahogany Town"}
 title @s[x=-978,y=64,z=-375,dx=20,dy=20,dz=20,scores={MusicTitles=1..24}] actionbar {"text":"Lobby"}
 title @s[x=-978,y=64,z=-375,dx=20,dy=20,dz=20,scores={MusicTitles=26..199}] actionbar {"text":"Lobby"}
-title @s[x=-3338,y=0,z=290,dx=113,dy=240,dz=96,scores={MusicTitles=1..23}] actionbar {"text":"Lavender Town"}
-title @s[x=-3338,y=0,z=290,dx=113,dy=240,dz=96,scores={MusicTitles=25..199}] actionbar {"text":"Lavender Town"}
+#title @s[x=-3338,y=0,z=290,dx=113,dy=240,dz=96,scores={MusicTitles=1..23}] actionbar {"text":"Lavender Town"}
+#title @s[x=-3338,y=0,z=290,dx=113,dy=240,dz=96,scores={MusicTitles=25..199}] actionbar {"text":"Lavender Town"}
 title @s[x=-290,y=0,z=555,dx=295,dy=240,dz=225,scores={MusicTitles=1..22}] actionbar {"text":"Lake of Rage"}
 title @s[x=-290,y=0,z=555,dx=295,dy=240,dz=225,scores={MusicTitles=24..199}] actionbar {"text":"Lake of Rage"}
 title @s[x=-1343,y=64,z=15,dx=99,dy=100,dz=338,scores={MusicTitles=1..21}] actionbar {"text":"Indigo Plateau"}
 title @s[x=-1343,y=64,z=15,dx=99,dy=100,dz=338,scores={MusicTitles=23..199}] actionbar {"text":"Indigo Plateau"}
 title @s[x=513,y=0,z=-793,dx=187,dy=240,dz=228,scores={MusicTitles=1..20}] actionbar {"text":"Ilex Forest"}
 title @s[x=513,y=0,z=-793,dx=187,dy=240,dz=228,scores={MusicTitles=22..199}] actionbar {"text":"Ilex Forest"}
-title @s[x=-875,y=0,z=302,dx=280,dy=60,dz=173,scores={MusicTitles=1..19}] actionbar {"text":"Ice Cavern"}
-title @s[x=-875,y=0,z=302,dx=280,dy=60,dz=173,scores={MusicTitles=21..199}] actionbar {"text":"Ice Cavern"}
+title @s[x=-875,y=0,z=302,dx=280,dy=60,dz=173,scores={MusicTitles=1..19}] actionbar {"text":"Ice Path"}
+title @s[x=-875,y=0,z=302,dx=280,dy=60,dz=173,scores={MusicTitles=21..199}] actionbar {"text":"Ice Path"}
 title @s[x=-1300,y=77,z=751,dx=24,dy=10,dz=34,scores={MusicTitles=1..18}] actionbar {"text":"Hall of Fame"}
 title @s[x=-1300,y=77,z=751,dx=24,dy=10,dz=34,scores={MusicTitles=20..199}] actionbar {"text":"Hall of Fame"}
 title @s[x=-1049,y=60,z=-340,dx=41,dy=20,dz=72,scores={MusicTitles=1..18}] actionbar {"text":"Hall of Fame"}
 title @s[x=-1049,y=60,z=-340,dx=41,dy=20,dz=72,scores={MusicTitles=20..199}] actionbar {"text":"Hall of Fame"}
-title @s[x=349,y=0,z=-461,dx=239,dy=240,dz=194,scores={MusicTitles=1..17}] actionbar {"text":"Goldenrod City"}
-title @s[x=349,y=0,z=-461,dx=239,dy=240,dz=194,scores={MusicTitles=19..199}] actionbar {"text":"Goldenrod City"}
-title @s[x=87,y=50,z=719,dx=44,dy=20,dz=44,scores={MusicTitles=1..16}] actionbar {"text":"Giovanni's Cave (???)"}
-title @s[x=87,y=50,z=719,dx=44,dy=20,dz=44,scores={MusicTitles=18..199}] actionbar {"text":"Giovanni's Cave (???)"}
-title @s[x=-2513,y=0,z=-642,dx=225,dy=240,dz=187,scores={MusicTitles=1..15}] actionbar {"text":"Fuchsia City"}
-title @s[x=-2513,y=0,z=-642,dx=225,dy=240,dz=187,scores={MusicTitles=17..199}] actionbar {"text":"Fuchsia City"}
+#title @s[x=349,y=0,z=-461,dx=239,dy=240,dz=194,scores={MusicTitles=1..17}] actionbar {"text":"Goldenrod City"}
+#title @s[x=349,y=0,z=-461,dx=239,dy=240,dz=194,scores={MusicTitles=19..199}] actionbar {"text":"Goldenrod City"}
+title @s[x=87,y=50,z=719,dx=44,dy=20,dz=44,scores={MusicTitles=1..16}] actionbar {"text":"???"}
+title @s[x=87,y=50,z=719,dx=44,dy=20,dz=44,scores={MusicTitles=18..199}] actionbar {"text":"???"}
+#title @s[x=-2513,y=0,z=-642,dx=225,dy=240,dz=187,scores={MusicTitles=1..15}] actionbar {"text":"Fuchsia City"}
+#title @s[x=-2513,y=0,z=-642,dx=225,dy=240,dz=187,scores={MusicTitles=17..199}] actionbar {"text":"Fuchsia City"}
 title @s[x=1169,y=252,z=619,distance=..40,scores={MusicTitles=1..14}] actionbar {"text":"Fly Map"}
 title @s[x=1169,y=252,z=619,distance=..40,scores={MusicTitles=16..199}] actionbar {"text":"Fly Map"}
 title @s[x=-1366,y=0,z=372,dx=110,dy=240,dz=302,scores={MusicTitles=1..13}] actionbar {"text":"Elite Four"}
 title @s[x=-1366,y=0,z=372,dx=110,dy=240,dz=302,scores={MusicTitles=15..199}] actionbar {"text":"Elite Four"}
 title @s[x=-1366,y=63,z=676,dx=110,dy=240,dz=74,scores={MusicTitles=1..13}] actionbar {"text":"Elite Four"}
 title @s[x=-1366,y=63,z=676,dx=110,dy=240,dz=74,scores={MusicTitles=15..199}] actionbar {"text":"Elite Four"}
-title @s[x=236,y=0,z=164,dx=262,dy=100,dz=204,scores={MusicTitles=1..12}] actionbar {"text":"Ecruteak City"}
-title @s[x=236,y=0,z=164,dx=262,dy=100,dz=204,scores={MusicTitles=14..199}] actionbar {"text":"Ecruteak City"}
+#title @s[x=236,y=0,z=164,dx=262,dy=100,dz=204,scores={MusicTitles=1..12}] actionbar {"text":"Ecruteak City"}
+#title @s[x=236,y=0,z=164,dx=262,dy=100,dz=204,scores={MusicTitles=14..199}] actionbar {"text":"Ecruteak City"}
 title @s[x=-744,y=69,z=507,dx=162,dy=70,dz=147,scores={MusicTitles=1..11}] actionbar {"text":"Dragons Den"}
 title @s[x=-744,y=69,z=507,dx=162,dy=70,dz=147,scores={MusicTitles=13..199}] actionbar {"text":"Dragons Den"}
 title @s[x=-3088,y=0,z=80,dx=139,dy=100,dz=136,scores={MusicTitles=1..10}] actionbar {"text":"Diglett's Cave"}
@@ -255,26 +257,26 @@ title @s[x=-439,y=0,z=-190,dx=131,dy=240,dz=319,scores={MusicTitles=1..9}] actio
 title @s[x=-439,y=0,z=-190,dx=131,dy=240,dz=319,scores={MusicTitles=11..199}] actionbar {"text":"Dark Cave"}
 #title @s[x=-1765,y=0,z=-969,dx=145,dy=240,dz=144,scores={MusicTitles=1..8}] actionbar {"text":"Cinnabar Island"}
 #title @s[x=-1765,y=0,z=-969,dx=145,dy=240,dz=144,scores={MusicTitles=10..199}] actionbar {"text":"Cinnabar Island"}
-title @s[x=1152,y=0,z=-525,dx=168,dy=240,dz=244,scores={MusicTitles=1..7}] actionbar {"text":"Cianwood City"}
-title @s[x=1152,y=0,z=-525,dx=168,dy=240,dz=244,scores={MusicTitles=9..199}] actionbar {"text":"Cianwood City"}
-title @s[x=-279,y=0,z=-598,dx=217,dy=240,dz=137,scores={MusicTitles=1..6}] actionbar {"text":"Cherrygrove City"}
-title @s[x=-279,y=0,z=-598,dx=217,dy=240,dz=137,scores={MusicTitles=8..199}] actionbar {"text":"Cherrygrove City"}
-title @s[x=-2836,y=0,z=654,dx=181,dy=240,dz=148,scores={MusicTitles=1..5}] actionbar {"text":"Cerulean City"}
-title @s[x=-2836,y=0,z=654,dx=181,dy=240,dz=148,scores={MusicTitles=7..199}] actionbar {"text":"Cerulean City"}
+#title @s[x=1152,y=0,z=-525,dx=168,dy=240,dz=244,scores={MusicTitles=1..7}] actionbar {"text":"Cianwood City"}
+#title @s[x=1152,y=0,z=-525,dx=168,dy=240,dz=244,scores={MusicTitles=9..199}] actionbar {"text":"Cianwood City"}
+#title @s[x=-279,y=0,z=-598,dx=217,dy=240,dz=137,scores={MusicTitles=1..6}] actionbar {"text":"Cherrygrove City"}
+#title @s[x=-279,y=0,z=-598,dx=217,dy=240,dz=137,scores={MusicTitles=8..199}] actionbar {"text":"Cherrygrove City"}
+#title @s[x=-2836,y=0,z=654,dx=181,dy=240,dz=148,scores={MusicTitles=1..5}] actionbar {"text":"Cerulean City"}
+#title @s[x=-2836,y=0,z=654,dx=181,dy=240,dz=148,scores={MusicTitles=7..199}] actionbar {"text":"Cerulean City"}
 title @s[x=-2659,y=0,z=828,dx=124,dy=240,dz=68,scores={MusicTitles=1..4}] actionbar {"text":"Cerulean Cave"}
 title @s[x=-2659,y=0,z=828,dx=124,dy=240,dz=68,scores={MusicTitles=6..199}] actionbar {"text":"Cerulean Cave"}
-title @s[x=-2501,y=0,z=236,dx=278,dy=240,dz=199,scores={MusicTitles=1..3}] actionbar {"text":"Celadon City"}
-title @s[x=-2501,y=0,z=236,dx=278,dy=240,dz=199,scores={MusicTitles=5..199}] actionbar {"text":"Celadon City"}
-title @s[x=-775,y=0,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=1..2}] actionbar {"text":"Blackthorn City"}
-title @s[x=-775,y=0,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=4..199}] actionbar {"text":"Blackthorn City"}
+#title @s[x=-2501,y=0,z=236,dx=278,dy=240,dz=199,scores={MusicTitles=1..3}] actionbar {"text":"Celadon City"}
+#title @s[x=-2501,y=0,z=236,dx=278,dy=240,dz=199,scores={MusicTitles=5..199}] actionbar {"text":"Celadon City"}
+#title @s[x=-775,y=0,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=1..2}] actionbar {"text":"Blackthorn City"}
+#title @s[x=-775,y=0,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=4..199}] actionbar {"text":"Blackthorn City"}
 title @s[x=858,y=60,z=-15,dx=102,dy=10,dz=143,scores={MusicTitles=1..1}] actionbar {"text":"Battle Tower"}
 title @s[x=858,y=60,z=-15,dx=102,dy=10,dz=143,scores={MusicTitles=3..199}] actionbar {"text":"Battle Tower"}
 title @s[x=858,y=75,z=-15,dx=102,dy=100,dz=143,scores={MusicTitles=1..1}] actionbar {"text":"Battle Tower"}
 title @s[x=858,y=75,z=-15,dx=102,dy=100,dz=143,scores={MusicTitles=3..199}] actionbar {"text":"Battle Tower"}
-title @s[x=285,y=0,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=0}] actionbar {"text":"Azalea Town"}
-title @s[x=285,y=0,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=2..199}] actionbar {"text":"Azalea Town"}
-title @s[x=409,y=63,z=-740,dx=23,dy=7,dz=14,scores={MusicTitles=0}] actionbar {"text":"Azalea Town"}
-title @s[x=409,y=63,z=-740,dx=23,dy=7,dz=14,scores={MusicTitles=2..199}] actionbar {"text":"Azalea Town"}
+#title @s[x=285,y=0,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=0}] actionbar {"text":"Azalea Town"}
+#title @s[x=285,y=0,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=2..199}] actionbar {"text":"Azalea Town"}
+#title @s[x=409,y=63,z=-740,dx=23,dy=7,dz=14,scores={MusicTitles=0}] actionbar {"text":"Azalea Town"}
+#title @s[x=409,y=63,z=-740,dx=23,dy=7,dz=14,scores={MusicTitles=2..199}] actionbar {"text":"Azalea Town"}
 
 title @s[x=240,y=63,z=297,dx=33,dy=240,dz=33,scores={MusicTitles=1..215}] actionbar {"text":"Tin Tower"}
 title @s[x=240,y=63,z=297,dx=33,dy=240,dz=33,scores={MusicTitles=217..}] actionbar {"text":"Tin Tower"}
@@ -300,16 +302,170 @@ title @s[x=495,y=30,z=-275,dx=38,dy=22,dz=21,scores={MusicTitles=1..205}] action
 title @s[x=495,y=30,z=-275,dx=38,dy=22,dz=21,scores={MusicTitles=207..}] actionbar {"text":"Goldenrod Radio Tower"}
 title @s[x=-987,y=0,z=-492,dx=125,dy=100,dz=75,scores={MusicTitles=1..204}] actionbar {"text":"Tohjo Falls"}
 title @s[x=-987,y=0,z=-492,dx=125,dy=100,dz=75,scores={MusicTitles=206..}] actionbar {"text":"Tohjo Falls"}
-title @s[x=-992,y=59,z=-172,dx=38,dy=20,dz=50,scores={MusicTitles=1..203}] actionbar {"text":"Sinjoh fake Ruins Interior"}
-title @s[x=-992,y=59,z=-172,dx=38,dy=20,dz=50,scores={MusicTitles=205..}] actionbar {"text":"Sinjoh fake Ruins Interior"}
-title @s[x=174,y=36,z=-163,dx=42,dy=22,scores={MusicTitles=1..202}] actionbar {"text":"Ruins of Alph Cave Interiors"}
-title @s[x=174,y=36,z=-163,dx=42,dy=22,scores={MusicTitles=204..}] actionbar {"text":"Ruins of Alph Cave Interiors"}
-title @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicTitles=1..201}] actionbar {"text":"Cinnabar Island"}
-title @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicTitles=203..}] actionbar {"text":"Cinnabar Island"}
+title @s[x=-992,y=59,z=-172,dx=38,dy=20,dz=50,scores={MusicTitles=1..203}] actionbar {"text":"Ruins of Alph"}
+title @s[x=-992,y=59,z=-172,dx=38,dy=20,dz=50,scores={MusicTitles=205..}] actionbar {"text":"Ruins of Alph"}
+title @s[x=174,y=36,z=-163,dx=42,dy=22,scores={MusicTitles=1..202}] actionbar {"text":"Ruins of Alph"}
+title @s[x=174,y=36,z=-163,dx=42,dy=22,scores={MusicTitles=204..}] actionbar {"text":"Ruins of Alph"}
+#title @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicTitles=1..201}] actionbar {"text":"Cinnabar Island"}
+#title @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicTitles=203..}] actionbar {"text":"Cinnabar Island"}
 title @s[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={MusicTitles=1..200}] actionbar {"text":"Professor Elm's Lab"}
 title @s[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={MusicTitles=202..}] actionbar {"text":"Professor Elm's Lab"}
 execute at @e[type=armor_stand,name=PokeCenter] run title @a[dx=17,dy=15,dz=14,scores={MusicTitles=1..216}] actionbar {"text":"Pokemon Center"}
 execute at @e[type=armor_stand,name=PokeCenter] run title @a[dx=17,dy=15,dz=14,scores={MusicTitles=218..}] actionbar {"text":"Pokemon Center"}
+
+
+
+
+#Pretty Town Titles
+#New Bark Town
+execute as @s[x=-753,y=0,z=-577,dx=103,dy=240,dz=132,scores={MusicTitles=32..199}] run title @s title {"text":"New Bark Town","color":"white"}
+execute as @s[x=-753,y=0,z=-577,dx=103,dy=240,dz=132,scores={MusicTitles=32..199}] run title @s subtitle {"text":"Winds of a New Beginning","italic":true}
+execute as @s[x=-753,y=0,z=-577,dx=103,dy=240,dz=132,scores={MusicTitles=1..30}] run title @s title {"text":"New Bark Town","color":"white"}
+execute as @s[x=-753,y=0,z=-577,dx=103,dy=240,dz=132,scores={MusicTitles=1..30}] run title @s subtitle {"text":"Winds of a New Beginning","italic":true}
+
+
+#CherryGrove City
+execute as @s[x=-279,y=0,z=-598,dx=217,dy=240,dz=137,scores={MusicTitles=8..199}] run title @s title {"text":"Cherrygrove City","color":"dark_red"}
+execute as @s[x=-279,y=0,z=-598,dx=217,dy=240,dz=137,scores={MusicTitles=8..199}] run title @s subtitle {"text":"The City of Fragrant Flowers","italic":true}
+execute as @s[x=-279,y=0,z=-598,dx=217,dy=240,dz=137,scores={MusicTitles=1..6}] run title @s title {"text":"Cherrygrove City","color":"dark_red"}
+execute as @s[x=-279,y=0,z=-598,dx=217,dy=240,dz=137,scores={MusicTitles=1..6}] run title @s subtitle {"text":"The City of Fragrant Flowers","italic":true}
+
+
+#Violet City
+execute as @s[x=-42,y=0,z=-161,dx=141,dy=256,dz=261,scores={MusicTitles=98..199}] run title @s title {"text":"Violet City","color":"dark_purple"}
+execute as @s[x=-42,y=0,z=-161,dx=141,dy=256,dz=261,scores={MusicTitles=98..199}] run title @s subtitle {"text":"The City of Nostalgic Scents","italic":true}
+execute as @s[x=-42,y=0,z=-161,dx=141,dy=256,dz=261,scores={MusicTitles=1..96}] run title @s title {"text":"Violet City","color":"dark_purple"}
+execute as @s[x=-42,y=0,z=-161,dx=141,dy=256,dz=261,scores={MusicTitles=1..96}] run title @s subtitle {"text":"The City of Nostalgic Scents","italic":true}
+
+execute as @s[x=100,y=0,z=-90,dx=90,dy=256,dz=190,scores={MusicTitles=98..199}] run title @s title {"text":"Violet City","color":"dark_purple"}
+execute as @s[x=100,y=0,z=-90,dx=90,dy=256,dz=190,scores={MusicTitles=98..199}] run title @s subtitle {"text":"The City of Nostalgic Scents","italic":true}
+execute as @s[x=100,y=0,z=-90,dx=90,dy=256,dz=190,scores={MusicTitles=1..96}] run title @s title {"text":"Violet City","color":"dark_purple"}
+execute as @s[x=100,y=0,z=-90,dx=90,dy=256,dz=190,scores={MusicTitles=1..96}] run title @s subtitle {"text":"The City of Nostalgic Scents","italic":true}
+
+
+#Azalea Town
+execute as @s[x=285,y=0,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=2..199}] run title @s title {"text":"Azalea Town","color":"dark_green"}
+execute as @s[x=285,y=0,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=2..199}] run title @s subtitle {"text":"Living Happily with Pokémon","italic":true}
+execute as @s[x=285,y=0,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=0}] run title @s title {"text":"Azalea Town","color":"dark_green"}
+execute as @s[x=285,y=0,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=0}] run title @s subtitle {"text":"Living Happily with Pokémon","italic":true}
+
+execute as @s[x=409,y=63,z=-740,dx=23,dy=7,dz=14,scores={MusicTitles=2..199}] run title @s title {"text":"Azalea Town","color":"dark_green"}
+execute as @s[x=409,y=63,z=-740,dx=23,dy=7,dz=14,scores={MusicTitles=2..199}] run title @s subtitle {"text":"Living Happily with Pokémon","italic":true}
+execute as @s[x=409,y=63,z=-740,dx=23,dy=7,dz=14,scores={MusicTitles=0}] run title @s title {"text":"Azalea Town","color":"dark_green"}
+execute as @s[x=409,y=63,z=-740,dx=23,dy=7,dz=14,scores={MusicTitles=0}] run title @s subtitle {"text":"Living Happily with Pokémon","italic":true}
+
+
+#Goldenrod City
+execute as @s[x=349,y=0,z=-461,dx=239,dy=240,dz=194,scores={MusicTitles=19..199}] run title @s title {"text":"Goldenrod City","color":"yellow"}
+execute as @s[x=349,y=0,z=-461,dx=239,dy=240,dz=194,scores={MusicTitles=19..199}] run title @s subtitle {"text":"A Happening Big City","italic":true}
+execute as @s[x=349,y=0,z=-461,dx=239,dy=240,dz=194,scores={MusicTitles=1..17}] run title @s title {"text":"Goldenrod City","color":"yellow"}
+execute as @s[x=349,y=0,z=-461,dx=239,dy=240,dz=194,scores={MusicTitles=1..17}] run title @s subtitle {"text":"A Happening Big City","italic":true}
+
+#Ecruteak City
+execute as @s[x=236,y=0,z=164,dx=262,dy=100,dz=204,scores={MusicTitles=14..199}] run title @s title {"text":"Ecruteak City","color":"light_purple"}
+execute as @s[x=236,y=0,z=164,dx=262,dy=100,dz=204,scores={MusicTitles=14..199}] run title @s subtitle {"text":"A Historical City","italic":true}
+execute as @s[x=236,y=0,z=164,dx=262,dy=100,dz=204,scores={MusicTitles=1..12}] run title @s title {"text":"Ecruteak City","color":"light_purple"}
+execute as @s[x=236,y=0,z=164,dx=262,dy=100,dz=204,scores={MusicTitles=1..12}] run title @s subtitle {"text":"A Historical City","italic":true}
+
+
+#Olivine City
+execute as @s[x=639,y=0,z=-239,dx=197,dy=240,dz=279,scores={MusicTitles=33..199}] run title @s title {"text":"Olivine City","color":"dark_aqua"}
+execute as @s[x=639,y=0,z=-239,dx=197,dy=240,dz=279,scores={MusicTitles=33..199}] run title @s subtitle {"text":"The Port with Sea Breezes","italic":true}
+execute as @s[x=639,y=0,z=-239,dx=197,dy=240,dz=279,scores={MusicTitles=1..31}] run title @s title {"text":"Olivine City","color":"dark_aqua"}
+execute as @s[x=639,y=0,z=-239,dx=197,dy=240,dz=279,scores={MusicTitles=1..31}] run title @s subtitle {"text":"The Port with Sea Breezes","italic":true}
+
+#Cianwood City
+execute as @s[x=1152,y=0,z=-525,dx=168,dy=240,dz=244,scores={MusicTitles=9..199}] run title @s title {"text":"Cianwood City","color":"aqua"}
+execute as @s[x=1152,y=0,z=-525,dx=168,dy=240,dz=244,scores={MusicTitles=9..199}] run title @s subtitle {"text":"A Port of Crashing Waves","italic":true}
+execute as @s[x=1152,y=0,z=-525,dx=168,dy=240,dz=244,scores={MusicTitles=1..7}] run title @s title {"text":"Cianwood City","color":"aqua"}
+execute as @s[x=1152,y=0,z=-525,dx=168,dy=240,dz=244,scores={MusicTitles=1..7}] run title @s subtitle {"text":"A Port of Crashing Waves","italic":true}
+
+
+#Mahogany Town
+execute as @s[x=-214,y=64,z=125,dx=117,dy=240,dz=119,scores={MusicTitles=27..199}] run title @s title {"text":"Mahogany Town","color":"gray"}
+execute as @s[x=-214,y=64,z=125,dx=117,dy=240,dz=119,scores={MusicTitles=27..199}] run title @s subtitle {"text":"Home of the Ninja","italic":true}
+execute as @s[x=-214,y=64,z=125,dx=117,dy=240,dz=119,scores={MusicTitles=1..25}] run title @s title {"text":"Mahogany Town","color":"gray"}
+execute as @s[x=-214,y=64,z=125,dx=117,dy=240,dz=119,scores={MusicTitles=1..25}] run title @s subtitle {"text":"Home of the Ninja","italic":true}
+
+
+#Blackthorn City
+execute as @s[x=-775,y=0,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=4..199}] run title @s title {"text":"Blackthorn City","color":"dark_gray"}
+execute as @s[x=-775,y=0,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=4..199}] run title @s subtitle {"text":"A Quiet Mountain Retreat","italic":true}
+execute as @s[x=-775,y=0,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=1..1}] run title @s title {"text":"Blackthorn City","color":"dark_gray"}
+execute as @s[x=-775,y=0,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=1..1}] run title @s subtitle {"text":"A Quiet Mountain Retreat","italic":true}
+
+
+#-----------------------------------------------Kanto-----------------------------------------------
+
+
+#Indigo Plateau
+execute as @s[x=-1343,y=64,z=15,dx=99,dy=100,dz=338,scores={MusicTitles=23..199}] run title @s title {"text":"Indigo Plateau","color":"white"}
+execute as @s[x=-1343,y=64,z=15,dx=99,dy=100,dz=338,scores={MusicTitles=23..199}] run title @s subtitle {"text":"The Ultimate Goal of Trainers!","italic":true}
+execute as @s[x=-1343,y=64,z=15,dx=99,dy=100,dz=338,scores={MusicTitles=1..21}] run title @s title {"text":"Indigo Plateau","color":"white"}
+execute as @s[x=-1343,y=64,z=15,dx=99,dy=100,dz=338,scores={MusicTitles=1..21}] run title @s subtitle {"text":"The Ultimate Goal of Trainers!","italic":true}
+
+
+#Pallet Town
+execute as @s[x=-1765,y=0,z=-404,dx=145,dy=240,dz=154,scores={MusicTitles=34..199}] run title @s title {"text":"Pallet Town","color":"yellow"}
+execute as @s[x=-1765,y=0,z=-404,dx=145,dy=240,dz=154,scores={MusicTitles=34..199}] run title @s subtitle {"text":"Shades of Your Journey Await!","italic":true}
+execute as @s[x=-1765,y=0,z=-404,dx=145,dy=240,dz=154,scores={MusicTitles=1..32}] run title @s title {"text":"Pallet Town","color":"yellow"}
+execute as @s[x=-1765,y=0,z=-404,dx=145,dy=240,dz=154,scores={MusicTitles=1..32}] run title @s subtitle {"text":"Shades of Your Journey Await!","italic":true}
+
+#Viridian City
+execute as @s[x=-1800,y=0,z=-44,dx=191,dy=240,dz=166,scores={MusicTitles=99..199}] run title @s title {"text":"Viridian City","color":"aqua"}
+execute as @s[x=-1800,y=0,z=-44,dx=191,dy=240,dz=166,scores={MusicTitles=99..199}] run title @s subtitle {"text":"The City of Evergreen","italic":true}
+execute as @s[x=-1800,y=0,z=-44,dx=191,dy=240,dz=166,scores={MusicTitles=1..97}] run title @s title {"text":"Viridian City","color":"aqua"}
+execute as @s[x=-1800,y=0,z=-44,dx=191,dy=240,dz=166,scores={MusicTitles=1..97}] run title @s subtitle {"text":"The City of Evergreen","italic":true}
+
+#Pewter City
+execute as @s[x=-1785,y=0,z=553,dx=261,dy=240,dz=208,scores={MusicTitles=35..199}] run title @s title {"text":"Pewter City","color":"gray"}
+execute as @s[x=-1785,y=0,z=553,dx=261,dy=240,dz=208,scores={MusicTitles=35..199}] run title @s subtitle {"text":"Between Rugged Mountains","italic":true}
+execute as @s[x=-1785,y=0,z=553,dx=261,dy=240,dz=208,scores={MusicTitles=1..33}] run title @s title {"text":"Pewter City","color":"gray"}
+execute as @s[x=-1785,y=0,z=553,dx=261,dy=240,dz=208,scores={MusicTitles=1..33}] run title @s subtitle {"text":"Between Rugged Mountains","italic":true}
+
+#Cerulean City
+execute as @s[x=-2836,y=0,z=654,dx=181,dy=240,dz=148,scores={MusicTitles=7..199}] run title @s title {"text":"Cerulean City","color":"dark_aqua"}
+execute as @s[x=-2836,y=0,z=654,dx=181,dy=240,dz=148,scores={MusicTitles=7..199}] run title @s subtitle {"text":"The Floral Lagoon City","italic":true}
+execute as @s[x=-2836,y=0,z=654,dx=181,dy=240,dz=148,scores={MusicTitles=1..5}] run title @s title {"text":"Cerulean City","color":"dark_aqua"}
+execute as @s[x=-2836,y=0,z=654,dx=181,dy=240,dz=148,scores={MusicTitles=1..5}] run title @s subtitle {"text":"The Floral Lagoon City","italic":true}
+
+#Lavender Town
+execute as @s[x=-3338,y=0,z=290,dx=113,dy=240,dz=96,scores={MusicTitles=25..199}] run title @s title {"text":"Lavender Town","color":"dark_purple"}
+execute as @s[x=-3338,y=0,z=290,dx=113,dy=240,dz=96,scores={MusicTitles=25..199}] run title @s subtitle {"text":"The Noble Town","italic":true}
+execute as @s[x=-3338,y=0,z=290,dx=113,dy=240,dz=96,scores={MusicTitles=1..23}] run title @s title {"text":"Lavender Town","color":"dark_purple"}
+execute as @s[x=-3338,y=0,z=290,dx=113,dy=240,dz=96,scores={MusicTitles=1..23}] run title @s subtitle {"text":"The Noble Town","italic":true}
+
+#Saffron City
+execute as @s[x=-2871,y=0,z=235,dx=252,dy=240,dz=205,scores={MusicTitles=91..199}] run title @s title {"text":"Saffron City","color":"red"}
+execute as @s[x=-2871,y=0,z=235,dx=252,dy=240,dz=205,scores={MusicTitles=91..199}] run title @s subtitle {"text":"Shining Big City","italic":true}
+execute as @s[x=-2871,y=0,z=235,dx=252,dy=240,dz=205,scores={MusicTitles=1..89}] run title @s title {"text":"Saffron City","color":"red"}
+execute as @s[x=-2871,y=0,z=235,dx=252,dy=240,dz=205,scores={MusicTitles=1..89}] run title @s subtitle {"text":"Shining Big City","italic":true}
+
+#Celadon City
+execute as @s[x=-2501,y=0,z=236,dx=278,dy=240,dz=199,scores={MusicTitles=5..199}] run title @s title {"text":"Celadon City","color":"green"}
+execute as @s[x=-2501,y=0,z=236,dx=278,dy=240,dz=199,scores={MusicTitles=5..199}] run title @s subtitle {"text":"City of Rainbow Dreams","italic":true}
+execute as @s[x=-2501,y=0,z=236,dx=278,dy=240,dz=199,scores={MusicTitles=1..3}] run title @s title {"text":"Celadon City","color":"green"}
+execute as @s[x=-2501,y=0,z=236,dx=278,dy=240,dz=199,scores={MusicTitles=1..3}] run title @s subtitle {"text":"City of Rainbow Dreams","italic":true}
+
+#Fuchsia City
+execute as @s[x=-2513,y=0,z=-642,dx=225,dy=240,dz=187,scores={MusicTitles=17..199}] run title @s title {"text":"Fuchsia City","color":"light_purple"}
+execute as @s[x=-2513,y=0,z=-642,dx=225,dy=240,dz=187,scores={MusicTitles=17..199}] run title @s subtitle {"text":"Happening and Passing City","italic":true}
+execute as @s[x=-2513,y=0,z=-642,dx=225,dy=240,dz=187,scores={MusicTitles=1..15}] run title @s title {"text":"Fuchsia City","color":"light_purple"}
+execute as @s[x=-2513,y=0,z=-642,dx=225,dy=240,dz=187,scores={MusicTitles=1..15}] run title @s subtitle {"text":"Happening and Passing City","italic":true}
+
+#Cinnabar Island
+execute as @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicTitles=1..201}] run title @s title {"text":"Cinnabar Island","color":"dark_red"}
+execute as @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicTitles=1..201}] run title @s subtitle {"text":"The Ravaged Town of the Past","italic":true}
+execute as @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicTitles=203..}] run title @s title {"text":"Cinnabar Island","color":"dark_red"}
+execute as @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicTitles=203..}] run title @s subtitle {"text":"The Ravaged Town of the Past","italic":true}
+
+#Vermilion City
+execute as @s[x=-2884,y=0,z=-200,dx=273,dy=240,dz=239,scores={MusicTitles=97..199}] run title @s title {"text":"Vermilion City","color":"red"}
+execute as @s[x=-2884,y=0,z=-200,dx=273,dy=240,dz=239,scores={MusicTitles=97..199}] run title @s subtitle {"text":"The Port of Exquisite Sunsets","italic":true}
+execute as @s[x=-2884,y=0,z=-200,dx=273,dy=240,dz=239,scores={MusicTitles=1..95}] run title @s title {"text":"Vermilion City","color":"red"}
+execute as @s[x=-2884,y=0,z=-200,dx=273,dy=240,dz=239,scores={MusicTitles=1..95}] run title @s subtitle {"text":"The Port of Exquisite Sunsets","italic":true}
+
+
 
 
 #Changes music if player is in area with above or below score
@@ -317,12 +473,12 @@ execute as @s[x=870,y=0,z=-480,dx=281,dy=240,dz=199,scores={MusicTitles=1..99,Mu
 execute as @s[x=870,y=0,z=-480,dx=281,dy=240,dz=199,scores={MusicTitles=101..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=1120,y=0,z=120,dx=245,dy=240,dz=280,scores={MusicTitles=1..98,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=1120,y=0,z=120,dx=245,dy=240,dz=280,scores={MusicTitles=100..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
-execute as @s[x=-42,y=0,z=-161,dx=141,dy=66,dz=261,scores={MusicTitles=1..96,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
-execute as @s[x=-42,y=0,z=-161,dx=141,dy=66,dz=261,scores={MusicTitles=98..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
+execute as @s[x=-42,y=0,z=-161,dx=141,dy=256,dz=261,scores={MusicTitles=1..96,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
+execute as @s[x=-42,y=0,z=-161,dx=141,dy=256,dz=261,scores={MusicTitles=98..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=-1800,y=0,z=-44,dx=191,dy=240,dz=166,scores={MusicTitles=1..97,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=-1800,y=0,z=-44,dx=191,dy=240,dz=166,scores={MusicTitles=99..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
-execute as @s[x=100,y=0,z=-90,dx=90,dy=66,dz=190,scores={MusicTitles=1..96,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
-execute as @s[x=100,y=0,z=-90,dx=90,dy=66,dz=190,scores={MusicTitles=98..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
+execute as @s[x=100,y=0,z=-90,dx=90,dy=256,dz=190,scores={MusicTitles=1..96,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
+execute as @s[x=100,y=0,z=-90,dx=90,dy=256,dz=190,scores={MusicTitles=98..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=-2884,y=0,z=-200,dx=273,dy=240,dz=239,scores={MusicTitles=1..95,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=-2884,y=0,z=-200,dx=273,dy=240,dz=239,scores={MusicTitles=97..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=-1531,y=0,z=372,dx=204,dy=61,dz=173,scores={MusicTitles=1..95,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
@@ -606,12 +762,12 @@ scoreboard players set @s[x=870,y=0,z=-480,dx=281,dy=240,dz=199] MusicTitles 100
 scoreboard players set @s[x=870,y=0,z=-480,dx=281,dy=240,dz=199] MusicTitles 100
 scoreboard players set @s[x=1120,y=0,z=120,dx=245,dy=240,dz=280] MusicTitles 99
 scoreboard players set @s[x=1120,y=0,z=120,dx=245,dy=240,dz=280] MusicTitles 99
-scoreboard players set @s[x=-42,y=0,z=-161,dx=141,dy=66,dz=261] MusicTitles 97
-scoreboard players set @s[x=-42,y=0,z=-161,dx=141,dy=66,dz=261] MusicTitles 97
+scoreboard players set @s[x=-42,y=0,z=-161,dx=141,dy=256,dz=261] MusicTitles 97
+scoreboard players set @s[x=-42,y=0,z=-161,dx=141,dy=256,dz=261] MusicTitles 97
 scoreboard players set @s[x=-1800,y=0,z=-44,dx=191,dy=240,dz=166] MusicTitles 98
 scoreboard players set @s[x=-1800,y=0,z=-44,dx=191,dy=240,dz=166] MusicTitles 98
-scoreboard players set @s[x=100,y=0,z=-90,dx=90,dy=66,dz=190] MusicTitles 97
-scoreboard players set @s[x=100,y=0,z=-90,dx=90,dy=66,dz=190] MusicTitles 97
+scoreboard players set @s[x=100,y=0,z=-90,dx=90,dy=256,dz=190] MusicTitles 97
+scoreboard players set @s[x=100,y=0,z=-90,dx=90,dy=256,dz=190] MusicTitles 97
 scoreboard players set @s[x=-2884,y=0,z=-200,dx=273,dy=240,dz=239] MusicTitles 96
 scoreboard players set @s[x=-2884,y=0,z=-200,dx=273,dy=240,dz=239] MusicTitles 96
 scoreboard players set @s[x=-1531,y=0,z=372,dx=204,dy=61,dz=173] MusicTitles 96
