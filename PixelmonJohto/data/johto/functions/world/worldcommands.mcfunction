@@ -33,6 +33,8 @@ execute as @a[x=1590,y=74,z=-129,dx=10,dy=5,dz=10] run function johto:custom/saf
 tag @a[x=875,y=99,z=50,dx=55,dy=20,dz=27,tag=Dialogue206] remove Dialogue206
 scoreboard players set @a[x=875,y=99,z=50,dx=55,dy=20,dz=27,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 206
 
+#Saffron Gym portals
+execute as @a[x=-1222,y=0,z=500,dx=470,dy=240,dz=342] run function johto:world/saffrongym
 
 #MusicTitles function, tracks player around map checking for new areas or music
 execute as @a[scores={TalkTime=0}] run function johto:world/musictitles
