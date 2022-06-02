@@ -247,6 +247,10 @@ scoreboard players set @s[x=432,y=0,z=309,dx=20,dy=100,dz=20,scores={MusicCooldo
 playsound tintower record @s[x=240,y=63,z=297,dx=33,dy=240,dz=33,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
 scoreboard players set @s[x=240,y=63,z=297,dx=33,dy=240,dz=33,scores={MusicCooldown=0}] MusicCooldown 129
 
+#Viridian Forest
+playsound viridianforest record @s[x=-1707,y=0,z=284,dx=143,dy=256,dz=164,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=-1707,y=0,z=284,dx=143,dy=256,dz=164,scores={MusicCooldown=0}] MusicCooldown 127
+
 
 #---------------
 #Hall of Fame room
