@@ -2069,6 +2069,7 @@ tellraw @s[scores={DialogueTrigger=94,TalkTime=18}] {"text":"<Lance> There’s n
 tellraw @s[scores={DialogueTrigger=94,TalkTime=25}] {"text":"<Lance> We will battle to determine who is the stronger of the two of us."}
 tellraw @s[scores={DialogueTrigger=94,TalkTime=35}] {"text":"<Lance> As the most powerful Trainer and as the Pokémon League Champion…"}
 tellraw @s[scores={DialogueTrigger=94,TalkTime=45}] {"text":"<Lance> I, Lance the dragon master, accept your challenge!"}
+execute as @s[scores={DialogueTrigger=94,TalkTime=45}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=94,TalkTime=45..}] add Dialogue94
 
@@ -4667,6 +4668,13 @@ tellraw @s[scores={DialogueTrigger=209,TalkTime=17}] {"text":"<Guide Gent> If yo
 tellraw @s[scores={DialogueTrigger=209,TalkTime=17}] {"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 10"}}
 tellraw @s[scores={DialogueTrigger=209,TalkTime=17}] {"text":"[No]","color":"red","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 11"}}
 execute as @s[scores={DialogueTrigger=209,TalkTime=17}] run scoreboard players enable @s TriggerCommand
+execute as @s[scores={DialogueTrigger=209,TalkTime=17}] run tag @e[x=-270,y=63,z=-505,dy=3,type=pixelmon:npc_chatting] remove Dialogue1
+execute as @s[scores={DialogueTrigger=209,TalkTime=17}] run tag @e[x=-270,y=63,z=-505,dy=3,type=pixelmon:npc_chatting] remove Dialogue2
+execute as @s[scores={DialogueTrigger=209,TalkTime=17}] run tag @e[x=-270,y=63,z=-505,dy=3,type=pixelmon:npc_chatting] remove Dialogue3
+execute as @s[scores={DialogueTrigger=209,TalkTime=17}] run tag @e[x=-270,y=63,z=-505,dy=3,type=pixelmon:npc_chatting] remove Dialogue4
+execute as @s[scores={DialogueTrigger=209,TalkTime=17}] run tag @e[x=-270,y=63,z=-505,dy=3,type=pixelmon:npc_chatting] remove Dialogue5
+execute as @s[scores={DialogueTrigger=209,TalkTime=17}] run tag @e[x=-270,y=63,z=-505,dy=3,type=pixelmon:npc_chatting] remove Dialogue6
+
 
 tag @s[scores={DialogueTrigger=209,TalkTime=17..}] add Dialogue209
 
@@ -4677,7 +4685,7 @@ tag @s[scores={DialogueTrigger=209,TalkTime=17..}] add Dialogue209
 execute as @s[scores={DialogueTrigger=210,TalkTime=1}] run scoreboard players set @s click 1
 tellraw @s[scores={DialogueTrigger=210,TalkTime=1}] {"text":"<Guide Gent> This is the Pokémon Center. They heal your Pokémon in no time at all!"}
 tellraw @s[scores={DialogueTrigger=210,TalkTime=11}] {"text":"<Guide Gent> You'll be relying on them a lot, so you better learn about them."}
-execute as @s[scores={DialogueTrigger=210,TalkTime=20}] run fill -735 84 -242 -736 84 -242 minecraft:redstone_block
+execute as @s[scores={DialogueTrigger=210,TalkTime=20}] run setblock -861 64 -295 minecraft:redstone_block
 
 tag @s[scores={DialogueTrigger=210,TalkTime=20..}] add Dialogue210
 
@@ -4687,7 +4695,7 @@ tag @s[scores={DialogueTrigger=210,TalkTime=20..}] add Dialogue210
 
 tellraw @s[scores={DialogueTrigger=211,TalkTime=1}] {"text":"<Guide Gent> This is a Pokemon Mart."}
 tellraw @s[scores={DialogueTrigger=211,TalkTime=8}] {"text":"<Guide Gent> They sell Poke Balls for catching wild Pokemon and other useful items."}
-execute as @s[scores={DialogueTrigger=211,TalkTime=18}] run fill -738 84 -242 -739 84 -242 minecraft:redstone_block
+execute as @s[scores={DialogueTrigger=211,TalkTime=18}] run setblock -861 64 -295 minecraft:redstone_block
 
 tag @s[scores={DialogueTrigger=211,TalkTime=18..}] add Dialogue211
 
@@ -4697,7 +4705,7 @@ tag @s[scores={DialogueTrigger=211,TalkTime=18..}] add Dialogue211
 
 tellraw @s[scores={DialogueTrigger=212,TalkTime=1}] {"text":"<Guide Gent> Route 30 is out this way. Trainers will be battling their Pokemon there."}
 tellraw @s[scores={DialogueTrigger=212,TalkTime=11}] {"text":"<Guide Gent> If you go a little further, you'll see Mr. Pokemon's House."}
-execute as @s[scores={DialogueTrigger=212,TalkTime=20}] run fill -744 84 -242 -741 84 -242 minecraft:redstone_block
+execute as @s[scores={DialogueTrigger=212,TalkTime=20}] run setblock -861 64 -295 minecraft:redstone_block
 
 tag @s[scores={DialogueTrigger=212,TalkTime=20..}] add Dialogue212
 
@@ -4707,7 +4715,7 @@ tag @s[scores={DialogueTrigger=212,TalkTime=20..}] add Dialogue212
 
 tellraw @s[scores={DialogueTrigger=197,TalkTime=1}] {"text":"<Guide Gent> This is the sea, as you can see."}
 tellraw @s[scores={DialogueTrigger=197,TalkTime=9}] {"text":"<Guide Gent> Some Pokemon are only found in water."}
-execute as @s[scores={DialogueTrigger=197,TalkTime=17}] run fill -746 84 -242 -750 84 -242 minecraft:redstone_block
+execute as @s[scores={DialogueTrigger=197,TalkTime=17}] run setblock -861 64 -295 minecraft:redstone_block
 
 tag @s[scores={DialogueTrigger=197,TalkTime=17..}] add Dialogue197
 
@@ -4717,10 +4725,14 @@ tag @s[scores={DialogueTrigger=197,TalkTime=17..}] add Dialogue197
 
 tellraw @s[scores={DialogueTrigger=213,TalkTime=1}] {"text":"<Guide Gent> Here... It's my house!"}
 tellraw @s[scores={DialogueTrigger=213,TalkTime=8}] {"text":"<Guide Gent> For your effort keeping up with me, I'll give you a Town Map!"}
-#execute as @s[scores={DialogueTrigger=213,TalkTime=11}] run give @s minecraft:filled_map{display:{Name:"Town Map",Lore:["A map of the local area.","To view live location, place","in first item slot."]},ench:[{id:"2",lvl:"1"}],HideFlags:1}
-tellraw @s[scores={DialogueTrigger=213,TalkTime=18}] {"text":"<Guide Gent> If you want it to show you where you are, be sure to put it in your first slot!"}
-execute as @s[scores={DialogueTrigger=213,TalkTime=26}] run fill -752 84 -242 -753 84 -242 minecraft:redstone_block
+execute as @s[scores={DialogueTrigger=213,TalkTime=5}] run replaceitem entity @e[x=-230,y=63,z=-529,dy=2,distance=..5,type=pixelmon:npc_chatting] weapon.mainhand minecraft:filled_map
+execute as @s[scores={DialogueTrigger=213,TalkTime=11}] run function johto:spawn/townmap
+execute as @s[scores={DialogueTrigger=213,TalkTime=11}] run replaceitem entity @e[x=-230,y=63,z=-529,dy=2,distance=..5,type=pixelmon:npc_chatting] weapon.mainhand minecraft:air
+execute as @s[scores={DialogueTrigger=213,TalkTime=11}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+tellraw @s[scores={DialogueTrigger=213,TalkTime=18}] {"text":"<Guide Gent> It will show you where you are any time you look at it!"}
+execute as @s[scores={DialogueTrigger=213,TalkTime=26}] run setblock -861 64 -295 minecraft:redstone_block
 execute as @s[scores={DialogueTrigger=213,TalkTime=26}] run tag @s add GuideTour
+execute as @s[scores={DialogueTrigger=213,TalkTime=26}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=213,TalkTime=26..}] add Dialogue213
 

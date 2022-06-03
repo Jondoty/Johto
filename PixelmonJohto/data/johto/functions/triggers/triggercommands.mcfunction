@@ -76,7 +76,7 @@ execute as @a[scores={TriggerCommand=78}] run scoreboard players set @s TriggerC
 
 #10 Guide Gent Yes
 execute as @a[scores={TriggerCommand=10}] run tellraw @s {"text":"<Guide Gent> OK, then! Follow me!"}
-execute as @a[scores={TriggerCommand=10}] run fill -731 84 -242 -733 84 -242 minecraft:redstone_block
+execute as @a[scores={TriggerCommand=10}] run setblock -861 64 -295 minecraft:redstone_block
 execute as @a[scores={TriggerCommand=10}] run scoreboard players set @s TriggerCommand 0
 
 

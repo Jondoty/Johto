@@ -4,6 +4,15 @@ tag @e[tag=!1.12.2Trainer,type=pixelmon:npc_trainer] add 1.12.2Trainer
 execute as @e[tag=1.12.2Trainer,type=pixelmon:npc_trainer] run particle minecraft:end_rod ~ ~5 ~ 0 10 0 0.001 10 force @a
 
 #---------------------
+#Despawns items that may be broken and pop up elsewhere in the map
+execute at @a run tag @e[distance=..10,type=item,nbt={Item:{id:"minecraft:stone_bricks"}}] add Despawn
+execute at @a run tag @e[distance=..10,type=item,nbt={Item:{id:"pixelmon:tree"}}] add Despawn
+execute at @a run tag @e[distance=..10,type=item,nbt={Item:{id:"minecraft:oak_sapling"}}] add Despawn
+execute at @a run tag @e[distance=..10,type=item,nbt={Item:{id:"minecraft:spruce_sapling"}}] add Despawn
+
+execute at @a run execute as @e[tag=Despawn,distance=..10] run data merge entity @s {Lifespan:0,Age:0s}
+
+#---------------------
 
 #Runs the basic starting function on trainers at spawn without the InitialTags function
 execute as @a[x=-780,y=64,z=-245,distance=..20,tag=!InitialTags] run function johto:triggers/startercommands
@@ -121,8 +130,8 @@ execute as @a[scores={Flash=1..}] run function johto:spawn/flashhm
 
 
 #Town Map
-execute as @a[nbt={SelectedItem:{id:"minecraft:filled_map",tag:{display:{Name:'[{"text":"Town Map","italic":false}]'}}}}] run function johto:world/townmap
-execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:filled_map",tag:{display:{Name:'[{"text":"Town Map","italic":false}]'}}}]}] run function johto:world/townmap
+execute as @a[nbt={SelectedItem:{id:"minecraft:filled_map",tag:{display:{Name:'[{"text":"Town Map","italic":false,"color":"aqua"}]'}}}}] run function johto:world/townmap
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:filled_map",tag:{display:{Name:'[{"text":"Town Map","italic":false,"color":"aqua"}]'}}}]}] run function johto:world/townmap
 
 
 #Cut
@@ -977,12 +986,16 @@ scoreboard players set @a[x=-3312,y=64,z=381,distance=..5,scores={TalkTime=0},ta
 scoreboard players set @a[x=502,y=48,z=-274,dx=6,dy=5,dz=5,tag=BuenasPasswordDaily,scores={TalkTime=0},tag=!Dialogue225] DialogueTrigger 225
 
 #Dialogue209 - Cherrygrove Guide Gent
-execute as @e[x=-270,y=63,z=-505,dy=3,type=pixelmon:npc_chatting] run scoreboard players set @a[distance=..5,tag=!GuideTour,scores={TalkTime=0},tag=!Dialogue209] DialogueTrigger 209
-execute as @e[x=-256,y=63,z=-495,dy=3,type=pixelmon:npc_chatting] run scoreboard players set @a[distance=..5,scores={TalkTime=0},tag=!Dialogue210] DialogueTrigger 210
-execute as @e[x=-217,y=64,z=-495,dy=3,type=pixelmon:npc_chatting] run scoreboard players set @a[distance=..5,scores={TalkTime=0},tag=!Dialogue211] DialogueTrigger 211
-execute as @e[x=-184,y=64,z=-495,dy=3,type=pixelmon:npc_chatting] run scoreboard players set @a[distance=..5,scores={TalkTime=0},tag=!Dialogue212] DialogueTrigger 212
-execute as @e[x=-146,y=64,z=-517,dy=3,type=pixelmon:npc_chatting] run scoreboard players set @a[distance=..5,scores={TalkTime=0},tag=!Dialogue197] DialogueTrigger 197
-execute as @e[x=-230,y=64,z=-529,dy=3,type=pixelmon:npc_chatting] run scoreboard players set @a[distance=..5,scores={TalkTime=0},tag=!Dialogue213] DialogueTrigger 213
+execute at @e[x=-270,y=64,z=-505,distance=..3,type=pixelmon:npc_chatting] run scoreboard players set @a[distance=..5,tag=!GuideTour,scores={TalkTime=0},tag=!Dialogue209] DialogueTrigger 209
+execute at @e[x=-256,y=64,z=-495,distance=..3,type=pixelmon:npc_chatting] run scoreboard players set @a[distance=..5,scores={TalkTime=0},tag=!Dialogue210] DialogueTrigger 210
+execute at @e[x=-217,y=64,z=-495,distance=..3,type=pixelmon:npc_chatting] run scoreboard players set @a[distance=..5,scores={TalkTime=0},tag=!Dialogue211] DialogueTrigger 211
+execute at @e[x=-184,y=64,z=-495,distance=..3,type=pixelmon:npc_chatting] run scoreboard players set @a[distance=..5,scores={TalkTime=0},tag=!Dialogue212] DialogueTrigger 212
+execute at @e[x=-146,y=64,z=-517,distance=..3,type=pixelmon:npc_chatting] run scoreboard players set @a[distance=..5,scores={TalkTime=0},tag=!Dialogue197] DialogueTrigger 197
+execute at @e[x=-230,y=64,z=-529,distance=..3,type=pixelmon:npc_chatting] run scoreboard players set @a[distance=..5,scores={TalkTime=0},tag=!Dialogue213] DialogueTrigger 213
+
+#Guide Gent Reset
+execute at @e[x=-230,y=64,z=-518,distance=..2,type=pixelmon:npc_chatting] run execute as @a[distance=..100,tag=!GuideTour] run tp @e[x=-230,y=64,z=-518,distance=..2,type=pixelmon:npc_chatting] -270 64 -505
+
 
 #Dialogue226 - Burned Tower Eusine
 scoreboard players set @a[x=445,y=64,z=304,distance=..5,scores={DogEncounter=1..},tag=!Dialogue226] DialogueTrigger 226
