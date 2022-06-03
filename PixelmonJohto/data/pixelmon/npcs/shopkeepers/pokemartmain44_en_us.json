@@ -14,8 +14,8 @@
   ],
   "chat": [
     {
-      "hello": "Hello! This is just a test, but would you like another radio?",
-      "goodbye": "Glad it seems to be working!"
+      "hello": "Welcome to the Radio Tower! Do you need a new radio?",
+      "goodbye": "Tune in to our shows for fun events and tunes!"
     }
   ],
   "items": [

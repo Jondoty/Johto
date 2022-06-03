@@ -1,7 +1,7 @@
 #---------------------
 #Used to tag trainers that I'll need to replace in 1.16.5
 tag @e[tag=!1.12.2Trainer,type=pixelmon:npc_trainer] add 1.12.2Trainer
-execute as @e[tag=1.12.2Trainer,type=pixelmon:npc_trainer] run particle minecraft:end_rod ~ ~5 ~ 0 10 0 0.001 10 force @a
+execute at @e[tag=1.12.2Trainer,type=pixelmon:npc_trainer] run particle minecraft:end_rod ~ ~5 ~ 0 10 0 0.001 10 force @a
 
 #---------------------
 #Despawns items that may be broken and pop up elsewhere in the map
@@ -21,7 +21,7 @@ execute as @a[x=-780,y=64,z=-245,distance=..20,tag=!InitialTags] run function jo
 execute as @a[scores={TriggerCommand=1..}] run function johto:triggers/triggercommands
 
 #Hall of Fame Function
-execute as @a[tag=Dialogue97] run function johto:custom/halloffame
+execute as @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=34,tag=Dialogue97] run function johto:custom/halloffame
 
 #Removes Cooldown score if present
 scoreboard players remove @a[scores={Cooldown=1..}] Cooldown 1
@@ -1144,6 +1144,13 @@ execute as @a[x=-2894,y=64,z=-53,distance=..50,scores={TalkTime=0},tag=!Dialogue
 #Suicune Spawn
 execute as @a[x=-3111,y=64,z=989,distance=..5,scores={TalkTime=0},tag=!Dialogue233] run scoreboard players set @s[tag=Dialogue232] DialogueTrigger 233
 
+
+
+#Radio Tower Quiz prompt
+tellraw @a[x=510,y=30,z=-274,dx=11,dy=4,dz=4,scores={TalkTime=0,Cooldown=0},tag=!Dialogue179] {"text":"We have a special Quiz campaign! Answer five questions correctly in a row to win a Radio Card! When you load it into the Pokégear, you will be able to listen to more stations... anytime, anywhere! Would you like to try our Quiz?"}
+scoreboard players enable @a[x=510,y=30,z=-274,dx=11,dy=4,dz=4,scores={TalkTime=0,Cooldown=0},tag=!Dialogue179] TriggerCommand
+tellraw @a[x=510,y=30,z=-274,dx=11,dy=4,dz=4,scores={TalkTime=0,Cooldown=0},tag=!Dialogue179] {"text": "", "extra": [{"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 21"}}]}
+scoreboard players set @a[x=510,y=30,z=-274,dx=11,dy=4,dz=4,scores={TalkTime=0,Cooldown=0},tag=!Dialogue179] Cooldown 60
 
 
 
