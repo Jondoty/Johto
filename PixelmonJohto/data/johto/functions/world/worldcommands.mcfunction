@@ -130,6 +130,7 @@ execute as @a[scores={Flash=1..}] run function johto:spawn/flashhm
 
 
 #Town Map
+team leave @a[team=black]
 execute as @a[nbt={SelectedItem:{id:"minecraft:filled_map",tag:{display:{Name:'[{"text":"Town Map","italic":false,"color":"aqua"}]'}}}}] run function johto:world/townmap
 execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:filled_map",tag:{display:{Name:'[{"text":"Town Map","italic":false,"color":"aqua"}]'}}}]}] run function johto:world/townmap
 

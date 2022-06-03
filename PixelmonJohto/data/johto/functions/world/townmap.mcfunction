@@ -1,3 +1,5 @@
+team join black @s
+
 #Runs a score assigning a player an area and running a title
 scoreboard players set @s[x=-1099,y=0,z=-252,dx=102,dy=100,dz=189] TownMap 153
 scoreboard players set @s[x=-1111,y=0,z=95,dx=276,dy=240,dz=280] TownMap 116
