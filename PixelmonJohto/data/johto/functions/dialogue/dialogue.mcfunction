@@ -3143,64 +3143,11 @@ tag @s[scores={DialogueTrigger=155,TalkTime=18..}] add Dialogue155
 #DialogueTrigger 156
 
 #Pokémon are Listening
-tellraw @s[scores={DialogueTrigger=156,TalkTime=25}] {"text":"Pokémon are listening to your music...","italic":true}
+execute as @s[scores={DialogueTrigger=156,TalkTime=25}] run function johto:triggers/hoennsounds
 
-#tps an armor stand up to roll for a Pokémon
-execute as @s[scores={DialogueTrigger=156,TalkTime=43}] run tp @r[limit=1,x=-867,y=68,z=-195,dy=2] ~ ~5 ~
+#Rolls for a Pokemon and spawns on player
+execute as @s[scores={DialogueTrigger=156,TalkTime=43}] run function johto:triggers/hoennsounds
 
-#Zigzagoon
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Zigzagoon] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run pokespawn Zigzagoon lvl:10
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Zigzagoon] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run tellraw @s {"text":"A Pokémon from Hoenn jumped at you!","italic":true}
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Zigzagoon] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run tag @s add HoennSoundsCD
-
-#Linoone
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Linoone] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run pokespawn Linoone lvl:10
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Linoone] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run tellraw @s {"text":"A Pokémon from Hoenn jumped at you!","italic":true}
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Linoone] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run tag @s add HoennSoundsCD
-
-#Whismur
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Whismur] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run pokespawn Whismur lvl:10
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Whismur] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run tellraw @s {"text":"A Pokémon from Hoenn jumped at you!","italic":true}
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Whismur] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run tag @s add HoennSoundsCD
-
-#Makuhita
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Makuhita] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run pokespawn Makuhita lvl:10
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Makuhita] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run tellraw @s {"text":"A Pokémon from Hoenn jumped at you!","italic":true}
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Makuhita] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run tag @s add HoennSoundsCD
-
-#Plusle
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Plusle] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run pokespawn Plusle lvl:10
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Plusle] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run tellraw @s {"text":"A Pokémon from Hoenn jumped at you!","italic":true}
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Plusle] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run tag @s add HoennSoundsCD
-
-#Minun
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Minun] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run pokespawn Minun lvl:10
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Minun] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run tellraw @s {"text":"A Pokémon from Hoenn jumped at you!","italic":true}
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Minun] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run tag @s add HoennSoundsCD
-
-#Numel
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Numel] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run pokespawn Numel lvl:10
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Numel] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run tellraw @s {"text":"A Pokémon from Hoenn jumped at you!","italic":true}
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Numel] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run tag @s add HoennSoundsCD
-
-#Spoink
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Spoink] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run pokespawn Spoink lvl:10
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Spoink] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run tellraw @s {"text":"A Pokémon from Hoenn jumped at you!","italic":true}
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Spoink] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run tag @s add HoennSoundsCD
-
-#Spinda
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Spinda] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run pokespawn Spinda lvl:10
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Spinda] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run tellraw @s {"text":"A Pokémon from Hoenn jumped at you!","italic":true}
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Spinda] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run tag @s add HoennSoundsCD
-
-#Absol
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Absol] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run pokespawn Absol lvl:10
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Absol] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run tellraw @s {"text":"A Pokémon from Hoenn jumped at you!","italic":true}
-execute as @e[x=-867,y=72,z=-195,dy=2,type=armor_stand,name=Absol] run execute at @a[scores={DialogueTrigger=156,TalkTime=45}] run tag @s add HoennSoundsCD
-
-
-#tps armor stand down
-execute as @s[scores={DialogueTrigger=156,TalkTime=46}] run tp @r[limit=1,x=-867,y=72,z=-195,dy=2] ~ ~-4 ~
 
 #Disables Dialogue if player stops listening to the music
 execute as @s[scores={DialogueTrigger=156,TalkTime=1..45,MusicCooldown=0}] run tag @s add EndDialogue
@@ -3214,61 +3161,10 @@ tag @s[scores={DialogueTrigger=156,TalkTime=46..}] add Dialogue156
 #DialogueTrigger 156
 
 #Pokémon are Listening
-tellraw @s[scores={DialogueTrigger=157,TalkTime=19}] {"text":"Pokémon are listening to your music...","italic":true}
+execute as @s[scores={DialogueTrigger=157,TalkTime=19}] run function johto:triggers/sinnohsounds
 
-#tps an armor stand up to roll for a Pokémon
-execute as @s[scores={DialogueTrigger=157,TalkTime=36}] run tp @r[limit=1,x=-867,y=68,z=-220,dy=2] ~ ~5 ~
-
-#Meditite
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Meditite] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run pokespawn Meditite lvl:10
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Meditite] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run tellraw @s {"text":"A Pokémon from Sinnoh jumped at you!","italic":true}
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Meditite] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run tag @s add SinnohSoundsCD
-
-#Bidoof
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Bidoof] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run pokespawn Bidoof lvl:10
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Bidoof] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run tellraw @s {"text":"A Pokémon from Sinnoh jumped at you!","italic":true}
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Bidoof] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run tag @s add SinnohSoundsCD
-
-#Shinx
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Shinx] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run pokespawn Shinx lvl:10
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Shinx] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run tellraw @s {"text":"A Pokémon from Sinnoh jumped at you!","italic":true}
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Shinx] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run tag @s add SinnohSoundsCD
-
-#Budew
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Budew] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run pokespawn Budew lvl:10
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Budew] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run tellraw @s {"text":"A Pokémon from Sinnoh jumped at you!","italic":true}
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Budew] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run tag @s add SinnohSoundsCD
-
-#Buizel
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Buizel] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run pokespawn Buizel lvl:10
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Buizel] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run tellraw @s {"text":"A Pokémon from Sinnoh jumped at you!","italic":true}
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Buizel] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run tag @s add SinnohSoundsCD
-
-#Chingling
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Chingling] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run pokespawn Chingling lvl:10
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Chingling] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run tellraw @s {"text":"A Pokémon from Sinnoh jumped at you!","italic":true}
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Chingling] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run tag @s add SinnohSoundsCD
-
-#Bronzor
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Bronzor] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run pokespawn Bronzor lvl:10
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Bronzor] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run tellraw @s {"text":"A Pokémon from Sinnoh jumped at you!","italic":true}
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Bronzor] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run tag @s add SinnohSoundsCD
-
-#Chatot
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Chatot] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run pokespawn Chatot lvl:10
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Chatot] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run tellraw @s {"text":"A Pokémon from Sinnoh jumped at you!","italic":true}
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Chatot] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run tag @s add SinnohSoundsCD
-
-#Carnivine
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Carnivine] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run pokespawn Carnivine lvl:10
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Carnivine] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run tellraw @s {"text":"A Pokémon from Sinnoh jumped at you!","italic":true}
-execute as @e[x=-867,y=72,z=-220,dy=2,type=armor_stand,name=Carnivine] run execute at @a[scores={DialogueTrigger=157,TalkTime=38}] run tag @s add SinnohSoundsCD
-
-
-#tps armor stand down
-execute as @s[scores={DialogueTrigger=156,TalkTime=40}] run tp @r[limit=1,x=-867,y=72,z=-220,dy=2] ~ ~-4 ~
-
-
+#Rolls for a Pokemon and spawns on player
+execute as @s[scores={DialogueTrigger=157,TalkTime=36}] run function johto:triggers/sinnohsounds
 
 #Disables Dialogue if player stops listening to the music
 execute as @s[scores={DialogueTrigger=157,TalkTime=1..45,MusicCooldown=0}] run tag @s add EndDialogue
@@ -3788,11 +3684,10 @@ tag @s[scores={DialogueTrigger=177,TalkTime=50..}] add Dialogue177
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Radio Tower Quiz prompt
-#testfor @s[x=510,y=30,z=-274,dx=11,dy=4,dz=4,score_TalkTime=0,tag=!Dialogue179,score_Cooldown=0]
-#tellraw @s[x=510,y=30,z=-274,dx=11,dy=4,dz=4,score_TalkTime=0,tag=!Dialogue179] {"text":"We have a special Quiz campaign! Answer five questions correctly in a row to win a Radio Card! When you load it into the Pokégear, you will be able to listen to the radio... anytime, anywhere! Would you like to try our Quiz?"}
-#scoreboard players enable @a[x=510,y=30,z=-274,dx=11,dy=4,dz=4,score_TalkTime=0,tag=!Dialogue179] TriggerCommand
-#tellraw @s[x=510,y=30,z=-274,dx=11,dy=4,dz=4,score_TalkTime=0,tag=!Dialogue179] {"text": "", "extra": [{"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 21"}}]}
-
+#tellraw @a[x=510,y=30,z=-274,dx=11,dy=4,dz=4,scores={TalkTime=0,Cooldown=0},tag=!Dialogue179] {"text":"We have a special Quiz campaign! Answer five questions correctly in a row to win a Radio Card! When you load it into the Pokégear, you will be able to listen to the radio... anytime, anywhere! Would you like to try our Quiz?"}
+#scoreboard players enable @a[x=510,y=30,z=-274,dx=11,dy=4,dz=4,scores={TalkTime=0,Cooldown=0},tag=!Dialogue179] TriggerCommand
+#tellraw @a[x=510,y=30,z=-274,dx=11,dy=4,dz=4,scores={TalkTime=0,Cooldown=0},tag=!Dialogue179] {"text": "", "extra": [{"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 21"}}]}
+#scoreboard players set @a[x=510,y=30,z=-274,dx=11,dy=4,dz=4,scores={TalkTime=0,Cooldown=0},tag=!Dialogue179] Cooldown 30
 
 
 
@@ -3830,13 +3725,13 @@ execute as @s[scores={DialogueTrigger=179,TalkTime=1}] run tag @s remove Dialogu
 execute as @s[scores={DialogueTrigger=179,TalkTime=1}] run tag @s remove Dialogue182
 execute as @s[scores={DialogueTrigger=179,TalkTime=1}] run tag @s remove Dialogue183
 
-tag @s[scores={DialogueTrigger=179,TalkTime=1..}] add Dialogue179
+tag @s[scores={DialogueTrigger=179,TalkTime=7..}] add Dialogue179
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Radio Tower Quiz Second Question
 
 tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] {"text":"<Radio Tower Clerk> Correct! Second question!"}
-execute as @s[scores={DialogueTrigger=180,TalkTime=1}] run playsound minecraft:entity.firework.twinkle ambient @s ~ ~ ~ 1 1 1
+execute as @s[scores={DialogueTrigger=180,TalkTime=1}] run playsound minecraft:entity.firework_rocket.twinkle ambient @s ~ ~ ~ 1 1 1
 
 tellraw @s[scores={DialogueTrigger=180,TalkTime=7}] {"text":"<Radio Tower Clerk> Nidorina can only be female. True?"}
 execute as @s[scores={DialogueTrigger=180,TalkTime=7}] run scoreboard players enable @s TriggerCommand
@@ -3848,7 +3743,7 @@ tag @s[scores={DialogueTrigger=180,TalkTime=7..}] add Dialogue180
 #Radio Tower Quiz Third Question
 
 tellraw @s[scores={DialogueTrigger=181,TalkTime=1}] {"text":"<Radio Tower Clerk> Correct! Third question!"}
-execute as @s[scores={DialogueTrigger=181,TalkTime=1}] run playsound minecraft:entity.firework.twinkle ambient @s ~ ~ ~ 1 1 1
+execute as @s[scores={DialogueTrigger=181,TalkTime=1}] run playsound minecraft:entity.firework_rocket.twinkle ambient @s ~ ~ ~ 1 1 1
 
 tellraw @s[scores={DialogueTrigger=181,TalkTime=7}] {"text":"<Radio Tower Clerk> Kurt, the Poke Ball creator, uses apricots as ingredients?"}
 execute as @s[scores={DialogueTrigger=181,TalkTime=7}] run scoreboard players enable @s TriggerCommand
@@ -3860,7 +3755,7 @@ tag @s[scores={DialogueTrigger=181,TalkTime=7..}] add Dialogue181
 #Radio Tower Quiz Fourth Question
 
 tellraw @s[scores={DialogueTrigger=182,TalkTime=1}] {"text":"<Radio Tower Clerk> Correct! Fourth question!"}
-execute as @s[scores={DialogueTrigger=182,TalkTime=1}] run playsound minecraft:entity.firework.twinkle ambient @s ~ ~ ~ 1 1 1
+execute as @s[scores={DialogueTrigger=182,TalkTime=1}] run playsound minecraft:entity.firework_rocket.twinkle ambient @s ~ ~ ~ 1 1 1
 
 tellraw @s[scores={DialogueTrigger=182,TalkTime=7}] {"text":"<Radio Tower Clerk> It’s impossible to use a TM on Magikarp. True?"}
 execute as @s[scores={DialogueTrigger=182,TalkTime=7}] run scoreboard players enable @s TriggerCommand
@@ -3872,7 +3767,7 @@ tag @s[scores={DialogueTrigger=182,TalkTime=7..}] add Dialogue182
 #Radio Tower Quiz Fifth Question
 
 tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] {"text":"<Radio Tower Clerk> Correct! Final question!"}
-execute as @s[scores={DialogueTrigger=183,TalkTime=1}] run playsound minecraft:entity.firework.twinkle ambient @s ~ ~ ~ 1 1 1
+execute as @s[scores={DialogueTrigger=183,TalkTime=1}] run playsound minecraft:entity.firework_rocket.twinkle ambient @s ~ ~ ~ 1 1 1
 
 tellraw @s[scores={DialogueTrigger=183,TalkTime=7}] {"text":"<Radio Tower Clerk> In our radio programs, do we have a host by the name of Whitney?"}
 execute as @s[scores={DialogueTrigger=183,TalkTime=7}] run scoreboard players enable @s TriggerCommand
@@ -3885,12 +3780,12 @@ tag @s[scores={DialogueTrigger=183,TalkTime=7..}] add Dialogue183
 #
 
 tellraw @s[scores={DialogueTrigger=184,TalkTime=1}] {"text":"<Radio Tower Clerk> Bingo! You got it! Congratulations! Here's your prize, a Radio Card!"}
-execute as @s[scores={DialogueTrigger=184,TalkTime=1}] run playsound minecraft:entity.firework.twinkle ambient @s ~ ~ ~ 1 1 1
+execute as @s[scores={DialogueTrigger=184,TalkTime=1}] run playsound minecraft:entity.firework_rocket.twinkle ambient @s ~ ~ ~ 1 1 1
 
 tellraw @s[scores={DialogueTrigger=184,TalkTime=10}] {"text":"<Radio Tower Clerk> Please tune in to our radio shows!"}
 execute as @s[scores={DialogueTrigger=184,TalkTime=10}] run tag @s add RadioCard
 
-tag @s[scores={DialogueTrigger=184,TalkTime=7..}] add Dialogue184
+tag @s[scores={DialogueTrigger=184,TalkTime=10..}] add Dialogue184
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Lucky Number Show Roll
 #execute as @s[score_TriggerCommand_min=76,score_TriggerCommand=76] run scoreboard players set @s DialogueTrigger 185
@@ -3898,14 +3793,14 @@ tag @s[scores={DialogueTrigger=184,TalkTime=7..}] add Dialogue184
 tellraw @s[scores={DialogueTrigger=185,TalkTime=1}] {"text":"<DJ Reed> I need to run a check on this number to see if it matches any of your Pokémon's ID numbers. Please wait."}
 
 #Rolls for an ID
-execute as @s[scores={DialogueTrigger=185,TalkTime=12}] run scoreboard players set @e[limit=1,x=-867,y=69,z=-207,dy=4,dz=2] rng 0
-execute as @s[scores={DialogueTrigger=185,TalkTime=12}] run scoreboard players add @r[limit=1,x=-867,y=69,z=-207,dy=4,dz=2] rng 1
-execute as @s[scores={DialogueTrigger=185,TalkTime=12}] run scoreboard players add @r[limit=1,x=-867,y=69,z=-207,dy=4,dz=2] rng 2
-execute as @s[scores={DialogueTrigger=185,TalkTime=12}] run scoreboard players add @r[limit=1,x=-867,y=69,z=-207,dy=4,dz=2] rng 4
-execute as @s[scores={DialogueTrigger=185,TalkTime=12}] run scoreboard players add @r[limit=1,x=-867,y=69,z=-207,dy=4,dz=2] rng 8
-execute as @s[scores={DialogueTrigger=185,TalkTime=12}] run scoreboard players add @r[limit=1,x=-867,y=69,z=-207,dy=4,dz=2] rng 16
-execute as @s[scores={DialogueTrigger=185,TalkTime=12}] run scoreboard players add @r[limit=1,x=-867,y=69,z=-207,dy=4,dz=2] rng 32
-execute as @s[scores={DialogueTrigger=185,TalkTime=12}] run scoreboard players add @r[limit=1,x=-867,y=69,z=-207,dy=4,dz=2] rng 64
+execute as @s[scores={DialogueTrigger=185,TalkTime=12}] run scoreboard players set @e[x=-867,y=69,z=-207,dy=4,dz=2,type=minecraft:armor_stand] rng 0
+execute as @s[scores={DialogueTrigger=185,TalkTime=12}] run scoreboard players add @e[sort=random,limit=1,x=-867,y=69,z=-207,dy=4,dz=2] rng 1
+execute as @s[scores={DialogueTrigger=185,TalkTime=12}] run scoreboard players add @e[sort=random,limit=1,x=-867,y=69,z=-207,dy=4,dz=2] rng 2
+execute as @s[scores={DialogueTrigger=185,TalkTime=12}] run scoreboard players add @e[sort=random,limit=1,x=-867,y=69,z=-207,dy=4,dz=2] rng 4
+execute as @s[scores={DialogueTrigger=185,TalkTime=12}] run scoreboard players add @e[sort=random,limit=1,x=-867,y=69,z=-207,dy=4,dz=2] rng 8
+execute as @s[scores={DialogueTrigger=185,TalkTime=12}] run scoreboard players add @e[sort=random,limit=1,x=-867,y=69,z=-207,dy=4,dz=2] rng 16
+execute as @s[scores={DialogueTrigger=185,TalkTime=12}] run scoreboard players add @e[sort=random,limit=1,x=-867,y=69,z=-207,dy=4,dz=2] rng 32
+execute as @s[scores={DialogueTrigger=185,TalkTime=12}] run scoreboard players add @e[sort=random,limit=1,x=-867,y=69,z=-207,dy=4,dz=2] rng 64
 
 execute as @s[scores={DialogueTrigger=185,TalkTime=12}] run scoreboard players operation @s rng = @e[x=-867,y=69,z=-205,dy=3,type=armor_stand] rng
 
@@ -3932,11 +3827,11 @@ execute as @s[scores={DialogueTrigger=185,TalkTime=14,rng=111..127}] run give @s
 #Master Ball
 tellraw @s[scores={DialogueTrigger=185,TalkTime=14,rng=64}] {"text":"<DJ Reed> Wow! You have a perfect match of all five numbers! We have a grand prize winner! You have won a Master Ball!"}
 execute as @s[scores={DialogueTrigger=185,TalkTime=14,rng=64}] run give @s pixelmon:master_ball
-execute as @s[scores={DialogueTrigger=185,TalkTime=14,rng=64}] run playsound minecraft:entity.firework.twinkle ambient @s ~ ~ ~ 1 1 1
+execute as @s[scores={DialogueTrigger=185,TalkTime=14,rng=64}] run playsound minecraft:entity.firework_rocket.twinkle ambient @s ~ ~ ~ 1 1 1
 
 tellraw @s[scores={DialogueTrigger=185,TalkTime=14,rng=109..110}] {"text":"<DJ Reed> Wow! You have a perfect match of all five numbers! We have a grand prize winner! You have won a Master Ball!"}
 execute as @s[scores={DialogueTrigger=185,TalkTime=14,rng=109..110}] run give @s pixelmon:master_ball
-execute as @s[scores={DialogueTrigger=185,TalkTime=14,rng=109..110}] run playsound minecraft:entity.firework.twinkle ambient @s ~ ~ ~ 1 1 1
+execute as @s[scores={DialogueTrigger=185,TalkTime=14,rng=109..110}] run playsound minecraft:entity.firework_rocket.twinkle ambient @s ~ ~ ~ 1 1 1
 
 execute as @s[scores={DialogueTrigger=185,TalkTime=14}] run tag @s add LuckyNumberCD
 tellraw @s[scores={DialogueTrigger=185,TalkTime=24}] {"text":"<DJ Reed> Tune in again tomorrow and see me for another chance at a prize!"}
