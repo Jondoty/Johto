@@ -80,7 +80,7 @@ tellraw @s[x=-96,y=63,z=120,dx=329,dy=240,dz=331,scores={DialogueTrigger=156,Tal
 tellraw @s[x=-214,y=0,z=245,dx=130,dy=240,dz=768,scores={DialogueTrigger=156,TalkTime=25}] {"text":"Pokémon are listening to your music...","italic":true}
 tellraw @s[x=-536,y=63,z=132,dx=321,dy=240,dz=102,scores={DialogueTrigger=156,TalkTime=25}] {"text":"Pokémon are listening to your music...","italic":true}
 tellraw @s[x=-676,y=0,z=-369,dx=146,dy=240,dz=493,scores={DialogueTrigger=156,TalkTime=25}] {"text":"Pokémon are listening to your music...","italic":true}
-tellraw @s[x=-529,y=0,z=-468,dx=129,dy=240,dz=750,scores={DialogueTrigger=156,TalkTime=25}] {"text":"Pokémon are listening to your music...","italic":true}
+tellraw @s[x=-529,y=0,z=-468,dx=129,dy=240,dz=200,scores={DialogueTrigger=156,TalkTime=25}] {"text":"Pokémon are listening to your music...","italic":true}
 tellraw @s[x=1321,y=0,z=-487,dx=389,dy=256,dz=150,scores={DialogueTrigger=156,TalkTime=25}] {"text":"Pokémon are listening to your music...","italic":true}
 tellraw @s[x=1499,y=64,z=-336,dx=196,dy=256,dz=126,scores={DialogueTrigger=156,TalkTime=25}] {"text":"Pokémon are listening to your music...","italic":true}
 tellraw @s[x=-2871,y=0,z=441,dx=211,dy=240,dz=212,scores={DialogueTrigger=156,TalkTime=25}] {"text":"Pokémon are listening to your music...","italic":true}
@@ -241,8 +241,8 @@ execute at @s[x=-536,y=63,z=132,dx=321,dy=240,dz=102,scores={DialogueTrigger=156
 execute at @s[x=-536,y=63,z=132,dx=321,dy=240,dz=102,scores={DialogueTrigger=156,TalkTime=43,rng=2..3}] run pokespawn Whismur lvl:10
 execute at @s[x=-676,y=0,z=-369,dx=146,dy=240,dz=493,scores={DialogueTrigger=156,TalkTime=43,rng=0..1}] run pokespawn Linoone lvl:10
 execute at @s[x=-676,y=0,z=-369,dx=146,dy=240,dz=493,scores={DialogueTrigger=156,TalkTime=43,rng=2..3}] run pokespawn Whismur lvl:10
-execute at @s[x=-529,y=0,z=-468,dx=129,dy=240,dz=750,scores={DialogueTrigger=156,TalkTime=43,rng=0..1}] run pokespawn Minun lvl:10
-execute at @s[x=-529,y=0,z=-468,dx=129,dy=240,dz=750,scores={DialogueTrigger=156,TalkTime=43,rng=2..3}] run pokespawn Plusle lvl:10
+execute at @s[x=-529,y=0,z=-468,dx=129,dy=240,dz=200,scores={DialogueTrigger=156,TalkTime=43,rng=0..1}] run pokespawn Minun lvl:10
+execute at @s[x=-529,y=0,z=-468,dx=129,dy=240,dz=200,scores={DialogueTrigger=156,TalkTime=43,rng=2..3}] run pokespawn Plusle lvl:10
 execute at @s[x=1321,y=0,z=-487,dx=389,dy=256,dz=150,scores={DialogueTrigger=156,TalkTime=43,rng=0..1}] run pokespawn Linoone lvl:10
 execute at @s[x=1321,y=0,z=-487,dx=389,dy=256,dz=150,scores={DialogueTrigger=156,TalkTime=43,rng=2..3}] run pokespawn Whismur lvl:10
 execute at @s[x=1499,y=64,z=-336,dx=196,dy=256,dz=126,scores={DialogueTrigger=156,TalkTime=43,rng=0..1}] run pokespawn Minun lvl:10

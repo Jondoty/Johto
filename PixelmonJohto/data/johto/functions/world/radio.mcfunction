@@ -339,8 +339,8 @@ scoreboard players set @s[x=698,y=0,z=207,dx=177,dy=240,dz=98,scores={MusicCoold
 
 
 #Route 46
-playsound route32 record @s[x=-529,y=0,z=-468,dx=129,dy=240,dz=750,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=-529,y=0,z=-468,dx=129,dy=240,dz=750,scores={MusicCooldown=0}] MusicCooldown 117
+playsound route32 record @s[x=-529,y=0,z=-468,dx=129,dy=240,dz=200,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=-529,y=0,z=-468,dx=129,dy=240,dz=200,scores={MusicCooldown=0}] MusicCooldown 117
 
 
 #Olivine City
