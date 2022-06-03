@@ -184,7 +184,7 @@ scoreboard players set @s[x=-987,y=0,z=-492,dx=125,dy=100,dz=75,scores={MusicCoo
 
 #Goldenrod Radio Tower normal
 playsound goldenrodcity record @s[x=495,y=30,z=-275,dx=38,dy=22,dz=21,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=495,y=30,z=-275,dx=38,dy=22,dz=21,scores={MusicCooldown=0}] MusicCooldown 96
+scoreboard players set @s[x=495,y=30,z=-275,dx=38,dy=22,dz=21,scores={MusicCooldown=0}] MusicCooldown 138
 
 
 #Goldenrod Radio Tower Rocket Takeover area
@@ -250,6 +250,16 @@ scoreboard players set @s[x=240,y=63,z=297,dx=33,dy=240,dz=33,scores={MusicCoold
 #Viridian Forest
 playsound viridianforest record @s[x=-1707,y=0,z=284,dx=143,dy=256,dz=164,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
 scoreboard players set @s[x=-1707,y=0,z=284,dx=143,dy=256,dz=164,scores={MusicCooldown=0}] MusicCooldown 127
+
+#Dark Cave
+playsound darkcave record @s[x=-307,y=0,z=-94,dx=94,dy=240,dz=223,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=-307,y=0,z=-94,dx=94,dy=240,dz=223,scores={MusicCooldown=0}] MusicCooldown 194
+
+
+#Dark Cave
+playsound darkcave record @s[x=-439,y=0,z=-190,dx=131,dy=240,dz=319,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=-439,y=0,z=-190,dx=131,dy=240,dz=319,scores={MusicCooldown=0}] MusicCooldown 194
+
 
 
 #---------------
@@ -463,14 +473,6 @@ playsound darkcave record @s[x=229,y=0,z=-729,dx=92,dy=58,dz=76,scores={MusicCoo
 scoreboard players set @s[x=229,y=0,z=-729,dx=92,dy=58,dz=76,scores={MusicCooldown=0}] MusicCooldown 194
 
 
-#Dark Cave
-playsound darkcave record @s[x=-307,y=0,z=-94,dx=94,dy=240,dz=223,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=-307,y=0,z=-94,dx=94,dy=240,dz=223,scores={MusicCooldown=0}] MusicCooldown 194
-
-
-#Dark Cave
-playsound darkcave record @s[x=-439,y=0,z=-190,dx=131,dy=240,dz=319,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=-439,y=0,z=-190,dx=131,dy=240,dz=319,scores={MusicCooldown=0}] MusicCooldown 194
 
 
 #Route 28 (Mt. Silver base)

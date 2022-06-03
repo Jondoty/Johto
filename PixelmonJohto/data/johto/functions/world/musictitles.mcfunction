@@ -24,6 +24,8 @@ tag @s[x=44,y=63,z=4,dx=31,dy=90,dz=31] add Indoors
 tag @s[x=432,y=0,z=309,dx=20,dy=100,dz=20] add Indoors
 tag @s[x=240,y=63,z=297,dx=33,dy=240,dz=33] add Indoors
 tag @s[x=-1707,y=0,z=284,dx=143,dy=256,dz=164] add Indoors
+tag @s[x=-307,y=0,z=-94,dx=94,dy=240,dz=223] add Indoors
+tag @s[x=-439,y=0,z=-190,dx=131,dy=240,dz=319] add Indoors
 
 #Pokemon Centers
 execute at @e[type=armor_stand,name=PokeCenter] run tag @a[dx=17,dy=15,dz=14] add Indoors
@@ -64,8 +66,8 @@ title @s[x=1499,y=64,z=-336,dx=196,dy=256,dz=126,scores={MusicTitles=1..85}] act
 title @s[x=1499,y=64,z=-336,dx=196,dy=256,dz=126,scores={MusicTitles=87..199}] actionbar {"text":"Route 48"}
 title @s[x=1321,y=0,z=-487,dx=389,dy=256,dz=150,scores={MusicTitles=1..84}] actionbar {"text":"Route 47"}
 title @s[x=1321,y=0,z=-487,dx=389,dy=256,dz=150,scores={MusicTitles=86..199}] actionbar {"text":"Route 47"}
-title @s[x=-529,y=0,z=-468,dx=129,dy=240,dz=750,scores={MusicTitles=1..83}] actionbar {"text":"Route 46"}
-title @s[x=-529,y=0,z=-468,dx=129,dy=240,dz=750,scores={MusicTitles=85..199}] actionbar {"text":"Route 46"}
+title @s[x=-529,y=0,z=-468,dx=129,dy=240,dz=750,scores={MusicTitles=1..83},tag=!Indoors] actionbar {"text":"Route 46"}
+title @s[x=-529,y=0,z=-468,dx=129,dy=240,dz=750,scores={MusicTitles=85..199},tag=!Indoors] actionbar {"text":"Route 46"}
 title @s[x=-676,y=0,z=-369,dx=146,dy=240,dz=493,scores={MusicTitles=1..82}] actionbar {"text":"Route 45"}
 title @s[x=-676,y=0,z=-369,dx=146,dy=240,dz=493,scores={MusicTitles=84..199}] actionbar {"text":"Route 45"}
 title @s[x=-536,y=63,z=132,dx=321,dy=240,dz=102,scores={MusicTitles=1..81}] actionbar {"text":"Route 44"}
