@@ -384,6 +384,9 @@ scoreboard players set @a[x=623,y=64,z=-714,distance=0..5,tag=!Dialogue21,tag=Bu
 #Turns Farfetch'd invisible if player doesn't have Bugsy tag
 execute as @a[x=513,y=0,z=-793,dx=187,dy=240,dz=228,tag=!Bugsy] run effect give @e[type=pixelmon:statue,distance=..25] minecraft:invisibility 5 1 true
 
+#Runs Farfetch'd chasing function
+execute as @a[limit=1,x=513,y=60,z=-793,dx=187,dy=10,dz=228] run function johto:world/farfetchd
+
 #---------------------
 
 #Dialogue22 - Ilex Forest Farfetch'd Found
@@ -1224,85 +1227,87 @@ spawnpoint @a[x=-999,y=64,z=64,distance=..4] -999 64 64
 
 #Mr. Pokemon TP
 tellraw @a[x=-177,y=63,z=-311,dx=24,dy=5,dz=6,tag=!Dialogue5] ["",{"text":"Mr Pokemon's house is the other way!","color":"white","italic":true}]
-tp @a[x=-177,y=63,z=-311,dx=24,dy=5,dz=6,tag=!Dialogue5] ~ ~ ~-10
+execute at @a[x=-177,y=63,z=-311,dx=24,dy=5,dz=6,tag=!Dialogue5] run tp @a[x=-177,y=63,z=-311,dx=24,dy=5,dz=6,tag=!Dialogue5] ~ ~ ~-10
 
 tellraw @a[x=-177,y=63,z=-311,dx=24,dy=5,dz=6,tag=Dialogue5,tag=!Dialogue8] ["",{"text":"You haven't reported your findings to Prof. Elm!","color":"white","italic":true}]
-tp @a[x=-177,y=63,z=-311,dx=24,dy=5,dz=6,tag=Dialogue5,tag=!Dialogue8] ~ ~ ~-10
+execute at @a[x=-177,y=63,z=-311,dx=24,dy=5,dz=6,tag=Dialogue5,tag=!Dialogue8] run tp @a[x=-177,y=63,z=-311,dx=24,dy=5,dz=6,tag=Dialogue5,tag=!Dialogue8] ~ ~ ~-10
 
 #Route 32
 tellraw @a[x=83,y=63,z=-222,dx=11,dy=10,dz=5,tag=!Falkner] ["",{"text":"You need to defeat Falkner!","color":"white","italic":true}]
-tp @a[x=83,y=63,z=-222,dx=11,dy=10,dz=5,tag=!Falkner] ~ ~ ~10
+execute at @a[x=83,y=63,z=-222,dx=11,dy=10,dz=5,tag=!Falkner] run tp @a[x=83,y=63,z=-222,dx=11,dy=10,dz=5,tag=!Falkner] ~ ~ ~10
 
 #Azalea Town Slowpoke Well before visiting Kurt
 tellraw @a[x=243,y=54,z=-715,dx=2,dy=5,dz=2,tag=!Dialogue14] ["",{"text":"<Team Rocket Grunt> Get out of here, kid! ","color":"white"}]
-tp @a[x=243,y=54,z=-715,dx=2,dy=5,dz=2,tag=!Dialogue14] ~3 ~ ~
+execute at @a[x=243,y=54,z=-715,dx=2,dy=5,dz=2,tag=!Dialogue14] run tp @a[x=243,y=54,z=-715,dx=2,dy=5,dz=2,tag=!Dialogue14] ~3 ~ ~
 
 #Johto/Kanto/IP Connector Johto Gate Block
 tellraw @a[x=-1225,y=63,z=52,dx=15,dy=5,dz=3,tag=!Dialogue222,scores={TalkTime=0}] {"text":"<Officer Jenny> This way leads to Mt. Silver. You'll see scary-strong Pokémon out there. You're not ready for it."}
-tp @a[x=-1225,y=63,z=52,dx=15,dy=5,dz=3,distance=..10,tag=!Dialogue222] ~-10 ~ ~
+execute at @a[x=-1225,y=63,z=52,dx=15,dy=5,dz=3,distance=..10,tag=!Dialogue222] run tp @a[x=-1225,y=63,z=52,dx=15,dy=5,dz=3,distance=..10,tag=!Dialogue222] ~-10 ~ ~
 
 #Kanto Block
 tellraw @a[x=-1301,y=63,z=52,dx=9,dy=5,dz=3,tag=!Dialogue222,scores={TalkTime=0}] {"text":"<Officer Jenny> Hold there! This way leads to Kanto... But this path's blocked for the time being, I'm afraid."}
-tp @a[x=-1301,y=63,z=52,dx=9,dy=5,dz=3,tag=!Dialogue222] ~10 ~ ~
+execute at @a[x=-1301,y=63,z=52,dx=9,dy=5,dz=3,tag=!Dialogue222] run tp @a[x=-1301,y=63,z=52,dx=9,dy=5,dz=3,tag=!Dialogue222] ~10 ~ ~
 
 #Kanto-side block
 tellraw @a[x=-1358,y=64,z=49,dx=20,dy=5,dz=8,tag=!Dialogue222] {"text":"<Officer Jenny> Hold there! This way leads to Victory Road... But this path's blocked for the time being, I'm afraid."}
-tp @a[x=-1358,y=64,z=49,dx=20,dy=5,dz=8,tag=!Dialogue222] ~-10 ~ ~
+execute at @a[x=-1358,y=64,z=49,dx=20,dy=5,dz=8,tag=!Dialogue222] run tp @a[x=-1358,y=64,z=49,dx=20,dy=5,dz=8,tag=!Dialogue222] ~-10 ~ ~
 
 #RocketHQ tps player out of generator room if don't have Dialogue63 tag
-tp @a[x=-122,y=44,z=176,dx=10,dy=5,dz=5,scores={TalkTime=0},tag=!Dialogue63] ~ ~ ~-5
+execute at @a[x=-122,y=44,z=176,dx=10,dy=5,dz=5,scores={TalkTime=0},tag=!Dialogue63] run tp @a[x=-122,y=44,z=176,dx=10,dy=5,dz=5,scores={TalkTime=0},tag=!Dialogue63] ~ ~ ~-5
 
 #Tin Tower
 tellraw @a[x=369,y=58,z=287,dx=6,dy=10,dz=15,tag=!Morty] ["",{"text":"<Monk> Tin Tower is off limits to anyone without Ecruteak Gym's Badge.","color":"white"}]
-tp @a[x=369,y=58,z=287,dx=6,dy=10,dz=15,tag=!Morty] ~0 64 ~-10
+execute at @a[x=369,y=58,z=287,dx=6,dy=10,dz=15,tag=!Morty] run tp @a[x=369,y=58,z=287,dx=6,dy=10,dz=15,tag=!Morty] ~0 64 ~-10
 
 #New Bark Town without Surf
 tellraw @a[x=-787,y=59,z=-525,dx=33,dy=10,dz=22,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
-tp @a[x=-787,y=59,z=-525,dx=33,dy=10,dz=22,tag=!Dialogue33] ~10 64 ~0
+execute at @a[x=-787,y=59,z=-525,dx=33,dy=10,dz=22,tag=!Dialogue33] run tp @a[x=-787,y=59,z=-525,dx=33,dy=10,dz=22,tag=!Dialogue33] ~10 64 ~0
 
 #Whirl Islands without Surf and Morty
 tellraw @a[x=877,y=40,z=-108,dx=85,dy=25,dz=15,tag=!Morty] {"text":"This area requires Surf to access & the Fog Badge to use outside of battle!","italic":true,"color":"gray"}
-tp @a[x=877,y=40,z=-108,dx=85,dy=25,dz=15,tag=!Morty] ~ 64 ~10
+execute at @a[x=877,y=40,z=-108,dx=85,dy=25,dz=15,tag=!Morty] run tp @a[x=877,y=40,z=-108,dx=85,dy=25,dz=15,tag=!Morty] ~ 64 ~10
 
 #Route 34 Surf required
 tellraw @a[x=488,y=60,z=-627,dx=22,dy=10,dz=20,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
-tp @a[x=488,y=60,z=-627,dx=22,dy=10,dz=20,tag=!Dialogue33] ~ ~ ~10
+execute at @a[x=488,y=60,z=-627,dx=22,dy=10,dz=20,tag=!Dialogue33] run tp @a[x=488,y=60,z=-627,dx=22,dy=10,dz=20,tag=!Dialogue33] ~ ~ ~10
 
 #Fuchsia City South Entrance blocked until beating Blaine
 tellraw @a[x=-2423,y=64,z=-660,dx=50,dy=20,dz=20,tag=!Blaine,scores={TalkTime=0,Cooldown=0}] ["",{"text":"<"},{"text":"Policeman","color":"aqua"},{"text":"> The beach to Route 19 is closed indefinitely due to a volcano's eruption off the coast. I wonder if the people of Cinnabar are safe..."}]
 scoreboard players set @a[x=-2423,y=64,z=-660,dx=50,dy=20,dz=20,tag=!Blaine] Cooldown 10
-tp @a[x=-2423,y=64,z=-660,dx=50,dy=20,dz=20,tag=!Blaine] ~ ~ ~10
+execute at @a[x=-2423,y=64,z=-660,dx=50,dy=20,dz=20,tag=!Blaine] run tp @a[x=-2423,y=64,z=-660,dx=50,dy=20,dz=20,tag=!Blaine] ~ ~ ~10
 
 #Dark Cave opne after Pryce
 tellraw @a[x=-298,y=63,z=-7,dx=4,dy=4,dz=7,tag=!Pryce] ["",{"text":"You need more badges!","color":"white","italic":true}]
-tp @a[x=-298,y=63,z=-7,dx=4,dy=4,dz=7,tag=!Pryce] ~ ~ ~-10
+execute at @a[x=-298,y=63,z=-7,dx=4,dy=4,dz=7,tag=!Pryce] run tp @a[x=-298,y=63,z=-7,dx=4,dy=4,dz=7,tag=!Pryce] ~ ~ ~-10
 
 #Tohjo Falls
 tellraw @a[x=-914,y=63,z=-503,dx=5,dy=3,dz=4,tag=!Clair] ["",{"text":"You need more badges!","color":"white","italic":true}]
-tp @a[x=-914,y=63,z=-503,dx=5,dy=3,dz=4,tag=!Clair] ~ 64 ~-10
+execute at @a[x=-914,y=63,z=-503,dx=5,dy=3,dz=4,tag=!Clair] run tp @a[x=-914,y=63,z=-503,dx=5,dy=3,dz=4,tag=!Clair] ~ 64 ~-10
 
 #Ecruteak City Gym
 playsound flee ambient @a[x=-1075,y=0,z=550,dx=31,dy=62,dz=51] ~ ~ ~ 1000 1 1
-tp @a[x=-1075,y=0,z=550,dx=31,dy=62,dz=51] -1059 65 543 0 10
+execute at @a[x=-1075,y=0,z=550,dx=31,dy=62,dz=51] run tp @a[x=-1075,y=0,z=550,dx=31,dy=62,dz=51] -1059 65 543 0 10
 effect give @e[x=-1091,y=0,z=522,dx=63,dy=63,dz=105,type=pixelmon:pixelmon] minecraft:levitation 1 1 true
-tp @e[x=-1091,y=0,z=522,dx=63,dy=63,dz=105,type=item] -1059 65 538
+execute at @e[x=-1091,y=0,z=522,dx=63,dy=63,dz=105,type=item] run tp @e[x=-1091,y=0,z=522,dx=63,dy=63,dz=105,type=item] -1059 65 538
 
 #Mahogany Town Story Checks
 tellraw @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,scores={Cooldown=0},tag=!Jasmine] {"text":"<...> Hiya, kid! I see you're new in Mahogany Town. Since you're new, you should try a yummy RageCandyBar! Right now, it can be yours for just $300! Want one?"}
 tellraw @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,scores={Cooldown=0},tag=!Morty] {"text":"<...> Hiya, kid! I see you're new in Mahogany Town. Since you're new, you should try a yummy RageCandyBar! Right now, it can be yours for just $300! Want one?"}
 tellraw @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,scores={Cooldown=0},tag=!Pryce] {"text":"<...> Hiya, kid! I see you're new in Mahogany Town. Since you're new, you should try a yummy RageCandyBar! Right now, it can be yours for just $300! Want one?"}
-scoreboard players set @p[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Morty] Cooldown 25
-scoreboard players set @p[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Pryce] Cooldown 25
-scoreboard players set @p[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Jasmine] Cooldown 25
-tp @p[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Jasmine] ~10 ~ ~
-tp @p[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Pryce] ~10 ~ ~
-tp @p[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Morty] ~10 ~ ~
+scoreboard players set @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Morty] Cooldown 25
+scoreboard players set @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Pryce] Cooldown 25
+scoreboard players set @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Jasmine] Cooldown 25
+execute at @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Jasmine] run tp @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Jasmine] ~10 ~ ~
+execute at @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Pryce] run tp @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Pryce] ~10 ~ ~
+execute at @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Morty] run tp @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Morty] ~10 ~ ~
 
 #RocketHQ Reopens stairs if player needs it
 execute at @a[x=-164,y=63,z=213,distance=..15,tag=Dialogue53] run fill -164 63 213 -161 63 216 air
 execute at @a[x=-164,y=63,z=213,distance=..15,tag=Dialogue53] run fill -160 63 213 -160 63 216 minecraft:stone_brick_stairs[facing=east]
 
-
+#Prof Elm before player has a Pokemon
+execute as @a[x=-659,y=63,z=-526,dx=10,dy=10,dz=12,scores={StarterPick=0}] run tellraw @s ["",{"text":"<Professor Elm> Where are you going, "},{"selector":"@s"},{"text":"? You don't have a Pokemon yet!"}]
+execute at @a[x=-659,y=63,z=-526,dx=10,dy=10,dz=12,scores={StarterPick=0}] run tp @a[x=-659,y=63,z=-526,dx=10,dy=10,dz=12,scores={StarterPick=0}] ~-10 ~ ~1 25 ~
 
 
 
