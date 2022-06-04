@@ -154,6 +154,7 @@ tellraw @s[scores={DialogueTrigger=4,TalkTime=14}] {"text":"<Professor Elm> It's
 tellraw @s[scores={DialogueTrigger=4,TalkTime=21}] {"text":"<Professor Elm> If your Pokémon is hurt, you should heal it with this machine."}
 tellraw @s[scores={DialogueTrigger=4,TalkTime=31}] ["",{"text":"<"},{"text":"Elm's Aide","color":"gray"},{"text":"> "},{"selector":"@s"},{"text":", I want you to have this for your errand."}]
 execute as @s[scores={DialogueTrigger=4,TalkTime=35}] run give @s pixelmon:potion 5
+execute as @s[scores={DialogueTrigger=4,TalkTime=35}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=4,TalkTime=40}] ["",{"text":"<"},{"text":"Elm's Aide","color":"gray"},{"text":"> There are only two of us, so we're always busy."}]
 
 tag @s[scores={DialogueTrigger=4,TalkTime=40..}] add Dialogue4
@@ -172,6 +173,7 @@ tellraw @s[scores={DialogueTrigger=5,TalkTime=15}] ["",{"text":"<"},{"text":"Mr.
 
 #Gives Mystery Egg item
 execute as @s[scores={DialogueTrigger=5,TalkTime=20}] run give @s music_disc_wait{display:{Name:'[{"text":"Mystery Egg","italic":false}]',Lore:['[{"text":"An egg found at the daycare.","italic":false}]','[{"text":"I wonder what could be inside?","italic":false}]']},HideFlags:36} 1
+execute as @s[scores={DialogueTrigger=5,TalkTime=20}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tellraw @s[scores={DialogueTrigger=5,TalkTime=23}] ["",{"text":"<"},{"text":"Mr. Pokémon","color":"gray"},{"text":"> I know a couple who run a Pokémon Daycare service."}]
 tellraw @s[scores={DialogueTrigger=5,TalkTime=30}] ["",{"text":"<"},{"text":"Mr. Pokémon","color":"gray"},{"text":"> They gave me that egg. I was intrigued, so I sent mail to Professor Elm."}]
@@ -290,6 +292,7 @@ tellraw @s[scores={DialogueTrigger=8,TalkTime=163}] ["",{"text":"<Professor Elm>
 
 tellraw @s[scores={DialogueTrigger=8,TalkTime=172}] ["",{"text":"<"},{"text":"Elm's Aide","color":"gray"},{"text":"> "},{"selector":"@s"},{"text":"! Use these on your Pokédex quest!"}]
 execute as @s[scores={DialogueTrigger=8,TalkTime=174}] run give @s pixelmon:poke_ball 5
+execute as @s[scores={DialogueTrigger=8,TalkTime=174}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=8,TalkTime=178}] ["",{"text":"<"},{"text":"Elm's Aide","color":"gray"},{"text":"> To add to your Pokédex, you have to catch Pokémon."}]
 tellraw @s[scores={DialogueTrigger=8,TalkTime=186}] ["",{"text":"<"},{"text":"Elm's Aide","color":"gray"},{"text":"> Throw Poké Balls at wild Pokémon to get them."}]
 
@@ -335,6 +338,7 @@ tellraw @s[scores={DialogueTrigger=10,TalkTime=9}] {"text":"<Elder Li> Take this
 
 execute as @s[scores={DialogueTrigger=10,TalkTime=13}] run function johto:spawn/flashhm
 execute as @s[scores={DialogueTrigger=10,TalkTime=13}] run give @s pixelmon:tm_gen4{tm:70}
+execute as @s[scores={DialogueTrigger=10,TalkTime=13}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tellraw @s[scores={DialogueTrigger=10,TalkTime=17}] {"text":"<Elder Li> Flash illuminates even the darkest of all places."}
 tellraw @s[scores={DialogueTrigger=10,TalkTime=25}] {"text":"<Elder Li> I hope you learn and grow from your journey."}
@@ -376,6 +380,7 @@ execute as @s[scores={DialogueTrigger=12,TalkTime=21}] run advancement grant @s 
 tellraw @s[scores={DialogueTrigger=12,TalkTime=18}] {"text":"<Falkner> It's the official Pokémon League Zephyrbadge."}
 tellraw @s[scores={DialogueTrigger=12,TalkTime=26}] {"text":"<Falkner> Here--take this too."}
 execute as @s[scores={DialogueTrigger=12,TalkTime=29}] run give @s pixelmon:tm_gen4{tm:51}
+execute as @s[scores={DialogueTrigger=12,TalkTime=29}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=12,TalkTime=32}] {"text":"<Falkner> By using a TM, a Pokémon will instantly learn a new move."}
 tellraw @s[scores={DialogueTrigger=12,TalkTime=40}] {"text":"<Falkner> You can even use them more than once!"}
 tellraw @s[scores={DialogueTrigger=12,TalkTime=47}] {"text":"<Falkner> TM51 contains Roost. It restores half the max HP."}
@@ -395,6 +400,7 @@ execute as @s[scores={DialogueTrigger=13,TalkTime=1}] run particle cloud 11 64 -
 tellraw @s[scores={DialogueTrigger=13,TalkTime=4}] ["",{"text":"<"},{"text":"Elm's Aide","color":"gray"},{"text":"> "},{"selector":"@s"},{"text":", long time, no see. Professor Elm asked me to find you."}]
 tellraw @s[scores={DialogueTrigger=13,TalkTime=14}] ["",{"text":"<"},{"text":"Elm's Aide","color":"gray"},{"text":"> He has another favor to ask. Would you take the Pokémon Egg?"}]
 execute as @s[scores={DialogueTrigger=13,TalkTime=21}] run pokegive @s Togepi lvl:1 egg
+execute as @s[scores={DialogueTrigger=13,TalkTime=21}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=13,TalkTime=25}] ["",{"text":"<"},{"text":"Elm's Aide","color":"gray"},{"text":"> We discovered that a Pokémon will not hatch until it grows in the Egg."}]
 tellraw @s[scores={DialogueTrigger=13,TalkTime=34}] ["",{"text":"<"},{"text":"Elm's Aide","color":"gray"},{"text":"> It also has to be with other active Pokémon to hatch."}]
 tellraw @s[scores={DialogueTrigger=13,TalkTime=42}] ["",{"text":"<"},{"text":"Elm's Aide","color":"gray"},{"text":"> "},{"selector":"@s"},{"text":", you're the only person we can rely on."}]
@@ -507,9 +513,11 @@ tellraw @s[scores={DialogueTrigger=16,TalkTime=55}] {"text":"<Kurt> You handled 
 tellraw @s[scores={DialogueTrigger=16,TalkTime=62}] {"text":"<Kurt> I like your style! I would be honored to make Balls for a trainer like you."}
 tellraw @s[scores={DialogueTrigger=16,TalkTime=70}] {"text":"<Kurt> This is all I have now, but take it."}
 execute as @s[scores={DialogueTrigger=16,TalkTime=74}] run give @s pixelmon:fast_ball{display:{Lore:["A Poké Ball that makes it easier","to catch fast Pokémon."]}}
+execute as @s[scores={DialogueTrigger=16,TalkTime=74}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=16,TalkTime=74}] run advancement grant @s only johto:rocket1
 tellraw @s[scores={DialogueTrigger=16,TalkTime=78}] {"text":"<Kurt> I make Balls from Apricorns."}
 tellraw @s[scores={DialogueTrigger=16,TalkTime=83}] {"text":"<Kurt> Collect them from trees and bring 'em to me. I'll make Balls out of them."}
+execute as @s[scores={DialogueTrigger=16,TalkTime=83}] run scoreboard players set @s MusicTitles 1
 
 tag @s[scores={DialogueTrigger=16,TalkTime=83..}] add Dialogue16
 
@@ -549,6 +557,7 @@ tellraw @s[scores={DialogueTrigger=18,TalkTime=14}] {"text":"<Bugsy> If you have
 tellraw @s[scores={DialogueTrigger=18,TalkTime=23}] {"text":"<Bugsy> Here, I also want you to have this."}
 
 execute as @s[scores={DialogueTrigger=18,TalkTime=26}] run give @s pixelmon:tm_gen4{tm:89}
+execute as @s[scores={DialogueTrigger=18,TalkTime=26}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tellraw @s[scores={DialogueTrigger=18,TalkTime=30}] {"text":"<Bugsy> TM89 contains U-turn."}
 tellraw @s[scores={DialogueTrigger=18,TalkTime=37}] {"text":"<Bugsy> It lets your Pokémon attack, then switch with the next Pokémon in your party."}
@@ -630,6 +639,7 @@ tellraw @s[scores={DialogueTrigger=22,TalkTime=30}] ["",{"text":"<"},{"text":"Ch
 tellraw @s[scores={DialogueTrigger=22,TalkTime=37}] ["",{"text":"<"},{"text":"Charcoal Master","color":"gray"},{"text":"> I know! Here, take this."}]
 execute as @s[scores={DialogueTrigger=22,TalkTime=40}] run give @s minecraft:diamond_axe{display:{Name:"HM01: Cut",Lore:["Enables to user to cut down small","trees that may block their paths."]},Unbreakable:1,HideFlags:32,CanDestroy:["pixelmon:tree"]}
 execute as @s[scores={DialogueTrigger=22,TalkTime=40}] run give @s pixelmon:hm1
+execute as @s[scores={DialogueTrigger=22,TalkTime=40}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=22,TalkTime=47}] ["",{"text":"<"},{"text":"Charcoal Master","color":"gray"},{"text":"> That's the Cut HM. You can use that to clear small trees."}]
 tellraw @s[scores={DialogueTrigger=22,TalkTime=55}] ["",{"text":"<"},{"text":"Charcoal Master","color":"gray"},{"text":"> Thanks again for your help!"}]
 
@@ -650,6 +660,7 @@ tellraw @s[scores={DialogueTrigger=23,TalkTime=14}] {"text":"<Bicycle Clerk> Cou
 tellraw @s[scores={DialogueTrigger=23,TalkTime=21}] {"text":"<Bicycle Clerk> Really? Great!"}
 tellraw @s[scores={DialogueTrigger=23,TalkTime=28}] {"text":"<Bicycle Clerk> Give me your name and phone number, and I'll loan you a Bicycle."}
 execute as @s[scores={DialogueTrigger=23,TalkTime=33}] run give @s pixelmon:mach_bike{display:{Name:"Bicycle",Lore:["Color: BLUE","","A folding Bike that enables","a rider to get around much","faster than with Running Shoes."]}}
+execute as @s[scores={DialogueTrigger=23,TalkTime=33}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=23,TalkTime=37}] {"text":"<Bicycle Clerk> My Bicycles are first-rate! You can ride them anywhere."}
 execute as @s[scores={DialogueTrigger=23,TalkTime=37}] run scoreboard players set @s Bicycle 1
 execute as @s[scores={DialogueTrigger=23,TalkTime=37}] run scoreboard players set @s BicycleCD 25
@@ -674,6 +685,7 @@ tag @s[scores={DialogueTrigger=26,TalkTime=25..}] add Dialogue26
 tellraw @s[scores={DialogueTrigger=24,TalkTime=1}] {"text":"<Charcoal Apprentice> I'm sorry--I forgot to thank you."}
 tellraw @s[scores={DialogueTrigger=24,TalkTime=8}] {"text":"<Charcoal Apprentice> This is Charcoal that I made."}
 execute as @s[scores={DialogueTrigger=24,TalkTime=11}] run give @s pixelmon:charcoal
+execute as @s[scores={DialogueTrigger=24,TalkTime=11}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=24,TalkTime=14}] {"text":"<Charcoal Apprentice> Fire-type Pokémon would be happy to hold that."}
 tellraw @s[scores={DialogueTrigger=24,TalkTime=22}] {"text":"<Charcoal Apprentice> The Slowpoke came back, and you even found Farfetch'd"}
 tellraw @s[scores={DialogueTrigger=24,TalkTime=31}] {"text":"<Charcoal Apprentice> You're the coolest, man!"}
@@ -738,6 +750,7 @@ execute as @s[scores={DialogueTrigger=28,TalkTime=98}] run scoreboard players se
 
 tellraw @s[scores={DialogueTrigger=28,TalkTime=98}] {"text":"<Whitney> Oh, you can have this, too!"}
 execute as @s[scores={DialogueTrigger=28,TalkTime=101}] run give @s pixelmon:tm_gen2{tm:45}
+execute as @s[scores={DialogueTrigger=28,TalkTime=101}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=28,TalkTime=106}] {"text":"<Whitney> It's Attract! It makes full use of a Pokémon's charm."}
 tellraw @s[scores={DialogueTrigger=28,TalkTime=114}] {"text":"<Whitney> Isn't it just perfect for a cutie like me?"}
 tellraw @s[scores={DialogueTrigger=28,TalkTime=123}] {"text":"<Whitney> Ah, that was a good cry! Come for a visit again! Bye-bye!"}
@@ -752,6 +765,7 @@ tellraw @s[scores={DialogueTrigger=29,TalkTime=1}] {"text":"<Shop Clerk> Oh, you
 tellraw @s[scores={DialogueTrigger=29,TalkTime=11}] {"text":"<Shop Clerk> If you wet it with a Squirtbottle, it attacks."}
 tellraw @s[scores={DialogueTrigger=29,TalkTime=20}] {"text":"<Shop Clerk> But since you have some Badges, you should be OK."}
 execute as @s[scores={DialogueTrigger=29,TalkTime=24}] run give @s minecraft:rabbit_foot{display:{Name:'[{"text":" Squirtbottle","italic":false}]',Lore:['[{"text":"A bottle used for","italic":false}]','[{"text":"wattering plants","italic":false}]']}} 1
+execute as @s[scores={DialogueTrigger=29,TalkTime=24}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=29,TalkTime=30}] {"text":"<Shop Clerk> Lalala lalalala. Have plenty of water, my lovely!"}
 
 tag @s[scores={DialogueTrigger=29,TalkTime=30..}] add Dialogue29
@@ -824,6 +838,7 @@ tellraw @s[scores={DialogueTrigger=33,TalkTime=1}] {"text":"<...> The way you ba
 tellraw @s[scores={DialogueTrigger=33,TalkTime=10}] {"text":"<...> It was a rare treat to see! I want you to have this."}
 tellraw @s[scores={DialogueTrigger=33,TalkTime=19}] {"text":"<...> Don't worry--take it!"}
 execute as @s[scores={DialogueTrigger=33,TalkTime=24}] run give @s pixelmon:hm3
+execute as @s[scores={DialogueTrigger=33,TalkTime=24}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=33,TalkTime=26}] {"text":"<...> That's Surf. It's a move that lets Pokémon swim across water."}
 
 tag @s[scores={DialogueTrigger=33,TalkTime=26..}] add Dialogue33
@@ -940,6 +955,7 @@ execute as @s[scores={DialogueTrigger=38,TalkTime=17}] run advancement grant @s 
 
 tellraw @s[scores={DialogueTrigger=38,TalkTime=17}] {"text":"<Morty> I want you to have this too."}
 execute as @s[scores={DialogueTrigger=38,TalkTime=20}] run give @s pixelmon:tm_gen2{tm:30}
+execute as @s[scores={DialogueTrigger=38,TalkTime=20}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=38,TalkTime=25}] {"text":"<Morty> It's Shadow Ball. It causes damage and may reduce Spcl. Def."}
 tellraw @s[scores={DialogueTrigger=38,TalkTime=33}] {"text":"<Morty> Use it if it appeals to you."}
 tellraw @s[scores={DialogueTrigger=38,TalkTime=40}] {"text":"<Morty> I see... Your journey has taken you to far-away places."}
@@ -997,6 +1013,7 @@ tellraw @s[scores={DialogueTrigger=41,TalkTime=3}] {"text":"<Pharmacy Doctor> Yo
 tellraw @s[scores={DialogueTrigger=41,TalkTime=13}] {"text":"<Pharmacy Doctor> The Lighthouse Pokémon is in trouble?"}
 tellraw @s[scores={DialogueTrigger=41,TalkTime=20}] {"text":"<Pharmacy Doctor> I got it! This ought to do the trick."}
 execute as @s[scores={DialogueTrigger=41,TalkTime=23}] run give @s minecraft:music_disc_11{display:{Name:Secretpotion,Lore:["A fantastic medicine dispensed by","the pharmacy in Cianwood City.","It fully heals a Pokémon of","any ailment."]},HideFlags:36}
+execute as @s[scores={DialogueTrigger=41,TalkTime=23}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=41,TalkTime=27}] {"text":"<Pharmacy Doctor> My Secretpotion is a tad too strong. I only offer it in an emergency."}
 
 tag @s[scores={DialogueTrigger=41,TalkTime=27..}] add Dialogue41
@@ -1104,6 +1121,7 @@ execute as @s[scores={DialogueTrigger=45,TalkTime=21}] run advancement grant @s 
 
 tellraw @s[scores={DialogueTrigger=45,TalkTime=21}] {"text":"<Chuck> Here, take this, too!"}
 execute as @s[scores={DialogueTrigger=45,TalkTime=24}] run give @s pixelmon:tm_gen4{tm:1}
+execute as @s[scores={DialogueTrigger=45,TalkTime=24}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=45,TalkTime=27}] {"text":"<Chuck> That is Focus Punch."}
 tellraw @s[scores={DialogueTrigger=45,TalkTime=34}] {"text":"<Chuck> It doesn't land if the foe you're attacking hits you first, but it's very powerful if it manages to hit!"}
 tellraw @s[scores={DialogueTrigger=45,TalkTime=44}] {"text":"<Chuck> Wahahah! I enjoyed battling you! But a loss is a loss! "}
@@ -1146,6 +1164,7 @@ execute as @s[scores={DialogueTrigger=47,TalkTime=24}] run advancement grant @s 
 
 tellraw @s[scores={DialogueTrigger=47,TalkTime=24}] {"text":"<Jasmine> ...Um, please take this too... "}
 execute as @s[scores={DialogueTrigger=47,TalkTime=28}] run give @s pixelmon:tm_gen2{tm:23}
+execute as @s[scores={DialogueTrigger=47,TalkTime=28}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=47,TalkTime=32}] {"text":"<Jasmine> You could use that TM to teach Iron Tail."}
 
 tag @s[scores={DialogueTrigger=47,TalkTime=32..}] add Dialogue47
@@ -1532,6 +1551,7 @@ tellraw @s[scores={DialogueTrigger=63,TalkTime=9}] {"text":"<Lance> The Lake sho
 tellraw @s[scores={DialogueTrigger=63,TalkTime=17}] {"text":"<Lance> Let me thank you on behalf of all the Pokémon."}
 tellraw @s[scores={DialogueTrigger=63,TalkTime=25}] {"text":"<Lance> Oh, yes. You should take this. I found it here, but I don't have any need for it."}
 execute as @s[scores={DialogueTrigger=63,TalkTime=30}] run give @s pixelmon:hm9
+execute as @s[scores={DialogueTrigger=63,TalkTime=30}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=63,TalkTime=36}] {"text":"<Lance> That's Whirlpool. Have it with you to get across wild water."}
 tellraw @s[scores={DialogueTrigger=63,TalkTime=45}] ["",{"text":"<Lance> "},{"selector":"@s"},{"text":"..."}]
 tellraw @s[scores={DialogueTrigger=63,TalkTime=50}] {"text":"<Lance> The journey to becoming the Pokémon Master is long and difficult."}
@@ -1597,6 +1617,7 @@ tellraw @s[scores={DialogueTrigger=66,TalkTime=1}] {"text":"<Rocket Executive> O
 tellraw @s[scores={DialogueTrigger=66,TalkTime=8}] {"text":"<Rocket Executive> We stashed the real Director in the Underground Warehouse"}
 tellraw @s[scores={DialogueTrigger=66,TalkTime=17}] {"text":"<Rocket Executive> It's at the far end of the Underground. But I'll doubt you'll get that far."}
 execute as @s[scores={DialogueTrigger=66,TalkTime=17}] run give @s minecraft:music_disc_far{display:{Name:"Basement Key",Lore:["A key that opens a door in","the Goldenrod Tunnel"]},HideFlags:36}
+execute as @s[scores={DialogueTrigger=66,TalkTime=17}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tag @s[scores={DialogueTrigger=66,TalkTime=33..}] add Dialogue66
 
@@ -1653,6 +1674,7 @@ tellraw @s[scores={DialogueTrigger=69,TalkTime=14}] {"text":"<Director> The Radi
 tellraw @s[scores={DialogueTrigger=69,TalkTime=22}] {"text":"<Director> Taken over by Team Rocket?"}
 tellraw @s[scores={DialogueTrigger=69,TalkTime=29}] {"text":"<Director> Here. Take this Card Key."}
 execute as @s[scores={DialogueTrigger=69,TalkTime=32}] run give @s minecraft:music_disc_stal{display:{Name:"Card Key",Lore:["A card key that opens a shutter","in the Radio Tower."]},HideFlags:36}
+execute as @s[scores={DialogueTrigger=69,TalkTime=32}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=69,TalkTime=37}] {"text":"<Director> Use that to open the shutters on 3F"}
 tellraw @s[scores={DialogueTrigger=69,TalkTime=44}] {"text":"<Director> I'm beging you to help."}
 tellraw @s[scores={DialogueTrigger=69,TalkTime=50}] {"text":"<Director> There's no telling what they'll do if they control the transmitter."}
@@ -1705,6 +1727,7 @@ tellraw @s[scores={DialogueTrigger=72,TalkTime=35}] ["",{"text":"<Director> "},{
 tellraw @s[scores={DialogueTrigger=72,TalkTime=41}] {"text":"<Director> Your courageous actions have saved Pokémon nationwide."}
 tellraw @s[scores={DialogueTrigger=72,TalkTime=49}] {"text":"<Director> I know it's not much, but please take this."}
 execute as @s[scores={DialogueTrigger=72,TalkTime=53}] run give @s minecraft:prismarine_crystals{display:{Name:"Rainbow Wing",Lore:["A strange, rainbow feather","that sparkles."]},ench:[{id:"2",lvl:"1"}],HideFlags:1}
+execute as @s[scores={DialogueTrigger=72,TalkTime=53}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=72,TalkTime=57}] {"text":"<Director> There used to be a tower right here in Goldenrod City."}
 tellraw @s[scores={DialogueTrigger=72,TalkTime=65}] {"text":"<Director> But it was old and creaky. So we replaced it with our Radio Tower."}
 tellraw @s[scores={DialogueTrigger=72,TalkTime=74}] {"text":"<Director> We dug up that feather during construction."}
@@ -1772,6 +1795,7 @@ execute as @s[scores={DialogueTrigger=74,TalkTime=31}] run advancement grant @s 
 
 tellraw @s[scores={DialogueTrigger=74,TalkTime=31}] {"text":"<Pryce> And this... This is a gift from me! "}
 execute as @s[scores={DialogueTrigger=74,TalkTime=34}] run give @s pixelmon:tm_gen4{tm:7}
+execute as @s[scores={DialogueTrigger=74,TalkTime=34}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=74,TalkTime=38}] {"text":"<Pryce> That TM contains Hail."}
 tellraw @s[scores={DialogueTrigger=74,TalkTime=45}] {"text":"<Pryce> It summons a hailstorm that lasts for five turns."}
 tellraw @s[scores={DialogueTrigger=74,TalkTime=53}] {"text":"<Pryce> The hailstorm damages all types except Ice."}
@@ -1786,6 +1810,7 @@ tag @s[scores={DialogueTrigger=74,TalkTime=74..}] add Dialogue74
 
 tellraw @s[scores={DialogueTrigger=75,TalkTime=1}] {"text":"<Radio Worker> Thank you! You're my hero! This is a token of my appreciation."}
 execute as @s[scores={DialogueTrigger=75,TalkTime=4}] run give @s pixelmon:tm_gen2{tm:11}
+execute as @s[scores={DialogueTrigger=75,TalkTime=4}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tag @s[scores={DialogueTrigger=75,TalkTime=4..}] add Dialogue75
 
@@ -1797,6 +1822,7 @@ tellraw @s[scores={DialogueTrigger=76,TalkTime=1}] {"text":"<Officer Jenny> I go
 tellraw @s[scores={DialogueTrigger=76,TalkTime=10}] {"text":"<Officer Jenny> They left this behind. It makes me uncomfortable."}
 tellraw @s[scores={DialogueTrigger=76,TalkTime=19}] {"text":"<Officer Jenny> Could you take it away?"}
 execute as @s[scores={DialogueTrigger=76,TalkTime=22}] run give @s pixelmon:tm_gen2{tm:36}
+execute as @s[scores={DialogueTrigger=76,TalkTime=22}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tag @s[scores={DialogueTrigger=76,TalkTime=22..}] add Dialogue76
 scoreboard players set @s[tag=Dialogue76] TalkTime 0
@@ -1852,6 +1878,7 @@ execute as @s[scores={DialogueTrigger=79,TalkTime=19}] run advancement grant @s 
 
 tellraw @s[scores={DialogueTrigger=79,TalkTime=20}] {"text":"<Clair> I also want you to have this TM."}
 execute as @s[scores={DialogueTrigger=79,TalkTime=23}] run give @s pixelmon:tm_gen4{tm:59}
+execute as @s[scores={DialogueTrigger=79,TalkTime=23}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=79,TalkTime=27}] {"text":"<Clair> That contains Dragon Pulse."}
 tellraw @s[scores={DialogueTrigger=79,TalkTime=34}] {"text":"<Clair> If you don't want it, you don't have to take it."}
 tellraw @s[scores={DialogueTrigger=79,TalkTime=42}] {"text":"<Clair> So, you've collected all the Badges."}
@@ -1890,6 +1917,7 @@ tellraw @s[scores={DialogueTrigger=81,TalkTime=1}] ["",{"text":"<Professor Elm> 
 tellraw @s[scores={DialogueTrigger=81,TalkTime=7}] {"text":"<Professor Elm> Thanks to you, my research is going great!"}
 tellraw @s[scores={DialogueTrigger=81,TalkTime=15}] {"text":"<Professor Elm> Take this as a token of my appreciation."}
 execute as @s[scores={DialogueTrigger=81,TalkTime=18}] run give @s pixelmon:master_ball
+execute as @s[scores={DialogueTrigger=81,TalkTime=18}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=81,TalkTime=23}] {"text":"<Professor Elm> The Master Ball is the best! It's the ultimate Ball!"}
 tellraw @s[scores={DialogueTrigger=81,TalkTime=31}] {"text":"<Professor Elm> It'll catch any Pokémon without fail."}
 tellraw @s[scores={DialogueTrigger=81,TalkTime=38}] {"text":"<Professor Elm> It's given only to recognized Pokémon researchers."}
@@ -2193,6 +2221,7 @@ execute as @s[scores={DialogueTrigger=101,TalkTime=1}] run scoreboard players se
 tellraw @s[scores={DialogueTrigger=101,TalkTime=1}] ["",{"text":"<Professor Elm> "},{"selector":"@s"},{"text":"! There you are!"}]
 tellraw @s[scores={DialogueTrigger=101,TalkTime=8}] {"text":"<Professor Elm> I called because I have something for you."}
 execute as @s[scores={DialogueTrigger=101,TalkTime=13}] run give @s minecraft:music_disc_chirp{display:{Name:"S.S. Ticket",Lore:["The ticket required for sailing on","the ferry S.S. Aqua in Olivine and","Vermilion City. It has a drawing","of a ship in it."]},HideFlags:36}
+execute as @s[scores={DialogueTrigger=101,TalkTime=13}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=101,TalkTime=16}] {"text":"<Professor Elm> See? It's an S.S. Ticket. Now you can catch Pokémon in Kanto."}
 tellraw @s[scores={DialogueTrigger=101,TalkTime=26}] ["",{"text":"<Professor Elm> The ship departs from Olivine City. But you knew that already, "},{"selector":"@s"},{"text":"."}]
 tellraw @s[scores={DialogueTrigger=101,TalkTime=37}] {"text":"<Professor Elm> After all, you've traveled all over with your Pokémon."}
@@ -2222,6 +2251,8 @@ execute as @s[scores={DialogueTrigger=102,TalkTime=22}] run scoreboard players o
 
 execute as @s[scores={DialogueTrigger=102,TalkTime=23,rng=0..63}] run give @s minecraft:iron_horse_armor{display:{Lore:["A shiny blue orb that is said","to have a legend tied to it. It's","known to have a deep connection","with the Hoenn region."]}}
 execute as @s[scores={DialogueTrigger=102,TalkTime=23,rng=64..127}] run give @s minecraft:golden_horse_armor{display:{Lore:["A shiny red orb that is said","to have a legend tied to it. It's","known to have a deep connection","with the Hoenn region."]}}
+execute as @s[scores={DialogueTrigger=102,TalkTime=23,rng=0..63}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @s[scores={DialogueTrigger=102,TalkTime=23,rng=64..127}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tellraw @s[scores={DialogueTrigger=102,TalkTime=26}] {"text":"<Mr. Pokémon> That Orb has something to do with the ancient ruins located past Cianwood City, called the Embedded Tower."}
 tellraw @s[scores={DialogueTrigger=102,TalkTime=37}] {"text":"<Mr. Pokémon> But only a handful of Trainers can reach there... That's where you come in."}
@@ -2294,6 +2325,7 @@ tellraw @s[scores={DialogueTrigger=106,TalkTime=8}] {"text":"<Nurse Joy> Congrat
 tellraw @s[scores={DialogueTrigger=106,TalkTime=13}] {"text":"<Nurse Joy> As a special deal, a GS Ball has been sent just for you!"}
 tellraw @s[scores={DialogueTrigger=106,TalkTime=21}] {"text":"<Nurse Joy> Please accept it!"}
 execute as @s[scores={DialogueTrigger=106,TalkTime=24}] run give @s pixelmon:gs_ball{display:{Lore:["A mysterious Ball.","It seems to have some","connection to Ilex Forest."]}}
+execute as @s[scores={DialogueTrigger=106,TalkTime=24}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=106,TalkTime=29}] {"text":"<Nurse Joy> Please do come again!"}
 
 tag @s[scores={DialogueTrigger=106,TalkTime=29..}] add Dialogue106
@@ -2323,6 +2355,7 @@ tellraw @s[scores={DialogueTrigger=108,TalkTime=34}] {"text":"<Kurt> What is goi
 tellraw @s[scores={DialogueTrigger=108,TalkTime=42}] ["",{"text":"<Kurt> "},{"selector":"@s"},{"text":", here's your GS Ball back!"}]
 tellraw @s[scores={DialogueTrigger=108,TalkTime=50}] {"text":"<Kurt> Could you go see why Ilex Forest is so restless? "}
 execute as @s[scores={DialogueTrigger=108,TalkTime=53}] run give @s pixelmon:gs_ball{display:{Lore:["A mysterious Ball.","It seems to have some","connection to Ilex Forest."]}}
+execute as @s[scores={DialogueTrigger=108,TalkTime=53}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 #Enables particles in the Ilex Forest
 execute as @s[scores={DialogueTrigger=108,TalkTime=3}] run setblock -861 64 -305 minecraft:redstone_block
@@ -2435,6 +2468,7 @@ execute as @s[scores={DialogueTrigger=115,TalkTime=25}] run scoreboard players s
 
 tellraw @s[scores={DialogueTrigger=115,TalkTime=25}] {"text":"<Misty> Here is another memento from this battle. Take it!"}
 execute as @s[scores={DialogueTrigger=115,TalkTime=28}] run give @s pixelmon:tm_gen4{tm:3}
+execute as @s[scores={DialogueTrigger=115,TalkTime=28}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=115,TalkTime=33}] {"text":"<Misty> It contains the move Water Pulse. It can sometimes confuse your foe."}
 tellraw @s[scores={DialogueTrigger=115,TalkTime=43}] {"text":"<Misty> You've managed to defeat Trainers all the way from Johto."}
 tellraw @s[scores={DialogueTrigger=115,TalkTime=51}] {"text":"<Misty> I'm sure you have a good use for it."}
@@ -2472,6 +2506,7 @@ execute as @s[scores={DialogueTrigger=117,TalkTime=27}] run scoreboard players s
 
 tellraw @s[scores={DialogueTrigger=117,TalkTime=27}] {"text":"<Surge> There is something else. Here is a great TM for you!"}
 execute as @s[scores={DialogueTrigger=117,TalkTime=30}] run give @s pixelmon:tm_gen4{tm:34}
+execute as @s[scores={DialogueTrigger=117,TalkTime=30}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=117,TalkTime=35}] {"text":"<Surge> That TM contains Shock Wave... Zzzap! Use it to go like lightning!"}
 tellraw @s[scores={DialogueTrigger=117,TalkTime=44}] {"text":"<Surge> When you go north, you will see a big city called Saffron!"}
 
@@ -2511,6 +2546,7 @@ execute as @s[scores={DialogueTrigger=119,TalkTime=23}] run scoreboard players s
 tellraw @s[scores={DialogueTrigger=119,TalkTime=23}] {"text":"<Erika> That was a delightful match. I felt inspired."}
 tellraw @s[scores={DialogueTrigger=119,TalkTime=31}] {"text":"<Erika> Please, I wish you to have this TM134 as a special token."}
 execute as @s[scores={DialogueTrigger=119,TalkTime=34}] run give @s pixelmon:tm_gen2{tm:19}
+execute as @s[scores={DialogueTrigger=119,TalkTime=34}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=119,TalkTime=40}] {"text":"<Erika> It is Giga Drain. It is a wonderful move that drains half the damage it inflicts to heal your Pokémon."}
 tellraw @s[scores={DialogueTrigger=119,TalkTime=52}] {"text":"<Erika> It is indeed a horrifying move."}
 tellraw @s[scores={DialogueTrigger=119,TalkTime=59}] {"text":"<Erika> Losing leaves a bitter aftertaste..."}
@@ -2548,7 +2584,7 @@ execute as @s[scores={DialogueTrigger=121,TalkTime=27}] run scoreboard players s
 
 tellraw @s[scores={DialogueTrigger=121,TalkTime=27}] {"text":"<Janine> You're so tough! I have a special gift!"}
 execute as @s[scores={DialogueTrigger=121,TalkTime=30}] run give @s pixelmon:tm_gen4{tm:84}
-
+execute as @s[scores={DialogueTrigger=121,TalkTime=30}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=121,TalkTime=35}] {"text":"<Janine> It's Poison Jab, a powerful Poison-type move that may poison its victim."}
 tellraw @s[scores={DialogueTrigger=121,TalkTime=44}] {"text":"<Janine> I'm going to really apply myself and improve my skills."}
 tellraw @s[scores={DialogueTrigger=121,TalkTime=52}] {"text":"<Janine> I want to become much better than both my father and you!"}
@@ -2590,6 +2626,7 @@ tellraw @s[scores={DialogueTrigger=123,TalkTime=33}] {"text":"<Sabrina> I failed
 tellraw @s[scores={DialogueTrigger=123,TalkTime=40}] {"text":"<Sabrina> That means that your power is beyond my psychic ability."}
 tellraw @s[scores={DialogueTrigger=123,TalkTime=48}] {"text":"<Sabrina> You deserve this. Please take this TM, too! It contains Skill Swap!"}
 execute as @s[scores={DialogueTrigger=123,TalkTime=51}] run give @s pixelmon:tm_gen4{tm:48}
+execute as @s[scores={DialogueTrigger=123,TalkTime=51}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=123,TalkTime=56}] {"text":"<Sabrina> It swaps Abilities between the user and the target."}
 tellraw @s[scores={DialogueTrigger=123,TalkTime=66}] {"text":"<Sabrina> You will become a celebrated and beloved Champion!"}
 tellraw @s[scores={DialogueTrigger=123,TalkTime=73}] {"text":"<Sabrina> Your love for your Pokémon smashed my psychic abilities..."}
@@ -2626,6 +2663,7 @@ execute as @s[scores={DialogueTrigger=125,TalkTime=17}] run scoreboard players s
 
 tellraw @s[scores={DialogueTrigger=125,TalkTime=17}] {"text":"<Blaine> Here, I will give you this, too. It's called Overheat!"}
 execute as @s[scores={DialogueTrigger=125,TalkTime=20}] run give @s pixelmon:tm_gen4{tm:50}
+execute as @s[scores={DialogueTrigger=125,TalkTime=20}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=125,TalkTime=25}] {"text":"<Blaine> It has a slight drawback, but it's powerful and well worth it!"}
 tellraw @s[scores={DialogueTrigger=125,TalkTime=34}] {"text":"<Blaine> I did lose this time, but I'm going to win next time."}
 tellraw @s[scores={DialogueTrigger=125,TalkTime=42}] {"text":"<Blaine> My Fire-type Pokémon will be even stronger! Just you watch!"}
@@ -2663,6 +2701,7 @@ execute as @s[scores={DialogueTrigger=127,TalkTime=23}] run scoreboard players s
 
 tellraw @s[scores={DialogueTrigger=127,TalkTime=23}] {"text":"<Blue> Here! Take this as well!"}
 execute as @s[scores={DialogueTrigger=127,TalkTime=26}] run give @s pixelmon:tm_gen4{tm:92}
+execute as @s[scores={DialogueTrigger=127,TalkTime=26}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=127,TalkTime=30}] {"text":"<Blue> It contains Trick Room! It allows slower Pokémon to move before faster Pokémon for a while."}
 tellraw @s[scores={DialogueTrigger=127,TalkTime=41}] {"text":"<Blue> It's a very tricky move, isn't it? Hence the name!"}
 tellraw @s[scores={DialogueTrigger=127,TalkTime=49}] {"text":"<Blue> ... All right, I was wrong. You're the real deal. "}
@@ -2742,6 +2781,7 @@ tag @s[scores={DialogueTrigger=131,TalkTime=57..}] add Dialogue131
 tellraw @s[scores={DialogueTrigger=132,TalkTime=1}] {"text":"<Shopkeeper> Good morning. I've received a gift for you!"}
 execute as @s[scores={DialogueTrigger=132,TalkTime=4}] run pokegive @s Jirachi lvl:5 ball:cherishball
 execute as @s[scores={DialogueTrigger=132,TalkTime=4}] run give @s pixelmon:gold_bottle_cap{display:{Lore:["A beautiful bottle cap that gives off","a golden gleam. Some people are","happy to receive one."]}}
+execute as @s[scores={DialogueTrigger=132,TalkTime=4}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tag @s[scores={DialogueTrigger=132,TalkTime=4..}] add Dialogue132
 
@@ -2776,6 +2816,7 @@ tellraw @s[scores={DialogueTrigger=134,TalkTime=18}] {"text":"<Poke Fan> Oh, I s
 tellraw @s[scores={DialogueTrigger=134,TalkTime=27}] {"text":"<Poke Fan> OK. Could you take this Poke Doll back to that poor little girl?"}
 execute as @s[scores={DialogueTrigger=134,TalkTime=31}] run tp @e[x=-2697,y=65,z=-39,distance=..2,type=pixelmon:statue] -738 75 -242
 execute as @s[scores={DialogueTrigger=134,TalkTime=31}] run give @s minecraft:music_disc_13{display:{Name:"Clefairy Doll",Lore:["The Poké Doll lost by the Copycat."]},HideFlags:36}
+execute as @s[scores={DialogueTrigger=134,TalkTime=31}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=134,TalkTime=36}] {"text":"<Poke Fan> I'll befriend a real Clefairy on my own one day. No worries!"}
 
 tag @s[scores={DialogueTrigger=134,TalkTime=36..}] add Dialogue134
@@ -2795,6 +2836,7 @@ execute as @s[scores={DialogueTrigger=135,TalkTime=13}] run tp @e[x=-736,y=75,z=
 tellraw @s[scores={DialogueTrigger=135,TalkTime=18}] {"text":"<Copycat> OK. Here's the Magnet Train Pass like I promised!"}
 execute as @s[scores={DialogueTrigger=135,TalkTime=22}] run give @s minecraft:music_disc_blocks{display:{Name:"Magnet Train Pass",Lore:["A ticket required for riding the Magnet","Train. It allows you to ride whenever","and however much you'd like."]},HideFlags:36}
 execute as @s[scores={DialogueTrigger=135,TalkTime=22}] run tag @s add MagnetPass
+execute as @s[scores={DialogueTrigger=135,TalkTime=22}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=135,TalkTime=27}] {"text":"<Copycat> That's the Pass for the Magnet Train."}
 tellraw @s[scores={DialogueTrigger=135,TalkTime=34}] {"text":"<Copycat> The rail company man gave me that when they tore down our old house for the Station."}
 
@@ -2827,6 +2869,7 @@ tellraw @s[scores={DialogueTrigger=136,TalkTime=85}] ["",{"text":"<Steven> But a
 execute as @s[scores={DialogueTrigger=136,TalkTime=90}] run give @s pixelmon:latiasite
 execute as @s[scores={DialogueTrigger=136,TalkTime=90}] run give @s pixelmon:soul_dew{display:{Lore:["A wondrous orb to be held by either","Latios or Latias. It raises the power","of Psychic- and Dragon-type moves."]}}
 execute as @s[scores={DialogueTrigger=136,TalkTime=90}] run give @s pixelmon:latiosite
+execute as @s[scores={DialogueTrigger=136,TalkTime=90}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tellraw @s[scores={DialogueTrigger=136,TalkTime=95}] ["",{"text":"<Steven> I must go. May our journeys cross again.","color":"white"}]
 
@@ -2904,6 +2947,7 @@ tellraw @s[scores={DialogueTrigger=140,TalkTime=1}] {"text":"<Sailor> The ocean 
 tellraw @s[scores={DialogueTrigger=140,TalkTime=8}] {"text":"<Sailor> You look like you have proven yourself as a trainer."}
 tellraw @s[scores={DialogueTrigger=140,TalkTime=26}] {"text":"<Sailor> Please take this, and help preserve the beauty of the seas!"}
 execute as @s[scores={DialogueTrigger=140,TalkTime=31}] run pokegive @s Manaphy egg lvl:5
+execute as @s[scores={DialogueTrigger=140,TalkTime=31}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tag @s[scores={DialogueTrigger=140,TalkTime=31..}] add Dialogue140
 
@@ -2953,11 +2997,13 @@ tag @s[scores={DialogueTrigger=142,TalkTime=45..}] add Dialogue142
 tellraw @s[scores={DialogueTrigger=143,TalkTime=1,Groudon=1..}] {"text":"<Mr. Pokémon> Wow! That Red Orb summoned Groudon? Incredible!"}
 tellraw @s[scores={DialogueTrigger=143,TalkTime=11,Groudon=1..}] {"text":"<Mr. Pokémon> So I suppose this Blue Orb summons Kyogre?"}
 execute as @s[scores={DialogueTrigger=143,TalkTime=15,Groudon=1..}] run give @s minecraft:iron_horse_armor{display:{Lore:["A shiny blue orb that is said","to have a legend tied to it. It's","known to have a deep connection","with the Hoenn region."]}}
+execute as @s[scores={DialogueTrigger=143,TalkTime=15,Groudon=1..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 #Give Groudon Orb
 tellraw @s[scores={DialogueTrigger=143,TalkTime=1,Kyogre=1..}] {"text":"<Mr. Pokémon> Wow! That Blue Orb summoned Kyogre? Incredible!"}
 tellraw @s[scores={DialogueTrigger=143,TalkTime=11,Kyogre=1..}] {"text":"<Mr. Pokémon> So I suppose this Red Orb summons Groudon?"}
 execute as @s[scores={DialogueTrigger=143,TalkTime=15,Kyogre=1..}] run give @s minecraft:golden_horse_armor{display:{Lore:["A shiny red orb that is said","to have a legend tied to it. It's","known to have a deep connection","with the Hoenn region."]}}
+execute as @s[scores={DialogueTrigger=143,TalkTime=15,Kyogre=1..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tag @s[scores={DialogueTrigger=143,TalkTime=15..}] add Dialogue143
 
@@ -2969,6 +3015,7 @@ tag @s[scores={DialogueTrigger=143,TalkTime=15..}] add Dialogue143
 tellraw @s[scores={DialogueTrigger=144,TalkTime=1}] {"text":"<Mr. Pokémon> I am amazed!"}
 tellraw @s[scores={DialogueTrigger=144,TalkTime=7}] {"text":"<Mr. Pokémon> So if each color is to a legendary Pokémon, this Green Orb would be to Rayquaza, right?"}
 execute as @s[scores={DialogueTrigger=144,TalkTime=12}] run give @s minecraft:diamond_horse_armor{display:{Lore:["A shiny green orb that is said","to have a legend tied to it. It's","known to have a deep connection","with the Hoenn region."]}}
+execute as @s[scores={DialogueTrigger=144,TalkTime=12}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=144,TalkTime=19}] {"text":"<Mr. Pokémon> Fascinating! Thank you for doing all this."}
 
 tag @s[scores={DialogueTrigger=144,TalkTime=19..}] add Dialogue144
@@ -3038,6 +3085,7 @@ tellraw @s[scores={DialogueTrigger=148,TalkTime=44}] {"text":"<Randy's Friend> T
 tellraw @s[scores={DialogueTrigger=148,TalkTime=51}] {"text":"<Randy's Friend> By the way, I must thank you for being so kind."}
 tellraw @s[scores={DialogueTrigger=148,TalkTime=59}] {"text":"<Randy's Friend> I'd like to do something good in return."}
 execute as @s[scores={DialogueTrigger=148,TalkTime=62}] run give @s pixelmon:tm_gen2{tm:44}
+execute as @s[scores={DialogueTrigger=148,TalkTime=62}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=148,TalkTime=65}] {"text":"<Randy's Friend> TM44 is..."}
 tellraw @s[scores={DialogueTrigger=148,TalkTime=70}] {"text":"<Randy's Friend> ...Zzz... ..."}
 tellraw @s[scores={DialogueTrigger=148,TalkTime=75}] {"text":"<Randy's Friend> ...Umm... Rest!"}
@@ -3055,6 +3103,7 @@ tellraw @s[scores={DialogueTrigger=149,TalkTime=10}] {"text":"<Randy> ...What ab
 tellraw @s[scores={DialogueTrigger=149,TalkTime=17}] {"text":"<Randy> Ah, you can go right through here."}
 tellraw @s[scores={DialogueTrigger=149,TalkTime=25}] {"text":"<Randy> I want you to have this for your kindness!"}
 execute as @s[scores={DialogueTrigger=149,TalkTime=28}] run give @s pixelmon:hp_up
+execute as @s[scores={DialogueTrigger=149,TalkTime=28}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=149,TalkTime=34}] {"text":"<Randy> My pal was snoozing, right? Heh, he's always sleeping."}
 
 tag @s[scores={DialogueTrigger=149,TalkTime=34..}] add Dialogue149
@@ -3089,12 +3138,14 @@ execute as @s[scores={DialogueTrigger=154,TalkTime=17,KantoStarters=1}] run give
 execute as @s[scores={DialogueTrigger=154,TalkTime=17,KantoStarters=2}] run give @s pixelmon:blastoisinite
 execute as @s[scores={DialogueTrigger=154,TalkTime=17,KantoStarters=3}] run give @s pixelmon:charizardite_x
 execute as @s[scores={DialogueTrigger=154,TalkTime=17,KantoStarters=3}] run give @s pixelmon:charizardite_y
+execute as @s[scores={DialogueTrigger=154,TalkTime=17,KantoStarters=1..3}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tellraw @s[scores={DialogueTrigger=154,TalkTime=24}] {"text":"<Professor Oak> After speaking with Professor Sycamore of the Kalos region, I think I might know what they are."}
 tellraw @s[scores={DialogueTrigger=154,TalkTime=35}] {"text":"<Professor Oak> He provided me with this bracelet to study the stones, but I think you can make better use of it."}
 
 execute as @s[scores={DialogueTrigger=154,TalkTime=46}] run megaring @s
 execute as @s[scores={DialogueTrigger=154,TalkTime=46}] run scoreboard players set @s MegaStones 1
+execute as @s[scores={DialogueTrigger=154,TalkTime=46}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tellraw @s[scores={DialogueTrigger=154,TalkTime=54}] {"text":"<Professor Oak> You might be able to find more stones across Kanto and Johto."}
 tellraw @s[scores={DialogueTrigger=154,TalkTime=63}] {"text":"<Professor Oak> I found them while gathering data."}
@@ -3134,6 +3185,7 @@ tag @s[scores={DialogueTrigger=154,TalkTime=93..}] add Dialogue154
 tellraw @s[scores={DialogueTrigger=155,TalkTime=1}] {"text":"<Black Belt> Are you the one who took care of the odd tree in the way?"}
 tellraw @s[scores={DialogueTrigger=155,TalkTime=10}] {"text":"<Black Belt> You're quite the Trainer! Take this!"}
 execute as @s[scores={DialogueTrigger=155,TalkTime=14}] run give @s pixelmon:tm_gen2{tm:8}
+execute as @s[scores={DialogueTrigger=155,TalkTime=14}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=155,TalkTime=18}] {"text":"<Black Belt> It contains make-'em-faint Rock Smash. Use it well!"}
 
 tag @s[scores={DialogueTrigger=155,TalkTime=18..}] add Dialogue155
@@ -3490,6 +3542,7 @@ tellraw @s[scores={DialogueTrigger=167,TalkTime=19}] {"text":"<Archaeologist> Yo
 #Kill ground Flute
 execute as @s[scores={DialogueTrigger=167,TalkTime=24}] run kill @e[x=176,y=63,z=-141,dy=2,type=item]
 execute as @s[scores={DialogueTrigger=167,TalkTime=24}] run give @s pixelmon:azure_flute{display:{Lore:["A flute that puts out echoing","sounds that do not seem to be of","this world. No one knows who made","it. It seems to call to the","highest mountains."]}}
+execute as @s[scores={DialogueTrigger=167,TalkTime=24}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tellraw @s[scores={DialogueTrigger=167,TalkTime=27}] {"text":"<Archaeologist> The Flute is said to call upon the mythical Pokemon Arceus atop Mt. Coronet, but that is unreachable to us..."}
 tellraw @s[scores={DialogueTrigger=167,TalkTime=38}] {"text":"<Archaeologist> Is there a mountain in this region that may have a similar connection?"}
@@ -3894,6 +3947,7 @@ tag @s[scores={DialogueTrigger=186,TalkTime=15..}] add Dialogue186
 tellraw @s[scores={DialogueTrigger=187,TalkTime=1}] {"text":"<Monika> Glad to meet you. I'm Monica of Monday."}
 tellraw @s[scores={DialogueTrigger=187,TalkTime=10}] {"text":"<Monika> As a token of our friendship, I have a gift for you!"}
 execute as @s[scores={DialogueTrigger=187,TalkTime=14}] run give @s pixelmon:sharp_beak
+execute as @s[scores={DialogueTrigger=187,TalkTime=14}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=187,TalkTime=20}] {"text":"<Monika> It's an item that raises the power of Flying-type moves."}
 tellraw @s[scores={DialogueTrigger=187,TalkTime=28}] {"text":"<Monika> You should equip a bird Pokémon with that item."}
 tellraw @s[scores={DialogueTrigger=187,TalkTime=35}] {"text":"<Monika> My brothers and sisters are all over the place. See if you could find them all!"}
@@ -3914,6 +3968,7 @@ tag @s[scores={DialogueTrigger=187,TalkTime=35..}] add Dialogue187
 tellraw @s[scores={DialogueTrigger=188,TalkTime=1}] {"text":"<Tuscany> Please allow me to introduce myself. I am Tuscany of Tuesday."}
 tellraw @s[scores={DialogueTrigger=188,TalkTime=10}] {"text":"<Tuscany> By way of introduction please accept this gift, a TwistedSpoon."}
 execute as @s[scores={DialogueTrigger=188,TalkTime=14}] run give @s pixelmon:twisted_spoon
+execute as @s[scores={DialogueTrigger=188,TalkTime=14}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=188,TalkTime=20}] {"text":"<Tuscany> Wouldn't you agree that it is most adorable? It strengthens Psychic-type moves."}
 tellraw @s[scores={DialogueTrigger=188,TalkTime=30}] {"text":"<Tuscany> I am certain it will be of use."}
 tellraw @s[scores={DialogueTrigger=188,TalkTime=37}] {"text":"<Tuscany> Have you met Monica, my older sister?"}
@@ -3935,6 +3990,7 @@ tag @s[scores={DialogueTrigger=188,TalkTime=44..}] add Dialogue188
 tellraw @s[scores={DialogueTrigger=189,TalkTime=1}] {"text":"<Wesley> I'm Wesley of Wednesday. Pleased to meet you."}
 tellraw @s[scores={DialogueTrigger=189,TalkTime=10}] {"text":"<Wesley> Please take a souvenir."}
 execute as @s[scores={DialogueTrigger=189,TalkTime=14}] run give @s pixelmon:black_belt
+execute as @s[scores={DialogueTrigger=189,TalkTime=14}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=189,TalkTime=17}] {"text":"<Wesley> Black Belt beefs up the power of Fighting moves."}
 tellraw @s[scores={DialogueTrigger=189,TalkTime=25}] {"text":"<Wesley> Since you found me, you must have met my brothers and sisters."}
 tellraw @s[scores={DialogueTrigger=189,TalkTime=34}] {"text":"<Wesley> Or did you just get lucky?"}
@@ -3955,6 +4011,7 @@ tag @s[scores={DialogueTrigger=189,TalkTime=34..}] add Dialogue189
 tellraw @s[scores={DialogueTrigger=190,TalkTime=1}] {"text":"<Arthur> Who are you? I'm Arthur of Thursday."}
 tellraw @s[scores={DialogueTrigger=190,TalkTime=10}] {"text":"<Arthur> Here. You can have this."}
 execute as @s[scores={DialogueTrigger=190,TalkTime=14}] run give @s pixelmon:hard_stone
+execute as @s[scores={DialogueTrigger=190,TalkTime=14}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=190,TalkTime=17}] {"text":"<Arthur> A Pokémon that uses Rock-type moves should hold on to that. It pumps up Rock-type attacks."}
 
 tag @s[scores={DialogueTrigger=190,TalkTime=17..}] add Dialogue190
@@ -3973,6 +4030,7 @@ tag @s[scores={DialogueTrigger=190,TalkTime=17..}] add Dialogue190
 tellraw @s[scores={DialogueTrigger=191,TalkTime=1}] {"text":"<Frieda> Yahoo! It's Friday! I'm Frieda of Friday!"}
 tellraw @s[scores={DialogueTrigger=191,TalkTime=10}] {"text":"<Frieda> Nice to meet you! Here's a Poison Barb for you!"}
 execute as @s[scores={DialogueTrigger=191,TalkTime=14}] run give @s pixelmon:poison_barb
+execute as @s[scores={DialogueTrigger=191,TalkTime=14}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=191,TalkTime=20}] {"text":"<Frieda> Give it to a Pokémon that has Poison-type moves."}
 tellraw @s[scores={DialogueTrigger=191,TalkTime=28}] {"text":"<Frieda> Oh! It's wicked! You'll be shocked how good it makes Poison moves!"}
 tellraw @s[scores={DialogueTrigger=191,TalkTime=37}] {"text":"<Frieda> I love Friday. No doubt about it! Don't you think it's great too?"}
@@ -3993,6 +4051,7 @@ tag @s[scores={DialogueTrigger=191,TalkTime=37..}] add Dialogue191
 tellraw @s[scores={DialogueTrigger=192,TalkTime=1}] {"text":"<Santos> ...It's Saturday... I'm Santos of Saturday..."}
 tellraw @s[scores={DialogueTrigger=192,TalkTime=10}] {"text":"<Santos> Take this... ... Soft Sand..."}
 execute as @s[scores={DialogueTrigger=192,TalkTime=14}] run give @s pixelmon:soft_sand
+execute as @s[scores={DialogueTrigger=192,TalkTime=14}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=192,TalkTime=20}] {"text":"<Santos> Ground-type moves get stronger... It will startle you..."}
 tellraw @s[scores={DialogueTrigger=192,TalkTime=30}] {"text":"<Santos> ... See you again on another Saturday..."}
 
@@ -4011,6 +4070,7 @@ tag @s[scores={DialogueTrigger=192,TalkTime=30..}] add Dialogue192
 tellraw @s[scores={DialogueTrigger=193,TalkTime=1}] {"text":"<Sunny> Hi! I'm Sunny of Sunday, meaning it's Sunday today!"}
 tellraw @s[scores={DialogueTrigger=193,TalkTime=10}] {"text":"<Sunny> I was told to give you this if I saw you!"}
 execute as @s[scores={DialogueTrigger=193,TalkTime=14}] run give @s pixelmon:magnet
+execute as @s[scores={DialogueTrigger=193,TalkTime=14}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=193,TalkTime=18}] {"text":"<Sunny> That thing... Um... ...What was it now..."}
 tellraw @s[scores={DialogueTrigger=193,TalkTime=27}] {"text":"<Sunny> ... Oh! I remember now!"}
 tellraw @s[scores={DialogueTrigger=193,TalkTime=34}] {"text":"<Sunny> A Pokémon that knows Electric moves should hold it."}
@@ -4026,6 +4086,7 @@ execute as @s[scores={DialogueTrigger=194,TalkTime=1}] run clear @s minecraft:pa
 tellraw @s[scores={DialogueTrigger=194,TalkTime=1}] {"text":"<Ace Trainer Kevin> As promised, you win a prize! Would you like to battle one more time with me?"}
 
 execute as @s[scores={DialogueTrigger=194,TalkTime=5}] run give @s pixelmon:nugget
+execute as @s[scores={DialogueTrigger=194,TalkTime=5}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tag @s[scores={DialogueTrigger=194,TalkTime=5..}] add Dialogue194
 
@@ -4060,6 +4121,7 @@ execute as @s[scores={DialogueTrigger=196,TalkTime=13,BillGP=2}] run give @s pix
 execute as @s[scores={DialogueTrigger=196,TalkTime=13,BillGP=3}] run give @s pixelmon:water_stone
 execute as @s[scores={DialogueTrigger=196,TalkTime=13,BillGP=4}] run give @s pixelmon:fire_stone
 execute as @s[scores={DialogueTrigger=196,TalkTime=13,BillGP=5}] run give @s pixelmon:thunder_stone
+execute as @s[scores={DialogueTrigger=196,TalkTime=13,BillGP=1..5}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 execute as @s[scores={DialogueTrigger=196,TalkTime=13,BillGP=1..5}] run scoreboard players add @s BillGP 1
 execute as @s[scores={DialogueTrigger=196,TalkTime=13,BillGP=1..5}] run scoreboard players set @s Cooldown 45
@@ -4227,6 +4289,7 @@ execute as @s[scores={DialogueTrigger=199,TalkTime=29},tag=First] run scoreboard
 execute as @s[scores={DialogueTrigger=199,TalkTime=33,rng=0..32}] run give @s[tag=First] pixelmon:sun_stone
 execute as @s[scores={DialogueTrigger=199,TalkTime=33,rng=33..96}] run give @s[tag=First] pixelmon:shiny_stone
 execute as @s[scores={DialogueTrigger=199,TalkTime=33,rng=97..127}] run give @s[tag=First] pixelmon:oval_stone
+execute as @s[scores={DialogueTrigger=199,TalkTime=33}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 #2nd Place Prize
 execute as @s[scores={DialogueTrigger=199,TalkTime=33}] run give @s[tag=Second] pixelmon:ever_stone
@@ -4795,6 +4858,7 @@ tellraw @s[scores={DialogueTrigger=221,TalkTime=25}] {"text":"<Power Plant Manag
 tellraw @s[scores={DialogueTrigger=221,TalkTime=30}] {"text":"<Power Plant Manager> Whirrrrrr! Yes, it's running! Whirrr, whirrr!"}
 tellraw @s[scores={DialogueTrigger=221,TalkTime=40}] {"text":"<Power Plant Manager> Wahah! Thanks! Here! Go ahead and take this TM as a reward!"}
 execute as @s[scores={DialogueTrigger=221,TalkTime=43}] run give @s pixelmon:tm_gen4{tm:57}
+execute as @s[scores={DialogueTrigger=221,TalkTime=43}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=221,TalkTime=50}] {"text":"<Power Plant Manager> TM57 is my Charge Beam! It will shoot beams, and it can also sometimes raise Special Attack!"}
 execute as @s[scores={DialogueTrigger=221,TalkTime=50}] run advancement grant @s only johto:event9
 

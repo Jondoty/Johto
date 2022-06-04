@@ -276,8 +276,8 @@ title @s[x=858,y=60,z=-15,dx=102,dy=10,dz=143,scores={MusicTitles=1..1}] actionb
 title @s[x=858,y=60,z=-15,dx=102,dy=10,dz=143,scores={MusicTitles=3..199}] actionbar {"text":"Battle Tower"}
 title @s[x=858,y=75,z=-15,dx=102,dy=100,dz=143,scores={MusicTitles=1..1}] actionbar {"text":"Battle Tower"}
 title @s[x=858,y=75,z=-15,dx=102,dy=100,dz=143,scores={MusicTitles=3..199}] actionbar {"text":"Battle Tower"}
-#title @s[x=285,y=0,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=0}] actionbar {"text":"Azalea Town"}
-#title @s[x=285,y=0,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=2..199}] actionbar {"text":"Azalea Town"}
+#title @s[x=285,y=60,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=0}] actionbar {"text":"Azalea Town"}
+#title @s[x=285,y=60,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=2..199}] actionbar {"text":"Azalea Town"}
 #title @s[x=409,y=63,z=-740,dx=23,dy=7,dz=14,scores={MusicTitles=0}] actionbar {"text":"Azalea Town"}
 #title @s[x=409,y=63,z=-740,dx=23,dy=7,dz=14,scores={MusicTitles=2..199}] actionbar {"text":"Azalea Town"}
 
@@ -349,10 +349,10 @@ execute as @s[x=100,y=0,z=-90,dx=90,dy=256,dz=190,scores={MusicTitles=1..96}] ru
 
 
 #Azalea Town
-execute as @s[x=285,y=0,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=2..199}] run title @s title {"text":"Azalea Town","color":"dark_green"}
-execute as @s[x=285,y=0,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=2..199}] run title @s subtitle {"text":"Living Happily with Pokémon","italic":true}
-execute as @s[x=285,y=0,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=0}] run title @s title {"text":"Azalea Town","color":"dark_green"}
-execute as @s[x=285,y=0,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=0}] run title @s subtitle {"text":"Living Happily with Pokémon","italic":true}
+execute as @s[x=285,y=60,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=2..199}] run title @s title {"text":"Azalea Town","color":"dark_green"}
+execute as @s[x=285,y=60,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=2..199}] run title @s subtitle {"text":"Living Happily with Pokémon","italic":true}
+execute as @s[x=285,y=60,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=0}] run title @s title {"text":"Azalea Town","color":"dark_green"}
+execute as @s[x=285,y=60,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=0}] run title @s subtitle {"text":"Living Happily with Pokémon","italic":true}
 
 execute as @s[x=409,y=63,z=-740,dx=23,dy=7,dz=14,scores={MusicTitles=2..199}] run title @s title {"text":"Azalea Town","color":"dark_green"}
 execute as @s[x=409,y=63,z=-740,dx=23,dy=7,dz=14,scores={MusicTitles=2..199}] run title @s subtitle {"text":"Living Happily with Pokémon","italic":true}
@@ -720,8 +720,8 @@ execute as @s[x=858,y=60,z=-15,dx=102,dy=10,dz=143,scores={MusicTitles=1..1,Musi
 execute as @s[x=858,y=60,z=-15,dx=102,dy=10,dz=143,scores={MusicTitles=3..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=858,y=75,z=-15,dx=102,dy=100,dz=143,scores={MusicTitles=1..1,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=858,y=75,z=-15,dx=102,dy=100,dz=143,scores={MusicTitles=3..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
-execute as @s[x=285,y=0,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=0,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
-execute as @s[x=285,y=0,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=2..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
+execute as @s[x=285,y=60,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=0,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
+execute as @s[x=285,y=60,z=-793,dx=125,dy=240,dz=130,scores={MusicTitles=2..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=409,y=63,z=-740,dx=23,dy=7,dz=14,scores={MusicTitles=0,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=409,y=63,z=-740,dx=23,dy=7,dz=14,scores={MusicTitles=2..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicTitles=1..201,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
@@ -888,7 +888,7 @@ scoreboard players set @s[x=-2501,y=0,z=236,dx=278,dy=240,dz=199] MusicTitles 4
 scoreboard players set @s[x=-775,y=0,z=125,dx=202,dy=240,dz=206] MusicTitles 3
 scoreboard players set @s[x=858,y=60,z=-15,dx=102,dy=10,dz=143] MusicTitles 2
 scoreboard players set @s[x=858,y=75,z=-15,dx=102,dy=100,dz=143] MusicTitles 2
-scoreboard players set @s[x=285,y=0,z=-793,dx=125,dy=240,dz=130] MusicTitles 1
+scoreboard players set @s[x=285,y=60,z=-793,dx=125,dy=240,dz=130] MusicTitles 1
 scoreboard players set @s[x=409,y=63,z=-740,dx=23,dy=7,dz=14] MusicTitles 1
 
 
