@@ -1,0 +1,28 @@
+{
+    "display" : {
+        "icon" : {
+            "item" : "pixelmon:pixelmon_sprite",
+            "nbt" : "{\"SpriteName\":\"pixelmon:sprites/pokemon/251\"}"
+        },
+        "title" : {
+          "text": "The Forest Guardian",
+          "color": "green"
+        },
+        "description" : {
+            "text": "Catch Celebi"
+        },
+        "hidden": true
+    },
+    "parent" : "pixelmon:legendaries/legendary_capture_trigger",
+    "criteria" : {
+        "celebi_capture" : {
+            "trigger" : "pixelmon:legendary_capture_trigger",
+            "conditions" : {
+                "pokemon" : "celebi"
+            }
+        }
+    },
+    "rewards": {
+        "function": "catch:celebi"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "display" : {
+        "icon" : {
+            "item" : "pixelmon:pixelmon_sprite",
+            "nbt" : "{\"SpriteName\":\"pixelmon:sprites/pokemon/493\"}"
+        },
+        "title" : {
+          "text": "The Alpha Pokémon",
+          "color": "white"
+        },
+        "description" : {
+            "text": "Catch Arceus"
+        },
+        "hidden": true
+    },
+    "parent" : "pixelmon:legendaries/legendary_capture_trigger",
+    "criteria" : {
+        "celebi_capture" : {
+            "trigger" : "pixelmon:legendary_capture_trigger",
+            "conditions" : {
+                "pokemon" : "arceus"
+            }
+        }
+    },
+    "rewards": {
+        "function": "catch:arceus"
+    }
+}
