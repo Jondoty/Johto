@@ -50,16 +50,6 @@ execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1..7
 #execute @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run setblock -822 65 -176 minecraft:redstone_block
 #execute @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=7}] run setblock -822 65 -176 minecraft:redstone_block
 
-#Bug Catching Contest signs
-fill -785 65 -242 -791 65 -242 minecraft:iron_block
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1}] run setblock -785 65 -242 minecraft:redstone_block
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=2}] run setblock -786 65 -242 minecraft:redstone_block
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=3}] run setblock -787 65 -242 minecraft:redstone_block
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=4}] run setblock -788 65 -242 minecraft:redstone_block
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run setblock -789 65 -242 minecraft:redstone_block
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=6}] run setblock -790 65 -242 minecraft:redstone_block
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=7}] run setblock -791 65 -242 minecraft:redstone_block
-
 #Toggles Bargain Merchant Off
 execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=2}] run setblock -813 65 -282 minecraft:iron_block
 
