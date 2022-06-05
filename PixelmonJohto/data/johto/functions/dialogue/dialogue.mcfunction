@@ -571,6 +571,7 @@ tag @s[scores={DialogueTrigger=18,TalkTime=47..}] add Dialogue18
 
 
 #tp in Silver
+execute as @s[scores={DialogueTrigger=19,TalkTime=1}] run scoreboard players set @s click 1
 execute as @s[scores={DialogueTrigger=19,TalkTime=1}] run particle cloud 402 64 -734 1 1 1 1 100
 execute as @s[scores={DialogueTrigger=19,TalkTime=1,StarterPick=1}] run tp @e[x=-762,y=84,z=-242,dy=10,scores={StarterPick=1}] 402 64 -734
 execute as @s[scores={DialogueTrigger=19,TalkTime=1,StarterPick=2}] run tp @e[x=-762,y=84,z=-242,dy=10,scores={StarterPick=2}] 402 64 -734

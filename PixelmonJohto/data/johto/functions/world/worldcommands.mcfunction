@@ -42,6 +42,17 @@ execute as @a[x=1590,y=74,z=-129,dx=10,dy=5,dz=10] run function johto:custom/saf
 tag @a[x=875,y=99,z=50,dx=55,dy=20,dz=27,tag=Dialogue206] remove Dialogue206
 scoreboard players set @a[x=875,y=99,z=50,dx=55,dy=20,dz=27,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 206
 
+#Lake of Rage Fisherman Karp function
+#TEST
+execute if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=0}] run tellraw @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=0}] {"text":"<Fishing Guru> Do you have a Karp for me?"}
+execute if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=0}] run scoreboard players set @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=0}] Cooldown 50
+
+execute if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=..1}] run tellraw @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=..1}] {"text":"<Fishing Guru> You'll have to show me another Karp some other time!"}
+execute if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=..1}] run scoreboard players set @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=..1}] Cooldown 50
+
+execute if entity @e[x=-197,y=63,z=568,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,name=Magikarp] if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={KarpCD=0}] run function johto:custom/karp
+
+
 #Saffron Gym portals
 execute as @a[x=-1222,y=0,z=500,dx=470,dy=240,dz=342] run function johto:world/saffrongym
 
@@ -236,6 +247,34 @@ scoreboard players set @a[x=-3253,y=64,z=357,distance=..5,scores={FlyLavender=0}
 spawnpoint @a[x=-3253,y=64,z=356,distance=..5] -3253 64 356
 
 spawnpoint @a[x=-3287,y=64,z=675,distance=..5] -3287 64 675
+
+
+#--------------------------------------------------------World Ambiance-----------------------------------------------------------------
+
+
+#Azure Flute play on Mt. Coronet
+execute if block -944 183 285 pixelmon:timespace_altar{FlutePlayed:1b} run stopsound @a[x=-944,y=183,z=285,distance=..30,scores={Cooldown=0}]
+execute if block -944 183 285 pixelmon:timespace_altar{FlutePlayed:1b} run playsound azureflute record @a[x=-945,y=179,z=271,distance=..30,scores={Cooldown=0}] ~ ~ ~ 10 1 1
+execute if block -944 183 285 pixelmon:timespace_altar{FlutePlayed:1b} run scoreboard players set @a[x=-945,y=179,z=271,distance=..30,scores={Cooldown=0}] MusicCooldown 17
+execute if block -944 183 285 pixelmon:timespace_altar{FlutePlayed:1b} run scoreboard players set @a[x=-945,y=179,z=271,distance=..30,scores={Cooldown=0}] Cooldown 30
+
+
+#Bellsprout Tower swaying pillar in middle
+#TEST
+execute if entity @a[x=57,y=70,z=18,distance=..100] run setblock -848 70 -197 minecraft:redstone_block
+execute if entity @a[x=57,y=70,z=18,distance=..50] run setblock -848 70 -197 minecraft:air
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #-------------------------------------------------------------------------------------------------------------------------
@@ -1222,8 +1261,12 @@ spawnpoint @a[x=-999,y=64,z=64,distance=..4] -999 64 64
 #-------------------------------------------------------------------------------------------------------------------------
 #Road Blocks
 
-#Elm before player has obtained a Pokemon
+#Prof Elm before player has a Pokemon
+execute as @a[x=-659,y=63,z=-526,dx=10,dy=10,dz=12,scores={StarterPick=0}] run tellraw @s ["",{"text":"<Professor Elm> Where are you going, "},{"selector":"@s"},{"text":"? You don't have a Pokemon yet!"}]
+execute at @a[x=-659,y=63,z=-526,dx=10,dy=10,dz=12,scores={StarterPick=0}] run tp @a[x=-659,y=63,z=-526,dx=10,dy=10,dz=12,scores={StarterPick=0}] ~-10 ~ ~1 25 ~
 
+#Route 30 Cut Tree respawn for story blocking
+execute if block -192 64 -188 minecraft:air if entity @a[x=-192,y=64,z=-188,distance=10..25] run clone -752 75 -242 -752 76 -242 -192 64 -188
 
 #Mr. Pokemon TP
 tellraw @a[x=-177,y=63,z=-311,dx=24,dy=5,dz=6,tag=!Dialogue5] ["",{"text":"Mr Pokemon's house is the other way!","color":"white","italic":true}]
@@ -1301,23 +1344,180 @@ execute at @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Jasmine] run tp @a[x=-222
 execute at @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Pryce] run tp @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Pryce] ~10 ~ ~
 execute at @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Morty] run tp @a[x=-222,y=63,z=183,dx=10,dy=10,dz=13,tag=!Morty] ~10 ~ ~
 
+
+#Cianwood & Route 47 Gate
+tellraw @a[x=1306,y=64,z=-369,distance=..7,tag=!Dialogue42] ["",{"text":"Route Gate closed until Olivine Lighthouse reopens.","color":"white","italic":true}]
+execute at @a[x=1306,y=64,z=-369,distance=..7,tag=!Dialogue42] run tp @a[x=1306,y=64,z=-369,distance=..7,tag=!Dialogue42] ~-7 ~ ~
+
+
+#SS Aqua Olivine, a ticket is needed
+execute if entity @a[x=744,y=73,z=-193,distance=..15,tag=!Dialogue101,scores={Cooldown=0}] run tellraw @a[x=744,y=73,z=-193,distance=..15,tag=!Dialogue101,scores={Cooldown=0}] {"text":"You need an S.S. Ticket to ride on the S.S. Aqua!","italic":true,"color":"gray"}
+execute if entity @a[x=744,y=73,z=-193,distance=..15,tag=!Dialogue101,scores={Cooldown=0}] run scoreboard players set @a[x=744,y=73,z=-193,distance=..15,tag=!Dialogue101,scores={Cooldown=0}] Cooldown 20
+
 #RocketHQ Reopens stairs if player needs it
 execute at @a[x=-164,y=63,z=213,distance=..15,tag=Dialogue53] run fill -164 63 213 -161 63 216 air
 execute at @a[x=-164,y=63,z=213,distance=..15,tag=Dialogue53] run fill -160 63 213 -160 63 216 minecraft:stone_brick_stairs[facing=east]
 
-#Prof Elm before player has a Pokemon
-execute as @a[x=-659,y=63,z=-526,dx=10,dy=10,dz=12,scores={StarterPick=0}] run tellraw @s ["",{"text":"<Professor Elm> Where are you going, "},{"selector":"@s"},{"text":"? You don't have a Pokemon yet!"}]
-execute at @a[x=-659,y=63,z=-526,dx=10,dy=10,dz=12,scores={StarterPick=0}] run tp @a[x=-659,y=63,z=-526,dx=10,dy=10,dz=12,scores={StarterPick=0}] ~-10 ~ ~1 25 ~
+
+#Battle Tower blocked until player has beaten ELite Four
+tellraw @a[x=903,y=64,z=-42,dx=2,dy=2,dz=4,scores={IP=0}] ["",{"text":"Only Elite Four Champions may enter!","color":"white","italic":true}]
+execute at @a[x=903,y=64,z=-42,dx=2,dy=2,dz=4,scores={IP=0}] run tp @a[x=903,y=64,z=-42,dx=2,dy=2,dz=4,scores={IP=0}] ~ ~ ~-5
+
+
+#Viridian City Sleeping Snorlax
+tellraw @a[x=-2907,y=57,z=-75,dx=13,dy=20,dz=30,scores={TalkTime=0},tag=!Dialogue142] {"text":"A sleeping Snorlax blocks your path. Perhaps music might wake it.","italic":true,"color":"gray"}
+tellraw @a[x=-2893,y=57,z=-75,dx=11,dy=20,dz=30,scores={TalkTime=0},tag=!Dialogue142] {"text":"A sleeping Snorlax blocks your path. Perhaps music might wake it.","italic":true,"color":"gray"}
+execute at @a[x=-2893,y=57,z=-75,dx=11,dy=20,dz=30,tag=!Dialogue142] run tp @a[x=-2893,y=57,z=-75,dx=11,dy=20,dz=30,tag=!Dialogue142] ~10 ~ ~
+execute at @a[x=-2907,y=57,z=-75,dx=13,dy=20,dz=30,tag=!Dialogue142] run tp @a[x=-2907,y=57,z=-75,dx=13,dy=20,dz=30,tag=!Dialogue142] ~-10 ~ ~
+
+
+#Radio Tower Shutter Open and Close
+#Locked
+execute if block 502 43 -244 minecraft:air if entity @a[x=498,y=42,z=-246,distance=..25] run fill 502 43 -244 502 46 -239 minecraft:iron_bars
+
+#Unlocked
+execute if block 502 43 -244 minecraft:iron_bars if entity @a[x=498,y=42,z=-246,dx=9,dy=5,dz=10,tag=Dialogue69] run playsound minecraft:entity.iron_golem.death ambient @a[x=498,y=42,z=-246,dx=9,dy=5,dz=10,tag=Dialogue69,scores={Cooldown=0}] ~ ~ ~ 1 1 1
+execute if block 502 43 -244 minecraft:iron_bars if entity @a[x=498,y=42,z=-246,dx=9,dy=5,dz=10,tag=Dialogue69] run scoreboard players set @a[x=498,y=42,z=-246,dx=9,dy=5,dz=10,tag=Dialogue69,scores={Cooldown=0}] Cooldown 10
+execute if block 502 43 -244 minecraft:iron_bars if entity @a[x=498,y=42,z=-246,dx=9,dy=5,dz=10,tag=Dialogue69] run fill 502 43 -244 502 46 -239 minecraft:air
+
+
+#Goldenrod Underground iron door unlock
+#Locked
+execute if block 480 55 -321 minecraft:air if entity @a[x=480,y=54,z=-326,distance=..25] run fill 478 57 -322 479 55 -324 air
+execute if block 480 55 -321 minecraft:air if entity @a[x=480,y=54,z=-326,distance=..25] run clone -728 66 -333 -726 64 -334 479 55 -322
+
+#Unlocked
+execute if block 480 55 -321 minecraft:iron_block if entity @a[x=480,y=54,z=-326,distance=..10,tag=Dialogue66] run playsound minecraft:entity.iron_golem.death ambient @a[x=480,y=54,z=-326,distance=..10,tag=Dialogue66,scores={Cooldown=0}] ~ ~ ~ 1 1 1
+execute if block 480 55 -321 minecraft:iron_block if entity @a[x=480,y=54,z=-326,distance=..10,tag=Dialogue66] run scoreboard players set @a[x=480,y=54,z=-326,distance=..10,tag=Dialogue66,scores={Cooldown=0}] Cooldown 10
+execute if block 480 55 -321 minecraft:iron_block if entity @a[x=480,y=54,z=-326,distance=..10,tag=Dialogue66] run clone -724 66 -333 -723 64 -335 478 55 -324
+execute if block 480 55 -321 minecraft:iron_block if entity @a[x=480,y=54,z=-326,distance=..10,tag=Dialogue66] run fill 481 55 -322 479 57 -321 air
+
+
+#Rocket HQ Admin Room Gate
+#TEST
+execute if block -105 37 187 minecraft:air if entity @a[x=-107,y=33,z=181,distance=..25] run fill -105 37 187 -98 34 187 minecraft:iron_bars
+
+execute if block -105 37 187 minecraft:iron_bars if entity @a[x=-107,y=33,z=181,dx=11,dy=5,dz=12,tag=Dialogue56,tag=Dialogue57,scores={TalkTime=0}] run fill -105 37 187 -98 34 187 minecraft:air
+
+
+#Rocket HQ Generator Room
+#TEST
+execute if block -122 45 175 minecraft:air if entity @a[x=-124,y=44,z=168,dx=12,dy=5,dz=12,tag=!Dialogue63,scores={TalkTime=0}] run fill -122 45 175 -114 48 175 minecraft:iron_bars
+
+execute if block -122 45 175 minecraft:iron_bars if entity @a[x=-124,y=44,z=168,distance=..25,tag=Dialogue63,scores={TalkTime=0}] run fill -122 45 175 -114 48 175 minecraft:air
+
+
+#Elite Four Gates
+#TEST
+#Will
+execute if block -1288 67 446 minecraft:air if entity @a[x=-1287,y=67,z=446,distance=..25] run clone -730 64 -328 -728 67 -328 -1289 67 446
+
+execute if block -1288 67 446 minecraft:quartz_pillar if entity @a[x=-1287,y=67,z=446,distance=..15,tag=Dialogue87] run playsound minecraft:entity.iron_golem.death ambient @a[x=-1287,y=67,z=446,distance=..15,tag=Dialogue87,scores={Cooldown=0}] ~ ~ ~ 1 1 1
+execute if block -1288 67 446 minecraft:quartz_pillar if entity @a[x=-1287,y=67,z=446,distance=..15,tag=Dialogue87] run scoreboard players set @a[x=-1287,y=67,z=446,distance=..15,tag=Dialogue87,scores={Cooldown=0}] Cooldown 10
+execute if block -1288 67 446 minecraft:quartz_pillar if entity @a[x=-1287,y=67,z=446,distance=..15,tag=Dialogue87] run fill -1287 67 446 -1289 70 446 air
+
+#Koga
+execute if block -1288 67 523 minecraft:air if entity @a[x=-1287,y=67,z=523,distance=..25] run clone -730 64 -328 -728 67 -328 -1289 67 523
+
+execute if block -1288 67 523 minecraft:quartz_pillar if entity @a[x=-1287,y=67,z=523,distance=..15,tag=Dialogue89] run playsound minecraft:entity.iron_golem.death ambient @a[x=-1287,y=67,z=523,distance=..15,tag=Dialogue89,scores={Cooldown=0}] ~ ~ ~ 1 1 1
+execute if block -1288 67 523 minecraft:quartz_pillar if entity @a[x=-1287,y=67,z=523,distance=..15,tag=Dialogue89] run scoreboard players set @a[x=-1287,y=67,z=523,distance=..15,tag=Dialogue89,scores={Cooldown=0}] Cooldown 10
+execute if block -1288 67 523 minecraft:quartz_pillar if entity @a[x=-1287,y=67,z=523,distance=..15,tag=Dialogue89] run fill -1287 67 523 -1289 70 523 air
+
+#Bruno
+execute if block -1288 70 599 minecraft:air if entity @a[x=-1287,y=70,z=599,distance=..25] run clone -730 64 -328 -728 67 -328 -1289 70 599
+
+execute if block -1288 70 599 minecraft:quartz_pillar if entity @a[x=-1287,y=70,z=599,distance=..15,tag=Dialogue91] run playsound minecraft:entity.iron_golem.death ambient @a[x=-1287,y=70,z=599,distance=..15,tag=Dialogue91,scores={Cooldown=0}] ~ ~ ~ 1 1 1
+execute if block -1288 70 599 minecraft:quartz_pillar if entity @a[x=-1287,y=70,z=599,distance=..15,tag=Dialogue91] run scoreboard players set @a[x=-1287,y=70,z=599,distance=..15,tag=Dialogue91,scores={Cooldown=0}] Cooldown 10
+execute if block -1288 70 599 minecraft:quartz_pillar if entity @a[x=-1287,y=70,z=599,distance=..15,tag=Dialogue91] run fill -1287 70 599 -1289 73 599 air
+
+#Karen
+execute if block -1288 73 675 minecraft:air if entity @a[x=-1287,y=73,z=675,distance=..25] run clone -730 64 -328 -728 67 -328 -1289 73 675
+
+execute if block -1288 73 675 minecraft:quartz_pillar if entity @a[x=-1287,y=73,z=675,distance=..15,tag=Dialogue93] run playsound minecraft:entity.iron_golem.death ambient @a[x=-1287,y=73,z=675,distance=..15,tag=Dialogue93,scores={Cooldown=0}] ~ ~ ~ 1 1 1
+execute if block -1288 73 675 minecraft:quartz_pillar if entity @a[x=-1287,y=73,z=675,distance=..15,tag=Dialogue93] run scoreboard players set @a[x=-1287,y=73,z=675,distance=..15,tag=Dialogue93,scores={Cooldown=0}] Cooldown 10
+execute if block -1288 73 675 minecraft:quartz_pillar if entity @a[x=-1287,y=73,z=675,distance=..15,tag=Dialogue93] run fill -1287 76 675 -1289 73 675 air
+
+#Lance
+execute if block -1288 78 750 minecraft:air if entity @a[x=-1293,y=77,z=738,distance=..15] run clone -730 64 -328 -726 68 -328 -1290 78 750
+
+execute if block -1288 78 750 minecraft:air if entity @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95] run playsound minecraft:entity.iron_golem.death ambient @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95,scores={Cooldown=0}] ~ ~ ~ 1 1 1
+execute if block -1288 78 750 minecraft:air if entity @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95] run scoreboard players set @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95,scores={Cooldown=0}] Cooldown 10
+execute if block -1288 78 750 minecraft:air if entity @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95] run fill -1290 78 750 -1286 82 750 air
+
+
+
+#REMATCH GATES
+
+#Will
+execute if block -1341 67 446 minecraft:air if entity @a[x=-1341,y=67,z=446,distance=..25] run clone -730 64 -328 -728 67 -328 -1342 67 446
+
+execute if block -1341 67 446 minecraft:quartz_pillar if entity @a[x=-1341,y=67,z=446,distance=..15,tag=Dialogue87] run playsound minecraft:entity.iron_golem.death ambient @a[x=-1341,y=67,z=446,distance=..15,tag=Dialogue87,scores={Cooldown=0}] ~ ~ ~ 1 1 1
+execute if block -1341 67 446 minecraft:quartz_pillar if entity @a[x=-1341,y=67,z=446,distance=..15,tag=Dialogue87] run scoreboard players set @a[x=-1341,y=67,z=446,distance=..15,tag=Dialogue87,scores={Cooldown=0}] Cooldown 10
+execute if block -1341 67 446 minecraft:quartz_pillar if entity @a[x=-1341,y=67,z=446,distance=..15,tag=Dialogue87] run fill -1342 67 446 -1340 70 446 air
+
+#Koga
+execute if block -1341 67 523 minecraft:air if entity @a[x=-1342,y=67,z=523,distance=..25] run clone -730 64 -328 -728 67 -328 -1342 67 523
+
+execute if block -1341 67 523 minecraft:quartz_pillar if entity @a[x=-1342,y=67,z=523,distance=..15,tag=Dialogue89] run playsound minecraft:entity.iron_golem.death ambient @a[x=-1342,y=67,z=523,distance=..15,tag=Dialogue89,scores={Cooldown=0}] ~ ~ ~ 1 1 1
+execute if block -1341 67 523 minecraft:quartz_pillar if entity @a[x=-1342,y=67,z=523,distance=..15,tag=Dialogue89] run scoreboard players set @a[x=-1342,y=67,z=523,distance=..15,tag=Dialogue89,scores={Cooldown=0}] Cooldown 10
+execute if block -1341 67 523 minecraft:quartz_pillar if entity @a[x=-1342,y=67,z=523,distance=..15,tag=Dialogue89] run fill -1342 67 523 -1340 70 523 air
+
+#Bruno
+execute if block -1341 70 599 minecraft:air if entity @a[x=-1342,y=70,z=599,distance=..25] run clone -730 64 -328 -728 67 -328 -1342 70 599
+
+execute if block -1341 70 599 minecraft:quartz_pillar if entity @a[x=-1342,y=70,z=599,distance=..15,tag=Dialogue91] run playsound minecraft:entity.iron_golem.death ambient @a[x=-1342,y=70,z=599,distance=..15,tag=Dialogue91,scores={Cooldown=0}] ~ ~ ~ 1 1 1
+execute if block -1341 70 599 minecraft:quartz_pillar if entity @a[x=-1342,y=70,z=599,distance=..15,tag=Dialogue91] run scoreboard players set @a[x=-1342,y=70,z=599,distance=..15,tag=Dialogue91,scores={Cooldown=0}] Cooldown 10
+execute if block -1341 70 599 minecraft:quartz_pillar if entity @a[x=-1342,y=70,z=599,distance=..15,tag=Dialogue91] run fill -1342 70 599 -1340 73 599 air
+
+#Karen
+execute if block -1341 73 675 minecraft:air if entity @a[x=-1342,y=73,z=675,distance=..25] run clone -730 64 -328 -728 67 -328 -1342 73 675
+
+execute if block -1341 73 675 minecraft:quartz_pillar if entity @a[x=-1342,y=73,z=675,distance=..15,tag=Dialogue93] run playsound minecraft:entity.iron_golem.death ambient @a[x=-1342,y=73,z=675,distance=..15,tag=Dialogue93,scores={Cooldown=0}] ~ ~ ~ 1 1 1
+execute if block -1341 73 675 minecraft:quartz_pillar if entity @a[x=-1342,y=73,z=675,distance=..15,tag=Dialogue93] run scoreboard players set @a[x=-1342,y=73,z=675,distance=..15,tag=Dialogue93,scores={Cooldown=0}] Cooldown 10
+execute if block -1341 73 675 minecraft:quartz_pillar if entity @a[x=-1342,y=73,z=675,distance=..15,tag=Dialogue93] run fill -1342 73 675 -1340 76 675 air
+
+#Lance
+execute if block -1341 78 750 minecraft:air if entity @a[x=-1341,y=78,z=750,distance=..15] run clone -730 64 -328 -726 68 -328 -1343 78 750
+
+execute if block -1341 78 750 minecraft:air if entity @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95] run playsound minecraft:entity.iron_golem.death ambient @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95,scores={Cooldown=0}] ~ ~ ~ 1 1 1
+execute if block -1341 78 750 minecraft:air if entity @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95] run scoreboard players set @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95,scores={Cooldown=0}] Cooldown 10
+execute if block -1341 78 750 minecraft:air if entity @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95] run fill -1343 78 750 -1339 82 750 air
+
+
+
+#Tps player from Rematched Hall of Fame to real Hall of Fame room
+#TEST
+execute at @a[x=-1354,y=77,z=751,dx=24,dy=10,dz=34] run tp @a[x=-1354,y=77,z=751,dx=24,dy=10,dz=34] ~53 ~ ~
 
 
 
 
+#Whirlpools
+#TEST
+#Whirl Islands
+#Northeast whirlpool
+execute if entity @a[x=912,y=61,z=-364,distance=..25,tag=!Dialogue64] run clone -714 66 -333 -720 72 -327 909 58 -367
 
+execute if entity @a[x=912,y=61,z=-364,distance=..15,tag=Dialogue64] run fill 909 48 -360 915 64 -367 minecraft:air replace minecraft:barrier
+execute if entity @a[x=912,y=61,z=-364,distance=..15,tag=Dialogue64] run fill 909 48 -360 915 63 -367 minecraft:water
 
+#Northwest
+execute if entity @a[x=1024,y=61,z=-282,distance=..25,tag=!Dialogue64] run clone -714 66 -333 -720 72 -327 1021 58 -285
 
+execute if entity @a[x=1024,y=61,z=-282,distance=..15,tag=Dialogue64] run fill 1027 53 -286 1021 64 -279 minecraft:air replace minecraft:barrier
+execute if entity @a[x=1024,y=61,z=-282,distance=..15,tag=Dialogue64] run fill 1027 53 -286 1021 63 -279 minecraft:water
 
+#Southwest
+execute if entity @a[x=1114,y=61,z=-396,distance=..25,tag=!Dialogue64] run clone -714 66 -333 -720 72 -327 1111 58 -400
 
+execute if entity @a[x=1114,y=61,z=-396,distance=..15,tag=Dialogue64] run fill 1111 56 -394 1117 64 -400 minecraft:air replace minecraft:barrier
+execute if entity @a[x=1114,y=61,z=-396,distance=..15,tag=Dialogue64] run fill 1111 56 -394 1117 63 -400 minecraft:water
 
+#Southeast
+execute if entity @a[x=991,y=61,z=-500,distance=..25,tag=!Dialogue64] run clone -714 66 -333 -720 72 -327 988 58 -499
+
+execute if entity @a[x=991,y=61,z=-500,distance=..15,tag=Dialogue64] run fill 988 58 -493 994 64 -499 minecraft:air replace minecraft:barrier
+execute if entity @a[x=991,y=61,z=-500,distance=..15,tag=Dialogue64] run fill 988 58 -493 994 63 -499 minecraft:water
 
 
 #-------------------------------------------------------------------------------------------------------------------------
