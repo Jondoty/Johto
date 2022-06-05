@@ -8,7 +8,7 @@
             "text": "Help Professor Elm with his research"
         },
         "icon": {
-            "item": "minecraft:record_wait"
+            "item": "minecraft:music_disc_wait"
         },
         "frame": "task",
         "show_toast": true,

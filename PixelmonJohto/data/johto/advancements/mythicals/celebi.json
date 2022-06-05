@@ -23,6 +23,6 @@
         }
     },
     "rewards": {
-        "function": "catch:celebi"
+        "function": "johto:catch/celebi"
     }
 }

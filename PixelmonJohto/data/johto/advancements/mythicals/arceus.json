@@ -23,6 +23,6 @@
         }
     },
     "rewards": {
-        "function": "catch:arceus"
+        "function": "johto:catch/arceus"
     }
 }
