@@ -291,9 +291,13 @@ tp @a[x=-1130,y=65,z=529,dx=9,dy=6] 809 64 15
 #--------------------------------------------------
 #Mahogany Town
 
+#Rocket HQ portal back to start
+playsound minecraft:flee ambient @a[x=-80,y=53,z=162,dx=1,dy=5,dz=1] ~ ~ ~ 1 1 1
+tp @a[x=-80,y=53,z=162,dx=1,dy=5,dz=1] -172 54 215 -90 -25
+
 #Pre-Rocket HQ
 tellraw @a[x=-128,y=64,z=155,dx=4,dy=3,dz=10,tag=!Dialogue64] {"text":"<Sightseer> Since you came this far take the time to do some sightseeing. You should check out the Lake of Rage right now."}
-tp @a[x=-128,y=64,z=161,dx=4,dy=3,tag=!Dialogue64] ~ ~ ~-5
+execute at @a[x=-128,y=64,z=161,dx=4,dy=3,tag=!Dialogue64] run tp @a[x=-128,y=64,z=161,dx=4,dy=3,tag=!Dialogue64] ~ ~ ~-5
 
 #Post-Rocket HQ
 playsound door ambient @a[x=-128,y=64,z=161,dx=4,dy=3,tag=Dialogue64] ~ ~ ~ 100 1 1
