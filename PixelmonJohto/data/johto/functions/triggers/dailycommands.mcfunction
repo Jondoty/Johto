@@ -88,7 +88,7 @@ tag @a[tag=Dialogue107] add GSBallReady
 
 
 #Disables Mega Stones if active
-setblock -808 64 -336 minecraft:iron_block
+setblock -778 64 -266 minecraft:iron_block
 
 
 #Resets Mr. Pokemon's Red Scale dialogue if player doesn't answer. Won't reactivate since scale is part of trigger
