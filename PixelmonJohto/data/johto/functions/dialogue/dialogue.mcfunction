@@ -2725,7 +2725,7 @@ tag @s[scores={DialogueTrigger=128,TalkTime=1..}] add Dialogue128
 execute as @s[scores={DialogueTrigger=129,TalkTime=1}] run clear @s minecraft:nether_brick
 tellraw @s[scores={DialogueTrigger=129,TalkTime=1}] {"text":"<Red> ...!"}
 
-execute as @s[scores={DialogueTrigger=129,TalkTime=6}] run playsound entity.enderdragon.death ambient @s ~ ~ ~ 1000 1 1
+execute as @s[scores={DialogueTrigger=129,TalkTime=6}] run playsound minecraft:entity.ender_dragon.death ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=129,TalkTime=8}] {"text":"<Red> .................. .................."}
 
 #Blinds player
@@ -2997,13 +2997,13 @@ tag @s[scores={DialogueTrigger=142,TalkTime=45..}] add Dialogue142
 #Give Kyogre Orb
 tellraw @s[scores={DialogueTrigger=143,TalkTime=1,Groudon=1..}] {"text":"<Mr. Pokémon> Wow! That Red Orb summoned Groudon? Incredible!"}
 tellraw @s[scores={DialogueTrigger=143,TalkTime=11,Groudon=1..}] {"text":"<Mr. Pokémon> So I suppose this Blue Orb summons Kyogre?"}
-execute as @s[scores={DialogueTrigger=143,TalkTime=15,Groudon=1..}] run give @s minecraft:iron_horse_armor{display:{Lore:["A shiny blue orb that is said","to have a legend tied to it. It's","known to have a deep connection","with the Hoenn region."]}}
+execute as @s[scores={DialogueTrigger=143,TalkTime=15,Groudon=1..}] run give @s golden_horse_armor{display:{Name:'[{"text":"Blue Orb","italic":false,"color":"dark_aqua"}]',Lore:['[{"text":"A shiny blue orb that is said","italic":false}]','[{"text":"to have a legend tied to it. It\'s","italic":false}]','[{"text":"known to have a deep connection","italic":false}]','[{"text":"with the Hoenn region.","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 1
 execute as @s[scores={DialogueTrigger=143,TalkTime=15,Groudon=1..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 #Give Groudon Orb
 tellraw @s[scores={DialogueTrigger=143,TalkTime=1,Kyogre=1..}] {"text":"<Mr. Pokémon> Wow! That Blue Orb summoned Kyogre? Incredible!"}
 tellraw @s[scores={DialogueTrigger=143,TalkTime=11,Kyogre=1..}] {"text":"<Mr. Pokémon> So I suppose this Red Orb summons Groudon?"}
-execute as @s[scores={DialogueTrigger=143,TalkTime=15,Kyogre=1..}] run give @s minecraft:golden_horse_armor{display:{Lore:["A shiny red orb that is said","to have a legend tied to it. It's","known to have a deep connection","with the Hoenn region."]}}
+execute as @s[scores={DialogueTrigger=143,TalkTime=15,Kyogre=1..}] run give @s minecraft:golden_horse_armor{display:{Name:'[{"text":"Red Orb","italic":false,"color":"dark_red"}]',Lore:['[{"text":"A shiny red orb that is said","italic":false}]','[{"text":"to have a legend tied to it. It\'s","italic":false}]','[{"text":"known to have a deep connection","italic":false}]','[{"text":"with the Hoenn region.","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 1
 execute as @s[scores={DialogueTrigger=143,TalkTime=15,Kyogre=1..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tag @s[scores={DialogueTrigger=143,TalkTime=15..}] add Dialogue143
@@ -3015,7 +3015,7 @@ tag @s[scores={DialogueTrigger=143,TalkTime=15..}] add Dialogue143
 
 tellraw @s[scores={DialogueTrigger=144,TalkTime=1}] {"text":"<Mr. Pokémon> I am amazed!"}
 tellraw @s[scores={DialogueTrigger=144,TalkTime=7}] {"text":"<Mr. Pokémon> So if each color is to a legendary Pokémon, this Green Orb would be to Rayquaza, right?"}
-execute as @s[scores={DialogueTrigger=144,TalkTime=12}] run give @s minecraft:diamond_horse_armor{display:{Lore:["A shiny green orb that is said","to have a legend tied to it. It's","known to have a deep connection","with the Hoenn region."]}}
+execute as @s[scores={DialogueTrigger=144,TalkTime=12}] run give @s diamond_horse_armor{display:{Name:'[{"text":"Jade Orb","italic":false,"color":"dark_green"}]',Lore:['[{"text":"A shiny green orb that is said","italic":false}]','[{"text":"to have a legend tied to it. It\'s","italic":false}]','[{"text":"known to have a deep connection","italic":false}]','[{"text":"with the Hoenn region.","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 1
 execute as @s[scores={DialogueTrigger=144,TalkTime=12}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=144,TalkTime=19}] {"text":"<Mr. Pokémon> Fascinating! Thank you for doing all this."}
 
@@ -3542,7 +3542,7 @@ tellraw @s[scores={DialogueTrigger=167,TalkTime=19}] {"text":"<Archaeologist> Yo
 
 #Kill ground Flute
 execute as @s[scores={DialogueTrigger=167,TalkTime=24}] run kill @e[x=176,y=63,z=-141,dy=2,type=item]
-execute as @s[scores={DialogueTrigger=167,TalkTime=24}] run give @s pixelmon:azure_flute{display:{Lore:["A flute that puts out echoing","sounds that do not seem to be of","this world. No one knows who made","it. It seems to call to the","highest mountains."]}}
+execute as @s[scores={DialogueTrigger=167,TalkTime=24}] run give @s stone{display:{Name:'[{"text":"Azure Flute","italic":false,"color":"yellow"}]',Lore:['[{"text":"A flute that puts out echoing","italic":false}]','[{"text":"sounds that do not seem to be of","italic":false}]','[{"text":"this world. No one knows who made","italic":false}]','[{"text":"it. It seems to call to the","italic":false}]','[{"text":"highest mountains.","italic":false}]']}} 1
 execute as @s[scores={DialogueTrigger=167,TalkTime=24}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tellraw @s[scores={DialogueTrigger=167,TalkTime=27}] {"text":"<Archaeologist> The Flute is said to call upon the mythical Pokemon Arceus atop Mt. Coronet, but that is unreachable to us..."}
@@ -5136,7 +5136,7 @@ tag @s[scores={DialogueTrigger=232,TalkTime=37..}] add Dialogue232
 #Suicune Spawn after Eusine talk
 #execute as @s[x=-3111,y=64,z=989,distance=..5,score_TalkTime=0,tag=!Dialogue233] run scoreboard players set @s[tag=Dialogue232] DialogueTrigger 233
 
-#execute as @s[scores={DialogueTrigger=233,TalkTime=1}] run pokebattle @s Suicune,lvl:40,gr:7
+execute as @s[scores={DialogueTrigger=233,TalkTime=1}] run pokebattle @s Suicune,lvl:40,gr:7
 execute as @s[scores={DialogueTrigger=233,TalkTime=2}] run scoreboard players set @s click 1
 execute as @s[scores={DialogueTrigger=233,TalkTime=1}] run playsound suicune hostile @s ~ ~ ~ 1 1 1
 
