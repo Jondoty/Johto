@@ -311,182 +311,182 @@ execute as @a[scores={TriggerCommand=56}] run scoreboard players set @s TriggerC
 
 
 
-#57 - Moltres Reset
-#scoreboard players set @a TriggerCommand 57 {Inventory:[{id:"minecraft:chainmail_helmet"}]}
-execute as @a[scores={TriggerCommand=57}] run clear @s minecraft:chainmail_helmet
-execute as @a[scores={TriggerCommand=57}] run tellraw @s {"text":"You can encounter Moltres again in a half an hour.","italic":true}
-execute as @a[scores={TriggerCommand=57}] run scoreboard players set @s Moltres 0
-execute as @a[scores={TriggerCommand=57}] run tag @s remove Dialogue160
-execute as @a[scores={TriggerCommand=57}] run scoreboard players set @s MoltresCD 7
-execute as @a[scores={TriggerCommand=57}] run scoreboard players set @s TriggerCommand 0
-
-
-#58 - Articuno Reset
-#scoreboard players set @a TriggerCommand 58 {Inventory:[{id:"minecraft:chainmail_boots"}]}
-execute as @a[scores={TriggerCommand=58}] run clear @s minecraft:chainmail_boots
-execute as @a[scores={TriggerCommand=58}] run tellraw @s {"text":"You can encounter Articuno again in a half an hour.","italic":true}
-execute as @a[scores={TriggerCommand=58}] run scoreboard players set @s Articuno 0
-execute as @a[scores={TriggerCommand=58}] run tag @s remove Dialogue158
-execute as @a[scores={TriggerCommand=58}] run scoreboard players set @s ArticunoCD 7
-execute as @a[scores={TriggerCommand=58}] run scoreboard players set @s TriggerCommand 0
-
-
-#59 - Zapdos Reset
-#scoreboard players set @a TriggerCommand 59 {Inventory:[{id:"minecraft:chainmail_chestplate"}]}
-execute as @a[scores={TriggerCommand=59}] run clear @s minecraft:chainmail_chestplate
-execute as @a[scores={TriggerCommand=59}] run tellraw @s {"text":"You can encounter Zapdos again in a half an hour.","italic":true}
-execute as @a[scores={TriggerCommand=59}] run scoreboard players set @s Zapdos 0
-execute as @a[scores={TriggerCommand=59}] run tag @s remove Dialogue159
-execute as @a[scores={TriggerCommand=59}] run scoreboard players set @s ZapdosCD 7
-execute as @a[scores={TriggerCommand=59}] run scoreboard players set @s TriggerCommand 0
-
-
-#60 - Arceus Reset
-#scoreboard players set @a TriggerCommand 60 {Inventory:[{id:"minecraft:diamond_chestplate"}]}
-execute as @a[scores={TriggerCommand=60}] run clear @s minecraft:diamond_chestplate
-execute as @a[scores={TriggerCommand=60}] run tellraw @s {"text":"You can encounter Arceus again, and will be given another flute, in a half an hour.","italic":true}
-execute as @a[scores={TriggerCommand=60}] run scoreboard players set @s ArceusCD 7
-execute as @a[scores={TriggerCommand=60}] run scoreboard players set @s TriggerCommand 0
-
-
-#61 - Rayquaza Reset
-#scoreboard players set @a TriggerCommand 61 {Inventory:[{id:"minecraft:iron_leggings"}]}
-execute as @a[scores={TriggerCommand=61}] run clear @s minecraft:iron_leggings
-execute as @a[scores={TriggerCommand=61}] run give @s minecraft:diamond_horse_armor{display:{Name:"Jade Orb",Lore:["A shiny green orb that is said","to have a legend tied to it. It's","known to have a deep connection","with the Hoenn region."]},ench:[{id:"2",lvl:"1"}]}
-execute as @a[scores={TriggerCommand=61}] run tellraw @s {"text":"You can encounter Rayquaza again in a half an hour.","italic":true}
-execute as @a[scores={TriggerCommand=61}] run scoreboard players set @s RayquazaCD 6
-execute as @a[scores={TriggerCommand=61}] run scoreboard players set @s TriggerCommand 0
-
-
-#62 - Kyogre Reset
-#scoreboard players set @a TriggerCommand 62 {Inventory:[{id:"minecraft:iron_chestplate"}]}
-execute as @a[scores={TriggerCommand=62}] run clear @s minecraft:iron_chestplate
-execute as @a[scores={TriggerCommand=62}] run give @s minecraft:iron_horse_armor{display:{Name:"Blue Orb",Lore:["A shiny blue orb that is said","to have a legend tied to it. It's","known to have a deep connection","with the Hoenn region."]},ench:[{id:"2",lvl:"1"}]}
-execute as @a[scores={TriggerCommand=62}] run tellraw @s {"text":"You can encounter Kyogre again in a half an hour.","italic":true}
-execute as @a[scores={TriggerCommand=62}] run scoreboard players set @s KyogreCD 6
-execute as @a[scores={TriggerCommand=62}] run scoreboard players set @s TriggerCommand 0
-
-
-#63 - Groudon Reset
-#scoreboard players set @a TriggerCommand 63 {Inventory:[{id:"minecraft:iron_helmet"}]}
-execute as @a[scores={TriggerCommand=63}] run clear @s minecraft:iron_helmet
-execute as @a[scores={TriggerCommand=63}] run give @s minecraft:golden_horse_armor{display:{Name:"Red Orb",Lore:["A shiny red orb that is said","to have a legend tied to it. It's","known to have a deep connection","with the Hoenn region."]},ench:[{id:"2",lvl:"1"}]}
-execute as @a[scores={TriggerCommand=63}] run tellraw @s {"text":"You can encounter Groudon again in a half an hour.","italic":true}
-execute as @a[scores={TriggerCommand=63}] run scoreboard players set @s GroudonCD 6
-execute as @a[scores={TriggerCommand=63}] run scoreboard players set @s TriggerCommand 0
-
-
-#64 - Mew Reset
-#scoreboard players set @a TriggerCommand 64 {Inventory:[{id:"minecraft:diamond_boots"}]}
-execute as @a[scores={TriggerCommand=64}] run clear @s minecraft:diamond_boots
-execute as @a[scores={TriggerCommand=64}] run scoreboard players set @s Mew 0
-execute as @a[scores={TriggerCommand=64}] run tellraw @s {"text":"You can encounter Mew again in a half an hour.","italic":true}
-execute as @a[scores={TriggerCommand=64}] run scoreboard players set @s MewCD 6
-execute as @a[scores={TriggerCommand=64}] run scoreboard players set @s TriggerCommand 0
-
-
-#65 - Mewtwo Reset
-#scoreboard players set @a TriggerCommand 65 {Inventory:[{id:"minecraft:chainmail_leggings"}]}
-execute as @a[scores={TriggerCommand=65}] run clear @s minecraft:chainmail_leggings
-execute as @a[scores={TriggerCommand=65}] run scoreboard players set @s Mewtwo 0
-execute as @a[scores={TriggerCommand=65}] run tellraw @s {"text":"You can encounter Mewtwo again in a half an hour.","italic":true}
-execute as @a[scores={TriggerCommand=65}] run scoreboard players set @s MewtwoCD 6
-execute as @a[scores={TriggerCommand=65}] run scoreboard players set @s TriggerCommand 0
-
-
-#66 - Ho-Oh Reset
-#scoreboard players set @a TriggerCommand 66 {Inventory:[{id:"minecraft:iron_boots"}]}
-execute as @a[scores={TriggerCommand=66}] run clear @s minecraft:iron_boots
-execute as @a[scores={TriggerCommand=66}] run give @s minecraft:prismarine_crystals{display:{Name:"Rainbow Wing",Lore:["A strange, rainbow feather","that sparkles."]},ench:[{id:"2",lvl:"1"}]}
-execute as @a[scores={TriggerCommand=66}] run tellraw @s {"text":"You can encounter Ho-Oh again in a half an hour.","italic":true}
-execute as @a[scores={TriggerCommand=66}] run tag @s remove Dialogue104
-execute as @a[scores={TriggerCommand=66}] run scoreboard players set @s HoohCD 6
-execute as @a[scores={TriggerCommand=66}] run scoreboard players set @s TriggerCommand 0
-
-
-#67 - Lugia Reset
-#scoreboard players set @a TriggerCommand 67 {Inventory:[{id:"minecraft:golden_leggings"}]}
-execute as @a[scores={TriggerCommand=67}] run clear @s minecraft:golden_leggings
-execute as @a[scores={TriggerCommand=67}] run give @s minecraft:prismarine_shard{display:{Name:"Silver Wing",Lore:["A strange, silvery feather","that sparkles."]},ench:[{id:"2",lvl:"1"}]}
-execute as @a[scores={TriggerCommand=67}] run tellraw @s {"text":"You can encounter Lugia again in a half an hour.","italic":true}
-execute as @a[scores={TriggerCommand=67}] run tag @s remove Dialogue103
-execute as @a[scores={TriggerCommand=67}] run scoreboard players set @s LugiaCD 6
-execute as @a[scores={TriggerCommand=67}] run scoreboard players set @s TriggerCommand 0
-
-
-#68 - Suicune Reset
-#scoreboard players set @a TriggerCommand 68 {Inventory:[{id:"minecraft:golden_helmet"}]}
-execute as @a[scores={TriggerCommand=68}] run clear @s minecraft:golden_helmet
-execute as @a[scores={TriggerCommand=68}] run scoreboard players set @s DogEncounter 1
-execute as @a[scores={TriggerCommand=68}] run scoreboard players set @s Suicune 0
-execute as @a[scores={TriggerCommand=68}] run tellraw @s {"text":"You can encounter Suicune again in a half an hour.","italic":true}
-execute as @a[scores={TriggerCommand=68}] run scoreboard players set @s SuicuneCD 6
-execute as @a[scores={TriggerCommand=68}] run scoreboard players set @s TriggerCommand 0
-
-
-#69 - Entei Reset
-#scoreboard players set @a TriggerCommand 69 {Inventory:[{id:"minecraft:golden_chestplate"}]}
-execute as @a[scores={TriggerCommand=69}] run clear @s golden_chestplate
-execute as @a[scores={TriggerCommand=69}] run scoreboard players set @s DogEncounter 1
-execute as @a[scores={TriggerCommand=69}] run tellraw @s {"text":"You can encounter Entei again in a half an hour.","italic":true}
-execute as @a[scores={TriggerCommand=69}] run scoreboard players set @s Entei 0
-execute as @a[scores={TriggerCommand=69}] run scoreboard players set @s EnteiCD 6
-execute as @a[scores={TriggerCommand=69}] run scoreboard players set @s TriggerCommand 0
-
-
-#70 - Raikou Reset
-#scoreboard players set @a TriggerCommand 70 {Inventory:[{id:"minecraft:golden_boots"}]}
-execute as @a[scores={TriggerCommand=70}] run clear @s minecraft:golden_boots
-execute as @a[scores={TriggerCommand=70}] run scoreboard players set @s DogEncounter 1
-execute as @a[scores={TriggerCommand=70}] run tellraw @s {"text":"You can encounter Raikou again in a half an hour.","italic":true}
-execute as @a[scores={TriggerCommand=70}] run scoreboard players set @s Raikou 0
-execute as @a[scores={TriggerCommand=70}] run scoreboard players set @s RaikouCD 6
-execute as @a[scores={TriggerCommand=70}] run scoreboard players set @s TriggerCommand 0
-
-
-#71 - Latios Reset
-#scoreboard players set @a TriggerCommand 71 {Inventory:[{id:"minecraft:leather_chestplate"}]}
-execute as @a[scores={TriggerCommand=71}] run clear @s minecraft:leather_chestplate
-execute as @a[scores={TriggerCommand=71}] run tellraw @s {"text":"You can encounter Latios again in a half an hour.","italic":true}
-execute as @a[scores={TriggerCommand=71}] run scoreboard players set @s Latios 0
-execute as @a[scores={TriggerCommand=71}] run scoreboard players set @s LatiosCD 7
-execute as @a[scores={TriggerCommand=71}] run scoreboard players set @s TriggerCommand 0
-
-
-#72 - Latias Reset
-#scoreboard players set @a TriggerCommand 72 {Inventory:[{id:"pixelmon:aluminium_boots"}]}
-execute as @a[scores={TriggerCommand=72}] run clear @s pixelmon:aluminium_boots
-execute as @a[scores={TriggerCommand=72}] run tellraw @s {"text":"You can encounter Latias again in a half an hour.","italic":true}
-execute as @a[scores={TriggerCommand=72}] run scoreboard players set @s Latias 0
-execute as @a[scores={TriggerCommand=72}] run scoreboard players set @s LatiasCD 7
-execute as @a[scores={TriggerCommand=72}] run scoreboard players set @s TriggerCommand 0
-
-
-#73 - Giratina Reset
-#scoreboard players set @a TriggerCommand 73 {Inventory:[{id:"minecraft:diamond_leggings"}]}
-execute as @a[scores={TriggerCommand=73}] run clear @s minecraft:diamond_leggings
-execute as @a[scores={TriggerCommand=73}] run tellraw @s {"text":"You can encounter Giratina again in a half an hour.","italic":true}
-execute as @a[scores={TriggerCommand=73}] run give @s pixelmon:griseous_orb{display:{Lore:["A glowing orb containing","the essence of Giratina"]}}
-execute as @a[scores={TriggerCommand=73}] run scoreboard players set @s GiratinaCD 7
-execute as @a[scores={TriggerCommand=73}] run scoreboard players set @s TriggerCommand 0
-
-
-#74 - Palkia Reset
-#scoreboard players set @a TriggerCommand 74 {Inventory:[{id:"minecraft:diamond_helmet"}]}
-execute as @a[scores={TriggerCommand=74}] run clear @s minecraft:diamond_helmet
-execute as @a[scores={TriggerCommand=74}] run tellraw @s {"text":"You can encounter Palkia again in a half an hour.","italic":true}
-execute as @a[scores={TriggerCommand=74}] run give @s pixelmon:lustrous_orb{display:{Lore:["A glowing orb containing","the essence of Palkia"]}}
-execute as @a[scores={TriggerCommand=74}] run scoreboard players set @s PalkiaCD 7
-execute as @a[scores={TriggerCommand=74}] run scoreboard players set @s TriggerCommand 0
-
-
-#75 - Dialga Reset
-#scoreboard players set @a TriggerCommand 75 {Inventory:[{id:"minecraft:leather_helmet"}]}
-execute as @a[scores={TriggerCommand=75}] run clear @s minecraft:leather_helmet
-execute as @a[scores={TriggerCommand=75}] run tellraw @s {"text":"You can encounter Dialga again in a half an hour.","italic":true}
-execute as @a[scores={TriggerCommand=75}] run give @s pixelmon:adamant_orb{display:{Lore:["A glowing orb containing","the essence of Dialga"]}}
-execute as @a[scores={TriggerCommand=75}] run scoreboard players set @s DialgaCD 7
-execute as @a[scores={TriggerCommand=75}] run scoreboard players set @s TriggerCommand 0
+##57 - Moltres Reset
+##scoreboard players set @a TriggerCommand 57 {Inventory:[{id:"minecraft:chainmail_helmet"}]}
+#execute as @a[scores={TriggerCommand=57}] run clear @s minecraft:chainmail_helmet
+#execute as @a[scores={TriggerCommand=57}] run tellraw @s {"text":"You can encounter Moltres again in a half an hour.","italic":true}
+#execute as @a[scores={TriggerCommand=57}] run scoreboard players set @s Moltres 0
+#execute as @a[scores={TriggerCommand=57}] run tag @s remove Dialogue160
+#execute as @a[scores={TriggerCommand=57}] run scoreboard players set @s MoltresCD 7
+#execute as @a[scores={TriggerCommand=57}] run scoreboard players set @s TriggerCommand 0
+#
+#
+##58 - Articuno Reset
+##scoreboard players set @a TriggerCommand 58 {Inventory:[{id:"minecraft:chainmail_boots"}]}
+#execute as @a[scores={TriggerCommand=58}] run clear @s minecraft:chainmail_boots
+#execute as @a[scores={TriggerCommand=58}] run tellraw @s {"text":"You can encounter Articuno again in a half an hour.","italic":true}
+#execute as @a[scores={TriggerCommand=58}] run scoreboard players set @s Articuno 0
+#execute as @a[scores={TriggerCommand=58}] run tag @s remove Dialogue158
+#execute as @a[scores={TriggerCommand=58}] run scoreboard players set @s ArticunoCD 7
+#execute as @a[scores={TriggerCommand=58}] run scoreboard players set @s TriggerCommand 0
+#
+#
+##59 - Zapdos Reset
+##scoreboard players set @a TriggerCommand 59 {Inventory:[{id:"minecraft:chainmail_chestplate"}]}
+#execute as @a[scores={TriggerCommand=59}] run clear @s minecraft:chainmail_chestplate
+#execute as @a[scores={TriggerCommand=59}] run tellraw @s {"text":"You can encounter Zapdos again in a half an hour.","italic":true}
+#execute as @a[scores={TriggerCommand=59}] run scoreboard players set @s Zapdos 0
+#execute as @a[scores={TriggerCommand=59}] run tag @s remove Dialogue159
+#execute as @a[scores={TriggerCommand=59}] run scoreboard players set @s ZapdosCD 7
+#execute as @a[scores={TriggerCommand=59}] run scoreboard players set @s TriggerCommand 0
+#
+#
+##60 - Arceus Reset
+##scoreboard players set @a TriggerCommand 60 {Inventory:[{id:"minecraft:diamond_chestplate"}]}
+#execute as @a[scores={TriggerCommand=60}] run clear @s minecraft:diamond_chestplate
+#execute as @a[scores={TriggerCommand=60}] run tellraw @s {"text":"You can encounter Arceus again, and will be given another flute, in a half an hour.","italic":true}
+#execute as @a[scores={TriggerCommand=60}] run scoreboard players set @s ArceusCD 7
+#execute as @a[scores={TriggerCommand=60}] run scoreboard players set @s TriggerCommand 0
+#
+#
+##61 - Rayquaza Reset
+##scoreboard players set @a TriggerCommand 61 {Inventory:[{id:"minecraft:iron_leggings"}]}
+#execute as @a[scores={TriggerCommand=61}] run clear @s minecraft:iron_leggings
+#execute as @a[scores={TriggerCommand=61}] run give @s minecraft:diamond_horse_armor{display:{Name:"Jade Orb",Lore:["A shiny green orb that is said","to have a legend tied to it. It's","known to have a deep connection","with the Hoenn region."]},ench:[{id:"2",lvl:"1"}]}
+#execute as @a[scores={TriggerCommand=61}] run tellraw @s {"text":"You can encounter Rayquaza again in a half an hour.","italic":true}
+#execute as @a[scores={TriggerCommand=61}] run scoreboard players set @s RayquazaCD 6
+#execute as @a[scores={TriggerCommand=61}] run scoreboard players set @s TriggerCommand 0
+#
+#
+##62 - Kyogre Reset
+##scoreboard players set @a TriggerCommand 62 {Inventory:[{id:"minecraft:iron_chestplate"}]}
+#execute as @a[scores={TriggerCommand=62}] run clear @s minecraft:iron_chestplate
+#execute as @a[scores={TriggerCommand=62}] run give @s minecraft:iron_horse_armor{display:{Name:"Blue Orb",Lore:["A shiny blue orb that is said","to have a legend tied to it. It's","known to have a deep connection","with the Hoenn region."]},ench:[{id:"2",lvl:"1"}]}
+#execute as @a[scores={TriggerCommand=62}] run tellraw @s {"text":"You can encounter Kyogre again in a half an hour.","italic":true}
+#execute as @a[scores={TriggerCommand=62}] run scoreboard players set @s KyogreCD 6
+#execute as @a[scores={TriggerCommand=62}] run scoreboard players set @s TriggerCommand 0
+#
+#
+##63 - Groudon Reset
+##scoreboard players set @a TriggerCommand 63 {Inventory:[{id:"minecraft:iron_helmet"}]}
+#execute as @a[scores={TriggerCommand=63}] run clear @s minecraft:iron_helmet
+#execute as @a[scores={TriggerCommand=63}] run give @s minecraft:golden_horse_armor{display:{Name:"Red Orb",Lore:["A shiny red orb that is said","to have a legend tied to it. It's","known to have a deep connection","with the Hoenn region."]},ench:[{id:"2",lvl:"1"}]}
+#execute as @a[scores={TriggerCommand=63}] run tellraw @s {"text":"You can encounter Groudon again in a half an hour.","italic":true}
+#execute as @a[scores={TriggerCommand=63}] run scoreboard players set @s GroudonCD 6
+#execute as @a[scores={TriggerCommand=63}] run scoreboard players set @s TriggerCommand 0
+#
+#
+##64 - Mew Reset
+##scoreboard players set @a TriggerCommand 64 {Inventory:[{id:"minecraft:diamond_boots"}]}
+#execute as @a[scores={TriggerCommand=64}] run clear @s minecraft:diamond_boots
+#execute as @a[scores={TriggerCommand=64}] run scoreboard players set @s Mew 0
+#execute as @a[scores={TriggerCommand=64}] run tellraw @s {"text":"You can encounter Mew again in a half an hour.","italic":true}
+#execute as @a[scores={TriggerCommand=64}] run scoreboard players set @s MewCD 6
+#execute as @a[scores={TriggerCommand=64}] run scoreboard players set @s TriggerCommand 0
+#
+#
+##65 - Mewtwo Reset
+##scoreboard players set @a TriggerCommand 65 {Inventory:[{id:"minecraft:chainmail_leggings"}]}
+#execute as @a[scores={TriggerCommand=65}] run clear @s minecraft:chainmail_leggings
+#execute as @a[scores={TriggerCommand=65}] run scoreboard players set @s Mewtwo 0
+#execute as @a[scores={TriggerCommand=65}] run tellraw @s {"text":"You can encounter Mewtwo again in a half an hour.","italic":true}
+#execute as @a[scores={TriggerCommand=65}] run scoreboard players set @s MewtwoCD 6
+#execute as @a[scores={TriggerCommand=65}] run scoreboard players set @s TriggerCommand 0
+#
+#
+##66 - Ho-Oh Reset
+##scoreboard players set @a TriggerCommand 66 {Inventory:[{id:"minecraft:iron_boots"}]}
+#execute as @a[scores={TriggerCommand=66}] run clear @s minecraft:iron_boots
+#execute as @a[scores={TriggerCommand=66}] run give @s minecraft:prismarine_crystals{display:{Name:'[{"text":"Rainbow Wing","italic":false,"color":"gray"}]',Lore:['[{"text":"A strange, rainbow feather","italic":false}]','[{"text":"that sparkles.","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 1
+#execute as @a[scores={TriggerCommand=66}] run tellraw @s {"text":"You can encounter Ho-Oh again in a half an hour.","italic":true}
+#execute as @a[scores={TriggerCommand=66}] run tag @s remove Dialogue104
+#execute as @a[scores={TriggerCommand=66}] run scoreboard players set @s HoohCD 6
+#execute as @a[scores={TriggerCommand=66}] run scoreboard players set @s TriggerCommand 0
+#
+#
+##67 - Lugia Reset
+##scoreboard players set @a TriggerCommand 67 {Inventory:[{id:"minecraft:golden_leggings"}]}
+#execute as @a[scores={TriggerCommand=67}] run clear @s minecraft:golden_leggings
+#execute as @a[scores={TriggerCommand=67}] run give @s minecraft:prismarine_shard{display:{Name:'[{"text":"Silver Wing","italic":false,"color":"dark_gray"}]',Lore:['[{"text":"A strange, silvery feather","italic":false}]','[{"text":"that sparkles","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 1
+#execute as @a[scores={TriggerCommand=67}] run tellraw @s {"text":"You can encounter Lugia again in a half an hour.","italic":true}
+#execute as @a[scores={TriggerCommand=67}] run tag @s remove Dialogue103
+#execute as @a[scores={TriggerCommand=67}] run scoreboard players set @s LugiaCD 6
+#execute as @a[scores={TriggerCommand=67}] run scoreboard players set @s TriggerCommand 0
+#
+#
+##68 - Suicune Reset
+##scoreboard players set @a TriggerCommand 68 {Inventory:[{id:"minecraft:golden_helmet"}]}
+#execute as @a[scores={TriggerCommand=68}] run clear @s minecraft:golden_helmet
+#execute as @a[scores={TriggerCommand=68}] run scoreboard players set @s DogEncounter 1
+#execute as @a[scores={TriggerCommand=68}] run scoreboard players set @s Suicune 0
+#execute as @a[scores={TriggerCommand=68}] run tellraw @s {"text":"You can encounter Suicune again in a half an hour.","italic":true}
+#execute as @a[scores={TriggerCommand=68}] run scoreboard players set @s SuicuneCD 6
+#execute as @a[scores={TriggerCommand=68}] run scoreboard players set @s TriggerCommand 0
+#
+#
+##69 - Entei Reset
+##scoreboard players set @a TriggerCommand 69 {Inventory:[{id:"minecraft:golden_chestplate"}]}
+#execute as @a[scores={TriggerCommand=69}] run clear @s golden_chestplate
+#execute as @a[scores={TriggerCommand=69}] run scoreboard players set @s DogEncounter 1
+#execute as @a[scores={TriggerCommand=69}] run tellraw @s {"text":"You can encounter Entei again in a half an hour.","italic":true}
+#execute as @a[scores={TriggerCommand=69}] run scoreboard players set @s Entei 0
+#execute as @a[scores={TriggerCommand=69}] run scoreboard players set @s EnteiCD 6
+#execute as @a[scores={TriggerCommand=69}] run scoreboard players set @s TriggerCommand 0
+#
+#
+##70 - Raikou Reset
+##scoreboard players set @a TriggerCommand 70 {Inventory:[{id:"minecraft:golden_boots"}]}
+#execute as @a[scores={TriggerCommand=70}] run clear @s minecraft:golden_boots
+#execute as @a[scores={TriggerCommand=70}] run scoreboard players set @s DogEncounter 1
+#execute as @a[scores={TriggerCommand=70}] run tellraw @s {"text":"You can encounter Raikou again in a half an hour.","italic":true}
+#execute as @a[scores={TriggerCommand=70}] run scoreboard players set @s Raikou 0
+#execute as @a[scores={TriggerCommand=70}] run scoreboard players set @s RaikouCD 6
+#execute as @a[scores={TriggerCommand=70}] run scoreboard players set @s TriggerCommand 0
+#
+#
+##71 - Latios Reset
+##scoreboard players set @a TriggerCommand 71 {Inventory:[{id:"minecraft:leather_chestplate"}]}
+#execute as @a[scores={TriggerCommand=71}] run clear @s minecraft:leather_chestplate
+#execute as @a[scores={TriggerCommand=71}] run tellraw @s {"text":"You can encounter Latios again in a half an hour.","italic":true}
+#execute as @a[scores={TriggerCommand=71}] run scoreboard players set @s Latios 0
+#execute as @a[scores={TriggerCommand=71}] run scoreboard players set @s LatiosCD 7
+#execute as @a[scores={TriggerCommand=71}] run scoreboard players set @s TriggerCommand 0
+#
+#
+##72 - Latias Reset
+##scoreboard players set @a TriggerCommand 72 {Inventory:[{id:"pixelmon:aluminium_boots"}]}
+#execute as @a[scores={TriggerCommand=72}] run clear @s pixelmon:aluminium_boots
+#execute as @a[scores={TriggerCommand=72}] run tellraw @s {"text":"You can encounter Latias again in a half an hour.","italic":true}
+#execute as @a[scores={TriggerCommand=72}] run scoreboard players set @s Latias 0
+#execute as @a[scores={TriggerCommand=72}] run scoreboard players set @s LatiasCD 7
+#execute as @a[scores={TriggerCommand=72}] run scoreboard players set @s TriggerCommand 0
+#
+#
+##73 - Giratina Reset
+##scoreboard players set @a TriggerCommand 73 {Inventory:[{id:"minecraft:diamond_leggings"}]}
+#execute as @a[scores={TriggerCommand=73}] run clear @s minecraft:diamond_leggings
+#execute as @a[scores={TriggerCommand=73}] run tellraw @s {"text":"You can encounter Giratina again in a half an hour.","italic":true}
+#execute as @a[scores={TriggerCommand=73}] run give @s pixelmon:griseous_orb{display:{Lore:["A glowing orb containing","the essence of Giratina"]}}
+#execute as @a[scores={TriggerCommand=73}] run scoreboard players set @s GiratinaCD 7
+#execute as @a[scores={TriggerCommand=73}] run scoreboard players set @s TriggerCommand 0
+#
+#
+##74 - Palkia Reset
+##scoreboard players set @a TriggerCommand 74 {Inventory:[{id:"minecraft:diamond_helmet"}]}
+#execute as @a[scores={TriggerCommand=74}] run clear @s minecraft:diamond_helmet
+#execute as @a[scores={TriggerCommand=74}] run tellraw @s {"text":"You can encounter Palkia again in a half an hour.","italic":true}
+#execute as @a[scores={TriggerCommand=74}] run give @s pixelmon:lustrous_orb{display:{Lore:["A glowing orb containing","the essence of Palkia"]}}
+#execute as @a[scores={TriggerCommand=74}] run scoreboard players set @s PalkiaCD 7
+#execute as @a[scores={TriggerCommand=74}] run scoreboard players set @s TriggerCommand 0
+#
+#
+##75 - Dialga Reset
+##scoreboard players set @a TriggerCommand 75 {Inventory:[{id:"minecraft:leather_helmet"}]}
+#execute as @a[scores={TriggerCommand=75}] run clear @s minecraft:leather_helmet
+#execute as @a[scores={TriggerCommand=75}] run tellraw @s {"text":"You can encounter Dialga again in a half an hour.","italic":true}
+#execute as @a[scores={TriggerCommand=75}] run give @s pixelmon:adamant_orb{display:{Lore:["A glowing orb containing","the essence of Dialga"]}}
+#execute as @a[scores={TriggerCommand=75}] run scoreboard players set @s DialgaCD 7
+#execute as @a[scores={TriggerCommand=75}] run scoreboard players set @s TriggerCommand 0
 
 
 #76 - Runs Lucky Number Show
