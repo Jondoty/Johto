@@ -32,93 +32,93 @@
 #Mirrors the scores of the item frames to the reference armor stands to execute during dialogue
 
 #Zone 1
-execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:238s}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 1
-execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:240s}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 2
-execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:243s}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 3
-execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:244s}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 4
-execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:239s}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 5
-execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:241s}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 6
-execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:242s}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 7
-execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:245s}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 8
-execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:247s}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 9
-execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:249s}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 10
-execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:246s}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 11
-execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:248s}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 12
+execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:238}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 1
+execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:240}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 2
+execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:243}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 3
+execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:244}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 4
+execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:239}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 5
+execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:241}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 6
+execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:242}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 7
+execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:245}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 8
+execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:247}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 9
+execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:249}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 10
+execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:246}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 11
+execute as @e[x=1596,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:248}}}] run scoreboard players set @e[x=-879,y=64,z=-170,dy=3,type=armor_stand] BiomeID 12
 
 
 #Zone 2
-execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:238s}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 1
-execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:240s}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 2
-execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:243s}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 3
-execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:244s}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 4
-execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:239s}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 5
-execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:241s}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 6
-execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:242s}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 7
-execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:245s}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 8
-execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:247s}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 9
-execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:249s}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 10
-execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:246s}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 11
-execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:248s}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 12
+execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:238}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 1
+execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:240}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 2
+execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:243}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 3
+execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:244}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 4
+execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:239}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 5
+execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:241}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 6
+execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:242}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 7
+execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:245}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 8
+execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:247}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 9
+execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:249}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 10
+execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:246}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 11
+execute as @e[x=1596,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:248}}}] run scoreboard players set @e[x=-879,y=64,z=-172,dy=3,type=armor_stand] BiomeID 12
 
 
 #Zone 3
-execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:238s}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 1
-execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:240s}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 2
-execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:243s}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 3
-execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:244s}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 4
-execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:239s}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 5
-execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:241s}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 6
-execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:242s}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 7
-execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:245s}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 8
-execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:247s}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 9
-execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:249s}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 10
-execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:246s}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 11
-execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:248s}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 12
+execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:238}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 1
+execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:240}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 2
+execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:243}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 3
+execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:244}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 4
+execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:239}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 5
+execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:241}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 6
+execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:242}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 7
+execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:245}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 8
+execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:247}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 9
+execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:249}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 10
+execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:246}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 11
+execute as @e[x=1595,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:248}}}] run scoreboard players set @e[x=-879,y=64,z=-174,dy=3,type=armor_stand] BiomeID 12
 
 
 #Zone 4
-execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:238s}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 1
-execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:240s}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 2
-execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:243s}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 3
-execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:244s}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 4
-execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:239s}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 5
-execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:241s}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 6
-execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:242s}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 7
-execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:245s}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 8
-execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:247s}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 9
-execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:249s}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 10
-execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:246s}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 11
-execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:248s}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 12
+execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:238}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 1
+execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:240}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 2
+execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:243}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 3
+execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:244}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 4
+execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:239}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 5
+execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:241}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 6
+execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:242}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 7
+execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:245}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 8
+execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:247}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 9
+execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:249}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 10
+execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:246}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 11
+execute as @e[x=1595,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:248}}}] run scoreboard players set @e[x=-879,y=64,z=-176,dy=3,type=armor_stand] BiomeID 12
 
 
 #Zone 5
-execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:238s}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 1
-execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:240s}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 2
-execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:243s}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 3
-execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:244s}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 4
-execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:239s}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 5
-execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:241s}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 6
-execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:242s}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 7
-execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:245s}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 8
-execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:247s}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 9
-execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:249s}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 10
-execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:246s}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 11
-execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:248s}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 12
+execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:238}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 1
+execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:240}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 2
+execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:243}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 3
+execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:244}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 4
+execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:239}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 5
+execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:241}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 6
+execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:242}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 7
+execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:245}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 8
+execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:247}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 9
+execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:249}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 10
+execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:246}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 11
+execute as @e[x=1594,y=77,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:248}}}] run scoreboard players set @e[x=-879,y=64,z=-178,dy=3,type=armor_stand] BiomeID 12
 
 
 #Zone 6
-execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:238s}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 1
-execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:240s}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 2
-execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:243s}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 3
-execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:244s}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 4
-execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:239s}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 5
-execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:241s}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 6
-execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:242s}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 7
-execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:245s}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 8
-execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:247s}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 9
-execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:249s}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 10
-execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:246s}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 11
-execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",Damage:248s}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 12
+execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:238}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 1
+execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:240}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 2
+execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:243}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 3
+execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:244}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 4
+execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:239}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 5
+execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:241}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 6
+execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:242}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 7
+execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:245}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 8
+execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:247}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 9
+execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:249}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 10
+execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:246}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 11
+execute as @e[x=1594,y=76,z=-122,dz=1,type=minecraft:item_frame,nbt={Item:{id:"minecraft:filled_map",tag:{map:248}}}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=3,type=armor_stand] BiomeID 12
 
 
 
