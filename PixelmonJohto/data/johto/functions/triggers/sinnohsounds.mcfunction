@@ -70,7 +70,7 @@ tellraw @s[x=1321,y=0,z=-487,dx=389,dy=256,dz=150,scores={DialogueTrigger=157,Ta
 tellraw @s[x=148,y=60,z=613,dx=200,dy=30,dz=200,scores={DialogueTrigger=157,TalkTime=19}] {"text":"Pokémon are listening to your music...","italic":true}
 tellraw @s[x=1499,y=64,z=-209,dx=169,dy=256,dz=112,scores={DialogueTrigger=157,TalkTime=19}] {"text":"Pokémon are listening to your music...","italic":true}
 tellraw @s[x=1499,y=64,z=-336,dx=196,dy=256,dz=126,scores={DialogueTrigger=157,TalkTime=19}] {"text":"Pokémon are listening to your music...","italic":true}
-tellraw @s[x=174,y=36,z=-163,dx=42,dy=22,scores={DialogueTrigger=157,TalkTime=19}] {"text":"Pokémon are listening to your music...","italic":true}
+tellraw @s[x=174,y=36,z=-163,dx=42,dy=22,dz=75,scores={DialogueTrigger=157,TalkTime=19}] {"text":"Pokémon are listening to your music...","italic":true}
 tellraw @s[x=191,y=0,z=-89,dx=140,dy=240,dz=100,scores={DialogueTrigger=157,TalkTime=19}] {"text":"Pokémon are listening to your music...","italic":true}
 tellraw @s[x=229,y=0,z=-729,dx=92,dy=59,dz=76,scores={DialogueTrigger=157,TalkTime=19}] {"text":"Pokémon are listening to your music...","italic":true}
 tellraw @s[x=230,y=0,z=-642,dx=95,dy=240,dz=167,scores={DialogueTrigger=157,TalkTime=19}] {"text":"Pokémon are listening to your music...","italic":true}
@@ -190,8 +190,8 @@ execute at @s[x=148,y=60,z=613,dx=200,dy=30,dz=200,scores={DialogueTrigger=157,T
 execute at @s[x=1499,y=64,z=-209,dx=169,dy=256,dz=112,scores={DialogueTrigger=157,TalkTime=36,rng=0..1}] run pokespawn Bronzor lvl:10
 execute at @s[x=1499,y=64,z=-209,dx=169,dy=256,dz=112,scores={DialogueTrigger=157,TalkTime=36,rng=2..3}] run pokespawn Chingling lvl:10
 execute at @s[x=1499,y=64,z=-336,dx=196,dy=256,dz=126] run pokespawn Shinx lvl:10
-execute at @s[x=174,y=36,z=-163,dx=42,dy=22,scores={DialogueTrigger=157,TalkTime=36,rng=0..1}] run pokespawn Bidoof lvl:10
-execute at @s[x=174,y=36,z=-163,dx=42,dy=22,scores={DialogueTrigger=157,TalkTime=36,rng=2..3}] run pokespawn Buizel lvl:10
+execute at @s[x=174,y=36,z=-163,dx=42,dy=22,dz=75,scores={DialogueTrigger=157,TalkTime=36,rng=0..1}] run pokespawn Bidoof lvl:10
+execute at @s[x=174,y=36,z=-163,dx=42,dy=22,dz=75,scores={DialogueTrigger=157,TalkTime=36,rng=2..3}] run pokespawn Buizel lvl:10
 execute at @s[x=191,y=0,z=-89,dx=140,dy=240,dz=100] run pokespawn Shinx lvl:10
 execute at @s[x=229,y=0,z=-729,dx=92,dy=59,dz=76,scores={DialogueTrigger=157,TalkTime=36,rng=0..1}] run pokespawn Bronzor lvl:10
 execute at @s[x=229,y=0,z=-729,dx=92,dy=59,dz=76,scores={DialogueTrigger=157,TalkTime=36,rng=2..3}] run pokespawn Chingling lvl:10

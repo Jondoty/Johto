@@ -9,7 +9,7 @@
 #tags if player is in an interior if applicable
 tag @s[x=-693,y=63,z=-490,dx=19,dy=5,dz=19] add Indoors
 #tag @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83] add Indoors
-tag @s[x=174,y=36,z=-163,dx=42,dy=22] add Indoors
+tag @s[x=174,y=36,z=-163,dx=42,dy=22,dz=75] add Indoors
 tag @s[x=-992,y=59,z=-172,dx=38,dy=20,dz=50] add Indoors
 tag @s[x=-987,y=0,z=-492,dx=125,dy=100,dz=75] add Indoors
 tag @s[x=495,y=30,z=-275,dx=38,dy=22,dz=21] add Indoors
@@ -307,8 +307,8 @@ title @s[x=-987,y=0,z=-492,dx=125,dy=100,dz=75,scores={MusicTitles=1..204}] acti
 title @s[x=-987,y=0,z=-492,dx=125,dy=100,dz=75,scores={MusicTitles=206..}] actionbar {"text":"Tohjo Falls"}
 title @s[x=-992,y=59,z=-172,dx=38,dy=20,dz=50,scores={MusicTitles=1..203}] actionbar {"text":"Ruins of Alph"}
 title @s[x=-992,y=59,z=-172,dx=38,dy=20,dz=50,scores={MusicTitles=205..}] actionbar {"text":"Ruins of Alph"}
-title @s[x=174,y=36,z=-163,dx=42,dy=22,scores={MusicTitles=1..202}] actionbar {"text":"Ruins of Alph"}
-title @s[x=174,y=36,z=-163,dx=42,dy=22,scores={MusicTitles=204..}] actionbar {"text":"Ruins of Alph"}
+title @s[x=174,y=36,z=-163,dx=42,dy=22,dz=75,scores={MusicTitles=1..202}] actionbar {"text":"Ruins of Alph"}
+title @s[x=174,y=36,z=-163,dx=42,dy=22,dz=75,scores={MusicTitles=204..}] actionbar {"text":"Ruins of Alph"}
 #title @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicTitles=1..201}] actionbar {"text":"Cinnabar Island"}
 #title @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicTitles=203..}] actionbar {"text":"Cinnabar Island"}
 title @s[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={MusicTitles=1..200}] actionbar {"text":"Professor Elm's Lab"}
@@ -756,8 +756,8 @@ execute as @s[x=-987,y=0,z=-492,dx=125,dy=100,dz=75,scores={MusicTitles=1..204,M
 execute as @s[x=-987,y=0,z=-492,dx=125,dy=100,dz=75,scores={MusicTitles=206..,MusicCooldown=1..}] run function johto:tools/forceclick
 execute as @s[x=-992,y=59,z=-172,dx=38,dy=20,dz=50,scores={MusicTitles=1..203,MusicCooldown=1..}] run function johto:tools/forceclick
 execute as @s[x=-992,y=59,z=-172,dx=38,dy=20,dz=50,scores={MusicTitles=205..,MusicCooldown=1..}] run function johto:tools/forceclick
-execute as @s[x=174,y=36,z=-163,dx=42,dy=22,scores={MusicTitles=1..202,MusicCooldown=1..}] run function johto:tools/forceclick
-execute as @s[x=174,y=36,z=-163,dx=42,dy=22,scores={MusicTitles=204..,MusicCooldown=1..}] run function johto:tools/forceclick
+execute as @s[x=174,y=36,z=-163,dx=42,dy=22,dz=75,scores={MusicTitles=1..202,MusicCooldown=1..}] run function johto:tools/forceclick
+execute as @s[x=174,y=36,z=-163,dx=42,dy=22,dz=75,scores={MusicTitles=204..,MusicCooldown=1..}] run function johto:tools/forceclick
 execute as @s[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={MusicTitles=1..200,MusicCooldown=1..}] run function johto:tools/forceclick
 execute as @s[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={MusicTitles=202..,MusicCooldown=1..}] run function johto:tools/forceclick
 execute at @e[type=armor_stand,name=PokeCenter] run execute as @a[dx=17,dy=15,dz=14,scores={MusicTitles=1..216,MusicCooldown=1..}] run function johto:tools/forceclick
@@ -907,7 +907,7 @@ scoreboard players set @s[x=495,y=31,z=-249,dx=37,dy=29,dz=21] MusicTitles 207
 scoreboard players set @s[x=495,y=30,z=-275,dx=38,dy=22,dz=21] MusicTitles 206
 scoreboard players set @s[x=-987,y=0,z=-492,dx=125,dy=100,dz=75] MusicTitles 205
 scoreboard players set @s[x=-992,y=59,z=-172,dx=38,dy=20,dz=50] MusicTitles 204
-scoreboard players set @s[x=174,y=36,z=-163,dx=42,dy=22] MusicTitles 203
+scoreboard players set @s[x=174,y=36,z=-163,dx=42,dy=22,dz=75] MusicTitles 203
 scoreboard players set @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83] MusicTitles 202
 scoreboard players set @s[x=-693,y=63,z=-490,dx=19,dy=5,dz=19] MusicTitles 201
 execute at @e[type=armor_stand,name=PokeCenter] run scoreboard players set @a[dx=17,dy=15,dz=14] MusicTitles 217

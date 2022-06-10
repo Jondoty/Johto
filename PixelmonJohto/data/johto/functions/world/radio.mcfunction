@@ -166,8 +166,8 @@ scoreboard players set @s[x=-972,y=63,z=-410,dx=10,dy=10,dz=10,scores={MusicCool
 
 
 #Ruins of Alph Cave Interiors
-playsound ruinsofalph record @s[x=174,y=36,z=-163,dx=42,dy=22,dz=85,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=174,y=36,z=-163,dx=42,dy=22,dz=85,scores={MusicCooldown=0}] MusicCooldown 60
+playsound ruinsofalph record @s[x=174,y=36,z=-163,dx=42,dy=22,dz=75,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=174,y=36,z=-163,dx=42,dy=22,dz=75,scores={MusicCooldown=0}] MusicCooldown 60
 
 #Sinjoh fake Ruins Interior
 playsound ruinsofalph record @s[x=-992,y=59,z=-172,dx=38,dy=20,dz=50,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1

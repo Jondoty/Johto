@@ -53,6 +53,11 @@ execute if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD
 execute if entity @e[x=-197,y=63,z=568,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,name=Magikarp] if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={KarpCD=0}] run function johto:custom/karp
 
 
+#Runs Ruins of Alph puzzle if player is in the ruins
+execute if entity @e[x=-867,y=69,z=-214,dy=3,dz=4,tag=!UnownSpawning,limit=1] if entity @a[x=174,y=36,z=-163,dx=42,dy=22,dz=85] run function johto:world/ruinspuzzle
+
+
+
 #Saffron Gym portals
 execute as @a[x=-1222,y=0,z=500,dx=470,dy=240,dz=342] run function johto:world/saffrongym
 
