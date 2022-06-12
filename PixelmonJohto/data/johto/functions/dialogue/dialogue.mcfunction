@@ -2150,7 +2150,10 @@ tellraw @s[scores={DialogueTrigger=98,TalkTime=15}] {"text":"You can now access 
 tellraw @s[scores={DialogueTrigger=98,TalkTime=23}] {"text":"Map Creator: Jond."}
 tellraw @s[scores={DialogueTrigger=98,TalkTime=28}] {"text":"Builders: Jond, MystcraftMC, PixelmonChampion, 123abc, Giggs_, gmng24, Mackwiggs."}
 tellraw @s[scores={DialogueTrigger=98,TalkTime=38}] {"text":"Map is based off of: Pokémon Crystal, Heartgold, Soulsilver and a splash of Let's Go."}
-tellraw @s[scores={DialogueTrigger=98,TalkTime=48}] ["",{"text":"Check out my other projects if you are interested!\nPixelmon Kalos: "},{"text":"curseforge.com/minecraft/worlds/pixelmon-kalos","color":"aqua","clickEvent":{"action":"run_command","value":"https://www.curseforge.com/minecraft/worlds/pixelmon-kalos"}}]
+tellraw @s[scores={DialogueTrigger=98,TalkTime=48}] ["",{"text":"Check out my other projects if you enjoyed!\nPixelmon Kalos: "},{"text":"curseforge.com/minecraft/worlds/pixelmon-kalos","color":"aqua","clickEvent":{"action":"run_command","value":"https://www.curseforge.com/minecraft/worlds/pixelmon-kalos"}}]
+
+#runs legendary reset function
+execute as @s[scores={DialogueTrigger=98,TalkTime=57},tag=Dialogue97] run function johto:triggers/legendreset
 
 #tps out statues if generated}
 execute as @s[scores={DialogueTrigger=98,TalkTime=57},tag=Dialogue97] run tp @e[x=-1294,y=82,z=785,dy=2,type=pixelmon:statue] -868 65 -229
