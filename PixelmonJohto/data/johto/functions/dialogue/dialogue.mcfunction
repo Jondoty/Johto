@@ -1206,10 +1206,12 @@ tag @s[scores={DialogueTrigger=48,TalkTime=23..}] add Dialogue48
 #execute as @s[x=-169,y=65,z=645,distance=..100,tag=!Dialogue49,score_TalkTime=0] run tp @e[x=-765,y=66,z=-244,dy=3,type=pixelmon:statue] -167 62 632
 
 execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run particle cloud -167 62 632 3 3 3 1 200
-execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run tp @e[type=pixelmon:statue,x=-167,y=62,z=632,distance=..2] -765 66 -244
-execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run pokebattle @s Gyarados,s,lvl:30,gr:7
+execute at @s[scores={DialogueTrigger=49,TalkTime=1}] run tp @e[type=pixelmon:statue,x=-167,y=62,z=632,distance=..5] -765 66 -244
+#Bugged, /pokebattle doesn't seem to work
+#execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run pokebattle @s Gyarados,s,lvl:30,gr:7
+execute at @s[scores={DialogueTrigger=49,TalkTime=1}] run pokespawn Gyarados growth:7 shiny lvl:30
 execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run playsound gyarados hostile @s ~ ~ ~ 1 1 1
-execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run give @s minecraft:music_disc_cat{display:{Name:"Red Scale",Lore:["A scale from the red Gyarados.","It glows red like a flame."]},HideFlags:36}
+execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run give @s music_disc_cat{display:{Name:'[{"text":"Red Scale","italic":false,"color":"dark_red"}]',Lore:['[{"text":"A scale from the red Gyarados.","italic":false}]','[{"text":"It glows red like a flame.","italic":false}]']},HideFlags:2} 1
 execute as @s[scores={DialogueTrigger=49,TalkTime=2}] run playsound shiny hostile @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=49,TalkTime=2}] run advancement grant @s only johto:rocket2
 
