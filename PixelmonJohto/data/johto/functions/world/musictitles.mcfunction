@@ -26,6 +26,7 @@ tag @s[x=240,y=63,z=297,dx=33,dy=240,dz=33] add Indoors
 tag @s[x=-1707,y=0,z=284,dx=143,dy=256,dz=164] add Indoors
 tag @s[x=-307,y=0,z=-94,dx=94,dy=240,dz=223] add Indoors
 tag @s[x=-439,y=0,z=-190,dx=131,dy=240,dz=319] add Indoors
+tag @s[x=-290,y=0,z=555,dx=295,dy=240,dz=225] add Indoors
 
 #Pokemon Centers
 execute at @e[type=armor_stand,name=PokeCenter] run tag @a[dx=17,dy=15,dz=14] add Indoors
@@ -72,8 +73,8 @@ title @s[x=-676,y=0,z=-369,dx=146,dy=240,dz=493,scores={MusicTitles=1..82}] acti
 title @s[x=-676,y=0,z=-369,dx=146,dy=240,dz=493,scores={MusicTitles=84..199}] actionbar {"text":"Route 45"}
 title @s[x=-536,y=63,z=132,dx=321,dy=240,dz=102,scores={MusicTitles=1..81}] actionbar {"text":"Route 44"}
 title @s[x=-536,y=63,z=132,dx=321,dy=240,dz=102,scores={MusicTitles=83..199}] actionbar {"text":"Route 44"}
-title @s[x=-214,y=0,z=245,dx=130,dy=240,dz=768,scores={MusicTitles=1..80}] actionbar {"text":"Route 43"}
-title @s[x=-214,y=0,z=245,dx=130,dy=240,dz=768,scores={MusicTitles=82..199}] actionbar {"text":"Route 43"}
+title @s[x=-214,y=0,z=245,dx=130,dy=240,dz=768,scores={MusicTitles=1..80},tag=!Indoors] actionbar {"text":"Route 43"}
+title @s[x=-214,y=0,z=245,dx=130,dy=240,dz=768,scores={MusicTitles=82..199},tag=!Indoors] actionbar {"text":"Route 43"}
 title @s[x=-96,y=63,z=120,dx=329,dy=240,dz=331,scores={MusicTitles=1..79}] actionbar {"text":"Route 42"}
 title @s[x=-96,y=63,z=120,dx=329,dy=240,dz=331,scores={MusicTitles=81..199}] actionbar {"text":"Route 42"}
 title @s[x=870,y=0,z=-525,dx=281,dy=240,dz=44,scores={MusicTitles=1..78}] actionbar {"text":"Route 41"}
@@ -224,8 +225,6 @@ title @s[x=-978,y=64,z=-375,dx=20,dy=20,dz=20,scores={MusicTitles=1..24}] action
 title @s[x=-978,y=64,z=-375,dx=20,dy=20,dz=20,scores={MusicTitles=26..199}] actionbar {"text":"Lobby"}
 #title @s[x=-3338,y=0,z=290,dx=113,dy=240,dz=96,scores={MusicTitles=1..23}] actionbar {"text":"Lavender Town"}
 #title @s[x=-3338,y=0,z=290,dx=113,dy=240,dz=96,scores={MusicTitles=25..199}] actionbar {"text":"Lavender Town"}
-title @s[x=-290,y=0,z=555,dx=295,dy=240,dz=225,scores={MusicTitles=1..22}] actionbar {"text":"Lake of Rage"}
-title @s[x=-290,y=0,z=555,dx=295,dy=240,dz=225,scores={MusicTitles=24..199}] actionbar {"text":"Lake of Rage"}
 title @s[x=-1343,y=64,z=15,dx=99,dy=100,dz=338,scores={MusicTitles=1..21}] actionbar {"text":"Indigo Plateau"}
 title @s[x=-1343,y=64,z=15,dx=99,dy=100,dz=338,scores={MusicTitles=23..199}] actionbar {"text":"Indigo Plateau"}
 title @s[x=513,y=0,z=-793,dx=187,dy=240,dz=228,scores={MusicTitles=1..20}] actionbar {"text":"Ilex Forest"}
@@ -317,7 +316,8 @@ title @s[x=-1707,y=0,z=284,dx=143,dy=256,dz=164,scores={MusicTitles=1..217}] act
 title @s[x=-1707,y=0,z=284,dx=143,dy=256,dz=164,scores={MusicTitles=219..}] actionbar {"text":"Viridian Forest"}
 execute at @e[type=armor_stand,name=PokeCenter] run title @a[dx=17,dy=15,dz=14,scores={MusicTitles=1..216}] actionbar {"text":"Pokemon Center"}
 execute at @e[type=armor_stand,name=PokeCenter] run title @a[dx=17,dy=15,dz=14,scores={MusicTitles=218..}] actionbar {"text":"Pokemon Center"}
-
+title @s[x=-290,y=0,z=555,dx=295,dy=240,dz=225,scores={MusicTitles=1..22}] actionbar {"text":"Lake of Rage"}
+title @s[x=-290,y=0,z=555,dx=295,dy=240,dz=225,scores={MusicTitles=24..199}] actionbar {"text":"Lake of Rage"}
 
 
 
@@ -668,8 +668,6 @@ execute as @s[x=-978,y=64,z=-375,dx=20,dy=20,dz=20,scores={MusicTitles=1..24,Mus
 execute as @s[x=-978,y=64,z=-375,dx=20,dy=20,dz=20,scores={MusicTitles=26..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=-3338,y=0,z=290,dx=113,dy=240,dz=96,scores={MusicTitles=1..23,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=-3338,y=0,z=290,dx=113,dy=240,dz=96,scores={MusicTitles=25..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
-execute as @s[x=-290,y=0,z=555,dx=295,dy=240,dz=225,scores={MusicTitles=1..22,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
-execute as @s[x=-290,y=0,z=555,dx=295,dy=240,dz=225,scores={MusicTitles=24..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=-1343,y=64,z=15,dx=99,dy=100,dz=338,scores={MusicTitles=1..21,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=-1343,y=64,z=15,dx=99,dy=100,dz=338,scores={MusicTitles=23..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=513,y=0,z=-793,dx=187,dy=240,dz=228,scores={MusicTitles=1..20,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
@@ -762,6 +760,9 @@ execute as @s[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={MusicTitles=1..200,Mus
 execute as @s[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={MusicTitles=202..,MusicCooldown=1..}] run function johto:tools/forceclick
 execute at @e[type=armor_stand,name=PokeCenter] run execute as @a[dx=17,dy=15,dz=14,scores={MusicTitles=1..216,MusicCooldown=1..}] run function johto:tools/forceclick
 execute at @e[type=armor_stand,name=PokeCenter] run execute as @a[dx=17,dy=15,dz=14,scores={MusicTitles=218..,MusicCooldown=1..}] run function johto:tools/forceclick
+execute as @s[x=-290,y=0,z=555,dx=295,dy=240,dz=225,scores={MusicTitles=1..22,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
+execute as @s[x=-290,y=0,z=555,dx=295,dy=240,dz=225,scores={MusicTitles=24..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
+
 
 
 #Sets score of area player is now in
@@ -786,7 +787,7 @@ scoreboard players set @s[x=1321,y=0,z=-487,dx=389,dy=256,dz=150] MusicTitles 85
 scoreboard players set @s[x=-529,y=0,z=-468,dx=129,dy=240,dz=200] MusicTitles 84
 scoreboard players set @s[x=-676,y=0,z=-369,dx=146,dy=240,dz=493] MusicTitles 83
 scoreboard players set @s[x=-536,y=63,z=132,dx=321,dy=240,dz=102] MusicTitles 82
-scoreboard players set @s[x=-214,y=0,z=245,dx=130,dy=240,dz=768] MusicTitles 81
+scoreboard players set @s[x=-214,y=0,z=245,dx=130,dy=240,dz=768,tag=!Indoors] MusicTitles 81
 scoreboard players set @s[x=-96,y=63,z=120,dx=329,dy=240,dz=331] MusicTitles 80
 scoreboard players set @s[x=870,y=0,z=-525,dx=281,dy=240,dz=44] MusicTitles 79
 scoreboard players set @s[x=870,y=0,z=-280,dx=281,dy=240,dz=182] MusicTitles 78
@@ -862,7 +863,6 @@ scoreboard players set @s[x=-2250,y=0,z=772,dx=130,dy=240,dz=130] MusicTitles 27
 scoreboard players set @s[x=-214,y=64,z=125,dx=117,dy=240,dz=119] MusicTitles 26
 scoreboard players set @s[x=-978,y=64,z=-375,dx=20,dy=20,dz=20] MusicTitles 25
 scoreboard players set @s[x=-3338,y=0,z=290,dx=113,dy=240,dz=96] MusicTitles 24
-scoreboard players set @s[x=-290,y=0,z=555,dx=295,dy=240,dz=225] MusicTitles 23
 scoreboard players set @s[x=-1343,y=64,z=15,dx=99,dy=100,dz=338] MusicTitles 22
 scoreboard players set @s[x=513,y=0,z=-793,dx=187,dy=240,dz=228] MusicTitles 21
 scoreboard players set @s[x=-875,y=0,z=302,dx=280,dy=60,dz=173] MusicTitles 20
@@ -911,7 +911,7 @@ scoreboard players set @s[x=174,y=36,z=-163,dx=42,dy=22,dz=75] MusicTitles 203
 scoreboard players set @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83] MusicTitles 202
 scoreboard players set @s[x=-693,y=63,z=-490,dx=19,dy=5,dz=19] MusicTitles 201
 execute at @e[type=armor_stand,name=PokeCenter] run scoreboard players set @a[dx=17,dy=15,dz=14] MusicTitles 217
-
+scoreboard players set @s[x=-290,y=0,z=555,dx=295,dy=240,dz=225] MusicTitles 23
 
 tag @s remove Indoors
 
