@@ -1,6 +1,6 @@
 {
-  "name": "Helix Fossil",
-  "dex": 0,
+  "name": "Helix",
+  "dex": 2000,
   "defaultForms": [
     ""
   ],
@@ -9,11 +9,11 @@
       "name": "",
       "experienceGroup": "SLOW",
       "dimensions": {
-        "height": 3.0,
-        "width": 1.2,
-        "length": 1,
-        "eyeHeight": 3.0,
-        "hoverHeight": 3.0
+        "height": 0.7,
+        "width": 0.7,
+        "length": 0.7,
+        "eyeHeight": 0.7,
+        "hoverHeight": 0.7
       },
       "moves": {
         "levelUpMoves": [
@@ -87,13 +87,13 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/2000_helix/texture.png",
-              "sprite": "pixelmon:pokemon/2000_helix/sprite.png",
+              "texture": "pixelmon:pokemon/2000_helix/all/base/none/texture.png",
+              "sprite": "pixelmon:pokemon/2000_helix/all/base/none/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "pixelmon:pokemon/2000_helix/model.pqc"
+                  "pixelmon:pokemon/2000_helix/all/base/none/model.pqc"
                 ]
               },
               "sounds": []
