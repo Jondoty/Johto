@@ -1,5 +1,5 @@
 {
-  "id": "Qwilfish Fishing",
+  "id": "Qwilfish Line Fishing",
   "spawnInfos": [
     {
       "spec": "species:Qwilfish"
@@ -67,7 +67,27 @@
         "minX": 103, "maxX": 183, "minZ": -509, "maxZ": -390
     },
       "rarity": 10.0
-    }
+    },
 
+    
+    {
+      "spec": "species:Overqwil"
+      ,
+      "stringLocationTypes": [
+        "Super Rod"
+      ],
+      "minLevel": 30,
+      "maxLevel": 50,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "oceanic"
+        ]
+      },
+      "rarity": 0
+    }
   ]
 }
