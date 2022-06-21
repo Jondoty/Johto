@@ -3,6 +3,9 @@
 tag @e[tag=!1.12.2Trainer,type=pixelmon:npc_trainer] add 1.12.2Trainer
 execute at @e[tag=1.12.2Trainer,type=pixelmon:npc_trainer] run particle minecraft:end_rod ~ ~5 ~ 0 10 0 0.001 10 force @a
 
+#temp to tp corrputed trainer into void
+tp @e[x=-2437,y=64,z=755,type=pixelmon:npc_trainer,distance=..4] ~ ~-1000 ~
+
 #---------------------
 #Despawns items that may be broken and pop up elsewhere in the map
 execute at @a run tag @e[distance=..10,type=item,nbt={Item:{id:"minecraft:stone_bricks"}}] add Despawn
@@ -91,6 +94,44 @@ execute as @e[x=-803,y=64,z=-284,dy=3,type=minecraft:armor_stand,tag=SlowTime] r
 
 
 #---------------------
+#Runs Game Corner slot machines if buttons pressed
+execute if block 516 66 -377 stone_button[powered=true] if entity @e[x=507,y=59,z=-370,dy=3,scores={rng=0}] run execute as @p[x=518,y=64,z=-377,distance=..2] run function johto:triggers/gamecorner
+execute if block 516 66 -381 stone_button[powered=true] if entity @e[x=505,y=59,z=-370,dy=3,scores={rng=0}] run execute as @p[x=518,y=64,z=-381,distance=..2] run function johto:triggers/gamecorner
+execute if block 513 66 -377 stone_button[powered=true] if entity @e[x=503,y=59,z=-370,dy=3,scores={rng=0}] run execute as @p[x=511,y=64,z=-377,distance=..2] run function johto:triggers/gamecorner
+execute if block 513 66 -381 stone_button[powered=true] if entity @e[x=501,y=59,z=-370,dy=3,scores={rng=0}] run execute as @p[x=511,y=64,z=-381,distance=..2] run function johto:triggers/gamecorner
+execute if block 507 66 -377 stone_button[powered=true] if entity @e[x=499,y=59,z=-370,dy=3,scores={rng=0}] run execute as @p[x=509,y=64,z=-377,distance=..2] run function johto:triggers/gamecorner
+execute if block 507 66 -381 stone_button[powered=true] if entity @e[x=497,y=59,z=-370,dy=3,scores={rng=0}] run execute as @p[x=509,y=64,z=-381,distance=..2] run function johto:triggers/gamecorner
+execute if block 504 66 -377 stone_button[powered=true] if entity @e[x=495,y=59,z=-370,dy=3,scores={rng=0}] run execute as @p[x=502,y=64,z=-377,distance=..2] run function johto:triggers/gamecorner
+execute if block 504 66 -381 stone_button[powered=true] if entity @e[x=493,y=59,z=-370,dy=3,scores={rng=0}] run execute as @p[x=502,y=64,z=-381,distance=..2] run function johto:triggers/gamecorner
+execute if block 498 66 -377 stone_button[powered=true] if entity @e[x=491,y=59,z=-370,dy=3,scores={rng=0}] run execute as @p[x=500,y=64,z=-377,distance=..2] run function johto:triggers/gamecorner
+execute if block 498 66 -381 stone_button[powered=true] if entity @e[x=489,y=59,z=-370,dy=3,scores={rng=0}] run execute as @p[x=500,y=64,z=-381,distance=..2] run function johto:triggers/gamecorner
+execute if block 495 66 -377 stone_button[powered=true] if entity @e[x=487,y=59,z=-370,dy=3,scores={rng=0}] run execute as @p[x=493,y=64,z=-377,distance=..2] run function johto:triggers/gamecorner
+execute if block 495 66 -381 stone_button[powered=true] if entity @e[x=485,y=59,z=-370,dy=3,scores={rng=0}] run execute as @p[x=493,y=64,z=-381,distance=..2] run function johto:triggers/gamecorner
+
+#NPC Counter Prompt
+tellraw @a[x=490,y=64,z=-373,distance=..4,scores={TalkTime=0,Cooldown=0},nbt={Inventory:[{id:"pixelmon:coin_case"}]}] ["",{"text":"Welcome to the Game Corner! Would you like to exchange your coins for prizes?\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 95"}},{"text":"]"}]
+scoreboard players enable @a[x=490,y=64,z=-373,distance=..4,scores={TalkTime=0,Cooldown=0},nbt={Inventory:[{id:"pixelmon:coin_case"}]}] TriggerCommand
+scoreboard players set @a[x=490,y=64,z=-373,distance=..4,scores={TalkTime=0,Cooldown=0},nbt={Inventory:[{id:"pixelmon:coin_case"}]}] Cooldown 80
+
+#Gives the player Coins in exchange for Emeralds bought
+
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:64b}]}] run scoreboard players add @s Coins 64
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:64b}]}] run clear @s minecraft:emerald 64
+
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:32b}]}] run scoreboard players add @s Coins 32
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:32b}]}] run clear @s minecraft:emerald 32
+
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:16b}]}] run scoreboard players add @s Coins 16
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:16b}]}] run clear @s minecraft:emerald 16
+
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:5b}]}] run scoreboard players add @s Coins 5
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:5b}]}] run clear @s minecraft:emerald 5
+
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald"}]}] run scoreboard players add @s Coins 1
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald"}]}] run clear @s minecraft:emerald 1
+
+#When player looks at a coin case, shows their balance
+execute as @a[nbt={SelectedItem:{id:"pixelmon:coin_case",}}] run function johto:triggers/gamecorner/coinbal
 
 
 
@@ -326,7 +367,7 @@ execute if entity @a[x=467,y=63,z=60,dx=18,dy=5,dz=8] if entity @e[x=-799,y=64,z
 #Dialogue Triggers
 
 #Runs primary dialogue functions
-execute as @e[scores={DialogueTrigger=1..}] run function johto:dialogue/dialogue
+execute as @e[scores={DialogueTrigger=1..500}] run function johto:dialogue/dialogue
 
 
 #Dialogue 1 - Oak Welcome

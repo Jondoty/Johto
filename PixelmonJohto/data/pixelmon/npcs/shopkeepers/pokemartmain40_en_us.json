@@ -14,57 +14,13 @@
   ],
   "chat": [
     {
-      "hello": "Welcome! What do you need?",
+      "hello": "Welcome! Do you need to stock up on coins?",
       "goodbye": "Please come again!"
     }
   ],
   "items": [
     {
       "name": "minecraft:emerald",
-      "variation": false
-    },
-    {
-      "name": "minecraft:dark_oak_door",
-      "variation": false
-    },
-    {
-      "name": "minecraft:acacia_door",
-      "variation": false
-    },
-    {
-      "name": "minecraft:birch_door",
-      "variation": false
-    },
-    {
-      "name": "minecraft:jungle_door",
-      "variation": false
-    },
-    {
-      "name": "minecraft:iron_door",
-      "variation": false
-    },
-    {
-      "name": "pixelmon:tm90",
-      "variation": false
-    },
-    {
-      "name": "pixelmon:tm75",
-      "variation": false
-    },
-    {
-      "name": "pixelmon:tm44",
-      "variation": false
-    },
-    {
-      "name": "pixelmon:tm13",
-      "variation": false
-    },
-    {
-      "name": "pixelmon:tm24",
-      "variation": false
-    },
-    {
-      "name": "pixelmon:tm35",
       "variation": false
     }
   ]
