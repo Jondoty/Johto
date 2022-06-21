@@ -617,6 +617,168 @@ execute as @a[scores={TriggerCommand=92}] run tellraw @s {"text":"Italiano!"}
 execute as @a[scores={TriggerCommand=92}] run tag @s add Italian
 execute as @a[scores={TriggerCommand=92}] run scoreboard players set @s TriggerCommand 0
 
+#--------------------------------------
+#Game Corner
+
+execute as @a[scores={TriggerCommand=95}] run scoreboard players enable @s TriggerCommand
+execute as @a[scores={TriggerCommand=95}] run tellraw @s ["",{"text":"Which type of prize are you looking for today?\n["},{"text":"Pokémon","color":"red","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 96"}},{"text":"] \u0020 ["},{"text":"TMs","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 97"}},{"text":"] \u0020 ["},{"text":"Held Items","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 98"}},{"text":"]"}]
+
+#Pokemon sub-menu
+#96
+execute as @a[scores={TriggerCommand=96}] run team join Red @e[x=-862,y=69,z=-193,dz=14,dy=4]
+execute as @a[scores={TriggerCommand=96}] run data merge entity @e[x=-862,y=69,z=-179,dy=3,limit=1] {CustomName:'{"text":"Abra"}'}
+execute as @a[scores={TriggerCommand=96,Coins=200..}] run team join Green @e[x=-862,y=69,z=-179,dy=3]
+execute as @a[scores={TriggerCommand=96}] run data merge entity @e[x=-862,y=69,z=-181,dy=3,limit=1] {CustomName:'{"text":"Ekans"}'}
+execute as @a[scores={TriggerCommand=96,Coins=700..}] run team join Green @e[x=-862,y=69,z=-181,dy=3]
+execute as @a[scores={TriggerCommand=96}] run data merge entity @e[x=-862,y=69,z=-183,dy=3,limit=1] {CustomName:'{"text":"Sandshrew"}'}
+execute as @a[scores={TriggerCommand=96,Coins=700..}] run team join Green @e[x=-862,y=69,z=-183,dy=3]
+execute as @a[scores={TriggerCommand=96}] run data merge entity @e[x=-862,y=69,z=-185,dy=3,limit=1] {CustomName:'{"text":"Dratini"}'}
+execute as @a[scores={TriggerCommand=96,Coins=2100..}] run team join Green @e[x=-862,y=69,z=-185,dy=3]
+execute as @a[scores={TriggerCommand=96}] run scoreboard players enable @s TriggerCommand
+execute as @a[scores={TriggerCommand=96}] run tellraw @s ["",{"text":"Which Pokémon may interest you?\n["},{"selector":"@e[x=-862,y=69,z=-179,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 99"},"hoverEvent":{"action":"show_text","contents":"Abra (Lv. 15)200C"}},{"text":"]   ["},{"selector":"@e[x=-862,y=69,z=-181,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 100"},"hoverEvent":{"action":"show_text","contents":"Ekans (Lv. 15)700C"}},{"text":"]   ["},{"selector":"@e[x=-862,y=69,z=-183,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 101"},"hoverEvent":{"action":"show_text","contents":"Sandshrew (Lv. 15)700C"}},{"text":"]   ["},{"selector":"@e[x=-862,y=69,z=-185,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 102"},"hoverEvent":{"action":"show_text","contents":"Dratini (Lv. 15)2100C"}},{"text":"]"}]
+
+#Pokemon Purchases
+#99 - Abra
+execute as @a[scores={TriggerCommand=99,Coins=..199}] run tellraw @s {"text":"You don't have enough coins for that Pokémon!"}
+execute as @a[scores={TriggerCommand=99,Coins=200..}] run pokegive @s Abra level:15
+execute as @a[scores={TriggerCommand=99,Coins=200..}] run playsound minecraft:egghatch ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=99,Coins=200..}] run scoreboard players remove @s Coins 200
+
+#100 - Ekans
+execute as @a[scores={TriggerCommand=100,Coins=..699}] run tellraw @s {"text":"You don't have enough coins for that Pokémon!"}
+execute as @a[scores={TriggerCommand=100,Coins=700..}] run pokegive @s Ekans level:15
+execute as @a[scores={TriggerCommand=100,Coins=700..}] run playsound minecraft:egghatch ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=100,Coins=700..}] run scoreboard players remove @s Coins 700
+
+#101 - Ekans
+execute as @a[scores={TriggerCommand=101,Coins=..699}] run tellraw @s {"text":"You don't have enough coins for that Pokémon!"}
+execute as @a[scores={TriggerCommand=101,Coins=700..}] run pokegive @s Sandshrew level:15
+execute as @a[scores={TriggerCommand=101,Coins=700..}] run playsound minecraft:egghatch ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=101,Coins=700..}] run scoreboard players remove @s Coins 700
+
+#102 - Dratini
+execute as @a[scores={TriggerCommand=102,Coins=..2099}] run tellraw @s {"text":"You don't have enough coins for that Pokémon!"}
+execute as @a[scores={TriggerCommand=102,Coins=2100..}] run pokegive @s Dratini level:15
+execute as @a[scores={TriggerCommand=102,Coins=2100..}] run playsound minecraft:egghatch ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=102,Coins=2100..}] run scoreboard players remove @s Coins 2100
+
+
+
+#TMs sub-menu
+#97
+execute as @a[scores={TriggerCommand=97}] run team join Red @e[x=-862,y=69,z=-193,dz=14,dy=4]
+execute as @a[scores={TriggerCommand=97}] run data merge entity @e[x=-862,y=69,z=-179,dy=3,limit=1] {CustomName:'{"text":"TM90"}'}
+execute as @a[scores={TriggerCommand=97,Coins=2000..}] run team join Green @e[x=-862,y=69,z=-179,dy=3]
+execute as @a[scores={TriggerCommand=97}] run data merge entity @e[x=-862,y=69,z=-181,dy=3,limit=1] {CustomName:'{"text":"TM75"}'}
+execute as @a[scores={TriggerCommand=97,Coins=4000..}] run team join Green @e[x=-862,y=69,z=-181,dy=3]
+execute as @a[scores={TriggerCommand=97}] run data merge entity @e[x=-862,y=69,z=-183,dy=3,limit=1] {CustomName:'{"text":"TM44"}'}
+execute as @a[scores={TriggerCommand=97,Coins=6000..}] run team join Green @e[x=-862,y=69,z=-183,dy=3]
+execute as @a[scores={TriggerCommand=97}] run data merge entity @e[x=-862,y=69,z=-185,dy=3,limit=1] {CustomName:'{"text":"TM35"}'}
+execute as @a[scores={TriggerCommand=97,Coins=10000..}] run team join Green @e[x=-862,y=69,z=-185,dy=3]
+execute as @a[scores={TriggerCommand=97}] run data merge entity @e[x=-862,y=69,z=-187,dy=3,limit=1] {CustomName:'{"text":"TM13"}'}
+execute as @a[scores={TriggerCommand=97,Coins=10000..}] run team join Green @e[x=-862,y=69,z=-187,dy=3]
+execute as @a[scores={TriggerCommand=97}] run data merge entity @e[x=-862,y=69,z=-189,dy=3,limit=1] {CustomName:'{"text":"TM24"}'}
+execute as @a[scores={TriggerCommand=97,Coins=10000..}] run team join Green @e[x=-862,y=69,z=-189,dy=3]
+execute as @a[scores={TriggerCommand=97}] run scoreboard players enable @s TriggerCommand
+execute as @a[scores={TriggerCommand=97}] run tellraw @s ["",{"text":"Which TMs may interest you?\n["},{"selector":"@e[x=-862,y=69,z=-179,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 103"},"hoverEvent":{"action":"show_text","contents":"Substitute 2,000C"}},{"text":"] ["},{"selector":"@e[x=-862,y=69,z=-181,dy=3]","clickEvent":{"action":"open_url","value":"/trigger TriggerCommand set 104"},"hoverEvent":{"action":"show_text","contents":"Swords Dance4,000C"}},{"text":"] ["},{"selector":"@e[x=-862,y=69,z=-183,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 105"},"hoverEvent":{"action":"show_text","contents":"Rest6,000C"}},{"text":"] ["},{"selector":"@e[x=-862,y=69,z=-185,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 106"},"hoverEvent":{"action":"show_text","contents":"Flamethrower10,000C"}},{"text":"] ["},{"selector":"@e[x=-862,y=69,z=-187,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 107"},"hoverEvent":{"action":"show_text","contents":"Ice Beam10,000C"}},{"text":"] ["},{"selector":"@e[x=-862,y=69,z=-189,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 108"},"hoverEvent":{"action":"show_text","contents":"Thunderbolt10,000C"}},{"text":"]"}]
+
+
+
+
+#TMs purchase
+#103
+execute as @a[scores={TriggerCommand=103,Coins=..1999}] run tellraw @s {"text":"You don't have enough coins for that item!"}
+execute as @a[scores={TriggerCommand=103,Coins=2000..}] run give @s pixelmon:tm_gen4{tm:90}
+execute as @a[scores={TriggerCommand=103,Coins=2000..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=103,Coins=2000..}] run scoreboard players remove @s Coins 2000
+
+#104
+execute as @a[scores={TriggerCommand=104,Coins=..3999}] run tellraw @s {"text":"You don't have enough coins for that item!"}
+execute as @a[scores={TriggerCommand=104,Coins=4000..}] run give @s pixelmon:tm_gen4{tm:75}
+execute as @a[scores={TriggerCommand=104,Coins=4000..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=104,Coins=4000..}] run scoreboard players remove @s Coins 4000
+
+#105
+execute as @a[scores={TriggerCommand=105,Coins=..5999}] run tellraw @s {"text":"You don't have enough coins for that item!"}
+execute as @a[scores={TriggerCommand=105,Coins=6000..}] run give @s pixelmon:tm_gen2{tm:44}
+execute as @a[scores={TriggerCommand=105,Coins=6000..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=105,Coins=6000..}] run scoreboard players remove @s Coins 6000
+
+#106
+execute as @a[scores={TriggerCommand=106,Coins=..9999}] run tellraw @s {"text":"You don't have enough coins for that item!"}
+execute as @a[scores={TriggerCommand=106,Coins=10000..}] run give @s pixelmon:tm_gen4{tm:35}
+execute as @a[scores={TriggerCommand=106,Coins=10000..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=106,Coins=10000..}] run scoreboard players remove @s Coins 10000
+
+#107
+execute as @a[scores={TriggerCommand=107,Coins=..9999}] run tellraw @s {"text":"You don't have enough coins for that item!"}
+execute as @a[scores={TriggerCommand=107,Coins=10000..}] run give @s pixelmon:tm_gen4{tm:13}
+execute as @a[scores={TriggerCommand=107,Coins=10000..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=107,Coins=10000..}] run scoreboard players remove @s Coins 10000
+
+#108
+execute as @a[scores={TriggerCommand=108,Coins=..9999}] run tellraw @s {"text":"You don't have enough coins for that item!"}
+execute as @a[scores={TriggerCommand=108,Coins=10000..}] run give @s pixelmon:tm_gen4{tm:24}
+execute as @a[scores={TriggerCommand=108,Coins=10000..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=108,Coins=10000..}] run scoreboard players remove @s Coins 10000
+
+
+
+
+
+#Held Items sub-menu
+#98
+execute as @a[scores={TriggerCommand=98}] run team join Red @e[x=-862,y=69,z=-193,dz=14,dy=4]
+execute as @a[scores={TriggerCommand=98}] run data merge entity @e[x=-862,y=69,z=-179,dy=3,limit=1] {CustomName:'{"text":"Silk Scarf"}'}
+execute as @a[scores={TriggerCommand=98,Coins=1000..}] run team join Green @e[x=-862,y=69,z=-179,dy=3]
+execute as @a[scores={TriggerCommand=98}] run data merge entity @e[x=-862,y=69,z=-181,dy=3,limit=1] {CustomName:'{"text":"Wide Lens"}'}
+execute as @a[scores={TriggerCommand=98,Coins=1000..}] run team join Green @e[x=-862,y=69,z=-181,dy=3]
+execute as @a[scores={TriggerCommand=98}] run data merge entity @e[x=-862,y=69,z=-183,dy=3,limit=1] {CustomName:'{"text":"Zoom Lens"}'}
+execute as @a[scores={TriggerCommand=98,Coins=1000..}] run team join Green @e[x=-862,y=69,z=-183,dy=3]
+execute as @a[scores={TriggerCommand=98}] run data merge entity @e[x=-862,y=69,z=-185,dy=3,limit=1] {CustomName:'{"text":"Metronome"}'}
+execute as @a[scores={TriggerCommand=98,Coins=1000..}] run team join Green @e[x=-862,y=69,z=-185,dy=3]
+execute as @a[scores={TriggerCommand=98}] run scoreboard players enable @s TriggerCommand
+execute as @a[scores={TriggerCommand=98}] run tellraw @s ["",{"text":"Which item may interest you?\n["},{"selector":"@e[x=-862,y=69,z=-179,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 109"},"hoverEvent":{"action":"show_text","contents":"An item to be held by a Pokémon. It is a sumptuous scarf that boosts the power of Normal-type moves. 1000C"}},{"text":"] ["},{"selector":"@e[x=-862,y=69,z=-181,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 110"},"hoverEvent":{"action":"show_text","contents":"An item to be held by a Pokémon. It is a magnifying lens that slightly boosts the accuracy of moves. 1000C"}},{"text":"] ["},{"selector":"@e[x=-862,y=69,z=-183,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 111"},"hoverEvent":{"action":"show_text","contents":"An item to be held by a Pokémon. If the holder moves after the foe, its accuracy will be boosted. 1000C"}},{"text":"] ["},{"selector":"@e[x=-862,y=69,z=-185,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 112"},"hoverEvent":{"action":"show_text","contents":"A Pokémon held item that boosts a move used consecutively. Its effect is reset if another move is used. 1000C"}},{"text":"] "}]
+
+
+
+#Purchasing Held Items
+#109 silk scarf
+execute as @a[scores={TriggerCommand=109,Coins=..999}] run tellraw @s {"text":"You don't have enough coins for that item!"}
+execute as @a[scores={TriggerCommand=109,Coins=1000..}] run give @s pixelmon:silk_scarf
+execute as @a[scores={TriggerCommand=109,Coins=1000..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=109,Coins=1000..}] run scoreboard players remove @s Coins 1000
+
+
+
+#110 Wide Lens
+execute as @a[scores={TriggerCommand=110,Coins=..999}] run tellraw @s {"text":"You don't have enough coins for that item!"}
+execute as @a[scores={TriggerCommand=110,Coins=1000..}] run give @s pixelmon:wide_lens
+execute as @a[scores={TriggerCommand=110,Coins=1000..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=110,Coins=1000..}] run scoreboard players remove @s Coins 1000
+
+
+
+#111 Zoom Lens
+execute as @a[scores={TriggerCommand=111,Coins=..999}] run tellraw @s {"text":"You don't have enough coins for that item!"}
+execute as @a[scores={TriggerCommand=111,Coins=1000..}] run give @s pixelmon:zoom_lens
+execute as @a[scores={TriggerCommand=111,Coins=1000..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=111,Coins=1000..}] run scoreboard players remove @s Coins 1000
+
+
+
+
+#112 Metronome
+execute as @a[scores={TriggerCommand=112,Coins=..999}] run tellraw @s {"text":"You don't have enough coins for that item!"}
+execute as @a[scores={TriggerCommand=112,Coins=1000..}] run give @s pixelmon:metronome
+execute as @a[scores={TriggerCommand=112,Coins=1000..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=112,Coins=1000..}] run scoreboard players remove @s Coins 1000
+
+
+execute as @a[scores={TriggerCommand=99..112}] run scoreboard players enable @s TriggerCommand
+execute as @a[scores={TriggerCommand=99..112}] run function johto:triggers/gamecorner/coinbal
+
+
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
