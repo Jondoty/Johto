@@ -459,10 +459,10 @@ execute as @s[x=-2513,y=0,z=-642,dx=225,dy=240,dz=187,scores={MusicTitles=1..15}
 execute as @s[x=-2513,y=0,z=-642,dx=225,dy=240,dz=187,scores={MusicTitles=1..15}] run title @s subtitle {"text":"Happening and Passing City","italic":true}
 
 #Cinnabar Island
-execute as @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicTitles=1..201}] run title @s title {"text":"Cinnabar Island","color":"dark_red"}
-execute as @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicTitles=1..201}] run title @s subtitle {"text":"The Ravaged Town of the Past","italic":true}
-execute as @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicTitles=203..}] run title @s title {"text":"Cinnabar Island","color":"dark_red"}
-execute as @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicTitles=203..}] run title @s subtitle {"text":"The Ravaged Town of the Past","italic":true}
+execute as @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicTitles=1..201},tag=!Indoors] run title @s title {"text":"Cinnabar Island","color":"dark_red"}
+execute as @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicTitles=1..201},tag=!Indoors] run title @s subtitle {"text":"The Ravaged Town of the Past","italic":true}
+execute as @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicTitles=203..},tag=!Indoors] run title @s title {"text":"Cinnabar Island","color":"dark_red"}
+execute as @s[x=-1746,y=63,z=-913,dx=88,dy=20,dz=83,scores={MusicTitles=203..},tag=!Indoors] run title @s subtitle {"text":"The Ravaged Town of the Past","italic":true}
 
 #Vermilion City
 execute as @s[x=-2884,y=0,z=-200,dx=273,dy=240,dz=239,scores={MusicTitles=97..199}] run title @s title {"text":"Vermilion City","color":"red"}
