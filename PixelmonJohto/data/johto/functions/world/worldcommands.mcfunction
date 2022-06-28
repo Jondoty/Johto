@@ -135,6 +135,10 @@ execute as @a[nbt={SelectedItem:{id:"pixelmon:coin_case",}}] run function johto:
 
 
 
+#---------------------
+#Runs Goldenrod Underground puzzle function of player is in the underground
+execute if entity @a[x=476,y=46,z=-345,dx=52,dy=7,dz=51,limit=1] run function johto:triggers/undergroundpuzzle/undergroundpuzzle
+
 
 #-------------------------------------------------------------------------------------------------------------------------
 #Music-based commands
@@ -1464,13 +1468,54 @@ execute at @a[x=369,y=58,z=287,dx=6,dy=10,dz=15,tag=!Morty] run tp @a[x=369,y=58
 tellraw @a[x=-787,y=59,z=-525,dx=33,dy=10,dz=22,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
 execute at @a[x=-787,y=59,z=-525,dx=33,dy=10,dz=22,tag=!Dialogue33] run tp @a[x=-787,y=59,z=-525,dx=33,dy=10,dz=22,tag=!Dialogue33] ~10 64 ~0
 
+#Cherrygrove without Surf
+tellraw @a[x=-187,y=60,z=-575,dx=93,dy=3,dz=81,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
+execute at @a[x=-187,y=60,z=-575,dx=93,dy=3,dz=81,tag=!Dialogue33] run tp @a[x=-187,y=60,z=-575,dx=93,dy=3,dz=81,tag=!Dialogue33] -155 64 -518
+
+#Violet City Right without Surf
+tellraw @a[x=23,y=60,z=-43,dx=26,dy=3,dz=23,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
+execute at @a[x=23,y=60,z=-43,dx=26,dy=3,dz=23,tag=!Dialogue33] run tp @a[x=23,y=60,z=-43,dx=26,dy=3,dz=23,tag=!Dialogue33] 51 64 -29
+
+#Violet City Left without Surf
+tellraw @a[x=95,y=60,z=-54,dx=20,dy=3,dz=27,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
+execute at @a[x=95,y=60,z=-54,dx=20,dy=3,dz=27,tag=!Dialogue33] run tp @a[x=95,y=60,z=-54,dx=20,dy=3,dz=27,tag=!Dialogue33] 109 64 -57
+
+#Ruins of Alph without Surf
+tellraw @a[x=183,y=60,z=-231,dx=22,dy=3,dz=19,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
+execute at @a[x=183,y=60,z=-231,dx=22,dy=3,dz=19,tag=!Dialogue33] run tp @a[x=183,y=60,z=-231,dx=22,dy=3,dz=19,tag=!Dialogue33] 198 64 -207
+
+#Slow Poke Well without Surf
+tellraw @a[x=281,y=36,z=-717,dx=24,dy=2,dz=15,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
+execute at @a[x=281,y=36,z=-717,dx=24,dy=2,dz=15,tag=!Dialogue33] run tp @a[x=281,y=36,z=-717,dx=24,dy=2,dz=15,tag=!Dialogue33] 303 39 -699
+
+#Route 35 without Surf
+tellraw @a[x=488,y=60,z=-244,dx=21,dy=3,dz=46,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
+execute at @a[x=488,y=60,z=-244,dx=21,dy=3,dz=46,tag=!Dialogue33] run tp @a[x=488,y=60,z=-244,dx=21,dy=3,dz=46,tag=!Dialogue33] 485 64 -223
+
+#Route 42 Check 1 without surf
+tellraw @a[x=10,y=60,z=156,dx=33,dy=3,dz=47,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
+execute at @a[x=10,y=60,z=156,dx=33,dy=3,dz=47,tag=!Dialogue33] run tp @a[x=10,y=60,z=156,dx=33,dy=3,dz=47,tag=!Dialogue33] 11 64 180
+
+#Route 42 Check 2 without surf
+tellraw @a[x=44,y=60,z=160,dx=29,dy=3,dz=47,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
+execute at @a[x=44,y=60,z=160,dx=29,dy=3,dz=47,tag=!Dialogue33] run tp @a[x=44,y=60,z=160,dx=29,dy=3,dz=47,tag=!Dialogue33] 66 64 183
+
+#Route 42 Check 3 without surf
+tellraw @a[x=125,y=60,z=145,dx=24,dy=3,dz=72,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
+execute at @a[x=125,y=60,z=145,dx=24,dy=3,dz=72,tag=!Dialogue33] run tp @a[x=125,y=60,z=145,dx=24,dy=3,dz=72,tag=!Dialogue33] 124 64 176
+
+#Route 42 Check 4 without surf
+tellraw @a[x=149,y=60,z=145,dx=34,dy=3,dz=71,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
+execute at @a[x=149,y=60,z=145,dx=34,dy=3,dz=71,tag=!Dialogue33] run tp @a[x=149,y=60,z=145,dx=34,dy=3,dz=71,tag=!Dialogue33] 179 64 195
+
+
 #Whirl Islands without Surf and Morty
 tellraw @a[x=877,y=40,z=-108,dx=85,dy=25,dz=15,tag=!Morty] {"text":"This area requires Surf to access & the Fog Badge to use outside of battle!","italic":true,"color":"gray"}
 execute at @a[x=877,y=40,z=-108,dx=85,dy=25,dz=15,tag=!Morty] run tp @a[x=877,y=40,z=-108,dx=85,dy=25,dz=15,tag=!Morty] ~ 64 ~10
 
 #Route 34 Surf required
-tellraw @a[x=488,y=60,z=-627,dx=22,dy=10,dz=20,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
-execute at @a[x=488,y=60,z=-627,dx=22,dy=10,dz=20,tag=!Dialogue33] run tp @a[x=488,y=60,z=-627,dx=22,dy=10,dz=20,tag=!Dialogue33] ~ ~ ~10
+tellraw @a[x=488,y=60,z=-630,dx=21,dy=3,dz=117,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
+execute at @a[x=488,y=60,z=-630,dx=21,dy=3,dz=117,tag=!Dialogue33] run tp @a[x=488,y=60,z=-630,dx=21,dy=3,dz=117,tag=!Dialogue33] ~-10 64 ~
 
 #Fuchsia City South Entrance blocked until beating Blaine
 tellraw @a[x=-2423,y=64,z=-660,dx=50,dy=20,dz=20,tag=!Blaine,scores={TalkTime=0,Cooldown=0}] ["",{"text":"<"},{"text":"Policeman","color":"aqua"},{"text":"> The beach to Route 19 is closed indefinitely due to a volcano's eruption off the coast. I wonder if the people of Cinnabar are safe..."}]
