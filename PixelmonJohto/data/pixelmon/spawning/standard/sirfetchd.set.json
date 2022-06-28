@@ -3,7 +3,7 @@
   "spawnInfos": [
     {
       "spec": {
-        "name": "Sirfetchd"
+        "name": "species:Sirfetchd"
       },
       "stringLocationTypes": [
         "Land"
@@ -12,10 +12,6 @@
       "maxLevel": 50,
       "typeID": "pokemon",
       "heldItems": [
-        {
-          "itemID": "pixelmon:leek",
-          "percentChance": 5
-        }
       ],
       "condition": {
         "times": [

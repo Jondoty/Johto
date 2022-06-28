@@ -3,7 +3,7 @@
   "spawnInfos": [
     {
       "spec": {
-        "name": "Pincurchin"
+        "name": "species:Pincurchin"
       },
       "stringLocationTypes": [
         "Seafloor",
