@@ -12,13 +12,12 @@
     },
     {
       "name": "pixelmon:ranch",
-      "nbtData": "{display:{Lore:[\"A tool used to breed\",\"Pokemon. Place on the area\",\"inside the daycare fence!\"]},HideFlags:8,CanPlaceOn:[concrete_powder]}",
+      "nbtData": "{display:{Lore:['[{\"text\":\"A tool used to breed\"}]','[{\"text\":\"Pokemon. Place on the area\"}]','[{\"text\":\"inside the daycare fence!\"}]']},HideFlags:8,CanPlaceOn:[light_gray_concrete_powder]}",
       "buy": 5000,
       "sell": 5000
     },
     {
       "name": "minecraft:ender_eye",
-      "nbtData": "{display:{Lore:[\"A long and durable rope.\",\"Use it to escape instantly\",\"from a cave.\"]}}",
       "buy": 550,
       "sell": 550
     },
