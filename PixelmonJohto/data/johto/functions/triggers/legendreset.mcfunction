@@ -1,19 +1,19 @@
 #Resets legendaries if player has encountered them previously but not captured
 
 #Moltres
-tag @s[tag=!MoltresCaught,score=Moltres=1..}] remove Dialogue160
-tellraw @s[tag=!MoltresCaught,score=Moltres=1..}] {"text":"You can now re-encounter Moltres!","italic":true,"color":"gray"}
-execute as @s[tag=!MoltresCaught,score=Moltres=1..}] run scoreboard players set @s Moltres 0
+tag @s[tag=!MoltresCaught,scores={Moltres=1..}] remove Dialogue160
+tellraw @s[tag=!MoltresCaught,scores={Moltres=1..}] {"text":"You can now re-encounter Moltres!","italic":true,"color":"gray"}
+execute as @s[tag=!MoltresCaught,scores={Moltres=1..}] run scoreboard players set @s Moltres 0
 
 #Articuno
-tag @s[tag=!ArticunoCaught,score=Articuno=1..}] remove Dialogue158
-tellraw @s[tag=!ArticunoCaught,score=Articuno=1..}] {"text":"You can now re-encounter Articuno!","italic":true,"color":"gray"}
-execute as @s[tag=!ArticunoCaught,score=Articuno=1..}] run scoreboard players set @s Articuno 0
+tag @s[tag=!ArticunoCaught,scores={Articuno=1..}] remove Dialogue158
+tellraw @s[tag=!ArticunoCaught,scores={Articuno=1..}] {"text":"You can now re-encounter Articuno!","italic":true,"color":"gray"}
+execute as @s[tag=!ArticunoCaught,scores={Articuno=1..}] run scoreboard players set @s Articuno 0
 
 #Zapdos
-tag @s[tag=!ZapdosCaught,score=Zapdos=1..}] remove Dialogue159
-tellraw @s[tag=!ZapdosCaught,score=Zapdos=1..}] {"text":"You can now re-encounter Zapdos!","italic":true,"color":"gray"}
-execute as @s[tag=!ZapdosCaught,score=Zapdos=1..}] run scoreboard players set @s Zapdos 0
+tag @s[tag=!ZapdosCaught,scores={Zapdos=1..}] remove Dialogue159
+tellraw @s[tag=!ZapdosCaught,scores={Zapdos=1..}] {"text":"You can now re-encounter Zapdos!","italic":true,"color":"gray"}
+execute as @s[tag=!ZapdosCaught,scores={Zapdos=1..}] run scoreboard players set @s Zapdos 0
 
 
 #Arceus
@@ -98,7 +98,7 @@ execute as @a[tag=!GiritinaCaught,scores={Giratina=1..}] run playsound minecraft
 execute as @a[tag=!GiritinaCaught,scores={Giratina=1..}] run playsound minecraft:entity.lightning_bolt.thunder ambient @s ~ ~ ~ 10 1 1
 execute as @a[tag=!GiritinaCaught,scores={Giratina=1..}] run playsound giratina ambient @s ~ ~ ~ 1 1 1
 execute as @a[tag=!GiratinaCaught,scores={Giratina=1..}] run tellraw @s {"text":"You can now re-encounter Giratina!","italic":true,"color":"gray"}
-execute as @a[tag=!GiratinaCaught,scores={Giratina=1..}] give @s pixelmon:griseous_orb{display:{Lore:['[{"text":"A glowing orb containing","italic":false}]','[{"text":"the essence of Giratina","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 1
+execute as @a[tag=!GiratinaCaught,scores={Giratina=1..}] run give @s pixelmon:griseous_orb{display:{Lore:['[{"text":"A glowing orb containing","italic":false}]','[{"text":"the essence of Giratina","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 1
 execute as @a[tag=!GiratinaCaught,scores={Giratina=1..}] run give @s pixelmon:red_chain{display:{Name:'[{"text":"Red Chain","italic":false,"color":"dark_red"}]',Lore:['[{"text":"A chain used in summoning Dialga,","italic":false}]','[{"text":"Palkia and Giratina at an alter.","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 1
 execute as @a[tag=!GiratinaCaught,scores={Giratina=1..}] run scoreboard players set @s Giratina 0
 
@@ -109,7 +109,7 @@ execute as @a[tag=!PalkiaCaught,scores={Palkia=1..}] run playsound minecraft:ent
 execute as @a[tag=!PalkiaCaught,scores={Palkia=1..}] run playsound minecraft:entity.lightning_bolt.thunder ambient @s ~ ~ ~ 10 1 1
 execute as @a[tag=!PalkiaCaught,scores={Palkia=1..}] run playsound palkia ambient @s ~ ~ ~ 1 1 1
 execute as @a[tag=!PalkiaCaught,scores={Palkia=1..}] run tellraw @s {"text":"You can now re-encounter Giratina!","italic":true,"color":"gray"}
-execute as @a[tag=!PalkiaCaught,scores={Palkia=1..}] give @s pixelmon:lustrous_orb{display:{Lore:['[{"text":"A glowing orb containing","italic":false}]','[{"text":"the essence of Palkia","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 1
+execute as @a[tag=!PalkiaCaught,scores={Palkia=1..}] run give @s pixelmon:lustrous_orb{display:{Lore:['[{"text":"A glowing orb containing","italic":false}]','[{"text":"the essence of Palkia","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 1
 execute as @a[tag=!PalkiaCaught,scores={Palkia=1..}] run give @s pixelmon:red_chain{display:{Name:'[{"text":"Red Chain","italic":false,"color":"dark_red"}]',Lore:['[{"text":"A chain used in summoning Dialga,","italic":false}]','[{"text":"Palkia and Giratina at an alter.","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 1
 execute as @a[tag=!PalkiaCaught,scores={Palkia=1..}] run scoreboard players set @s Palkia 0
 
@@ -120,7 +120,7 @@ execute as @a[tag=!DialgaCaught,scores={Dialga=1..}] run playsound minecraft:ent
 execute as @a[tag=!DialgaCaught,scores={Dialga=1..}] run playsound minecraft:entity.lightning_bolt.thunder ambient @s ~ ~ ~ 10 1 1
 execute as @a[tag=!DialgaCaught,scores={Dialga=1..}] run playsound dialga ambient @s ~ ~ ~ 1 1 1
 execute as @a[tag=!DialgaCaught,scores={Dialga=1..}] run tellraw @s {"text":"You can now re-encounter Palkia!","italic":true,"color":"gray"}
-execute as @a[tag=!DialgaCaught,scores={Dialga=1..}] give @s pixelmon:adamant_orb{display:{Lore:['[{"text":"A glowing orb containing","italic":false}]','[{"text":"the essence of Dialga","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 1
+execute as @a[tag=!DialgaCaught,scores={Dialga=1..}] run give @s pixelmon:adamant_orb{display:{Lore:['[{"text":"A glowing orb containing","italic":false}]','[{"text":"the essence of Dialga","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 1
 execute as @a[tag=!DialgaCaught,scores={Dialga=1..}] run give @s pixelmon:red_chain{display:{Name:'[{"text":"Red Chain","italic":false,"color":"dark_red"}]',Lore:['[{"text":"A chain used in summoning Dialga,","italic":false}]','[{"text":"Palkia and Giratina at an alter.","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 1
 execute as @a[tag=!DialgaCaught,scores={Dialga=1..}] run scoreboard players set @s Dialga 0
 
