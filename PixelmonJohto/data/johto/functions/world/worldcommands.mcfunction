@@ -59,6 +59,8 @@ execute if entity @e[x=-197,y=63,z=568,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,na
 #Runs Ruins of Alph puzzle if player is in the ruins
 execute if entity @e[x=-867,y=69,z=-214,dy=3,dz=4,tag=!UnownSpawning,limit=1] if entity @a[x=174,y=36,z=-163,dx=42,dy=22,dz=85] run function johto:world/ruinspuzzle
 
+#Runs Pre-Victory Road badge lights
+execute as @a[x=-1262,y=63,z=57,dx=7,dy=5,dz=73] run function johto:world/badgegate
 
 
 #Saffron Gym portals
