@@ -16494,7 +16494,8 @@ execute @e[x=-201,y=89,z=-1520,r=10,type=pixelmon:pixelmon,score_Temp_min=510,sc
 
 
 #Returns the Pokemon to their Poke Ball, indicating Success
-entitydata @e[type=pixelmon:pixelmon,score_RibbonApply_min=1] {Dimension:1}
+#tellraw @p ["",{"text":"You retrieved "},{"selector":"@e[type=pixelmon:pixelmon,score_RibbonApply_min=1]"},{"text":"!"}]
+tp @e[type=pixelmon:pixelmon,score_RibbonApply_min=1] ~ ~-1000 ~
 
 
 

@@ -444,7 +444,7 @@ execute at @e[limit=1,x=467,y=63,z=60,dx=18,dy=1,dz=8,type=pixelmon:pixelmon,nbt
 execute at @e[limit=1,x=467,y=63,z=60,dx=18,dy=1,dz=8,type=pixelmon:pixelmon,nbt={IVSpeed:31}] run scoreboard players add @a[x=467,y=63,z=60,dx=18,dy=1,dz=8] BugPoints 31
 
 scoreboard players set @e[limit=1,x=467,y=63,z=60,dx=18,dy=1,dz=8,type=pixelmon:pixelmon] BugPoints 0
-data merge entity @e[limit=1,x=467,y=63,z=60,dx=18,dy=1,dz=8,type=pixelmon:pixelmon] {Dimension:1}
+tp @e[limit=1,x=467,y=63,z=60,dx=18,dy=1,dz=8,type=pixelmon:pixelmon] ~ ~-1000 ~
 
 
 

@@ -62,7 +62,8 @@ tag @e[x=467,y=63,z=60,dx=18,dy=1,dz=8,type=pixelmon:pixelmon,tag=!Eligible,nbt=
 
 #Despawns Pokemon if ineligible
 execute as @e[x=467,y=63,z=60,dx=18,dy=1,dz=8,type=pixelmon:pixelmon,tag=!Eligible] run tellraw @a[x=467,y=63,z=60,dx=18,dy=1,dz=8,tag=Dialogue198] {"text":"This Pokemon isn't eligible for the contest!","italic":true,"color":"gray"}
-execute as @e[x=467,y=63,z=60,dx=18,dy=1,dz=8,type=pixelmon:pixelmon,tag=!Eligible] run data merge entity @s {Dimension:1}
+tellraw @a[x=467,y=63,z=60,dx=18,dy=1,dz=8,tag=Dialogue198] ["",{"text":"You retrieved "},{"selector":"@e[x=467,y=63,z=60,dx=18,dy=1,dz=8,type=pixelmon:pixelmon,tag=!Eligible]"},{"text":"!"}]
+tp @e[x=467,y=63,z=60,dx=18,dy=1,dz=8,type=pixelmon:pixelmon,tag=!Eligible] ~ ~-1000 ~
 
 
 #Prompts the Judging dialogue when Eligible Pokemon is found

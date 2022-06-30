@@ -267,7 +267,8 @@ execute as @e[x=487,y=63,z=-300,dx=13,dy=5,dz=8,type=pixelmon:pixelmon,scores={F
 execute as @e[x=487,y=63,z=-300,dx=13,dy=5,dz=8,type=pixelmon:pixelmon,scores={Friendship=200..249}] run tellraw @a[x=487,y=63,z=-300,dx=13,dy=5,dz=8] ["",{"text":"<Friendship Checker> I get the feeling that "},{"selector":"@e[x=487,y=63,z=-300,dx=13,dy=5,dz=8,type=pixelmon:pixelmon]"},{"text":" really trusts you."}]
 execute as @e[x=487,y=63,z=-300,dx=13,dy=5,dz=8,type=pixelmon:pixelmon,scores={Friendship=250..255}] run tellraw @a[x=487,y=63,z=-300,dx=13,dy=5,dz=8] ["",{"text":"<Friendship Checker> "},{"selector":"@e[x=487,y=63,z=-300,dx=13,dy=5,dz=8,type=pixelmon:pixelmon]"},{"text":" looks really happy! It must love you a lot."}]
 
-data merge entity @e[limit=1,x=487,y=63,z=-300,dx=13,dy=5,dz=8,type=pixelmon:pixelmon] {Dimension:1}
+tellraw @p[x=487,y=63,z=-300,dx=13,dy=5,dz=8] ["",{"text":"You retrieved "},{"selector":"@e[limit=1,x=487,y=63,z=-300,dx=13,dy=5,dz=8,type=pixelmon:pixelmon]"},{"text":"!"}]
+tp @e[limit=1,x=487,y=63,z=-300,dx=13,dy=5,dz=8,type=pixelmon:pixelmon] ~ ~-1000 ~
 
 
 

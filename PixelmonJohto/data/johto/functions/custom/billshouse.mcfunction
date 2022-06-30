@@ -72,7 +72,8 @@ execute as @e[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,type=pixelmon:pixelmon,scores
 
 
 #Despawns the Pokemon
-data merge entity @e[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,type=pixelmon:pixelmon,tag=!Persistant,limit=1] {Dimension:1}
+execute if entity @e[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,type=pixelmon:pixelmon,tag=!Persistant,limit=1] run tellraw @p[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12] ["",{"text":"You retrieved "},{"selector":"@e[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,type=pixelmon:pixelmon,tag=!Persistant,limit=1]"},{"text":"!"}]
+tp @e[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,type=pixelmon:pixelmon,tag=!Persistant,limit=1] ~ ~-1000 ~
 
 
 
