@@ -13,7 +13,7 @@
 
 
 
-#1 - 8, old starters
+#1 - 7, old starters
 
 
 
@@ -22,51 +22,49 @@
 #9 - Battle Tower begin Session
 
 #If Tower is currently active
-execute as @a[scores={TriggerCommand=9}] run execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=TowerActive] run tellraw @a[scores={TriggerCommand=9}] ["",{"text":"<Clerk> Sorry, our last Battle Room is taken right now. Feel free to spectate the battles while you wait!"}]
-execute as @a[scores={TriggerCommand=9}] run execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=TowerActive] run scoreboard players set @a[scores={TriggerCommand=9}] TriggerCommand 0
+execute if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=TowerActive] run tellraw @a[scores={TriggerCommand=9}] ["",{"text":"<Clerk> Sorry, our last Battle Room is taken right now. Feel free to spectate the battles while you wait!"}]
+execute if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=TowerActive] run scoreboard players set @a[scores={TriggerCommand=9}] TriggerCommand 0
 
-
+#Tags Tower for only one person in at a time, adds scores to player to track progress
 execute as @a[scores={TriggerCommand=9}] run tag @e[x=-792,y=65,z=-284,dy=3,type=armor_stand] add TowerActive
 execute as @a[scores={TriggerCommand=9}] run tellraw @s {"text":"<Clerk> Let's begin!"}
-execute as @a[scores={TriggerCommand=9}] run scoreboard players set @s BattleTower 1
-execute as @a[scores={TriggerCommand=9}] run tp @s 894 100 67.0 -90 ~
 execute as @a[scores={TriggerCommand=9}] run scoreboard players set @s Battle_Streak 0
-execute as @a[scores={TriggerCommand=9}] run execute as @r[x=881,y=46,z=69,dx=2,dy=2,dz=2] run tp @s 910 100 67.0 90 ~
+execute as @a[scores={TriggerCommand=9}] run tp @s 894 100 67.0 -90 ~
+
+#TPs in NPC and preps their Pokemon & Skin
+execute as @a[scores={TriggerCommand=9}] run tp @e[x=902,y=64,z=98,distance=..2,type=pixelmon:npc_trainer] 910 100 67.0 90 ~
+execute as @a[scores={TriggerCommand=9}] run execute as @e[x=910,y=99,z=66,dy=3,dz=1,type=pixelmon:npc_trainer] run function johto:world/battletower/rolltrainer
+execute as @a[scores={TriggerCommand=9}] run execute as @e[x=910,y=99,z=66,dy=3,dz=1,type=pixelmon:npc_trainer] run function johto:world/battletower/rollpokemon
 
 #Resets Battle Streak armor stand to 0
 execute as @a[scores={TriggerCommand=9}] run kill @e[x=903,y=100,z=77,distance=..5,type=armor_stand]
-execute as @a[scores={TriggerCommand=9}] run function custom:battlestreakhologram
-execute as @a[scores={TriggerCommand=9}] run summon minecraft:armor_stand 903.0 101 77 {CustomName:"Battle Streak",NoGravity:1b,Invisible:1b,CustomNameVisible:1b}
+execute as @a[scores={TriggerCommand=9}] run function johto:world/battletower/battlestreakhologram
 
 #Enables observation monitoring function
-execute as @a[scores={TriggerCommand=9}] run setblock 925 48 69 minecraft:iron_block
+execute as @a[scores={TriggerCommand=9}] run setblock 925 65 89 minecraft:iron_block
 
 execute as @a[scores={TriggerCommand=9}] run scoreboard players set @s TriggerCommand 0
 
 
 
 
-#78 - Battle Tower End Session
-#scoreboard players set @a[x=875,y=99,z=50,dx=55,dy=20,dz=27] TriggerCommand 78
+#8 - Battle Tower End Session
+#scoreboard players set @a[x=875,y=99,z=50,dx=55,dy=20,dz=27] TriggerCommand 8
 
 #Clears the observation and turns off module
-execute as @a[scores={TriggerCommand=78}] run data merge entity @e[type=!minecraft:player,distance=..5,limit=1] {Item:{id:"minecraft:air",Count:1b}}
-execute as @a[scores={TriggerCommand=78}] run data merge entity @e[type=!minecraft:player,distance=..5,limit=1] {Item:{id:"minecraft:air",Count:1b}}
-execute as @a[scores={TriggerCommand=78}] run setblock 925 48 69 minecraft:redstone_block
+#execute as @a[scores={TriggerCommand=8}] run data merge entity @e[type=!minecraft:player,distance=..5,limit=1] {Item:{id:"minecraft:air",Count:1b}}
+#execute as @a[scores={TriggerCommand=8}] run data merge entity @e[type=!minecraft:player,distance=..5,limit=1] {Item:{id:"minecraft:air",Count:1b}}
+execute as @a[scores={TriggerCommand=8}] run setblock 925 65 89 minecraft:redstone_block
 
-execute as @a[scores={TriggerCommand=78}] run tp @s 902 64 67 180 ~
-execute as @a[scores={TriggerCommand=78}] run tag @e[x=-792,y=65,z=-284,dy=3,type=armor_stand] remove TowerActive
-execute as @a[scores={TriggerCommand=78}] run scoreboard players set @s Battle_Streak 0
-execute as @a[scores={TriggerCommand=78}] run tellraw @s {"text":"<Clerk> Thank you for visiting! Please come again!"}
-execute as @a[scores={TriggerCommand=78}] run scoreboard players set @s BattleTower 0
+execute as @a[scores={TriggerCommand=8}] run tp @s 902 64 67 180 ~
+execute as @a[scores={TriggerCommand=8}] run tag @e[x=-792,y=65,z=-284,dy=3,type=armor_stand] remove TowerActive
+execute as @a[scores={TriggerCommand=8}] run scoreboard players set @s Battle_Streak 0
+execute as @a[scores={TriggerCommand=8}] run tellraw @s {"text":"<Clerk> Thank you for visiting! Please come again!"}
 
-#Return TP Pokemon
-execute as @a[scores={TriggerCommand=78}] run tp @e[x=910,y=99,z=66,dy=2,dz=1,type=pixelmon:npc_trainer,scores={Battle_Streak=1}] 882 47 70
-execute as @a[scores={TriggerCommand=78}] run tp @e[x=910,y=99,z=66,dy=2,dz=1,type=pixelmon:npc_trainer,scores={Battle_Streak=2}] 887 47 70
-execute as @a[scores={TriggerCommand=78}] run tp @e[x=910,y=99,z=66,dy=2,dz=1,type=pixelmon:npc_trainer,scores={Battle_Streak=3}] 892 47 70
-execute as @a[scores={TriggerCommand=78}] run tp @e[x=910,y=99,z=66,dy=2,dz=1,type=pixelmon:npc_trainer,scores={Battle_Streak=4}] 897 47 70
+#Return TP Trainer
+execute as @a[scores={TriggerCommand=8}] run tp @e[x=910,y=99,z=66,dy=2,dz=1,type=pixelmon:npc_trainer] 902 64 98
 
-execute as @a[scores={TriggerCommand=78}] run scoreboard players set @s TriggerCommand 0
+execute as @a[scores={TriggerCommand=8}] run scoreboard players set @s TriggerCommand 0
 
 
 

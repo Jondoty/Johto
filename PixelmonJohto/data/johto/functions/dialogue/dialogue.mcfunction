@@ -4527,68 +4527,35 @@ tag @s[scores={DialogueTrigger=205,TalkTime=70..}] add Dialogue205
 #scoreboard players set @a[x=875,y=99,z=50,dx=55,dy=20,dz=27,score_TalkTime=0] DialogueTrigger 206 {Inventory:[{id:"minecraft:nether_brick"}]}
 
 execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run clear @s minecraft:nether_brick
-execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players add @s BattlePoints 1
+execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players add @s[scores={Battle_Streak=0..7}] BattlePoints 1
+execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players add @s[scores={Battle_Streak=8..14}] BattlePoints 2
+execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players add @s[scores={Battle_Streak=15..21}] BattlePoints 3
+execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players add @s[scores={Battle_Streak=22..28}] BattlePoints 4
+execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players add @s[scores={Battle_Streak=29..35}] BattlePoints 5
+execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players add @s[scores={Battle_Streak=36..42}] BattlePoints 6
+execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players add @s[scores={Battle_Streak=43..49}] BattlePoints 7
+execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players add @s[scores={Battle_Streak=50..}] BattlePoints 8
 execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players add @s Battle_Streak 1
 execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run pokeheal @s
-execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run tp @s 900 100 67.0 -90 -18
+execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run tellraw @s {"text":"Your Pokemon have been healed!"}
+#execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run tp @s 900 100 67.0 -90 -18
 
 
 #Clear and activates Battle Streak hologram function
 execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run kill @e[x=903,y=100,z=77,distance=..5,type=armor_stand]
-execute as @s[scores={DialogueTrigger=206,TalkTime=3}] run function custom:battlestreakhologram
-execute as @s[scores={DialogueTrigger=206,TalkTime=3}] run summon minecraft:armor_stand 903.0 101 77 {CustomName:'{"text":"Battle Streak"}',NoGravity:1b,Invisible:1b,CustomNameVisible:1b}
-
-execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run tellraw @s {"text":"Your Pokemon have been healed!"}
-
-#Tp returns Trainers to group
-execute as @s[scores={DialogueTrigger=206,TalkTime=2}] run tp @e[x=910,y=99,z=66,dy=2,dz=1,type=pixelmon:npc_trainer,scores={Battle_Streak=1}] 882 47 70
-execute as @s[scores={DialogueTrigger=206,TalkTime=2}] run tp @e[x=910,y=99,z=66,dy=2,dz=1,type=pixelmon:npc_trainer,scores={Battle_Streak=2}] 887 47 70
-execute as @s[scores={DialogueTrigger=206,TalkTime=2}] run tp @e[x=910,y=99,z=66,dy=2,dz=1,type=pixelmon:npc_trainer,scores={Battle_Streak=3}] 892 47 70
-execute as @s[scores={DialogueTrigger=206,TalkTime=2}] run tp @e[x=910,y=99,z=66,dy=2,dz=1,type=pixelmon:npc_trainer,scores={Battle_Streak=4}] 897 47 70
-
-#Rolls for an RNG score
-execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players set @e[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 0
-execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 1
-execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 2
-execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 4
-execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 8
-execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 16
-execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 32
-execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 64
-
-execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players operation @s rng = @e[x=-867,y=69,z=-205,dy=3,type=armor_stand] rng
+execute as @s[scores={DialogueTrigger=206,TalkTime=2}] run function johto:world/battletower/battlestreakhologram
+execute as @s[scores={DialogueTrigger=206,TalkTime=2}] run summon minecraft:armor_stand 903.0 101 77 {Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,CustomName:'{"text":"Battle Streak","color":"green"}',CustomNameVisible:1b}
 
 
-#Tps in new trainer depending on Battle_Streak score and rng score for some
-#100% Group 1
-execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=0..20}] run tp @r[x=881,y=46,z=69,dx=2,dy=2,dz=2,limit=1] 910 100 67.0 90 ~
-
-#50% Group 1, 50% Group 2
-execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=21..40,rng=0..63}] run tp @r[x=881,y=46,z=69,dx=2,dy=2,dz=2,limit=1] 910 100 67.0 90 ~
-execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=21..40,rng=64..}] run tp @r[x=886,y=46,z=69,dx=2,dy=2,dz=2,limit=1] 910 100 67.0 90 ~
-
-#100% Group 2
-execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=41..60}] run tp @r[x=886,y=46,z=69,dx=2,dy=2,dz=2,limit=1] 910 100 67.0 90 ~
-
-#50% Group 2, 50% Group 3
-execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=61..80,rng=0..63}] run tp @r[x=886,y=46,z=69,dx=2,dy=2,dz=2,limit=1] 910 100 67.0 90 ~
-execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=61..80,rng=64..}] run tp @r[x=891,y=46,z=69,dx=2,dy=2,dz=2,limit=1] 910 100 67.0 90 ~
-
-#100% Group 3
-execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=81..100}] run tp @r[x=891,y=46,z=69,dx=2,dy=2,dz=2,limit=1] 910 100 67.0 90 ~
-
-#75% Group 3, 25% Group 4
-execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=101..,rng=0..102}] run tp @r[x=891,y=46,z=69,dx=2,dy=2,dz=2,limit=1] 910 100 67.0 90 ~
-execute as @s[scores={DialogueTrigger=206,TalkTime=4,Battle_Streak=101..,rng=103..}] run tp @r[x=896,y=46,z=69,dx=2,dy=2,dz=2,limit=1] 910 100 67.0 90 ~
+#Rolls for new NPC
+execute as @s[scores={DialogueTrigger=217,TalkTime=4}] run particle cloud 910 100 66 1 1 1 1 100
+execute as @s[scores={DialogueTrigger=206,TalkTime=5}] run execute as @e[x=910,y=99,z=66,dy=3,dz=1,type=pixelmon:npc_trainer] run function johto:world/battletower/rolltrainer
+execute as @s[scores={DialogueTrigger=206,TalkTime=5}] run execute as @e[x=910,y=99,z=66,dy=3,dz=1,type=pixelmon:npc_trainer] run function johto:world/battletower/rollpokemon
+execute as @s[scores={DialogueTrigger=206,TalkTime=5}] run execute as @e[x=910,y=99,z=66,dy=3,dz=1,type=pixelmon:npc_trainer] run function johto:world/battletower/rolldialogue
 
 #Rotates npcs
 execute as @s[scores={DialogueTrigger=206,TalkTime=5}] run data merge entity @e[limit=1,x=910,y=99,z=66,dy=3,dz=1,type=pixelmon:npc_trainer] {TrainerRotation:90.0f}
 
-#Debug saying Teams
-#execute as @s[score_DialogueTrigger_min=206,score_DialogueTrigger=206,tag=!Dialogue206,score_TalkTime_min=5,score_TalkTime=5] run execute @e[x=910,y=99,z=66,dy=2,dz=1,type=pixelmon:npc_trainer,score_Battle_Streak_min=1,score_Battle_Streak=1] run say Group 1
-#execute as @s[score_DialogueTrigger_min=206,score_DialogueTrigger=206,tag=!Dialogue206,score_TalkTime_min=5,score_TalkTime=5] run execute @e[x=910,y=99,z=66,dy=2,dz=1,type=pixelmon:npc_trainer,score_Battle_Streak_min=2,score_Battle_Streak=2] run say Group 2
-#execute as @s[score_DialogueTrigger_min=206,score_DialogueTrigger=206,tag=!Dialogue206,score_TalkTime_min=5,score_TalkTime=5] run execute @e[x=910,y=99,z=66,dy=2,dz=1,type=pixelmon:npc_trainer,score_Battle_Streak_min=3,score_Battle_Streak=3] run say Group 3
-#execute as @s[score_DialogueTrigger_min=206,score_DialogueTrigger=206,tag=!Dialogue206,score_TalkTime_min=5,score_TalkTime=5] run execute @e[x=910,y=99,z=66,dy=2,dz=1,type=pixelmon:npc_trainer,score_Battle_Streak_min=4,score_Battle_Streak=4] run say Group 4
 
 tag @s[scores={DialogueTrigger=206,TalkTime=5..}] add Dialogue206
 

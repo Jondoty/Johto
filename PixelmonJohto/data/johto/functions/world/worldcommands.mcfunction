@@ -1,10 +1,10 @@
 #---------------------
 #Used to tag trainers that I'll need to replace in 1.16.5
-tag @e[tag=!1.12.2Trainer,type=pixelmon:npc_trainer] add 1.12.2Trainer
+#tag @e[tag=!1.12.2Trainer,type=pixelmon:npc_trainer] add 1.12.2Trainer
 execute at @e[tag=1.12.2Trainer,type=pixelmon:npc_trainer] run particle minecraft:end_rod ~ ~5 ~ 0 10 0 0.001 10 force @a
 
 #temp to tp corrputed trainer into void
-tp @e[x=-2437,y=64,z=755,type=pixelmon:npc_trainer,distance=..4] ~ ~-1000 ~
+tp @e[x=-1248,y=64,z=-7,type=pixelmon:npc_trainer,distance=..4] ~ ~-1000 ~
 
 #---------------------
 #Despawns items that may be broken and pop up elsewhere in the map
@@ -24,7 +24,7 @@ execute as @a[x=-780,y=64,z=-245,distance=..20,tag=!InitialTags] run function jo
 execute as @a[scores={TriggerCommand=1..}] run function johto:triggers/triggercommands
 
 #Hall of Fame Function
-execute as @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=34,tag=Dialogue97] run function johto:custom/halloffame
+execute as @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=34,tag=Dialogue97] run function johto:world/halloffame/halloffame
 
 #Removes Cooldown score if present
 scoreboard players remove @a[scores={Cooldown=1..}] Cooldown 1
@@ -32,8 +32,6 @@ scoreboard players remove @a[scores={Cooldown=1..}] Cooldown 1
 #Runs relog function if player is found with relog score
 execute as @a[scores={Relog=1..}] run function johto:triggers/relog
 
-#TownTitles function
-execute as @e[name=TownTitles,type=minecraft:armor_stand] run execute as @a[distance=0..30,scores={TownDisplay=0}] run function johto:custom/towntitles
 
 #Removes a TownDisplay cooldown score if present
 scoreboard players remove @a[scores={TownDisplay=1..}] TownDisplay 1
@@ -45,6 +43,20 @@ execute as @a[x=1590,y=74,z=-129,dx=10,dy=5,dz=10] run function johto:custom/saf
 tag @a[x=875,y=99,z=50,dx=55,dy=20,dz=27,tag=Dialogue206] remove Dialogue206
 scoreboard players set @a[x=875,y=99,z=50,dx=55,dy=20,dz=27,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 206
 
+#Detects button forefit
+execute if block 889 101 77 stone_button[powered=true] if entity @e[x=875,y=99,z=50,dx=55,dy=20,dz=27] run scoreboard players set @a[x=875,y=99,z=50,dx=55,dy=20,dz=27] TriggerCommand 8
+
+#Battle Tower Desk Prompts
+#Desk 1
+execute as @a[x=907,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run scoreboard players enable @s TriggerCommand
+execute as @a[x=907,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run tellraw @a[x=907,y=64,z=72,dx=4,dy=2,dz=3] ["",{"text":"<Clerk> Welcome to the Battle Tower! Would you like to begin your battle challenge?\n"},{"text":"[","color":"green"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 9"}},{"text":"]","color":"green"}]
+execute as @a[x=907,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run scoreboard players set @s Cooldown 60
+
+#Desk 2
+execute as @a[x=894,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run scoreboard players enable @s TriggerCommand
+execute as @a[x=894,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run tellraw @s ["",{"text":"<Clerk> Welcome to the Battle Tower! Would you like to begin your battle challenge?\n"},{"text":"[","color":"green"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 9"}},{"text":"]","color":"green"}]
+execute as @a[x=894,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run scoreboard players set @s Cooldown 60
+
 #Lake of Rage Fisherman Karp function
 #TEST
 execute if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=0}] run tellraw @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=0}] {"text":"<Fishing Guru> Do you have a Karp for me?"}
@@ -53,7 +65,7 @@ execute if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD
 execute if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=..1}] run tellraw @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=..1}] {"text":"<Fishing Guru> You'll have to show me another Karp some other time!"}
 execute if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=..1}] run scoreboard players set @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=..1}] Cooldown 50
 
-execute if entity @e[x=-197,y=63,z=568,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,name=Magikarp] if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={KarpCD=0}] run function johto:custom/karp
+execute if entity @e[x=-197,y=63,z=568,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,name=Magikarp] if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={KarpCD=0}] run function johto:triggers/karp
 
 
 #Runs Ruins of Alph puzzle if player is in the ruins
@@ -139,7 +151,7 @@ execute as @a[nbt={SelectedItem:{id:"pixelmon:coin_case",}}] run function johto:
 
 #---------------------
 #Runs Goldenrod Underground puzzle function of player is in the underground
-execute if entity @a[x=476,y=46,z=-345,dx=52,dy=7,dz=51,limit=1] run function johto:triggers/undergroundpuzzle/undergroundpuzzle
+execute if entity @a[x=476,y=46,z=-345,dx=52,dy=7,dz=51,limit=1] run function johto:triggers/undergroundpuzzle/puzzle
 
 
 #-------------------------------------------------------------------------------------------------------------------------
