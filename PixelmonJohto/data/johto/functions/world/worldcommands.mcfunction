@@ -85,6 +85,12 @@ execute as @a[x=-1222,y=0,z=500,dx=470,dy=240,dz=342] run function johto:world/s
 #MusicTitles function, tracks player around map checking for new areas or music
 execute as @a[scores={TalkTime=0}] run function johto:world/musictitles
 
+#Runs an ItemFinder function if player is holding the device, fills the XP bar based on distance to nearest hidden loot
+xp set @a 0 levels
+xp set @a 0 points
+
+execute as @a[nbt={SelectedItem:{id:"pixelmon:item_finder"}}] run function johto:world/itemfinder
+
 #---------------------
 #GameRules in lobby
 
@@ -149,7 +155,7 @@ execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft
 execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald"}]}] run clear @s minecraft:emerald 1
 
 #When player looks at a coin case, shows their balance
-execute as @a[nbt={SelectedItem:{id:"pixelmon:coin_case",}}] run function johto:triggers/gamecorner/coinbal
+execute as @a[nbt={SelectedItem:{id:"pixelmon:coin_case"}}] run function johto:triggers/gamecorner/coinbal
 
 
 
@@ -642,7 +648,7 @@ execute as @p[x=-187,y=64,z=352,distance=..30,tag=Dialogue64] run tp @e[x=-184,y
 #---------------------
 #Route 49 - Lake of Rage Shiny Gyarados
 scoreboard players set @a[x=-169,y=65,z=645,distance=..30,scores={TalkTime=0},tag=!Dialogue49] DialogueTrigger 49
-execute at @a[x=-169,y=65,z=645,distance=..100,tag=!Dialogue49,scores={TalkTime=0}] run tp @e[x=-765,y=66,z=-244,dy=3,type=pixelmon:statue] -167 62 632
+execute at @a[x=-169,y=65,z=645,distance=..100,tag=!Dialogue49,scores={TalkTime=0}] run tp @e[x=-765,y=66,z=-244,distance=..3,type=pixelmon:statue] -167 62 632
 
 #Dialogue50 - Mr. Pokemon Red Scale trade prompt
 scoreboard players set @a[x=-255,y=63,z=-198,dx=20,dy=5,dz=8,scores={DialogueTrigger=0},tag=!Dialogue50,nbt={Inventory:[{id:"minecraft:music_disc_cat"}]}] DialogueTrigger 50
