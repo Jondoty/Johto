@@ -1,5 +1,5 @@
 #Bug Catching Contest running
-#execute @a[x=467,y=63,z=60,dx=18,dy=1,dz=8,score_TalkTime=0,tag=Dialogue198] ~ ~ ~ execute @s[tag=!Dialogue199] ~ ~ ~ execute @e[x=467,y=63,z=60,dx=18,dy=1,dz=8,type=pixelmon:pixelmon] ~ ~ ~ function custom:bugcontest
+#execute @a[x=467,y=63,z=60,dx=18,dy=1,dz=8,score_TalkTime=0,tag=Dialogue198] ~ ~ ~ execute @s[tag=!Dialogue199] ~ ~ ~ execute @e[x=467,y=63,z=60,dx=18,dy=1,dz=8,type=pixelmon:pixelmon] ~ ~ ~ function johto:world/bugcontest/bugcontest
 
 
 #execute @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,score_WeekdayTrack_min=2,score_WeekdayTrack=2] ~ ~ ~ /testfor @a[x=467,y=63,z=60,dx=18,dy=1,dz=8,score_TalkTime=0,score_BugContest=0]

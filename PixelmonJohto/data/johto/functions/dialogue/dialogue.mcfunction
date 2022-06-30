@@ -4220,11 +4220,11 @@ tag @s[scores={DialogueTrigger=198,TalkTime=1715..}] add Dialogue198
 tellraw @s[scores={DialogueTrigger=199,TalkTime=1}] {"text":"<Park Worker> Scoring your Pokemon..."}
 
 execute as @s[scores={DialogueTrigger=199,TalkTime=1}] run scoreboard players set @s BugPoints 0
-execute as @s[scores={DialogueTrigger=199,TalkTime=2}] run function custom:bugcontestivscore
+execute as @s[scores={DialogueTrigger=199,TalkTime=2}] run function johto:world/bugcontest/bugcontestivscore
 
 tellraw @s[scores={DialogueTrigger=199,TalkTime=8}] {"text":"<Park Worker> Adding up points..."}
 
-execute as @s[scores={DialogueTrigger=199,TalkTime=8}] run function custom:bugcontesttotal
+execute as @s[scores={DialogueTrigger=199,TalkTime=8}] run function johto:world/bugcontest/bugcontesttotal
 
 tellraw @s[scores={DialogueTrigger=199,TalkTime=15}] {"text":"<Park Worker> And today's winners are..."}
 
