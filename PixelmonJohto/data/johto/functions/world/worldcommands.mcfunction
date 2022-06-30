@@ -49,11 +49,13 @@ execute if block 889 101 77 stone_button[powered=true] if entity @e[x=875,y=99,z
 #Battle Tower Desk Prompts
 #Desk 1
 execute as @a[x=907,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run scoreboard players enable @s TriggerCommand
+execute as @a[x=907,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run function johto:world/battletower/pointbal
 execute as @a[x=907,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run tellraw @a[x=907,y=64,z=72,dx=4,dy=2,dz=3] ["",{"text":"<Clerk> Welcome to the Battle Tower! Would you like to begin your battle challenge?\n"},{"text":"[","color":"green"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 9"}},{"text":"]","color":"green"}]
 execute as @a[x=907,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run scoreboard players set @s Cooldown 60
 
 #Desk 2
 execute as @a[x=894,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run scoreboard players enable @s TriggerCommand
+execute as @a[x=894,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run function johto:world/battletower/pointbal
 execute as @a[x=894,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run tellraw @s ["",{"text":"<Clerk> Welcome to the Battle Tower! Would you like to begin your battle challenge?\n"},{"text":"[","color":"green"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 9"}},{"text":"]","color":"green"}]
 execute as @a[x=894,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run scoreboard players set @s Cooldown 60
 

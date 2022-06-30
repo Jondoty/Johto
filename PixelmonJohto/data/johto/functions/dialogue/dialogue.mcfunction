@@ -4538,6 +4538,7 @@ execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players ad
 execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run scoreboard players add @s Battle_Streak 1
 execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run pokeheal @s
 execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run tellraw @s {"text":"Your Pokemon have been healed!"}
+execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run function johto:world/battletower/pointbal
 #execute as @s[scores={DialogueTrigger=206,TalkTime=1}] run tp @s 900 100 67.0 -90 -18
 
 
