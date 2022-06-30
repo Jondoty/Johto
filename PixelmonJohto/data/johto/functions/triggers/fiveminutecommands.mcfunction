@@ -31,8 +31,6 @@ scoreboard players set @e[x=-771,y=84,z=-243,dx=12,dy=2,dz=2] StarterPick 3
 scoreboard players set @e[x=-771,y=88,z=-243,dx=12,dy=2,dz=2] StarterPick 2
 scoreboard players set @e[x=-771,y=92,z=-243,dx=12,dy=2,dz=2] StarterPick 1
 
-#Karp Cooldown
-scoreboard players remove @a[scores={KarpCD=1}] KarpCD 1
 
 #Legendary Defeat Cooldowns
 scoreboard players remove @a[scores={LatiasCD=2..}] LatiasCD 1

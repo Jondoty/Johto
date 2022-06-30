@@ -103,7 +103,10 @@ clone -748 75 -242 -748 75 -242 -732 64 -482
 tag @e[x=-792,y=65,z=-284,dy=3,type=armor_stand] add Night
 
 
-
+#Removes Karp Cooldown score for Lake of Rage Fisherman
+scoreboard players set @a[scores={KarpCD=1..}] KarpCD 0
+tag @a[tag=FishermanTalk] remove FishermanTalk
+tag @a[tag=FishermanTalk2] remove FishermanTalk2
 
 
 

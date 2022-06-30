@@ -910,6 +910,7 @@ execute at @a[scores={TriggerHOF=1..}] run execute as @e[x=-1300,y=77,z=751,dx=2
 #Applies Champion ribbon
 data modify entity @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,tag=Pixelmon,limit=1] {ribbon_display:"CHAMPION",ribbons:["CHAMPION"]}
 
-data modify entity @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,tag=Pixelmon,limit=1] {Dimension:1}
+tellraw @a[scores={TriggerHOF=1..}] ["",{"text":"You retrieved "},{"selector":"@e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,tag=Pixelmon,limit=1]"},{"text":"!"}]
+tp @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,tag=Pixelmon,limit=1] ~ ~-1000 ~
 
 scoreboard players set @a[scores={TriggerHOF=1..}] TriggerHOF 0

@@ -60,14 +60,16 @@ execute as @a[x=894,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run tellraw @s
 execute as @a[x=894,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run scoreboard players set @s Cooldown 60
 
 #Lake of Rage Fisherman Karp function
-#TEST
-execute if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=0}] run tellraw @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=0}] {"text":"<Fishing Guru> Do you have a Karp for me?"}
-execute if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=0}] run scoreboard players set @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=0}] Cooldown 50
+#Removes Cooldown tag when player walks in front of the house
+tag @a[x=-188,y=63,z=554,dx=14,dy=6,dz=11,tag=FishermanTalk] remove FishermanTalk
+tag @a[x=-188,y=63,z=554,dx=14,dy=6,dz=11,tag=FishermanTalk2] remove FishermanTalk2
+execute if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={KarpCD=0},tag=!FishermanTalk] run tellraw @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={KarpCD=0},tag=!FishermanTalk] {"text":"<Fishing Guru> Do you have a Karp for me?"}
+execute if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={KarpCD=0},tag=!FishermanTalk] run tag @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={KarpCD=0},tag=!FishermanTalk] add FishermanTalk
 
-execute if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=..1}] run tellraw @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=..1}] {"text":"<Fishing Guru> You'll have to show me another Karp some other time!"}
-execute if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=..1}] run scoreboard players set @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={Cooldown=0,KarpCD=..1}] Cooldown 50
+execute if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={KarpCD=1..},tag=!FishermanTalk2] run tellraw @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={KarpCD=1..},tag=!FishermanTalk2] {"text":"<Fishing Guru> You'll have to show me another Karp some other time!"}
+execute if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={KarpCD=1..},tag=!FishermanTalk2] run tag @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={KarpCD=1..},tag=!FishermanTalk2] add FishermanTalk2
 
-execute if entity @e[x=-197,y=63,z=568,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,name=Magikarp] if entity @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={KarpCD=0}] run function johto:triggers/karp
+execute if entity @e[x=-197,y=63,z=568,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,nbt={ndex:129}] run execute as @a[x=-197,y=63,z=568,dx=18,dy=5,dz=8,scores={KarpCD=0}] run function johto:triggers/karp
 
 
 #Runs Ruins of Alph puzzle if player is in the ruins
@@ -1524,6 +1526,10 @@ execute at @a[x=125,y=60,z=145,dx=24,dy=3,dz=72,tag=!Dialogue33] run tp @a[x=125
 tellraw @a[x=149,y=60,z=145,dx=34,dy=3,dz=71,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
 execute at @a[x=149,y=60,z=145,dx=34,dy=3,dz=71,tag=!Dialogue33] run tp @a[x=149,y=60,z=145,dx=34,dy=3,dz=71,tag=!Dialogue33] 179 64 195
 
+
+#Lake of Rage without Surf
+execute as @a[x=-239,y=52,z=587,dx=141,dy=10,dz=120,tag=!Dialogue33] run tellraw @s[tag=!Morty] {"text":"This area requires Surf to access & the Fog Badge to use outside of battle!","italic":true,"color":"gray"}
+execute as @a[x=-239,y=52,z=587,dx=141,dy=10,dz=120,tag=!Dialogue33] run tp @s[tag=!Morty] -164 64 590
 
 #Whirl Islands without Surf and Morty
 tellraw @a[x=877,y=40,z=-108,dx=85,dy=25,dz=15,tag=!Morty] {"text":"This area requires Surf to access & the Fog Badge to use outside of battle!","italic":true,"color":"gray"}
