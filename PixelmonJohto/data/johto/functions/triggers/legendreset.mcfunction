@@ -62,7 +62,7 @@ execute as @a[tag=!LugiaCaught,tag=Dialogue103] run tag @s remove Dialogue103
 
 #Suicune
 execute as @a[tag=!SuicuneCaught,tag=Dialogue233,tag=!Dialogue234] run tellraw @s {"text":"You can now re-encounter Suicune!","italic":true,"color":"gray"}
-execute as @a[tag=!SuicuneCaught,tag=Dialogue233,tag=!Dialogue234] run scoreboard players set @s DogEncounter 1
+#execute as @a[tag=!SuicuneCaught,tag=Dialogue233,tag=!Dialogue234] run scoreboard players set @s DogEncounter 1
 execute as @a[tag=!SuicuneCaught,tag=Dialogue233,tag=!Dialogue234] run tag @s remove Dialogue233
 
 
