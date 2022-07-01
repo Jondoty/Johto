@@ -536,6 +536,10 @@ execute at @a[x=402,y=64,z=-734,distance=0..15,scores={StarterPick=3,TalkTime=0}
 
 #---------------------
 
+#Dialogue21 Pre-Bugsy
+execute as @a[x=623,y=64,z=-714,distance=5,tag=!Bugsy,scores={Cooldown=0}] run tellraw @s {"text":"<Charcoal Apprentice> My Farfetch'd ran off! I could really use the help of an experienced trainer..."}
+execute as @a[x=623,y=64,z=-714,distance=5,tag=!Bugsy,scores={Cooldown=0}] run scoreboard players set @s Cooldown 60
+
 #Dialogue21 - Ilex Forest Farfetch'd Lost
 scoreboard players set @a[x=623,y=64,z=-714,distance=0..5,tag=!Dialogue21,tag=Bugsy,scores={Farfetchd=0}] DialogueTrigger 21
 
@@ -1065,10 +1069,6 @@ tellraw @a[x=-1099,y=0,z=-252,dx=102,dy=100,dz=189,tag=Dialogue176,scores={Villa
 tellraw @a[x=-1099,y=0,z=-252,dx=102,dy=100,dz=189,tag=Dialogue176,scores={VillagerClick=1..}] {"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 26"}}
 scoreboard players set @a[x=-1099,y=0,z=-252,dx=102,dy=100,dz=189,scores={VillagerClick=1..}] VillagerClick 0
 
-#---------------------
-
-execute as @a[x=496,y=48,z=-274,dx=11,dy=5,dz=7,tag=!BuenasPasswordCD] run setblock -825 69 -193 minecraft:redstone_block
-clear @a[x=496,y=48,z=-274,dx=11,dy=5,dz=7,tag=!BuenasPasswordCD,tag=BuenasPasswordTalk] minecraft:paper{display:{Name:"Buena's Password",Lore:["A code given on the Buena's Password","Show. Can be exchanged for a prize","at Goldenrod City's Radio Tower."]}}
 
 #---------------------
 #Dialogues 187-193 Week Siblings
@@ -1346,14 +1346,6 @@ execute as @a[x=-3111,y=64,z=989,distance=..5,scores={TalkTime=0},tag=!Dialogue2
 
 
 
-#Radio Tower Quiz prompt
-tellraw @a[x=510,y=30,z=-274,dx=11,dy=4,dz=4,scores={TalkTime=0,Cooldown=0},tag=!Dialogue179] {"text":"We have a special Quiz campaign! Answer five questions correctly in a row to win a Radio Card! When you load it into the Pokégear, you will be able to listen to more stations... anytime, anywhere! Would you like to try our Quiz?"}
-scoreboard players enable @a[x=510,y=30,z=-274,dx=11,dy=4,dz=4,scores={TalkTime=0,Cooldown=0},tag=!Dialogue179] TriggerCommand
-tellraw @a[x=510,y=30,z=-274,dx=11,dy=4,dz=4,scores={TalkTime=0,Cooldown=0},tag=!Dialogue179] {"text": "", "extra": [{"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 21"}}]}
-scoreboard players set @a[x=510,y=30,z=-274,dx=11,dy=4,dz=4,scores={TalkTime=0,Cooldown=0},tag=!Dialogue179] Cooldown 60
-
-
-
 #Celebi's hint to seeing the Ilex Shrine
 #TEST
 execute if entity @a[x=617,y=64,z=-699,distance=..7,tag=!Dialogue165,scores={TalkTime=0,Celebi=1..,Cooldown=0}] run tellraw @a[x=617,y=64,z=-699,distance=..15,tag=!Dialogue165,scores={TalkTime=0,Celebi=1..,Cooldown=0}] {"text":"Celebi seems interested to see the shrine.","italic":true}
@@ -1388,52 +1380,42 @@ execute if block -944 183 285 pixelmon:timespace_altar if entity @a[x=-967,y=174
 #execute as @e[x=-967,y=174,z=189,dx=50,dy=30,dz=140,type=pixelmon:pixelmon,nbt={ndex: 493},scores={Cooldown=0}] run scoreboard players set @e[x=-967,y=174,z=189,dx=50,dy=30,dz=140,nbt={ndex:493}] Cooldown 30
 #execute as @e[x=-967,y=174,z=189,dx=50,dy=30,dz=140,type=pixelmon:pixelmon,nbt={ndex: 493},scores={Cooldown=0}] tag @s add Temp
 
+#---------------------
+#Radio Tower Shows & NPCs
 
-#Post-battle reset items
-##Articuno
-#scoreboard players set @a[nbt={Inventory:[{id:"minecraft:chainmail_boots"}]}] TriggerCommand 58
-##Zapdos
-#scoreboard players set @a[nbt={Inventory:[{id:"minecraft:chainmail_chestplate"}]}] TriggerCommand 59
-##Moltres
-#scoreboard players set @a[nbt={Inventory:[{id:"minecraft:chainmail_helmet"}]}] TriggerCommand 57
-#
-##Arceus
-#scoreboard players set @a[nbt={Inventory:[{id:"minecraft:diamond_chestplate"}]}] TriggerCommand 60
-##Giratina
-#scoreboard players set @a[nbt={Inventory:[{id:"minecraft:diamond_leggings"}]}] TriggerCommand 73
-##Dialga
-#scoreboard players set @a[nbt={Inventory:[{id:"minecraft:leather_helmet"}]}] TriggerCommand 75
-##Palkia
-#scoreboard players set @a[nbt={Inventory:[{id:"minecraft:diamond_helmet"}]}] TriggerCommand 74
-#
-##Kyogre
-#scoreboard players set @a[nbt={Inventory:[{id:"minecraft:iron_chestplate"}]}] TriggerCommand 62
-##Groudon
-#scoreboard players set @a[nbt={Inventory:[{id:"minecraft:iron_helmet"}]}] TriggerCommand 63
-##Rayquaza
-#scoreboard players set @a[nbt={Inventory:[{id:"minecraft:iron_leggings"}]}] TriggerCommand 61
-#
-##Mew
-#scoreboard players set @a[nbt={Inventory:[{id:"minecraft:diamond_boots"}]}] TriggerCommand 64
-##Mewtwo
-#scoreboard players set @a[nbt={Inventory:[{id:"minecraft:chainmail_leggings"}]}] TriggerCommand 65
-#
-##Ho-Oh
-#scoreboard players set @a[nbt={Inventory:[{id:"minecraft:iron_boots"}]}] TriggerCommand 66
-##Lugia
-#scoreboard players set @a[nbt={Inventory:[{id:"minecraft:golden_leggings"}]}] TriggerCommand 67
-#
-##Raikou
-#scoreboard players set @a[nbt={Inventory:[{id:"minecraft:golden_boots"}]}] TriggerCommand 70
-##Entei
-#scoreboard players set @a[nbt={Inventory:[{id:"minecraft:golden_chestplate"}]}] TriggerCommand 69
-##Suicune
-#scoreboard players set @a[nbt={Inventory:[{id:"minecraft:golden_helmet"}]}] TriggerCommand 68
-#
-##Latios
-#scoreboard players set @a[nbt={Inventory:[{id:"minecraft:leather_chestplate"}]}] TriggerCommand 71
-##Latias
-#scoreboard players set @a[nbt={Inventory:[{id:"pixelmon:aluminium_boots"}]}] TriggerCommand 72
+#Buena's Password
+execute as @a[x=496,y=48,z=-274,dx=11,dy=5,dz=7,tag=!BuenasPasswordCD] run setblock -825 69 -193 minecraft:redstone_block
+clear @a[x=496,y=48,z=-274,dx=11,dy=5,dz=7,tag=!BuenasPasswordCD,tag=BuenasPasswordTalk] minecraft:paper{display:{Name:"Buena's Password",Lore:["A code given on the Buena's Password","Show. Can be exchanged for a prize","at Goldenrod City's Radio Tower."]}}
+
+
+#Radio Tower Quiz prompt
+execute as @a[x=510,y=30,z=-274,dx=11,dy=4,dz=4,tag=!Dialogue179,scores={TalkTime=0,Cooldown=0}] run tellraw @s {"text":"We have a special Quiz campaign! Answer five questions correctly in a row to win a Radio Card! When you load it into the Radio, you will be able to listen to additional stations.. anytime, anywhere! Would you like to try our Quiz?"}
+execute as @a[x=510,y=30,z=-274,dx=11,dy=4,dz=4,tag=!Dialogue179,scores={TalkTime=0,Cooldown=0}] run scoreboard players enable @s TriggerCommand
+execute as @a[x=510,y=30,z=-274,dx=11,dy=4,dz=4,tag=!Dialogue179,scores={TalkTime=0,Cooldown=0}] run tellraw @s {"text": "", "extra": [{"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 21"}}]}
+execute as @a[x=510,y=30,z=-274,dx=11,dy=4,dz=4,tag=!Dialogue179,scores={TalkTime=0,Cooldown=0}] run scoreboard players set @s Cooldown 120
+
+
+#Lucky Number Show
+execute as @a[x=506,y=31,z=-272,distance=..3,tag=!LuckyNumberCD,scores={TalkTime=0,Cooldown=0}] run tellraw @s {"text":"<DJ Reed> Hi, are you here for the Lucky Number Show? Want me to check the ID numbers of your Pokémon?"}
+execute as @a[x=506,y=31,z=-272,distance=..3,tag=!LuckyNumberCD,scores={TalkTime=0,Cooldown=0}] run scoreboard players enable @s TriggerCommand
+execute as @a[x=506,y=31,z=-272,distance=..3,tag=!LuckyNumberCD,scores={TalkTime=0,Cooldown=0}] run tellraw @s ["",{"text":"["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 76"}},{"text":"]"}]
+execute as @a[x=506,y=31,z=-272,distance=..3,tag=!LuckyNumberCD,scores={TalkTime=0,Cooldown=0}] run scoreboard players set @s Cooldown 120
+
+
+
+#---------------------
+#Goldenrod Friendship Checker
+tellraw @a[x=487,y=63,z=-300,dx=13,dy=5,dz=8,tag=!FriendshipCheckerCD] {"text":"<Friendship Checker> Hello! Would you like me to check the happiness of your Pokemon?"}
+tag @a[x=487,y=63,z=-300,dx=13,dy=5,dz=8,tag=!FriendshipCheckerCD] add FriendshipCheckerCD
+tag @a[x=487,y=63,z=-310,dx=12,dy=5,dz=9,tag=FriendshipCheckerCD] remove FriendshipCheckerCD
+execute at @e[x=487,y=63,z=-300,dx=13,dy=5,dz=8,type=pixelmon:pixelmon] run function johto:triggers/friendshipdatatags
+
+#Goldenrod Underground Beauty Salon
+execute at @e[x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=pixelmon:pixelmon] run scoreboard players set @p[distance=..15,tag=BeautySalon] DialogueTrigger 186
+
+execute as @a[x=513,y=54,z=-335,distance=..4,tag=!BeautyCD,scores={TalkTime=0,Cooldown=0}] run scoreboard players enable @s TriggerCommand
+execute as @a[x=513,y=54,z=-335,distance=..4,tag=!BeautyCD,scores={TalkTime=0,Cooldown=0}] run tellraw @s ["",{"text":"<Beauty Salon Clerk> Welcome! Would you like me to give your Pokemon a makeover?\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 40"}},{"text":"]"}]
+execute as @a[x=513,y=54,z=-335,distance=..4,tag=!BeautyCD,scores={TalkTime=0,Cooldown=0}] run scoreboard players set @s Cooldown 120
 
 #-------------------------------------------------------------------------------------------------------------------------
 #Spawnpoints at Pokemon Centers
