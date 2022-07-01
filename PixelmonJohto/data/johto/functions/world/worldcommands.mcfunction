@@ -36,9 +36,6 @@ execute as @a[scores={Relog=1..}] run function johto:triggers/relog
 #Removes a TownDisplay cooldown score if present
 scoreboard players remove @a[scores={TownDisplay=1..}] TownDisplay 1
 
-#Safari Zone Mapping Function
-execute as @a[x=1590,y=74,z=-129,dx=10,dy=5,dz=10] run function johto:custom/safariselect
-
 #Battle Tower Win events
 tag @a[x=875,y=99,z=50,dx=55,dy=20,dz=27,tag=Dialogue206] remove Dialogue206
 scoreboard players set @a[x=875,y=99,z=50,dx=55,dy=20,dz=27,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 206
@@ -226,6 +223,8 @@ execute as @a[x=1587,y=88,z=-106,distance=..5,scores={TalkTime=0,Cooldown=0}] if
 execute as @a[x=1587,y=88,z=-106,distance=..5,scores={TalkTime=0,Cooldown=0}] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=!SafariActive] run tellraw @s {"text": "<Safari Clerk> Begin your Safari Zone session? ", "extra": [{"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 22"}}]}
 execute as @a[x=1587,y=88,z=-106,distance=..5,scores={TalkTime=0,Cooldown=0}] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=!SafariActive] run scoreboard players set @s Cooldown 120
 
+#Safari Zone Mapping Function
+execute as @a[x=1590,y=74,z=-129,dx=10,dy=5,dz=10] run function johto:world/safariselect
 
 #---------------------
 #Runs Goldenrod Underground puzzle function of player is in the underground

@@ -4485,19 +4485,19 @@ tag @s[scores={DialogueTrigger=200,TalkTime=2..}] add Dialogue200
 #Dialogue201
 
 #Deducts balance of player
-execute as @s[scores={DialogueTrigger=201,TalkTime=1}] run data modify entity @e[limit=1,x=-801,y=64,z=-284,dy=3,type=armor_stand] {CustomName:'{"text":"Safari Clerk"}'}
+execute as @s[scores={DialogueTrigger=201,TalkTime=1}] run data merge entity @e[limit=1,x=-801,y=64,z=-284,dy=3,type=armor_stand] {CustomName:'{"text":"Safari Clerk"}'}
 execute as @s[scores={DialogueTrigger=201,TalkTime=1}] run execute as @e[x=-801,y=64,z=-284,dy=3,type=armor_stand] run givemoney @a[scores={DialogueTrigger=201,TalkTime=1}] -500
-execute as @s[scores={DialogueTrigger=201,TalkTime=1}] run data modify entity @e[limit=1,x=-801,y=64,z=-284,dy=3,type=armor_stand] {CustomName:'{"text":"Pixelmon Johto"}'}
+execute as @s[scores={DialogueTrigger=201,TalkTime=1}] run data merge entity @e[limit=1,x=-801,y=64,z=-284,dy=3,type=armor_stand] {CustomName:'{"text":"Pixelmon Johto"}'}
 execute as @s[scores={DialogueTrigger=201,TalkTime=1}] run setblock 1595 81 -129 minecraft:redstone_block
 
 
 #Generating messages and timings
-tellraw @s[scores={DialogueTrigger=201,TalkTime=3}] ["",{"text":"Now generating biome #1 ...","italic":true}]
-tellraw @s[scores={DialogueTrigger=201,TalkTime=20}] ["",{"text":"Now generating biome #2 ...","italic":true}]
-tellraw @s[scores={DialogueTrigger=201,TalkTime=40}] ["",{"text":"Now generating biome #3 ...","italic":true}]
-tellraw @s[scores={DialogueTrigger=201,TalkTime=60}] ["",{"text":"Now generating biome #4 ...","italic":true}]
-tellraw @s[scores={DialogueTrigger=201,TalkTime=80}] ["",{"text":"Now generating biome #5 ...","italic":true}]
-tellraw @s[scores={DialogueTrigger=201,TalkTime=100}] ["",{"text":"Now generating biome #6 ...","italic":true}]
+tellraw @s[scores={DialogueTrigger=201,TalkTime=3}] {"text":"Now generating biome #1...","italic":true,"color":"gray"}
+tellraw @s[scores={DialogueTrigger=201,TalkTime=20}] {"text":"Now generating biome #2...","italic":true,"color":"gray"}
+tellraw @s[scores={DialogueTrigger=201,TalkTime=40}] {"text":"Now generating biome #3...","italic":true,"color":"gray"}
+tellraw @s[scores={DialogueTrigger=201,TalkTime=60}] {"text":"Now generating biome #4...","italic":true,"color":"gray"}
+tellraw @s[scores={DialogueTrigger=201,TalkTime=80}] {"text":"Now generating biome #5...","italic":true,"color":"gray"}
+tellraw @s[scores={DialogueTrigger=201,TalkTime=100}] {"text":"Now generating biome #6...","italic":true,"color":"gray"}
 
 #tps Player Around
 execute as @s[scores={DialogueTrigger=201,TalkTime=1}] run tp @s 1715 74 55 180 -90
@@ -4508,17 +4508,17 @@ execute as @s[scores={DialogueTrigger=201,TalkTime=78}] run tp @s 1468 74 54 180
 execute as @s[scores={DialogueTrigger=201,TalkTime=98}] run tp @s 1468 74 -41 180 -90
 
 #Starts the Safari
-execute as @s[scores={DialogueTrigger=201,TalkTime=120}] run spawnpoint @s 1591 84 -87
-execute as @s[scores={DialogueTrigger=201,TalkTime=120}] run tp @s 1591 84 -87 -180 1
-execute as @s[scores={DialogueTrigger=201,TalkTime=120}] run scoreboard players set @s SafariState 1
-execute as @s[scores={DialogueTrigger=201,TalkTime=120}] run give @s pixelmon:safari_ball 64
-execute as @s[scores={DialogueTrigger=201,TalkTime=120}] run setblock 1595 81 -129 minecraft:redstone_block
-execute as @s[scores={DialogueTrigger=201,TalkTime=120}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=5,dz=10,type=armor_stand] BiomeID 0
-tellraw @s[scores={DialogueTrigger=201,TalkTime=120}] ["",{"text":"Enjoy your stay in the Safari Zone! Come back to the start when you are ready to leave."}]
+execute as @s[scores={DialogueTrigger=201,TalkTime=121}] run spawnpoint @s 1591 84 -87
+execute as @s[scores={DialogueTrigger=201,TalkTime=121}] run tp @s 1591 84 -87 -180 1
+execute as @s[scores={DialogueTrigger=201,TalkTime=121}] run scoreboard players set @s SafariState 1
+execute as @s[scores={DialogueTrigger=201,TalkTime=121}] run give @s pixelmon:safari_ball 64
+execute as @s[scores={DialogueTrigger=201,TalkTime=121}] run setblock 1595 81 -129 minecraft:redstone_block
+execute as @s[scores={DialogueTrigger=201,TalkTime=121}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=5,dz=10,type=armor_stand] BiomeID 0
+tellraw @s[scores={DialogueTrigger=201,TalkTime=121}] ["",{"text":"Enjoy your stay in the Safari Zone! Come back to the start when you are ready to leave."}]
 
 
 #Generates biomes from the SafariSelect function
-execute as @s[scores={DialogueTrigger=201,TalkTime=1..120}] run function custom:safariselect
+execute as @s[scores={DialogueTrigger=201,TalkTime=1..120}] run function johto:world/safariselect
 
 
 #Clears biome maps from inventory if present
@@ -4535,18 +4535,18 @@ execute as @s[scores={DialogueTrigger=201,TalkTime=1..120}] run function custom:
 #execute as @s[scores={DialogueTrigger=201,TalkTime=119}] run clear @s minecraft:filled_map 245 64
 #execute as @s[scores={DialogueTrigger=201,TalkTime=119}] run clear @s minecraft:filled_map 249 64
 
-tag @s[scores={DialogueTrigger=201,TalkTime=119..}] add Dialogue201
+tag @s[scores={DialogueTrigger=201,TalkTime=121..}] add Dialogue201
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Safari Zone tear down commands
 #Dialogue202
 
-tellraw @s[scores={DialogueTrigger=202,TalkTime=2}] ["",{"text":"Now removing biome #1 ...","italic":true}]
-tellraw @s[scores={DialogueTrigger=202,TalkTime=13}] ["",{"text":"Now removing biome #2 ...","italic":true}]
-tellraw @s[scores={DialogueTrigger=202,TalkTime=23}] ["",{"text":"Now removing biome #3 ...","italic":true}]
-tellraw @s[scores={DialogueTrigger=202,TalkTime=33}] ["",{"text":"Now removing biome #4 ...","italic":true}]
-tellraw @s[scores={DialogueTrigger=202,TalkTime=43}] ["",{"text":"Now removing biome #5 ...","italic":true}]
-tellraw @s[scores={DialogueTrigger=202,TalkTime=53}] ["",{"text":"Now removing biome #6 ...","italic":true}]
+tellraw @s[scores={DialogueTrigger=202,TalkTime=2}] {"text":"Now removing biome #1...","italic":true,"color":"gray"}
+tellraw @s[scores={DialogueTrigger=202,TalkTime=13}] {"text":"Now removing biome #2...","italic":true,"color":"gray"}
+tellraw @s[scores={DialogueTrigger=202,TalkTime=23}] {"text":"Now removing biome #3...","italic":true,"color":"gray"}
+tellraw @s[scores={DialogueTrigger=202,TalkTime=33}] {"text":"Now removing biome #4...","italic":true,"color":"gray"}
+tellraw @s[scores={DialogueTrigger=202,TalkTime=43}] {"text":"Now removing biome #5...","italic":true,"color":"gray"}
+tellraw @s[scores={DialogueTrigger=202,TalkTime=53}] {"text":"Now removing biome #6...","italic":true,"color":"gray"}
 
 execute as @s[scores={DialogueTrigger=202,TalkTime=2}] run tp @s 1715 74 55 180 -90
 execute as @s[scores={DialogueTrigger=202,TalkTime=13}] run tp @s 1716 74 -41 180 -90
@@ -4556,7 +4556,7 @@ execute as @s[scores={DialogueTrigger=202,TalkTime=43}] run tp @s 1468 74 54 180
 execute as @s[scores={DialogueTrigger=202,TalkTime=53}] run tp @s 1468 74 -41 180 -90
 
 #Removes Safari Select
-execute as @s[scores={DialogueTrigger=202,TalkTime=1..65}] run function custom:safariselect
+execute as @s[scores={DialogueTrigger=202,TalkTime=1..65}] run function johto:world/safariselect
 
 
 #Final cleanup

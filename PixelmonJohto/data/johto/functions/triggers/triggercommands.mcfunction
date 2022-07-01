@@ -120,6 +120,7 @@ execute as @a[scores={TriggerCommand=22}] run tp @s 1595 75 -125 -180 -5
 execute as @a[scores={TriggerCommand=22}] run tellraw @s ["",{"text":"Before you start, you must pick which biomes you want in your Safari Zone!"}]
 execute as @a[scores={TriggerCommand=22}] run tag @e[x=-792,y=65,z=-284,dy=3,type=armor_stand] add SafariActive
 execute as @a[scores={TriggerCommand=22}] run clone 1595 81 -121 1595 81 -121 1595 75 -122
+execute as @a[scores={TriggerCommand=22}] run scoreboard players set @s Cooldown 0
 execute as @a[scores={TriggerCommand=22}] run scoreboard players set @s TriggerCommand 0
 
 
@@ -136,6 +137,7 @@ execute as @a[scores={TriggerCommand=77}] run tp @s 1591 88 -103 180 4
 execute as @a[scores={TriggerCommand=77}] run tellraw @s {"text":"<Safari Clerk> Thank you for visiting! Come again soon!"}
 execute as @a[scores={TriggerCommand=77}] run setblock 1595 81 -129 minecraft:redstone_block
 execute as @a[scores={TriggerCommand=77}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=5,dz=10,type=armor_stand] BiomeID 0
+execute as @a[scores={TriggerCommand=77}] run scoreboard players set @s Cooldown 0
 execute as @a[scores={TriggerCommand=77}] run scoreboard players set @s TriggerCommand 0
 
 
