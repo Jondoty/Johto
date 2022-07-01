@@ -163,6 +163,68 @@ execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft
 #When player looks at a coin case, shows their balance
 execute as @a[nbt={SelectedItem:{id:"pixelmon:coin_case"}}] run function johto:triggers/gamecorner/coinbal
 
+#---------------------
+#Bug Catching Contest Commands
+
+#Bug Catching Contest signs
+execute if entity @a[x=467,y=63,z=60,dx=18,dy=5,dz=8] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1}] run data merge block 476 66 68 {x:476,Text4:"{\"text\":\"CLOSED\"}",y:66,Text3:"{\"text\":\"Monday\"}",z:68,Text2:"{\"text\":\"\"}",id:"minecraft:sign",Text1:"{\"text\":\"Weekday:\"}"}
+execute if entity @a[x=467,y=63,z=60,dx=18,dy=5,dz=8] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=2}] run data merge block 476 66 68 {x:476,Text4:"{\"text\":\"OPEN\"}",y:66,Text3:"{\"text\":\"Tuesday\"}",z:68,Text2:"{\"text\":\"\"}",id:"minecraft:sign",Text1:"{\"text\":\"Weekday:\"}"}
+execute if entity @a[x=467,y=63,z=60,dx=18,dy=5,dz=8] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=3}] run data merge block 476 66 68 {x:476,Text4:"{\"text\":\"CLOSED\"}",y:66,Text3:"{\"text\":\"Wednesday\"}",z:68,Text2:"{\"text\":\"\"}",id:"minecraft:sign",Text1:"{\"text\":\"Weekday:\"}"}
+execute if entity @a[x=467,y=63,z=60,dx=18,dy=5,dz=8] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=4}] run data merge block 476 66 68 {x:476,Text4:"{\"text\":\"OPEN\"}",y:66,Text3:"{\"text\":\"Thursday\"}",z:68,Text2:"{\"text\":\"\"}",id:"minecraft:sign",Text1:"{\"text\":\"Weekday:\"}"}
+execute if entity @a[x=467,y=63,z=60,dx=18,dy=5,dz=8] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run data merge block 476 66 68 {x:476,Text4:"{\"text\":\"CLOSED\"}",y:66,Text3:"{\"text\":\"Friday\"}",z:68,Text2:"{\"text\":\"\"}",id:"minecraft:sign",Text1:"{\"text\":\"Weekday:\"}"}
+execute if entity @a[x=467,y=63,z=60,dx=18,dy=5,dz=8] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=6}] run data merge block 476 66 68 {x:476,Text4:"{\"text\":\"OPEN\"}",y:66,Text3:"{\"text\":\"Saturday\"}",z:68,Text2:"{\"text\":\"\"}",id:"minecraft:sign",Text1:"{\"text\":\"Weekday:\"}"}
+execute if entity @a[x=467,y=63,z=60,dx=18,dy=5,dz=8] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=7}] run data merge block 476 66 68 {x:476,Text4:"{\"text\":\"CLOSED\"}",y:66,Text3:"{\"text\":\"Sunday\"}",z:68,Text2:"{\"text\":\"\"}",id:"minecraft:sign",Text1:"{\"text\":\"Weekday:\"}"}
+
+#Runs the Contest function
+execute as @a[x=467,y=63,z=60,dx=18,dy=5,dz=8,scores={TalkTime=0},tag=Dialogue198,tag=!Dialogue199] if entity @e[x=467,y=63,z=60,dx=18,dy=5,dz=8,type=pixelmon:pixelmon] run function johto:world/bugcontest/bugcontest
+
+#Prompts the player to start the Bug Contest (Tuesday)
+execute as @a[x=478,y=64,z=65,distance=..3,scores={TalkTime=0,BugContest=0,Cooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={BugContest=0,WeekdayTrack=2}] run tellraw @s {"text":"<Park Worker> Begin your Bug Catching Contest?"}
+execute as @a[x=478,y=64,z=65,distance=..3,scores={TalkTime=0,BugContest=0,Cooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={BugContest=0,WeekdayTrack=2}] run scoreboard players enable @s TriggerCommand
+execute as @a[x=478,y=64,z=65,distance=..3,scores={TalkTime=0,BugContest=0,Cooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={BugContest=0,WeekdayTrack=2}] run tellraw @s ["",{"text":"[","color":"green"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 28"}},{"text":"]","color":"green"}]
+execute as @a[x=478,y=64,z=65,distance=..3,scores={TalkTime=0,BugContest=0,Cooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={BugContest=0,WeekdayTrack=2}] run scoreboard players set @s Cooldown 120
+
+#Prompts the player to start the Bug Contest (Thursday)
+execute as @a[x=478,y=64,z=65,distance=..3,scores={TalkTime=0,BugContest=0,Cooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={BugContest=0,WeekdayTrack=4}] run tellraw @s {"text":"<Park Worker> Begin your Bug Catching Contest?"}
+execute as @a[x=478,y=64,z=65,distance=..3,scores={TalkTime=0,BugContest=0,Cooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={BugContest=0,WeekdayTrack=4}] run scoreboard players enable @s TriggerCommand
+execute as @a[x=478,y=64,z=65,distance=..3,scores={TalkTime=0,BugContest=0,Cooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={BugContest=0,WeekdayTrack=4}] run tellraw @s ["",{"text":"[","color":"green"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 28"}},{"text":"]","color":"green"}]
+execute as @a[x=478,y=64,z=65,distance=..3,scores={TalkTime=0,BugContest=0,Cooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={BugContest=0,WeekdayTrack=4}] run scoreboard players set @s Cooldown 120
+
+#Prompts the player to start the Bug Contest (Saturday)
+execute as @a[x=478,y=64,z=65,distance=..3,scores={TalkTime=0,BugContest=0,Cooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={BugContest=0,WeekdayTrack=6}] run tellraw @s {"text":"<Park Worker> Begin your Bug Catching Contest?"}
+execute as @a[x=478,y=64,z=65,distance=..3,scores={TalkTime=0,BugContest=0,Cooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={BugContest=0,WeekdayTrack=6}] run scoreboard players enable @s TriggerCommand
+execute as @a[x=478,y=64,z=65,distance=..3,scores={TalkTime=0,BugContest=0,Cooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={BugContest=0,WeekdayTrack=6}] run tellraw @s ["",{"text":"[","color":"green"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 28"}},{"text":"]","color":"green"}]
+execute as @a[x=478,y=64,z=65,distance=..3,scores={TalkTime=0,BugContest=0,Cooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={BugContest=0,WeekdayTrack=6}] run scoreboard players set @s Cooldown 120
+
+
+#If contest is active, only allow one player at a time (boss bar, easier judging)
+execute as @a[x=478,y=64,z=65,distance=..3,scores={TalkTime=0,BugContest=0,Cooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={BugContest=1,WeekdayTrack=2}] run tellraw @s {"text":"<Park Worker> We currently have an active Bug Catching Contest. Please try again when the player is finished!"}
+execute as @a[x=478,y=64,z=65,distance=..3,scores={TalkTime=0,BugContest=0,Cooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={BugContest=1,WeekdayTrack=2}] run scoreboard players set @s Cooldown 120
+
+execute as @a[x=478,y=64,z=65,distance=..3,scores={TalkTime=0,BugContest=0,Cooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={BugContest=1,WeekdayTrack=4}] run tellraw @s {"text":"<Park Worker> We currently have an active Bug Catching Contest. Please try again when the player is finished!"}
+execute as @a[x=478,y=64,z=65,distance=..3,scores={TalkTime=0,BugContest=0,Cooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={BugContest=1,WeekdayTrack=4}] run scoreboard players set @s Cooldown 120
+
+execute as @a[x=478,y=64,z=65,distance=..3,scores={TalkTime=0,BugContest=0,Cooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={BugContest=1,WeekdayTrack=6}] run tellraw @s {"text":"<Park Worker> We currently have an active Bug Catching Contest. Please try again when the player is finished!"}
+execute as @a[x=478,y=64,z=65,distance=..3,scores={TalkTime=0,BugContest=0,Cooldown=0}] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={BugContest=1,WeekdayTrack=6}] run scoreboard players set @s Cooldown 120
+
+
+#Skip to Judging Prompt if mid-contest
+execute as @a[x=478,y=64,z=65,distance=..3,scores={DialogueTrigger=198,TalkTime=25..,Cooldown=0}] run tellraw @s {"text":"<Park Worker> Would you like to begin judging?"}
+execute as @a[x=478,y=64,z=65,distance=..3,scores={DialogueTrigger=198,TalkTime=25..,Cooldown=0}] run scoreboard players enable @s TriggerCommand
+execute as @a[x=478,y=64,z=65,distance=..3,scores={DialogueTrigger=198,TalkTime=25..,Cooldown=0}] run tellraw @s ["",{"text":"[","color":"green"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 32"}},{"text":"]","color":"green"}]
+execute as @a[x=478,y=64,z=65,distance=..3,scores={DialogueTrigger=198,TalkTime=25..,Cooldown=0}] run scoreboard players set @s Cooldown 120
+
+#Skip Judging all together
+execute as @a[x=478,y=64,z=65,distance=..3,scores={BugContest=1..,Cooldown=0},tag=Dialogue198,tag=!Dialouge199] run tellraw @s {"text":"<Park Worker> Would you like to cancel your session without judging?"}
+execute as @a[x=478,y=64,z=65,distance=..3,scores={BugContest=1..,Cooldown=0},tag=Dialogue198,tag=!Dialouge199] run scoreboard players enable @s TriggerCommand
+execute as @a[x=478,y=64,z=65,distance=..3,scores={BugContest=1..,Cooldown=0},tag=Dialogue198,tag=!Dialouge199] run tellraw @s ["",{"text":"[","color":"green"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 33"}},{"text":"]","color":"green"}]
+execute as @a[x=478,y=64,z=65,distance=..3,scores={BugContest=1..,Cooldown=0},tag=Dialogue198,tag=!Dialouge199] run scoreboard players set @s Cooldown 120
+
+#---------------------
+#Safari Zone Prompt
+execute as @a[x=1587,y=88,z=-106,distance=..5,scores={TalkTime=0,Cooldown=0}] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=!SafariActive] run scoreboard players enable @s TriggerCommand
+execute as @a[x=1587,y=88,z=-106,distance=..5,scores={TalkTime=0,Cooldown=0}] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=!SafariActive] run tellraw @s {"text": "<Safari Clerk> Begin your Safari Zone session? ", "extra": [{"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 22"}}]}
+execute as @a[x=1587,y=88,z=-106,distance=..5,scores={TalkTime=0,Cooldown=0}] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=!SafariActive] run scoreboard players set @s Cooldown 120
 
 
 #---------------------
@@ -383,16 +445,6 @@ execute if entity @a[x=-135,y=53,z=210,dx=2,dy=5,dz=9,tag=!TrapGrunt1] run tp @e
 execute if entity @a[x=-135,y=53,z=210,dx=2,dy=5,dz=9,tag=!TrapGrunt1] run particle cloud -132 54 215 1 1 1 0.15 100
 execute if entity @a[x=-135,y=53,z=210,dx=2,dy=5,dz=9,tag=!TrapGrunt1] run execute as @p[x=-137,y=53,z=209,dx=6,dy=5,dz=11,tag=!TrapGrunt1] run pokebattle @a[x=-137,y=53,z=209,dx=6,dy=5,dz=11,tag=!TrapGrunt1] Grunt1
 execute if entity @a[x=-135,y=53,z=210,dx=2,dy=5,dz=9,tag=!TrapGrunt1] run tag @a[x=-137,y=53,z=209,dx=6,dy=5,dz=11,tag=!TrapGrunt1] add TrapGrunt1
-
-#Bug Catching Contest signs
-execute if entity @a[x=467,y=63,z=60,dx=18,dy=5,dz=8] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1}] run data merge block 476 66 68 {x:476,Text4:"{\"text\":\"CLOSED\"}",y:66,Text3:"{\"text\":\"Monday\"}",z:68,Text2:"{\"text\":\"\"}",id:"minecraft:sign",Text1:"{\"text\":\"Weekday:\"}"}
-execute if entity @a[x=467,y=63,z=60,dx=18,dy=5,dz=8] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=2}] run data merge block 476 66 68 {x:476,Text4:"{\"text\":\"OPEN\"}",y:66,Text3:"{\"text\":\"Tuesday\"}",z:68,Text2:"{\"text\":\"\"}",id:"minecraft:sign",Text1:"{\"text\":\"Weekday:\"}"}
-execute if entity @a[x=467,y=63,z=60,dx=18,dy=5,dz=8] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=3}] run data merge block 476 66 68 {x:476,Text4:"{\"text\":\"CLOSED\"}",y:66,Text3:"{\"text\":\"Wednesday\"}",z:68,Text2:"{\"text\":\"\"}",id:"minecraft:sign",Text1:"{\"text\":\"Weekday:\"}"}
-execute if entity @a[x=467,y=63,z=60,dx=18,dy=5,dz=8] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=4}] run data merge block 476 66 68 {x:476,Text4:"{\"text\":\"OPEN\"}",y:66,Text3:"{\"text\":\"Thursday\"}",z:68,Text2:"{\"text\":\"\"}",id:"minecraft:sign",Text1:"{\"text\":\"Weekday:\"}"}
-execute if entity @a[x=467,y=63,z=60,dx=18,dy=5,dz=8] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run data merge block 476 66 68 {x:476,Text4:"{\"text\":\"CLOSED\"}",y:66,Text3:"{\"text\":\"Friday\"}",z:68,Text2:"{\"text\":\"\"}",id:"minecraft:sign",Text1:"{\"text\":\"Weekday:\"}"}
-execute if entity @a[x=467,y=63,z=60,dx=18,dy=5,dz=8] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=6}] run data merge block 476 66 68 {x:476,Text4:"{\"text\":\"OPEN\"}",y:66,Text3:"{\"text\":\"Saturday\"}",z:68,Text2:"{\"text\":\"\"}",id:"minecraft:sign",Text1:"{\"text\":\"Weekday:\"}"}
-execute if entity @a[x=467,y=63,z=60,dx=18,dy=5,dz=8] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=7}] run data merge block 476 66 68 {x:476,Text4:"{\"text\":\"CLOSED\"}",y:66,Text3:"{\"text\":\"Sunday\"}",z:68,Text2:"{\"text\":\"\"}",id:"minecraft:sign",Text1:"{\"text\":\"Weekday:\"}"}
-
 
 
 

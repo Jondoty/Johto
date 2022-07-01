@@ -4147,6 +4147,116 @@ execute as @s[scores={DialogueTrigger=198,TalkTime=1}] run give @s pixelmon:spor
 tellraw @s[scores={DialogueTrigger=198,TalkTime=10}] {"text":"<Park Worker> You can check your IVs as you catch the Pokemon. Submit the highest total stats at the end!"}
 tellraw @s[scores={DialogueTrigger=198,TalkTime=20}] {"text":"<Park Worker> You have 20 minutes from now until judging, or just come back and talk to me to start it early! Good luck!"}
 execute as @s[scores={DialogueTrigger=198,TalkTime=20}] run scoreboard players set @s BugContest 1
+execute as @s[scores={DialogueTrigger=198,TalkTime=20}] run scoreboard players set @e[x=-799,y=64,z=-284,dy=3,type=armor_stand] BugContest 1
+execute as @s[scores={DialogueTrigger=198,TalkTime=20}] run data merge block 476 67 68 {Text3: '{"text":"Current active"}'}
+
+#Boss Bar Progress
+execute as @s[scores={DialogueTrigger=198,TalkTime=1}] run bossbar add johto:bugcontest "Contest Time Remaining"
+execute as @s[scores={DialogueTrigger=198,TalkTime=1}] run bossbar set johto:bugcontest color green
+execute as @s[scores={DialogueTrigger=198,TalkTime=1..17}] run bossbar set johto:bugcontest value 100
+execute as @s[scores={DialogueTrigger=198,TalkTime=18..34}] run bossbar set johto:bugcontest value 99
+execute as @s[scores={DialogueTrigger=198,TalkTime=35..51}] run bossbar set johto:bugcontest value 98
+execute as @s[scores={DialogueTrigger=198,TalkTime=52..68}] run bossbar set johto:bugcontest value 97
+execute as @s[scores={DialogueTrigger=198,TalkTime=69..85}] run bossbar set johto:bugcontest value 96
+execute as @s[scores={DialogueTrigger=198,TalkTime=86..102}] run bossbar set johto:bugcontest value 95
+execute as @s[scores={DialogueTrigger=198,TalkTime=103..119}] run bossbar set johto:bugcontest value 94
+execute as @s[scores={DialogueTrigger=198,TalkTime=120..136}] run bossbar set johto:bugcontest value 93
+execute as @s[scores={DialogueTrigger=198,TalkTime=137..153}] run bossbar set johto:bugcontest value 92
+execute as @s[scores={DialogueTrigger=198,TalkTime=154..170}] run bossbar set johto:bugcontest value 91
+execute as @s[scores={DialogueTrigger=198,TalkTime=171..187}] run bossbar set johto:bugcontest value 90
+execute as @s[scores={DialogueTrigger=198,TalkTime=188..204}] run bossbar set johto:bugcontest value 89
+execute as @s[scores={DialogueTrigger=198,TalkTime=205..221}] run bossbar set johto:bugcontest value 88
+execute as @s[scores={DialogueTrigger=198,TalkTime=222..238}] run bossbar set johto:bugcontest value 87
+execute as @s[scores={DialogueTrigger=198,TalkTime=239..255}] run bossbar set johto:bugcontest value 86
+execute as @s[scores={DialogueTrigger=198,TalkTime=256..272}] run bossbar set johto:bugcontest value 85
+execute as @s[scores={DialogueTrigger=198,TalkTime=273..289}] run bossbar set johto:bugcontest value 84
+execute as @s[scores={DialogueTrigger=198,TalkTime=290..306}] run bossbar set johto:bugcontest value 83
+execute as @s[scores={DialogueTrigger=198,TalkTime=307..323}] run bossbar set johto:bugcontest value 82
+execute as @s[scores={DialogueTrigger=198,TalkTime=324..340}] run bossbar set johto:bugcontest value 81
+execute as @s[scores={DialogueTrigger=198,TalkTime=341..357}] run bossbar set johto:bugcontest value 80
+execute as @s[scores={DialogueTrigger=198,TalkTime=358..374}] run bossbar set johto:bugcontest value 79
+execute as @s[scores={DialogueTrigger=198,TalkTime=375..391}] run bossbar set johto:bugcontest value 78
+execute as @s[scores={DialogueTrigger=198,TalkTime=392..408}] run bossbar set johto:bugcontest value 77
+execute as @s[scores={DialogueTrigger=198,TalkTime=409..425}] run bossbar set johto:bugcontest value 76
+execute as @s[scores={DialogueTrigger=198,TalkTime=426..442}] run bossbar set johto:bugcontest value 75
+execute as @s[scores={DialogueTrigger=198,TalkTime=443..459}] run bossbar set johto:bugcontest value 74
+execute as @s[scores={DialogueTrigger=198,TalkTime=460..476}] run bossbar set johto:bugcontest value 73
+execute as @s[scores={DialogueTrigger=198,TalkTime=477..493}] run bossbar set johto:bugcontest value 72
+execute as @s[scores={DialogueTrigger=198,TalkTime=494..510}] run bossbar set johto:bugcontest value 71
+execute as @s[scores={DialogueTrigger=198,TalkTime=511..527}] run bossbar set johto:bugcontest value 70
+execute as @s[scores={DialogueTrigger=198,TalkTime=528..544}] run bossbar set johto:bugcontest value 69
+execute as @s[scores={DialogueTrigger=198,TalkTime=545..561}] run bossbar set johto:bugcontest value 68
+execute as @s[scores={DialogueTrigger=198,TalkTime=562..578}] run bossbar set johto:bugcontest value 67
+execute as @s[scores={DialogueTrigger=198,TalkTime=579..595}] run bossbar set johto:bugcontest value 66
+execute as @s[scores={DialogueTrigger=198,TalkTime=596..612}] run bossbar set johto:bugcontest value 65
+execute as @s[scores={DialogueTrigger=198,TalkTime=613..629}] run bossbar set johto:bugcontest value 64
+execute as @s[scores={DialogueTrigger=198,TalkTime=630..646}] run bossbar set johto:bugcontest value 63
+execute as @s[scores={DialogueTrigger=198,TalkTime=647..663}] run bossbar set johto:bugcontest value 62
+execute as @s[scores={DialogueTrigger=198,TalkTime=664..680}] run bossbar set johto:bugcontest value 61
+execute as @s[scores={DialogueTrigger=198,TalkTime=681..697}] run bossbar set johto:bugcontest value 60
+execute as @s[scores={DialogueTrigger=198,TalkTime=698..714}] run bossbar set johto:bugcontest value 59
+execute as @s[scores={DialogueTrigger=198,TalkTime=715..731}] run bossbar set johto:bugcontest value 58
+execute as @s[scores={DialogueTrigger=198,TalkTime=732..748}] run bossbar set johto:bugcontest value 57
+execute as @s[scores={DialogueTrigger=198,TalkTime=749..765}] run bossbar set johto:bugcontest value 56
+execute as @s[scores={DialogueTrigger=198,TalkTime=766..782}] run bossbar set johto:bugcontest value 55
+execute as @s[scores={DialogueTrigger=198,TalkTime=783..799}] run bossbar set johto:bugcontest value 54
+execute as @s[scores={DialogueTrigger=198,TalkTime=800..816}] run bossbar set johto:bugcontest value 53
+execute as @s[scores={DialogueTrigger=198,TalkTime=817..833}] run bossbar set johto:bugcontest value 52
+execute as @s[scores={DialogueTrigger=198,TalkTime=834..850}] run bossbar set johto:bugcontest value 51
+execute as @s[scores={DialogueTrigger=198,TalkTime=851..867}] run bossbar set johto:bugcontest value 50
+execute as @s[scores={DialogueTrigger=198,TalkTime=868..884}] run bossbar set johto:bugcontest value 49
+execute as @s[scores={DialogueTrigger=198,TalkTime=885..901}] run bossbar set johto:bugcontest value 48
+execute as @s[scores={DialogueTrigger=198,TalkTime=902..918}] run bossbar set johto:bugcontest value 47
+execute as @s[scores={DialogueTrigger=198,TalkTime=919..935}] run bossbar set johto:bugcontest value 46
+execute as @s[scores={DialogueTrigger=198,TalkTime=936..952}] run bossbar set johto:bugcontest value 45
+execute as @s[scores={DialogueTrigger=198,TalkTime=953..969}] run bossbar set johto:bugcontest value 44
+execute as @s[scores={DialogueTrigger=198,TalkTime=970..986}] run bossbar set johto:bugcontest value 43
+execute as @s[scores={DialogueTrigger=198,TalkTime=987..1003}] run bossbar set johto:bugcontest value 42
+execute as @s[scores={DialogueTrigger=198,TalkTime=1004..1020}] run bossbar set johto:bugcontest value 41
+execute as @s[scores={DialogueTrigger=198,TalkTime=1021..1037}] run bossbar set johto:bugcontest value 40
+execute as @s[scores={DialogueTrigger=198,TalkTime=1038..1054}] run bossbar set johto:bugcontest value 39
+execute as @s[scores={DialogueTrigger=198,TalkTime=1055..1071}] run bossbar set johto:bugcontest value 38
+execute as @s[scores={DialogueTrigger=198,TalkTime=1072..1088}] run bossbar set johto:bugcontest value 37
+execute as @s[scores={DialogueTrigger=198,TalkTime=1089..1105}] run bossbar set johto:bugcontest value 36
+execute as @s[scores={DialogueTrigger=198,TalkTime=1106..1122}] run bossbar set johto:bugcontest value 35
+execute as @s[scores={DialogueTrigger=198,TalkTime=1123..1139}] run bossbar set johto:bugcontest value 34
+execute as @s[scores={DialogueTrigger=198,TalkTime=1140..1156}] run bossbar set johto:bugcontest value 33
+execute as @s[scores={DialogueTrigger=198,TalkTime=1157..1173}] run bossbar set johto:bugcontest value 32
+execute as @s[scores={DialogueTrigger=198,TalkTime=1174..1190}] run bossbar set johto:bugcontest value 31
+execute as @s[scores={DialogueTrigger=198,TalkTime=1191..1207}] run bossbar set johto:bugcontest value 30
+execute as @s[scores={DialogueTrigger=198,TalkTime=1208..1224}] run bossbar set johto:bugcontest value 29
+execute as @s[scores={DialogueTrigger=198,TalkTime=1225..1241}] run bossbar set johto:bugcontest value 28
+execute as @s[scores={DialogueTrigger=198,TalkTime=1242..1258}] run bossbar set johto:bugcontest value 27
+execute as @s[scores={DialogueTrigger=198,TalkTime=1259..1275}] run bossbar set johto:bugcontest value 26
+execute as @s[scores={DialogueTrigger=198,TalkTime=1276..1292}] run bossbar set johto:bugcontest value 25
+execute as @s[scores={DialogueTrigger=198,TalkTime=1293..1309}] run bossbar set johto:bugcontest value 24
+execute as @s[scores={DialogueTrigger=198,TalkTime=1310..1326}] run bossbar set johto:bugcontest value 23
+execute as @s[scores={DialogueTrigger=198,TalkTime=1327..1343}] run bossbar set johto:bugcontest value 22
+execute as @s[scores={DialogueTrigger=198,TalkTime=1344..1360}] run bossbar set johto:bugcontest value 21
+execute as @s[scores={DialogueTrigger=198,TalkTime=1361..1377}] run bossbar set johto:bugcontest value 20
+execute as @s[scores={DialogueTrigger=198,TalkTime=1378..1394}] run bossbar set johto:bugcontest value 19
+execute as @s[scores={DialogueTrigger=198,TalkTime=1395..1411}] run bossbar set johto:bugcontest value 18
+execute as @s[scores={DialogueTrigger=198,TalkTime=1412..1428}] run bossbar set johto:bugcontest value 17
+execute as @s[scores={DialogueTrigger=198,TalkTime=1429..1445}] run bossbar set johto:bugcontest value 16
+execute as @s[scores={DialogueTrigger=198,TalkTime=1446..1462}] run bossbar set johto:bugcontest value 15
+execute as @s[scores={DialogueTrigger=198,TalkTime=1463..1479}] run bossbar set johto:bugcontest value 14
+execute as @s[scores={DialogueTrigger=198,TalkTime=1480..1496}] run bossbar set johto:bugcontest value 13
+execute as @s[scores={DialogueTrigger=198,TalkTime=1497..1513}] run bossbar set johto:bugcontest value 12
+execute as @s[scores={DialogueTrigger=198,TalkTime=1514..1530}] run bossbar set johto:bugcontest value 11
+execute as @s[scores={DialogueTrigger=198,TalkTime=1531..1547}] run bossbar set johto:bugcontest value 10
+execute as @s[scores={DialogueTrigger=198,TalkTime=1548..1564}] run bossbar set johto:bugcontest value 9
+execute as @s[scores={DialogueTrigger=198,TalkTime=1565..1581}] run bossbar set johto:bugcontest value 8
+execute as @s[scores={DialogueTrigger=198,TalkTime=1582..1598}] run bossbar set johto:bugcontest value 7
+execute as @s[scores={DialogueTrigger=198,TalkTime=1599..1615}] run bossbar set johto:bugcontest value 6
+execute as @s[scores={DialogueTrigger=198,TalkTime=1616..1632}] run bossbar set johto:bugcontest value 5
+execute as @s[scores={DialogueTrigger=198,TalkTime=1633..1649}] run bossbar set johto:bugcontest value 4
+execute as @s[scores={DialogueTrigger=198,TalkTime=1650..1666}] run bossbar set johto:bugcontest value 3
+execute as @s[scores={DialogueTrigger=198,TalkTime=1667..1683}] run bossbar set johto:bugcontest value 2
+execute as @s[scores={DialogueTrigger=198,TalkTime=1684..}] run bossbar set johto:bugcontest value 1
+execute as @s[scores={DialogueTrigger=198,TalkTime=1}] run bossbar set johto:bugcontest players @s[scores={DialogueTrigger=198,TalkTime=1}]
+execute as @s[scores={DialogueTrigger=198,TalkTime=1705..}] run bossbar remove johto:bugcontest
+
+
 
 #Changes out Spawner data if Thursday
 execute as @s[scores={DialogueTrigger=198,TalkTime=20}] run execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=4}] run data modify block 576 62 42 {pokemonSpec0:{name:"Scyther"},pokemonSpec1:{name:"Pinsir"},spawnRandom:0b,pokemonSpec4:{name:"Dustox"},pokemonSpec5:{name:"Nincada"},fireOnTick:1b,pokemonSpec2:{name:"Wurmple"},maxSpawns:7s,pokemonSpec3:{name:"Silcoon"},numPokemon:10s,pokemonSpec8:{name:"Kricketune"},pokemonSpec9:{name:"Combee"},pokemonSpec6:{name:"Volbeat"},pokemonSpec7:{name:"Kricketot"},id:"pixelmon:pixelmon_spawner",levelMin:7s,spawnLocation:0s,rarity0:5s,rarity1:5s,rarity2:20s,rarity7:10s,rarity8:10s,rarity9:5s,aggression:0s,rarity3:10s,rarity4:5s,bossRatio:10000s,rarity5:20s,rarity6:10s,levelMax:18s,spawnRadius:10s,spawnTick:40}
@@ -4205,10 +4315,10 @@ tellraw @s[scores={DialogueTrigger=198,TalkTime=1714}] {"text":"<Park Worker> Pl
 execute as @s[scores={DialogueTrigger=198,TalkTime=1714}] run scoreboard players set @s BugPoints 0
 
 #Tps in random trainers and statues
-execute as @s[scores={DialogueTrigger=198,TalkTime=1715}] run tp @r[x=-855,y=64,z=-153,dx=5,dy=2,dz=5,limit=1] 471 64 61
-execute as @s[scores={DialogueTrigger=198,TalkTime=1715}] run tp @r[x=-855,y=64,z=-153,dx=5,dy=2,dz=5,limit=1] 481 64 61
-execute as @s[scores={DialogueTrigger=198,TalkTime=1715}] run tp @r[x=-848,y=64,z=-153,dx=5,dy=2,dz=5,limit=1] 471 64 63
-execute as @s[scores={DialogueTrigger=198,TalkTime=1715}] run tp @r[x=-848,y=64,z=-153,dx=5,dy=2,dz=5,limit=1] 481 64 63
+execute as @s[scores={DialogueTrigger=198,TalkTime=1715}] run tp @e[sort=random,limit=1,x=-855,y=64,z=-153,dx=5,dy=2,dz=5] 471 64 61
+execute as @s[scores={DialogueTrigger=198,TalkTime=1715}] run tp @e[sort=random,limit=1,x=-855,y=64,z=-153,dx=5,dy=2,dz=5] 481 64 61
+execute as @s[scores={DialogueTrigger=198,TalkTime=1715}] run tp @e[sort=random,limit=1,x=-848,y=64,z=-153,dx=5,dy=2,dz=5] 471 64 63
+execute as @s[scores={DialogueTrigger=198,TalkTime=1715}] run tp @e[sort=random,limit=1,x=-848,y=64,z=-153,dx=5,dy=2,dz=5] 481 64 63
 
 tag @s[scores={DialogueTrigger=198,TalkTime=1715..}] add Dialogue198
 
@@ -4314,12 +4424,13 @@ execute as @s[scores={DialogueTrigger=199,TalkTime=34..35}] run clear @s pixelmo
 #Tps the NPCs and statues out
 execute as @s[scores={DialogueTrigger=199,TalkTime=37}] run tp @e[x=481,y=63,z=61,dy=2,type=pixelmon:npc_chatting,limit=1] -852 64 -151
 execute as @s[scores={DialogueTrigger=199,TalkTime=37}] run tp @e[x=471,y=63,z=61,dy=2,type=pixelmon:npc_chatting,limit=1] -852 64 -151
-execute as @s[scores={DialogueTrigger=199,TalkTime=37}] run tp @e[x=471,y=63,z=63,dy=2,type=pixelmon:statue,limit=1] -846 64 -151
-execute as @s[scores={DialogueTrigger=199,TalkTime=37}] run tp @e[x=481,y=63,z=63,dy=2,type=pixelmon:statue,limit=1] -846 64 -151
+execute as @s[scores={DialogueTrigger=199,TalkTime=37}] run tp @e[x=467,y=63,z=60,dx=18,dy=5,dz=8,type=pixelmon:statue] -846 64 -151
 
 #Cleans up scores
 execute as @s[scores={DialogueTrigger=199,TalkTime=38}] run scoreboard players set @s BugPoints 0
 execute as @s[scores={DialogueTrigger=199,TalkTime=38}] run scoreboard players set @s BugContest 0
+execute as @s[scores={DialogueTrigger=199,TalkTime=38}] run scoreboard players set @e[x=-799,y=64,z=-284,dy=3,type=armor_stand] BugContest 0
+execute as @s[scores={DialogueTrigger=199,TalkTime=38}] run data merge block 476 67 68 {Text3: '{"text":"No active"}'}
 execute as @s[scores={DialogueTrigger=199,TalkTime=38}] run tag @s remove First
 execute as @s[scores={DialogueTrigger=199,TalkTime=38}] run tag @s remove Second
 execute as @s[scores={DialogueTrigger=199,TalkTime=38}] run tag @s remove Third
