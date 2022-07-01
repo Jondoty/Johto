@@ -1145,7 +1145,7 @@ scoreboard players set @a[x=-2999,y=64,z=1005,distance=..10,scores={TalkTime=0},
 
 #Dialogue195 - Route 25 Bill's Grandfather intro
 scoreboard players set @a[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,scores={TalkTime=0},tag=!Dialogue195] DialogueTrigger 195
-execute as @a[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,scores={TalkTime=0},tag=Dialogue195] run function johto:custom/billshouse
+execute as @a[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,scores={TalkTime=0},tag=Dialogue195] run function johto:triggers/billshouse
 
 #Dialogue203 - Cianwood City PokeManiac Kirk giving Shuckle
 scoreboard players set @a[x=1221,y=63,z=-434,dx=19,dy=5,dz=8,scores={TalkTime=0},tag=!Dialogue203] DialogueTrigger 203
@@ -1255,7 +1255,7 @@ tag @a[scores={Air=1},tag=GrassRoll] remove GrassRoll
 #Grass Encounter Roll function
 execute at @a[scores={DogEncounter=1},tag=!GrassRoll] run execute if block ~ ~ ~ minecraft:tall_grass run scoreboard players set @s TallGrass 1
 execute at @a[scores={EonEncounter=1},tag=!GrassRoll] run execute if block ~ ~ ~ minecraft:tall_grass run scoreboard players set @s TallGrass 1
-execute as @a[tag=!GrassRoll,scores={TallGrass=1..}] run function johto:custom/grassencounters
+execute as @a[tag=!GrassRoll,scores={TallGrass=1..}] run function johto:triggers/grassencounters
 
 
 #Mewtwo
