@@ -3763,6 +3763,7 @@ execute as @s[scores={DialogueTrigger=178,TalkTime=1}] run tag @s remove Dialogu
 execute as @s[scores={DialogueTrigger=178,TalkTime=1}] run tag @s remove Dialogue181
 execute as @s[scores={DialogueTrigger=178,TalkTime=1}] run tag @s remove Dialogue182
 execute as @s[scores={DialogueTrigger=178,TalkTime=1}] run tag @s remove Dialogue183
+execute as @s[scores={DialogueTrigger=178,TalkTime=1}] run tag @s remove Dialogue184
 execute as @s[scores={DialogueTrigger=178,TalkTime=1}] run scoreboard players set @s Cooldown 20
 
 tag @s[scores={DialogueTrigger=178,TalkTime=1..}] add Dialogue178
@@ -3777,12 +3778,13 @@ execute as @s[scores={DialogueTrigger=179,TalkTime=7}] run scoreboard players en
 tellraw @s[scores={DialogueTrigger=179,TalkTime=7}] ["",{"text":"["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 16"}},{"text":"] \u0020 \u0020 ["},{"text":"No","color":"red","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 15"}},{"text":"]"}]
 
 #Resets all quiz dialogues
-execute as @s[scores={DialogueTrigger=179,TalkTime=1}] run tag @s remove Dialogue178
-execute as @s[scores={DialogueTrigger=179,TalkTime=1}] run tag @s remove Dialogue179
-execute as @s[scores={DialogueTrigger=179,TalkTime=1}] run tag @s remove Dialogue180
-execute as @s[scores={DialogueTrigger=179,TalkTime=1}] run tag @s remove Dialogue181
-execute as @s[scores={DialogueTrigger=179,TalkTime=1}] run tag @s remove Dialogue182
-execute as @s[scores={DialogueTrigger=179,TalkTime=1}] run tag @s remove Dialogue183
+execute as @s[scores={DialogueTrigger=179,TalkTime=1..5}] run tag @s remove Dialogue178
+execute as @s[scores={DialogueTrigger=179,TalkTime=1..5}] run tag @s remove Dialogue179
+execute as @s[scores={DialogueTrigger=179,TalkTime=1..5}] run tag @s remove Dialogue180
+execute as @s[scores={DialogueTrigger=179,TalkTime=1..5}] run tag @s remove Dialogue181
+execute as @s[scores={DialogueTrigger=179,TalkTime=1..5}] run tag @s remove Dialogue182
+execute as @s[scores={DialogueTrigger=179,TalkTime=1..5}] run tag @s remove Dialogue183
+execute as @s[scores={DialogueTrigger=179,TalkTime=1..5}] run tag @s remove Dialogue184
 
 tag @s[scores={DialogueTrigger=179,TalkTime=7..}] add Dialogue179
 
@@ -3903,12 +3905,8 @@ tag @s[scores={DialogueTrigger=185,TalkTime=24..}] add Dialogue185
 
 tellraw @s[scores={DialogueTrigger=186,TalkTime=1}] ["",{"text":"<Beauty Salon Clerk> Alright! Let's see what we can do for "},{"selector":"@e[x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=pixelmon:pixelmon]"},{"text":"!"}]
 
-#Executes particles on Pokemon
-#execute as @s[scores={DialogueTrigger=186,TalkTime=2..15}] run execute at @e[x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=pixelmon:pixelmon] run particle fallingdust ~ ~1 ~ 1 1 1 1 10 normal @a 201
-#/particle minecraft:falling_dust minecraft:pink_terracotta ~ ~ ~ 1 10 normal @a 201
-
 #Runs initial Friendship detect function
-execute as @s[scores={DialogueTrigger=186,TalkTime=5..6}] run function custom:friendshipdatatags
+execute as @s[scores={DialogueTrigger=186,TalkTime=5..6}] run function johto:triggers/friendshipdatatags
 
 #Checks if Pokemon is already at max happiness, ends dialogue if so
 execute as @s[scores={DialogueTrigger=186,TalkTime=9}] run execute as @e[x=511,y=54,z=-344,dx=15,dy=6,dz=19,scores={Friendship=255}] run tellraw @a[scores={DialogueTrigger=186,TalkTime=9}] {"text":"<Beauty Salon Clerk> Your Pokémon can't get any happier!"}
@@ -3920,12 +3918,15 @@ execute as @s[scores={DialogueTrigger=186,TalkTime=9}] run execute as @e[x=511,y
 
 
 #If not maxed, runs
-execute as @s[scores={DialogueTrigger=186,TalkTime=13}] run function custom:increasefriendship
+execute as @s[scores={DialogueTrigger=186,TalkTime=13}] run function johto:triggers/increasefriendship
+
+#Executes particles on Pokemon
+execute as @s[scores={DialogueTrigger=186,TalkTime=2..15}] run execute at @e[x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=pixelmon:pixelmon] run particle minecraft:dust 0 1 0 1 ~ ~1 ~ 1 1 1 0.5 25 force @a[distance=..50]
 
 #Jumping animation
-execute as @s[scores={DialogueTrigger=186,TalkTime=15}] run data modify entity @e[limit=1,x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=pixelmon:pixelmon] {Motion:[0.0,0.25,0.0]}
-execute as @s[scores={DialogueTrigger=186,TalkTime=16}] run data modify entity @e[limit=1,x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=pixelmon:pixelmon] {Motion:[0.0,0.25,0.0]}
-execute as @s[scores={DialogueTrigger=186,TalkTime=17}] run data modify entity @e[limit=1,x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=pixelmon:pixelmon] {Motion:[0.0,0.25,0.0]}
+execute as @s[scores={DialogueTrigger=186,TalkTime=15}] run data modify entity @e[limit=1,x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=pixelmon:pixelmon] {Motion:[0.0,0.35,0.0]}
+execute as @s[scores={DialogueTrigger=186,TalkTime=16}] run data modify entity @e[limit=1,x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=pixelmon:pixelmon] {Motion:[0.0,0.35,0.0]}
+execute as @s[scores={DialogueTrigger=186,TalkTime=17}] run data modify entity @e[limit=1,x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=pixelmon:pixelmon] {Motion:[0.0,0.35,0.0]}
 
 tellraw @s[scores={DialogueTrigger=186,TalkTime=15}] ["",{"text":"<Beauty Salon Clerk> Your "},{"selector":"@e[x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=pixelmon:pixelmon]"},{"text":" looks delighted! Please come again!"}]
 
