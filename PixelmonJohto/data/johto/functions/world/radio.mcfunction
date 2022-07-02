@@ -714,8 +714,8 @@ scoreboard players set @s[x=1152,y=0,z=-525,dx=168,dy=240,dz=244,scores={MusicCo
 
 
 #Route 32
-playsound route32 record @s[x=75,y=0,z=-458,dx=154,dy=240,dz=64,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=75,y=0,z=-458,dx=154,dy=240,dz=64,scores={MusicCooldown=0}] MusicCooldown 117
+playsound route32 record @s[x=75,y=60,z=-458,dx=154,dy=240,dz=64,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=75,y=60,z=-458,dx=154,dy=240,dz=64,scores={MusicCooldown=0}] MusicCooldown 117
 
 
 #Ecruteak City
@@ -724,8 +724,8 @@ scoreboard players set @s[x=236,y=0,z=164,dx=262,dy=100,dz=204,scores={MusicCool
 
 
 #Route 32
-playsound route32 record @s[x=75,y=0,z=-393,dx=154,dy=240,dz=94,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=75,y=0,z=-393,dx=154,dy=240,dz=94,scores={MusicCooldown=0}] MusicCooldown 117
+playsound route32 record @s[x=75,y=60,z=-393,dx=154,dy=240,dz=94,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=75,y=60,z=-393,dx=154,dy=240,dz=94,scores={MusicCooldown=0}] MusicCooldown 117
 
 
 #Route 37
@@ -734,8 +734,8 @@ scoreboard players set @s[x=319,y=0,z=37,dx=82,dy=240,dz=126,scores={MusicCooldo
 
 
 #Route 32
-playsound route32 record @s[x=75,y=0,z=-300,dx=84,dy=240,dz=133,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=75,y=0,z=-300,dx=84,dy=240,dz=133,scores={MusicCooldown=0}] MusicCooldown 117
+playsound route32 record @s[x=75,y=60,z=-300,dx=84,dy=240,dz=133,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=75,y=60,z=-300,dx=84,dy=240,dz=133,scores={MusicCooldown=0}] MusicCooldown 117
 
 
 #Route 36
@@ -744,8 +744,8 @@ scoreboard players set @s[x=332,y=0,z=-67,dx=130,dy=240,dz=103,scores={MusicCool
 
 
 #Route 32
-playsound route32 record @s[x=101,y=0,z=-166,dx=58,dy=240,dz=75,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=101,y=0,z=-166,dx=58,dy=240,dz=75,scores={MusicCooldown=0}] MusicCooldown 117
+playsound route32 record @s[x=101,y=60,z=-166,dx=58,dy=240,dz=75,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=101,y=60,z=-166,dx=58,dy=240,dz=75,scores={MusicCooldown=0}] MusicCooldown 117
 
 
 #National Park
@@ -818,8 +818,8 @@ scoreboard players set @s[x=409,y=63,z=-740,dx=23,dy=7,dz=14,scores={MusicCooldo
 
 
 #Union Cave
-playsound unioncave record @s[x=230,y=0,z=-642,dx=95,dy=240,dz=167,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=230,y=0,z=-642,dx=95,dy=240,dz=167,scores={MusicCooldown=0}] MusicCooldown 174
+playsound unioncave record @s[x=82,y=0,z=-873,dx=140,dy=60,dz=283,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=82,y=0,z=-873,dx=140,dy=60,dz=283,scores={MusicCooldown=0}] MusicCooldown 174
 
 
 #Route 29
@@ -843,18 +843,18 @@ scoreboard players set @s[x=-649,y=0,z=-598,dx=124,dy=240,dz=118,scores={MusicCo
 
 
 #Route 32
-playsound route32 record @s[x=75,y=0,z=-515,dx=154,dy=240,dz=56,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=75,y=0,z=-515,dx=154,dy=240,dz=56,scores={MusicCooldown=0}] MusicCooldown 117
+playsound route32 record @s[x=75,y=60,z=-515,dx=154,dy=240,dz=56,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=75,y=60,z=-515,dx=154,dy=240,dz=56,scores={MusicCooldown=0}] MusicCooldown 117
 
 
 #Route 32
-playsound route32 record @s[x=75,y=0,z=-582,dx=154,dy=240,dz=66,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=75,y=0,z=-582,dx=154,dy=240,dz=66,scores={MusicCooldown=0}] MusicCooldown 117
+playsound route32 record @s[x=75,y=60,z=-582,dx=154,dy=240,dz=66,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=75,y=60,z=-582,dx=154,dy=240,dz=66,scores={MusicCooldown=0}] MusicCooldown 117
 
 
 #Route 32
-playsound route32 record @s[x=75,y=0,z=-671,dx=154,dy=240,dz=88,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=75,y=0,z=-671,dx=154,dy=240,dz=88,scores={MusicCooldown=0}] MusicCooldown 117
+playsound route32 record @s[x=75,y=60,z=-671,dx=154,dy=240,dz=88,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=75,y=60,z=-671,dx=154,dy=240,dz=88,scores={MusicCooldown=0}] MusicCooldown 117
 
 
 #New Bark Town

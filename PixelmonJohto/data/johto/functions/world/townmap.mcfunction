@@ -117,13 +117,13 @@ scoreboard players set @s[x=-875,y=0,z=475,dx=280,dy=240,dz=173] TownMap 62
 scoreboard players set @s[x=-96,y=0,z=120,dx=135,dy=240,dz=99] TownMap 57
 scoreboard players set @s[x=-961,y=0,z=-588,dx=207,dy=240,dz=128] TownMap 72
 scoreboard players set @s[x=100,y=0,z=-90,dx=90,dy=240,dz=190] TownMap 14
-scoreboard players set @s[x=101,y=0,z=-166,dx=58,dy=240,dz=75] TownMap 16
+scoreboard players set @s[x=101,y=60,z=-166,dx=58,dy=240,dz=75] TownMap 16
 scoreboard players set @s[x=1152,y=0,z=-525,dx=168,dy=240,dz=244] TownMap 40
 scoreboard players set @s[x=148,y=60,z=613,dx=200,dy=30,dz=200] TownMap 133
 scoreboard players set @s[x=154,y=0,z=120,dx=81,dy=240,dz=99] TownMap 54
 scoreboard players set @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205] TownMap 18
 scoreboard players set @s[x=191,y=0,z=-89,dx=140,dy=240,dz=100] TownMap 15
-scoreboard players set @s[x=230,y=0,z=-642,dx=95,dy=240,dz=167] TownMap 24
+scoreboard players set @s[x=82,y=0,z=-873,dx=140,dy=60,dz=283] TownMap 24
 scoreboard players set @s[x=236,y=0,z=164,dx=262,dy=240,dz=204] TownMap 53
 scoreboard players set @s[x=285,y=0,z=-793,dx=125,dy=240,dz=130] TownMap 26
 scoreboard players set @s[x=319,y=0,z=37,dx=82,dy=240,dz=126] TownMap 39
@@ -147,12 +147,12 @@ scoreboard players set @s[x=639,y=0,z=-239,dx=197,dy=240,dz=279] TownMap 47
 scoreboard players set @s[x=639,y=0,z=41,dx=236,dy=240,dz=87] TownMap 48
 scoreboard players set @s[x=698,y=0,z=129,dx=177,dy=240,dz=77] TownMap 49
 scoreboard players set @s[x=698,y=0,z=207,dx=177,dy=240,dz=98] TownMap 50
-scoreboard players set @s[x=75,y=0,z=-300,dx=84,dy=240,dz=133] TownMap 17
-scoreboard players set @s[x=75,y=0,z=-393,dx=154,dy=240,dz=94] TownMap 19
-scoreboard players set @s[x=75,y=0,z=-458,dx=154,dy=240,dz=64] TownMap 20
+scoreboard players set @s[x=75,y=60,z=-300,dx=84,dy=240,dz=133] TownMap 17
+scoreboard players set @s[x=75,y=60,z=-393,dx=154,dy=240,dz=94] TownMap 19
+scoreboard players set @s[x=75,y=60,z=-458,dx=154,dy=240,dz=64] TownMap 20
 scoreboard players set @s[x=75,y=0,z=-515,dx=154,dy=240,dz=56] TownMap 21
 scoreboard players set @s[x=75,y=0,z=-582,dx=154,dy=240,dz=66] TownMap 22
-scoreboard players set @s[x=75,y=0,z=-671,dx=154,dy=240,dz=88] TownMap 23
+scoreboard players set @s[x=75,y=60,z=-671,dx=154,dy=240,dz=88] TownMap 23
 scoreboard players set @s[x=837,y=0,z=-97,dx=147,dy=240,dz=81] TownMap 46
 scoreboard players set @s[x=858,y=60,z=-15,dx=102,dy=10,dz=143] TownMap 155
 scoreboard players set @s[x=870,y=0,z=-168,dx=281,dy=240,dz=70] TownMap 45
@@ -277,13 +277,13 @@ title @s[x=-875,y=0,z=475,dx=280,dy=240,dz=173] actionbar {"text":"Route 44"}
 title @s[x=-96,y=0,z=120,dx=135,dy=240,dz=99] actionbar {"text":"Route 42"}
 title @s[x=-961,y=0,z=-588,dx=207,dy=240,dz=128] actionbar {"text":"Route 27"}
 title @s[x=100,y=0,z=-90,dx=90,dy=240,dz=190] actionbar {"text":"Violet City"}
-title @s[x=101,y=0,z=-166,dx=58,dy=240,dz=75] actionbar {"text":"Route 32"}
+title @s[x=101,y=60,z=-166,dx=58,dy=240,dz=75] actionbar {"text":"Route 32"}
 title @s[x=1152,y=0,z=-525,dx=168,dy=240,dz=244] actionbar {"text":"Cianwood City"}
 title @s[x=148,y=60,z=613,dx=200,dy=30,dz=200] actionbar {"text":"Route 22"}
 title @s[x=154,y=0,z=120,dx=81,dy=240,dz=99] actionbar {"text":"Route 42"}
 title @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205] actionbar {"text":"Ruins of Alph"}
 title @s[x=191,y=0,z=-89,dx=140,dy=240,dz=100] actionbar {"text":"Route 36"}
-title @s[x=230,y=0,z=-642,dx=95,dy=240,dz=167] actionbar {"text":"Union Cave"}
+title @s[x=82,y=0,z=-873,dx=140,dy=60,dz=283] actionbar {"text":"Union Cave"}
 title @s[x=236,y=0,z=164,dx=262,dy=240,dz=204] actionbar {"text":"Ecruteak City"}
 title @s[x=285,y=0,z=-793,dx=125,dy=240,dz=130] actionbar {"text":"Azalea Town"}
 title @s[x=319,y=0,z=37,dx=82,dy=240,dz=126] actionbar {"text":"Route 37"}
@@ -307,12 +307,12 @@ title @s[x=639,y=0,z=-239,dx=197,dy=240,dz=279] actionbar {"text":"Olivine City"
 title @s[x=639,y=0,z=41,dx=236,dy=240,dz=87] actionbar {"text":"Route 39"}
 title @s[x=698,y=0,z=129,dx=177,dy=240,dz=77] actionbar {"text":"Route 39"}
 title @s[x=698,y=0,z=207,dx=177,dy=240,dz=98] actionbar {"text":"Route 38"}
-title @s[x=75,y=0,z=-300,dx=84,dy=240,dz=133] actionbar {"text":"Route 32"}
-title @s[x=75,y=0,z=-393,dx=154,dy=240,dz=94] actionbar {"text":"Route 32"}
-title @s[x=75,y=0,z=-458,dx=154,dy=240,dz=64] actionbar {"text":"Route 32"}
+title @s[x=75,y=60,z=-300,dx=84,dy=240,dz=133] actionbar {"text":"Route 32"}
+title @s[x=75,y=60,z=-393,dx=154,dy=240,dz=94] actionbar {"text":"Route 32"}
+title @s[x=75,y=60,z=-458,dx=154,dy=240,dz=64] actionbar {"text":"Route 32"}
 title @s[x=75,y=0,z=-515,dx=154,dy=240,dz=56] actionbar {"text":"Route 32"}
 title @s[x=75,y=0,z=-582,dx=154,dy=240,dz=66] actionbar {"text":"Route 32"}
-title @s[x=75,y=0,z=-671,dx=154,dy=240,dz=88] actionbar {"text":"Route 32"}
+title @s[x=75,y=60,z=-671,dx=154,dy=240,dz=88] actionbar {"text":"Route 32"}
 title @s[x=837,y=0,z=-97,dx=147,dy=240,dz=81] actionbar {"text":"Route 40"}
 title @s[x=858,y=60,z=-15,dx=102,dy=10,dz=143] actionbar {"text":"Battle Frontier"}
 title @s[x=870,y=0,z=-168,dx=281,dy=240,dz=70] actionbar {"text":"Route 40"}

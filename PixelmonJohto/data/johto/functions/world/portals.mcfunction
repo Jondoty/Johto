@@ -486,48 +486,48 @@ tp @a[x=-396,y=64,z=-183,dx=3,dy=3] -507 64 -301
 playsound door ambient @a[x=156,y=64,z=-615,dx=3,dy=3] ~ ~ ~ 100 1 1
 scoreboard players set @a[x=156,y=64,z=-615,dx=3,dy=3] click 1
 scoreboard players set @a[x=156,y=64,z=-615,dx=3,dy=3] EscapeRope 4
-tp @a[x=156,y=64,z=-615,dx=3,dy=3] 244 64 -495
+tp @a[x=156,y=64,z=-615,dx=3,dy=3] 145 44 -608
 
-playsound door ambient @a[x=243,y=64,z=-496,dx=3,dy=3] ~ ~ ~ 100 1 1
-scoreboard players set @a[x=243,y=64,z=-496,dx=3,dy=3] click 1
-scoreboard players set @a[x=243,y=64,z=-496,dx=3,dy=3] EscapeRope 0
-tp @a[x=243,y=64,z=-496,dx=3,dy=3] 158 64 -617
+playsound door ambient @a[x=143,y=44,z=-609,dx=3,dy=3] ~ ~ ~ 100 1 1
+scoreboard players set @a[x=143,y=44,z=-609,dx=3,dy=3] click 1
+scoreboard players set @a[x=143,y=44,z=-609,dx=3,dy=3] EscapeRope 0
+tp @a[x=143,y=44,z=-609,dx=3,dy=3] 158 64 -617
 
 
 #Route 33 Side
 playsound door ambient @a[x=128,y=64,z=-728,dx=3,dy=3] ~ ~ ~ 100 1 1
 scoreboard players set @a[x=128,y=64,z=-728,dx=3,dy=3] click 1
 scoreboard players set @a[x=128,y=64,z=-728,dx=3,dy=3] EscapeRope 5
-tp @a[x=128,y=64,z=-728,dx=3,dy=3] 244 64 -620
+tp @a[x=128,y=64,z=-728,dx=3,dy=3] 144 44 -733
 
-playsound door ambient @a[x=243,y=64,z=-622,dx=3,dy=3] ~ ~ ~ 100 1 1
-scoreboard players set @a[x=243,y=64,z=-622,dx=3,dy=3] click 1
-scoreboard players set @a[x=243,y=64,z=-622,dx=3,dy=3] EscapeRope 0
-tp @a[x=243,y=64,z=-622,dx=3,dy=3] 130 64 -730
+playsound door ambient @a[x=142,y=44,z=-734,dx=3,dy=3] ~ ~ ~ 100 1 1
+scoreboard players set @a[x=142,y=44,z=-734,dx=3,dy=3] click 1
+scoreboard players set @a[x=142,y=44,z=-734,dx=3,dy=3] EscapeRope 0
+tp @a[x=142,y=44,z=-734,dx=3,dy=3] 130 64 -730
 
 
-#Ruins of Alph North facing Cave door
+#Ruins of Alph North Cave Exit
 playsound door ambient @a[x=232,y=63,z=-176,dx=4,dy=4] ~ ~ ~ 100 1 1
 scoreboard players set @a[x=232,y=63,z=-176,dx=4,dy=4] EscapeRope 6
 scoreboard players set @a[x=232,y=63,z=-176,dx=4,dy=4] click 1
-tp @a[x=232,y=63,z=-176,dx=4,dy=4] 300 73 -559 ~180 ~0
+tp @a[x=232,y=63,z=-176,dx=4,dy=4] 206 28 -608
 
-playsound door ambient @a[x=298,y=72,z=-558,dx=3,dy=3] ~ ~ ~ 100 1 1
-scoreboard players set @a[x=298,y=72,z=-558,dx=3,dy=3] EscapeRope 0
-scoreboard players set @a[x=298,y=72,z=-558,dx=3,dy=3] click 1
-tp @a[x=298,y=72,z=-558,dx=3,dy=3] 234 64 -177 ~180 ~0
+playsound door ambient @a[x=205,y=28,z=-609,dx=3,dy=3] ~ ~ ~ 100 1 1
+scoreboard players set @a[x=205,y=28,z=-609,dx=3,dy=3] EscapeRope 0
+scoreboard players set @a[x=205,y=28,z=-609,dx=3,dy=3] click 1
+tp @a[x=205,y=28,z=-609,dx=3,dy=3] 234 64 -177
 
 
-#Ruins of Alph West facing Cave door
+#Ruins of Alph South Cave Exit
 playsound door ambient @a[x=231,y=63,z=-219,dx=3,dy=3] ~ ~ ~ 100 1 1
 scoreboard players set @a[x=231,y=63,z=-219,dx=3,dy=3] EscapeRope 7
 scoreboard players set @a[x=231,y=63,z=-219,dx=3,dy=3] click 1
-tp @a[x=231,y=63,z=-219,dx=3,dy=3] 302 73 -564 ~90 ~0
+tp @a[x=231,y=63,z=-219,dx=3,dy=3] 206 28 -643
 
-playsound door ambient @a[x=303,y=72,z=-566,dz=4,dy=3] ~ ~ ~ 100 1 1
-scoreboard players set @a[x=303,y=72,z=-566,dz=4,dy=3] EscapeRope 0
-scoreboard players set @a[x=303,y=72,z=-566,dz=4,dy=3] click 1
-tp @a[x=303,y=72,z=-566,dz=4,dy=3] 232 64 -225 -180 ~0
+playsound door ambient @a[x=205,y=28,z=-644,dx=3,dy=3] ~ ~ ~ 100 1 1
+scoreboard players set @a[x=205,y=28,z=-644,dx=3,dy=3] EscapeRope 0
+scoreboard players set @a[x=205,y=28,z=-644,dx=3,dy=3] click 1
+tp @a[x=205,y=28,z=-644,dx=3,dy=3] 232 64 -220
 
 #--------------------------------------------------
 

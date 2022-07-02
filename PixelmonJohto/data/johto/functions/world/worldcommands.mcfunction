@@ -1548,6 +1548,14 @@ execute at @a[x=95,y=60,z=-54,dx=20,dy=3,dz=27,tag=!Dialogue33] run tp @a[x=95,y
 tellraw @a[x=183,y=60,z=-231,dx=22,dy=3,dz=19,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
 execute at @a[x=183,y=60,z=-231,dx=22,dy=3,dz=19,tag=!Dialogue33] run tp @a[x=183,y=60,z=-231,dx=22,dy=3,dz=19,tag=!Dialogue33] 198 64 -207
 
+#Union Cave 1F without Surf
+tellraw @a[x=196,y=40,z=-732,dx=16,dy=3,dz=16,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
+execute at @a[x=196,y=40,z=-732,dx=16,dy=3,dz=16,tag=!Dialogue33] run tp @a[x=196,y=40,z=-732,dx=16,dy=3,dz=16,tag=!Dialogue33] 199 44 -710
+
+#Union Cave B1F without Surf
+tellraw @a[x=170,y=24,z=-679,dx=25,dy=3,dz=34,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
+execute at @a[x=170,y=24,z=-679,dx=25,dy=3,dz=34,tag=!Dialogue33] run tp @a[x=170,y=24,z=-679,dx=25,dy=3,dz=34,tag=!Dialogue33] 173 28 -684
+
 #Slow Poke Well without Surf
 tellraw @a[x=281,y=36,z=-717,dx=24,dy=2,dz=15,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
 execute at @a[x=281,y=36,z=-717,dx=24,dy=2,dz=15,tag=!Dialogue33] run tp @a[x=281,y=36,z=-717,dx=24,dy=2,dz=15,tag=!Dialogue33] 303 39 -699
