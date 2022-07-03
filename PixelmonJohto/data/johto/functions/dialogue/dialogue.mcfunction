@@ -2244,14 +2244,14 @@ tellraw @s[scores={DialogueTrigger=102,TalkTime=13}] {"text":"<Mr. Pokémon> The
 tellraw @s[scores={DialogueTrigger=102,TalkTime=18}] {"text":"<Mr. Pokémon> A friend of mine from Hoenn came over to give this to me."}
 
 #Rolls for which orb player gets
-execute as @s[scores={DialogueTrigger=102,TalkTime=21}] run scoreboard players set @e[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 0
-execute as @s[scores={DialogueTrigger=102,TalkTime=21}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 1
-execute as @s[scores={DialogueTrigger=102,TalkTime=21}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 2
-execute as @s[scores={DialogueTrigger=102,TalkTime=21}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 4
-execute as @s[scores={DialogueTrigger=102,TalkTime=21}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 8
-execute as @s[scores={DialogueTrigger=102,TalkTime=21}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 16
-execute as @s[scores={DialogueTrigger=102,TalkTime=21}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 32
-execute as @s[scores={DialogueTrigger=102,TalkTime=21}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 64
+execute as @s[scores={DialogueTrigger=102,TalkTime=21}] run scoreboard players set @e[x=-867,y=69,z=-207,dy=4,dz=2] rng 0
+execute as @s[scores={DialogueTrigger=102,TalkTime=21}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 1
+execute as @s[scores={DialogueTrigger=102,TalkTime=21}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 2
+execute as @s[scores={DialogueTrigger=102,TalkTime=21}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 4
+execute as @s[scores={DialogueTrigger=102,TalkTime=21}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 8
+execute as @s[scores={DialogueTrigger=102,TalkTime=21}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 16
+execute as @s[scores={DialogueTrigger=102,TalkTime=21}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 32
+execute as @s[scores={DialogueTrigger=102,TalkTime=21}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 64
 
 execute as @s[scores={DialogueTrigger=102,TalkTime=22}] run scoreboard players operation @s rng = @e[x=-867,y=69,z=-205,dy=3,type=armor_stand] rng
 
@@ -4340,14 +4340,14 @@ execute as @s[scores={DialogueTrigger=199,TalkTime=8}] run function johto:world/
 tellraw @s[scores={DialogueTrigger=199,TalkTime=15}] {"text":"<Park Worker> And today's winners are..."}
 
 #Rolls for a random number
-execute as @s[scores={DialogueTrigger=199,TalkTime=17}] run scoreboard players set @e[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 0
-execute as @s[scores={DialogueTrigger=199,TalkTime=17}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 1
-execute as @s[scores={DialogueTrigger=199,TalkTime=17}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 2
-execute as @s[scores={DialogueTrigger=199,TalkTime=17}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 4
-execute as @s[scores={DialogueTrigger=199,TalkTime=17}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 8
-execute as @s[scores={DialogueTrigger=199,TalkTime=17}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 16
-execute as @s[scores={DialogueTrigger=199,TalkTime=17}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 32
-execute as @s[scores={DialogueTrigger=199,TalkTime=17}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 64
+execute as @s[scores={DialogueTrigger=199,TalkTime=17}] run scoreboard players set @e[x=-867,y=69,z=-207,dy=4,dz=2] rng 0
+execute as @s[scores={DialogueTrigger=199,TalkTime=17}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 1
+execute as @s[scores={DialogueTrigger=199,TalkTime=17}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 2
+execute as @s[scores={DialogueTrigger=199,TalkTime=17}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 4
+execute as @s[scores={DialogueTrigger=199,TalkTime=17}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 8
+execute as @s[scores={DialogueTrigger=199,TalkTime=17}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 16
+execute as @s[scores={DialogueTrigger=199,TalkTime=17}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 32
+execute as @s[scores={DialogueTrigger=199,TalkTime=17}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 64
 
 execute as @s[scores={DialogueTrigger=199,TalkTime=17}] run scoreboard players operation @s rng = @e[x=-867,y=69,z=-205,dy=3,type=armor_stand] rng
 
@@ -4392,14 +4392,14 @@ tellraw @s[scores={DialogueTrigger=199,TalkTime=30}] ["",{"text":"<Park Worker> 
 execute as @s[scores={DialogueTrigger=199,TalkTime=30}] run advancement grant @s only johto:event1
 
 #Rolls again for a reward if 1st
-execute as @s[scores={DialogueTrigger=199,TalkTime=29},tag=First] run scoreboard players set @e[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 0
-execute as @s[scores={DialogueTrigger=199,TalkTime=29},tag=First] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 1
-execute as @s[scores={DialogueTrigger=199,TalkTime=29},tag=First] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 2
-execute as @s[scores={DialogueTrigger=199,TalkTime=29},tag=First] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 4
-execute as @s[scores={DialogueTrigger=199,TalkTime=29},tag=First] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 8
-execute as @s[scores={DialogueTrigger=199,TalkTime=29},tag=First] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 16
-execute as @s[scores={DialogueTrigger=199,TalkTime=29},tag=First] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 32
-execute as @s[scores={DialogueTrigger=199,TalkTime=29},tag=First] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 64
+execute as @s[scores={DialogueTrigger=199,TalkTime=29},tag=First] run scoreboard players set @e[x=-867,y=69,z=-207,dy=4,dz=2] rng 0
+execute as @s[scores={DialogueTrigger=199,TalkTime=29},tag=First] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 1
+execute as @s[scores={DialogueTrigger=199,TalkTime=29},tag=First] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 2
+execute as @s[scores={DialogueTrigger=199,TalkTime=29},tag=First] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 4
+execute as @s[scores={DialogueTrigger=199,TalkTime=29},tag=First] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 8
+execute as @s[scores={DialogueTrigger=199,TalkTime=29},tag=First] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 16
+execute as @s[scores={DialogueTrigger=199,TalkTime=29},tag=First] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 32
+execute as @s[scores={DialogueTrigger=199,TalkTime=29},tag=First] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 64
 
 execute as @s[scores={DialogueTrigger=199,TalkTime=29},tag=First] run scoreboard players operation @s rng = @e[x=-867,y=69,z=-205,dy=3,type=armor_stand] rng
 
@@ -4446,14 +4446,14 @@ tag @s[scores={DialogueTrigger=199,TalkTime=38..}] add Dialogue199
 execute as @s[scores={DialogueTrigger=200}] run tag @s remove Dialogue200
 
 #Rolls a Random Number for player
-execute as @s[scores={DialogueTrigger=200,TalkTime=1}] run scoreboard players set @e[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 0
-execute as @s[scores={DialogueTrigger=200,TalkTime=1}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 1
-execute as @s[scores={DialogueTrigger=200,TalkTime=1}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 2
-execute as @s[scores={DialogueTrigger=200,TalkTime=1}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 4
-execute as @s[scores={DialogueTrigger=200,TalkTime=1}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 8
-execute as @s[scores={DialogueTrigger=200,TalkTime=1}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 16
-execute as @s[scores={DialogueTrigger=200,TalkTime=1}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 32
-execute as @s[scores={DialogueTrigger=200,TalkTime=1}] run scoreboard players add @r[x=-867,y=69,z=-207,dy=4,dz=2,limit=1] rng 64
+execute as @s[scores={DialogueTrigger=200,TalkTime=1}] run scoreboard players set @e[x=-867,y=69,z=-207,dy=4,dz=2] rng 0
+execute as @s[scores={DialogueTrigger=200,TalkTime=1}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 1
+execute as @s[scores={DialogueTrigger=200,TalkTime=1}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 2
+execute as @s[scores={DialogueTrigger=200,TalkTime=1}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 4
+execute as @s[scores={DialogueTrigger=200,TalkTime=1}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 8
+execute as @s[scores={DialogueTrigger=200,TalkTime=1}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 16
+execute as @s[scores={DialogueTrigger=200,TalkTime=1}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 32
+execute as @s[scores={DialogueTrigger=200,TalkTime=1}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 64
 
 execute as @s[scores={DialogueTrigger=200,TalkTime=1}] run scoreboard players operation @s rng = @e[x=-867,y=69,z=-205,dy=3,type=armor_stand] rng
 
