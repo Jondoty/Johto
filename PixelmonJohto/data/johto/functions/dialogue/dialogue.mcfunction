@@ -2785,7 +2785,7 @@ tag @s[scores={DialogueTrigger=131,TalkTime=57..}] add Dialogue131
 #execute as @e[type=armor_stand,name=Mystery_Gift] ~1 ~ ~4 execute @a[r=5,tag=AllGyms,score_TalkTime=0] run scoreboard players set @s[tag=!Dialogue132] DialogueTrigger 132
 
 tellraw @s[scores={DialogueTrigger=132,TalkTime=1}] {"text":"<Shopkeeper> Good morning. I've received a gift for you!"}
-execute as @s[scores={DialogueTrigger=132,TalkTime=4}] run pokegive @s Jirachi lvl:5 ball:cherishball
+execute as @s[scores={DialogueTrigger=132,TalkTime=4}] run pokegive @s Jirachi helditem:liechi_berry ball:cherish_ball lvl:5 ribbon:classic originaltrainername:SMR2010
 execute as @s[scores={DialogueTrigger=132,TalkTime=4}] run give @s pixelmon:gold_bottle_cap{display:{Lore:["A beautiful bottle cap that gives off","a golden gleam. Some people are","happy to receive one."]}}
 execute as @s[scores={DialogueTrigger=132,TalkTime=4}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
@@ -2952,7 +2952,7 @@ tag @s[scores={DialogueTrigger=139,TalkTime=26..}] add Dialogue139
 tellraw @s[scores={DialogueTrigger=140,TalkTime=1}] {"text":"<Sailor> The ocean is so beautiful, isn't it?"}
 tellraw @s[scores={DialogueTrigger=140,TalkTime=8}] {"text":"<Sailor> You look like you have proven yourself as a trainer."}
 tellraw @s[scores={DialogueTrigger=140,TalkTime=26}] {"text":"<Sailor> Please take this, and help preserve the beauty of the seas!"}
-execute as @s[scores={DialogueTrigger=140,TalkTime=31}] run pokegive @s Manaphy egg lvl:5
+execute as @s[scores={DialogueTrigger=140,TalkTime=31}] run pokegive @s Manaphy egg ball:cherish_ball originaltrainername:NZ ribbon:classic helditem:lansat_berry
 execute as @s[scores={DialogueTrigger=140,TalkTime=31}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tag @s[scores={DialogueTrigger=140,TalkTime=31..}] add Dialogue140
