@@ -23,30 +23,31 @@
       "spec": "species:Wooper"
       ,
       "stringLocationTypes": [
-        "Water"
+        "Water",
+        "Underground Water"
       ],
       "minLevel": 4,
       "maxLevel": 7,
       "typeID": "pokemon",
       "condition": {
-        "minX": 233, "maxX": 322, "minZ": -639, "maxZ": -478
+        "minX": 79, "maxX": 225, "minY": 40, "maxY": 55, "minZ": -880, "maxZ": -585
       },
-      "rarity": 40.0
+      "rarity": 60.0
     },
-
     {
       "spec": "species:Wooper"
       ,
       "stringLocationTypes": [
-        "Water"
+        "Water",
+        "Underground Water"
       ],
-      "minLevel": 5,
-      "maxLevel": 6,
+      "minLevel": 4,
+      "maxLevel": 7,
       "typeID": "pokemon",
       "condition": {
-        "minX": 233, "maxX": 322, "minZ": -639, "maxZ": -478
+        "minX": 79, "maxX": 225, "minY": 26, "maxY": 39, "minZ": -880, "maxZ": -585
       },
-      "rarity": 40.0
+      "rarity": 60.0
     }
 
 

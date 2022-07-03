@@ -323,6 +323,22 @@
         "neededNearbyBlocks": ["minecraft:stained_hardened_clay"]
       },
       "rarity": 30.0
+    },
+
+
+    {
+      "spec": "species:Golbat",
+      "stringLocationTypes": [
+        "Underground"
+      ],
+      "minLevel": 20,
+      "maxLevel": 23,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": 79, "maxX": 225, "minY": 10, "maxY": 25, "minZ": -880, "maxZ": -585,
+        "neededNearbyBlocks": ["minecraft:stained_hardened_clay"]
+      },
+      "rarity": 20.0
     }
 
 

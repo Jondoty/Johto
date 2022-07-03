@@ -247,6 +247,47 @@
         "times": ["DAY"]
       },
       "rarity": 30.0
+    },
+
+    {
+      "spec": "species:Corsola",
+      "stringLocationTypes": [
+        "Good Rod"
+      ],
+      "minLevel": 20,
+      "maxLevel": 20,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:float_stone",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "minX": 79, "maxX": 225, "minY": 10, "maxY": 25, "minZ": -880, "maxZ": -585,
+        "times": [ "DAWN", "DUSK", "DAY"]
+      },
+      "rarity": 10.0
+    },
+    {
+      "spec": "species:Corsola",
+      "stringLocationTypes": [
+        "Super Rod"
+      ],
+      "minLevel": 40,
+      "maxLevel": 40,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:float_stone",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "minX": 79, "maxX": 225, "minY": 10, "maxY": 25, "minZ": -880, "maxZ": -585,
+        "times": [ "DAWN", "DUSK", "DAY"]
+      },
+      "rarity": 10.0
     }
 
 

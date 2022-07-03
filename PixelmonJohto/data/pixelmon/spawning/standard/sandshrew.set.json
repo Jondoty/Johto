@@ -7,11 +7,25 @@
         "Underground"
       ],
       "minLevel": 4,
-      "maxLevel": 6,
+      "maxLevel": 7,
       "typeID": "pokemon",
       "condition": {
-        "minX": 233, "maxX": 322, "minZ": -639, "maxZ": -478,
-        "neededNearbyBlocks": ["minecraft:stained_hardened_clay"]
+        "minX": 79, "maxX": 225, "minY": 40, "maxY": 55, "minZ": -880, "maxZ": -585,
+        "neededNearbyBlocks": ["minecraft:cyan_terracotta", "minecraft:andesite"]
+      },
+      "rarity": 30.0
+    },
+    {
+      "spec": "species:Sandshrew",
+      "stringLocationTypes": [
+        "Underground"
+      ],
+      "minLevel": 6,
+      "maxLevel": 9,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": 79, "maxX": 225, "minY": 26, "maxY": 39, "minZ": -880, "maxZ": -585,
+        "neededNearbyBlocks": ["minecraft:cyan_terracotta", "minecraft:andesite"]
       },
       "rarity": 30.0
     },

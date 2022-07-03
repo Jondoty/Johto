@@ -87,7 +87,7 @@ xp set @a 0 levels
 xp set @a 0 points
 
 execute as @a[nbt={SelectedItem:{id:"pixelmon:item_finder"}}] run function johto:world/itemfinder
-
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"pixelmon:item_finder"}]}] run function johto:world/itemfinder
 
 
 #Executes shiny particles over Shiny Pokemon
@@ -1275,11 +1275,11 @@ scoreboard players set @a[x=1242,y=30,z=209,dx=14,dy=10,dz=8,tag=!Dialogue103,nb
 scoreboard players set @a[x=251,y=154,z=308,dx=11,dy=5,dz=11,tag=!Dialogue104,nbt={Inventory:[{id:"minecraft:prismarine_crystals"}]}] DialogueTrigger 104
 
 #Dialogue105
-#Whirl Islands Friday Lapras
-execute at @a[x=1229,y=108,z=184,distance=..10,tag=!Dialogue105] run execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run scoreboard players set @a[x=1229,y=108,z=184,distance=..10,tag=!Dialogue105] DialogueTrigger 105
-execute at @a[x=1229,y=108,z=184,distance=..30,tag=!Dialogue105] run execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run tp @e[x=-785,y=78,z=-244,dy=3,type=pixelmon:statue] 1229 108.5 184
-execute at @a[x=1229,y=108,z=184,distance=..30,tag=!Dialogue105] run execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1..4}] run tp @e[x=1229,y=108,z=184,distance=..5,type=pixelmon:statue] -785 79 -244
-execute at @a[x=1229,y=108,z=184,distance=..30,tag=!Dialogue105] run execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=6..7}] run tp @e[x=1229,y=108,z=184,distance=..5,type=pixelmon:statue] -785 79 -244
+#Union Cave Friday Lapras
+execute at @a[x=120,y=13,z=-852,distance=..10,tag=!Dialogue105] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run scoreboard players set @a[x=120,y=13,z=-852,distance=..10,tag=!Dialogue105] DialogueTrigger 105
+execute at @a[x=120,y=13,z=-852,distance=..50,tag=!Dialogue105] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run tp @e[x=-785,y=78,z=-244,dy=3,type=pixelmon:statue] 120 13 -852
+execute at @a[x=120,y=13,z=-852,distance=..50,tag=!Dialogue105] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1..4}] run tp @e[x=120,y=13,z=-852,distance=..5,type=pixelmon:statue] -785 79 -244
+execute at @a[x=120,y=13,z=-852,distance=..50,tag=!Dialogue105] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=6..7}] run tp @e[x=120,y=13,z=-852,distance=..5,type=pixelmon:statue] -785 79 -244
 
 #Dialogue110
 #GS Ball Spawn In

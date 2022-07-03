@@ -929,8 +929,74 @@
         "neededNearbyBlocks": ["minecraft:planks"]
       },
       "rarity": 20.0
-    }
+    },
 
+    {
+      "spec": "species:Rattata"
+      ,
+      "stringLocationTypes": [
+        "Underground",
+        "Land"
+      ],
+      "minLevel": 4,
+      "maxLevel": 7,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:chilan_berry",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+      "minX": 79, "maxX": 225, "minY": 40, "maxY": 55, "minZ": -880, "maxZ": -585,
+        "neededNearbyBlocks": ["minecraft:cyan_terracotta", "minecraft:andesite"]
+      },
+      "rarity": 10.0
+    },
+    {
+      "spec": "species:Rattata"
+      ,
+      "stringLocationTypes": [
+        "Underground",
+        "Land"
+      ],
+      "minLevel": 6,
+      "maxLevel": 9,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:chilan_berry",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+      "minX": 79, "maxX": 225, "minY": 26, "maxY": 39, "minZ": -880, "maxZ": -585,
+        "neededNearbyBlocks": ["minecraft:cyan_terracotta", "minecraft:andesite"]
+      },
+      "rarity": 5.0
+    },
+    {
+      "spec": "species:Rattata"
+      ,
+      "stringLocationTypes": [
+        "Underground",
+        "Land"
+      ],
+      "minLevel": 20,
+      "maxLevel": 23,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:chilan_berry",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+      "minX": 79, "maxX": 225, "minY": 10, "maxY": 25, "minZ": -880, "maxZ": -585,
+        "neededNearbyBlocks": ["minecraft:cyan_terracotta", "minecraft:andesite"]
+      },
+      "rarity": 5.0
+    }
 
   ]
 }

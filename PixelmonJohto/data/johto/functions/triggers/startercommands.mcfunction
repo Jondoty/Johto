@@ -723,7 +723,11 @@ tag @s remove HiddenLoot192
 tag @s remove HiddenLoot193
 tag @s remove HiddenLoot194
 tag @s remove HiddenLoot195
-
+tag @s remove HiddenLoot196
+tag @s remove HiddenLoot197
+tag @s remove HiddenLoot198
+tag @s remove HiddenLoot199
+tag @s remove HiddenLoot200
 
 
 

@@ -287,8 +287,8 @@
       "stringLocationTypes": [
         "Super Rod"
       ],
-      "minLevel": 20,
-      "maxLevel": 20,
+      "minLevel": 40,
+      "maxLevel": 40,
       "typeID": "pokemon",
       "heldItems": [
         {
@@ -307,6 +307,57 @@
       "rarity": 30.0
     },
 
+
+    {
+      "spec": "species:Staryu"
+      ,
+      "stringLocationTypes": [
+        "Good Rod"
+      ],
+      "minLevel": 20,
+      "maxLevel": 20,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:star_piece",
+          "percentChance": 5
+        },
+        {
+          "itemID": "pixelmon:stardust",
+          "percentChance": 50
+        }
+      ],
+      "condition": {
+        "minX": 79, "maxX": 225, "minY": 10, "maxY": 25, "minZ": -880, "maxZ": -585,
+        "times": ["NIGHT"]
+      },
+      "rarity": 10.0
+    },
+    {
+      "spec": "species:Staryu"
+      ,
+      "stringLocationTypes": [
+        "Super Rod"
+      ],
+      "minLevel": 40,
+      "maxLevel": 40,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:star_piece",
+          "percentChance": 5
+        },
+        {
+          "itemID": "pixelmon:stardust",
+          "percentChance": 50
+        }
+      ],
+      "condition": {
+        "minX": 79, "maxX": 225, "minY": 10, "maxY": 25, "minZ": -880, "maxZ": -585,
+        "times": ["NIGHT"]
+      },
+      "rarity": 30.0
+    },
 
 
 

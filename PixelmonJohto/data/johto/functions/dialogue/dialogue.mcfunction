@@ -2315,10 +2315,10 @@ tag @s[scores={DialogueTrigger=104,TalkTime=13..}] add Dialogue104
 #execute as @s[x=1229,y=108,z=184,distance=..30,tag=!Dialogue105] run execute @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,score_WeekdayTrack_min=1,score_WeekdayTrack=4] run tp @e[x=1229,y=108,z=184,distance=..5,type=pixelmon:statue] -785 79 -244
 #execute as @s[x=1229,y=108,z=184,distance=..30,tag=!Dialogue105] run execute @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,score_WeekdayTrack_min=6,score_WeekdayTrack=7] run tp @e[x=1229,y=108,z=184,distance=..5,type=pixelmon:statue] -785 79 -244
 
-execute as @s[scores={DialogueTrigger=105,TalkTime=1}] run particle cloud 1229 107.5 184 1 1 1 1 100
-execute as @s[scores={DialogueTrigger=105,TalkTime=1}] run execute at @e[x=1229,y=108,z=184,distance=..5,type=pixelmon:statue] run pokespawn Lapras lvl:25
-execute as @s[scores={DialogueTrigger=105,TalkTime=1}] run tp @e[x=1229,y=108,z=184,distance=..5,type=pixelmon:statue] -785 79 -244
-execute as @s[scores={DialogueTrigger=105,TalkTime=1}] run playsound lapras ambient @s ~ ~ ~ 1000 1 1
+execute as @s[scores={DialogueTrigger=105,TalkTime=1}] run particle cloud 120 13 -852 1 1 1 1 100
+execute as @s[scores={DialogueTrigger=105,TalkTime=1}] run execute at @e[x=120,y=13,z=-852,distance=..5,type=minecraft:armor_stand] run pokespawn Lapras lvl:20
+execute as @s[scores={DialogueTrigger=105,TalkTime=1}] run tp @e[x=120,y=13,z=-852,distance=..5,type=pixelmon:statue] -785 79 -244
+execute as @s[scores={DialogueTrigger=105,TalkTime=1}] run playsound lapras ambient @s ~ ~ ~ 1 1 1
 
 tag @s[scores={DialogueTrigger=105,TalkTime=1..}] add Dialogue105
 
