@@ -4,7 +4,7 @@
 execute at @e[tag=1.12.2Trainer,type=pixelmon:npc_trainer] run particle minecraft:end_rod ~ ~5 ~ 0 10 0 0.001 10 force @a
 
 #temp to tp corrputed trainer into void
-tp @e[x=-1248,y=64,z=-7,type=pixelmon:npc_trainer,distance=..4] ~ ~-1000 ~
+tp @e[x=257,y=64,z=-556.50,type=pixelmon:npc_trainer,distance=..4] ~ ~-1000 ~
 
 #---------------------
 #Despawns items that may be broken and pop up elsewhere in the map
@@ -14,6 +14,23 @@ execute at @a run tag @e[distance=..10,type=item,nbt={Item:{id:"minecraft:oak_sa
 execute at @a run tag @e[distance=..10,type=item,nbt={Item:{id:"minecraft:spruce_sapling"}}] add Despawn
 
 execute at @a run execute as @e[tag=Despawn,distance=..10] run data merge entity @s {Lifespan:0,Age:0s}
+
+#---------------------
+#Time-based commands
+
+#Runs daily commands, sets time to armor stand based on game time
+execute store result score @e[x=-799,y=64,z=-284,dy=3,type=armor_stand] DayTime run time query daytime
+execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=18000..},tag=!DailyExecuted] run function johto:triggers/dailycommands
+execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=18000..},tag=!DailyExecuted] run tag @e[x=-799,y=64,z=-284,dy=3,type=armor_stand] add DailyExecuted
+tag @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=..1000},tag=DailyExecuted] remove DailyExecuted
+
+#Enables Mega Stone Give Function
+execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=11834..13702}] run setblock -778 64 -266 minecraft:redstone_block
+execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=13702..}] run setblock -778 64 -266 minecraft:iron_block
+
+#Gym Leader Rematches
+execute as @p[x=-2781,y=64,z=421,distance=..100,tag=AllGyms] run function johto:world/gymrematches/trainers
+execute as @p[x=-2781,y=64,z=421,distance=..100,tag=!AllGyms] run function johto:world/gymrematches/leave
 
 #---------------------
 

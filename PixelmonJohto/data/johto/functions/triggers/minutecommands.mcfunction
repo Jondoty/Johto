@@ -177,34 +177,34 @@ execute as @p[x=147,y=64,z=-562,distance=..50,tag=!Dialogue16] run tp @e[x=-815,
 #tps in Trainers
 
 #Route 34 Policeman
-execute at @a[x=477,y=64,z=-536,distance=..100] run execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=Night] run execute as @e[x=-815,y=64,z=-211,dy=3,type=pixelmon:npc_trainer] run particle cloud 477 64 -536 1 1 1 1 100
-execute at @a[x=477,y=64,z=-536,distance=..100] run execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=Night] run tp @e[x=-815,y=64,z=-211,dy=3,type=pixelmon:npc_trainer] 477 64 -536
+execute at @a[x=477,y=64,z=-536,distance=..100] run execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=13000..}] run execute as @e[x=-815,y=64,z=-211,dy=3,type=pixelmon:npc_trainer] run particle cloud 477 64 -536 1 1 1 1 100
+execute at @a[x=477,y=64,z=-536,distance=..100] run execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=13000..}] run tp @e[x=-815,y=64,z=-211,dy=3,type=pixelmon:npc_trainer] 477 64 -536
 
 #Route 35 Policeman
-execute at @a[x=504,y=64,z=-100,distance=..100] run execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=Night] run execute as @e[x=-815,y=64,z=-209,dy=3,type=pixelmon:npc_trainer] run particle cloud 504 64 -100 1 1 1 1 100
-execute at @a[x=504,y=64,z=-100,distance=..100] run execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=Night] run tp @e[x=-815,y=64,z=-209,dy=3,type=pixelmon:npc_trainer] 504 64 -100
+execute at @a[x=504,y=64,z=-100,distance=..100] run execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=13000..}] run execute as @e[x=-815,y=64,z=-209,dy=3,type=pixelmon:npc_trainer] run particle cloud 504 64 -100 1 1 1 1 100
+execute at @a[x=504,y=64,z=-100,distance=..100] run execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=13000..}] run tp @e[x=-815,y=64,z=-209,dy=3,type=pixelmon:npc_trainer] 504 64 -100
 
 #Route 39 Poke Fan
-execute at @a[x=787,y=64,z=157,distance=..100] run execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=Night] run execute as @e[x=-815,y=64,z=-207,dy=3,type=pixelmon:npc_trainer] run particle cloud 787 64 157 1 1 1 1 100
-execute at @a[x=787,y=64,z=157,distance=..100] run execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=Night] run tp @e[x=-815,y=64,z=-207,dy=3,type=pixelmon:npc_trainer] 787 64 157
+execute at @a[x=787,y=64,z=157,distance=..100] run execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=13000..}] run execute as @e[x=-815,y=64,z=-207,dy=3,type=pixelmon:npc_trainer] run particle cloud 787 64 157 1 1 1 1 100
+execute at @a[x=787,y=64,z=157,distance=..100] run execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=13000..}] run tp @e[x=-815,y=64,z=-207,dy=3,type=pixelmon:npc_trainer] 787 64 157
 
 
 
 #tps trainers out
 
 #Route 34 Policeman
-execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=!Night] run execute as @e[x=477,y=63,z=-536,dy=3,type=pixelmon:npc_trainer] run particle cloud ~ ~ ~ 1 1 1 1 100
-execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=!Night] run tp @e[x=477,y=63,z=-536,dy=3,type=pixelmon:npc_trainer] -815 65 -211
+execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=0..12999}] run execute as @e[x=477,y=63,z=-536,dy=3,type=pixelmon:npc_trainer] run particle cloud ~ ~ ~ 1 1 1 1 100
+execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=0..12999}] run tp @e[x=477,y=63,z=-536,dy=3,type=pixelmon:npc_trainer] -815 65 -211
 
 
 #Route 35 Policeman
-execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=!Night] run execute as @e[x=504,y=63,z=-100,dy=3,type=pixelmon:npc_trainer] run particle cloud 504 64 -100 1 1 1 1 100
-execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=!Night] run tp @e[x=504,y=63,z=-100,dy=3,type=pixelmon:npc_trainer] -815 65 -209
+execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=0..12999}] run execute as @e[x=504,y=63,z=-100,dy=3,type=pixelmon:npc_trainer] run particle cloud 504 64 -100 1 1 1 1 100
+execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=0..12999}] run tp @e[x=504,y=63,z=-100,dy=3,type=pixelmon:npc_trainer] -815 65 -209
 
 
 #Route 39 Poke Fan
-execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=!Night] run execute as @e[x=787,y=63,z=157,dy=3,type=pixelmon:npc_trainer] run particle cloud 787 64 157 1 1 1 1 100
-execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=!Night] run tp @e[x=787,y=63,z=157,dy=3,type=pixelmon:npc_trainer] -815 65 -207
+execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=0..12999}] run execute as @e[x=787,y=63,z=157,dy=3,type=pixelmon:npc_trainer] run particle cloud 787 64 157 1 1 1 1 100
+execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=0..12999}] run tp @e[x=787,y=63,z=157,dy=3,type=pixelmon:npc_trainer] -815 65 -207
 
 
 #Un-sticks Dialogues if player has TalkTime score but not a DialogueTrigger score
@@ -218,9 +218,15 @@ execute as @a[scores={DialogueTrigger=0,TalkTime=1..}] run scoreboard players se
 clone -690 62 -487 -686 62 -487 -689 65 -479
 
 
-
-
-
+#Changes data of Unown spawners if active
+execute if entity @e[x=-867,y=69,z=-212,dy=3,type=armor_stand,tag=UnownSpawning] run data merge block 184 36 -100 {maxSpawns: 8s,bossRatio: 0.0f,levelMax: 5s,specs: [{pokemon: {SpecificationData: "Unown"}, rarity: 1}], gmaxRatio: 0.0f, shinyRatio: 4096.0f, spawnRadius: 8s,levelMin: 5s}
+execute if entity @e[x=-867,y=69,z=-212,dy=3,type=armor_stand,tag=UnownSpawning] run data merge block 210 36 -99 {maxSpawns: 8s,bossRatio: 0.0f,levelMax: 5s,specs: [{pokemon: {SpecificationData: "Unown"}, rarity: 1}], gmaxRatio: 0.0f, shinyRatio: 4096.0f, spawnRadius: 8s,levelMin: 5s}
+execute if entity @e[x=-867,y=69,z=-212,dy=3,type=armor_stand,tag=UnownSpawning] run data merge block 196 36 -109 {maxSpawns: 8s,bossRatio: 0.0f,levelMax: 5s,specs: [{pokemon: {SpecificationData: "Unown"}, rarity: 1}], gmaxRatio: 0.0f, shinyRatio: 4096.0f, spawnRadius: 8s,levelMin: 5s}
+execute if entity @e[x=-867,y=69,z=-212,dy=3,type=armor_stand,tag=UnownSpawning] run data merge block 181 36 -121 {maxSpawns: 8s,bossRatio: 0.0f,levelMax: 5s,specs: [{pokemon: {SpecificationData: "Unown"}, rarity: 1}], gmaxRatio: 0.0f, shinyRatio: 4096.0f, spawnRadius: 8s,levelMin: 5s}
+execute if entity @e[x=-867,y=69,z=-212,dy=3,type=armor_stand,tag=UnownSpawning] run data merge block 211 36 -118 {maxSpawns: 8s,bossRatio: 0.0f,levelMax: 5s,specs: [{pokemon: {SpecificationData: "Unown"}, rarity: 1}], gmaxRatio: 0.0f, shinyRatio: 4096.0f, spawnRadius: 8s,levelMin: 5s}
+execute if entity @e[x=-867,y=69,z=-212,dy=3,type=armor_stand,tag=UnownSpawning] run data merge block 197 36 -130 {maxSpawns: 8s,bossRatio: 0.0f,levelMax: 5s,specs: [{pokemon: {SpecificationData: "Unown"}, rarity: 1}], gmaxRatio: 0.0f, shinyRatio: 4096.0f, spawnRadius: 8s,levelMin: 5s}
+execute if entity @e[x=-867,y=69,z=-212,dy=3,type=armor_stand,tag=UnownSpawning] run data merge block 183 36 -140 {maxSpawns: 8s,bossRatio: 0.0f,levelMax: 5s,specs: [{pokemon: {SpecificationData: "Unown"}, rarity: 1}], gmaxRatio: 0.0f, shinyRatio: 4096.0f, spawnRadius: 8s,levelMin: 5s}
+execute if entity @e[x=-867,y=69,z=-212,dy=3,type=armor_stand,tag=UnownSpawning] run data merge block 207 36 -141 {maxSpawns: 8s,bossRatio: 0.0f,levelMax: 5s,specs: [{pokemon: {SpecificationData: "Unown"}, rarity: 1}], gmaxRatio: 0.0f, shinyRatio: 4096.0f, spawnRadius: 8s,levelMin: 5s}
 
 
 
