@@ -2142,6 +2142,7 @@ tag @s[scores={DialogueTrigger=97,TalkTime=12..}] add Dialogue97
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Hall of Fame Credits
 #Dialogue98
+#scoreboard players set @p[x=-1300,y=77,z=751,dx=24,dy=10,dz=33] DialogueTrigger 98
 
 execute as @s[scores={DialogueTrigger=98,TalkTime=1}] run scoreboard players set @s IP 1
 execute as @s[scores={DialogueTrigger=98,TalkTime=1}] run scoreboard players set @s click 1
