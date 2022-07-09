@@ -20,6 +20,8 @@ clear @a[gamemode=adventure] pixelmon:tree
 execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=UnownSpawning] run setblock -880 67 -302 minecraft:redstone_block
 
 
+#Regenerates Cut Trees
+function johto:world/cuttrees
 
 
 
