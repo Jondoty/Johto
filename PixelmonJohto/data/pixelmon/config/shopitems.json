@@ -1703,6 +1703,91 @@
       "sell": 7500
     },
 
+    {
+      "id": "Sinnoh: Frustration",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:21s}",
+      "buy": 1000,
+      "sell": 1000
+    },
+    {
+      "id": "Sinnoh: Return",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:27s}",
+      "buy": 1000,
+      "sell": 1000
+    },
+    {
+      "id": "Sinnoh: Swagger",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:87s}",
+      "buy": 1500,
+      "sell": 1500
+    },
+    {
+      "id": "Sinnoh: Captivate",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:78s}",
+      "buy": 1500,
+      "sell": 1500
+    },
+    {
+      "id": "Sinnoh: Taunt",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:12s}",
+      "buy": 1500,
+      "sell": 1500
+    },
+    {
+      "id": "Sinnoh: Torment",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:41s}",
+      "buy": 1500,
+      "sell": 1500
+    },
+    {
+      "id": "Sinnoh: Safeguard",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:20s}",
+      "buy": 2000,
+      "sell": 2000
+    },
+    {
+      "id": "Sinnoh: Dig",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:28s}",
+      "buy": 2000,
+      "sell": 2000
+    },
+    {
+      "id": "Sinnoh: Stealth Rock",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:76s}",
+      "buy": 2000,
+      "sell": 2000
+    },
+    {
+      "id": "Sinnoh: Brine",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:55s}",
+      "buy": 3000,
+      "sell": 3000
+    },
+    {
+      "id": "Sinnoh: Avalanche",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:72s}",
+      "buy": 3000,
+      "sell": 3000
+    },
+    {
+      "id": "Sinnoh: Dark Pulse",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:79s}",
+      "buy": 3000,
+      "sell": 3000
+    },
+
 
     {
       "name": "pixelmon:hm1"
