@@ -28,7 +28,7 @@
       "variation": false
     },
     {
-      "name": "pixelmon:x_defence",
+      "name": "pixelmon:x_defense",
       "variation": false
     },
     {
@@ -40,11 +40,15 @@
       "variation": false
     },
     {
+      "name": "pixelmon:guard_spec",
+      "variation": false
+    },
+    {
       "name": "pixelmon:x_special_attack",
       "variation": false
     },
     {
-      "name": "pixelmon:x_special_defence",
+      "name": "pixelmon:x_special_defense",
       "variation": false
     }
   ]

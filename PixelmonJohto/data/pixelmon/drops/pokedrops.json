@@ -3851,7 +3851,7 @@
       "optdrop1data":"pixelmon:normal_gem",
       "optdrop1min":0,
       "optdrop1max":0,
-      "optdrop2data":"pixelmon:up-grade",
+      "optdrop2data":"pixelmon:up_grade",
       "optdrop2min":0,
       "optdrop2max":0,
       "raredropdata":"pixelmon:pc",

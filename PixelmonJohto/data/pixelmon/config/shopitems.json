@@ -886,6 +886,11 @@
       "sell": 1000
     },
     {
+      "name": "pixelmon:linking_cord",
+      "buy": 3000,
+      "sell": 3000
+    },
+    {
       "name": "pixelmon:sun_stone",
       "buy": 3000,
       "sell": 3000
@@ -1041,7 +1046,7 @@
       "sell": 3000
     },
     {
-      "name": "pixelmon:up-grade",
+      "name": "pixelmon:up_grade",
       "buy": 3000,
       "sell": 3000
     },
@@ -1540,14 +1545,27 @@
     },
     {
       "name": "pixelmon:deep_sea_tooth",
-      "sell": 100
+      "buy": 2000,
+      "sell": 2000
     },
     {
       "name": "pixelmon:deep_sea_scale",
-      "sell": 100
+      "buy": 2000,
+      "sell": 2000
     },
     {
       "name": "pixelmon:oval_stone",
+      "buy": 1050,
+      "sell": 1050
+    },
+    {
+      "name": "pixelmon:sachet",
+      "buy": 1050,
+      "sell": 1050
+    },
+    {
+      "name": "pixelmon:whipped_dream",
+      "buy": 1050,
       "sell": 1050
     },
     {
@@ -1564,7 +1582,12 @@
       "sell": 500
     },
     {
-      "name": "pixelmon:x_defence",
+      "name": "pixelmon:guard_spec",
+      "buy": 700,
+      "sell": 700
+    },
+    {
+      "name": "pixelmon:x_defense",
       "buy": 550,
       "sell": 550
     },
@@ -1574,7 +1597,7 @@
       "sell": 350
     },
     {
-      "name": "pixelmon:x_special_defence",
+      "name": "pixelmon:x_special_defense",
       "buy": 350,
       "sell": 350
     },
@@ -1593,876 +1616,94 @@
       "buy": 650,
       "sell": 650
     },
+
+
     {
-      "name": "pixelmon:tm1",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm2",
-      "buy": 12500,
-      "sell": 6250
-    },
-    {
-      "name": "pixelmon:tm3",
-      "buy": 12500,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm4",
-      "buy": 15000,
-      "sell": 7500
-    },
-    {
-      "name": "pixelmon:tm5",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm6",
-      "buy": 12500,
-      "sell": 6250
-    },
-    {
-      "name": "pixelmon:tm7",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm8",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm9",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm10",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm11",
-      "buy": 7500,
-      "sell": 3750
-    },
-    {
-      "name": "pixelmon:tm12",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm13",
-      "buy": 15000,
-      "sell": 7500
-    },
-    {
-      "name": "pixelmon:tm14",
-      "buy": 5500,
-      "sell": 5500
-    },
-    {
-      "name": "pixelmon:tm15",
-      "buy": 7500,
-      "sell": 7500
-    },
-    {
-      "name": "pixelmon:tm16",
-      "buy": 2000,
-      "sell": 2000
-    },
-    {
-      "name": "pixelmon:tm17",
-      "buy": 2000,
-      "sell": 2000
-    },
-    {
-      "name": "pixelmon:tm18",
-      "buy": 7500,
-      "sell": 3750
-    },
-    {
-      "name": "pixelmon:tm19",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm20",
-      "buy": 2000,
-      "sell": 2000
-    },
-    {
-      "name": "pixelmon:tm21",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm22",
-      "buy": 3000,
-      "sell": 3000
-    },
-    {
-      "name": "pixelmon:tm23",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm24",
-      "buy": 15000,
-      "sell": 7500
-    },
-    {
-      "name": "pixelmon:tm25",
-      "buy": 5500,
-      "sell": 5500
-    },
-    {
-      "name": "pixelmon:tm26",
-      "buy": 15000,
-      "sell": 7500
-    },
-    {
-      "name": "pixelmon:tm27",
+      "id": "Sinnoh: Flash",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:70s}",
       "buy": 1000,
       "sell": 1000
     },
     {
-      "name": "pixelmon:tm28",
+      "id": "Sinnoh: Protect",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:17s}",
       "buy": 2000,
       "sell": 2000
     },
     {
-      "name": "pixelmon:tm29",
-      "buy": 12500,
-      "sell": 6250
-    },
-    {
-      "name": "pixelmon:tm30",
-      "buy": 12500,
-      "sell": 6250
-    },
-    {
-      "name": "pixelmon:tm31",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm32",
-      "buy": 7500,
-      "sell": 3750
-    },
-    {
-      "name": "pixelmon:tm33",
+      "id": "Sinnoh: False Swipe",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:54s}",
       "buy": 2000,
       "sell": 2000
     },
     {
-      "name": "pixelmon:tm34",
-      "buy": 12500,
-      "sell": 6250
+      "id": "Sinnoh: Natural Gift",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:83s}",
+      "buy": 2000,
+      "sell": 2000
     },
     {
-      "name": "pixelmon:tm35",
-      "buy": 15000,
-      "sell": 7500
+      "id": "Sinnoh: Light Screen",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:16s}",
+      "buy": 2000,
+      "sell": 2000
     },
     {
-      "name": "pixelmon:tm36",
-      "buy": 12500,
-      "sell": 6250
+      "id": "Sinnoh: Reflect",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:33s}",
+      "buy": 2000,
+      "sell": 2000
     },
     {
-      "name": "pixelmon:tm37",
-      "buy": 5000,
-      "sell": 2500
+      "id": "Sinnoh: Solar Beam",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:22s}",
+      "buy": 3000,
+      "sell": 3000
     },
     {
-      "name": "pixelmon:tm38",
+      "id": "Sinnoh: Focus Blast",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:52s}",
       "buy": 5500,
       "sell": 5500
     },
     {
-      "name": "pixelmon:tm39",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm40",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm41",
-      "buy": 1500,
-      "sell": 1500
-    },
-    {
-      "name": "pixelmon:tm42",
-      "buy": 7500,
-      "sell": 3750
-    },
-    {
-      "name": "pixelmon:tm43",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm44",
-      "buy": 6000,
-      "sell": 6000
-    },
-    {
-      "name": "pixelmon:tm45",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm46",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm47",
-      "buy": 7500,
-      "sell": 3750
-    },
-    {
-      "name": "pixelmon:tm48",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm49",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm50",
-      "buy": 12500,
-      "sell": 6250
-    },
-    {
-      "name": "pixelmon:tm51",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm52",
+      "id": "Sinnoh: Fire Blast",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:38s}",
       "buy": 5500,
       "sell": 5500
     },
     {
-      "name": "pixelmon:tm53",
-      "buy": 12500,
-      "sell": 6250
+      "id": "Sinnoh: Thunder",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:25s}",
+      "buy": 5500,
+      "sell": 5500
     },
     {
-      "name": "pixelmon:tm54",
-      "buy": 2000,
-      "sell": 2000
+      "id": "Sinnoh: Blizzard",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:14s}",
+      "buy": 5500,
+      "sell": 5500
     },
     {
-      "name": "pixelmon:tm55",
-      "buy": 12500,
-      "sell": 6250
-    },
-    {
-      "name": "pixelmon:tm56",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm57",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm58",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm59",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm60",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm61",
-      "buy": 12500,
-      "sell": 6250
-    },
-    {
-      "name": "pixelmon:tm62",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm63",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm64",
+      "id": "Sinnoh: Hyper Beam",
+      "name": "pixelmon:tm_gen4",
+      "nbtData": "{tm:15s}",
       "buy": 7500,
-      "sell": 3750
-    },
-    {
-      "name": "pixelmon:tm65",
-      "buy": 7500,
-      "sell": 3750
-    },
-    {
-      "name": "pixelmon:tm66",
-      "buy": 7500,
-      "sell": 3750
-    },
-    {
-      "name": "pixelmon:tm67",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm68",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm69",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm70",
-      "buy": 1000,
-      "sell": 1000
-    },
-    {
-      "name": "pixelmon:tm71",
-      "buy": 15000,
       "sell": 7500
     },
-    {
-      "name": "pixelmon:tm72",
-      "buy": 12500,
-      "sell": 6250
-    },
-    {
-      "name": "pixelmon:tm73",
-      "buy": 12500,
-      "sell": 6250
-    },
-    {
-      "name": "pixelmon:tm74",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm75",
-      "buy": 4000,
-      "sell": 4000
-    },
-    {
-      "name": "pixelmon:tm76",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm77",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm78",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm79",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm80",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm81",
-      "buy": 12500,
-      "sell": 6250
-    },
-    {
-      "name": "pixelmon:tm82",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm83",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm84",
-      "buy": 12500,
-      "sell": 6250
-    },
-    {
-      "name": "pixelmon:tm85",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm86",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm87",
-      "buy": 1500,
-      "sell": 1500
-    },
-    {
-      "name": "pixelmon:tm88",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm89",
-      "buy": 12500,
-      "sell": 6250
-    },
-    {
-      "name": "pixelmon:tm90",
-      "buy": 2000,
-      "sell": 2000
-    },
-    {
-      "name": "pixelmon:tm91",
-      "buy": 12500,
-      "sell": 6250
-    },
-    {
-      "name": "pixelmon:tm92",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm93",
-      "buy": 12500,
-      "sell": 6250
-    },
-    {
-      "name": "pixelmon:tm94",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm95",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm96",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm97",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm98",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm99",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm100",
-      "buy": 7500,
-      "sell": 3750
-    },
-    {
-      "name": "pixelmon:tm101",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm102",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm103",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm104",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm105",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm106",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm107",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm108",
-      "buy": 7500,
-      "sell": 3750
-    },
-    {
-      "name": "pixelmon:tm109",
-      "buy": 7500,
-      "sell": 3750
-    },
-    {
-      "name": "pixelmon:tm110",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm111",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm112",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm113",
-      "buy": 7500,
-      "sell": 3750
-    },
-    {
-      "name": "pixelmon:tm114",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm115",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm116",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm117",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm118",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm119",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm120",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm121",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm122",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm123",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm124",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm125",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm126",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm127",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm128",
-      "buy": 7500,
-      "sell": 3750
-    },
-    {
-      "name": "pixelmon:tm129",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm130",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm131",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm132",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm133",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm134",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm135",
-      "buy": 7500,
-      "sell": 3750
-    },
-    {
-      "name": "pixelmon:tm136",
-      "buy": 7500,
-      "sell": 3750
-    },
-    {
-      "name": "pixelmon:tm137",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm138",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm139",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm140",
-      "buy": 7500,
-      "sell": 3750
-    },
-    {
-      "name": "pixelmon:tm141",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm142",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm143",
-      "buy": 7500,
-      "sell": 3750
-    },
-    {
-      "name": "pixelmon:tm144",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm145",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm146",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm147",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm148",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm149",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm150",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm151",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm152",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm153",
-      "buy": 5000,
-      "sell": 2500
-    },
-    {
-      "name": "pixelmon:tm154",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm155",
-      "buy": 12500,
-      "sell": 6250
-    },
-    {
-      "name": "pixelmon:tm156",
-      "buy": 3000,
-      "sell": 3000
-    },
-    {
-      "name": "pixelmon:tm157",
-      "buy": 10000,
-      "sell": 5000
-    },
-    {
-      "name": "pixelmon:tm158",
-      "buy": 12500,
-      "sell": 6250
-    },
-    {
-      "name": "pixelmon:tm159",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm160",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm161",
-      "buy": 3000,
-      "sell": 3000
-    },
-    {
-      "name": "pixelmon:tm162",
-      "buy": 2000,
-      "sell": 2000
-    },
-    {
-      "name": "pixelmon:tm163",
-      "buy": 1500,
-      "sell": 1500
-    },
-    {
-      "name": "pixelmon:tm164",
-      "buy": 3000,
-      "sell": 3000
-    },
-    {
-      "name": "pixelmon:tm165",
-      "buy": 2000,
-      "sell": 2000
-    },
-    {
-      "name": "pixelmon:tm166",
-      "buy": 2500,
-      "sell": 1250
-    },
-    {
-      "name": "pixelmon:tm167",
-      "buy": 7500,
-      "sell": 3750
-    },
-    {
-      "name": "pixelmon:tm168",
-      "buy": 7500,
-      "sell": 3750
-    },
-    {
-      "name": "pixelmon:tm169",
-      "buy": 12000,
-      "sell": 6000
-    },
-    {
-      "name": "pixelmon:tm170",
-      "buy": 2500,
-      "sell": 1250
-    },
-	{
-      "name": "pixelmon:tm171",
-      "buy": 7500,
-      "sell": 3750
-    },
-	{
-      "name": "pixelmon:tm172",
-      "buy": 7500,
-      "sell": 3750
-    },
-	{
-      "name": "pixelmon:tm173",
-      "buy": 7500,
-      "sell": 3750
-    },
-	{
-      "name": "pixelmon:tm174",
-      "buy": 7500,
-      "sell": 3750
-    },
+
+
     {
       "name": "pixelmon:hm1"
     },
@@ -2701,7 +1942,9 @@
       "name": "pixelmon:hourglass_silver"
     },
     {
-      "name": "pixelmon:film"
+      "name": "pixelmon:film",
+      "buy": 100,
+      "sell": 100
     },
     {
       "name": "pixelmon:amulet_coin",
@@ -2718,7 +1961,8 @@
     },
     {
       "name": "pixelmon:prism_scale",
-      "sell": 250
+      "buy": 1000,
+      "sell": 1000
     },
     {
       "name": "pixelmon:venusaurite",

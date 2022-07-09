@@ -20,6 +20,10 @@
   ],
   "items": [
     {
+      "name": "pixelmon:linking_cord",
+      "variation": false
+    },
+    {
       "name": "pixelmon:dubious_disc",
       "variation": false
     },
@@ -44,7 +48,7 @@
       "variation": false
     },
     {
-      "name": "pixelmon:up-grade",
+      "name": "pixelmon:up_grade",
       "variation": false
     },
     {
@@ -57,6 +61,34 @@
     },
     {
       "name": "pixelmon:razor_claw",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:oval_stone",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:deep_sea_tooth",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:deep_sea_scale",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:prism_scale",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:reaper_cloth",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:sachet",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:whipped_dream",
       "variation": false
     }
   ]
