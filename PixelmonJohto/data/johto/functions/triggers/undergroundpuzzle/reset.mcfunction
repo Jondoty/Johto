@@ -12,7 +12,7 @@ clone 506 54 -316 502 58 -318 507 47 -295
 clone 506 54 -316 502 58 -318 495 47 -295
 
 #Clears any items left in the chest
-data merge block 480 55 -298 {Items:[]}
+data merge block 499 55 -317 {Items:[]}
 
 #Emergency Switch
-#data merge block 480 55 -298 {Items:[{Slot:0b,id:"minecraft:magenta_wool",Count:1b},{Slot:1b,id:"minecraft:orange_wool",Count:1b},{Slot:2b,id:"minecraft:white_wool",Count:1b}]}
+#data merge block 499 55 -317 {Items:[{Slot:0b,id:"minecraft:magenta_wool",Count:1b},{Slot:1b,id:"minecraft:orange_wool",Count:1b},{Slot:2b,id:"minecraft:white_wool",Count:1b}]}
