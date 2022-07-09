@@ -160,6 +160,15 @@ tp @a[x=510,y=64,z=-76,dx=2,dy=2] 572 64 -43
 
 #Mt. Silver
 
+#Moltres Room
+playsound door ambient @a[x=-967,y=124,z=249,dx=4,dy=5] ~ ~ ~ 100 1 1
+tp @a[x=-967,y=124,z=249,dx=4,dy=5] -976 76 341
+
+playsound door ambient @a[x=-978,y=76,z=342,dx=3,dy=3] ~ ~ ~ 100 1 1
+execute as @a[x=-978,y=76,z=342,dx=3,dy=3,scores={Moltres=0,TalkTime=0}] run tp @e[x=-779,y=79,z=-244,distance=..3,type=pixelmon:statue] -965 100 304
+tp @a[x=-978,y=76,z=342,dx=3,dy=3] -965 124 250
+
+
 #Tells player a message based on which items they hold
 tellraw @a[x=-1026,y=86,z=349,dx=3,dy=3,scores={PalkiaCD=0},nbt={Inventory:[{id:"pixelmon:lustrous_orb"}]}] ["",{"text":"Your Lustrous Orb is reacting to the alter!","color":"white","italic":true}]
 tellraw @a[x=-1026,y=86,z=349,dx=3,dy=3,scores={GiratinaCD=0},nbt={Inventory:[{id:"pixelmon:griseous_orb"}]}] ["",{"text":"Your Griseous Orb is reacting to the alter!","color":"white","italic":true}]

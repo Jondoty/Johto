@@ -3262,19 +3262,15 @@ tag @s[scores={DialogueTrigger=159,TalkTime=1..}] add Dialogue159
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Moltres Spawn
-#scoreboard players set @a[x=-1388,y=50,z=510,dx=22,dy=5,dz=15,score_Moltres=0,score_MoltresCD=0,score_TalkTime=0,tag=!Dialogue160] DialogueTrigger 160
-
-#tp return statue
-#execute as @s[x=-1379,y=51,z=522,distance=..50,score_Moltres=0,score_MoltresCD=0] run tp @e[x=-779,y=79,z=-244,distance=..1,type=pixelmon:statue] -1379 51 522
 
 execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run playsound moltres hostile @s ~ ~ ~ 10 1 1
-execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run particle cloud -1379 51 522 1 1 1 0.15 1000
-execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run execute at @e[type=armor_stand,x=-1379,y=51,z=522,distance=..1] run pokespawn Moltres gr:7 lvl:50
-execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run tp @e[type=pixelmon:statue,x=-1379,y=51,z=522,distance=..1] -779 79 -244
+execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run particle cloud -965 100 304 1 1 1 0.15 1000
+execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run execute at @e[type=armor_stand,x=-965,y=100,z=304,distance=..1] run pokespawn Moltres gr:7 lvl:50
+execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run tp @e[type=pixelmon:statue,x=-965,y=100,z=304,distance=..5] -779 79 -244
 execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run scoreboard players set @s Moltres 1
-execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run particle flame -1379 51 522 0 0 0 1 10
+execute as @s[scores={DialogueTrigger=160,TalkTime=1..5}] run particle flame -965 100 304 0 0 0 1 10
 
-tag @s[scores={DialogueTrigger=160,TalkTime=1..}] add Dialogue160
+tag @s[scores={DialogueTrigger=160,TalkTime=5..}] add Dialogue160
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Celebi Time Travel Event beginning prompt

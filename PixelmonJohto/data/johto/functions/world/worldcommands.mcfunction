@@ -1355,8 +1355,7 @@ execute as @a[x=-3239,y=64,z=571,distance=..50,scores={Zapdos=0,TalkTime=0},tag=
 
 #Dialogue160
 #Victory Road Moltres
-scoreboard players set @a[x=-1388,y=50,z=510,dx=22,dy=5,dz=15,scores={Moltres=0,TalkTime=0},tag=!Dialogue160] DialogueTrigger 160
-execute as @a[x=-1379,y=51,z=522,distance=..50,scores={Moltres=0,TalkTime=0}] run tp @e[x=-779,y=79,z=-244,distance=..2,type=pixelmon:statue] -1379 51 522
+scoreboard players set @a[x=-965,y=100,z=304,distance=..7,scores={Moltres=0,TalkTime=0},tag=!Dialogue160] DialogueTrigger 160
 
 #----------------------------------------
 
