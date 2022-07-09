@@ -4678,13 +4678,10 @@ tag @s[scores={DialogueTrigger=206,TalkTime=5..}] add Dialogue206
 #Dialogue207
 
 execute as @s[scores={DialogueTrigger=207,TalkTime=1}] run tellraw @s {"text":"Now boarding the Magnet Train!","italic":true,"color":"gray"}
-execute as @s[scores={DialogueTrigger=207,TalkTime=1}] run scoreboard players set @s click 1
+execute as @s[scores={DialogueTrigger=207,TalkTime=1}] run function johto:tools/forceclick
 execute as @s[scores={DialogueTrigger=207,TalkTime=1}] run effect give @s minecraft:blindness 8 1 true
 
 execute as @s[scores={DialogueTrigger=207,TalkTime=9}] run tp @s -2673 73 410 0 ~
-
-execute as @s[scores={DialogueTrigger=207,TalkTime=10}] run title @s title {"text":"Saffron City","color":"white"}
-execute as @s[scores={DialogueTrigger=207,TalkTime=10}] run title @s subtitle {"text":"Shining Big City","italic":true}
 
 tag @s[scores={DialogueTrigger=207,TalkTime=10..}] add Dialogue207
 
@@ -4693,13 +4690,10 @@ tag @s[scores={DialogueTrigger=207,TalkTime=10..}] add Dialogue207
 #Dialogue208
 
 execute as @s[scores={DialogueTrigger=208,TalkTime=1}] run tellraw @s {"text":"Now boarding the Magnet Train!","italic":true,"color":"gray"}
-execute as @s[scores={DialogueTrigger=208,TalkTime=1}] run scoreboard players set @s click 1
+execute as @s[scores={DialogueTrigger=208,TalkTime=1}] run function johto:tools/forceclick
 execute as @s[scores={DialogueTrigger=208,TalkTime=1}] run effect give @s minecraft:blindness 8 1 true
 
 execute as @s[scores={DialogueTrigger=208,TalkTime=9}] run tp @s 526 73 -337 0 ~
-
-execute as @s[scores={DialogueTrigger=208,TalkTime=10}] run title @s title {"text":"Goldenrod City","color":"white"}
-execute as @s[scores={DialogueTrigger=208,TalkTime=10}] run title @s subtitle {"text":"A Happening Big City","italic":true}
 
 tag @s[scores={DialogueTrigger=208,TalkTime=10..}] add Dialogue208
 

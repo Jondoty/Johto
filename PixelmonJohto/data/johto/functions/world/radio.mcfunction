@@ -112,8 +112,8 @@ scoreboard players set @s[scores={MusicCooldown=0,DialogueTrigger=98}] MusicCool
 
 
 #Magnet Train Rides
-playsound magnettrain record @s[scores={MusicCooldown=0,DialogueTrigger=208}] ~ ~ ~ 1 1 1
-scoreboard players set @s[scores={MusicCooldown=0,DialogueTrigger=208}] MusicCooldown 12
+playsound magnettrain record @s[scores={MusicCooldown=0,DialogueTrigger=207..208}] ~ ~ ~ 1 1 1
+scoreboard players set @s[scores={MusicCooldown=0,DialogueTrigger=207..208}] MusicCooldown 13
 
 
 #Bug Catching Contest
