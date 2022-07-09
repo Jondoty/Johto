@@ -53,6 +53,8 @@ execute as @a[scores={Relog=1..}] run function johto:triggers/relog
 #Removes a TownDisplay cooldown score if present
 scoreboard players remove @a[scores={TownDisplay=1..}] TownDisplay 1
 
+#---------------------
+
 #Battle Tower Win events
 tag @a[x=875,y=99,z=50,dx=55,dy=20,dz=27,tag=Dialogue206] remove Dialogue206
 scoreboard players set @a[x=875,y=99,z=50,dx=55,dy=20,dz=27,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 206
@@ -72,6 +74,8 @@ execute as @a[x=894,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run scoreboard
 execute as @a[x=894,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run function johto:world/battletower/pointbal
 execute as @a[x=894,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run tellraw @s ["",{"text":"<Clerk> Welcome to the Battle Tower! Would you like to begin your battle challenge?\n"},{"text":"[","color":"green"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 9"}},{"text":"]","color":"green"}]
 execute as @a[x=894,y=64,z=72,dx=4,dy=2,dz=3,scores={Cooldown=0}] run scoreboard players set @s Cooldown 60
+
+#---------------------
 
 #Lake of Rage Fisherman Karp function
 #Removes Cooldown tag when player walks in front of the house
@@ -100,12 +104,14 @@ execute as @a[x=-1222,y=0,z=500,dx=470,dy=240,dz=342] run function johto:world/s
 execute as @a[scores={TalkTime=0}] run function johto:world/musictitles
 
 #Runs an ItemFinder function if player is holding the device, fills the XP bar based on distance to nearest hidden loot
-xp set @a 0 levels
-xp set @a 0 points
+xp set @a[level=1..] 0 levels
+xp set @a[level=1..] 0 points
 
 execute as @a[nbt={SelectedItem:{id:"pixelmon:item_finder"}}] run function johto:world/itemfinder
 execute as @a[nbt={Inventory:[{Slot:-106b,id:"pixelmon:item_finder"}]}] run function johto:world/itemfinder
 
+#Runs Goldenrod Department Center Elevator
+execute if entity @a[x=438,y=63,z=-395,dx=3,dy=34,dz=3] run function johto:world/departmentelevator
 
 #Executes shiny particles over Shiny Pokemon
 execute at @a if entity @e[type=pixelmon:pixelmon,nbt={palette:"shiny",Tame:0b},distance=50..] run execute at @e[nbt={palette:"shiny",Tame:0b},type=pixelmon:pixelmon] run particle minecraft:dust 1 1 1 1 ~ ~1 ~ 0 10 0 0.5 50 force @a[distance=..50]
