@@ -49,6 +49,8 @@ scoreboard players remove @a[scores={Cooldown=1..}] Cooldown 1
 #Runs relog function if player is found with relog score
 execute as @a[scores={Relog=1..}] run function johto:triggers/relog
 
+#If player selects a hat, puts hat back on
+execute as @a[nbt={SelectedItem:{id:"minecraft:iron_hoe",tag:{display:{Lore:['[{"text":"A hat given to you from","italic":false}]','[{"text":"your mother!","italic":false}]']}}}}] run function johto:triggers/hatstore
 
 #Removes a TownDisplay cooldown score if present
 scoreboard players remove @a[scores={TownDisplay=1..}] TownDisplay 1
@@ -99,6 +101,9 @@ execute as @a[x=-1262,y=63,z=57,dx=7,dy=5,dz=73] run function johto:world/badgeg
 
 #Saffron Gym portals
 execute as @a[x=-1222,y=0,z=500,dx=470,dy=240,dz=342] run function johto:world/saffrongym
+
+#Tin Tower portals
+execute as @a[x=240,y=63,z=297,dx=33,dy=240,dz=33] run function johto:world/tintower
 
 #MusicTitles function, tracks player around map checking for new areas or music
 execute as @a[scores={TalkTime=0}] run function johto:world/musictitles
