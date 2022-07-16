@@ -253,6 +253,17 @@ scoreboard players set @s TeamRocket 0
 scoreboard players set @s Trainer 0
 scoreboard players set @s VillagerClick 0
 
+#Mom Items
+tag @s remove MomItem1
+tag @s remove MomItem2
+tag @s remove MomItem3
+tag @s remove MomItem4
+tag @s remove MomItem5
+tag @s remove MomItem6
+tag @s remove MomItem7
+tag @s remove MomItem8
+tag @s remove MomItem9
+
 
 tag @s remove SilverOlivine
 tag @s remove MortyBadge

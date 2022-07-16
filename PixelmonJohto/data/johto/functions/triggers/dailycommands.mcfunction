@@ -35,34 +35,14 @@ execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=7}] 
 
 #Day Specific Commands
 
-#Sets rematch scores for Dojo calibration
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1}] run scoreboard players set @e[x=-792,y=65,z=-284,dy=3,type=armor_stand] Rematch 3
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=2}] run scoreboard players set @e[x=-792,y=65,z=-284,dy=3,type=armor_stand] Rematch 6
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=3}] run scoreboard players set @e[x=-792,y=65,z=-284,dy=3,type=armor_stand] Rematch 9
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=4}] run scoreboard players set @e[x=-792,y=65,z=-284,dy=3,type=armor_stand] Rematch 12
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run scoreboard players set @e[x=-792,y=65,z=-284,dy=3,type=armor_stand] Rematch 15
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=6}] run scoreboard players set @e[x=-792,y=65,z=-284,dy=3,type=armor_stand] Rematch 18
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=7}] run scoreboard players set @e[x=-792,y=65,z=-284,dy=3,type=armor_stand] Rematch 21
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1..7}] run execute at @a[x=-2781,y=64,z=421,distance=..100,tag=AllGyms] run function custom:gymrematches
-
-#Bug Catching Contest commands
-#execute @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=3}] run setblock -822 65 -176 minecraft:redstone_block
-#execute @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run setblock -822 65 -176 minecraft:redstone_block
-#execute @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=7}] run setblock -822 65 -176 minecraft:redstone_block
-
 #Toggles Bargain Merchant Off
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=2}] run setblock -813 65 -282 minecraft:iron_block
+#execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=2}] run setblock -813 65 -282 minecraft:iron_block
 
-
-
-
-#Adds rematch score for Gym Leaders Dojo
-scoreboard players add @e[x=-792,y=65,z=-284,dy=3,type=armor_stand] Rematch 1
 
 
 #Daily Resets:
 #Mom:
-setblock -806 65 -264 minecraft:redstone_wire
+tag @a[tag=MomCooldown] remove MomCooldown
 
 #Radio Talks
 tag @a[tag=LuckyNumberTalk] remove LuckyNumberTalk
@@ -86,16 +66,11 @@ tag @a[tag=Dialogue105] remove Dialogue105
 #Kurt inspecting the GS Ball, makes the ball ready for next part of the story.
 tag @a[tag=Dialogue107] add GSBallReady
 
-
-#Disables Mega Stones if active
-setblock -778 64 -266 minecraft:iron_block
-
-
 #Resets Mr. Pokemon's Red Scale dialogue if player doesn't answer. Won't reactivate since scale is part of trigger
 tag @a[tag=Dialogue50] remove Dialogue50
 
 #Clones in more badge cases on the table in New Bark Town
-clone -748 75 -242 -748 75 -242 -732 64 -482
+#clone -748 75 -242 -748 75 -242 -732 64 -482
 
 
 
