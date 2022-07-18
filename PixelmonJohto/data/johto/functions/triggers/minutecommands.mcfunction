@@ -6,6 +6,7 @@ effect give @e[type=pixelmon:npc_nursejoy] minecraft:slowness 1000 100 true
 effect give @e[type=pixelmon:npc_shopkeeper] minecraft:slowness 1000 100 true
 effect give @e[type=pixelmon:npc_trader] minecraft:slowness 1000 100 true
 effect give @e[type=pixelmon:npc_tutor] minecraft:slowness 1000 100 true
+effect give @e[type=pixelmon:npc_tutor] minecraft:slowness 1000 100 true
 
 
 #Item Clears
@@ -24,6 +25,9 @@ execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=UnownSpawning] run se
 function johto:world/cuttrees
 
 
+#TEST IN SINGLEPLAYER
+#Runs a Poke-Loot regeneration function if enabled, should be one-time-only by default, adds tag to regenerate daily by default
+#execute as @p run function johto:data/pokeloot
 
 #Gives player AllGyms tag and achievement
 advancement grant @a[tag=Clair,tag=Pryce,tag=Jasmine,tag=Chuck,tag=Morty,tag=Whitney,tag=Bugsy,tag=Falkner,tag=Brock,tag=Misty,tag=Surge,tag=Erika,tag=Janine,tag=Sabrina,tag=Blaine,tag=Blue,tag=!AllGyms] only johto:event11
