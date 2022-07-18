@@ -24,10 +24,6 @@ execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=18
 execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=18000..},tag=!DailyExecuted] run tag @e[x=-799,y=64,z=-284,dy=3,type=armor_stand] add DailyExecuted
 tag @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=..1000},tag=DailyExecuted] remove DailyExecuted
 
-#Enables Mega Stone Give Function
-execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=11834..13702}] run setblock -778 64 -266 minecraft:redstone_block
-execute if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={DayTime=13702..}] run setblock -778 64 -266 minecraft:iron_block
-
 #Gym Leader Rematches
 execute as @p[x=-2781,y=64,z=421,distance=..100,tag=AllGyms] run function johto:world/gymrematches/trainers
 execute as @p[x=-2781,y=64,z=421,distance=..100,tag=!AllGyms] run function johto:world/gymrematches/leave
@@ -120,6 +116,22 @@ execute if entity @a[x=438,y=63,z=-395,dx=3,dy=34,dz=3] run function johto:world
 
 #Executes shiny particles over Shiny Pokemon
 execute at @a if entity @e[type=pixelmon:pixelmon,nbt={palette:"shiny",Tame:0b},distance=50..] run execute at @e[nbt={palette:"shiny",Tame:0b},type=pixelmon:pixelmon] run particle minecraft:dust 1 1 1 1 ~ ~1 ~ 0 10 0 0.5 50 force @a[distance=..50]
+
+
+#---------------------
+#Ambient World Particles
+#Cianwood Wind
+execute at @a[x=1152,y=63,z=-525,dx=168,dy=10,dz=244] run particle minecraft:sweep_attack ~ ~50 ~ 100 25 100 1 10 force
+
+#Olivine Wind
+execute at @a[x=639,y=63,z=-239,dx=197,dy=10,dz=279] run particle minecraft:sweep_attack ~ ~50 ~ 100 25 100 1 10 force
+
+#R40 & 41
+execute at @a[x=870,y=63,z=-280,dx=281,dy=10,dz=182] run particle minecraft:sweep_attack ~ ~50 ~ 100 25 100 1 10 force
+execute at @a[x=837,y=63,z=-97,dx=147,dy=10,dz=81] run particle minecraft:sweep_attack ~ ~50 ~ 100 25 100 1 10 force
+execute at @a[x=870,y=63,z=-480,dx=281,dy=10,dz=199] run particle minecraft:sweep_attack ~ ~50 ~ 100 25 100 1 10 force
+
+
 
 
 #---------------------
@@ -480,7 +492,11 @@ execute if entity @a[x=-135,y=53,z=210,dx=2,dy=5,dz=9,tag=!TrapGrunt1] run tag @
 #Dialogue Triggers
 
 #Runs primary dialogue functions
-execute as @e[scores={DialogueTrigger=1..500}] run function johto:dialogue/dialogue
+execute as @a[scores={DialogueTrigger=1..500}] run function johto:dialogue/dialogue
+
+
+#Runs secondary World-based dialogues
+execute as @e[x=-801,y=64,z=-287,dy=3,scores={DialogueTrigger=1..500}] run function johto:dialogue/worlddialogues
 
 
 #Dialogue 1 - Oak Welcome

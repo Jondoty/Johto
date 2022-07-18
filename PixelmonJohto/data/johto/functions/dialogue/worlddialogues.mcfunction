@@ -1,6 +1,6 @@
 
 
-scoreboard players add @e[type=armor_stand,scores={DialogueTrigger=1..}] TalkTime 1
+scoreboard players add @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=1..}] TalkTime 1
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -43,7 +43,7 @@ execute as @e[scores={DialogueTrigger=150,TalkTime=1}] run summon minecraft:item
 execute as @e[scores={DialogueTrigger=150,TalkTime=1}] run playsound block.portal.trigger ambient @a[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53] ~ ~ ~ 1 1 1
 
 #Enables particles and motion
-execute as @e[scores={DialogueTrigger=150,TalkTime=1}] run fill -861 64 -303 -861 65 -303 minecraft:redstone_block
+#execute as @e[scores={DialogueTrigger=150,TalkTime=1..8}] run
 
 #execute @e[x=-1173,y=63,z=-230,dy=2,dz=22,type=Item] run /particle reddust ~ ~0.25 ~ 1 1 1 1
 #entitydata @e[x=-1173,y=63,z=-230,dy=2,dz=22,type=Item] {Motion:[0.0,0.0,0.25]}
@@ -58,9 +58,6 @@ execute as @e[scores={DialogueTrigger=150,TalkTime=7}] run kill @e[x=-1173,y=63,
 execute as @e[scores={DialogueTrigger=150,TalkTime=7}] run execute at @e[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53,type=armor_stand] run pokespawn Kyogre lvl:50 gr:7
 execute as @e[scores={DialogueTrigger=150,TalkTime=7}] run playsound kyogre hostile @a[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53] ~ ~ ~ 1 1 1
 execute as @e[scores={DialogueTrigger=150,TalkTime=7}] run data modify entity @e[limit=1,x=-1196,y=63,z=-230,dx=46,dy=20,dz=53,type=pixelmon:pixelmon,name=Kyogre] {Rotation:[179.99f,0.0f]}
-
-#Disables motion and particles
-execute as @e[scores={DialogueTrigger=150,TalkTime=7..8}] run fill -861 64 -303 -861 65 -303 minecraft:iron_block
 
 tag @s[scores={DialogueTrigger=150,TalkTime=8..}] add Dialogue150
 scoreboard players set @s[tag=Dialogue150] TalkTime 0
