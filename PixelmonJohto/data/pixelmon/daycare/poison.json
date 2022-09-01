@@ -1,0 +1,22 @@
+{
+  "spec": "type1:POISON",
+  "durations": [
+    {
+      "type": "add",
+      "amount": 3,
+      "unit": "MINUTES"
+    }
+  ],
+  "requirements": [
+    {
+      "type": "itemstack",
+      "error_message": "none",
+      "items": [
+        {
+          "item": "minecraft:air",
+          "amount": 0
+        }
+      ]
+    }
+  ]
+}
