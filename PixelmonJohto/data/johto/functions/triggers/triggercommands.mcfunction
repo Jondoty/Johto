@@ -74,7 +74,8 @@ execute as @a[scores={TriggerCommand=8}] run scoreboard players set @s TriggerCo
 
 #10 Guide Gent Yes
 execute as @a[scores={TriggerCommand=10}] run tellraw @s {"text":"<Guide Gent> OK, then! Follow me!"}
-execute as @a[scores={TriggerCommand=10}] run setblock -861 64 -295 minecraft:redstone_block
+execute as @a[scores={TriggerCommand=10}] run scoreboard players set @e[x=-270,y=63,z=-505,dy=3,type=pixelmon:npc_chatting] DialogueTrigger 1
+execute as @a[scores={TriggerCommand=10}] run tag @e[x=-792,y=65,z=-284,dy=3] add GuideGentMove
 execute as @a[scores={TriggerCommand=10}] run scoreboard players set @s TriggerCommand 0
 
 

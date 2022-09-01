@@ -92,7 +92,9 @@ tellraw @s[scores={DialogueTrigger=1,TalkTime=16}] {"text":"<Professor Oak> My n
 #tp in Pokémon
 #Pokémon spawn sound
 execute as @s[scores={DialogueTrigger=1,TalkTime=22}] run particle cloud -964.5 66 -406.0 1 1 1 1 100
-execute as @s[scores={DialogueTrigger=1,TalkTime=22}] run tp @e[x=-744,y=74,z=-242,dy=3,type=pixelmon:statue] -964.5 66 -406.0
+#execute as @s[scores={DialogueTrigger=1,TalkTime=22}] run tp @e[x=-744,y=74,z=-242,dy=3,type=pixelmon:statue] -964.5 66 -406.0
+execute as @s[scores={DialogueTrigger=1,TalkTime=22}] run summon pixelmon:statue -964.5 66 -406.0 {ndex:194,Growth:5b,Rotation:[90.0f,0.0f],StartingYaw:90.0f}
+execute as @s[scores={DialogueTrigger=1,TalkTime=22}] run data merge entity @e[limit=1,type=pixelmon:statue,tag=!Persistent,nbt={ndex:194}] {Animate:1b}
 
 tellraw @s[scores={DialogueTrigger=1,TalkTime=25}] {"text":"<Professor Oak> This world is inhabited by creatures that we call Pokémon."}
 tellraw @s[scores={DialogueTrigger=1,TalkTime=33}] {"text":"<Professor Oak> People and Pokémon live together by supporting each other."}
@@ -105,8 +107,8 @@ tellraw @s[scores={DialogueTrigger=1,TalkTime=80}] {"text":"<Professor Oak> You'
 tellraw @s[scores={DialogueTrigger=1,TalkTime=87}] {"text":"<Professor Oak> A world of dreams and adventures with Pokémon awaits!"}
 tellraw @s[scores={DialogueTrigger=1,TalkTime=95}] {"text":"<Professor Oak> Let's go! I'll be seeing you later!"}
 
-#Tp return statue
-execute as @s[scores={DialogueTrigger=1,TalkTime=102}] run tp @e[x=-965,y=65,z=-407,dx=1,dy=2,dz=1,type=pixelmon:statue] -744 75 -242
+#Kills Statue
+execute as @s[scores={DialogueTrigger=1,TalkTime=102}] run kill @e[type=pixelmon:statue,tag=!Persistent,nbt={ndex:194}]
 
 #tp player to New Bark Town
 execute as @s[scores={DialogueTrigger=1,TalkTime=103}] run playsound flee ambient @s ~ ~ ~ 100 1 1
@@ -512,7 +514,7 @@ execute as @s[scores={DialogueTrigger=16,TalkTime=52}] run scoreboard players se
 tellraw @s[scores={DialogueTrigger=16,TalkTime=55}] {"text":"<Kurt> You handled yourself like a real hero at the Well."}
 tellraw @s[scores={DialogueTrigger=16,TalkTime=62}] {"text":"<Kurt> I like your style! I would be honored to make Balls for a trainer like you."}
 tellraw @s[scores={DialogueTrigger=16,TalkTime=70}] {"text":"<Kurt> This is all I have now, but take it."}
-execute as @s[scores={DialogueTrigger=16,TalkTime=74}] run give @s pixelmon:fast_ball{display:{Lore:["A Poké Ball that makes it easier","to catch fast Pokémon."]}}
+execute as @s[scores={DialogueTrigger=16,TalkTime=74}] run give @s pixelmon:fast_ball
 execute as @s[scores={DialogueTrigger=16,TalkTime=74}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=16,TalkTime=74}] run advancement grant @s only johto:rocket1
 tellraw @s[scores={DialogueTrigger=16,TalkTime=78}] {"text":"<Kurt> I make Balls from Apricorns."}
@@ -1277,7 +1279,7 @@ execute as @s[scores={DialogueTrigger=53,TalkTime=12}] run setblock -715 81 -318
 tellraw @s[scores={DialogueTrigger=53,TalkTime=17}] {"text":"<Lance> Just as I thought, that strange radio signal is coming from here."}
 
 #Lance walking over
-execute as @s[scores={DialogueTrigger=53,TalkTime=22}] run fill -715 80 -315 -715 80 -313 minecraft:redstone_block
+#execute as @s[scores={DialogueTrigger=53,TalkTime=22..32}] run
 
 tellraw @s[scores={DialogueTrigger=53,TalkTime=28}] {"text":"<Lance> The stairs are right here."}
 
@@ -2158,18 +2160,7 @@ tellraw @s[scores={DialogueTrigger=98,TalkTime=48}] ["",{"text":"Check out my ot
 #runs legendary reset function
 execute as @s[scores={DialogueTrigger=98,TalkTime=57},tag=Dialogue97] run function johto:triggers/legendreset
 
-#tps out statues if generated}
-execute as @s[scores={DialogueTrigger=98,TalkTime=57},tag=Dialogue97] run tp @e[x=-1294,y=82,z=785,dy=2,type=pixelmon:statue] -868 65 -229
-execute as @s[scores={DialogueTrigger=98,TalkTime=57},tag=Dialogue97] run tp @e[x=-1292,y=82,z=785,dy=2,type=pixelmon:statue] -866 65 -229
-execute as @s[scores={DialogueTrigger=98,TalkTime=57},tag=Dialogue97] run tp @e[x=-1290,y=82,z=785,dy=2,type=pixelmon:statue] -864 65 -229
-execute as @s[scores={DialogueTrigger=98,TalkTime=57},tag=Dialogue97] run tp @e[x=-1286,y=82,z=785,dy=2,type=pixelmon:statue] -862 65 -229
-execute as @s[scores={DialogueTrigger=98,TalkTime=57},tag=Dialogue97] run tp @e[x=-1284,y=82,z=785,dy=2,type=pixelmon:statue] -860 65 -229
-execute as @s[scores={DialogueTrigger=98,TalkTime=57},tag=Dialogue97] run tp @e[x=-1282,y=82,z=785,dy=2,type=pixelmon:statue] -858 65 -229
-
-#tp to New Bark Town if no statues spawned
-execute as @s[scores={DialogueTrigger=98,TalkTime=58},tag=!Dialogue97] run tp @s -721 69 -493
-
-#tps player to Hall of Fame first if they spawned a statue (tps as close to the statues as you can)
+#tps player to Hall of Fame (tps as close to the statues as you can)
 execute as @s[scores={DialogueTrigger=98,TalkTime=58}] run execute as @e[x=-803,y=64,z=-284,dy=3,type=armor_stand,scores={HOFCount=0}] run tp @a[scores={DialogueTrigger=98},tag=Dialogue97] -1019 65 -336 0 20
 execute as @s[scores={DialogueTrigger=98,TalkTime=58}] run execute as @e[x=-803,y=64,z=-284,dy=3,type=armor_stand,scores={HOFCount=1}] run tp @a[scores={DialogueTrigger=98},tag=Dialogue97] -1019 65 -324 0 20
 execute as @s[scores={DialogueTrigger=98,TalkTime=58}] run execute as @e[x=-803,y=64,z=-284,dy=3,type=armor_stand,scores={HOFCount=2}] run tp @a[scores={DialogueTrigger=98},tag=Dialogue97] -1019 65 -312 0 20
@@ -2182,31 +2173,15 @@ execute as @s[scores={DialogueTrigger=98,TalkTime=58}] run execute as @e[x=-803,
 execute as @s[scores={DialogueTrigger=98,TalkTime=58}] run execute as @e[x=-803,y=64,z=-284,dy=3,type=armor_stand,scores={HOFCount=9}] run tp @a[scores={DialogueTrigger=98},tag=Dialogue97] -1041 65 -288 0 20
 execute as @s[scores={DialogueTrigger=98,TalkTime=58}] run scoreboard players set @s[tag=Dialogue97] DialogueTrigger 99
 
-tag @s[scores={DialogueTrigger=98,TalkTime=58..}] add Dialogue98
+#Generates statues based on the player's party
+execute as @s[scores={DialogueTrigger=98,TalkTime=66}] run scoreboard players add @e[x=-803,y=64,z=-284,dy=3,type=armor_stand] HOFCount 1
+execute as @s[scores={DialogueTrigger=98,TalkTime=66}] run scoreboard players set @e[x=-803,y=64,z=-284,dy=3,type=armor_stand] SpawnStatue 0
 
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Continued if player places statues from Dialogue98
-#Dialouge99
+tellraw @s[scores={DialogueTrigger=98,TalkTime=66}] ["",{"text":"Your Party has been inducted into the Hall of Fame! Take a look at them at the Indigo Plateau!","color":"gray","italic":true}]
+execute as @s[scores={DialogueTrigger=98,TalkTime=67}] run tag @s remove Dialogue97
+execute as @s[scores={DialogueTrigger=98,TalkTime=67}] run tp @s -721 69 -493
 
-#tps Statues in
-execute as @s[scores={DialogueTrigger=99,TalkTime=65}] run execute as @e[x=-803,y=64,z=-284,dy=3,type=armor_stand,scores={HOFCount=0}] run tp @e[x=-869,y=64,z=-231,dx=13,dy=2,dz=4] ~-156 ~1 ~-102
-execute as @s[scores={DialogueTrigger=99,TalkTime=65}] run execute as @e[x=-803,y=64,z=-284,dy=3,type=armor_stand,scores={HOFCount=1}] run tp @e[x=-869,y=64,z=-231,dx=13,dy=2,dz=4] ~-156 ~1 ~-90
-execute as @s[scores={DialogueTrigger=99,TalkTime=65}] run execute as @e[x=-803,y=64,z=-284,dy=3,type=armor_stand,scores={HOFCount=2}] run tp @e[x=-869,y=64,z=-231,dx=13,dy=2,dz=4] ~-156 ~1 ~-78
-execute as @s[scores={DialogueTrigger=99,TalkTime=65}] run execute as @e[x=-803,y=64,z=-284,dy=3,type=armor_stand,scores={HOFCount=3}] run tp @e[x=-869,y=64,z=-231,dx=13,dy=2,dz=4] ~-156 ~1 ~-66
-execute as @s[scores={DialogueTrigger=99,TalkTime=65}] run execute as @e[x=-803,y=64,z=-284,dy=3,type=armor_stand,scores={HOFCount=4}] run tp @e[x=-869,y=64,z=-231,dx=13,dy=2,dz=4] ~-156 ~1 ~-54
-execute as @s[scores={DialogueTrigger=99,TalkTime=65}] run execute as @e[x=-803,y=64,z=-284,dy=3,type=armor_stand,scores={HOFCount=5}] run tp @e[x=-869,y=64,z=-231,dx=13,dy=2,dz=4] ~-178 ~1 ~-102
-execute as @s[scores={DialogueTrigger=99,TalkTime=65}] run execute as @e[x=-803,y=64,z=-284,dy=3,type=armor_stand,scores={HOFCount=6}] run tp @e[x=-869,y=64,z=-231,dx=13,dy=2,dz=4] ~-178 ~1 ~-90
-execute as @s[scores={DialogueTrigger=99,TalkTime=65}] run execute as @e[x=-803,y=64,z=-284,dy=3,type=armor_stand,scores={HOFCount=7}] run tp @e[x=-869,y=64,z=-231,dx=13,dy=2,dz=4] ~-178 ~1 ~-78
-execute as @s[scores={DialogueTrigger=99,TalkTime=65}] run execute as @e[x=-803,y=64,z=-284,dy=3,type=armor_stand,scores={HOFCount=8}] run tp @e[x=-869,y=64,z=-231,dx=13,dy=2,dz=4] ~-178 ~1 ~-66
-execute as @s[scores={DialogueTrigger=99,TalkTime=65}] run execute as @e[x=-803,y=64,z=-284,dy=3,type=armor_stand,scores={HOFCount=9}] run tp @e[x=-869,y=64,z=-231,dx=13,dy=2,dz=4] ~-178 ~1 ~-54
-execute as @s[scores={DialogueTrigger=99,TalkTime=66}] run scoreboard players add @e[x=-803,y=64,z=-284,dy=3,type=armor_stand] HOFCount 1
-execute as @s[scores={DialogueTrigger=99,TalkTime=66}] run scoreboard players set @e[x=-803,y=64,z=-284,dy=3,type=armor_stand] SpawnStatue 0
-
-tellraw @s[scores={DialogueTrigger=99,TalkTime=66}] ["",{"text":"Placing complete! Take a look at them at the Indigo Plateau!","color":"white","italic":true}]
-execute as @s[scores={DialogueTrigger=99,TalkTime=67}] run tag @s remove Dialogue97
-execute as @s[scores={DialogueTrigger=99,TalkTime=67}] run tp @s -721 69 -493
-
-tag @s[scores={DialogueTrigger=99,TalkTime=67..}] add Dialogue99
+tag @s[scores={DialogueTrigger=98,TalkTime=70..}] add Dialogue98
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Professor Elm call after the Pokémon League
@@ -2294,14 +2269,11 @@ tellraw @s[scores={DialogueTrigger=104,TalkTime=1}] {"text":"Your Rainbow Wing g
 
 #Enables Particles:
 #/particle reddust 251 154 308 10 10 10 1 100
-execute as @s[scores={DialogueTrigger=104,TalkTime=1}] run setblock -861 64 -307 minecraft:redstone_block
+#execute as @s[scores={DialogueTrigger=104,TalkTime=1..13}] run
 
 execute as @s[scores={DialogueTrigger=104,TalkTime=12}] run execute at @e[x=253,y=157,z=317,distance=..2,type=armor_stand] run pokespawn Ho-Oh lvl:45 gr:7
 execute as @s[scores={DialogueTrigger=104,TalkTime=12}] run playsound hooh hostile @s ~ ~ ~ 1000 1 1
 execute as @s[scores={DialogueTrigger=104,TalkTime=13}] run scoreboard players set @s click 1
-
-#Disables Particles
-execute as @s[scores={DialogueTrigger=104,TalkTime=13}] run setblock -861 64 -307 minecraft:iron_block
 
 tag @s[scores={DialogueTrigger=104,TalkTime=13..}] add Dialogue104
 
@@ -2331,7 +2303,7 @@ tellraw @s[scores={DialogueTrigger=106,TalkTime=1}] ["",{"text":"<Nurse Joy> "},
 tellraw @s[scores={DialogueTrigger=106,TalkTime=8}] {"text":"<Nurse Joy> Congratulations!"}
 tellraw @s[scores={DialogueTrigger=106,TalkTime=13}] {"text":"<Nurse Joy> As a special deal, a GS Ball has been sent just for you!"}
 tellraw @s[scores={DialogueTrigger=106,TalkTime=21}] {"text":"<Nurse Joy> Please accept it!"}
-execute as @s[scores={DialogueTrigger=106,TalkTime=24}] run give @s pixelmon:gs_ball{display:{Lore:["A mysterious Ball.","It seems to have some","connection to Ilex Forest."]}}
+execute as @s[scores={DialogueTrigger=106,TalkTime=24}] run give @s pixelmon:gs_ball{display:{Lore:['[{"text":"A mysterious Ball.","italic":false}]','[{"text":"It seems to have some","italic":false}]','[{"text":"connection to Ilex Forest.","italic":false}]']}} 1
 execute as @s[scores={DialogueTrigger=106,TalkTime=24}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=106,TalkTime=29}] {"text":"<Nurse Joy> Please do come again!"}
 
@@ -2361,7 +2333,7 @@ tellraw @s[scores={DialogueTrigger=108,TalkTime=27}] {"text":"<Kurt> Ilex Forest
 tellraw @s[scores={DialogueTrigger=108,TalkTime=34}] {"text":"<Kurt> What is going on? ..."}
 tellraw @s[scores={DialogueTrigger=108,TalkTime=42}] ["",{"text":"<Kurt> "},{"selector":"@s"},{"text":", here's your GS Ball back!"}]
 tellraw @s[scores={DialogueTrigger=108,TalkTime=50}] {"text":"<Kurt> Could you go see why Ilex Forest is so restless? "}
-execute as @s[scores={DialogueTrigger=108,TalkTime=53}] run give @s pixelmon:gs_ball{display:{Lore:["A mysterious Ball.","It seems to have some","connection to Ilex Forest."]}}
+execute as @s[scores={DialogueTrigger=108,TalkTime=53}] run give @s pixelmon:gs_ball{display:{Lore:['[{"text":"A mysterious Ball.","italic":false}]','[{"text":"It seems to have some","italic":false}]','[{"text":"connection to Ilex Forest.","italic":false}]']}} 1
 execute as @s[scores={DialogueTrigger=108,TalkTime=53}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 #Enables particles in the Ilex Forest
@@ -2822,7 +2794,7 @@ tellraw @s[scores={DialogueTrigger=134,TalkTime=9}] {"text":"<Poke Fan> So I'm m
 tellraw @s[scores={DialogueTrigger=134,TalkTime=18}] {"text":"<Poke Fan> Oh, I see now. The girl who lost this Poke Doll is sad..."}
 tellraw @s[scores={DialogueTrigger=134,TalkTime=27}] {"text":"<Poke Fan> OK. Could you take this Poke Doll back to that poor little girl?"}
 execute as @s[scores={DialogueTrigger=134,TalkTime=31}] run tp @e[x=-2697,y=65,z=-39,distance=..2,type=pixelmon:statue] -738 75 -242
-execute as @s[scores={DialogueTrigger=134,TalkTime=31}] run give @s minecraft:music_disc_13{display:{Name:"Clefairy Doll",Lore:["The Poké Doll lost by the Copycat."]},HideFlags:36}
+execute as @s[scores={DialogueTrigger=134,TalkTime=31}] run give @s minecraft:music_disc_13{display:{Name:'[{"text":"Clefairy Doll","italic":false}]',Lore:['[{"text":"The Poké Doll lost","italic":false}]','[{"text":"by the Copycat.","italic":false}]']},HideFlags:36} 1
 execute as @s[scores={DialogueTrigger=134,TalkTime=31}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=134,TalkTime=36}] {"text":"<Poke Fan> I'll befriend a real Clefairy on my own one day. No worries!"}
 
@@ -2841,7 +2813,7 @@ tellraw @s[scores={DialogueTrigger=135,TalkTime=1}] {"text":"<Copycat> Yay! That
 tellraw @s[scores={DialogueTrigger=135,TalkTime=8}] {"text":"<Copycat> See the tear where the right arm is sewn on? That's proof!"}
 execute as @s[scores={DialogueTrigger=135,TalkTime=13}] run tp @e[x=-736,y=75,z=-242,distance=..1,type=pixelmon:statue] -2721 70 374
 tellraw @s[scores={DialogueTrigger=135,TalkTime=18}] {"text":"<Copycat> OK. Here's the Magnet Train Pass like I promised!"}
-execute as @s[scores={DialogueTrigger=135,TalkTime=22}] run give @s minecraft:music_disc_blocks{display:{Name:"Magnet Train Pass",Lore:["A ticket required for riding the Magnet","Train. It allows you to ride whenever","and however much you'd like."]},HideFlags:36}
+execute as @s[scores={DialogueTrigger=135,TalkTime=22}] run give @s minecraft:music_disc_blocks{display:{Name:'[{"text":"Magnet Train Pass","italic":false}]',Lore:['[{"text":"A ticket required for riding the","italic":false}]','[{"text":"Magnet Train. It allows you to","italic":false}]','[{"text":"ride whenever and however much","italic":false}]','[{"text":"you\'d like","italic":false}]']},HideFlags:36} 1
 execute as @s[scores={DialogueTrigger=135,TalkTime=22}] run tag @s add MagnetPass
 execute as @s[scores={DialogueTrigger=135,TalkTime=22}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=135,TalkTime=27}] {"text":"<Copycat> That's the Pass for the Magnet Train."}
@@ -3304,11 +3276,7 @@ tellraw @s[scores={DialogueTrigger=162,TalkTime=3}] ["",{"text":"<Lyra> Hi, "},{
 tellraw @s[scores={DialogueTrigger=162,TalkTime=13}] {"text":"<Lyra> They say people disappear when they tamper with it."}
 
 #Enables particles #1
-execute as @s[scores={DialogueTrigger=162,TalkTime=17}] run setblock -861 64 -301 minecraft:redstone_block
-#execute as @e[x=617,y=64,z=-699,distance=..25,type=pixelmon:pixelmon,name=Celebi] run /particle enchantmenttable ~-2 ~-2 ~-2 4 4 4 1 50
-
-#Disables particles #1
-execute as @s[scores={DialogueTrigger=162,TalkTime=27}] run setblock -861 64 -301 minecraft:iron_block
+#execute as @s[scores={DialogueTrigger=162,TalkTime=17..27}]
 
 execute as @s[scores={DialogueTrigger=162,TalkTime=20}] run playsound celebi ambient @s ~ ~ ~ 100 1 1
 execute as @s[scores={DialogueTrigger=162,TalkTime=23}] run effect give @s minecraft:blindness 5 1 true
@@ -3324,9 +3292,6 @@ execute as @s[scores={DialogueTrigger=162,TalkTime=25}] run scoreboard players s
 execute as @s[scores={DialogueTrigger=162,TalkTime=27}] run tp @e[x=-727,y=70,z=-242,dy=3,type=pixelmon:npc_chatting] 267 64 694
 
 #Enables particles #2
-execute as @s[scores={DialogueTrigger=162,TalkTime=26}] run setblock -861 65 -301 minecraft:redstone_block
-#execute as @e[x=148,y=60,z=613,dx=200,dy=30,dz=200,type=pixelmon:statue] run /particle enchantmenttable ~-2 ~-2 ~-2 4 4 4 1 50
-
 
 
 
@@ -3415,7 +3380,6 @@ execute as @s[scores={DialogueTrigger=164,TalkTime=48}] run tp @e[x=-729,y=70,z=
 
 
 #Turns off particles #2
-execute as @s[scores={DialogueTrigger=164,TalkTime=47}] run setblock -861 65 -301 minecraft:iron_block
 
 tellraw @s[scores={DialogueTrigger=164,TalkTime=53}] ["",{"text":"<"},{"text":"Giovanni","color":"gray"},{"text":"> ...I don't know why you have come here."}]
 tellraw @s[scores={DialogueTrigger=164,TalkTime=60}] ["",{"text":"<"},{"text":"Giovanni","color":"gray"},{"text":"> Anyway, I have to warn you that this is not a place for kids like you."}]
@@ -3477,11 +3441,7 @@ execute as @s[scores={DialogueTrigger=165,TalkTime=81}] run effect give @s minec
 execute as @s[scores={DialogueTrigger=165,TalkTime=81}] run tp @s 617 64 -700
 
 #Enables Particles #3
-execute as @s[scores={DialogueTrigger=165,TalkTime=70}] run setblock -861 66 -301 minecraft:redstone_block
-#execute as @e[x=87,y=50,z=719,dx=44,dy=20,dz=44,name=Celebi,type=pixelmon:pixelmon] run /particle enchantmenttable ~-2 ~-2 ~-2 4 4 4 1 50
-
-#Disables Particles #3
-execute as @s[scores={DialogueTrigger=165,TalkTime=82}] run setblock -861 66 -301 minecraft:iron_block
+#execute as @s[scores={DialogueTrigger=165,TalkTime=70..82}] run
 
 #turns back on keeping player near Lyra
 execute as @s[scores={DialogueTrigger=165,TalkTime=158}] run tp @s[x=628,y=63,z=-703,dx=10,dy=10,dz=4] ~-3 ~ ~
@@ -3521,9 +3481,8 @@ tag @s[scores={DialogueTrigger=165,TalkTime=158..}] add Dialogue165
 #execute as @s[x=160,y=60,z=-295,dx=121,dy=30,dz=205,score_TalkTime=0,tag=Red] run scoreboard players set @s[tag=!Dialogue166] DialogueTrigger 166
 
 #Toggles Lightning effect
-execute as @s[scores={DialogueTrigger=166,TalkTime=2}] run setblock -861 64 -299 minecraft:redstone_block
-execute as @s[scores={DialogueTrigger=166,TalkTime=5}] run setblock -861 64 -299 minecraft:iron_block
-#/summon minecraft:lightning_bolt 176 64 -141
+#20tps Lightning
+#execute as @s[scores={DialogueTrigger=166,TalkTime=2..5}] run /summon minecraft:lightning_bolt 176 64 -141
 
 #Tps Archeologists around
 execute as @s[scores={DialogueTrigger=166,TalkTime=10}] run tp @e[x=178,y=64,z=-127,distance=..1,type=pixelmon:npc_chatting] -697 86 -242
@@ -4700,16 +4659,8 @@ tag @s[scores={DialogueTrigger=208,TalkTime=10..}] add Dialogue208
 tellraw @s[scores={DialogueTrigger=209,TalkTime=1}] {"text":"<Guide Gent> You're a trainer, aren't you? I can tell!"}
 tellraw @s[scores={DialogueTrigger=209,TalkTime=9}] {"text":"<Guide Gent> That's OK! Everyone is a rookie at some point!"}
 tellraw @s[scores={DialogueTrigger=209,TalkTime=17}] {"text":"<Guide Gent> If you'd like, I can teach you a few things."}
-tellraw @s[scores={DialogueTrigger=209,TalkTime=17}] {"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 10"}}
-tellraw @s[scores={DialogueTrigger=209,TalkTime=17}] {"text":"[No]","color":"red","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 11"}}
+tellraw @s[scores={DialogueTrigger=209,TalkTime=17}] ["",{"text":"["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 10"}},{"text":"] \u0020 \u0020 ["},{"text":"No","color":"red","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 11"}},{"text":"]"}]
 execute as @s[scores={DialogueTrigger=209,TalkTime=17}] run scoreboard players enable @s TriggerCommand
-execute as @s[scores={DialogueTrigger=209,TalkTime=17}] run tag @e[x=-270,y=63,z=-505,dy=3,type=pixelmon:npc_chatting] remove Dialogue1
-execute as @s[scores={DialogueTrigger=209,TalkTime=17}] run tag @e[x=-270,y=63,z=-505,dy=3,type=pixelmon:npc_chatting] remove Dialogue2
-execute as @s[scores={DialogueTrigger=209,TalkTime=17}] run tag @e[x=-270,y=63,z=-505,dy=3,type=pixelmon:npc_chatting] remove Dialogue3
-execute as @s[scores={DialogueTrigger=209,TalkTime=17}] run tag @e[x=-270,y=63,z=-505,dy=3,type=pixelmon:npc_chatting] remove Dialogue4
-execute as @s[scores={DialogueTrigger=209,TalkTime=17}] run tag @e[x=-270,y=63,z=-505,dy=3,type=pixelmon:npc_chatting] remove Dialogue5
-execute as @s[scores={DialogueTrigger=209,TalkTime=17}] run tag @e[x=-270,y=63,z=-505,dy=3,type=pixelmon:npc_chatting] remove Dialogue6
-
 
 tag @s[scores={DialogueTrigger=209,TalkTime=17..}] add Dialogue209
 
@@ -4720,7 +4671,8 @@ tag @s[scores={DialogueTrigger=209,TalkTime=17..}] add Dialogue209
 execute as @s[scores={DialogueTrigger=210,TalkTime=1}] run scoreboard players set @s click 1
 tellraw @s[scores={DialogueTrigger=210,TalkTime=1}] {"text":"<Guide Gent> This is the Pokémon Center. They heal your Pokémon in no time at all!"}
 tellraw @s[scores={DialogueTrigger=210,TalkTime=11}] {"text":"<Guide Gent> You'll be relying on them a lot, so you better learn about them."}
-execute as @s[scores={DialogueTrigger=210,TalkTime=20}] run setblock -861 64 -295 minecraft:redstone_block
+execute as @s[scores={DialogueTrigger=210,TalkTime=20}] run scoreboard players set @e[x=-256,y=64,z=-495,distance=..2,type=pixelmon:npc_chatting] DialogueTrigger 2
+execute as @s[scores={DialogueTrigger=210,TalkTime=20}] run tag @e[x=-792,y=65,z=-284,dy=3] add GuideGentMove
 
 tag @s[scores={DialogueTrigger=210,TalkTime=20..}] add Dialogue210
 
@@ -4730,7 +4682,8 @@ tag @s[scores={DialogueTrigger=210,TalkTime=20..}] add Dialogue210
 
 tellraw @s[scores={DialogueTrigger=211,TalkTime=1}] {"text":"<Guide Gent> This is a Pokemon Mart."}
 tellraw @s[scores={DialogueTrigger=211,TalkTime=8}] {"text":"<Guide Gent> They sell Poke Balls for catching wild Pokemon and other useful items."}
-execute as @s[scores={DialogueTrigger=211,TalkTime=18}] run setblock -861 64 -295 minecraft:redstone_block
+execute as @s[scores={DialogueTrigger=211,TalkTime=18}] run scoreboard players set @e[x=-217,y=64,z=-495,distance=..2,type=pixelmon:npc_chatting] DialogueTrigger 3
+execute as @s[scores={DialogueTrigger=211,TalkTime=18}] run tag @e[x=-792,y=65,z=-284,dy=3] add GuideGentMove
 
 tag @s[scores={DialogueTrigger=211,TalkTime=18..}] add Dialogue211
 
@@ -4740,7 +4693,8 @@ tag @s[scores={DialogueTrigger=211,TalkTime=18..}] add Dialogue211
 
 tellraw @s[scores={DialogueTrigger=212,TalkTime=1}] {"text":"<Guide Gent> Route 30 is out this way. Trainers will be battling their Pokemon there."}
 tellraw @s[scores={DialogueTrigger=212,TalkTime=11}] {"text":"<Guide Gent> If you go a little further, you'll see Mr. Pokemon's House."}
-execute as @s[scores={DialogueTrigger=212,TalkTime=20}] run setblock -861 64 -295 minecraft:redstone_block
+execute as @s[scores={DialogueTrigger=212,TalkTime=20}] run scoreboard players set @e[x=-184,y=64,z=-495,distance=..2,type=pixelmon:npc_chatting] DialogueTrigger 4
+execute as @s[scores={DialogueTrigger=212,TalkTime=20}] run tag @e[x=-792,y=65,z=-284,dy=3] add GuideGentMove
 
 tag @s[scores={DialogueTrigger=212,TalkTime=20..}] add Dialogue212
 
@@ -4750,7 +4704,8 @@ tag @s[scores={DialogueTrigger=212,TalkTime=20..}] add Dialogue212
 
 tellraw @s[scores={DialogueTrigger=197,TalkTime=1}] {"text":"<Guide Gent> This is the sea, as you can see."}
 tellraw @s[scores={DialogueTrigger=197,TalkTime=9}] {"text":"<Guide Gent> Some Pokemon are only found in water."}
-execute as @s[scores={DialogueTrigger=197,TalkTime=17}] run setblock -861 64 -295 minecraft:redstone_block
+execute as @s[scores={DialogueTrigger=197,TalkTime=17}] run scoreboard players set @e[x=-146,y=64,z=-517,distance=..2,type=pixelmon:npc_chatting] DialogueTrigger 5
+execute as @s[scores={DialogueTrigger=197,TalkTime=17}] run tag @e[x=-792,y=65,z=-284,dy=3] add GuideGentMove
 
 tag @s[scores={DialogueTrigger=197,TalkTime=17..}] add Dialogue197
 
@@ -4765,7 +4720,8 @@ execute as @s[scores={DialogueTrigger=213,TalkTime=11}] run function johto:spawn
 execute as @s[scores={DialogueTrigger=213,TalkTime=11}] run replaceitem entity @e[x=-230,y=63,z=-529,dy=2,distance=..5,type=pixelmon:npc_chatting] weapon.mainhand minecraft:air
 execute as @s[scores={DialogueTrigger=213,TalkTime=11}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=213,TalkTime=18}] {"text":"<Guide Gent> It will show you where you are any time you look at it!"}
-execute as @s[scores={DialogueTrigger=213,TalkTime=26}] run setblock -861 64 -295 minecraft:redstone_block
+execute as @s[scores={DialogueTrigger=213,TalkTime=26}] run scoreboard players set @e[x=-230,y=64,z=-529,distance=..3,type=pixelmon:npc_chatting] DialogueTrigger 6
+execute as @s[scores={DialogueTrigger=213,TalkTime=26}] run tag @e[x=-792,y=65,z=-284,dy=3] add GuideGentMove
 execute as @s[scores={DialogueTrigger=213,TalkTime=26}] run tag @s add GuideTour
 execute as @s[scores={DialogueTrigger=213,TalkTime=26}] run scoreboard players set @s click 1
 
