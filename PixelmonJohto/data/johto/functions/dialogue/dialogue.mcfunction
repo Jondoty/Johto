@@ -994,7 +994,7 @@ tag @s[scores={DialogueTrigger=39,TalkTime=53..}] add Dialogue39
 
 #resets Jasmine, Sick Amphy and Lighthouse
 execute as @s[scores={DialogueTrigger=40,TalkTime=1}] run tp @e[x=-714,y=79,z=-242,distance=..2,type=pixelmon:npc_chatting] 705 119 -40
-execute as @s[scores={DialogueTrigger=40,TalkTime=1}] run data modify entity @e[limit=1,x=706,y=119,z=-38,distance=..2,type=pixelmon:statue] {statueTexture:7s,Growth:1b}
+execute as @s[scores={DialogueTrigger=40,TalkTime=1}] run data merge entity @e[limit=1,x=706,y=119,z=-38,distance=..2,type=pixelmon:statue] {statueTexture: 5b}
 #execute as @s[scores={DialogueTrigger=40,TalkTime=1}] run fill 722 94 -58 684 94 -23 minecraft:barrier 0 replace beacon
 #execute as @s[scores={DialogueTrigger=40,TalkTime=1}] run fill 682 80 -60 724 77 -21 minecraft:sandstone 0 replace redstone_block
 #execute as @s[scores={DialogueTrigger=40,TalkTime=1}] run fill 688 127 -28 717 120 -53 minecraft:sandstone 0 replace redstone_block
@@ -1036,7 +1036,7 @@ execute as @s[scores={DialogueTrigger=42,TalkTime=20}] run playsound minecraft:b
 
 tellraw @s[scores={DialogueTrigger=42,TalkTime=23}] {"text":"<Jasmine> ... Amphy, how are you feeling?"}
 
-execute as @s[scores={DialogueTrigger=42,TalkTime=30}] run data merge entity @e[limit=1,x=706,y=119,z=-38,distance=..2,type=pixelmon:statue] {statueTexture:0s,Growth:1b}
+execute as @s[scores={DialogueTrigger=42,TalkTime=30}] run data merge entity @e[limit=1,x=706,y=119,z=-38,distance=..2,type=pixelmon:statue] {statueTexture: 0b}
 execute as @s[scores={DialogueTrigger=42,TalkTime=30}] run playsound ampharos ambient @s ~ ~ ~ 100 1 1
 
 #Lights up Lighthouse
