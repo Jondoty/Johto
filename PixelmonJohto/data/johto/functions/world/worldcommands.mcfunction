@@ -4,7 +4,10 @@
 execute at @e[tag=1.12.2Trainer,type=pixelmon:npc_trainer] run particle minecraft:end_rod ~ ~5 ~ 0 10 0 0.001 10 force @a
 
 #temp to tp corrputed trainer into void
-tp @e[x=257,y=64,z=-556.50,type=pixelmon:npc_trainer,distance=..4] ~ ~-1000 ~
+#tp @e[x=-790,,y=65,,z=715,type=pixelmon:npc_trainer,distance=..4] ~ ~-1000 ~
+
+#Adds a Persistent tag to statues for finding non-persistent statues to kill on commands
+#tag @e[type=pixelmon:statue,tag=!Persistent] add Persistent
 
 #---------------------
 #Despawns items that may be broken and pop up elsewhere in the map
@@ -454,36 +457,8 @@ execute if entity @a[x=57,y=70,z=18,distance=..50] run setblock -848 70 -197 min
 
 
 
-#RocketHQ Statue Traps
-#execute if entity @a[x=-93,y=53,z=163,distance=..25,tag=!TrapGrunt5] run particle minecraft:dust 1 1 1 1 -92 55.5 158 0.1 0.1 6 10 100 normal @a[x=-93,y=53,z=163,distance=..25,tag=!TrapGrunt5]
-execute if entity @a[x=-93,y=53,z=158,dx=2,dy=5,dz=5,tag=!TrapGrunt5] run tp @e[x=-815,y=92,z=-234,dy=3,type=pixelmon:npc_trainer] -95 54 161
-execute if entity @a[x=-93,y=53,z=158,dx=2,dy=5,dz=5,tag=!TrapGrunt5] run particle cloud -95 54 161 1 1 1 0.15 100
-execute if entity @a[x=-93,y=53,z=158,dx=2,dy=5,dz=5,tag=!TrapGrunt5] run execute as @p[x=-95,y=53,z=157,dx=6,dy=6,dz=7,tag=!TrapGrunt5] run pokebattle @a[x=-95,y=53,z=157,dx=6,dy=6,dz=7,tag=!TrapGrunt5] Grunt5
-execute if entity @a[x=-93,y=53,z=158,dx=2,dy=5,dz=5,tag=!TrapGrunt5] run tag @a[x=-95,y=53,z=157,dx=6,dy=6,dz=7,tag=!TrapGrunt5] add TrapGrunt5
-
-#
-execute if entity @a[x=-147,y=53,z=158,dx=2,dy=5,dz=5,tag=!TrapGrunt4] run tp @e[x=-815,y=92,z=-236,dy=3,type=pixelmon:npc_trainer] -149 54 161
-execute if entity @a[x=-147,y=53,z=158,dx=2,dy=5,dz=5,tag=!TrapGrunt4] run particle cloud -149 54 161 1 1 1 0.15 100
-execute if entity @a[x=-147,y=53,z=158,dx=2,dy=5,dz=5,tag=!TrapGrunt4] run execute as @p[x=-149,y=53,z=157,dx=6,dy=6,dz=7,tag=!TrapGrunt4] run pokebattle @a[x=-149,y=53,z=157,dx=6,dy=6,dz=7,tag=!TrapGrunt4] Grunt4
-execute if entity @a[x=-147,y=53,z=158,dx=2,dy=5,dz=5,tag=!TrapGrunt4] run tag @a[x=-149,y=53,z=157,dx=6,dy=6,dz=7,tag=!TrapGrunt4] add TrapGrunt4
-
-#execute if entity @a[x=-156,y=53,z=199,distance=..25,tag=!TrapGrunt3] run particle minecraft:dust 1 1 1 1 -155 55.5 194 0.1 0.1 6 10 100 normal @a[x=-156,y=53,z=199,distance=..25,tag=!TrapGrunt3]
-execute if entity @a[x=-156,y=53,z=194,dx=2,dy=5,dz=9,tag=!TrapGrunt3] run tp @e[x=-815,y=92,z=-238,dy=3,type=pixelmon:npc_trainer] -157 54 198
-execute if entity @a[x=-156,y=53,z=194,dx=2,dy=5,dz=9,tag=!TrapGrunt3] run particle cloud -157 54 198 1 1 1 0.15 100
-execute if entity @a[x=-156,y=53,z=194,dx=2,dy=5,dz=9,tag=!TrapGrunt3] run execute as @p[x=-158,y=53,z=193,dx=6,dy=6,dz=11,tag=!TrapGrunt3] run pokebattle @a[x=-158,y=53,z=193,dx=6,dy=6,dz=11,tag=!TrapGrunt3] Grunt3
-execute if entity @a[x=-156,y=53,z=194,dx=2,dy=5,dz=9,tag=!TrapGrunt3] run tag @a[x=-158,y=53,z=193,dx=6,dy=6,dz=11,tag=!TrapGrunt3] add TrapGrunt3
-
-#execute if entity @a[x=-83,y=53,z=215,distance=..25,tag=!TrapGrunt2] run particle minecraft:dust 1 1 1 1 -82 55.5 210 0.1 0.1 10 10 100 normal @a[x=-83,y=53,z=215,distance=..25,tag=!TrapGrunt2]
-execute if entity @a[x=-83,y=53,z=210,dx=2,dy=5,dz=9,tag=!TrapGrunt2] run tp @e[x=-815,y=92,z=-240,dy=3,type=pixelmon:npc_trainer] -79 54 214
-execute if entity @a[x=-83,y=53,z=210,dx=2,dy=5,dz=9,tag=!TrapGrunt2] run particle cloud -79 54 214 1 1 1 0.15 100
-execute if entity @a[x=-83,y=53,z=210,dx=2,dy=5,dz=9,tag=!TrapGrunt2] run execute as @p[x=-85,y=53,z=209,dx=6,dy=5,dz=11,tag=!TrapGrunt2] run pokebattle @a[x=-85,y=53,z=209,dx=6,dy=5,dz=11,tag=!TrapGrunt2] Grunt2
-execute if entity @a[x=-83,y=53,z=210,dx=2,dy=5,dz=9,tag=!TrapGrunt2] run tag @a[x=-85,y=53,z=209,dx=6,dy=5,dz=11,tag=!TrapGrunt2] add TrapGrunt2
-
-#execute if entity @a[x=-135,y=53,z=215,distance=..25,tag=!TrapGrunt1] run particle minecraft:dust 1 1 1 1 -134 55.5 210 0.1 0.1 10 10 100 normal @a[x=-135,y=53,z=215,distance=..25,tag=!TrapGrunt1]
-execute if entity @a[x=-135,y=53,z=210,dx=2,dy=5,dz=9,tag=!TrapGrunt1] run tp @e[x=-815,y=92,z=-242,dy=3,type=pixelmon:npc_trainer] -132 54 215
-execute if entity @a[x=-135,y=53,z=210,dx=2,dy=5,dz=9,tag=!TrapGrunt1] run particle cloud -132 54 215 1 1 1 0.15 100
-execute if entity @a[x=-135,y=53,z=210,dx=2,dy=5,dz=9,tag=!TrapGrunt1] run execute as @p[x=-137,y=53,z=209,dx=6,dy=5,dz=11,tag=!TrapGrunt1] run pokebattle @a[x=-137,y=53,z=209,dx=6,dy=5,dz=11,tag=!TrapGrunt1] Grunt1
-execute if entity @a[x=-135,y=53,z=210,dx=2,dy=5,dz=9,tag=!TrapGrunt1] run tag @a[x=-137,y=53,z=209,dx=6,dy=5,dz=11,tag=!TrapGrunt1] add TrapGrunt1
+#Runs Team Rocket HQ specific commands
+execute if entity @a[x=-178,y=0,z=152,dx=121,dy=63,dz=73] run function johto:world/rockethq
 
 
 
@@ -1377,6 +1352,11 @@ execute as @a[x=-3239,y=64,z=571,distance=..50,scores={Zapdos=0,TalkTime=0},tag=
 #Dialogue160
 #Victory Road Moltres
 scoreboard players set @a[x=-965,y=100,z=304,distance=..7,scores={Moltres=0,TalkTime=0},tag=!Dialogue160] DialogueTrigger 160
+
+#Mt. Mortar Tyrogue give
+execute as @a[x=112,y=32,z=391,distance=..25,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] run pokegive @s Tyrogue
+execute as @a[x=112,y=32,z=391,distance=..25,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] run playsound minecraft:egghatch ambient @s ~ ~ ~ 1 1 1
+execute as @a[x=112,y=32,z=391,distance=..25,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] run clear @s nether_brick
 
 #----------------------------------------
 
