@@ -10,72 +10,135 @@ execute unless entity @e[x=-149,y=44,z=177,dx=63,dy=5,dz=35,type=pixelmon:pixelm
 
 #Runs the in-floor traps on the first floor
 
-execute as @a[x=-73,y=54,z=193,dx=3,dy=3,dz=3,tag=!Trap1] run pokebattle @s Voltorb,lvl:23
+execute as @a[x=-73,y=54,z=193,dx=3,dy=3,dz=3,tag=!Trap1] run pokebattle @s Voltorb
 execute as @a[x=-73,y=54,z=193,dx=3,dy=3,dz=3,tag=!Trap1] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
 execute as @a[x=-73,y=54,z=193,dx=3,dy=3,dz=3,tag=!Trap1] run tag @s add Trap1
 
 
-execute as @a[x=-81,y=54,z=193,dx=3,dy=3,dz=3,tag=!Trap2] run pokebattle @s Geodude,lvl:21
+execute as @a[x=-81,y=54,z=193,dx=3,dy=3,dz=3,tag=!Trap2] run pokebattle @s Geodude
 execute as @a[x=-81,y=54,z=193,dx=3,dy=3,dz=3,tag=!Trap2] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
 execute as @a[x=-81,y=54,z=193,dx=3,dy=3,dz=3,tag=!Trap2] run tag @s add Trap2
 
 
-execute as @a[x=-69,y=54,z=189,dx=3,dy=3,dz=3,tag=!Trap3] run pokebattle @s Koffing,lvl:21
+execute as @a[x=-69,y=54,z=189,dx=3,dy=3,dz=3,tag=!Trap3] run pokebattle @s Koffing
 execute as @a[x=-69,y=54,z=189,dx=3,dy=3,dz=3,tag=!Trap3] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
 execute as @a[x=-69,y=54,z=189,dx=3,dy=3,dz=3,tag=!Trap3] run tag @s add Trap3
 
 
-execute as @a[x=-65,y=54,z=185,dx=3,dy=3,dz=3,tag=!Trap4] run pokebattle @s Geodude,lvl:21
+execute as @a[x=-65,y=54,z=185,dx=3,dy=3,dz=3,tag=!Trap4] run pokebattle @s Geodude
 execute as @a[x=-65,y=54,z=185,dx=3,dy=3,dz=3,tag=!Trap4] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
 execute as @a[x=-65,y=54,z=185,dx=3,dy=3,dz=3,tag=!Trap4] run tag @s add Trap4
 
 
-execute as @a[x=-77,y=54,z=185,dx=3,dy=3,dz=3,tag=!Trap5] run pokebattle @s Voltorb,lvl:23
+execute as @a[x=-77,y=54,z=185,dx=3,dy=3,dz=3,tag=!Trap5] run pokebattle @s Voltorb
 execute as @a[x=-77,y=54,z=185,dx=3,dy=3,dz=3,tag=!Trap5] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
 execute as @a[x=-77,y=54,z=185,dx=3,dy=3,dz=3,tag=!Trap5] run tag @s add Trap5
 
 
-execute as @a[x=-81,y=54,z=185,dx=3,dy=3,dz=3,tag=!Trap6] run pokebattle @s Koffing,lvl:21
+execute as @a[x=-81,y=54,z=185,dx=3,dy=3,dz=3,tag=!Trap6] run pokebattle @s Koffing
 execute as @a[x=-81,y=54,z=185,dx=3,dy=3,dz=3,tag=!Trap6] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
 execute as @a[x=-81,y=54,z=185,dx=3,dy=3,dz=3,tag=!Trap6] run tag @s add Trap6
 
 
-execute as @a[x=-73,y=54,z=181,dx=3,dy=3,dz=3,tag=!Trap7] run pokebattle @s Geodude,lvl:21
+execute as @a[x=-73,y=54,z=181,dx=3,dy=3,dz=3,tag=!Trap7] run pokebattle @s Geodude
 execute as @a[x=-73,y=54,z=181,dx=3,dy=3,dz=3,tag=!Trap7] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
 execute as @a[x=-73,y=54,z=181,dx=3,dy=3,dz=3,tag=!Trap7] run tag @s add Trap7
 
 
-execute as @a[x=-81,y=54,z=177,dx=3,dy=3,dz=3,tag=!Trap8] run pokebattle @s Koffing,lvl:21
+execute as @a[x=-81,y=54,z=177,dx=3,dy=3,dz=3,tag=!Trap8] run pokebattle @s Koffing
 execute as @a[x=-81,y=54,z=177,dx=3,dy=3,dz=3,tag=!Trap8] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
 execute as @a[x=-81,y=54,z=177,dx=3,dy=3,dz=3,tag=!Trap8] run tag @s add Trap8
 
 
-execute as @a[x=-77,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap9] run pokebattle @s Geodude,lvl:21
+execute as @a[x=-77,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap9] run pokebattle @s Geodude
 execute as @a[x=-77,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap9] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
 execute as @a[x=-77,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap9] run tag @s add Trap9
 
 
-exeute as @a[x=-73,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap10] run pokebattle @s Voltorb,lvl:23
-exeute as @a[x=-73,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap10] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
-exeute as @a[x=-73,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap10] run tag @s add Trap10
+execute as @a[x=-73,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap10] run pokebattle @s Voltorb
+execute as @a[x=-73,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap10] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
+execute as @a[x=-73,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap10] run tag @s add Trap10
 
 
-execute as @a[x=-69,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap11] run pokebattle @s Koffing,lvl:21
+execute as @a[x=-69,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap11] run pokebattle @s Koffing
 execute as @a[x=-69,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap11] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
 execute as @a[x=-69,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap11] run tag @s add Trap11
 
 
-execute as @a[x=-65,y=54,z=169,dx=3,dy=3,dz=3,tag=!Trap12] run pokebattle @s Voltorb,lvl:23
+execute as @a[x=-65,y=54,z=169,dx=3,dy=3,dz=3,tag=!Trap12] run pokebattle @s Voltorb
 execute as @a[x=-65,y=54,z=169,dx=3,dy=3,dz=3,tag=!Trap12] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
 execute as @a[x=-65,y=54,z=169,dx=3,dy=3,dz=3,tag=!Trap12] run tag @s add Trap12
 
 
-execute as @a[x=-77,y=54,z=169,dx=3,dy=3,dz=3,tag=!Trap13] run pokebattle @s Koffing,lvl:21
+execute as @a[x=-77,y=54,z=169,dx=3,dy=3,dz=3,tag=!Trap13] run pokebattle @s Koffing
 execute as @a[x=-77,y=54,z=169,dx=3,dy=3,dz=3,tag=!Trap13] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
 execute as @a[x=-77,y=54,z=169,dx=3,dy=3,dz=3,tag=!Trap13] run tag @s add Trap13
 
 
-
+#Specs are broken currently, here are the traps with rando levels.
+#execute as @a[x=-73,y=54,z=193,dx=3,dy=3,dz=3,tag=!Trap1] run pokebattle @s Voltorb,lvl:23
+#execute as @a[x=-73,y=54,z=193,dx=3,dy=3,dz=3,tag=!Trap1] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
+#execute as @a[x=-73,y=54,z=193,dx=3,dy=3,dz=3,tag=!Trap1] run tag @s add Trap1
+#
+#
+#execute as @a[x=-81,y=54,z=193,dx=3,dy=3,dz=3,tag=!Trap2] run pokebattle @s Geodude,lvl:21
+#execute as @a[x=-81,y=54,z=193,dx=3,dy=3,dz=3,tag=!Trap2] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
+#execute as @a[x=-81,y=54,z=193,dx=3,dy=3,dz=3,tag=!Trap2] run tag @s add Trap2
+#
+#
+#execute as @a[x=-69,y=54,z=189,dx=3,dy=3,dz=3,tag=!Trap3] run pokebattle @s Koffing,lvl:21
+#execute as @a[x=-69,y=54,z=189,dx=3,dy=3,dz=3,tag=!Trap3] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
+#execute as @a[x=-69,y=54,z=189,dx=3,dy=3,dz=3,tag=!Trap3] run tag @s add Trap3
+#
+#
+#execute as @a[x=-65,y=54,z=185,dx=3,dy=3,dz=3,tag=!Trap4] run pokebattle @s Geodude,lvl:21
+#execute as @a[x=-65,y=54,z=185,dx=3,dy=3,dz=3,tag=!Trap4] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
+#execute as @a[x=-65,y=54,z=185,dx=3,dy=3,dz=3,tag=!Trap4] run tag @s add Trap4
+#
+#
+#execute as @a[x=-77,y=54,z=185,dx=3,dy=3,dz=3,tag=!Trap5] run pokebattle @s Voltorb,lvl:23
+#execute as @a[x=-77,y=54,z=185,dx=3,dy=3,dz=3,tag=!Trap5] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
+#execute as @a[x=-77,y=54,z=185,dx=3,dy=3,dz=3,tag=!Trap5] run tag @s add Trap5
+#
+#
+#execute as @a[x=-81,y=54,z=185,dx=3,dy=3,dz=3,tag=!Trap6] run pokebattle @s Koffing,lvl:21
+#execute as @a[x=-81,y=54,z=185,dx=3,dy=3,dz=3,tag=!Trap6] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
+#execute as @a[x=-81,y=54,z=185,dx=3,dy=3,dz=3,tag=!Trap6] run tag @s add Trap6
+#
+#
+#execute as @a[x=-73,y=54,z=181,dx=3,dy=3,dz=3,tag=!Trap7] run pokebattle @s Geodude,lvl:21
+#execute as @a[x=-73,y=54,z=181,dx=3,dy=3,dz=3,tag=!Trap7] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
+#execute as @a[x=-73,y=54,z=181,dx=3,dy=3,dz=3,tag=!Trap7] run tag @s add Trap7
+#
+#
+#execute as @a[x=-81,y=54,z=177,dx=3,dy=3,dz=3,tag=!Trap8] run pokebattle @s Koffing,lvl:21
+#execute as @a[x=-81,y=54,z=177,dx=3,dy=3,dz=3,tag=!Trap8] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
+#execute as @a[x=-81,y=54,z=177,dx=3,dy=3,dz=3,tag=!Trap8] run tag @s add Trap8
+#
+#
+#execute as @a[x=-77,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap9] run pokebattle @s Geodude,lvl:21
+#execute as @a[x=-77,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap9] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
+#execute as @a[x=-77,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap9] run tag @s add Trap9
+#
+#
+#execute as @a[x=-73,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap10] run pokebattle @s Voltorb,lvl:23
+#execute as @a[x=-73,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap10] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
+#execute as @a[x=-73,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap10] run tag @s add Trap10
+#
+#
+#execute as @a[x=-69,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap11] run pokebattle @s Koffing,lvl:21
+#execute as @a[x=-69,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap11] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
+#execute as @a[x=-69,y=54,z=173,dx=3,dy=3,dz=3,tag=!Trap11] run tag @s add Trap11
+#
+#
+#execute as @a[x=-65,y=54,z=169,dx=3,dy=3,dz=3,tag=!Trap12] run pokebattle @s Voltorb,lvl:23
+#execute as @a[x=-65,y=54,z=169,dx=3,dy=3,dz=3,tag=!Trap12] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
+#execute as @a[x=-65,y=54,z=169,dx=3,dy=3,dz=3,tag=!Trap12] run tag @s add Trap12
+#
+#
+#execute as @a[x=-77,y=54,z=169,dx=3,dy=3,dz=3,tag=!Trap13] run pokebattle @s Koffing,lvl:21
+#execute as @a[x=-77,y=54,z=169,dx=3,dy=3,dz=3,tag=!Trap13] run tellraw @s {"text":"A Pokemon jumped out from the trap!","italic":true,"color":"gray"}
+#execute as @a[x=-77,y=54,z=169,dx=3,dy=3,dz=3,tag=!Trap13] run tag @s add Trap13
 
 
 
