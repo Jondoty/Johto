@@ -24,19 +24,19 @@ execute as @a[tag=!ArceusCaught,tag=ArceusEncountered] run give @s stone{display
 execute as @a[tag=!ArceusCaught,tag=ArceusEncountered] run tag @s remove ArceusEncountered
 
 #Rayquaza
-execute as @a[tag=!RayquazaCaught,scores={Rayquaza=1..}] run give @s diamond_horse_armor{display:{Name:'[{"text":"Jade Orb","italic":false,"color":"dark_green"}]',Lore:['[{"text":"A shiny green orb that is said","italic":false}]','[{"text":"to have a legend tied to it. It\'s","italic":false}]','[{"text":"known to have a deep connection","italic":false}]','[{"text":"with the Hoenn region.","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 1
+execute as @a[tag=!RayquazaCaught,scores={Rayquaza=1..}] run give @s pixelmon:jade_orb
 execute as @a[tag=!RayquazaCaught,scores={Rayquaza=1..}] run tellraw @s {"text":"You can now re-encounter Rayquaza!","italic":true,"color":"gray"}
 execute as @a[tag=!RayquazaCaught,scores={Rayquaza=1..}] run tag @s remove Dialogue152
 execute as @a[tag=!RayquazaCaught,scores={Rayquaza=1..}] run scoreboard players set @s Rayquaza 0
 
 #Kyogre
-execute as @a[tag=!KyogreCaught,scores={Kyogre=1..}] run give @s iron_horse_armor{display:{Name:'[{"text":"Blue Orb","italic":false,"color":"dark_aqua"}]',Lore:['[{"text":"A shiny blue orb that is said","italic":false}]','[{"text":"to have a legend tied to it. It\'s","italic":false}]','[{"text":"known to have a deep connection","italic":false}]','[{"text":"with the Hoenn region.","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 1
+execute as @a[tag=!KyogreCaught,scores={Kyogre=1..}] run give @s pixelmon:blue_orb
 execute as @a[tag=!KyogreCaught,scores={Kyogre=1..}] run tellraw @s {"text":"You can now re-encounter Kyogre!","italic":true,"color":"gray"}
 execute as @a[tag=!KyogreCaught,scores={Kyogre=1..}] run tag @s remove Dialogue150
 execute as @a[tag=!KyogreCaught,scores={Kyogre=1..}] run scoreboard players set @s Kyogre 0
 
 #Groudon
-execute as @a[tag=!GroudonCaught,scores={Groudon=1..}] run give @s golden_horse_armor{display:{Name:'[{"text":"Red Orb","italic":false,"color":"dark_red"}]',Lore:['[{"text":"A shiny red orb that is said","italic":false}]','[{"text":"to have a legend tied to it. It\'s","italic":false}]','[{"text":"known to have a deep connection","italic":false}]','[{"text":"with the Hoenn region.","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 1
+execute as @a[tag=!GroudonCaught,scores={Groudon=1..}] run give @s pixelmon:red_orb
 execute as @a[tag=!GroudonCaught,scores={Groudon=1..}] run tellraw @s {"text":"You can now re-encounter Groudon!","italic":true,"color":"gray"}
 execute as @a[tag=!GroudonCaught,scores={Groudon=1..}] run tag @s remove Dialogue151
 execute as @a[tag=!GroudonCaught,scores={Groudon=1..}] run scoreboard players set @s Groudon 0
@@ -51,12 +51,12 @@ execute as @a[tag=!MewtwoCaught,scores={Mewtwo=1..}] run scoreboard players set 
 
 #Ho-Oh
 execute as @a[tag=!HoohCaught,tag=Dialogue104] run tellraw @s {"text":"You can now re-encounter Ho-Oh!","italic":true,"color":"gray"}
-execute as @a[tag=!HoohCaught,tag=Dialogue104] run give @s minecraft:prismarine_crystals{display:{Name:'[{"text":"Rainbow Wing","italic":false,"color":"gray"}]',Lore:['[{"text":"A strange, rainbow feather","italic":false}]','[{"text":"that sparkles.","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 1
+execute as @a[tag=!HoohCaught,tag=Dialogue104] run give @s pixelmon:rainbow_wing{display:{Lore:['[{"text":"A strange, rainbow feather","italic":false}]','[{"text":"that sparkles.","italic":false}]']}} 1
 execute as @a[tag=!HoohCaught,tag=Dialogue104] run tag @s remove Dialogue104
 
 #Lugia
 execute as @a[tag=!LugiaCaught,tag=Dialogue103] run tellraw @s {"text":"You can now re-encounter Lugia!","italic":true,"color":"gray"}
-execute as @a[tag=!LugiaCaught,tag=Dialogue103] run give @s minecraft:prismarine_shard{display:{Name:'[{"text":"Silver Wing","italic":false,"color":"dark_gray"}]',Lore:['[{"text":"A strange, silvery feather","italic":false}]','[{"text":"that sparkles","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 1
+execute as @a[tag=!LugiaCaught,tag=Dialogue103] run give @s pixelmon:silver_wing{display:{Lore:['[{"text":"A strange, silvery feather","italic":false}]','[{"text":"that sparkles.","italic":false}]']}} 1
 execute as @a[tag=!LugiaCaught,tag=Dialogue103] run tag @s remove Dialogue103
 
 

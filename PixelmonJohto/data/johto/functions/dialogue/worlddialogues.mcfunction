@@ -33,13 +33,13 @@ scoreboard players set @e[tag=Dialogue110] DialogueTrigger 0
 #execute @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,score_DialogueTrigger=0,score_TalkTime=0] run scoreboard players set @a[x=-1196,y=63,z=-230,dx=46,dy=20,dz=53,score_KyogreCD=0] TriggerCommand 50 {Inventory:[{id:"minecraft:iron_horse_armor"}]}
 #execute @a[score_TriggerCommand_min=51,score_TriggerCommand=51] run scoreboard players set @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,score_DialogueTrigger=0,score_TalkTime=0] DialogueTrigger 150
 
-execute as @e[scores={DialogueTrigger=150,TalkTime=1}] run clear @a[scores={TriggerCommand=50}] minecraft:iron_horse_armor
+execute as @e[scores={DialogueTrigger=150,TalkTime=1}] run clear @a[scores={TriggerCommand=50}] pixelmon:blue_orb
 execute as @e[scores={DialogueTrigger=150,TalkTime=1}] run scoreboard players set @a[scores={TriggerCommand=50}] Kyogre 1
 execute as @e[scores={DialogueTrigger=150,TalkTime=1}] run tellraw @a[scores={TriggerCommand=50}] {"text":"Your Orb is reacting to the Tower!"}
 execute as @e[scores={DialogueTrigger=150,TalkTime=1}] run advancement grant @s[scores={TriggerCommand=50}] only johto:event6
 execute as @e[scores={DialogueTrigger=150,TalkTime=1}] run scoreboard players set @a[scores={TriggerCommand=50}] TriggerCommand 0
 
-execute as @e[scores={DialogueTrigger=150,TalkTime=1}] run summon minecraft:item -1173 64 -230 {Item:{id:"minecraft:iron_horse_armor",Count:1},Age:-32768,PickupDelay:32767,Tags:["Despawn"]}
+execute as @e[scores={DialogueTrigger=150,TalkTime=1}] run summon minecraft:item -1173 64 -230 {Item:{id:"pixelmon:blue_orb",Count:1},Age:-32768,PickupDelay:32767,Tags:["Despawn"]}
 execute as @e[scores={DialogueTrigger=150,TalkTime=1}] run playsound block.portal.trigger ambient @a[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53] ~ ~ ~ 1 1 1
 
 #Enables particles and motion
@@ -68,13 +68,13 @@ scoreboard players set @s[tag=Dialogue150] DialogueTrigger 0
 #execute @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,score_DialogueTrigger=0,score_TalkTime=0] run scoreboard players set @a[x=-1196,y=63,z=-230,dx=46,dy=20,dz=53,score_GroudonCD=0] TriggerCommand 51 {Inventory:[{id:"minecraft:golden_horse_armor"}]}
 #execute @a[score_TriggerCommand_min=51,score_TriggerCommand=51] run scoreboard players set @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,score_DialogueTrigger=0,score_TalkTime=0] DialogueTrigger 151
 
-execute as @e[scores={DialogueTrigger=151,TalkTime=1}] run clear @a[scores={TriggerCommand=51}] minecraft:golden_horse_armor
+execute as @e[scores={DialogueTrigger=151,TalkTime=1}] run clear @a[scores={TriggerCommand=51}] pixelmon:red_orb
 execute as @e[scores={DialogueTrigger=151,TalkTime=1}] run scoreboard players set @a[scores={TriggerCommand=51}] Groudon 1
 execute as @e[scores={DialogueTrigger=151,TalkTime=1}] run tellraw @a[scores={TriggerCommand=51}] {"text":"Your Orb is reacting to the Tower!"}
 execute as @e[scores={DialogueTrigger=151,TalkTime=1}] run advancement grant @s[scores={TriggerCommand=51}] only johto:event6
 execute as @e[scores={DialogueTrigger=151,TalkTime=1}] run scoreboard players set @a[scores={TriggerCommand=51}] TriggerCommand 0
 
-execute as @e[scores={DialogueTrigger=151,TalkTime=1}] run summon minecraft:item -1173 64 -230 {Item:{id:"minecraft:golden_horse_armor",Count:1},Age:-32768,PickupDelay:32767,Tags:["Despawn"]}
+execute as @e[scores={DialogueTrigger=151,TalkTime=1}] run summon minecraft:item -1173 64 -230 {Item:{id:"pixelmon:red_orb",Count:1},Age:-32768,PickupDelay:32767,Tags:["Despawn"]}
 execute as @e[scores={DialogueTrigger=151,TalkTime=1}] run playsound block.portal.trigger ambient @a[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53] ~ ~ ~ 1 1 1
 
 #Enables particles and motion
@@ -106,7 +106,7 @@ scoreboard players set @s[tag=Dialogue151] DialogueTrigger 0
 #execute @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,score_DialogueTrigger=0,score_TalkTime=0] run scoreboard players set @a[x=-1196,y=63,z=-230,dx=46,dy=20,dz=53,score_RayquazaCD=0] TriggerCommand 52 {Inventory:[{id:"minecraft:diamond_horse_armor"}]}
 #execute @a[score_TriggerCommand_min=51,score_TriggerCommand=51] run scoreboard players set @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,score_DialogueTrigger=0,score_TalkTime=0] DialogueTrigger 152
 
-execute as @e[scores={DialogueTrigger=152,TalkTime=1}] run clear @a[scores={TriggerCommand=52}] minecraft:diamond_horse_armor
+execute as @e[scores={DialogueTrigger=152,TalkTime=1}] run clear @a[scores={TriggerCommand=52}] pixelmon:jade_orb
 execute as @e[scores={DialogueTrigger=152,TalkTime=1}] run scoreboard players set @a[scores={TriggerCommand=52}] Rayquaza 1
 execute as @e[scores={DialogueTrigger=152,TalkTime=1}] run tellraw @a[scores={TriggerCommand=52}] {"text":"Your Orb is reacting to the Tower!"}
 execute as @e[scores={DialogueTrigger=152,TalkTime=1}] run scoreboard players set @a[scores={TriggerCommand=52}] TriggerCommand 0

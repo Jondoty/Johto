@@ -1238,7 +1238,7 @@ scoreboard players set @a[x=1249,y=63,z=-300,dx=9,dy=5,dz=10,tag=Dialogue226,tag
 execute at @a[x=1256,y=64,z=-296,distance=..50,scores={TalkTime=0,DogEncounter=1..},tag=Dialogue226,tag=!Dialogue227] run tp @e[x=-817,y=80,z=-171,dy=3,type=pixelmon:statue] 1256 64 -296
 
 #Dialogue228 - Cianwood City Eucine post-battle
-scoreboard players set @a[x=1256,y=64,z=-296,distance=..20,scores={TalkTime=0},tag=!Dialogue228] DialogueTrigger 228
+scoreboard players set @a[x=1256,y=64,z=-296,distance=..20,scores={TalkTime=0},tag=!Dialogue228,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 228
 execute at @a[x=1251,y=64,z=-307,distance=..20,scores={TalkTime=0},tag=Dialogue227,tag=!Dialogue228] run tp @e[x=-815,y=74,z=-226,dy=3,type=pixelmon:npc_trainer] 1251 64 -307
 
 #Dialogue229 - Mt. Mortar Suicune encounter
@@ -1287,11 +1287,11 @@ execute as @a[x=-2861,y=63,z=-100,dx=20,dy=7,dz=5,scores={Mew=0}] run scoreboard
 
 #Dialogue103
 #Whirl Islands Lugia Spawn
-scoreboard players set @a[x=1242,y=30,z=209,dx=14,dy=10,dz=8,tag=!Dialogue103,nbt={Inventory:[{id:"minecraft:prismarine_shard"}]}] DialogueTrigger 103
+scoreboard players set @a[x=1242,y=30,z=209,dx=14,dy=10,dz=8,tag=!Dialogue103,nbt={Inventory:[{id:"pixelmon:silver_wing"}]}] DialogueTrigger 103
 
 #Dialogue104
 #Tin Tower Ho-Oh Spawn
-scoreboard players set @a[x=251,y=154,z=308,dx=11,dy=5,dz=11,tag=!Dialogue104,nbt={Inventory:[{id:"minecraft:prismarine_crystals"}]}] DialogueTrigger 104
+scoreboard players set @a[x=251,y=154,z=308,dx=11,dy=5,dz=11,tag=!Dialogue104,nbt={Inventory:[{id:"pixelmon:rainbow_wing"}]}] DialogueTrigger 104
 
 #Dialogue105
 #Union Cave Friday Lapras
@@ -1319,15 +1319,15 @@ scoreboard players set @a[x=923,y=64,z=-73,distance=..10,scores={TalkTime=0,IP=1
 
 #Dialogue150
 #Embedded Tower Kyogre Spawn
-execute at @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=0,TalkTime=0}] run scoreboard players set @a[x=-1196,y=63,z=-230,dx=46,dy=20,dz=53,nbt={Inventory:[{id:"minecraft:iron_horse_armor"}]}] TriggerCommand 50
+execute at @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=0,TalkTime=0}] run scoreboard players set @a[x=-1196,y=63,z=-230,dx=46,dy=20,dz=53,nbt={Inventory:[{id:"pixelmon:blue_orb"}]}] TriggerCommand 50
 
 #Dialogue151
 #Embedded Tower Groudon Spawn
-execute at @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=0,TalkTime=0}] run scoreboard players set @a[x=-1196,y=63,z=-230,dx=46,dy=20,dz=53,nbt={Inventory:[{id:"minecraft:golden_horse_armor"}]}] TriggerCommand 51
+execute at @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=0,TalkTime=0}] run scoreboard players set @a[x=-1196,y=63,z=-230,dx=46,dy=20,dz=53,nbt={Inventory:[{id:"pixelmon:red_orb"}]}] TriggerCommand 51
 
 #Dialogue152
 #Embedded Tower Rayquaza Tower
-execute at @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=0,TalkTime=0}] run scoreboard players set @a[x=-1196,y=63,z=-230,dx=46,dy=20,dz=53,nbt={Inventory:[{id:"minecraft:diamond_horse_armor"}]}] TriggerCommand 52
+execute at @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=0,TalkTime=0}] run scoreboard players set @a[x=-1196,y=63,z=-230,dx=46,dy=20,dz=53,nbt={Inventory:[{id:"pixelmon:jade_orb"}]}] TriggerCommand 52
 
 #Removes tags if found on armor stands
 tag @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,tag=Dialogue150] remove Dialogue150
@@ -1742,9 +1742,9 @@ execute if block -1288 73 675 minecraft:quartz_pillar if entity @a[x=-1287,y=73,
 #Lance
 execute if block -1288 78 750 minecraft:air if entity @a[x=-1293,y=77,z=738,distance=..15] run clone -730 64 -328 -726 68 -328 -1290 78 750
 
-execute if block -1288 78 750 minecraft:air if entity @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95] run playsound minecraft:entity.iron_golem.death ambient @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95,scores={Cooldown=0}] ~ ~ ~ 1 1 1
-execute if block -1288 78 750 minecraft:air if entity @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95] run scoreboard players set @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95,scores={Cooldown=0}] Cooldown 10
-execute if block -1288 78 750 minecraft:air if entity @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95] run fill -1290 78 750 -1286 82 750 air
+execute if block -1290 78 750 minecraft:quartz_pillar if entity @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95] run playsound minecraft:entity.iron_golem.death ambient @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95,scores={Cooldown=0}] ~ ~ ~ 1 1 1
+execute if block -1290 78 750 minecraft:quartz_pillar if entity @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95] run scoreboard players set @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95,scores={Cooldown=0}] Cooldown 10
+execute if block -1290 78 750 minecraft:quartz_pillar if entity @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95] run fill -1290 78 750 -1286 82 750 air
 
 
 
@@ -1781,9 +1781,9 @@ execute if block -1341 73 675 minecraft:quartz_pillar if entity @a[x=-1342,y=73,
 #Lance
 execute if block -1341 78 750 minecraft:air if entity @a[x=-1341,y=78,z=750,distance=..15] run clone -730 64 -328 -726 68 -328 -1343 78 750
 
-execute if block -1341 78 750 minecraft:air if entity @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95] run playsound minecraft:entity.iron_golem.death ambient @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95,scores={Cooldown=0}] ~ ~ ~ 1 1 1
-execute if block -1341 78 750 minecraft:air if entity @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95] run scoreboard players set @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95,scores={Cooldown=0}] Cooldown 10
-execute if block -1341 78 750 minecraft:air if entity @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95] run fill -1343 78 750 -1339 82 750 air
+execute if block -1341 78 750 minecraft:quartz_pillar if entity @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95] run playsound minecraft:entity.iron_golem.death ambient @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95,scores={Cooldown=0}] ~ ~ ~ 1 1 1
+execute if block -1341 78 750 minecraft:quartz_pillar if entity @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95] run scoreboard players set @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95,scores={Cooldown=0}] Cooldown 10
+execute if block -1341 78 750 minecraft:quartz_pillar if entity @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95] run fill -1343 78 750 -1339 82 750 air
 
 
 
