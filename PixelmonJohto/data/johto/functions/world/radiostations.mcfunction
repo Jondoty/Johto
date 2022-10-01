@@ -52,6 +52,12 @@ execute as @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={RadioSelect=1}] run 
 execute as @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={RadioSelect=1}] run scoreboard players set @s[scores={MusicCooldown=0}] MusicCooldown 39
 
 
+#Use slot for Oak and Mary's radio station?
+#Swarms are post-game
+#Mary: We're reaching out to all you Pokémon fans out there! Here is the leading expert on Pokémon, Professor Oak, and of course myself, Mary!
+#Mary: This is breaking news! A bunch of {Pokemon} have decided to make an appearance at {Location}! If you're a Trainer who's really wanted to find {Pokemon}, hurry over to {Location}! That's the end of the breaking news!
+
+
 
 #Slot 2 - World Music
 
