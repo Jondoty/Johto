@@ -12,6 +12,18 @@
 #execute if block -1634 64 20 minecraft:air run execute as @p[x=-1634,y=64,z=20,distance=50..250] run clone -752 75 -242 -752 76 -242 -1634 64 20
 
 
+#Route 29
+execute if block -488 64 -523 minecraft:air run execute as @p[x=-488,y=64,z=-523,distance=50..250] run clone -752 75 -242 -752 76 -242 -488 64 -523
+execute if block -489 64 -522 minecraft:air run execute as @p[x=-489,y=64,z=-522,distance=50..250] run clone -752 75 -242 -752 76 -242 -489 64 -522
+execute if block -490 64 -523 minecraft:air run execute as @p[x=-490,y=64,z=-523,distance=50..250] run clone -752 75 -242 -752 76 -242 -490 64 -523
+execute if block -491 64 -522 minecraft:air run execute as @p[x=-491,y=64,z=-522,distance=50..250] run clone -752 75 -242 -752 76 -242 -491 64 -522
+
+execute if block -436 64 -536 minecraft:air run execute as @p[x=-436,y=64,z=-536,distance=50..250] run clone -752 75 -242 -752 76 -242 -436 64 -536
+execute if block -435 64 -535 minecraft:air run execute as @p[x=-435,y=64,z=-535,distance=50..250] run clone -752 75 -242 -752 76 -242 -435 64 -535
+execute if block -436 64 -534 minecraft:air run execute as @p[x=-436,y=64,z=-534,distance=50..250] run clone -752 75 -242 -752 76 -242 -436 64 -534
+execute if block -435 64 -533 minecraft:air run execute as @p[x=-435,y=64,z=-533,distance=50..250] run clone -752 75 -242 -752 76 -242 -435 64 -533
+
+
 #Viridian City
 execute if block -1629 64 19 minecraft:air run execute as @p[x=-1629,y=64,z=19,distance=50..250] run clone -752 75 -242 -752 76 -242 -1629 64 19
 execute if block -1630 64 20 minecraft:air run execute as @p[x=-1630,y=64,z=20,distance=50..250] run clone -752 75 -242 -752 76 -242 -1630 64 20
