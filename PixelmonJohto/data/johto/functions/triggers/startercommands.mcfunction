@@ -276,6 +276,7 @@ tag @s remove OakWelcome
 tag @s remove TMCase
 tag @s remove PoliceTalk
 tag @s remove BadgeCaseTip
+tag @s remove ItemFinderTip
 
 recipe give @s *
 

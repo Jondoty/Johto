@@ -1724,7 +1724,7 @@ tellraw @s[scores={DialogueTrigger=72,TalkTime=18}] {"text":"<Archer> Like Giova
 
 #tps player to non-taken over Radio Tower, tps in real Director
 execute as @s[scores={DialogueTrigger=72,TalkTime=28}] run effect give @s minecraft:blindness 5 1 true
-execute as @s[scores={DialogueTrigger=72,TalkTime=28}] run tp @s ~ ~ ~-26
+execute as @s[scores={DialogueTrigger=72,TalkTime=28}] at @s run tp @s ~ ~ ~-26
 execute as @s[scores={DialogueTrigger=72,TalkTime=28}] run tp @e[x=-781,y=92,z=-242,dy=3,type=pixelmon:npc_chatting] 503 55 -271
 
 tellraw @s[scores={DialogueTrigger=72,TalkTime=35}] ["",{"text":"<Director> "},{"selector":"@s"},{"text":", thank you!"}]
@@ -2869,11 +2869,11 @@ tag @s[scores={DialogueTrigger=136,TalkTime=106..}] add Dialogue136
 tellraw @s[scores={DialogueTrigger=137,TalkTime=1}] {"text":"<Steven> Hello... You're breaking up... I think it depends on how my dad feels..."}
 tellraw @s[scores={DialogueTrigger=137,TalkTime=11}] {"text":"<Steven> I see... I'll be on my way. See you soon."}
 
-execute as @s[scores={DialogueTrigger=137,TalkTime=17}] run execute at @e[x=-2769,y=63,z=322,dx=41,dy=4,dz=32,type=pixelmon:npc_chatting,name=Steven] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,CustomName:'{"text":"!"}',CustomNameVisible:1b}
+execute as @s[scores={DialogueTrigger=137,TalkTime=17}] run execute at @e[x=-2769,y=63,z=322,dx=41,dy=4,dz=32,type=pixelmon:npc_chatting,name=Steven] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,CustomName:'{"text":"!"}',CustomNameVisible:1b}
 
 tellraw @s[scores={DialogueTrigger=137,TalkTime=20}] {"text":"<Steven> You are... I remember your eyes."}
 
-execute as @s[scores={DialogueTrigger=137,TalkTime=22}] run execute at @e[x=-2769,y=63,z=322,dx=41,dy=4,dz=32,type=pixelmon:npc_chatting,name=Steven] run kill @e[distance=..2,type=armor_stand,name=!]
+execute as @s[scores={DialogueTrigger=137,TalkTime=22}] run execute at @e[x=-2769,y=63,z=322,dx=41,dy=4,dz=32,type=pixelmon:npc_chatting,name=Steven] run kill @e[distance=..2,type=armor_stand]
 
 tellraw @s[scores={DialogueTrigger=137,TalkTime=27}] {"text":"<Steven> When I see a Trainer whose eyes twinkle, I always remember."}
 tellraw @s[scores={DialogueTrigger=137,TalkTime=36}] {"text":"<Steven> You have a Pokédex! So you are also in search of Pokémon. Let me see..."}
@@ -3341,8 +3341,8 @@ tellraw @s[scores={DialogueTrigger=163,TalkTime=135}] ["",{"text":"<"},{"text":"
 tellraw @s[scores={DialogueTrigger=163,TalkTime=147}] ["",{"text":"<"},{"text":"Silver","color":"red"},{"text":"> I will become strong! I will become a stronger man all by myself!"}]
 tellraw @s[scores={DialogueTrigger=163,TalkTime=156}] ["",{"text":"<"},{"text":"Silver","color":"red"},{"text":"> "},{"text":"All by myself!","bold":true}]
 
-execute as @s[scores={DialogueTrigger=163,TalkTime=161}] run execute at @e[x=278,y=63,z=726,dy=3,type=pixelmon:npc_chatting,name=Silver] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,CustomName:"!",CustomNameVisible:1b}
-execute as @s[scores={DialogueTrigger=163,TalkTime=164}] run execute at @e[x=278,y=63,z=726,dy=3,type=pixelmon:npc_chatting,name=Silver] run kill @e[distance=..2,type=armor_stand,name=!]
+execute as @s[scores={DialogueTrigger=163,TalkTime=161}] run execute at @e[x=278,y=63,z=726,dy=3,type=pixelmon:npc_chatting,name=Silver] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,CustomName:'{"text":"!"}',CustomNameVisible:1b}
+execute as @s[scores={DialogueTrigger=163,TalkTime=164}] run execute at @e[x=278,y=63,z=726,dy=3,type=pixelmon:npc_chatting,name=Silver] run kill @e[distance=..2,type=armor_stand]
 tellraw @s[scores={DialogueTrigger=163,TalkTime=164}] ["",{"text":"<"},{"text":"Silver","color":"red"},{"text":"> \u0020...What are you staring at?"}]
 
 #tps Silver out
@@ -4813,8 +4813,8 @@ execute as @s[scores={DialogueTrigger=217,TalkTime=1}] run tp @e[x=-815,y=74,z=-
 tellraw @s[scores={DialogueTrigger=217,TalkTime=3}] {"text":"<Rocket Grunt> I very busy. No time for talking with you. Not good for me if seen by somebody."}
 
 #Summon exclamation
-execute as @s[scores={DialogueTrigger=217,TalkTime=10}] run execute at @e[x=-1185,y=64,z=743,dy=3,type=pixelmon:npc_chatting] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,CustomName:"!",CustomNameVisible:1b}
-execute as @s[scores={DialogueTrigger=217,TalkTime=12}] run execute at @e[x=-1185,y=64,z=743,dy=3,type=pixelmon:npc_chatting] run kill @e[distance=..2,type=armor_stand,name=!]
+execute as @s[scores={DialogueTrigger=217,TalkTime=10}] run execute at @e[x=-1185,y=64,z=743,dy=3,type=pixelmon:npc_chatting] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,CustomName:'{"text":"!"}',CustomNameVisible:1b}
+execute as @s[scores={DialogueTrigger=217,TalkTime=12}] run execute at @e[x=-1185,y=64,z=743,dy=3,type=pixelmon:npc_chatting] run kill @e[distance=..2,type=armor_stand]
 
 tellraw @s[scores={DialogueTrigger=217,TalkTime=12}] {"text":"<Rocket Grunt> Oh no! You seen me already! I make big mistake!"}
 tellraw @s[scores={DialogueTrigger=217,TalkTime=20}] {"text":"<Rocket Grunt> Hey, you! Forget you see me, OK?"}
@@ -4944,25 +4944,25 @@ tellraw @s[scores={DialogueTrigger=225,TalkTime=7}] {"text":"<DJ Buena> You did 
 
 #Rolls RNG Score
 execute as @s[scores={DialogueTrigger=225,TalkTime=12}] run scoreboard players set @e[x=-864,y=69,z=-202,dy=4,dz=2,limit=1] rng 0
-execute as @s[scores={DialogueTrigger=225,TalkTime=12}] run scoreboard players add @r[x=-864,y=69,z=-202,dy=4,dz=2,limit=1] rng 1
-execute as @s[scores={DialogueTrigger=225,TalkTime=12}] run scoreboard players add @r[x=-864,y=69,z=-202,dy=4,dz=2,limit=1] rng 2
-execute as @s[scores={DialogueTrigger=225,TalkTime=12}] run scoreboard players add @r[x=-864,y=69,z=-202,dy=4,dz=2,limit=1] rng 4
-execute as @s[scores={DialogueTrigger=225,TalkTime=12}] run scoreboard players add @r[x=-864,y=69,z=-202,dy=4,dz=2,limit=1] rng 8
-execute as @s[scores={DialogueTrigger=225,TalkTime=12}] run scoreboard players add @r[x=-864,y=69,z=-202,dy=4,dz=2,limit=1] rng 16
-execute as @s[scores={DialogueTrigger=225,TalkTime=12}] run scoreboard players add @r[x=-864,y=69,z=-202,dy=4,dz=2,limit=1] rng 32
-execute as @s[scores={DialogueTrigger=225,TalkTime=12}] run scoreboard players add @r[x=-864,y=69,z=-202,dy=4,dz=2,limit=1] rng 64
+execute as @s[scores={DialogueTrigger=225,TalkTime=12}] run scoreboard players add @e[x=-864,y=69,z=-202,dy=4,dz=2,sort=random,limit=1] rng 1
+execute as @s[scores={DialogueTrigger=225,TalkTime=12}] run scoreboard players add @e[x=-864,y=69,z=-202,dy=4,dz=2,sort=random,limit=1] rng 2
+execute as @s[scores={DialogueTrigger=225,TalkTime=12}] run scoreboard players add @e[x=-864,y=69,z=-202,dy=4,dz=2,sort=random,limit=1] rng 4
+execute as @s[scores={DialogueTrigger=225,TalkTime=12}] run scoreboard players add @e[x=-864,y=69,z=-202,dy=4,dz=2,sort=random,limit=1] rng 8
+execute as @s[scores={DialogueTrigger=225,TalkTime=12}] run scoreboard players add @e[x=-864,y=69,z=-202,dy=4,dz=2,sort=random,limit=1] rng 16
+execute as @s[scores={DialogueTrigger=225,TalkTime=12}] run scoreboard players add @e[x=-864,y=69,z=-202,dy=4,dz=2,sort=random,limit=1] rng 32
+execute as @s[scores={DialogueTrigger=225,TalkTime=12}] run scoreboard players add @e[x=-864,y=69,z=-202,dy=4,dz=2,sort=random,limit=1] rng 64
 
 execute as @s[scores={DialogueTrigger=225,TalkTime=12}] run scoreboard players operation @a[scores={DialogueTrigger=225,TalkTime=12}] rng = @e[x=-864,y=69,z=-200,dy=3] rng
 
 #Gives prize:
-#execute as @s[scores={DialogueTrigger=225,TalkTime=13,rng=0..15}] run give @s pixelmon:poke_ball
-#execute as @s[scores={DialogueTrigger=225,TalkTime=13,rng=16..31}] run give @s pixelmon:full_restore
-#execute as @s[scores={DialogueTrigger=225,TalkTime=13,rng=32..47}] run give @s pixelmon:protein
-#execute as @s[scores={DialogueTrigger=225,TalkTime=13,rng=48..63}] run give @s pixelmon:iron
-#execute as @s[scores={DialogueTrigger=225,TalkTime=13,rng=64..79}] run give @s pixelmon:carbos
-#execute as @s[scores={DialogueTrigger=225,TalkTime=13,rng=80..95}] run give @s pixelmon:nugget
-#execute as @s[scores={DialogueTrigger=225,TalkTime=13,rng=96..111}] run give @s pixelmon:rare_candy
-#execute as @s[scores={DialogueTrigger=225,TalkTime=13,rng=112..127}] run give @s pixelmon:hp_up
+execute as @s[scores={DialogueTrigger=225,TalkTime=13,rng=0..15}] run give @s pixelmon:poke_ball
+execute as @s[scores={DialogueTrigger=225,TalkTime=13,rng=16..31}] run give @s pixelmon:full_restore
+execute as @s[scores={DialogueTrigger=225,TalkTime=13,rng=32..47}] run give @s pixelmon:protein
+execute as @s[scores={DialogueTrigger=225,TalkTime=13,rng=48..63}] run give @s pixelmon:iron
+execute as @s[scores={DialogueTrigger=225,TalkTime=13,rng=64..79}] run give @s pixelmon:carbos
+execute as @s[scores={DialogueTrigger=225,TalkTime=13,rng=80..95}] run give @s pixelmon:nugget
+execute as @s[scores={DialogueTrigger=225,TalkTime=13,rng=96..111}] run give @s pixelmon:rare_candy
+execute as @s[scores={DialogueTrigger=225,TalkTime=13,rng=112..127}] run give @s pixelmon:hp_up
 
 tellraw @s[scores={DialogueTrigger=225,TalkTime=13}] {"text":"<DJ Buena> Here's a prize! Congrats!"}
 
