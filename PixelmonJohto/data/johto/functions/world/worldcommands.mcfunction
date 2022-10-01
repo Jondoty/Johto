@@ -134,6 +134,16 @@ execute at @a[x=870,y=63,z=-280,dx=281,dy=10,dz=182] run particle minecraft:swee
 execute at @a[x=837,y=63,z=-97,dx=147,dy=10,dz=81] run particle minecraft:sweep_attack ~ ~50 ~ 100 25 100 1 10 force
 execute at @a[x=870,y=63,z=-480,dx=281,dy=10,dz=199] run particle minecraft:sweep_attack ~ ~50 ~ 100 25 100 1 10 force
 
+#---------------------
+#Should any Apricorns get stuck on the top of a tree
+#TEST
+execute at @a as @e[distance=..15,type=item,nbt={Item:{id:"pixelmon:white_apricorn",Count:1b}}] if block ~ ~-1 ~ pixelmon:apricorn_leaves_white run tp @s ~ ~ ~-1
+execute at @a as @e[distance=..15,type=item,nbt={Item:{id:"pixelmon:green_apricorn",Count:1b}}] if block ~ ~-1 ~ pixelmon:apricorn_leaves_green run tp @s ~ ~ ~-1
+execute at @a as @e[distance=..15,type=item,nbt={Item:{id:"pixelmon:black_apricorn",Count:1b}}] if block ~ ~-1 ~ pixelmon:apricorn_leaves_black run tp @s ~ ~ ~-1
+execute at @a as @e[distance=..15,type=item,nbt={Item:{id:"pixelmon:red_apricorn",Count:1b}}] if block ~ ~-1 ~ pixelmon:apricorn_leaves_red run tp @s ~ ~ ~-1
+execute at @a as @e[distance=..15,type=item,nbt={Item:{id:"pixelmon:pink_apricorn",Count:1b}}] if block ~ ~-1 ~ pixelmon:apricorn_leaves_pink run tp @s ~ ~ ~-1
+execute at @a as @e[distance=..15,type=item,nbt={Item:{id:"pixelmon:blueapricorn",Count:1b}}] if block ~ ~-1 ~ pixelmon:apricorn_leaves_blue run tp @s ~ ~ ~-1
+execute at @a as @e[distance=..15,type=item,nbt={Item:{id:"pixelmon:yellow_apricorn",Count:1b}}] if block ~ ~-1 ~ pixelmon:apricorn_leaves_yellow run tp @s ~ ~ ~-1
 
 
 
@@ -361,6 +371,10 @@ scoreboard players set @a[scores={TalkTime=0},nbt={Inventory:[{id:"minecraft:egg
 #Badge Case info tip
 tellraw @a[tag=!BadgeCaseTip,nbt={SelectedItem:{id:"pixelmon:blackbadgecase"}}] {"text":"Tip: Register your badge case to store badges in! Right click me and click the \"Register\" at the top!","italic":true,"color":"gray"}
 tag @a[nbt={SelectedItem:{id:"pixelmon:blackbadgecase"}}] add BadgeCaseTip
+
+#Item Finder Tip
+tellraw @a[tag=!ItemFinderTip,nbt={SelectedItem:{id:"pixelmon:item_finder"}}] {"text":"Your XP bar can detect if an item is nearby while you select the Item Finder. The more XP, the closer the item. It will ping when an item is within reach!","italic":true,"color":"gray"}
+tag @a[nbt={SelectedItem:{id:"pixelmon:item_finder"}}] add ItemFinderTip
 
 
 #-------------------------------------------------------------------------------------------------------------------------
