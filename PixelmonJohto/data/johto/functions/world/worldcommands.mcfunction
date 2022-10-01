@@ -731,7 +731,7 @@ scoreboard players set @a[x=-169,y=65,z=645,distance=..30,scores={TalkTime=0},ta
 execute at @a[x=-169,y=65,z=645,distance=..100,tag=!Dialogue49,scores={TalkTime=0}] run tp @e[x=-765,y=66,z=-244,distance=..3,type=pixelmon:statue] -167 62 632
 
 #Dialogue50 - Mr. Pokemon Red Scale trade prompt
-scoreboard players set @a[x=-255,y=63,z=-198,dx=20,dy=5,dz=8,scores={DialogueTrigger=0},tag=!Dialogue50,nbt={Inventory:[{id:"minecraft:music_disc_cat"}]}] DialogueTrigger 50
+scoreboard players set @a[x=-255,y=63,z=-198,dx=20,dy=5,dz=8,scores={DialogueTrigger=0},tag=!Dialogue50,nbt={Inventory:[{id:"pixelmon:red_scale"}]}] DialogueTrigger 50
 
 #Dialogue51 - Lake of Rage Lance starting Rocket Quest
 scoreboard players set @a[x=-159,y=63,z=590,distance=..5,tag=Dialogue49,tag=!Dialogue51] DialogueTrigger 51
@@ -1622,8 +1622,9 @@ scoreboard players set @a[x=-2423,y=64,z=-660,dx=50,dy=20,dz=20,tag=!Blaine] Coo
 execute at @a[x=-2423,y=64,z=-660,dx=50,dy=20,dz=20,tag=!Blaine] run tp @a[x=-2423,y=64,z=-660,dx=50,dy=20,dz=20,tag=!Blaine] ~ ~ ~10
 
 #Dark Cave opne after Pryce
-tellraw @a[x=-298,y=63,z=-7,dx=4,dy=4,dz=7,tag=!Pryce] ["",{"text":"You need more badges!","color":"white","italic":true}]
-execute at @a[x=-298,y=63,z=-7,dx=4,dy=4,dz=7,tag=!Pryce] run tp @a[x=-298,y=63,z=-7,dx=4,dy=4,dz=7,tag=!Pryce] ~ ~ ~-10
+tellraw @a[x=-290,y=59,z=-68,dx=20,dy=4,dz=55,tag=!Dialogue33] {"text":"This area requires Surf to access!","italic":true,"color":"gray"}
+execute at @a[x=-290,y=59,z=-68,dx=20,dy=4,dz=55,tag=!Dialogue33] run tp @a[x=-290,y=59,z=-68,dx=20,dy=4,dz=55,tag=!Dialogue33] -266 64 -26
+
 
 #Tohjo Falls
 tellraw @a[x=-914,y=63,z=-503,dx=5,dy=3,dz=4,tag=!Clair] ["",{"text":"You need more badges!","color":"white","italic":true}]

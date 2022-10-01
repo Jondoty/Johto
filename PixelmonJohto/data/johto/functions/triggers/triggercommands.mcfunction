@@ -245,7 +245,7 @@ scoreboard players set @a[scores={TriggerCommand=44}] TriggerCommand 0
 
 
 #47 Mr. Pokémon exchanging a red scale for EXP Share
-execute as @a[scores={TriggerCommand=47}] run clear @s minecraft:music_disc_cat
+execute as @a[scores={TriggerCommand=47}] run clear @s pixelmon:red_scale
 execute as @a[scores={TriggerCommand=47}] run give @s pixelmon:exp_share
 execute as @a[scores={TriggerCommand=47}] run tellraw @s {"text":"<Mr. Pokémon> Life is delightful! Always, new discoveries to be made!"}
 scoreboard players set @a[scores={TriggerCommand=47}] TriggerCommand 0
