@@ -781,7 +781,8 @@ tellraw @s[scores={DialogueTrigger=30,TalkTime=15}] {"text":"The weird tree does
 tellraw @s[scores={DialogueTrigger=30,TalkTime=23}] {"text":"The weird tree attacked!","italic":true,"color":"gray"}
 execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run execute at @e[x=331,y=63,z=-18,dx=3,dy=3,dz=3,type=pixelmon:statue] run particle cloud ~ ~ ~ 1 1 1 1 100
 execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run tp @e[x=331,y=63,z=-18,dx=3,dy=3,dz=3,type=pixelmon:statue] -791 80 -244
-execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run pokebattle @s Sudowoodo,lvl:20,gr:7
+#execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run pokebattle @s Sudowoodo,lvl:20,gr:7
+execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run pokebattle @s Sudowoodo
 execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run scoreboard players set @s Sw 1
 execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run advancement grant @s only johto:weirdtree
 execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run playsound pixelmon:pixelmon.mob.sudowoodo hostile @s ~ ~ ~ 100 1 1
@@ -1211,7 +1212,7 @@ execute at @s[scores={DialogueTrigger=49,TalkTime=1}] run tp @e[type=pixelmon:st
 #execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run pokebattle @s Gyarados,s,lvl:30,gr:7
 execute at @s[scores={DialogueTrigger=49,TalkTime=1}] run pokespawn Gyarados growth:7 shiny lvl:30
 execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run playsound gyarados hostile @s ~ ~ ~ 1 1 1
-execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run give @s music_disc_cat{display:{Name:'[{"text":"Red Scale","italic":false,"color":"dark_red"}]',Lore:['[{"text":"A scale from the red Gyarados.","italic":false}]','[{"text":"It glows red like a flame.","italic":false}]']},HideFlags:2} 1
+execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run give @s pixelmon:red_scale{display:{Name:'[{"text":"Red Scale","italic":false,"color":"dark_red"}]',Lore:['[{"text":"A scale from the red Gyarados.","italic":false}]']}} 1
 execute as @s[scores={DialogueTrigger=49,TalkTime=2}] run playsound shiny hostile @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=49,TalkTime=2}] run advancement grant @s only johto:rocket2
 
