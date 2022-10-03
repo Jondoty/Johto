@@ -197,7 +197,7 @@ scoreboard players set @s[scores={DialogueTrigger=196},tag=Dialogue196] Dialogue
 scoreboard players set @s[scores={DialogueTrigger=197},tag=Dialogue197] DialogueTrigger 0
 scoreboard players set @s[scores={DialogueTrigger=198},tag=Dialogue198] DialogueTrigger 0
 scoreboard players set @s[scores={DialogueTrigger=199},tag=Dialogue199] DialogueTrigger 0
-scoreboard players set @s[scores={DialogueTrigger=200},tag=Dialogue200] DialogueTrigger 0
+#Odd Egg, repeatable
 scoreboard players set @s[scores={DialogueTrigger=201},tag=Dialogue201] DialogueTrigger 0
 scoreboard players set @s[scores={DialogueTrigger=202},tag=Dialogue202] DialogueTrigger 0
 scoreboard players set @s[scores={DialogueTrigger=203},tag=Dialogue203] DialogueTrigger 0
