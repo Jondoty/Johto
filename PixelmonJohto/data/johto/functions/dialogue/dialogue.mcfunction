@@ -1620,7 +1620,7 @@ execute as @s[scores={DialogueTrigger=66,TalkTime=1}] run clear @s minecraft:net
 tellraw @s[scores={DialogueTrigger=66,TalkTime=1}] {"text":"<Rocket Executive> OK, OK. I'll tell you where he is."}
 tellraw @s[scores={DialogueTrigger=66,TalkTime=8}] {"text":"<Rocket Executive> We stashed the real Director in the Underground Warehouse"}
 tellraw @s[scores={DialogueTrigger=66,TalkTime=17}] {"text":"<Rocket Executive> It's at the far end of the Underground. But I'll doubt you'll get that far."}
-execute as @s[scores={DialogueTrigger=66,TalkTime=17}] run give @s minecraft:music_disc_far{display:{Name:"Basement Key",Lore:["A key that opens a door in","the Goldenrod Tunnel"]},HideFlags:36}
+execute as @s[scores={DialogueTrigger=66,TalkTime=17}] run give @s pixelmon:basement_key_silver{display:{Lore:['[{"text":"A key that opens a door in","italic":false}]','[{"text":"the Goldenrod Tunnel","italic":false}]']}} 1
 execute as @s[scores={DialogueTrigger=66,TalkTime=17}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tag @s[scores={DialogueTrigger=66,TalkTime=33..}] add Dialogue66
@@ -1677,7 +1677,7 @@ tellraw @s[scores={DialogueTrigger=69,TalkTime=9}] {"text":"<Director> Thank you
 tellraw @s[scores={DialogueTrigger=69,TalkTime=14}] {"text":"<Director> The Radio Tower! What's happening there?"}
 tellraw @s[scores={DialogueTrigger=69,TalkTime=22}] {"text":"<Director> Taken over by Team Rocket?"}
 tellraw @s[scores={DialogueTrigger=69,TalkTime=29}] {"text":"<Director> Here. Take this Card Key."}
-execute as @s[scores={DialogueTrigger=69,TalkTime=32}] run give @s minecraft:music_disc_stal{display:{Name:"Card Key",Lore:["A card key that opens a shutter","in the Radio Tower."]},HideFlags:36}
+execute as @s[scores={DialogueTrigger=69,TalkTime=32}] run give @s pixelmon:card_key_orange{display:{Lore:['[{"text":"A card key that opens a shutter","italic":false}]','[{"text":"in the Radio Tower.","italic":false}]']}} 1
 execute as @s[scores={DialogueTrigger=69,TalkTime=32}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=69,TalkTime=37}] {"text":"<Director> Use that to open the shutters on 3F"}
 tellraw @s[scores={DialogueTrigger=69,TalkTime=44}] {"text":"<Director> I'm beging you to help."}
@@ -2709,6 +2709,7 @@ execute as @s[scores={DialogueTrigger=129,TalkTime=12}] run effect give @s minec
 execute as @s[scores={DialogueTrigger=129,TalkTime=15}] run tag @s add Red
 execute as @s[scores={DialogueTrigger=129,TalkTime=15}] run advancement grant @s only johto:event7
 execute as @s[scores={DialogueTrigger=129,TalkTime=15}] run scoreboard players set @s click 1
+execute as @s[scores={DialogueTrigger=129,TalkTime=15}] run tp @e[x=-944,y=182,z=285,dy=3,type=pixelmon:npc_trainer,name=Red] -711 86 -242
 
 tag @s[scores={DialogueTrigger=129,TalkTime=15..}] add Dialogue129
 
