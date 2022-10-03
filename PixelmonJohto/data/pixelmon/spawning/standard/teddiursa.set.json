@@ -14,7 +14,7 @@
         "minX": -650, "maxX": -535, "minZ": -298, "maxZ": 95,
         "neededNearbyBlocks": ["minecraft:grass"]
       },
-      "rarity": 0.0
+      "rarity": 10.0
     },
 
 
