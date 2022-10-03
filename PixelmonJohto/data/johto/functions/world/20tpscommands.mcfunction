@@ -97,4 +97,16 @@ execute if entity @a[scores={DialogueTrigger=104,TalkTime=1..13}] run particle m
 execute if entity @a[scores={DialogueTrigger=104,TalkTime=1..13}] run particle minecraft:dust 0 0 1 1 251 154 308 10 10 10 1 33
 
 
+
+#Cycling Road Blocks
+#Celadon Side
+execute as @a[x=-2091,y=63,z=320,dx=4,dy=5,dz=7,tag=!Bicycle] at @s run tellraw @s {"text":"Bicycles are required to ride on the Cycling Road!","italic":true}
+execute as @a[x=-2091,y=63,z=320,dx=4,dy=5,dz=7,tag=!Bicycle] at @s run tp @s ~-5 ~ ~
+
+#Fuchsia Side
+execute as @a[x=-2192,y=63,z=-541,dx=4,dy=5,dz=4,tag=!Bicycle] at @s run tellraw @s {"text":"Bicycles are required to ride on the Cycling Road!","italic":true}
+execute as @a[x=-2192,y=63,z=-541,dx=4,dy=5,dz=4,tag=!Bicycle] at @s run tp @s ~-5 ~ ~
+
+
+
 #
