@@ -16,6 +16,8 @@ execute at @a run tag @e[distance=..10,type=item,nbt={Item:{id:"pixelmon:tree"}}
 execute at @a run tag @e[distance=..10,type=item,nbt={Item:{id:"minecraft:oak_sapling"}}] add Despawn
 execute at @a run tag @e[distance=..10,type=item,nbt={Item:{id:"minecraft:spruce_sapling"}}] add Despawn
 
+execute at @a as @e[distance=..10,type=item,nbt={Item:{id:"pixelmon:tree"}}] run playsound minecraft:cut ambient @a[distance=..5] ~ ~ ~ 1 1 1
+
 execute at @a run execute as @e[tag=Despawn,distance=..10] run data merge entity @s {Lifespan:0,Age:0s}
 
 #---------------------
