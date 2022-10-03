@@ -243,8 +243,8 @@ title @s[x=87,y=50,z=719,dx=44,dy=20,dz=44,scores={MusicTitles=18..199}] actionb
 #title @s[x=-2513,y=0,z=-642,dx=225,dy=240,dz=187,scores={MusicTitles=17..199}] actionbar {"text":"Fuchsia City"}
 title @s[x=1169,y=252,z=619,distance=..40,scores={MusicTitles=1..14}] actionbar {"text":"Fly Map"}
 title @s[x=1169,y=252,z=619,distance=..40,scores={MusicTitles=16..199}] actionbar {"text":"Fly Map"}
-title @s[x=-1366,y=0,z=372,dx=110,dy=240,dz=302,scores={MusicTitles=1..13}] actionbar {"text":"Elite Four"}
-title @s[x=-1366,y=0,z=372,dx=110,dy=240,dz=302,scores={MusicTitles=15..199}] actionbar {"text":"Elite Four"}
+title @s[x=-1366,y=63,z=372,dx=110,dy=240,dz=302,scores={MusicTitles=1..13}] actionbar {"text":"Elite Four"}
+title @s[x=-1366,y=63,z=372,dx=110,dy=240,dz=302,scores={MusicTitles=15..199}] actionbar {"text":"Elite Four"}
 title @s[x=-1366,y=63,z=676,dx=110,dy=240,dz=74,scores={MusicTitles=1..13}] actionbar {"text":"Elite Four"}
 title @s[x=-1366,y=63,z=676,dx=110,dy=240,dz=74,scores={MusicTitles=15..199}] actionbar {"text":"Elite Four"}
 #title @s[x=236,y=0,z=164,dx=262,dy=100,dz=204,scores={MusicTitles=1..12}] actionbar {"text":"Ecruteak City"}
@@ -269,8 +269,8 @@ title @s[x=-2659,y=0,z=828,dx=124,dy=240,dz=68,scores={MusicTitles=1..4}] action
 title @s[x=-2659,y=0,z=828,dx=124,dy=240,dz=68,scores={MusicTitles=6..199}] actionbar {"text":"Cerulean Cave"}
 #title @s[x=-2501,y=0,z=236,dx=278,dy=240,dz=199,scores={MusicTitles=1..3}] actionbar {"text":"Celadon City"}
 #title @s[x=-2501,y=0,z=236,dx=278,dy=240,dz=199,scores={MusicTitles=5..199}] actionbar {"text":"Celadon City"}
-#title @s[x=-775,y=0,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=1..2}] actionbar {"text":"Blackthorn City"}
-#title @s[x=-775,y=0,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=4..199}] actionbar {"text":"Blackthorn City"}
+#title @s[x=-775,y=59,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=1..2}] actionbar {"text":"Blackthorn City"}
+#title @s[x=-775,y=59,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=4..199}] actionbar {"text":"Blackthorn City"}
 title @s[x=858,y=60,z=-15,dx=102,dy=10,dz=143,scores={MusicTitles=1..1}] actionbar {"text":"Battle Tower"}
 title @s[x=858,y=60,z=-15,dx=102,dy=10,dz=143,scores={MusicTitles=3..199}] actionbar {"text":"Battle Tower"}
 title @s[x=858,y=75,z=-15,dx=102,dy=100,dz=143,scores={MusicTitles=1..1}] actionbar {"text":"Battle Tower"}
@@ -394,10 +394,10 @@ execute as @s[x=-214,y=64,z=125,dx=117,dy=240,dz=119,scores={MusicTitles=1..25}]
 
 
 #Blackthorn City
-execute as @s[x=-775,y=0,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=4..199}] run title @s title {"text":"Blackthorn City","color":"dark_gray"}
-execute as @s[x=-775,y=0,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=4..199}] run title @s subtitle {"text":"A Quiet Mountain Retreat","italic":true}
-execute as @s[x=-775,y=0,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=1..1}] run title @s title {"text":"Blackthorn City","color":"dark_gray"}
-execute as @s[x=-775,y=0,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=1..1}] run title @s subtitle {"text":"A Quiet Mountain Retreat","italic":true}
+execute as @s[x=-775,y=59,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=4..199}] run title @s title {"text":"Blackthorn City","color":"dark_gray"}
+execute as @s[x=-775,y=59,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=4..199}] run title @s subtitle {"text":"A Quiet Mountain Retreat","italic":true}
+execute as @s[x=-775,y=59,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=1..1}] run title @s title {"text":"Blackthorn City","color":"dark_gray"}
+execute as @s[x=-775,y=59,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=1..1}] run title @s subtitle {"text":"A Quiet Mountain Retreat","italic":true}
 
 
 #-----------------------------------------------Kanto-----------------------------------------------
@@ -686,8 +686,8 @@ execute as @s[x=-2513,y=0,z=-642,dx=225,dy=240,dz=187,scores={MusicTitles=1..15,
 execute as @s[x=-2513,y=0,z=-642,dx=225,dy=240,dz=187,scores={MusicTitles=17..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 #execute as @s[x=1169,y=252,z=619,distance=..40,scores={MusicTitles=1..14,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 #execute as @s[x=1169,y=252,z=619,distance=..40,scores={MusicTitles=16..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
-execute as @s[x=-1366,y=0,z=372,dx=110,dy=240,dz=302,scores={MusicTitles=1..13,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
-execute as @s[x=-1366,y=0,z=372,dx=110,dy=240,dz=302,scores={MusicTitles=15..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
+execute as @s[x=-1366,y=63,z=372,dx=110,dy=240,dz=302,scores={MusicTitles=1..13,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
+execute as @s[x=-1366,y=63,z=372,dx=110,dy=240,dz=302,scores={MusicTitles=15..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=-1366,y=63,z=676,dx=110,dy=240,dz=74,scores={MusicTitles=1..13,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=-1366,y=63,z=676,dx=110,dy=240,dz=74,scores={MusicTitles=15..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=236,y=0,z=164,dx=262,dy=100,dz=204,scores={MusicTitles=1..12,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
@@ -712,8 +712,8 @@ execute as @s[x=-2659,y=0,z=828,dx=124,dy=240,dz=68,scores={MusicTitles=1..4,Mus
 execute as @s[x=-2659,y=0,z=828,dx=124,dy=240,dz=68,scores={MusicTitles=6..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=-2501,y=0,z=236,dx=278,dy=240,dz=199,scores={MusicTitles=1..3,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=-2501,y=0,z=236,dx=278,dy=240,dz=199,scores={MusicTitles=5..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
-execute as @s[x=-775,y=0,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=1..2,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
-execute as @s[x=-775,y=0,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=4..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
+execute as @s[x=-775,y=59,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=1..2,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
+execute as @s[x=-775,y=59,z=125,dx=202,dy=240,dz=206,scores={MusicTitles=4..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=858,y=60,z=-15,dx=102,dy=10,dz=143,scores={MusicTitles=1..1,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=858,y=60,z=-15,dx=102,dy=10,dz=143,scores={MusicTitles=3..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=858,y=75,z=-15,dx=102,dy=100,dz=143,scores={MusicTitles=1..1,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
@@ -872,7 +872,7 @@ scoreboard players set @s[x=349,y=0,z=-461,dx=239,dy=240,dz=194] MusicTitles 18
 scoreboard players set @s[x=87,y=50,z=719,dx=44,dy=20,dz=44] MusicTitles 17
 scoreboard players set @s[x=-2513,y=0,z=-642,dx=225,dy=240,dz=187] MusicTitles 16
 scoreboard players set @s[x=1169,y=252,z=619,distance=..40] MusicTitles 15
-scoreboard players set @s[x=-1366,y=0,z=372,dx=110,dy=240,dz=302] MusicTitles 14
+scoreboard players set @s[x=-1366,y=63,z=372,dx=110,dy=240,dz=302] MusicTitles 14
 scoreboard players set @s[x=-1366,y=63,z=676,dx=110,dy=240,dz=74] MusicTitles 14
 scoreboard players set @s[x=236,y=0,z=164,dx=262,dy=100,dz=204] MusicTitles 13
 scoreboard players set @s[x=-744,y=69,z=507,dx=162,dy=70,dz=147] MusicTitles 12
@@ -885,7 +885,7 @@ scoreboard players set @s[x=-279,y=0,z=-598,dx=217,dy=240,dz=137] MusicTitles 7
 scoreboard players set @s[x=-2836,y=0,z=654,dx=181,dy=240,dz=148] MusicTitles 6
 scoreboard players set @s[x=-2659,y=0,z=828,dx=124,dy=240,dz=68] MusicTitles 5
 scoreboard players set @s[x=-2501,y=0,z=236,dx=278,dy=240,dz=199] MusicTitles 4
-scoreboard players set @s[x=-775,y=0,z=125,dx=202,dy=240,dz=206] MusicTitles 3
+scoreboard players set @s[x=-775,y=59,z=125,dx=202,dy=240,dz=206] MusicTitles 3
 scoreboard players set @s[x=858,y=60,z=-15,dx=102,dy=10,dz=143] MusicTitles 2
 scoreboard players set @s[x=858,y=75,z=-15,dx=102,dy=100,dz=143] MusicTitles 2
 scoreboard players set @s[x=285,y=60,z=-793,dx=125,dy=240,dz=130] MusicTitles 1
