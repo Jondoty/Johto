@@ -1449,9 +1449,8 @@ execute if entity @a[x=105,y=54,z=731,distance=..3,tag=!Dialogue165,tag=Dialogue
 
 
 #Mt. Silver sets up Red or the Altar
-#TEST
 #Red, not altar
-execute if block -944 183 285 pixelmon:timespace_altar if entity @a[x=-944,y=182,z=285,distance=..25,tag=!Red,scores={TalkTime=0}] run clone -730 75 -242 -730 77 -242 -944 182 285
+execute if block -944 183 285 pixelmon:timespace_altar if entity @a[x=-944,y=182,z=285,distance=..25,tag=!Red,scores={TalkTime=0}] run fill -730 76 -242 -730 77 -242 minecraft:air
 execute if block -944 183 285 pixelmon:timespace_altar if entity @a[x=-944,y=182,z=285,distance=..25,tag=!Red,scores={TalkTime=0}] run tp @e[x=-711,y=86,z=-242,distance=..2,type=pixelmon:npc_trainer] -944 183 285
 
 #Alter post-Red
