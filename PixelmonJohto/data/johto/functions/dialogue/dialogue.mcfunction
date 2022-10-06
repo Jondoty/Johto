@@ -3098,6 +3098,7 @@ tellraw @s[scores={DialogueTrigger=153,TalkTime=26}] {"text":"<Professor Oak> Ha
 tellraw @s[scores={DialogueTrigger=153,TalkTime=33}] {"text":"<Professor Oak> You must have figured it out right away. Yes, it is a Pokémon!"}
 tellraw @s[scores={DialogueTrigger=153,TalkTime=42}] {"text":"<Professor Oak> You don't see them very often in Kanto."}
 tellraw @s[scores={DialogueTrigger=153,TalkTime=50}] {"text":"<Professor Oak> Choose one and it'll be yours! ...Go ahead!"}
+execute as @s[scores={DialogueTrigger=153,TalkTime=50}] run clone -1720 62 -311 -1724 62 -311 
 
 tag @s[scores={DialogueTrigger=153,TalkTime=50..}] add Dialogue153
 
