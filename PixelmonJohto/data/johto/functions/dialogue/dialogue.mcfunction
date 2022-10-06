@@ -3222,7 +3222,9 @@ tag @s[scores={DialogueTrigger=158,TalkTime=1..}] add Dialogue158
 #execute as @s[x=-3239,y=64,z=571,distance=..50,score_Zapdos=0,score_ZapdosCD=0,score_TalkTime=0,tag=AllGyms] run tp @e[x=-773,y=79,z=-244,distance=..1,type=pixelmon:statue] -3239 64 571
 
 execute as @s[scores={DialogueTrigger=159,TalkTime=1}] run playsound zapdos hostile @s ~ ~ ~ 10 1 1
-execute as @s[scores={DialogueTrigger=159,TalkTime=1}] run execute at @e[type=pixelmon:statue,x=-3239,y=64,z=571,distance=..1] run pokespawn Zapdos gr:7 lvl:50
+#execute as @s[scores={DialogueTrigger=159,TalkTime=1}] at @e[type=armor_stand,x=-3239,y=64,z=571,distance=..3,name=Zapdos] run pokespawn Zapdos gr:7 lvl:50
+execute as @s[scores={DialogueTrigger=159,TalkTime=1}] run pokebattle @s Zapdos
+#execute as @s[scores={DialogueTrigger=159,TalkTime=1}] run pokebattle @s Zapdos,gr:7 lvl:50
 execute as @s[scores={DialogueTrigger=159,TalkTime=1}] run particle cloud -3239 64 571 1 1 1 0.15 1000
 execute as @s[scores={DialogueTrigger=159,TalkTime=1}] run tp @e[type=pixelmon:statue,x=-3239,y=64,z=571,distance=..1] -773 79 -244
 execute as @s[scores={DialogueTrigger=159,TalkTime=1}] run scoreboard players set @s Zapdos 1
