@@ -206,11 +206,11 @@
       "buy": 3000,
       "sell": 3000
     },
-    {
-      "name": "minecraft:carrot_on_a_stick",
-      "nbtData": "{display:{Name:'[{\"text\":\"Radio\"}]',Lore:[\"A device that plays music for the user.\",\"To listen, select in your hotbar. Each\",\"slot is a different station to listen to.\",\"\",\"Station 2 or Off-Hand: Location-specific tunes.\",\"Station 4: Lucky Number Show.\",\"Station 5: Mysterious Transmission.\",\"Station 6: Buena's Password.\",\"Station 7: Pokémon Music.\",\"Station 8: Poké Flute.\",\"\",\"Right click to end current song.\",\"\",\"1   2   3   4   5   6   7   8   9\"]}}",
-      "buy": 2000
-    },
+      {
+        "name": "minecraft:carrot_on_a_stick",
+        "nbtData": "{Unbreakable:1,Tags:[Radio1],display:{Name:'[{\"text\":\"Radio\",\"italic\":false,\"color\":\"aqua\"}]',Lore:['[{\"text\":\"A device that plays music stations\",\"italic\":false}]','[{\"text\":\"to the user depending on which\",\"italic\":false}]','[{\"text\":\"slot you hold it in.\",\"italic\":false}]','[{\"text\":\"\",\"italic\":false}]','[{\"text\":\"Right click once to refresh song,\",\"italic\":false}]','[{\"text\":\"double click to toggle on and off.\",\"italic\":false}]','[{\"text\":\"\",\"italic\":false}]','[{\"text\":\"Station 2 or Off-Hand: Location Tunes\",\"italic\":false}]','[{\"text\":\"Station 3: \",\"italic\":false},{\"text\":\"???\",\"obfuscated\":true},{\"text\":\"\",\"obfuscated\":false}]','[{\"text\":\"Station 4: \",\"italic\":false},{\"text\":\"???\",\"obfuscated\":true},{\"text\":\"\",\"obfuscated\":false}]','[{\"text\":\"Station 5: Mysterious Transmission\",\"italic\":false}]','[{\"text\":\"Station 6: \",\"italic\":false},{\"text\":\"???\",\"obfuscated\":true},{\"text\":\"\",\"obfuscated\":false}]','[{\"text\":\"Station 7: \",\"italic\":false},{\"text\":\"???\",\"obfuscated\":true},{\"text\":\"\",\"obfuscated\":false}]','[{\"text\":\"Station 8: \",\"italic\":false},{\"text\":\"???\",\"obfuscated\":true},{\"text\":\"\",\"obfuscated\":false}]','[{\"text\":\"\",\"italic\":false}]','[{\"text\":\"Order: 1 2 3 4 5 6 7 8 9\",\"italic\":false}]']},HideFlags:127}",
+      	"buy": 2000
+      },
     {
       "name": "pixelmon:camera",
       "buy": 3200,

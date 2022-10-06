@@ -7,17 +7,16 @@
 
 
 #Assigns RadioSelect score based on which slot player has selected
-
-scoreboard players set @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick"}]}] RadioSelect 0
-scoreboard players set @s[nbt={Inventory:[{Slot:0b,id:"minecraft:carrot_on_a_stick"}]}] RadioSelect 1
+scoreboard players set @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]'}}}]}] RadioSelect 0
+scoreboard players set @s[nbt={Inventory:[{Slot:0b,id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]'}}}]}] RadioSelect 1
 #World Music
-scoreboard players set @s[nbt={Inventory:[{Slot:2b,id:"minecraft:carrot_on_a_stick"}]}] RadioSelect 3
-scoreboard players set @s[nbt={Inventory:[{Slot:3b,id:"minecraft:carrot_on_a_stick"}]}] RadioSelect 4
-scoreboard players set @s[nbt={Inventory:[{Slot:4b,id:"minecraft:carrot_on_a_stick"}]}] RadioSelect 5
-scoreboard players set @s[nbt={Inventory:[{Slot:5b,id:"minecraft:carrot_on_a_stick"}]}] RadioSelect 6
-scoreboard players set @s[nbt={Inventory:[{Slot:6b,id:"minecraft:carrot_on_a_stick"}]}] RadioSelect 7
-scoreboard players set @s[nbt={Inventory:[{Slot:7b,id:"minecraft:carrot_on_a_stick"}]}] RadioSelect 8
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:carrot_on_a_stick"}]}] RadioSelect 9
+scoreboard players set @s[nbt={Inventory:[{Slot:2b,id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]'}}}]}] RadioSelect 3
+scoreboard players set @s[nbt={Inventory:[{Slot:3b,id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]'}}}]}] RadioSelect 4
+scoreboard players set @s[nbt={Inventory:[{Slot:4b,id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]'}}}]}] RadioSelect 5
+scoreboard players set @s[nbt={Inventory:[{Slot:5b,id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]'}}}]}] RadioSelect 6
+scoreboard players set @s[nbt={Inventory:[{Slot:6b,id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]'}}}]}] RadioSelect 7
+scoreboard players set @s[nbt={Inventory:[{Slot:7b,id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]'}}}]}] RadioSelect 8
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]'}}}]}] RadioSelect 9
 
 
 
@@ -29,10 +28,10 @@ scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:carrot_on_a_sti
 #Overwrites stations when Team Rocket has taken over
 #Between Dialogue64-Dialogue72
 
-execute as @s[scores={RadioSelect=4},tag=Dialogue64,tag=!Dialogue72] run playsound rockettakeover record @s ~ ~ ~ 1 1 1
-execute as @s[scores={RadioSelect=4},tag=Dialogue64,tag=!Dialogue72] run scoreboard players set @s MusicCooldown 122
-execute as @s[scores={RadioSelect=4},tag=Dialogue64,tag=!Dialogue72] run scoreboard players set @s[tag=!Dialogue224] DialogueTrigger 224
-execute as @s[scores={RadioSelect=4},tag=Dialogue64,tag=!Dialogue72] run scoreboard players set @s RadioSelect 0
+execute as @s[scores={RadioSelect=3..4},tag=Dialogue64,tag=!Dialogue72] run playsound rockettakeover record @s ~ ~ ~ 1 1 1
+execute as @s[scores={RadioSelect=3..4},tag=Dialogue64,tag=!Dialogue72] run scoreboard players set @s MusicCooldown 122
+execute as @s[scores={RadioSelect=3..4},tag=Dialogue64,tag=!Dialogue72] run scoreboard players set @s[tag=!Dialogue224] DialogueTrigger 224
+execute as @s[scores={RadioSelect=3..4},tag=Dialogue64,tag=!Dialogue72] run scoreboard players set @s RadioSelect 0
 
 execute as @s[scores={RadioSelect=6..7},tag=Dialogue64,tag=!Dialogue72] run playsound rockettakeover record @s ~ ~ ~ 1 1 1
 execute as @s[scores={RadioSelect=6..7},tag=Dialogue64,tag=!Dialogue72] run scoreboard players set @s MusicCooldown 122
@@ -52,10 +51,6 @@ execute as @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={RadioSelect=1}] run 
 execute as @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={RadioSelect=1}] run scoreboard players set @s[scores={MusicCooldown=0}] MusicCooldown 39
 
 
-#Use slot for Oak and Mary's radio station?
-#Swarms are post-game
-#Mary: We're reaching out to all you Pokémon fans out there! Here is the leading expert on Pokémon, Professor Oak, and of course myself, Mary!
-#Mary: This is breaking news! A bunch of {Pokemon} have decided to make an appearance at {Location}! If you're a Trainer who's really wanted to find {Pokemon}, hurry over to {Location}! That's the end of the breaking news!
 
 
 
@@ -69,6 +64,16 @@ execute as @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={RadioSelect=3}] run 
 execute as @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={RadioSelect=3}] run scoreboard players set @s[scores={MusicCooldown=0}] MusicCooldown 39
 
 
+#Use slot for Oak and Mary's radio station?
+#Swarms are post-game
+#Mary: We're reaching out to all you Pokémon fans out there! Here is the leading expert on Pokémon, Professor Oak, and of course myself, Mary!
+#Mary: This is breaking news! A bunch of {Pokemon} have decided to make an appearance at {Location}! If you're a Trainer who's really wanted to find {Pokemon}, hurry over to {Location}! That's the end of the breaking news!
+
+#execute as @s[scores={RadioSelect=3},tag=RadioCard] run
+
+
+#Without
+execute as @s[scores={RadioSelect=3},tag=!RadioCard] run title @s actionbar {"text":"Station 3: This station requires a Radio Card from Goldenrod to listen"}
 
 #Slot 4 - Lucky Number Show
 execute as @s[scores={RadioSelect=4},tag=RadioCard] run title @s actionbar {"text":"Radio: Lucky Number Show"}
@@ -78,16 +83,17 @@ execute as @s[scores={RadioSelect=4},tag=RadioCard] run playsound gamecorner rec
 execute as @s[scores={RadioSelect=4},tag=RadioCard] run scoreboard players set @s MusicCooldown 176
 
 #Without
-execute as @s[scores={RadioSelect=4},tag=!RadioCard] run title @s actionbar {"text":"Radio: This station requires a Radio Card from Goldenrod to listen"}
+execute as @s[scores={RadioSelect=4},tag=!RadioCard] run title @s actionbar {"text":"Station 4: This station requires a Radio Card from Goldenrod to listen"}
 
 
 
 #Slot 5 - Unown Station, Ruins of Alph only
-execute as @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={RadioSelect=5}] run playsound unownstation record @s ~ ~ ~ 1 1 1
-execute as @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={RadioSelect=5}] run title @s actionbar ["",{"text":"Radio: "},{"text":"Unown Station","obfuscated":true}]
-execute as @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={RadioSelect=5}] run scoreboard players set @s MusicCooldown 39
+tag @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={RadioSelect=5}] add InRuins
+execute as @s[scores={RadioSelect=5},tag=InRuins] run playsound unownstation record @s ~ ~ ~ 1 1 1
+execute as @s[scores={RadioSelect=5},tag=InRuins] run title @s actionbar ["",{"text":"Radio: "},{"text":"Unown Station","obfuscated":true}]
+execute as @s[scores={RadioSelect=5},tag=InRuins] run scoreboard players set @s MusicCooldown 39
 
-
+execute as @s[scores={RadioSelect=5},tag=!InRuins] run title @s actionbar {"text":"Station 5: Weak signal. Get closer to the Ruins of Alph."}
 
 
 
@@ -101,7 +107,7 @@ execute as @s[scores={RadioSelect=6},tag=RadioCard] run title @s actionbar {"tex
 
 
 #Without
-execute as @s[scores={RadioSelect=6},tag=!RadioCard] run title @s actionbar {"text":"Radio: This station requires a Radio Card from Goldenrod to listen"}
+execute as @s[scores={RadioSelect=6},tag=!RadioCard] run title @s actionbar {"text":"Station 6: This station requires a Radio Card from Goldenrod to listen"}
 
 
 
@@ -182,7 +188,7 @@ execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=4}] 
 
 
 #Without
-execute as @a[scores={RadioSelect=7},tag=!RadioCard] run title @s actionbar {"text":"Radio: This station requires a Radio Card from Goldenrod to listen"}
+execute as @a[scores={RadioSelect=7},tag=!RadioCard] run title @s actionbar {"text":"Station 7: This station requires a Radio Card from Goldenrod to listen"}
 
 
 
@@ -194,12 +200,12 @@ execute as @a[scores={RadioSelect=7},tag=!RadioCard] run title @s actionbar {"te
 
 #Slot 8 - Poke Flute, with EXPNCard tag
 execute as @s[scores={RadioSelect=8},tag=EXPNCard] run playsound pokeflute record @s ~ ~ ~ 1 1 1
-execute as @s[scores={RadioSelect=8},tag=EXPNCard] run scoreboard players set @s MusicCooldown 1400
-execute as @s[scores={RadioSelect=8,TalkTime=0},tag=EXPNCard,x=-2893,y=64,z=-53,distance=..25] run scoreboard players set @s[tag=!Dialogue142] DialogueTrigger 142
+execute as @s[scores={RadioSelect=8},tag=EXPNCard] run scoreboard players set @s MusicCooldown 98
+execute as @s[scores={RadioSelect=8,TalkTime=0},tag=EXPNCard,x=-2893,y=64,z=-53,distance=..35] run scoreboard players set @s[tag=!Dialogue142] DialogueTrigger 142
 execute as @s[scores={RadioSelect=8},tag=EXPNCard] run title @s actionbar {"text":"Radio: Poké Flute"}
 
 #Without
-execute as @s[scores={RadioSelect=8},tag=!EXPNCard] run title @s actionbar {"text":"Radio: This station requires an EXPN Card from Lavendar to listen"}
+execute as @s[scores={RadioSelect=8},tag=!EXPNCard] run title @s actionbar {"text":"Station 8: This station requires an EXPN Card from Lavendar to listen"}
 
 
 
@@ -215,8 +221,79 @@ execute as @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={RadioSelect=9}] run 
 
 
 
+#Swaps out the player's radio when they have an upgraded tag but a previous radio
+#Initial state
+#Goldenrod Card (RadioCard)
+#Lavender Card (EXPNCard)
+
+#Gives Radio 2 (RadioCard but not EXPN Card)
+replaceitem entity @s[scores={RadioSelect=3},tag=RadioCard,tag=!EXPNCard,nbt={Inventory:[{Slot:2b,id:"minecraft:carrot_on_a_stick",tag:{Tags:["Radio1"]}}]}] hotbar.2 minecraft:carrot_on_a_stick{Unbreakable:1,Tags:[Radio2],display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]',Lore:['[{"text":"A device that plays music stations","italic":false}]','[{"text":"to the user depending on which","italic":false}]','[{"text":"slot you hold it in.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Right click once to refresh song,","italic":false}]','[{"text":"double click to toggle on and off.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Station 2 or Off-Hand: Location Tunes","italic":false}]','[{"text":"Station 3: Professor Oak\'s Pokémon Talk","italic":false}]','[{"text":"Station 4: Lucky Number Show","italic":false}]','[{"text":"Station 5: Mysterious Transmission","italic":false}]','[{"text":"Station 6: Buena\'s Password","italic":false}]','[{"text":"Station 7: Pokémon Music","italic":false}]','[{"text":"Station 8: ","italic":false},{"text":"???","obfuscated":true},{"text":"","obfuscated":false}]','[{"text":"","italic":false}]','[{"text":"Order: 1 2 3 4 5 6 7 8 9","italic":false}]']},HideFlags:127}
+
+replaceitem entity @s[scores={RadioSelect=4},tag=RadioCard,tag=!EXPNCard,nbt={Inventory:[{Slot:3b,id:"minecraft:carrot_on_a_stick",tag:{Tags:["Radio1"]}}]}] hotbar.3 minecraft:carrot_on_a_stick{Unbreakable:1,Tags:[Radio2],display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]',Lore:['[{"text":"A device that plays music stations","italic":false}]','[{"text":"to the user depending on which","italic":false}]','[{"text":"slot you hold it in.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Right click once to refresh song,","italic":false}]','[{"text":"double click to toggle on and off.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Station 2 or Off-Hand: Location Tunes","italic":false}]','[{"text":"Station 3: Professor Oak\'s Pokémon Talk","italic":false}]','[{"text":"Station 4: Lucky Number Show","italic":false}]','[{"text":"Station 5: Mysterious Transmission","italic":false}]','[{"text":"Station 6: Buena\'s Password","italic":false}]','[{"text":"Station 7: Pokémon Music","italic":false}]','[{"text":"Station 8: ","italic":false},{"text":"???","obfuscated":true},{"text":"","obfuscated":false}]','[{"text":"","italic":false}]','[{"text":"Order: 1 2 3 4 5 6 7 8 9","italic":false}]']},HideFlags:127}
+
+#Mysterious Transmission
+
+replaceitem entity @s[scores={RadioSelect=6},tag=RadioCard,tag=!EXPNCard,nbt={Inventory:[{Slot:5b,id:"minecraft:carrot_on_a_stick",tag:{Tags:["Radio1"]}}]}] hotbar.5 minecraft:carrot_on_a_stick{Unbreakable:1,Tags:[Radio2],display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]',Lore:['[{"text":"A device that plays music stations","italic":false}]','[{"text":"to the user depending on which","italic":false}]','[{"text":"slot you hold it in.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Right click once to refresh song,","italic":false}]','[{"text":"double click to toggle on and off.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Station 2 or Off-Hand: Location Tunes","italic":false}]','[{"text":"Station 3: Professor Oak\'s Pokémon Talk","italic":false}]','[{"text":"Station 4: Lucky Number Show","italic":false}]','[{"text":"Station 5: Mysterious Transmission","italic":false}]','[{"text":"Station 6: Buena\'s Password","italic":false}]','[{"text":"Station 7: Pokémon Music","italic":false}]','[{"text":"Station 8: ","italic":false},{"text":"???","obfuscated":true},{"text":"","obfuscated":false}]','[{"text":"","italic":false}]','[{"text":"Order: 1 2 3 4 5 6 7 8 9","italic":false}]']},HideFlags:127}
+
+replaceitem entity @s[scores={RadioSelect=7},tag=RadioCard,tag=!EXPNCard,nbt={Inventory:[{Slot:6b,id:"minecraft:carrot_on_a_stick",tag:{Tags:["Radio1"]}}]}] hotbar.6 minecraft:carrot_on_a_stick{Unbreakable:1,Tags:[Radio2],display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]',Lore:['[{"text":"A device that plays music stations","italic":false}]','[{"text":"to the user depending on which","italic":false}]','[{"text":"slot you hold it in.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Right click once to refresh song,","italic":false}]','[{"text":"double click to toggle on and off.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Station 2 or Off-Hand: Location Tunes","italic":false}]','[{"text":"Station 3: Professor Oak\'s Pokémon Talk","italic":false}]','[{"text":"Station 4: Lucky Number Show","italic":false}]','[{"text":"Station 5: Mysterious Transmission","italic":false}]','[{"text":"Station 6: Buena\'s Password","italic":false}]','[{"text":"Station 7: Pokémon Music","italic":false}]','[{"text":"Station 8: ","italic":false},{"text":"???","obfuscated":true},{"text":"","obfuscated":false}]','[{"text":"","italic":false}]','[{"text":"Order: 1 2 3 4 5 6 7 8 9","italic":false}]']},HideFlags:127}
 
 
+#Gives Radio 3 (EXPN Card but not RadioCard)
+replaceitem entity @s[scores={RadioSelect=8},tag=!RadioCard,tag=EXPNCard,nbt={Inventory:[{Slot:7b,id:"minecraft:carrot_on_a_stick",tag:{Tags:["Radio1"]}}]}] hotbar.7 minecraft:carrot_on_a_stick{Unbreakable:1,Tags:[Radio3],display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]',Lore:['[{"text":"A device that plays music stations","italic":false}]','[{"text":"to the user depending on which","italic":false}]','[{"text":"slot you hold it in.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Right click once to refresh song,","italic":false}]','[{"text":"double click to toggle on and off.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Station 2 or Off-Hand: Location Tunes","italic":false}]','[{"text":"Station 3: ","italic":false},{"text":"???","obfuscated":true},{"text":"","obfuscated":false}]','[{"text":"Station 4: ","italic":false},{"text":"???","obfuscated":true},{"text":"","obfuscated":false}]','[{"text":"Station 5: Mysterious Transmission","italic":false}]','[{"text":"Station 6: ","italic":false},{"text":"???","obfuscated":true},{"text":"","obfuscated":false}]','[{"text":"Station 7: ","italic":false},{"text":"???","obfuscated":true},{"text":"","obfuscated":false}]','[{"text":"Station 8: Poké Flute","italic":false}]','[{"text":"","italic":false}]','[{"text":"Order: 1 2 3 4 5 6 7 8 9","italic":false}]']},HideFlags:127} 1
+
+
+
+
+
+#Gives Radio 4 (Both cards)
+replaceitem entity @s[scores={RadioSelect=3},tag=RadioCard,tag=EXPNCard,nbt={Inventory:[{Slot:2b,id:"minecraft:carrot_on_a_stick",tag:{Tags:["Radio1"]}}]}] hotbar.2 minecraft:carrot_on_a_stick{Unbreakable:1,Tags:[Radio4],display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]',Lore:['[{"text":"A device that plays music stations","italic":false}]','[{"text":"to the user depending on which","italic":false}]','[{"text":"slot you hold it in.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Right click once to refresh song,","italic":false}]','[{"text":"double click to toggle on and off.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Station 2 or Off-Hand: Location Tunes","italic":false}]','[{"text":"Station 3: Professor Oak\'s Pokémon Talk","italic":false}]','[{"text":"Station 4: Lucky Number Show","italic":false}]','[{"text":"Station 5: Mysterious Transmission","italic":false}]','[{"text":"Station 6: Buena\'s Password","italic":false}]','[{"text":"Station 7: Pokémon Music","italic":false}]','[{"text":"Station 8: Poké Flute","italic":false}]','[{"text":"","italic":false}]','[{"text":"Order: 1 2 3 4 5 6 7 8 9","italic":false}]']},HideFlags:127} 1
+
+replaceitem entity @s[scores={RadioSelect=4},tag=RadioCard,tag=EXPNCard,nbt={Inventory:[{Slot:3b,id:"minecraft:carrot_on_a_stick",tag:{Tags:["Radio1"]}}]}] hotbar.3 minecraft:carrot_on_a_stick{Unbreakable:1,Tags:[Radio4],display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]',Lore:['[{"text":"A device that plays music stations","italic":false}]','[{"text":"to the user depending on which","italic":false}]','[{"text":"slot you hold it in.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Right click once to refresh song,","italic":false}]','[{"text":"double click to toggle on and off.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Station 2 or Off-Hand: Location Tunes","italic":false}]','[{"text":"Station 3: Professor Oak\'s Pokémon Talk","italic":false}]','[{"text":"Station 4: Lucky Number Show","italic":false}]','[{"text":"Station 5: Mysterious Transmission","italic":false}]','[{"text":"Station 6: Buena\'s Password","italic":false}]','[{"text":"Station 7: Pokémon Music","italic":false}]','[{"text":"Station 8: Poké Flute","italic":false}]','[{"text":"","italic":false}]','[{"text":"Order: 1 2 3 4 5 6 7 8 9","italic":false}]']},HideFlags:127} 1
+
+#Mysterious Transmission
+
+replaceitem entity @s[scores={RadioSelect=6},tag=RadioCard,tag=EXPNCard,nbt={Inventory:[{Slot:5b,id:"minecraft:carrot_on_a_stick",tag:{Tags:["Radio1"]}}]}] hotbar.5 minecraft:carrot_on_a_stick{Unbreakable:1,Tags:[Radio4],display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]',Lore:['[{"text":"A device that plays music stations","italic":false}]','[{"text":"to the user depending on which","italic":false}]','[{"text":"slot you hold it in.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Right click once to refresh song,","italic":false}]','[{"text":"double click to toggle on and off.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Station 2 or Off-Hand: Location Tunes","italic":false}]','[{"text":"Station 3: Professor Oak\'s Pokémon Talk","italic":false}]','[{"text":"Station 4: Lucky Number Show","italic":false}]','[{"text":"Station 5: Mysterious Transmission","italic":false}]','[{"text":"Station 6: Buena\'s Password","italic":false}]','[{"text":"Station 7: Pokémon Music","italic":false}]','[{"text":"Station 8: Poké Flute","italic":false}]','[{"text":"","italic":false}]','[{"text":"Order: 1 2 3 4 5 6 7 8 9","italic":false}]']},HideFlags:127} 1
+
+replaceitem entity @s[scores={RadioSelect=7},tag=RadioCard,tag=EXPNCard,nbt={Inventory:[{Slot:6b,id:"minecraft:carrot_on_a_stick",tag:{Tags:["Radio1"]}}]}] hotbar.6 minecraft:carrot_on_a_stick{Unbreakable:1,Tags:[Radio4],display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]',Lore:['[{"text":"A device that plays music stations","italic":false}]','[{"text":"to the user depending on which","italic":false}]','[{"text":"slot you hold it in.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Right click once to refresh song,","italic":false}]','[{"text":"double click to toggle on and off.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Station 2 or Off-Hand: Location Tunes","italic":false}]','[{"text":"Station 3: Professor Oak\'s Pokémon Talk","italic":false}]','[{"text":"Station 4: Lucky Number Show","italic":false}]','[{"text":"Station 5: Mysterious Transmission","italic":false}]','[{"text":"Station 6: Buena\'s Password","italic":false}]','[{"text":"Station 7: Pokémon Music","italic":false}]','[{"text":"Station 8: Poké Flute","italic":false}]','[{"text":"","italic":false}]','[{"text":"Order: 1 2 3 4 5 6 7 8 9","italic":false}]']},HideFlags:127} 1
+
+replaceitem entity @s[scores={RadioSelect=8},tag=RadioCard,tag=EXPNCard,nbt={Inventory:[{Slot:7b,id:"minecraft:carrot_on_a_stick",tag:{Tags:["Radio1"]}}]}] hotbar.7 minecraft:carrot_on_a_stick{Unbreakable:1,Tags:[Radio4],display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]',Lore:['[{"text":"A device that plays music stations","italic":false}]','[{"text":"to the user depending on which","italic":false}]','[{"text":"slot you hold it in.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Right click once to refresh song,","italic":false}]','[{"text":"double click to toggle on and off.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Station 2 or Off-Hand: Location Tunes","italic":false}]','[{"text":"Station 3: Professor Oak\'s Pokémon Talk","italic":false}]','[{"text":"Station 4: Lucky Number Show","italic":false}]','[{"text":"Station 5: Mysterious Transmission","italic":false}]','[{"text":"Station 6: Buena\'s Password","italic":false}]','[{"text":"Station 7: Pokémon Music","italic":false}]','[{"text":"Station 8: Poké Flute","italic":false}]','[{"text":"","italic":false}]','[{"text":"Order: 1 2 3 4 5 6 7 8 9","italic":false}]']},HideFlags:127} 1
+
+#-----------------------------------
+
+replaceitem entity @s[scores={RadioSelect=3},tag=RadioCard,tag=EXPNCard,nbt={Inventory:[{Slot:2b,id:"minecraft:carrot_on_a_stick",tag:{Tags:["Radio2"]}}]}] hotbar.2 minecraft:carrot_on_a_stick{Unbreakable:1,Tags:[Radio4],display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]',Lore:['[{"text":"A device that plays music stations","italic":false}]','[{"text":"to the user depending on which","italic":false}]','[{"text":"slot you hold it in.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Right click once to refresh song,","italic":false}]','[{"text":"double click to toggle on and off.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Station 2 or Off-Hand: Location Tunes","italic":false}]','[{"text":"Station 3: Professor Oak\'s Pokémon Talk","italic":false}]','[{"text":"Station 4: Lucky Number Show","italic":false}]','[{"text":"Station 5: Mysterious Transmission","italic":false}]','[{"text":"Station 6: Buena\'s Password","italic":false}]','[{"text":"Station 7: Pokémon Music","italic":false}]','[{"text":"Station 8: Poké Flute","italic":false}]','[{"text":"","italic":false}]','[{"text":"Order: 1 2 3 4 5 6 7 8 9","italic":false}]']},HideFlags:127} 1
+
+
+replaceitem entity @s[scores={RadioSelect=4},tag=RadioCard,tag=EXPNCard,nbt={Inventory:[{Slot:3b,id:"minecraft:carrot_on_a_stick",tag:{Tags:["Radio2"]}}]}] hotbar.3 minecraft:carrot_on_a_stick{Unbreakable:1,Tags:[Radio4],display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]',Lore:['[{"text":"A device that plays music stations","italic":false}]','[{"text":"to the user depending on which","italic":false}]','[{"text":"slot you hold it in.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Right click once to refresh song,","italic":false}]','[{"text":"double click to toggle on and off.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Station 2 or Off-Hand: Location Tunes","italic":false}]','[{"text":"Station 3: Professor Oak\'s Pokémon Talk","italic":false}]','[{"text":"Station 4: Lucky Number Show","italic":false}]','[{"text":"Station 5: Mysterious Transmission","italic":false}]','[{"text":"Station 6: Buena\'s Password","italic":false}]','[{"text":"Station 7: Pokémon Music","italic":false}]','[{"text":"Station 8: Poké Flute","italic":false}]','[{"text":"","italic":false}]','[{"text":"Order: 1 2 3 4 5 6 7 8 9","italic":false}]']},HideFlags:127} 1
+
+
+#Mysterious Transmission
+
+replaceitem entity @s[scores={RadioSelect=6},tag=RadioCard,tag=EXPNCard,nbt={Inventory:[{Slot:5b,id:"minecraft:carrot_on_a_stick",tag:{Tags:["Radio2"]}}]}] hotbar.5 minecraft:carrot_on_a_stick{Unbreakable:1,Tags:[Radio4],display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]',Lore:['[{"text":"A device that plays music stations","italic":false}]','[{"text":"to the user depending on which","italic":false}]','[{"text":"slot you hold it in.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Right click once to refresh song,","italic":false}]','[{"text":"double click to toggle on and off.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Station 2 or Off-Hand: Location Tunes","italic":false}]','[{"text":"Station 3: Professor Oak\'s Pokémon Talk","italic":false}]','[{"text":"Station 4: Lucky Number Show","italic":false}]','[{"text":"Station 5: Mysterious Transmission","italic":false}]','[{"text":"Station 6: Buena\'s Password","italic":false}]','[{"text":"Station 7: Pokémon Music","italic":false}]','[{"text":"Station 8: Poké Flute","italic":false}]','[{"text":"","italic":false}]','[{"text":"Order: 1 2 3 4 5 6 7 8 9","italic":false}]']},HideFlags:127} 1
+
+
+replaceitem entity @s[scores={RadioSelect=7},tag=RadioCard,tag=EXPNCard,nbt={Inventory:[{Slot:6b,id:"minecraft:carrot_on_a_stick",tag:{Tags:["Radio2"]}}]}] hotbar.6 minecraft:carrot_on_a_stick{Unbreakable:1,Tags:[Radio4],display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]',Lore:['[{"text":"A device that plays music stations","italic":false}]','[{"text":"to the user depending on which","italic":false}]','[{"text":"slot you hold it in.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Right click once to refresh song,","italic":false}]','[{"text":"double click to toggle on and off.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Station 2 or Off-Hand: Location Tunes","italic":false}]','[{"text":"Station 3: Professor Oak\'s Pokémon Talk","italic":false}]','[{"text":"Station 4: Lucky Number Show","italic":false}]','[{"text":"Station 5: Mysterious Transmission","italic":false}]','[{"text":"Station 6: Buena\'s Password","italic":false}]','[{"text":"Station 7: Pokémon Music","italic":false}]','[{"text":"Station 8: Poké Flute","italic":false}]','[{"text":"","italic":false}]','[{"text":"Order: 1 2 3 4 5 6 7 8 9","italic":false}]']},HideFlags:127} 1
+
+
+replaceitem entity @s[scores={RadioSelect=8},tag=RadioCard,tag=EXPNCard,nbt={Inventory:[{Slot:7b,id:"minecraft:carrot_on_a_stick",tag:{Tags:["Radio2"]}}]}] hotbar.7 minecraft:carrot_on_a_stick{Unbreakable:1,Tags:[Radio4],display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]',Lore:['[{"text":"A device that plays music stations","italic":false}]','[{"text":"to the user depending on which","italic":false}]','[{"text":"slot you hold it in.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Right click once to refresh song,","italic":false}]','[{"text":"double click to toggle on and off.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Station 2 or Off-Hand: Location Tunes","italic":false}]','[{"text":"Station 3: Professor Oak\'s Pokémon Talk","italic":false}]','[{"text":"Station 4: Lucky Number Show","italic":false}]','[{"text":"Station 5: Mysterious Transmission","italic":false}]','[{"text":"Station 6: Buena\'s Password","italic":false}]','[{"text":"Station 7: Pokémon Music","italic":false}]','[{"text":"Station 8: Poké Flute","italic":false}]','[{"text":"","italic":false}]','[{"text":"Order: 1 2 3 4 5 6 7 8 9","italic":false}]']},HideFlags:127} 1
+
+
+#-----------------------------------
+
+replaceitem entity @s[scores={RadioSelect=3},tag=RadioCard,tag=EXPNCard,nbt={Inventory:[{Slot:2b,id:"minecraft:carrot_on_a_stick",tag:{Tags:["Radio3"]}}]}] hotbar.2 minecraft:carrot_on_a_stick{Unbreakable:1,Tags:[Radio4],display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]',Lore:['[{"text":"A device that plays music stations","italic":false}]','[{"text":"to the user depending on which","italic":false}]','[{"text":"slot you hold it in.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Right click once to refresh song,","italic":false}]','[{"text":"double click to toggle on and off.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Station 2 or Off-Hand: Location Tunes","italic":false}]','[{"text":"Station 3: Professor Oak\'s Pokémon Talk","italic":false}]','[{"text":"Station 4: Lucky Number Show","italic":false}]','[{"text":"Station 5: Mysterious Transmission","italic":false}]','[{"text":"Station 6: Buena\'s Password","italic":false}]','[{"text":"Station 7: Pokémon Music","italic":false}]','[{"text":"Station 8: Poké Flute","italic":false}]','[{"text":"","italic":false}]','[{"text":"Order: 1 2 3 4 5 6 7 8 9","italic":false}]']},HideFlags:127} 1
+
+
+replaceitem entity @s[scores={RadioSelect=4},tag=RadioCard,tag=EXPNCard,nbt={Inventory:[{Slot:3b,id:"minecraft:carrot_on_a_stick",tag:{Tags:["Radio3"]}}]}] hotbar.3 minecraft:carrot_on_a_stick{Unbreakable:1,Tags:[Radio4],display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]',Lore:['[{"text":"A device that plays music stations","italic":false}]','[{"text":"to the user depending on which","italic":false}]','[{"text":"slot you hold it in.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Right click once to refresh song,","italic":false}]','[{"text":"double click to toggle on and off.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Station 2 or Off-Hand: Location Tunes","italic":false}]','[{"text":"Station 3: Professor Oak\'s Pokémon Talk","italic":false}]','[{"text":"Station 4: Lucky Number Show","italic":false}]','[{"text":"Station 5: Mysterious Transmission","italic":false}]','[{"text":"Station 6: Buena\'s Password","italic":false}]','[{"text":"Station 7: Pokémon Music","italic":false}]','[{"text":"Station 8: Poké Flute","italic":false}]','[{"text":"","italic":false}]','[{"text":"Order: 1 2 3 4 5 6 7 8 9","italic":false}]']},HideFlags:127} 1
+
+
+#Mysterious Transmission
+
+replaceitem entity @s[scores={RadioSelect=6},tag=RadioCard,tag=EXPNCard,nbt={Inventory:[{Slot:5b,id:"minecraft:carrot_on_a_stick",tag:{Tags:["Radio3"]}}]}] hotbar.5 minecraft:carrot_on_a_stick{Unbreakable:1,Tags:[Radio4],display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]',Lore:['[{"text":"A device that plays music stations","italic":false}]','[{"text":"to the user depending on which","italic":false}]','[{"text":"slot you hold it in.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Right click once to refresh song,","italic":false}]','[{"text":"double click to toggle on and off.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Station 2 or Off-Hand: Location Tunes","italic":false}]','[{"text":"Station 3: Professor Oak\'s Pokémon Talk","italic":false}]','[{"text":"Station 4: Lucky Number Show","italic":false}]','[{"text":"Station 5: Mysterious Transmission","italic":false}]','[{"text":"Station 6: Buena\'s Password","italic":false}]','[{"text":"Station 7: Pokémon Music","italic":false}]','[{"text":"Station 8: Poké Flute","italic":false}]','[{"text":"","italic":false}]','[{"text":"Order: 1 2 3 4 5 6 7 8 9","italic":false}]']},HideFlags:127} 1
+
+
+replaceitem entity @s[scores={RadioSelect=7},tag=RadioCard,tag=EXPNCard,nbt={Inventory:[{Slot:6b,id:"minecraft:carrot_on_a_stick",tag:{Tags:["Radio3"]}}]}] hotbar.6 minecraft:carrot_on_a_stick{Unbreakable:1,Tags:[Radio4],display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]',Lore:['[{"text":"A device that plays music stations","italic":false}]','[{"text":"to the user depending on which","italic":false}]','[{"text":"slot you hold it in.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Right click once to refresh song,","italic":false}]','[{"text":"double click to toggle on and off.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Station 2 or Off-Hand: Location Tunes","italic":false}]','[{"text":"Station 3: Professor Oak\'s Pokémon Talk","italic":false}]','[{"text":"Station 4: Lucky Number Show","italic":false}]','[{"text":"Station 5: Mysterious Transmission","italic":false}]','[{"text":"Station 6: Buena\'s Password","italic":false}]','[{"text":"Station 7: Pokémon Music","italic":false}]','[{"text":"Station 8: Poké Flute","italic":false}]','[{"text":"","italic":false}]','[{"text":"Order: 1 2 3 4 5 6 7 8 9","italic":false}]']},HideFlags:127} 1
+
+
+replaceitem entity @s[scores={RadioSelect=8},tag=RadioCard,tag=EXPNCard,nbt={Inventory:[{Slot:7b,id:"minecraft:carrot_on_a_stick",tag:{Tags:["Radio3"]}}]}] hotbar.7 minecraft:carrot_on_a_stick{Unbreakable:1,Tags:[Radio4],display:{Name:'[{"text":"Radio","italic":false,"color":"aqua"}]',Lore:['[{"text":"A device that plays music stations","italic":false}]','[{"text":"to the user depending on which","italic":false}]','[{"text":"slot you hold it in.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Right click once to refresh song,","italic":false}]','[{"text":"double click to toggle on and off.","italic":false}]','[{"text":"","italic":false}]','[{"text":"Station 2 or Off-Hand: Location Tunes","italic":false}]','[{"text":"Station 3: Professor Oak\'s Pokémon Talk","italic":false}]','[{"text":"Station 4: Lucky Number Show","italic":false}]','[{"text":"Station 5: Mysterious Transmission","italic":false}]','[{"text":"Station 6: Buena\'s Password","italic":false}]','[{"text":"Station 7: Pokémon Music","italic":false}]','[{"text":"Station 8: Poké Flute","italic":false}]','[{"text":"","italic":false}]','[{"text":"Order: 1 2 3 4 5 6 7 8 9","italic":false}]']},HideFlags:127} 1
 
 
 
