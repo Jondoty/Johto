@@ -36,10 +36,10 @@ scoreboard players set @e[x=-771,y=92,z=-243,dx=12,dy=2,dz=2] StarterPick 1
 #Runs the chance for Mom to buy the player an item
 
 #Rolls for a number
-execute as @a[tag=!MomCooldown,scores={MomState=1},tag=Bugsy] run scoreboard players set @e[x=-867,y=69,z=-207,dy=4,dz=2] rng 0
-execute as @a[tag=!MomCooldown,scores={MomState=1},tag=Bugsy] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 1
-execute as @a[tag=!MomCooldown,scores={MomState=1},tag=Bugsy] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 2
+execute as @a[tag=!MomCooldown,scores={TalkTime=0,MomState=1},tag=Bugsy] run scoreboard players set @e[x=-867,y=69,z=-207,dy=4,dz=2] rng 0
+execute as @a[tag=!MomCooldown,scores={TalkTime=0,MomState=1},tag=Bugsy] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 1
+execute as @a[tag=!MomCooldown,scores={TalkTime=0,MomState=1},tag=Bugsy] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 2
 
-execute as @a[tag=!MomCooldown,scores={MomState=1},tag=Bugsy] run scoreboard players operation @s rng = @e[x=-867,y=69,z=-205,dy=3,type=armor_stand] rng
+execute as @a[tag=!MomCooldown,scores={TalkTime=0,MomState=1},tag=Bugsy] run scoreboard players operation @s rng = @e[x=-867,y=69,z=-205,dy=3,type=armor_stand] rng
 
-execute as @a[tag=!MomCooldown,scores={MomState=1,rng=3},tag=Bugsy] run function johto:triggers/momitems/momitems
+execute as @a[tag=!MomCooldown,scores={TalkTime=0,MomState=1,rng=3},tag=Bugsy] run function johto:triggers/momitems/momitems
