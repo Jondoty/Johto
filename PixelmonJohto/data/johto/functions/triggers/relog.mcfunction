@@ -36,13 +36,13 @@ execute as @s[x=617,y=64,z=-699,distance=..15,scores={TalkTime=0},tag=Dialogue16
 
 
 #Re-tells player day of the week
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1}] run title @a[scores={Relog=1..}] actionbar {"text":"Monday","italic":true}
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=2}] run title @a[scores={Relog=1..}] actionbar {"text":"Tuesday","italic":true}
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=3}] run title @a[scores={Relog=1..}] actionbar {"text":"Wednesday","italic":true}
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=4}] run title @a[scores={Relog=1..}] actionbar {"text":"Thursday","italic":true}
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run title @a[scores={Relog=1..}] actionbar {"text":"Friday","italic":true}
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=6}] run title @a[scores={Relog=1..}] actionbar {"text":"Saturday","italic":true}
-execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=7}] run title @a[scores={Relog=1..}] actionbar {"text":"Sunday","italic":true}
+execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1}] run title @a[scores={relog=1..}] actionbar {"text":"Monday","italic":true}
+execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=2}] run title @a[scores={relog=1..}] actionbar {"text":"Tuesday","italic":true}
+execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=3}] run title @a[scores={relog=1..}] actionbar {"text":"Wednesday","italic":true}
+execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=4}] run title @a[scores={relog=1..}] actionbar {"text":"Thursday","italic":true}
+execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run title @a[scores={relog=1..}] actionbar {"text":"Friday","italic":true}
+execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=6}] run title @a[scores={relog=1..}] actionbar {"text":"Saturday","italic":true}
+execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=7}] run title @a[scores={relog=1..}] actionbar {"text":"Sunday","italic":true}
 
 
 
@@ -68,5 +68,5 @@ execute as @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=7}] 
 
 
 
-#Sets Relog score to 0
-scoreboard players set @s Relog 0
+#Sets relog score to 0
+scoreboard players set @s relog 0

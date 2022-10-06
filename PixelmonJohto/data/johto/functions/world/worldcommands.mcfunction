@@ -48,7 +48,7 @@ execute as @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=34,tag=Dialogue97] run function 
 scoreboard players remove @a[scores={Cooldown=1..}] Cooldown 1
 
 #Runs relog function if player is found with relog score
-execute as @a[scores={Relog=1..}] run function johto:triggers/relog
+execute as @a[scores={relog=1..}] run function johto:triggers/relog
 
 #If player selects a hat, puts hat back on
 execute as @a[nbt={SelectedItem:{id:"minecraft:iron_hoe",tag:{display:{Lore:['[{"text":"A hat given to you from","italic":false}]','[{"text":"your mother!","italic":false}]']}}}}] run function johto:triggers/hatstore
