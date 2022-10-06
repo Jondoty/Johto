@@ -4749,7 +4749,6 @@ tellraw @s[scores={DialogueTrigger=214,TalkTime=1,SSState=1}] {"text":"Now board
 tellraw @s[scores={DialogueTrigger=214,TalkTime=1,SSState=2}] {"text":"Now boarding the S.S. Aqua voyage for Olivine City!"}
 execute as @s[scores={DialogueTrigger=214,TalkTime=1}] run advancement grant @s only johto:event4
 execute as @s[scores={DialogueTrigger=214,TalkTime=1}] run scoreboard players set @s click 1
-execute as @s[scores={DialogueTrigger=214,TalkTime=1}] run scoreboard players set @s Sleeping 0
 
 
 
@@ -4778,8 +4777,8 @@ execute as @s[scores={DialogueTrigger=214,TalkTime=799}] run scoreboard players 
 
 
 #If the player sleeps during the voyage
-execute as @s[scores={DialogueTrigger=214,TalkTime=1..750},nbt={Sleeping:1b}] run scoreboard players set @s TalkTime 750
-execute as @s[scores={DialogueTrigger=214,TalkTime=1..750},nbt={Sleeping:1b}] run tellraw @s ["",{"text":"<"},{"selector":"@s"},{"text":"> "},{"text":"zzz.....","italic":true,"color":"gray"}]
+execute as @s[scores={DialogueTrigger=214,TalkTime=1..750,sleep=0..5}] run scoreboard players set @s TalkTime 750
+execute as @s[scores={DialogueTrigger=214,TalkTime=1..750,sleep=0..5}] run tellraw @s ["",{"text":"<"},{"selector":"@s"},{"text":"> "},{"text":"zzz.....","italic":true,"color":"gray"}]
 
 
 tag @s[scores={DialogueTrigger=214,TalkTime=800..}] add Dialogue214
