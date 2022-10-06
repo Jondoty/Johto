@@ -731,7 +731,7 @@ tp @a[x=-1328,y=64,z=115,dx=3,dy=3] -1448 51 533 ~180 ~0
 
 
 #Before Silver is defeated
-tellraw @a[x=-1450,y=51,z=534,dx=3,dy=3,tag=!Dialogue85,scores={TalkTime=0}] ["",{"text":"<"},{"text":"Silver","color":"red"},{"text":"> Come on, "},{"selector":"@p[x=-1450,y=51,z=534,dx=3,dy=3,tag=!Dialogue85,score_TalkTime=0]"},{"text":"! Let's battle!"}]
+tellraw @a[x=-1450,y=51,z=534,dx=3,dy=3,tag=!Dialogue85,scores={TalkTime=0}] ["",{"text":"<"},{"text":"Silver","color":"red"},{"text":"> Come on, "},{"selector":"@p[x=-1450,y=51,z=534,dx=3,dy=3,tag=!Dialogue85,scores={TalkTime=0}]"},{"text":"! Let's battle!"}]
 tp @a[x=-1450,y=51,z=534,dx=3,dy=3,tag=!Dialogue85] ~ ~ ~-5
 
 playsound door ambient @a[x=-1450,y=51,z=534,dx=3,dy=3] ~ ~ ~ 100 1 1
