@@ -287,6 +287,15 @@ execute if entity @a[x=476,y=46,z=-345,dx=52,dy=7,dz=51,limit=1] run function jo
 
 
 #-------------------------------------------------------------------------------------------------------------------------
+#If player clicks on custom-items
+
+#HM Fly
+execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{display:{Name:'[{"text":"HM02: Fly","italic":false,"color":"aqua"}]'}}}}] run scoreboard players set @s Fly 1
+execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{display:{Name:'[{"text":"HM02: Fly","italic":false,"color":"aqua"}]'}}}}] run function johto:hms/fly
+execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{display:{Name:'[{"text":"HM02: Fly","italic":false,"color":"aqua"}]'}}}}] run scoreboard players set @s click 0
+
+
+#-------------------------------------------------------------------------------------------------------------------------
 #Music-based commands
 
 
@@ -333,8 +342,6 @@ effect give @a[tag=RepelEffect] pixelmon:repel 10 1 true
 
 #Runs HMs/Important Items
 
-#Fly
-execute as @a[scores={Fly=1..}] run function johto:hms/fly
 
 #Fly Map Refresh
 execute at @p[x=1169,y=252,z=619,distance=..40] run function johto:hms/flymap
