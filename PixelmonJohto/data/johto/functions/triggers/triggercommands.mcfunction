@@ -285,8 +285,8 @@ execute as @a[scores={TriggerCommand=54..56,KantoStarters=1..}] run scoreboard p
 
 #54 - Bulbasaur Give
 #scoreboard players set @a[x=-1726,y=63,z=-319,dx=23,dy=5,dz=25,score_TalkTime=0] TriggerCommand 54 {Inventory:[{id:"minecraft:spruce_fence_gate"}]}
-execute as @a[scores={TriggerCommand=54}] run pokegive @s[score_KantoStarters=0] Bulbasaur lvl:5
-execute as @a[scores={TriggerCommand=54}] run playsound egghatch ambient @s ~ ~ ~ 100 1 1
+execute as @a[scores={TriggerCommand=54}] run pokegive @s[scores={KantoStarters=0}] Bulbasaur lvl:5
+execute as @a[scores={TriggerCommand=54}] run playsound egghatch ambient @s ~ ~ ~ 1 1 1
 execute as @a[scores={TriggerCommand=54}] run clear @s minecraft:spruce_fence_gate
 execute as @a[scores={TriggerCommand=54}] run scoreboard players set @s KantoStarters 1
 execute as @a[scores={TriggerCommand=54}] run scoreboard players set @s TriggerCommand 0
@@ -294,8 +294,8 @@ execute as @a[scores={TriggerCommand=54}] run scoreboard players set @s TriggerC
 
 #55 - Squirtle Give
 #scoreboard players set @a[x=-1726,y=63,z=-319,dx=23,dy=5,dz=25,score_TalkTime=0] TriggerCommand 55 {Inventory:[{id:"minecraft:birch_fence_gate"}]}
-execute as @a[scores={TriggerCommand=55}] run pokegive @s[score_KantoStarters=0] Squirtle lvl:5
-execute as @a[scores={TriggerCommand=55}] run playsound egghatch ambient @s ~ ~ ~ 100 1 1
+execute as @a[scores={TriggerCommand=55}] run pokegive @s[scores={KantoStarters=0}] Squirtle lvl:5
+execute as @a[scores={TriggerCommand=55}] run playsound egghatch ambient @s ~ ~ ~ 1 1 1
 execute as @a[scores={TriggerCommand=55}] run clear @s minecraft:birch_fence_gate
 execute as @a[scores={TriggerCommand=55}] run scoreboard players set @s KantoStarters 2
 execute as @a[scores={TriggerCommand=55}] run scoreboard players set @s TriggerCommand 0
@@ -303,8 +303,8 @@ execute as @a[scores={TriggerCommand=55}] run scoreboard players set @s TriggerC
 
 #56 - Charmander Give
 #scoreboard players set @a[x=-1726,y=63,z=-319,dx=23,dy=5,dz=25,score_TalkTime=0] TriggerCommand 56 {Inventory:[{id:"minecraft:dark_oak_fence_gate"}]}
-execute as @a[scores={TriggerCommand=56}] run pokegive @s[score_KantoStarters=0] Charmander lvl:5
-execute as @a[scores={TriggerCommand=56}] run playsound egghatch ambient @s ~ ~ ~ 100 1 1
+execute as @a[scores={TriggerCommand=56}] run pokegive @s[scores={KantoStarters=0}] Charmander lvl:5
+execute as @a[scores={TriggerCommand=56}] run playsound egghatch ambient @s ~ ~ ~ 1 1 1
 execute as @a[scores={TriggerCommand=56}] run clear @s minecraft:dark_oak_fence_gate
 execute as @a[scores={TriggerCommand=56}] run scoreboard players set @s KantoStarters 3
 execute as @a[scores={TriggerCommand=56}] run scoreboard players set @s TriggerCommand 0
