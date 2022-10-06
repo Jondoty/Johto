@@ -43,3 +43,10 @@ execute as @a[tag=!MomCooldown,scores={TalkTime=0,MomState=1},tag=Bugsy] run sco
 execute as @a[tag=!MomCooldown,scores={TalkTime=0,MomState=1},tag=Bugsy] run scoreboard players operation @s rng = @e[x=-867,y=69,z=-205,dy=3,type=armor_stand] rng
 
 execute as @a[tag=!MomCooldown,scores={TalkTime=0,MomState=1,rng=3},tag=Bugsy] run function johto:triggers/momitems/momitems
+
+
+
+#If world is on non-peaceful difficulty, set to peaceful (via hunger)
+#Food scoreboard objective mirrors player's hunger bar
+execute if entity @a[scores={food=0..18}] run tellraw @a {"text":"Survival difficulty found, setting world to peaceful...","italic":true,"color":"gray"}
+execute if entity @a[scores={food=0..18}] run difficulty peaceful
