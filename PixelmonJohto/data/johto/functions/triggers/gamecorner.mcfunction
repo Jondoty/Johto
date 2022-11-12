@@ -67,18 +67,18 @@ execute as @s[scores={TalkTime=1}] run scoreboard players add @e[x=-867,y=69,z=-
 execute as @s[scores={TalkTime=1}] run scoreboard players add @e[x=-867,y=69,z=-197,dy=4,dz=2,sort=random,limit=1] rng 64
 
 #Adds a SlotRolled score to active slot machines
-execute if entity @p[x=518,y=64,z=-377,distance=..2] if block 516 66 -377 stone_button[powered=true] run scoreboard players set @e[x=507,y=59,z=-370,dy=3] SlotRolled 1
-execute if entity @p[x=518,y=64,z=-381,distance=..2] if block 516 66 -381 stone_button[powered=true] run scoreboard players set @e[x=505,y=59,z=-370,dy=3] SlotRolled 1
-execute if entity @p[x=511,y=64,z=-377,distance=..2] if block 513 66 -377 stone_button[powered=true] run scoreboard players set @e[x=503,y=59,z=-370,dy=3] SlotRolled 1
-execute if entity @p[x=511,y=64,z=-381,distance=..2] if block 513 66 -381 stone_button[powered=true] run scoreboard players set @e[x=501,y=59,z=-370,dy=3] SlotRolled 1
-execute if entity @p[x=509,y=64,z=-377,distance=..2] if block 507 66 -377 stone_button[powered=true] run scoreboard players set @e[x=499,y=59,z=-370,dy=3] SlotRolled 1
-execute if entity @p[x=509,y=64,z=-381,distance=..2] if block 507 66 -381 stone_button[powered=true] run scoreboard players set @e[x=497,y=59,z=-370,dy=3] SlotRolled 1
-execute if entity @p[x=502,y=64,z=-377,distance=..2] if block 504 66 -377 stone_button[powered=true] run scoreboard players set @e[x=495,y=59,z=-370,dy=3] SlotRolled 1
-execute if entity @p[x=502,y=64,z=-381,distance=..2] if block 504 66 -381 stone_button[powered=true] run scoreboard players set @e[x=493,y=59,z=-370,dy=3] SlotRolled 1
-execute if entity @p[x=500,y=64,z=-377,distance=..2] if block 498 66 -377 stone_button[powered=true] run scoreboard players set @e[x=491,y=59,z=-370,dy=3] SlotRolled 1
-execute if entity @p[x=500,y=64,z=-381,distance=..2] if block 498 66 -381 stone_button[powered=true] run scoreboard players set @e[x=489,y=59,z=-370,dy=3] SlotRolled 1
-execute if entity @p[x=493,y=64,z=-377,distance=..2] if block 495 66 -377 stone_button[powered=true] run scoreboard players set @e[x=487,y=59,z=-370,dy=3] SlotRolled 1
-execute if entity @p[x=493,y=64,z=-381,distance=..2] if block 495 66 -381 stone_button[powered=true] run scoreboard players set @e[x=485,y=59,z=-370,dy=3] SlotRolled 1
+execute if entity @p[x=518,y=64,z=-377,distance=..2,scores={Coins=1..}] if block 516 66 -377 stone_button[powered=true] run scoreboard players set @e[x=507,y=59,z=-370,dy=3] SlotRolled 1
+execute if entity @p[x=518,y=64,z=-381,distance=..2,scores={Coins=1..}] if block 516 66 -381 stone_button[powered=true] run scoreboard players set @e[x=505,y=59,z=-370,dy=3] SlotRolled 1
+execute if entity @p[x=511,y=64,z=-377,distance=..2,scores={Coins=1..}] if block 513 66 -377 stone_button[powered=true] run scoreboard players set @e[x=503,y=59,z=-370,dy=3] SlotRolled 1
+execute if entity @p[x=511,y=64,z=-381,distance=..2,scores={Coins=1..}] if block 513 66 -381 stone_button[powered=true] run scoreboard players set @e[x=501,y=59,z=-370,dy=3] SlotRolled 1
+execute if entity @p[x=509,y=64,z=-377,distance=..2,scores={Coins=1..}] if block 507 66 -377 stone_button[powered=true] run scoreboard players set @e[x=499,y=59,z=-370,dy=3] SlotRolled 1
+execute if entity @p[x=509,y=64,z=-381,distance=..2,scores={Coins=1..}] if block 507 66 -381 stone_button[powered=true] run scoreboard players set @e[x=497,y=59,z=-370,dy=3] SlotRolled 1
+execute if entity @p[x=502,y=64,z=-377,distance=..2,scores={Coins=1..}] if block 504 66 -377 stone_button[powered=true] run scoreboard players set @e[x=495,y=59,z=-370,dy=3] SlotRolled 1
+execute if entity @p[x=502,y=64,z=-381,distance=..2,scores={Coins=1..}] if block 504 66 -381 stone_button[powered=true] run scoreboard players set @e[x=493,y=59,z=-370,dy=3] SlotRolled 1
+execute if entity @p[x=500,y=64,z=-377,distance=..2,scores={Coins=1..}] if block 498 66 -377 stone_button[powered=true] run scoreboard players set @e[x=491,y=59,z=-370,dy=3] SlotRolled 1
+execute if entity @p[x=500,y=64,z=-381,distance=..2,scores={Coins=1..}] if block 498 66 -381 stone_button[powered=true] run scoreboard players set @e[x=489,y=59,z=-370,dy=3] SlotRolled 1
+execute if entity @p[x=493,y=64,z=-377,distance=..2,scores={Coins=1..}] if block 495 66 -377 stone_button[powered=true] run scoreboard players set @e[x=487,y=59,z=-370,dy=3] SlotRolled 1
+execute if entity @p[x=493,y=64,z=-381,distance=..2,scores={Coins=1..}] if block 495 66 -381 stone_button[powered=true] run scoreboard players set @e[x=485,y=59,z=-370,dy=3] SlotRolled 1
 
 
 #Clones rng roll to respective slot player is assigned to
