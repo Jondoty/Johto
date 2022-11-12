@@ -107,7 +107,7 @@ tellraw @s[scores={DialogueTrigger=1,TalkTime=87}] {"text":"<Professor Oak> A wo
 tellraw @s[scores={DialogueTrigger=1,TalkTime=95}] {"text":"<Professor Oak> Let's go! I'll be seeing you later!"}
 
 #Hides Statue
-execute as @s[scores={DialogueTrigger=1,TalkTime=102}] run data merge entity @e[x=-965,y=65,z=-407,dz=2,dy=2,limit=1,type=pixelmon:statue] {ndex: 1999}
+execute as @s[scores={DialogueTrigger=1,TalkTime=103}] run data merge entity @e[x=-965,y=65,z=-407,dz=2,dy=2,limit=1,type=pixelmon:statue] {ndex: 1999}
 
 #tp player to New Bark Town
 execute as @s[scores={DialogueTrigger=1,TalkTime=103}] run playsound flee ambient @s ~ ~ ~ 100 1 1
@@ -515,7 +515,7 @@ execute as @s[scores={DialogueTrigger=16,TalkTime=74}] run give @s pixelmon:fast
 execute as @s[scores={DialogueTrigger=16,TalkTime=74}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=16,TalkTime=74}] run advancement grant @s only johto:rocket1
 tellraw @s[scores={DialogueTrigger=16,TalkTime=78}] {"text":"<Kurt> I make Balls from Apricorns."}
-tellraw @s[scores={DialogueTrigger=16,TalkTime=83}] {"text":"<Kurt> Collect them from trees and bring 'em to me. I'll make Balls out of them."}
+tellraw @s[scores={DialogueTrigger=16,TalkTime=83}] {"text":"<Kurt> Collect them from trees and bring em to my benches. We'll make Balls out of them."}
 execute as @s[scores={DialogueTrigger=16,TalkTime=83}] run scoreboard players set @s MusicTitles 1
 
 tag @s[scores={DialogueTrigger=16,TalkTime=83..}] add Dialogue16
@@ -1492,9 +1492,9 @@ execute as @s[scores={DialogueTrigger=63,TalkTime=93}] run tp @e[x=-128,y=44,z=1
 execute as @s[scores={DialogueTrigger=63,TalkTime=93}] run tp @e[x=-815,y=79,z=-240,dy=3,type=pixelmon:npc_chatting] -118 45 173
 
 #Sets up Electrode Statues
-execute as @s[scores={DialogueTrigger=63,TalkTime=93}] run data merge entity tp @e[x=-817,y=92,z=-157,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:101}
-execute as @s[scores={DialogueTrigger=63,TalkTime=93}] run data merge entity tp @e[x=-817,y=92,z=-152,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:101}
-execute as @s[scores={DialogueTrigger=63,TalkTime=93}] run data merge entity tp @e[x=-817,y=92,z=-147,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:101}
+execute as @s[scores={DialogueTrigger=63,TalkTime=93}] run data merge entity @e[x=-817,y=92,z=-157,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:101}
+execute as @s[scores={DialogueTrigger=63,TalkTime=93}] run data merge entity @e[x=-817,y=92,z=-152,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:101}
+execute as @s[scores={DialogueTrigger=63,TalkTime=93}] run data merge entity @e[x=-817,y=92,z=-147,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:101}
 
 tellraw @s[scores={DialogueTrigger=63,TalkTime=96}] ["",{"text":"<"},{"selector":"@s"},{"text":"> "},{"text":"Hail Giovanni","italic":true}]
 
@@ -2960,9 +2960,10 @@ execute as @s[scores={DialogueTrigger=142,TalkTime=43}] run playsound snorlax ho
 tellraw @s[scores={DialogueTrigger=142,TalkTime=43}]  {"text":"Snorlax woke up!"}
 
 #Spawns Snorlax
-execute as @s[scores={DialogueTrigger=142,TalkTime=45}] run tp @e[x=-2894,y=64,z=-53,distance=..1,type=pixelmon:statue] -761 79 -244
+execute as @s[scores={DialogueTrigger=142,TalkTime=45}] run data merge entity @e[x=-2902,y=64,z=-59,distance=..5,type=pixelmon:statue,limit=1] {ndex:1999}
 execute as @s[scores={DialogueTrigger=142,TalkTime=45}] run particle cloud -2894 66 -53 1 1 1 1 100
-execute as @s[scores={DialogueTrigger=142,TalkTime=45}] run pokebattle @s Snorlax,lvl:50,gr:7
+#execute as @s[scores={DialogueTrigger=142,TalkTime=45}] run pokebattle @s Snorlax,lvl:50,gr:7
+execute as @s[scores={DialogueTrigger=142,TalkTime=45}] run pokebattle @s Snorlax
 
 tag @s[scores={DialogueTrigger=142,TalkTime=45..}] add Dialogue142
 

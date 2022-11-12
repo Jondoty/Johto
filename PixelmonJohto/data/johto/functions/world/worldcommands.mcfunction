@@ -4,7 +4,7 @@
 execute at @e[tag=1.12.2Trainer,type=pixelmon:npc_trainer] run particle minecraft:end_rod ~ ~5 ~ 0 10 0 0.001 10 force @a
 
 #temp to tp corrputed trainer into void
-#tp @e[x=-790,,y=65,,z=715,type=pixelmon:npc_trainer,distance=..4] ~ ~-1000 ~
+tp @e[x=-172.50,y=64.00,z=598.50,type=pixelmon:npc_trainer,distance=..4] ~ ~-1000 ~
 
 #Adds a Persistent tag to statues for finding non-persistent statues to kill on commands
 #tag @e[type=pixelmon:statue,tag=!Persistent] add Persistent
@@ -1439,8 +1439,8 @@ execute if entity @a[x=-1073,y=61,z=-216,distance=..2,scores={TalkTime=0,Cooldow
 
 #----------------------------------------
 
-#Viridian City Snorlax tp in
-execute as @a[x=-2894,y=64,z=-53,distance=..50,scores={TalkTime=0},tag=!Dialogue142] run tp @e[x=-761,y=79,z=-244,distance=..2,type=pixelmon:statue] -2894 64 -53
+#Viridian City Snorlax setup
+execute as @a[x=-2894,y=64,z=-53,distance=..50,scores={TalkTime=0},tag=!Dialogue142] run data merge entity @e[x=-2902,y=64,z=-59,distance=..5,type=pixelmon:statue,limit=1,nbt={ndex:1999}] {ndex:2002}
 
 #Dialogue233
 #Suicune Spawn
@@ -1695,10 +1695,12 @@ execute at @a[x=903,y=64,z=-42,dx=2,dy=2,dz=4,scores={IP=0}] run tp @a[x=903,y=6
 
 
 #Viridian City Sleeping Snorlax
-tellraw @a[x=-2907,y=57,z=-75,dx=13,dy=20,dz=30,scores={TalkTime=0},tag=!Dialogue142] {"text":"A sleeping Snorlax blocks your path. Perhaps music might wake it.","italic":true,"color":"gray"}
-tellraw @a[x=-2893,y=57,z=-75,dx=11,dy=20,dz=30,scores={TalkTime=0},tag=!Dialogue142] {"text":"A sleeping Snorlax blocks your path. Perhaps music might wake it.","italic":true,"color":"gray"}
-execute at @a[x=-2893,y=57,z=-75,dx=11,dy=20,dz=30,tag=!Dialogue142] run tp @a[x=-2893,y=57,z=-75,dx=11,dy=20,dz=30,tag=!Dialogue142] ~10 ~ ~
-execute at @a[x=-2907,y=57,z=-75,dx=13,dy=20,dz=30,tag=!Dialogue142] run tp @a[x=-2907,y=57,z=-75,dx=13,dy=20,dz=30,tag=!Dialogue142] ~-10 ~ ~
+tellraw @a[x=-2912,y=57,z=-75,dx=13,dy=20,dz=30,scores={TalkTime=0,Cooldown=0},tag=!Dialogue142] {"text":"A sleeping Snorlax blocks your path. Perhaps music might wake it.","italic":true,"color":"gray"}
+tellraw @a[x=-2900,y=57,z=-75,dx=11,dy=20,dz=30,scores={TalkTime=0,Cooldown=0},tag=!Dialogue142] {"text":"A sleeping Snorlax blocks your path. Perhaps music might wake it.","italic":true,"color":"gray"}
+execute as @a[x=-2900,y=57,z=-75,dx=11,dy=20,dz=30,tag=!Dialogue142,scores={Cooldown=0}] run scoreboard players add @s Cooldown 40
+execute as @a[x=-2912,y=57,z=-75,dx=13,dy=20,dz=30,tag=!Dialogue142,scores={Cooldown=0}] run scoreboard players add @s Cooldown 40
+execute at @a[x=-2900,y=57,z=-75,dx=11,dy=20,dz=30,tag=!Dialogue142] run tp @a[x=-2900,y=57,z=-75,dx=11,dy=20,dz=30,tag=!Dialogue142] ~10 ~ ~
+execute at @a[x=-2912,y=57,z=-75,dx=13,dy=20,dz=30,tag=!Dialogue142] run tp @a[x=-2912,y=57,z=-75,dx=13,dy=20,dz=30,tag=!Dialogue142] ~-10 ~ ~
 
 
 #Radio Tower Shutter Open and Close
