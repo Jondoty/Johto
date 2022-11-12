@@ -511,10 +511,15 @@ scoreboard players set @a[x=-693,y=63,z=-490,dx=20,dy=5,dz=20,scores={TalkTime=0
 #Dialogue4 - Elm after picking starter
 scoreboard players set @a[x=-693,y=63,z=-490,dx=20,dy=5,dz=20,scores={TalkTime=0,StarterPick=1..},tag=!Dialogue4] DialogueTrigger 4
 
+#Sets starters to regular models if in town
+execute as @a[x=-704,y=62,z=-508,dx=50,dy=3,dz=50,scores={StarterPick=1}] run data merge entity @e[x=-687,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue,limit=1] {ndex: 152}
+execute as @a[x=-704,y=62,z=-508,dx=50,dy=3,dz=50,scores={StarterPick=2}] run data merge entity @e[x=-689,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue,limit=1] {ndex: 155}
+execute as @a[x=-704,y=62,z=-508,dx=50,dy=3,dz=50,scores={StarterPick=3}] run data merge entity @e[x=-685,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue,limit=1] {ndex: 159}
+
 #Sets first starters as invisible
-execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={StarterPick=1}] run effect give @e[x=-687,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue] minecraft:invisibility 10 1 true
-execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={StarterPick=2}] run effect give @e[x=-689,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue] minecraft:invisibility 10 1 true
-execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={StarterPick=3}] run effect give @e[x=-685,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue] minecraft:invisibility 10 1 true
+execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={StarterPick=1}] run data merge entity @e[x=-687,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue,limit=1] {ndex: 1999}
+execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={StarterPick=2}] run data merge entity @e[x=-689,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue,limit=1] {ndex: 1999}
+execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={StarterPick=3}] run data merge entity @e[x=-685,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue,limit=1] {ndex: 1999}
 
 #---------------------
 
@@ -671,7 +676,7 @@ scoreboard players set @a[x=420,y=63,z=-307,dx=8,dy=5,dz=8,tag=!Dialogue29,tag=W
 scoreboard players set @a[x=332,y=64,z=-16,distance=0..10,tag=Dialogue29,tag=!Dialogue30] DialogueTrigger 30
 
 #tps in Sudowoodo
-execute at @a[x=332,y=64,z=-16,distance=0..30,tag=!Dialogue30,scores={TalkTime=0}] run tp @e[x=-791,y=79,z=-244,dy=3,type=pixelmon:statue] 333 64 -17
+execute at @a[x=332,y=64,z=-16,distance=0..30,tag=!Dialogue30,scores={TalkTime=0}] run data merge entity @e[x=331,y=63,z=-18,dx=3,dy=3,dz=3,type=pixelmon:statue,limit=1] {ndex: 185}
 
 #Dialogue31 - Ecruteak City Silver at Dance Theatre
 scoreboard players set @a[x=343,y=64,z=216,distance=..3,tag=!Dialogue31,scores={TalkTime=0}] DialogueTrigger 31
@@ -698,9 +703,9 @@ execute as @a[x=441,y=64,z=312,distance=..20,tag=Dialogue34,tag=!Dialogue35,scor
 #---------------------
 #Dialogue36 - Burned Tower Legendary Dogs
 scoreboard players set @a[x=444,y=58,z=328,distance=..5,tag=!Dialogue36] DialogueTrigger 36
-execute as @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run tp @e[x=-802,y=79,z=-244,dy=3,type=pixelmon:statue] 446 59 328
-execute as @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run tp @e[x=-807,y=79,z=-244,dy=3,type=pixelmon:statue] 443 59 328
-execute as @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run tp @e[x=-797,y=79,z=-244,dy=3,type=pixelmon:statue] 439 59 328
+execute if entity @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run data merge entity @e[limit=1,x=439,y=58,z=328,distance=..2,type=pixelmon:statue] {ndex:243,statueTexture:3b,Animate:0b}
+execute if entity @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run data merge entity @e[limit=1,x=446,y=58,z=328,distance=..2,type=pixelmon:statue] {ndex:244,statueTexture:3b,Animate:0b}
+execute if entity @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run data merge entity @e[limit=1,x=443,y=58,z=328,distance=..2,type=pixelmon:statue] {ndex:245,statueTexture:3b,Animate:0b}
 
 #---------------------
 #Dialogue37 - Ecruteak City Gym Morty pre-battle
@@ -751,7 +756,7 @@ execute as @p[x=-187,y=64,z=352,distance=..30,tag=Dialogue64] run tp @e[x=-184,y
 #---------------------
 #Route 49 - Lake of Rage Shiny Gyarados
 scoreboard players set @a[x=-169,y=65,z=645,distance=..30,scores={TalkTime=0},tag=!Dialogue49] DialogueTrigger 49
-execute at @a[x=-169,y=65,z=645,distance=..100,tag=!Dialogue49,scores={TalkTime=0}] run tp @e[x=-765,y=66,z=-244,distance=..3,type=pixelmon:statue] -167 62 632
+execute if entity @a[x=-169,y=65,z=645,distance=..100,tag=!Dialogue49,scores={TalkTime=0}] run data merge entity @e[x=-167,y=62,z=632,distance=..5,type=pixelmon:statue,limit=1] {ndex:130,palette:"shiny"}
 
 #Dialogue50 - Mr. Pokemon Red Scale trade prompt
 scoreboard players set @a[x=-255,y=63,z=-198,dx=20,dy=5,dz=8,scores={DialogueTrigger=0},tag=!Dialogue50,nbt={Inventory:[{id:"pixelmon:red_scale"}]}] DialogueTrigger 50

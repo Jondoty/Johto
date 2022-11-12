@@ -93,8 +93,7 @@ tellraw @s[scores={DialogueTrigger=1,TalkTime=16}] {"text":"<Professor Oak> My n
 #Pokémon spawn sound
 execute as @s[scores={DialogueTrigger=1,TalkTime=22}] run particle cloud -964.5 66 -406.0 1 1 1 1 100
 #execute as @s[scores={DialogueTrigger=1,TalkTime=22}] run tp @e[x=-744,y=74,z=-242,dy=3,type=pixelmon:statue] -964.5 66 -406.0
-execute as @s[scores={DialogueTrigger=1,TalkTime=22}] run summon pixelmon:statue -964.5 66 -406.0 {ndex:194,Growth:5b,Rotation:[90.0f,0.0f],StartingYaw:90.0f}
-execute as @s[scores={DialogueTrigger=1,TalkTime=22}] run data merge entity @e[limit=1,type=pixelmon:statue,tag=!Persistent,nbt={ndex:194}] {Animate:1b}
+execute as @s[scores={DialogueTrigger=1,TalkTime=22}] run data merge entity @e[x=-965,y=65,z=-407,dz=2,dy=2,limit=1,type=pixelmon:statue] {ndex: 194}
 
 tellraw @s[scores={DialogueTrigger=1,TalkTime=25}] {"text":"<Professor Oak> This world is inhabited by creatures that we call Pokémon."}
 tellraw @s[scores={DialogueTrigger=1,TalkTime=33}] {"text":"<Professor Oak> People and Pokémon live together by supporting each other."}
@@ -107,8 +106,8 @@ tellraw @s[scores={DialogueTrigger=1,TalkTime=80}] {"text":"<Professor Oak> You'
 tellraw @s[scores={DialogueTrigger=1,TalkTime=87}] {"text":"<Professor Oak> A world of dreams and adventures with Pokémon awaits!"}
 tellraw @s[scores={DialogueTrigger=1,TalkTime=95}] {"text":"<Professor Oak> Let's go! I'll be seeing you later!"}
 
-#Kills Statue
-execute as @s[scores={DialogueTrigger=1,TalkTime=102}] run kill @e[type=pixelmon:statue,tag=!Persistent,nbt={ndex:194}]
+#Hides Statue
+execute as @s[scores={DialogueTrigger=1,TalkTime=102}] run data merge entity @e[x=-965,y=65,z=-407,dz=2,dy=2,limit=1,type=pixelmon:statue] {ndex: 1999}
 
 #tp player to New Bark Town
 execute as @s[scores={DialogueTrigger=1,TalkTime=103}] run playsound flee ambient @s ~ ~ ~ 100 1 1
@@ -299,9 +298,9 @@ tellraw @s[scores={DialogueTrigger=8,TalkTime=186}] ["",{"text":"<"},{"text":"El
 tag @s[scores={DialogueTrigger=8,TalkTime=186..}] add Dialogue8
 
 #Starter Invisibility post-Silver
-#execute as @s[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,tag=Dialogue5,score_StarterPick_min=2,score_StarterPick=2] run /effect give @e[x=-685,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue] minecraft:invisibility 10 1 true
-#execute as @s[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,tag=Dialogue5,score_StarterPick_min=1,score_StarterPick=1] run /effect give @e[x=-689,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue] minecraft:invisibility 10 1 true
-#execute as @s[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,tag=Dialogue5,score_StarterPick_min=3,score_StarterPick=3] run /effect give @e[x=-687,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue] minecraft:invisibility 10 1 true
+execute as @s[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,tag=Dialogue5,scores={StarterPick=2}] run data merge entity @e[x=-685,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue,limit=1] {ndex: 1999}
+execute as @s[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,tag=Dialogue5,scores={StarterPick=1}] run data merge entity @e[x=-689,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue,limit=1] {ndex: 1999}
+execute as @s[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,tag=Dialogue5,scores={StarterPick=3}] run data merge entity @e[x=-687,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue,limit=1] {ndex: 1999}
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Silver in Bellsprout Tower pre-battle
@@ -780,7 +779,7 @@ tellraw @s[scores={DialogueTrigger=30,TalkTime=7}] ["",{"selector":"@s","italic"
 tellraw @s[scores={DialogueTrigger=30,TalkTime=15}] {"text":"The weird tree doesn't like the Squirtbottle!","italic":true,"color":"gray"}
 tellraw @s[scores={DialogueTrigger=30,TalkTime=23}] {"text":"The weird tree attacked!","italic":true,"color":"gray"}
 execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run execute at @e[x=331,y=63,z=-18,dx=3,dy=3,dz=3,type=pixelmon:statue] run particle cloud ~ ~ ~ 1 1 1 1 100
-execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run tp @e[x=331,y=63,z=-18,dx=3,dy=3,dz=3,type=pixelmon:statue] -791 80 -244
+execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run data merge entity @e[x=331,y=63,z=-18,dx=3,dy=3,dz=3,type=pixelmon:statue,limit=1] {ndex: 1999}
 #execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run pokebattle @s Sudowoodo,lvl:20,gr:7
 execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run pokebattle @s Sudowoodo
 execute as @s[scores={DialogueTrigger=30,TalkTime=25}] run scoreboard players set @s Sw 1
@@ -891,22 +890,25 @@ tag @s[scores={DialogueTrigger=35,TalkTime=23..}] add Dialogue35
 #scoreboard players set @a[x=444,y=58,z=328,distance=..5,tag=!Dialogue36] DialogueTrigger 36
 
 #Raikou
-execute as @s[scores={DialogueTrigger=36,TalkTime=2}] run data modify entity @e[limit=1,x=439,y=58,z=328,distance=..2,type=pixelmon:statue] {statueTexture:0s,Animate:1b}
+execute as @s[scores={DialogueTrigger=36,TalkTime=2}] run data merge entity @e[limit=1,x=439,y=58,z=328,distance=..2,type=pixelmon:statue] {statueTexture:0b,Animate:1b}
 execute as @s[scores={DialogueTrigger=36,TalkTime=2}] run playsound raikou hostile @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=36,TalkTime=5}] run playsound flee ambient @s ~ ~ ~ 100 1 1
-execute as @s[scores={DialogueTrigger=36,TalkTime=5}] run tp @e[x=439,y=58,z=328,distance=..2,type=pixelmon:statue] -797 80 -244
+execute as @s[scores={DialogueTrigger=36,TalkTime=5}] run particle cloud 439 59 328 1 1 1 1 100
+execute as @s[scores={DialogueTrigger=36,TalkTime=5}] run data merge entity @e[limit=1,x=439,y=58,z=328,distance=..2,type=pixelmon:statue] {ndex: 1999}
 
 #Entei
-execute as @s[scores={DialogueTrigger=36,TalkTime=8}] run data modify entity @e[limit=1,x=446,y=58,z=328,distance=..2,type=pixelmon:statue] {statueTexture:0s,Animate:1b}
+execute as @s[scores={DialogueTrigger=36,TalkTime=8}] run data merge entity @e[limit=1,x=446,y=58,z=328,distance=..2,type=pixelmon:statue] {statueTexture:0b,Animate:1b}
 execute as @s[scores={DialogueTrigger=36,TalkTime=8}] run playsound entei hostile @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=36,TalkTime=11}] run playsound flee hostile @s ~ ~ ~ 100 1 1
-execute as @s[scores={DialogueTrigger=36,TalkTime=11}] run tp @e[x=446,y=58,z=328,distance=..2,type=pixelmon:statue] -802 80 -244
+execute as @s[scores={DialogueTrigger=36,TalkTime=11}] run particle cloud 446 59 328 1 1 1 1 100
+execute as @s[scores={DialogueTrigger=36,TalkTime=11}] run data merge entity @e[limit=1,x=446,y=58,z=328,distance=..2,type=pixelmon:statue] {ndex: 1999}
 
 #Suicune
+execute as @s[scores={DialogueTrigger=36,TalkTime=14}] run data merge entity @e[limit=1,x=443,y=58,z=328,distance=..2,type=pixelmon:statue] {statueTexture:0b,Animate:1b}
 execute as @s[scores={DialogueTrigger=36,TalkTime=14}] run playsound suicune hostile @s ~ ~ ~ 1 1 1
-execute as @s[scores={DialogueTrigger=36,TalkTime=14}] run data modify entity @e[limit=1,x=443,y=58,z=328,distance=..2,type=pixelmon:statue] {statueTexture:0s,Animate:1b}
 execute as @s[scores={DialogueTrigger=36,TalkTime=17}] run playsound flee hostile @s ~ ~ ~ 100 1 1
-execute as @s[scores={DialogueTrigger=36,TalkTime=17}] run tp @e[x=443,y=58,z=328,distance=..2,type=pixelmon:statue] -807 80 -244
+execute as @s[scores={DialogueTrigger=36,TalkTime=17}] run particle cloud 443 59 328 1 1 1 1 100
+execute as @s[scores={DialogueTrigger=36,TalkTime=17}] run data merge entity @e[limit=1,x=443,y=58,z=328,distance=..2,type=pixelmon:statue] {ndex: 1999}
 
 
 tellraw @s[scores={DialogueTrigger=36,TalkTime=22}] {"text":"You can now find Entei and Raikou anytime in the wild grass!","italic":true,"color":"gray"}
@@ -915,15 +917,15 @@ execute as @s[scores={DialogueTrigger=36,TalkTime=22}] run scoreboard players se
 execute as @s[scores={DialogueTrigger=36,TalkTime=22}] run advancement grant @s only johto:event3
 
 #entitydata textures back to statues for respawns
-execute as @s[scores={DialogueTrigger=36,TalkTime=22}] run execute as @e[x=-809,y=78,z=-246,dx=14,dy=5,dz=4,type=pixelmon:statue] run data modify entity @s {statueTexture:3s,Animate:0b}
+execute as @s[scores={DialogueTrigger=36,TalkTime=22}] run execute as @e[x=-809,y=78,z=-246,dx=14,dy=5,dz=4,type=pixelmon:statue] run data merge entity @s {statueTexture:3s,Animate:0b}
 
 tag @s[scores={DialogueTrigger=36,TalkTime=22..}] add Dialogue36
 
 
 #Dog Statue Resets
-#execute as @s[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,score_TalkTime=0] run tp @e[x=-802,y=79,z=-244,dy=3,type=pixelmon:statue] 446 59 328
-#execute as @s[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,score_TalkTime=0] run tp @e[x=-807,y=79,z=-244,dy=3,type=pixelmon:statue] 443 59 328
-#execute as @s[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,score_TalkTime=0] run tp @e[x=-797,y=79,z=-244,dy=3,type=pixelmon:statue] 439 59 328
+#execute if entity @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run data merge entity @e[limit=1,x=439,y=58,z=328,distance=..2,type=pixelmon:statue] {ndex:243,statueTexture:3b,Animate:0b}
+#execute if entity @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run data merge entity @e[limit=1,x=446,y=58,z=328,distance=..2,type=pixelmon:statue] {ndex:244,statueTexture:3b,Animate:0b}
+#execute if entity @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run data merge entity @e[limit=1,x=443,y=58,z=328,distance=..2,type=pixelmon:statue] {ndex:245,statueTexture:3b,Animate:0b}
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Eceuteak City Gym Morty pre-battle Dialogue
@@ -1186,9 +1188,9 @@ execute as @s[scores={DialogueTrigger=48,TalkTime=1}] run scoreboard players set
 tellraw @s[scores={DialogueTrigger=48,TalkTime=5}] {"text":"<Rocket Grunt> Hold it there, kiddo!"}
 tellraw @s[scores={DialogueTrigger=48,TalkTime=12}] {"text":"<Rocket Grunt> The toll is $1000 to go through."}
 
-execute as @s[scores={DialogueTrigger=48,TalkTime=17}] run data modify entity @e[limit=1,x=-801,y=64,z=-284,dy=3,type=armor_stand] {CustomName:'{"text":"Team Rocket"}'}
+execute as @s[scores={DialogueTrigger=48,TalkTime=17}] run data merge entity @e[limit=1,x=-801,y=64,z=-284,dy=3,type=armor_stand] {CustomName:'{"text":"Team Rocket"}'}
 execute as @s[scores={DialogueTrigger=48,TalkTime=17}] run execute as @e[x=-801,y=64,z=-284,dy=3,type=armor_stand] run givemoney @a[scores={DialogueTrigger=48,TalkTime=17}] -1000
-execute as @s[scores={DialogueTrigger=48,TalkTime=18}] run data modify entity @e[limit=1,x=-801,y=64,z=-284,dy=3,type=armor_stand] {CustomName:'{"text":"Pixelmon Johto"}'}
+execute as @s[scores={DialogueTrigger=48,TalkTime=18}] run data merge entity @e[limit=1,x=-801,y=64,z=-284,dy=3,type=armor_stand] {CustomName:'{"text":"Pixelmon Johto"}'}
 
 tellraw @s[scores={DialogueTrigger=48,TalkTime=23}] {"text":"<Rocket Grunt> Thank you very much!"}
 
@@ -1204,10 +1206,10 @@ tag @s[scores={DialogueTrigger=48,TalkTime=23..}] add Dialogue48
 #scoreboard players set @a[x=-169,y=65,z=645,distance=..30,score_TalkTime=0,tag=!Dialogue49] DialogueTrigger 49
 
 #Statue reset:
-#execute as @s[x=-169,y=65,z=645,distance=..100,tag=!Dialogue49,score_TalkTime=0] run tp @e[x=-765,y=66,z=-244,dy=3,type=pixelmon:statue] -167 62 632
+#execute as @s[x=-169,y=65,z=645,distance=..100,tag=!Dialogue49,score_TalkTime=0] run data merge entity @e[x=-765,y=66,z=-244,dy=3,type=pixelmon:statue,limit=1] {ndex: 1999}
 
 execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run particle cloud -167 62 632 3 3 3 1 200
-execute at @s[scores={DialogueTrigger=49,TalkTime=1}] run tp @e[type=pixelmon:statue,x=-167,y=62,z=632,distance=..5] -765 66 -244
+execute at @s[scores={DialogueTrigger=49,TalkTime=1}] run data merge entity @e[type=pixelmon:statue,x=-167,y=62,z=632,distance=..5,limit=1] {ndex:1999}
 #Bugged, /pokebattle doesn't seem to work
 #execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run pokebattle @s Gyarados,s,lvl:30,gr:7
 execute at @s[scores={DialogueTrigger=49,TalkTime=1}] run pokespawn Gyarados growth:7 shiny lvl:30
@@ -1489,10 +1491,10 @@ execute as @s[scores={DialogueTrigger=63,TalkTime=93}] run particle cloud -118 4
 execute as @s[scores={DialogueTrigger=63,TalkTime=93}] run tp @e[x=-128,y=44,z=159,dy=3,type=pixelmon:npc_chatting] -797 93 -242
 execute as @s[scores={DialogueTrigger=63,TalkTime=93}] run tp @e[x=-815,y=79,z=-240,dy=3,type=pixelmon:npc_chatting] -118 45 173
 
-#tps in Electrode Statues
-execute as @s[scores={DialogueTrigger=63,TalkTime=93}] run tp @e[x=-817,y=92,z=-157,dx=1,dy=2,dz=1,type=pixelmon:statue] -91.0 46 203.0
-execute as @s[scores={DialogueTrigger=63,TalkTime=93}] run tp @e[x=-817,y=92,z=-152,dx=1,dy=2,dz=1,type=pixelmon:statue] -91.0 46 195.0
-execute as @s[scores={DialogueTrigger=63,TalkTime=93}] run tp @e[x=-817,y=92,z=-147,dx=1,dy=2,dz=1,type=pixelmon:statue] -91.0 46 187.0
+#Sets up Electrode Statues
+execute as @s[scores={DialogueTrigger=63,TalkTime=93}] run data merge entity tp @e[x=-817,y=92,z=-157,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:101}
+execute as @s[scores={DialogueTrigger=63,TalkTime=93}] run data merge entity tp @e[x=-817,y=92,z=-152,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:101}
+execute as @s[scores={DialogueTrigger=63,TalkTime=93}] run data merge entity tp @e[x=-817,y=92,z=-147,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:101}
 
 tellraw @s[scores={DialogueTrigger=63,TalkTime=96}] ["",{"text":"<"},{"selector":"@s"},{"text":"> "},{"text":"Hail Giovanni","italic":true}]
 
@@ -1517,21 +1519,21 @@ execute as @s[scores={DialogueTrigger=63,TalkTime=147}] run tp @e[x=-815,y=79,z=
 execute as @s[scores={DialogueTrigger=63,TalkTime=147}] run tp @e[x=-118,y=45,z=181,dy=3,type=pixelmon:npc_chatting] -815 80 -238
 
 #tps in Electrode 1
-execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run tp @e[x=-92,y=45,z=186,dx=1,dy=2,dz=1,type=pixelmon:statue] -816.0 93 -146.0
+execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run data merge entity @e[x=-92,y=45,z=186,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:1999}
 execute as @s[scores={DialogueTrigger=63,TalkTime=147}] run execute at @e[x=-92,y=45,z=186,dx=1,dy=5,dz=1,type=armor_stand] run pokespawn Electrode lvl:22 gr:7
-execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=186,dx=1,dy=5,dz=1,type=armor_stand] run data modify entity @e[limit=1,x=-92,y=45,z=186,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] {NoAI:1}
+execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=186,dx=1,dy=5,dz=1,type=armor_stand] run data merge entity @e[limit=1,x=-92,y=45,z=186,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] {NoAI:1b}
 execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=186,dx=1,dy=5,dz=1,type=armor_stand] run tp @e[x=-92,y=45,z=186,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] ~ ~ ~ 180 ~
 
 #tps in Electrode 2
-execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run tp @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,type=pixelmon:statue] -816.0 93 -151.0
+execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run data merge entity @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:1999}
 execute as @s[scores={DialogueTrigger=63,TalkTime=147}] run execute at @e[x=-92,y=45,z=194,dx=1,dy=5,dz=1,type=armor_stand] run pokespawn Electrode lvl:22 gr:7
-execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=194,dx=1,dy=5,dz=1,type=armor_stand] run data modify entity @e[limit=1,x=-92,y=45,z=194,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] {NoAI:1}
+execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=194,dx=1,dy=5,dz=1,type=armor_stand] run data merge entity @e[limit=1,x=-92,y=45,z=194,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] {NoAI:1b}
 execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=194,dx=1,dy=5,dz=1,type=armor_stand] run tp @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] ~ ~ ~ 180 ~
 
 #tps in Electrode 3
-execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run tp @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,type=pixelmon:statue] -816.0 93 -156.0
+execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run data merge entity @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:1999}
 execute as @s[scores={DialogueTrigger=63,TalkTime=147}] run execute at @e[x=-92,y=45,z=202,dx=1,dy=5,dz=1,type=armor_stand] run pokespawn Electrode lvl:22 gr:7
-execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=202,dx=1,dy=5,dz=1,type=armor_stand] run data modify entity @e[limit=1,x=-92,y=45,z=202,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] {NoAI:1}
+execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=202,dx=1,dy=5,dz=1,type=armor_stand] run data merge entity @e[limit=1,x=-92,y=45,z=202,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] {NoAI:1b}
 execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=202,dx=1,dy=5,dz=1,type=armor_stand] run tp @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] ~ ~ ~ 180 ~
 
 tag @s[scores={DialogueTrigger=63,TalkTime=148..}] add Dialogue63
@@ -3098,7 +3100,7 @@ tellraw @s[scores={DialogueTrigger=153,TalkTime=26}] {"text":"<Professor Oak> Ha
 tellraw @s[scores={DialogueTrigger=153,TalkTime=33}] {"text":"<Professor Oak> You must have figured it out right away. Yes, it is a Pokémon!"}
 tellraw @s[scores={DialogueTrigger=153,TalkTime=42}] {"text":"<Professor Oak> You don't see them very often in Kanto."}
 tellraw @s[scores={DialogueTrigger=153,TalkTime=50}] {"text":"<Professor Oak> Choose one and it'll be yours! ...Go ahead!"}
-execute as @s[scores={DialogueTrigger=153,TalkTime=50}] run clone -1720 62 -311 -1724 62 -311 
+execute as @s[scores={DialogueTrigger=153,TalkTime=50}] run clone -1720 62 -311 -1724 62 -311
 
 tag @s[scores={DialogueTrigger=153,TalkTime=50..}] add Dialogue153
 
@@ -3866,9 +3868,9 @@ execute as @s[scores={DialogueTrigger=186,TalkTime=5..6}] run function johto:tri
 
 #Checks if Pokemon is already at max happiness, ends dialogue if so
 execute as @s[scores={DialogueTrigger=186,TalkTime=9}] run execute as @e[x=511,y=54,z=-344,dx=15,dy=6,dz=19,scores={Friendship=255}] run tellraw @a[scores={DialogueTrigger=186,TalkTime=9}] {"text":"<Beauty Salon Clerk> Your Pokémon can't get any happier!"}
-execute as @s[scores={DialogueTrigger=186,TalkTime=9}] run execute as @e[x=511,y=54,z=-344,dx=15,dy=6,dz=19,scores={Friendship=255}] run data modify entity @e[limit=1,x=-801,y=64,z=-284,dy=3,type=armor_stand] {CustomName:'{"text":"Beauty Salon Clerk"}'}
+execute as @s[scores={DialogueTrigger=186,TalkTime=9}] run execute as @e[x=511,y=54,z=-344,dx=15,dy=6,dz=19,scores={Friendship=255}] run data merge entity @e[limit=1,x=-801,y=64,z=-284,dy=3,type=armor_stand] {CustomName:'{"text":"Beauty Salon Clerk"}'}
 execute as @s[scores={DialogueTrigger=186,TalkTime=9}] run execute as @e[x=511,y=54,z=-344,dx=15,dy=6,dz=19,scores={Friendship=255}] run execute as @e[x=-801,y=64,z=-284,dy=3,type=armor_stand] run givemoney @a[scores={DialogueTrigger=186,TalkTime=9}] 500
-execute as @s[scores={DialogueTrigger=186,TalkTime=9}] run execute as @e[x=511,y=54,z=-344,dx=15,dy=6,dz=19,scores={Friendship=255}] run data modify entity @e[limit=1,x=-801,y=64,z=-284,dy=3,type=armor_stand] {CustomName:'{"text":"Pixelmon Johto"}'}
+execute as @s[scores={DialogueTrigger=186,TalkTime=9}] run execute as @e[x=511,y=54,z=-344,dx=15,dy=6,dz=19,scores={Friendship=255}] run data merge entity @e[limit=1,x=-801,y=64,z=-284,dy=3,type=armor_stand] {CustomName:'{"text":"Pixelmon Johto"}'}
 execute as @s[scores={DialogueTrigger=186,TalkTime=9}] run execute as @e[x=511,y=54,z=-344,dx=15,dy=6,dz=19,scores={Friendship=255}] run tag @a[scores={DialogueTrigger=186,TalkTime=9}] remove BeautySalon
 execute as @s[scores={DialogueTrigger=186,TalkTime=9}] run execute as @e[x=511,y=54,z=-344,dx=15,dy=6,dz=19,scores={Friendship=255}] run tag @a[scores={DialogueTrigger=186,TalkTime=9}] add EndDialogue
 
@@ -3880,9 +3882,9 @@ execute as @s[scores={DialogueTrigger=186,TalkTime=13}] run function johto:trigg
 execute as @s[scores={DialogueTrigger=186,TalkTime=2..15}] run execute at @e[x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=pixelmon:pixelmon] run particle minecraft:dust 0 1 0 1 ~ ~1 ~ 1 1 1 0.5 25 force @a[distance=..50]
 
 #Jumping animation
-execute as @s[scores={DialogueTrigger=186,TalkTime=15}] run data modify entity @e[limit=1,x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=pixelmon:pixelmon] {Motion:[0.0,0.35,0.0]}
-execute as @s[scores={DialogueTrigger=186,TalkTime=16}] run data modify entity @e[limit=1,x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=pixelmon:pixelmon] {Motion:[0.0,0.35,0.0]}
-execute as @s[scores={DialogueTrigger=186,TalkTime=17}] run data modify entity @e[limit=1,x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=pixelmon:pixelmon] {Motion:[0.0,0.35,0.0]}
+execute as @s[scores={DialogueTrigger=186,TalkTime=15}] run data merge entity @e[limit=1,x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=pixelmon:pixelmon] {Motion:[0.0,0.35,0.0]}
+execute as @s[scores={DialogueTrigger=186,TalkTime=16}] run data merge entity @e[limit=1,x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=pixelmon:pixelmon] {Motion:[0.0,0.35,0.0]}
+execute as @s[scores={DialogueTrigger=186,TalkTime=17}] run data merge entity @e[limit=1,x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=pixelmon:pixelmon] {Motion:[0.0,0.35,0.0]}
 
 tellraw @s[scores={DialogueTrigger=186,TalkTime=15}] ["",{"text":"<Beauty Salon Clerk> Your "},{"selector":"@e[x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=pixelmon:pixelmon]"},{"text":" looks delighted! Please come again!"}]
 
