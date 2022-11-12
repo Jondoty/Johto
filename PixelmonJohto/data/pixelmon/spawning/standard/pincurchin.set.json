@@ -2,9 +2,7 @@
   "id": "Pincurchin",
   "spawnInfos": [
     {
-      "spec": {
-        "name": "species:Pincurchin"
-      },
+      "spec": "species:Pincurchin",
       "stringLocationTypes": [
         "Seafloor",
         "Land"
@@ -18,10 +16,10 @@
         ],
         "stringBiomes": [
           "beaches",
-          "ocean"
+          "oceanic"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

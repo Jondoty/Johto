@@ -19,7 +19,7 @@
 
     {
       "spec": {
-        "name": "Spinarak"
+        "name": "species:Spinarak"
       },
       "stringLocationTypes": [
         "Sweet Scent"
@@ -421,7 +421,7 @@
 
     {
       "spec": {
-        "name": "Ariados"
+        "name": "species:Ariados"
       },
       "stringLocationTypes": [
         "Sweet Scent"
