@@ -191,26 +191,36 @@ execute if block 495 66 -377 stone_button[powered=true] if entity @e[x=487,y=59,
 execute if block 495 66 -381 stone_button[powered=true] if entity @e[x=485,y=59,z=-370,dy=3,scores={rng=0}] run execute as @p[x=493,y=64,z=-381,distance=..2] run function johto:triggers/gamecorner
 
 #NPC Counter Prompt
-tellraw @a[x=490,y=64,z=-373,distance=..4,scores={TalkTime=0,Cooldown=0},nbt={Inventory:[{id:"pixelmon:coin_case"}]}] ["",{"text":"Welcome to the Game Corner! Would you like to exchange your coins for prizes?\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 95"}},{"text":"]"}]
+tellraw @a[x=490,y=64,z=-373,distance=..4,scores={TalkTime=0,Cooldown=0,Coins=1..},nbt={Inventory:[{id:"pixelmon:coin_case"}]}] ["",{"text":"Would you like to exchange your coins for prizes?\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 95"}},{"text":"]"}]
 scoreboard players enable @a[x=490,y=64,z=-373,distance=..4,scores={TalkTime=0,Cooldown=0},nbt={Inventory:[{id:"pixelmon:coin_case"}]}] TriggerCommand
 scoreboard players set @a[x=490,y=64,z=-373,distance=..4,scores={TalkTime=0,Cooldown=0},nbt={Inventory:[{id:"pixelmon:coin_case"}]}] Cooldown 80
 
 #Gives the player Coins in exchange for Emeralds bought
 
-execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:64b}]}] run scoreboard players add @s Coins 64
-execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:64b}]}] run clear @s minecraft:emerald 64
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:64b},{id:"pixelmon:coin_case"}]}] run scoreboard players add @s Coins 64
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:64b},{id:"pixelmon:coin_case"}]},scores={Cooldown=0}] run tellraw @s {"text":"You stored coins in your Coin Case","italic":true,"color":"gray"}
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:64b},{id:"pixelmon:coin_case"}]},scores={Cooldown=0}] run scoreboard players add @s Cooldown 10
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:64b},{id:"pixelmon:coin_case"}]}] run clear @s minecraft:emerald 64
 
-execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:32b}]}] run scoreboard players add @s Coins 32
-execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:32b}]}] run clear @s minecraft:emerald 32
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:32b},{id:"pixelmon:coin_case"}]}] run scoreboard players add @s Coins 32
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:32b},{id:"pixelmon:coin_case"}]},scores={Cooldown=0}] run tellraw @s {"text":"You stored coins in your Coin Case","italic":true,"color":"gray"}
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:32b},{id:"pixelmon:coin_case"}]},scores={Cooldown=0}] run scoreboard players add @s Cooldown 10
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:32b},{id:"pixelmon:coin_case"}]}] run clear @s minecraft:emerald 32
 
-execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:16b}]}] run scoreboard players add @s Coins 16
-execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:16b}]}] run clear @s minecraft:emerald 16
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:16b},{id:"pixelmon:coin_case"}]}] run scoreboard players add @s Coins 16
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:16b},{id:"pixelmon:coin_case"}]},scores={Cooldown=0}] run tellraw @s {"text":"You stored coins in your Coin Case","italic":true,"color":"gray"}
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:16b},{id:"pixelmon:coin_case"}]},scores={Cooldown=0}] run scoreboard players add @s Cooldown 10
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:16b},{id:"pixelmon:coin_case"}]}] run clear @s minecraft:emerald 16
 
-execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:5b}]}] run scoreboard players add @s Coins 5
-execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:5b}]}] run clear @s minecraft:emerald 5
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:5b},{id:"pixelmon:coin_case"}]}] run scoreboard players add @s Coins 5
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:5b},{id:"pixelmon:coin_case"}]},scores={Cooldown=0}] run tellraw @s {"text":"You stored coins in your Coin Case","italic":true,"color":"gray"}
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:5b},{id:"pixelmon:coin_case"}]},scores={Cooldown=0}] run scoreboard players add @s Cooldown 10
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald",Count:5b},{id:"pixelmon:coin_case"}]}] run clear @s minecraft:emerald 5
 
-execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald"}]}] run scoreboard players add @s Coins 1
-execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald"}]}] run clear @s minecraft:emerald 1
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald"},{id:"pixelmon:coin_case"}]}] run scoreboard players add @s Coins 1
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald"},{id:"pixelmon:coin_case"}]},scores={Cooldown=0}] run tellraw @s {"text":"You stored coins in your Coin Case","italic":true,"color":"gray"}
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald"},{id:"pixelmon:coin_case"}]},scores={Cooldown=0}] run scoreboard players add @s Cooldown 10
+execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19,nbt={Inventory:[{id:"minecraft:emerald"},{id:"pixelmon:coin_case"}]}] run clear @s minecraft:emerald 1
 
 #When player looks at a coin case, shows their balance
 execute as @a[nbt={SelectedItem:{id:"pixelmon:coin_case"}}] run function johto:triggers/gamecorner/coinbal
@@ -642,7 +652,7 @@ execute as @a[x=623,y=64,z=-714,distance=5,tag=!Bugsy,scores={Cooldown=0}] run s
 scoreboard players set @a[x=623,y=64,z=-714,distance=0..5,tag=!Dialogue21,tag=Bugsy,scores={Farfetchd=0}] DialogueTrigger 21
 
 #Turns Farfetch'd invisible if player doesn't have Bugsy tag
-execute as @a[x=513,y=0,z=-793,dx=187,dy=240,dz=228,tag=!Bugsy] run effect give @e[type=pixelmon:statue,distance=..25] minecraft:invisibility 5 1 true
+#execute as @a[x=513,y=0,z=-793,dx=187,dy=240,dz=228,tag=!Bugsy] run effect give @e[type=pixelmon:statue,distance=..25] minecraft:invisibility 5 1 true
 
 #Runs Farfetch'd chasing function
 execute as @a[limit=1,x=513,y=60,z=-793,dx=187,dy=10,dz=228] run function johto:world/farfetchd
@@ -650,7 +660,7 @@ execute as @a[limit=1,x=513,y=60,z=-793,dx=187,dy=10,dz=228] run function johto:
 #---------------------
 
 #Dialogue22 - Ilex Forest Farfetch'd Found
-execute at @e[x=622,y=63,z=-714,dy=3,type=pixelmon:statue] run scoreboard players set @a[distance=0..6,tag=!Dialogue22,scores={Farfetchd=1}] DialogueTrigger 22
+execute if entity @e[x=622,y=64,z=-714,distance=..3,type=minecraft:armor_stand,tag=Farfetchd] run scoreboard players set @a[distance=..6,tag=!Dialogue22,scores={Farfetchd=1}] DialogueTrigger 22
 
 #Dialogue23 - Goldenrod City Bike Shop
 scoreboard players set @a[x=419,y=63,z=-433,dx=12,dy=7,dz=11,tag=!Dialogue23] DialogueTrigger 23
