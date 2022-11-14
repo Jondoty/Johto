@@ -28,6 +28,10 @@ execute at @a[x=331,y=63,z=-23,dx=4,dy=5,dz=9,tag=!Dialogue29] run tp @a[x=331,y
 execute if entity @e[x=-792,y=65,z=-284,dy=3,tag=GuideGentMove] run function johto:triggers/guidegenttour
 
 
+#Ilex Forest Farfetch'd running function
+execute if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={Farfetchd=1..}] run function johto:triggers/farfetchdrun
+
+
 
 #Lance Mahogany Town movement
 execute if entity @a[scores={DialogueTrigger=53,TalkTime=22..32}] run tp @e[x=-157,y=63,z=201,dx=2,dy=2,dz=2,type=pixelmon:npc_chatting] ~-0.25 ~ ~
