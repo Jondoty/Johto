@@ -277,6 +277,7 @@ tag @s remove TMCase
 tag @s remove PoliceTalk
 tag @s remove BadgeCaseTip
 tag @s remove ItemFinderTip
+tag @s remove RadioTip
 
 recipe give @s *
 

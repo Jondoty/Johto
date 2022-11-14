@@ -386,13 +386,16 @@ execute as @a[scores={EscapeRopeUse=1..}] run function johto:world/escaperope
 #Odd Egg item converts to Pixelmon dialogue
 scoreboard players set @a[scores={TalkTime=0},nbt={Inventory:[{id:"minecraft:egg"}]}] DialogueTrigger 200
 
+#Radio tip
+tellraw @a[tag=!RadioTip,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}}] ["",{"text":"Tip: If you want to hear music within the map as you play, download the optional Music Pack!\n[","italic":true,"color":"gray"},{"text":"Click Here","italic":true,"color":"aqua","clickEvent":{"action":"open_url","value":"http://johto.jond.tv/"}},{"text":"] to download.\n[","italic":true,"color":"gray"},{"text":"Learn More","italic":true,"color":"yellow","clickEvent":{"action":"open_url","value":"https://minecraft.fandom.com/wiki/Tutorials/Loading_a_resource_pack"}},{"text":"] about how to enable a Resource Pack.","italic":true,"color":"gray"}]
+tag @a[tag=!RadioTip,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}}] add RadioTip
 
 #Badge Case info tip
 tellraw @a[tag=!BadgeCaseTip,nbt={SelectedItem:{id:"pixelmon:blackbadgecase"}}] {"text":"Tip: Register your badge case to store badges in! Right click me and click the \"Register\" at the top!","italic":true,"color":"gray"}
 tag @a[nbt={SelectedItem:{id:"pixelmon:blackbadgecase"}}] add BadgeCaseTip
 
 #Item Finder Tip
-tellraw @a[tag=!ItemFinderTip,nbt={SelectedItem:{id:"pixelmon:item_finder"}}] {"text":"Your XP bar can detect if an item is nearby while you select the Item Finder. The more XP, the closer the item. It will ping when an item is within reach!","italic":true,"color":"gray"}
+tellraw @a[tag=!ItemFinderTip,nbt={SelectedItem:{id:"pixelmon:item_finder"}}] {"text":"Tip: Your XP bar can detect if an item is nearby while you select the Item Finder. The more XP, the closer the item. It will ping when an item is within reach!","italic":true,"color":"gray"}
 tag @a[nbt={SelectedItem:{id:"pixelmon:item_finder"}}] add ItemFinderTip
 
 
