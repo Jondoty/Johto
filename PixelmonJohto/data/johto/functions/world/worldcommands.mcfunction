@@ -1574,6 +1574,7 @@ execute at @a[x=243,y=54,z=-715,dx=2,dy=5,dz=2,tag=!Dialogue14] run tp @a[x=243,
 
 #Johto/Kanto/IP Connector Johto Gate Block
 tellraw @a[x=-1225,y=63,z=52,dx=15,dy=5,dz=3,tag=!Dialogue222,scores={TalkTime=0}] {"text":"<Officer Jenny> This way leads to Mt. Silver. You'll see scary-strong Pokémon out there. You're not ready for it."}
+tellraw @a[x=-1225,y=63,z=52,dx=15,dy=5,dz=3,tag=!Dialogue222,scores={TalkTime=0},tag=AllGyms] {"text":"<Officer Jenny> This way leads to Mt. Silver. You'll see scary-strong Pokémon out there. See Prof. Oak if you think you are tough enough!."}
 execute at @a[x=-1225,y=63,z=52,dx=15,dy=5,dz=3,distance=..10,tag=!Dialogue222] run tp @a[x=-1225,y=63,z=52,dx=15,dy=5,dz=3,distance=..10,tag=!Dialogue222] ~-10 ~ ~
 
 #Kanto Block
@@ -1703,8 +1704,8 @@ execute at @a[x=-164,y=63,z=213,distance=..15,tag=Dialogue53] run fill -160 63 2
 
 
 #Battle Tower blocked until player has beaten ELite Four
-tellraw @a[x=903,y=64,z=-42,dx=2,dy=2,dz=4,scores={IP=0}] ["",{"text":"Only Elite Four Champions may enter!","color":"white","italic":true}]
-execute at @a[x=903,y=64,z=-42,dx=2,dy=2,dz=4,scores={IP=0}] run tp @a[x=903,y=64,z=-42,dx=2,dy=2,dz=4,scores={IP=0}] ~ ~ ~-5
+tellraw @a[x=903,y=64,z=-42,dx=2,dy=2,dz=10,scores={IP=0}] ["",{"text":"Only Elite Four Champions may enter!","color":"white","italic":true}]
+execute at @a[x=903,y=64,z=-42,dx=2,dy=2,dz=10,scores={IP=0}] run tp @a[x=903,y=64,z=-42,dx=2,dy=2,dz=4,scores={IP=0}] ~ ~ ~-5
 
 
 #Viridian City Sleeping Snorlax
