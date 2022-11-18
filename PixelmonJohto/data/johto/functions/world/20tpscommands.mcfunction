@@ -12,6 +12,8 @@ execute if entity @e[x=-799,y=64,z=-284,dy=3,scores={DayTime=12000..18000}] at @
 execute if entity @e[x=485,y=59,z=-370,dx=22,dy=4,scores={SlotRolled=1..}] run execute as @a[x=489,y=64,z=-389,dx=31,dy=10,dz=19] run function johto:triggers/gamecorner
 
 
+#Olivine Lighthouse Resistance when falling
+execute at @a[x=694,y=63,z=-46,dx=2,dy=57,dz=13] run execute if block ~ ~-2 ~ air run effect give @a[x=694,y=63,z=-46,dx=2,dy=57,dz=13] minecraft:resistance 3 5 true
 
 
 
