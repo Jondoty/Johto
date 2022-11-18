@@ -917,7 +917,7 @@ execute as @s[scores={DialogueTrigger=36,TalkTime=22}] run scoreboard players se
 execute as @s[scores={DialogueTrigger=36,TalkTime=22}] run advancement grant @s only johto:event3
 
 #entitydata textures back to statues for respawns
-execute as @s[scores={DialogueTrigger=36,TalkTime=22}] run execute as @e[x=-809,y=78,z=-246,dx=14,dy=5,dz=4,type=pixelmon:statue] run data merge entity @s {statueTexture:3s,Animate:0b}
+execute as @s[scores={DialogueTrigger=36,TalkTime=22}] run execute as @e[x=-809,y=78,z=-246,dx=14,dy=5,dz=4,type=pixelmon:statue] run data merge entity @s {statueTexture:1s,Animate:0b}
 
 tag @s[scores={DialogueTrigger=36,TalkTime=22..}] add Dialogue36
 

@@ -716,9 +716,9 @@ execute as @a[x=441,y=64,z=312,distance=..20,tag=Dialogue34,tag=!Dialogue35,scor
 #---------------------
 #Dialogue36 - Burned Tower Legendary Dogs
 scoreboard players set @a[x=444,y=58,z=328,distance=..5,tag=!Dialogue36] DialogueTrigger 36
-execute if entity @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run data merge entity @e[limit=1,x=439,y=58,z=328,distance=..2,type=pixelmon:statue] {ndex:243,statueTexture:3b,Animate:0b}
-execute if entity @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run data merge entity @e[limit=1,x=446,y=58,z=328,distance=..2,type=pixelmon:statue] {ndex:244,statueTexture:3b,Animate:0b}
-execute if entity @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run data merge entity @e[limit=1,x=443,y=58,z=328,distance=..2,type=pixelmon:statue] {ndex:245,statueTexture:3b,Animate:0b}
+execute if entity @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run data merge entity @e[limit=1,x=439,y=58,z=328,distance=..2,type=pixelmon:statue] {ndex:243,statueTexture:1b,Animate:0b}
+execute if entity @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run data merge entity @e[limit=1,x=446,y=58,z=328,distance=..2,type=pixelmon:statue] {ndex:244,statueTexture:1b,Animate:0b}
+execute if entity @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run data merge entity @e[limit=1,x=443,y=58,z=328,distance=..2,type=pixelmon:statue] {ndex:245,statueTexture:1b,Animate:0b}
 
 #---------------------
 #Dialogue37 - Ecruteak City Gym Morty pre-battle
