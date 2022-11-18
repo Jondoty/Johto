@@ -1016,7 +1016,7 @@ tag @s[scores={DialogueTrigger=40,TalkTime=39..}] add Dialogue40
 tellraw @s[scores={DialogueTrigger=41,TalkTime=3}] {"text":"<Pharmacy Doctor> Your Pokémon appear to be fine. It something worrying you? ..."}
 tellraw @s[scores={DialogueTrigger=41,TalkTime=13}] {"text":"<Pharmacy Doctor> The Lighthouse Pokémon is in trouble?"}
 tellraw @s[scores={DialogueTrigger=41,TalkTime=20}] {"text":"<Pharmacy Doctor> I got it! This ought to do the trick."}
-execute as @s[scores={DialogueTrigger=41,TalkTime=23}] run give @s minecraft:music_disc_11{display:{Name:Secretpotion,Lore:["A fantastic medicine dispensed by","the pharmacy in Cianwood City.","It fully heals a Pokémon of","any ailment."]},HideFlags:36}
+execute as @s[scores={DialogueTrigger=41,TalkTime=23}] run give @s music_disc_11{display:{Name:'[{"text":"Secretpotion","italic":false,"color":"aqua"}]',Lore:['[{"text":"A fantastic medicine dispensed by","italic":false}]','[{"text":"the pharmacy in Cianwood City.","italic":false}]','[{"text":"It fully heals a Pokémon of","italic":false}]','[{"text":"any ailment.","italic":false}]']},HideFlags:127} 1
 execute as @s[scores={DialogueTrigger=41,TalkTime=23}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=41,TalkTime=27}] {"text":"<Pharmacy Doctor> My Secretpotion is a tad too strong. I only offer it in an emergency."}
 
@@ -1038,7 +1038,7 @@ execute as @s[scores={DialogueTrigger=42,TalkTime=20}] run playsound minecraft:b
 tellraw @s[scores={DialogueTrigger=42,TalkTime=23}] {"text":"<Jasmine> ... Amphy, how are you feeling?"}
 
 execute as @s[scores={DialogueTrigger=42,TalkTime=30}] run data merge entity @e[limit=1,x=706,y=119,z=-38,distance=..2,type=pixelmon:statue] {statueTexture: 0s}
-execute as @s[scores={DialogueTrigger=42,TalkTime=30}] run playsound ampharos ambient @s ~ ~ ~ 1 1 1
+execute as @s[scores={DialogueTrigger=42,TalkTime=30}] run playsound minecraft:ampharos ambient @s ~ ~ ~ 1 1 1
 
 #Lights up Lighthouse
 #execute as @s[scores={DialogueTrigger=42,TalkTime=30}] run fill 682 80 -60 724 77 -21 minecraft:redstone_block 0 replace sandstone
