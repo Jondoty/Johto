@@ -1,5 +1,5 @@
-#Music Cooldown score determined by (seconds of file x 20)
-#Removes one MusicCooldown score every MC tick, or 20 ticks per second
+#Music Cooldown score determined by (seconds of file x 1,4)
+#Removes one MusicCooldown score every hopper-clock refresh, or about 1.4 ticks per second
 
 tag @s add Temp
 
