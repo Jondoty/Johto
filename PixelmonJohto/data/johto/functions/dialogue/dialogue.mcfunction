@@ -4592,7 +4592,7 @@ execute as @s[scores={DialogueTrigger=206,TalkTime=2}] run summon minecraft:armo
 
 
 #Rolls for new NPC
-execute as @s[scores={DialogueTrigger=217,TalkTime=4}] run particle cloud 910 100 66 1 1 1 1 100
+execute as @s[scores={DialogueTrigger=206,TalkTime=4}] run particle cloud 910 100 66 1 1 1 1 100
 execute as @s[scores={DialogueTrigger=206,TalkTime=5}] run execute as @e[x=910,y=99,z=66,dy=3,dz=1,type=pixelmon:npc_trainer] run function johto:world/battletower/rolltrainer
 execute as @s[scores={DialogueTrigger=206,TalkTime=5}] run execute as @e[x=910,y=99,z=66,dy=3,dz=1,type=pixelmon:npc_trainer] run function johto:world/battletower/rollpokemon
 execute as @s[scores={DialogueTrigger=206,TalkTime=5}] run execute as @e[x=910,y=99,z=66,dy=3,dz=1,type=pixelmon:npc_trainer] run function johto:world/battletower/rolldialogue
