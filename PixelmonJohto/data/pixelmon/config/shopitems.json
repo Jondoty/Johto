@@ -11,12 +11,6 @@
       "sell": 900
     },
     {
-      "name": "pixelmon:ranch",
-      "nbtData": "{display:{Lore:['[{\"text\":\"A tool used to breed\"}]','[{\"text\":\"Pokemon. Place on the area\"}]','[{\"text\":\"inside the daycare fence!\"}]']},HideFlags:8,CanPlaceOn:[light_gray_concrete_powder]}",
-      "buy": 5000,
-      "sell": 5000
-    },
-    {
       "name": "minecraft:ender_eye",
       "buy": 550,
       "sell": 550
@@ -90,116 +84,120 @@
       "buy": 1600
     },
     {
+      "name": "pixelmon:mach_bike",
+      "sell": 3000
+    },
+    {
       "id": "Bike0",
       "name": "pixelmon:mach_bike",
       "buy": 3000,
       "sell": 3000,
-      "nbtData": "{display:{Name:\"§fWhite Bicycle\"},color:0b}"
+      "nbtData": "{display:{Name:'[{\"text\":\"White Bicycle\"}]'},color:0b}"
     },
     {
       "id": "Bike1",
       "name": "pixelmon:mach_bike",
       "buy": 3000,
       "sell": 3000,
-      "nbtData": "{display:{Name:\"§6Orange Bicycle\"},color:1b}"
+      "nbtData": "{display:{Name:'[{\"text\":\"Gold Bicycle\"}]'},color:1b}"
     },
     {
       "id": "Bike2",
       "name": "pixelmon:mach_bike",
       "buy": 3000,
       "sell": 3000,
-      "nbtData": "{display:{Name:\"§dMagenta Bicycle\"},color:2b}"
+      "nbtData": "{display:{Name:'[{\"text\":\"Magenta Bicycle\"}]'},color:2b}"
     },
     {
       "id": "Bike3",
       "name": "pixelmon:mach_bike",
       "buy": 3000,
       "sell": 3000,
-      "nbtData": "{display:{Name:\"§bLight Blue Bicycle\"},color:3b}"
+      "nbtData": "{display:{Name:'[{\"text\":\"Light Blue Bicycle\"}]'},color:3b}"
     },
     {
       "id": "Bike4",
       "name": "pixelmon:mach_bike",
       "buy": 3000,
       "sell": 3000,
-      "nbtData": "{display:{Name:\"§eYellow Bicycle\"},color:4b}"
+      "nbtData": "{display:{Name:'[{\"text\":\"Yellow Bicycle\"}]'},color:4b}"
     },
     {
       "id": "Bike5",
       "name": "pixelmon:mach_bike",
       "buy": 3000,
       "sell": 3000,
-      "nbtData": "{display:{Name:\"§aGreen Bicycle\"},color:5b}"
+      "nbtData": "{display:{Name:'[{\"text\":\"Green Bicycle\"}]'},color:5b}"
     },
     {
       "id": "Bike6",
       "name": "pixelmon:mach_bike",
       "buy": 3000,
       "sell": 3000,
-      "nbtData": "{display:{Name:\"§dPink Bicycle\"},color:6b}"
+      "nbtData": "{display:{Name:'[{\"text\":\"Pink Bicycle\"}]'},color:6b}"
     },
     {
       "id": "Bike7",
       "name": "pixelmon:mach_bike",
       "buy": 3000,
       "sell": 3000,
-      "nbtData": "{display:{Name:\"§8Gray Bicycle\"},color:7b}"
+      "nbtData": "{display:{Name:'[{\"text\":\"Gray Bicycle\"}]'},color:7b}"
     },
     {
       "id": "Bike8",
       "name": "pixelmon:mach_bike",
       "buy": 3000,
       "sell": 3000,
-      "nbtData": "{display:{Name:\"§7Light Gray Bicycle\"},color:8b}"
+      "nbtData": "{display:{Name:'[{\"text\":\"Light Gray Bicycle\"}]'},color:8b}"
     },
     {
       "id": "Bike9",
       "name": "pixelmon:mach_bike",
       "buy": 3000,
       "sell": 3000,
-      "nbtData": "{display:{Name:\"§3Cyan Bicycle\"},color:9b}"
+      "nbtData": "{display:{Name:'[{\"text\":\"Cyan Bicycle\"}]'},color:9b}"
     },
     {
       "id": "Bike10",
       "name": "pixelmon:mach_bike",
       "buy": 3000,
       "sell": 3000,
-      "nbtData": "{display:{Name:\"§5Purple Bicycle\"},color:10b}"
+      "nbtData": "{display:{Name:'[{\"text\":\"Purple Bicycle\"}]'},color:10b}"
     },
     {
       "id": "Bike11",
       "name": "pixelmon:mach_bike",
       "buy": 3000,
       "sell": 3000,
-      "nbtData": "{display:{Name:\"§9Blue Bicycle\"},color:11b}"
+      "nbtData": "{display:{Name:'[{\"text\":\"Blue Bicycle\"}]'},color:11b}"
     },
     {
       "id": "Bike12",
       "name": "pixelmon:mach_bike",
       "buy": 3000,
       "sell": 3000,
-      "nbtData": "{display:{Name:\"§8Brown Bicycle\"},color:12b}"
+      "nbtData": "{display:{Name:'[{\"text\":\"Brown Bicycle\"}]'},color:12b}"
     },
     {
       "id": "Bike13",
       "name": "pixelmon:mach_bike",
       "buy": 3000,
       "sell": 3000,
-      "nbtData": "{display:{Name:\"§2Dark Green Bicycle\"},color:13b}"
+      "nbtData": "{display:{Name:'[{\"text\":\"Dark Green Bicycle\"}]'},color:13b}"
     },
     {
       "id": "Bike14",
       "name": "pixelmon:mach_bike",
       "buy": 3000,
       "sell": 3000,
-      "nbtData": "{display:{Name:\"§cRed Bicycle\"},color:14b}"
+      "nbtData": "{display:{Name:'[{\"text\":\"Red Bicycle\"}]'},color:14b}"
     },
     {
       "id": "Bike15",
       "name": "pixelmon:mach_bike",
       "buy": 3000,
       "sell": 3000,
-      "nbtData": "{display:{Name:\"§0Black Bicycle\"},color:15b}"
+      "nbtData": "{display:{Name:'[{\"text\":\"Black Bicycle\"}]'},color:15b}"
     },
     {
       "name": "pixelmon:mach_bike",
