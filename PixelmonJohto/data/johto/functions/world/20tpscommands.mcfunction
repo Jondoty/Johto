@@ -16,6 +16,10 @@ execute if entity @e[x=485,y=59,z=-370,dx=22,dy=4,scores={SlotRolled=1..}] run e
 execute at @a[x=694,y=63,z=-46,dx=2,dy=57,dz=13] run execute if block ~ ~-2 ~ air run effect give @a[x=694,y=63,z=-46,dx=2,dy=57,dz=13] minecraft:resistance 3 5 true
 
 
+#Runs bike adventure mode data updating
+execute at @a as @e[distance=..5,type=minecraft:item,tag=!AdventureBike,nbt={Item:{id:"pixelmon:mach_bike"}}] run function johto:data/adventurebikes
+
+
 
 #Sudowoodo Blocks
 tellraw @a[x=327,y=63,z=-19,dx=10,dy=5,dz=5,tag=!Dialogue29] {"text":"It's a weird tree. Perhaps water may cause it to move.","italic":true,"color":"gray"}
@@ -36,9 +40,9 @@ execute if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,scores={Farfetchd=
 
 
 #Lance Mahogany Town movement
-execute if entity @a[scores={DialogueTrigger=53,TalkTime=22..32}] run tp @e[x=-157,y=63,z=201,dx=2,dy=2,dz=2,type=pixelmon:npc_chatting] ~-0.25 ~ ~
-execute if entity @a[scores={DialogueTrigger=53,TalkTime=22..32}] run tp @e[x=-159,y=63,z=201,dx=1,dy=2,dz=12,type=pixelmon:npc_chatting] ~ ~ ~0.25
-execute if entity @a[scores={DialogueTrigger=53,TalkTime=22..32}] run tp @e[x=-158,y=64,z=215,distance=..2,type=pixelmon:npc_chatting] -158 64 215
+execute if entity @a[scores={DialogueTrigger=53,TalkTime=22..32}] as @e[x=-157,y=63,z=201,dx=2,dy=2,dz=2,type=pixelmon:npc_chatting] at @s run tp @s ~-0.25 ~ ~
+execute if entity @a[scores={DialogueTrigger=53,TalkTime=22..32}] as @e[x=-159,y=63,z=201,dx=1,dy=2,dz=12,type=pixelmon:npc_chatting] at @s run tp @s ~ ~ ~0.25
+execute if entity @a[scores={DialogueTrigger=53,TalkTime=22..32}] as @e[x=-158,y=64,z=215,distance=..2,type=pixelmon:npc_chatting] at @s run tp @s -158 64 215
 
 
 
@@ -48,6 +52,10 @@ execute if entity @a[scores={DialogueTrigger=53,TalkTime=22..32}] run tp @e[x=-1
 
 #--------------------------------------------------------------------------------------------------PARTICLES-----------------------------------------------------------------------------------------------------------------------------------
 
+
+#Dragonite returning to Poke Ball animation
+
+execute if entity @a[scores={DialogueTrigger=53,TalkTime=12..16}] run particle minecraft:firework -156 68 200 0 -2 0 0.1 0 normal @a
 
 
 #Team Rocket Trap Particles
