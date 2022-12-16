@@ -768,6 +768,9 @@ execute as @s[scores={DialogueTrigger=29,TalkTime=24}] run give @s minecraft:rab
 execute as @s[scores={DialogueTrigger=29,TalkTime=24}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=29,TalkTime=30}] {"text":"<Shop Clerk> Lalala lalalala. Have plenty of water, my lovely!"}
 
+execute as @s[scores={DialogueTrigger=29,TalkTime=1}] run replaceitem entity @e[x=421,y=63,z=-300,dy=3,type=pixelmon:npc_chatting] weapon.offhand minecraft:rabbit_foot
+execute as @s[scores={DialogueTrigger=29,TalkTime=24}] run replaceitem entity @e[x=421,y=63,z=-300,dy=3,type=pixelmon:npc_chatting] weapon.offhand air
+
 tag @s[scores={DialogueTrigger=29,TalkTime=30..}] add Dialogue29
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1275,7 +1278,15 @@ tellraw @s[scores={DialogueTrigger=53,TalkTime=1}] {"text":"<Lance> Dragonite, H
 tellraw @s[scores={DialogueTrigger=53,TalkTime=8}] ["",{"text":"<Lance> What took you, "},{"selector":"@s"},{"text":"?"}]
 
 #Dragonite returning to Poke Ball sequence
-execute as @s[scores={DialogueTrigger=53,TalkTime=12}] run setblock -715 81 -318 minecraft:redstone_block
+#20tps
+#execute as @s[scores={DialogueTrigger=53,TalkTime=12..16}] run particle minecraft:firework -156 68 200 0 -2 0 0.1 100 normal @p
+execute as @s[scores={DialogueTrigger=53,TalkTime=12}] run playsound pixelmon:pixelmon.block.pokeballrelease ambient @s ~ ~ ~ 1 1 1
+execute as @s[scores={DialogueTrigger=53,TalkTime=12}] run data merge entity @e[x=-156,y=63,z=200,distance=..3,type=pixelmon:statue,limit=1] {Growth:6b,statueTexture:7s}
+execute as @s[scores={DialogueTrigger=53,TalkTime=13}] run data merge entity @e[x=-156,y=63,z=200,distance=..3,type=pixelmon:statue,limit=1] {Growth:5b}
+execute as @s[scores={DialogueTrigger=53,TalkTime=14}] run data merge entity @e[x=-156,y=63,z=200,distance=..3,type=pixelmon:statue,limit=1] {Growth:3b}
+execute as @s[scores={DialogueTrigger=53,TalkTime=15}] run data merge entity @e[x=-156,y=63,z=200,distance=..3,type=pixelmon:statue,limit=1] {Growth:2b}
+execute as @s[scores={DialogueTrigger=53,TalkTime=16}] run data merge entity @e[x=-156,y=63,z=200,distance=..3,type=pixelmon:statue,limit=1] {Growth:0b}
+execute as @s[scores={DialogueTrigger=53,TalkTime=16}] run data merge entity @e[x=-156,y=63,z=200,distance=..3,type=pixelmon:statue,limit=1] {ndex: 1999}
 
 tellraw @s[scores={DialogueTrigger=53,TalkTime=17}] {"text":"<Lance> Just as I thought, that strange radio signal is coming from here."}
 
@@ -1284,9 +1295,9 @@ tellraw @s[scores={DialogueTrigger=53,TalkTime=17}] {"text":"<Lance> Just as I t
 
 tellraw @s[scores={DialogueTrigger=53,TalkTime=28}] {"text":"<Lance> The stairs are right here."}
 
-execute as @s[scores={DialogueTrigger=53,TalkTime=32}] run playsound minecraft:entity.armorstand.break ambient @s ~ ~ ~ 10 1 1
+execute as @s[scores={DialogueTrigger=53,TalkTime=32}] run playsound minecraft:entity.iron_golem.death ambient @s ~ ~ ~ 1 1 11
 execute as @s[scores={DialogueTrigger=53,TalkTime=32}] run fill -164 63 213 -161 63 216 air
-execute as @s[scores={DialogueTrigger=53,TalkTime=32}] run fill -160 63 213 -160 63 216 minecraft:stone_brick_stairs
+execute as @s[scores={DialogueTrigger=53,TalkTime=32}] run fill -160 63 213 -160 63 216 minecraft:stone_brick_stairs[facing=east]
 
 tellraw @s[scores={DialogueTrigger=53,TalkTime=36}] ["",{"text":"<Lance> "},{"selector":"@s"},{"text":", we should split up to check this place. I'll go first."}]
 
@@ -2258,9 +2269,9 @@ tag @s[scores={DialogueTrigger=103,TalkTime=16..}] add Dialogue103
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Tin Tower Ho-Oh Spawn
-#scoreboard players set @a[x=251,y=154,z=308,dx=11,dy=5,dz=11,score_HoohCD=0,tag=!Dialogue104] DialogueTrigger 104 {Inventory:[{id:"minecraft:prismarine_crystals"}]}
+#scoreboard players set @a[x=251,y=154,z=308,dx=11,dy=5,dz=11,score_HoohCD=0,tag=!Dialogue104] DialogueTrigger 104 {Inventory:[{id:"pixelmon:rainbow_wing"}]}
 
-execute as @s[scores={DialogueTrigger=104,TalkTime=1}] run clear @s minecraft:prismarine_crystals
+execute as @s[scores={DialogueTrigger=104,TalkTime=1}] run clear @s pixelmon:rainbow_wing
 
 execute as @s[scores={DialogueTrigger=104,TalkTime=1}] run playsound block.portal.trigger ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=104,TalkTime=1}] {"text":"Your Rainbow Wing grew brighter!"}

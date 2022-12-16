@@ -354,7 +354,7 @@ effect give @a[tag=RepelEffect] pixelmon:repel 10 1 true
 
 
 #Fly Map Refresh
-execute at @p[x=1169,y=252,z=619,distance=..40] run function johto:hms/flymap
+execute as @a[x=1169,y=252,z=619,distance=..40] run function johto:hms/flymap
 
 #Flash
 execute as @a[scores={Flash=1..}] run function johto:spawn/flashhm
@@ -781,7 +781,7 @@ execute as @a[x=-159,y=64,z=590,distance=..50,tag=Dialogue49,tag=!Dialogue51] ru
 #---------------------
 #Dialogue53
 scoreboard players set @a[x=-164,y=63,z=196,dx=19,dy=6,dz=20,tag=Dialogue52,tag=!Dialogue53] DialogueTrigger 53
-execute at @a[x=-155,y=64,z=208,distance=..30,tag=Dialogue52,scores={TalkTime=0},tag=!Dialogue53] run tp @e[x=-755,y=78,z=-244,dy=3,type=pixelmon:statue] -156 64 200
+execute at @a[x=-155,y=64,z=208,distance=..30,tag=Dialogue52,scores={TalkTime=0},tag=!Dialogue53] run data merge entity @e[x=-156,y=63,z=200,distance=..3,type=pixelmon:statue,limit=1] {ndex: 149,Growth: 6b,statueTexture:0s}
 execute at @a[x=-155,y=64,z=208,distance=..30,tag=Dialogue52,scores={TalkTime=0},tag=!Dialogue53] run tp @e[x=-805,y=92,z=-242,dy=3,type=pixelmon:npc_chatting] -155 64 202
 
 #Mahogany Town Rocket HQ Occupied by Rockets
@@ -1243,8 +1243,8 @@ execute as @a[x=-2748,y=66,z=870,distance=..20,tag=Dialogue217,scores={TalkTime=
 scoreboard players set @a[x=-2748,y=66,z=870,distance=..20,scores={TalkTime=0},tag=!Dialogue219,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 219
 
 #Dialogue220 - Cerulean Gym underwater part
-execute at @a[x=-1180,y=59,z=773,distance=..30,scores={TalkTime=0},tag=Dialogue219,tag=!Dialogue220] run execute as @e[x=-1180,y=59,z=773,dy=3,type=armor_stand] run scoreboard players set @a[distance=..5] DialogueTrigger 220
-execute at @a[x=-1180,y=59,z=773,distance=..30,scores={TalkTime=0},tag=Dialogue219,tag=!Dialogue220] run execute as @e[x=-1180,y=59,z=773,dy=3,type=armor_stand] run particle minecraft:firework ~ ~ ~ 1 2 1 0.1 2 normal @a[tag=!Dialogue220]
+execute if entity @a[x=-1180,y=59,z=773,distance=..30,scores={TalkTime=0},tag=Dialogue219] at @e[x=-1180,y=59,z=773,dy=3,type=armor_stand] run scoreboard players set @a[distance=..5,tag=!Dialogue220] DialogueTrigger 220
+execute if entity @a[x=-1180,y=59,z=773,distance=..30,scores={TalkTime=0},tag=Dialogue219] at @e[x=-1180,y=59,z=773,dy=3,type=armor_stand] run particle minecraft:firework ~ ~ ~ 1 2 1 0.1 2 normal @a[tag=!Dialogue220]
 
 #Dialogue221 - Power Plant returning part
 scoreboard players set @a[x=-3117,y=48,z=589,distance=..5,tag=Dialogue220,tag=!Dialogue221,scores={TalkTime=0},nbt={Inventory:[{id:"minecraft:music_disc_mall"}]}] DialogueTrigger 221
@@ -1449,6 +1449,11 @@ execute if entity @a[x=-1073,y=61,z=-216,distance=..2,scores={TalkTime=0,Cooldow
 execute if entity @a[x=-1073,y=61,z=-216,distance=..2,scores={TalkTime=0,Cooldown=15},tag=Dialogue176] run tellraw @a[x=-1073,y=61,z=-216,distance=..2,scores={TalkTime=0,Cooldown=15},tag=Dialogue176] ["",{"text":"Would you like Abra to return you home?\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 26"}},{"text":"]"}]
 execute if entity @a[x=-1073,y=61,z=-216,distance=..2,scores={TalkTime=0,Cooldown=15},tag=Dialogue176] run scoreboard players set @a[x=-1073,y=61,z=-216,distance=..2,scores={TalkTime=0,Cooldown=15},tag=Dialogue176] Cooldown 0
 
+
+#Saffron City Porygon Guy give
+execute as @a[x=-2682,y=64,z=278,distance=..20,nbt={Inventory:[{id:"pixelmon:porygon_piece"}]}] run pokegive @s Porygon
+execute as @a[x=-2682,y=64,z=278,distance=..20,nbt={Inventory:[{id:"pixelmon:porygon_piece"}]}] run playsound minecraft:egghatch ambient @s ~ ~ ~ 1 1 1
+execute as @a[x=-2682,y=64,z=278,distance=..20,nbt={Inventory:[{id:"pixelmon:porygon_piece"}]}] run clear @s pixelmon:porygon_piece 1
 
 #----------------------------------------
 
