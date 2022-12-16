@@ -831,8 +831,8 @@ scoreboard players set @a[x=-141,y=44,z=157,dx=16,dy=5,dz=15,tag=Dialogue58,tag=
 execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58,tag=!Dialogue63] run tp @e[x=-797,y=92,z=-242,dy=3,type=pixelmon:npc_chatting] -128 45 159
 execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58,tag=!Dialogue63] run tp @e[x=-795,y=92,z=-242,dy=3,type=pixelmon:npc_chatting] -128 45 171
 execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58,tag=!Dialogue63] run tp @e[x=-793,y=92,z=-242,dy=3,type=pixelmon:npc_trainer] -134 45 170
-execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58,tag=!Dialogue63] run tp @e[x=-817,y=86,z=-147,dy=2,type=pixelmon:statue] -128 45 168
-execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58,tag=!Dialogue63] run tp @e[x=-817,y=86,z=-153,dy=2,type=pixelmon:statue] -128 45 164
+execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58,tag=!Dialogue63] run data merge entity @e[x=-128,y=45,z=168,distance=..2,type=pixelmon:statue,limit=1] {ndex:24}
+execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58,tag=!Dialogue63] run data merge entity @e[x=-128,y=45,z=164,distance=..2,type=pixelmon:statue,limit=1] {ndex:149}
 
 #Dialogue63 - Ariana post-battle
 scoreboard players set @a[x=-141,y=44,z=157,dx=16,dy=5,dz=15,scores={TalkTime=0},tag=!Dialogue63,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 63
@@ -1276,7 +1276,7 @@ execute at @a[x=445,y=64,z=304,distance=..10,scores={DogEncounter=1..},tag=!Dial
 
 #Dialouge227 - Cianwood City Suicune & Eusine
 scoreboard players set @a[x=1249,y=63,z=-300,dx=9,dy=5,dz=10,tag=Dialogue226,tag=!Dialogue227] DialogueTrigger 227
-execute at @a[x=1256,y=64,z=-296,distance=..50,scores={TalkTime=0,DogEncounter=1..},tag=Dialogue226,tag=!Dialogue227] run tp @e[x=-817,y=80,z=-171,dy=3,type=pixelmon:statue] 1256 64 -296
+execute at @a[x=1256,y=64,z=-296,distance=..50,scores={TalkTime=0,DogEncounter=1..},tag=Dialogue226,tag=!Dialogue227] run data merge entity @e[x=1256,y=64,z=-296,distance=..3,type=pixelmon:statue,limit=1] {ndex:245}
 
 #Dialogue228 - Cianwood City Eucine post-battle
 scoreboard players set @a[x=1256,y=64,z=-296,distance=..20,scores={TalkTime=0},tag=!Dialogue228,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 228
@@ -1284,19 +1284,19 @@ execute at @a[x=1251,y=64,z=-307,distance=..20,scores={TalkTime=0},tag=Dialogue2
 
 #Dialogue229 - Mt. Mortar Suicune encounter
 scoreboard players set @a[x=80,y=64,z=152,distance=..5,scores={TalkTime=0},tag=Dialogue228,tag=!Dialogue229] DialogueTrigger 229
-execute at @a[x=80,y=64,z=152,distance=..50,scores={TalkTime=0},tag=Dialogue228,tag=!Dialogue229] run tp @e[x=-817,y=80,z=-165,dy=3,type=pixelmon:statue] 80 64 152
+execute at @a[x=80,y=64,z=152,distance=..50,scores={TalkTime=0},tag=Dialogue228,tag=!Dialogue229] run data merge entity @e[x=80,y=64,z=152,distance=..3,type=pixelmon:statue,limit=1] {ndex:245}
 
 #Dialogue230 - Vermilion City Suicune
 scoreboard players set @a[x=-2823,y=64,z=-96,distance=..10,scores={TalkTime=0},tag=Dialogue229,tag=!Dialogue230] DialogueTrigger 230
-execute at @a[x=-2823,y=64,z=-96,distance=..50,scores={TalkTime=0},tag=Dialogue229,tag=!Dialogue230] run tp @e[x=-817,y=80,z=-159,dy=3,type=pixelmon:statue] -2823 64 -96
+execute at @a[x=-2823,y=64,z=-96,distance=..50,scores={TalkTime=0},tag=Dialogue229,tag=!Dialogue230] run data merge entity @e[x=-2823,y=64,z=-96,distance=..3,type=pixelmon:statue,limit=1] {ndex:245}
 
 #Dialogue231 - Route 14 Suicune
 scoreboard players set @a[x=-2971,y=64,z=-470,distance=..10,scores={TalkTime=0},tag=Dialogue230,tag=!Dialogue231] DialogueTrigger 231
-execute at @a[x=-2981,y=64,z=-470,distance=..50,scores={TalkTime=0},tag=Dialogue230,tag=!Dialogue231] run tp @e[x=-817,y=80,z=-153,dy=3,type=pixelmon:statue] -2981 64 -470
+execute at @a[x=-2981,y=64,z=-470,distance=..50,scores={TalkTime=0},tag=Dialogue230,tag=!Dialogue231] run data merge entity @e[x=-2981,y=64,z=-470,distance=..3,type=pixelmon:statue,limit=1] {ndex:245}
 
 #Dialogue232 - Route 25 Suicune pre-catch
 scoreboard players set @a[x=-3094,y=64,z=989,distance=..10,tag=!Dialogue232,tag=Dialogue231] DialogueTrigger 232
-execute at @a[x=-3094,y=64,z=989,distance=..50,scores={TalkTime=0},tag=Dialogue231,tag=!Dialogue233] run tp @e[x=-817,y=80,z=-147,dy=3,type=pixelmon:statue] -3111 64 989
+execute at @a[x=-3094,y=64,z=989,distance=..50,scores={TalkTime=0},tag=Dialogue231,tag=!Dialogue233] run data merge entity @e[x=-3111,y=64,z=989,distance=..3,type=pixelmon:statue,limit=1] {ndex:245}
 
 #-------------------------------------------------------------------------------------------------------------------------
 #Legendary/Mythical/Story Pokemon Commands
@@ -1337,9 +1337,10 @@ scoreboard players set @a[x=251,y=154,z=308,dx=11,dy=5,dz=11,tag=!Dialogue104,nb
 #Dialogue105
 #Union Cave Friday Lapras
 execute at @a[x=120,y=13,z=-852,distance=..10,tag=!Dialogue105] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run scoreboard players set @a[x=120,y=13,z=-852,distance=..10,tag=!Dialogue105] DialogueTrigger 105
-execute at @a[x=120,y=13,z=-852,distance=..50,tag=!Dialogue105] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run tp @e[x=-785,y=78,z=-244,dy=3,type=pixelmon:statue] 120 13 -852
-execute at @a[x=120,y=13,z=-852,distance=..50,tag=!Dialogue105] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1..4}] run tp @e[x=120,y=13,z=-852,distance=..5,type=pixelmon:statue] -785 79 -244
-execute at @a[x=120,y=13,z=-852,distance=..50,tag=!Dialogue105] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=6..7}] run tp @e[x=120,y=13,z=-852,distance=..5,type=pixelmon:statue] -785 79 -244
+#execute at @a[x=120,y=13,z=-852,distance=..50,tag=!Dialogue105] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run tp @e[x=-785,y=78,z=-244,dy=3,type=pixelmon:statue] 120 13 -852
+execute at @a[x=120,y=13,z=-852,distance=..50,tag=!Dialogue105] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run data merge entity @e[x=120,y=13,z=-852,distance=..5,type=pixelmon:statue,limit=1] {ndex: 131}
+execute at @a[x=120,y=13,z=-852,distance=..50,tag=!Dialogue105] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1..4}] run data merge entity @e[x=120,y=13,z=-852,distance=..5,type=pixelmon:statue,limit=1] {ndex: 1999}
+execute at @a[x=120,y=13,z=-852,distance=..50,tag=!Dialogue105] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=6..7}] run data merge entity @e[x=120,y=13,z=-852,distance=..5,type=pixelmon:statue,limit=1] {ndex: 1999}
 
 #Dialogue110
 #GS Ball Spawn In
