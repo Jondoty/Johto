@@ -145,7 +145,7 @@
           "Scald",
           "Liquidation"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Bind",
           "Captivate",

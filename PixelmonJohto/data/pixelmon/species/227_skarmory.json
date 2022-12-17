@@ -155,7 +155,7 @@
           "Stealth Rock",
           "Body Press"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Aerial Ace",
           "Captivate",

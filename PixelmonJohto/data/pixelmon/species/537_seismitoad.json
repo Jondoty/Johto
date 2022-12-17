@@ -150,7 +150,7 @@
           "Venom Drench",
           "Liquidation"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "After You",
           "Bubble",

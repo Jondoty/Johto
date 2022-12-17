@@ -134,7 +134,7 @@
           "Earth Power",
           "Venom Drench"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Aerial Ace",
           "Bide",

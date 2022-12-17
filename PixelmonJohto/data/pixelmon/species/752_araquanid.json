@@ -131,7 +131,7 @@
           "Scald",
           "Liquidation"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Aurora Beam",
           "Bubble",

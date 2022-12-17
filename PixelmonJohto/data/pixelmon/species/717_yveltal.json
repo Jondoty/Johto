@@ -172,7 +172,7 @@
           "Foul Play",
           "Hurricane"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Aerial Ace",
           "Block",

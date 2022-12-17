@@ -144,7 +144,7 @@
           "Sludge Wave",
           "Body Press"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Acid Armor",
           "Bide",
@@ -433,7 +433,7 @@
         "eggMoves": [],
         "tmMoves8": [],
         "trMoves": [],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [],
         "tmMoves7": [],
         "tmMoves6": [],

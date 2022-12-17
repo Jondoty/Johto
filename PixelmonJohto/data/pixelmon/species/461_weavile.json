@@ -161,7 +161,7 @@
           "Foul Play",
           "Throat Chop"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut","Surf"],
         "transferMoves": [
           "Aerial Ace",
           "Assist",

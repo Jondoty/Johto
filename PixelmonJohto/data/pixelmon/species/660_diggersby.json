@@ -162,7 +162,7 @@
           "Wild Charge",
           "High Horsepower"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut","Surf"],
         "transferMoves": [
           "Confide",
           "Cut",

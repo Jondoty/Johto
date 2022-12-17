@@ -181,7 +181,7 @@
           "Venom Drench",
           "Throat Chop"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Aerial Ace",
           "Aqua Tail",

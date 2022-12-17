@@ -139,7 +139,7 @@
           "Iron Defense",
           "Liquidation"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Barrier",
           "Bide",

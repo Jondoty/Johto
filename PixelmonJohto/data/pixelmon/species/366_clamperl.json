@@ -54,7 +54,7 @@
         ],
         "tmMoves8": [],
         "trMoves": [],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Captivate",
           "Dive",

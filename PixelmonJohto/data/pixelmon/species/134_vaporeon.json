@@ -162,7 +162,7 @@
           "Work Up",
           "Liquidation"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Aqua Tail",
           "Bide",

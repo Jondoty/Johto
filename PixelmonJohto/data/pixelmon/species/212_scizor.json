@@ -148,7 +148,7 @@
           "Flash Cannon",
           "Iron Head"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Aerial Ace",
           "Bide",

@@ -165,7 +165,7 @@
           "Focus Blast",
           "Work Up"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Captivate",
           "Confide",

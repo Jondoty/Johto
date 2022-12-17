@@ -140,7 +140,7 @@
         ],
         "tmMoves8": [],
         "trMoves": [],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Bullet Seed",
           "Captivate",

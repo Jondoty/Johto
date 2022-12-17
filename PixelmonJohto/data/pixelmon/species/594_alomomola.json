@@ -147,7 +147,7 @@
         ],
         "tmMoves8": [],
         "trMoves": [],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Dive",
           "Secret Power"

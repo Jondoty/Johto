@@ -129,7 +129,7 @@
           "Iron Head",
           "Stealth Rock"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Confide",
           "Double Team",

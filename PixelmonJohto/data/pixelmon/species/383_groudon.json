@@ -146,7 +146,7 @@
           "Heat Crash",
           "High Horsepower"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut","Surf"],
         "transferMoves": [
           "Aerial Ace",
           "Block",

@@ -134,7 +134,7 @@
           "Play Rough",
           "Psychic Fangs"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Aerial Ace",
           "Confide",

@@ -155,7 +155,7 @@
           "High Horsepower",
           "Body Press"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "After You",
           "Barrier",

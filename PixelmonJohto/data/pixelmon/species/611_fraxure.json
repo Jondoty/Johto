@@ -163,7 +163,7 @@
           "X-Scissor",
           "Dragon Pulse"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut","Surf"],
         "transferMoves": [
           "Aerial Ace",
           "Aqua Tail",

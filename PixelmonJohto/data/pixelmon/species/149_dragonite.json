@@ -177,7 +177,7 @@
           "Hurricane",
           "Body Press"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut","Surf"],
         "transferMoves": [
           "Aerial Ace",
           "Air Cutter",

@@ -130,7 +130,7 @@
           "Sludge Wave",
           "Scald"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Block",
           "Captivate",

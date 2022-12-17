@@ -187,7 +187,7 @@
           "Liquidation",
           "Body Press"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Aerial Ace",
           "After You",
@@ -882,7 +882,7 @@
           "Scald",
           "Liquidation"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [],
         "tmMoves7": [],
         "tmMoves6": [],

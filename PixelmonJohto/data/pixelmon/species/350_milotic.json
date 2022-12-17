@@ -166,7 +166,7 @@
           "Iron Head",
           "Scald"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Bind",
           "Captivate",

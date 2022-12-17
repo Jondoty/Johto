@@ -131,7 +131,7 @@
           "Throat Chop",
           "Body Press"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut","Surf"],
         "transferMoves": [
           "Aerial Ace",
           "Aqua Tail",

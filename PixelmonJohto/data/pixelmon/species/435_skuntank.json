@@ -164,7 +164,7 @@
           "Venom Drench",
           "Throat Chop"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Captivate",
           "Confide",

@@ -136,7 +136,7 @@
           "Work Up",
           "High Horsepower"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Aerial Ace",
           "Bide",

@@ -159,7 +159,7 @@
           "Stone Edge",
           "Hurricane"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Aerial Ace",
           "Aqua Tail",

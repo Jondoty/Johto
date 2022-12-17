@@ -131,7 +131,7 @@
           "Work Up",
           "Hurricane"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Confide",
           "Cut",

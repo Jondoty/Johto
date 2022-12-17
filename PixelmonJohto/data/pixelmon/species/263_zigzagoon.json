@@ -145,7 +145,7 @@
           "Grass Knot",
           "Work Up"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut","Surf"],
         "transferMoves": [
           "Bestow",
           "Captivate",
@@ -577,7 +577,7 @@
           "Grass Knot",
           "Work Up"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [],
         "tmMoves7": [],
         "tmMoves6": [],

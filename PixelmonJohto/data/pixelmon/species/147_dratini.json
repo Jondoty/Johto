@@ -151,7 +151,7 @@
           "Dragon Dance",
           "Dragon Pulse"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Bide",
           "Bind",

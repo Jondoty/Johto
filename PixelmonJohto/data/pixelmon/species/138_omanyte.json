@@ -151,7 +151,7 @@
           "Stealth Rock",
           "Scald"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Bide",
           "Captivate",

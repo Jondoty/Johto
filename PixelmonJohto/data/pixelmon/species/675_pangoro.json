@@ -171,7 +171,7 @@
           "Darkest Lariat",
           "Throat Chop"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut","Surf"],
         "transferMoves": [
           "Aerial Ace",
           "Block",

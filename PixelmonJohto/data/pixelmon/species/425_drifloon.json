@@ -141,7 +141,7 @@
           "Gyro Ball",
           "Ally Switch"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Air Cutter",
           "Bind",

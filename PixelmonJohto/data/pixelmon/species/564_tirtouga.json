@@ -169,7 +169,7 @@
           "Scald",
           "Liquidation"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Bide",
           "Confide",

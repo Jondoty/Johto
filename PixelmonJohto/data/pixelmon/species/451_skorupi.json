@@ -170,7 +170,7 @@
           "X-Scissor",
           "Bug Buzz"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Aerial Ace",
           "Aqua Tail",

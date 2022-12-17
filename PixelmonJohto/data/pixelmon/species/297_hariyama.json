@@ -151,7 +151,7 @@
         ],
         "tmMoves8": [],
         "trMoves": [],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Body Slam",
           "Captivate",

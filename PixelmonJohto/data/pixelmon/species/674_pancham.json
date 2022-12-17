@@ -154,7 +154,7 @@
           "Foul Play",
           "Work Up"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut","Surf"],
         "transferMoves": [
           "Aerial Ace",
           "Block",

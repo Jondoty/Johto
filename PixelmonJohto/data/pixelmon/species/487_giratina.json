@@ -152,7 +152,7 @@
           "Iron Head",
           "Stone Edge"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Aerial Ace",
           "Air Cutter",

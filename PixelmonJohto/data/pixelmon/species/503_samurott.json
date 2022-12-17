@@ -141,7 +141,7 @@
         ],
         "tmMoves8": [],
         "trMoves": [],
-        "hmMoves": [],
+        "hmMoves": ["Cut","Surf"],
         "transferMoves": [
           "Cut",
           "Dig",
@@ -474,7 +474,7 @@
         "eggMoves": [],
         "tmMoves8": [],
         "trMoves": [],
-        "hmMoves": [],
+        "hmMoves": ["Cut","Surf"],
         "transferMoves": [],
         "tmMoves7": [],
         "tmMoves6": [],

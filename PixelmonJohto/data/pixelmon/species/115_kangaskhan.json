@@ -176,7 +176,7 @@
           "Focus Blast",
           "Work Up"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut","Surf"],
         "transferMoves": [
           "Aerial Ace",
           "Aqua Tail",

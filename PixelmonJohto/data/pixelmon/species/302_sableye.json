@@ -188,7 +188,7 @@
           "Ally Switch",
           "Dazzling Gleam"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Aerial Ace",
           "Captivate",

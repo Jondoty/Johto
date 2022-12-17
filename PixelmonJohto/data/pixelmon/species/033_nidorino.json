@@ -135,7 +135,7 @@
           "Drill Run",
           "Venom Drench"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Bide",
           "Bubble Beam",

@@ -162,7 +162,7 @@
           "Liquidation",
           "Body Press"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Aqua Tail",
           "Aurora Beam",

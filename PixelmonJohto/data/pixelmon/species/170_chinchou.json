@@ -136,7 +136,7 @@
           "Wild Charge",
           "Dazzling Gleam"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Bubble",
           "Captivate",

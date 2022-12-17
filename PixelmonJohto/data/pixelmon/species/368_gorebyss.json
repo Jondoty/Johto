@@ -127,7 +127,7 @@
         ],
         "tmMoves8": [],
         "trMoves": [],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Double-Edge",
           "Mimic",

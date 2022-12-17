@@ -132,7 +132,7 @@
           "Scald",
           "Liquidation"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut","Surf"],
         "transferMoves": [
           "Bubble",
           "Confide",

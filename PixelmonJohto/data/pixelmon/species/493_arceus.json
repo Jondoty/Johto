@@ -120,7 +120,7 @@
         "eggMoves": [],
         "tmMoves8": [],
         "trMoves": [],
-        "hmMoves": [],
+        "hmMoves": ["Cut","Surf"],
         "transferMoves": [
           "Ancient Power",
           "Avalanche",

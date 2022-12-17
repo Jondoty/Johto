@@ -152,7 +152,7 @@
           "Throat Chop",
           "Liquidation"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Barrier",
           "Bide",
@@ -656,7 +656,7 @@
           "Throat Chop",
           "Liquidation"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [],
         "tmMoves7": [],
         "tmMoves6": [],

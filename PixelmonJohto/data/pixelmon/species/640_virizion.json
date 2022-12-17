@@ -140,7 +140,7 @@
           "Grass Knot",
           "Work Up"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Aerial Ace",
           "Block",

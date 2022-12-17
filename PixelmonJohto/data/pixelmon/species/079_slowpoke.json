@@ -180,7 +180,7 @@
           "Scald",
           "Liquidation"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "After You",
           "Aqua Tail",
@@ -756,7 +756,7 @@
           "Scald",
           "Liquidation"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [],
         "tmMoves7": [],
         "tmMoves6": [],

@@ -173,7 +173,7 @@
           "Liquidation",
           "Body Press"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Confide",
           "Cut",

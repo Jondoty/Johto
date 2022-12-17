@@ -156,7 +156,7 @@
           "Iron Head",
           "Stealth Rock"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut","Surf"],
         "transferMoves": [
           "Aerial Ace",
           "Aqua Tail",

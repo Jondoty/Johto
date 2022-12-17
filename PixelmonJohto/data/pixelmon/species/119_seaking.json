@@ -124,7 +124,7 @@
           "Drill Run",
           "Throat Chop"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Bide",
           "Bubble Beam",

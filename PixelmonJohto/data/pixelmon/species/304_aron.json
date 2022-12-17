@@ -161,7 +161,7 @@
           "Heavy Slam",
           "Body Press"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Aerial Ace",
           "Ancient Power",

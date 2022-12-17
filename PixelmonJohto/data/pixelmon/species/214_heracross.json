@@ -160,7 +160,7 @@
           "High Horsepower",
           "Throat Chop"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Arm Thrust",
           "Bide",

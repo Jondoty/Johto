@@ -145,7 +145,7 @@
           "Flash Cannon",
           "Stone Edge"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "After You",
           "Barrier",

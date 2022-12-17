@@ -138,7 +138,7 @@
           "Stone Edge",
           "Stealth Rock"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Aerial Ace",
           "Confide",

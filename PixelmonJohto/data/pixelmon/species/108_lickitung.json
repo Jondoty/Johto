@@ -152,7 +152,7 @@
           "Work Up",
           "Body Press"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut","Surf"],
         "transferMoves": [
           "Acid",
           "Aqua Tail",

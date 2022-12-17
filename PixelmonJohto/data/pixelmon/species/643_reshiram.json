@@ -155,7 +155,7 @@
           "Heat Crash",
           "Body Press"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Confide",
           "Cut",

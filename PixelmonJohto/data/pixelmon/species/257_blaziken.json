@@ -182,7 +182,7 @@
           "Work Up",
           "Heat Crash"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Captivate",
           "Confide",

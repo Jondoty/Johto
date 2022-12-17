@@ -155,7 +155,7 @@
           "Iron Head",
           "Stone Edge"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Confide",
           "Crush Claw",

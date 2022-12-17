@@ -151,7 +151,7 @@
           "Grass Knot",
           "Play Rough"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut","Surf"],
         "transferMoves": [
           "Aerial Ace",
           "Bide",

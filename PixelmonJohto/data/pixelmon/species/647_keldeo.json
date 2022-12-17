@@ -141,7 +141,7 @@
           "Work Up",
           "Liquidation"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut","Surf"],
         "transferMoves": [
           "Aerial Ace",
           "Confide",

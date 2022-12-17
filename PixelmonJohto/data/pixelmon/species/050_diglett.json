@@ -136,7 +136,7 @@
           "Ally Switch",
           "Work Up"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Aerial Ace",
           "Bide",

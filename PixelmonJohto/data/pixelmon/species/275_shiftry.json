@@ -120,7 +120,7 @@
           "Hurricane",
           "Throat Chop"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Aerial Ace",
           "Bide",

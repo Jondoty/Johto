@@ -146,7 +146,7 @@
           "Dragon Pulse",
           "Work Up"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Aerial Ace",
           "Air Cutter",

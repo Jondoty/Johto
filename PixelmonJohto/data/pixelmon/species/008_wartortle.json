@@ -147,7 +147,7 @@
           "Scald",
           "Work Up"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Bide",
           "Block",

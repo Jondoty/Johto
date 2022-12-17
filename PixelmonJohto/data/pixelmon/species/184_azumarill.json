@@ -167,7 +167,7 @@
           "Play Rough",
           "Liquidation"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Bubble",
           "Camouflage",

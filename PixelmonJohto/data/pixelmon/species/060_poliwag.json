@@ -122,7 +122,7 @@
           "Earth Power",
           "Scald"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Amnesia",
           "Bide",

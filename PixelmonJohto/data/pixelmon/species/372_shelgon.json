@@ -131,7 +131,7 @@
           "Dragon Pulse",
           "Zen Headbutt"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Aerial Ace",
           "Captivate",

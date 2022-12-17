@@ -108,7 +108,7 @@
           "Throat Chop",
           "Liquidation"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Amnesia",
           "Bide",

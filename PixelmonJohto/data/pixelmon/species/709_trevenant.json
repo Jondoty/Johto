@@ -154,7 +154,7 @@
           "Ally Switch",
           "Venom Drench"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Bestow",
           "Block",

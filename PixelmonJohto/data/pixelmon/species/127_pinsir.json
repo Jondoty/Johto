@@ -154,7 +154,7 @@
           "High Horsepower",
           "Throat Chop"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Bide",
           "Captivate",

@@ -155,7 +155,7 @@
           "Wild Charge",
           "Hurricane"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Aerial Ace",
           "Confide",

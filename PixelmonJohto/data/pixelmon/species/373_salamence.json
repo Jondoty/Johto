@@ -149,7 +149,7 @@
           "Stone Edge",
           "Hurricane"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Aerial Ace",
           "Air Cutter",

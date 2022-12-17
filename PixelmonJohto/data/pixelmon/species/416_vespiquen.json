@@ -139,7 +139,7 @@
           "Bug Buzz",
           "Power Gem"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Aerial Ace",
           "Air Cutter",

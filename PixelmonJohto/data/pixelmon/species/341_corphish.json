@@ -154,7 +154,7 @@
           "X-Scissor",
           "Scald"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut","Surf"],
         "transferMoves": [
           "Aerial Ace",
           "Bubble",

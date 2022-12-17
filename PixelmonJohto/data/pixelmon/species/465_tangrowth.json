@@ -155,7 +155,7 @@
           "Power Whip",
           "Grass Knot"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Cut"],
         "transferMoves": [
           "Aerial Ace",
           "Bide",

@@ -157,7 +157,7 @@
           "Zen Headbutt",
           "Work Up"
         ],
-        "hmMoves": [],
+        "hmMoves": ["Surf"],
         "transferMoves": [
           "Captivate",
           "Confide",
