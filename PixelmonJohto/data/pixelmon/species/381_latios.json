@@ -463,7 +463,7 @@
       "movement": {
         "rideable": true,
         "canFly": false,
-        "canSurf": false,
+        "canSurf": true,
         "canRideShoulder": false,
         "ridingOffsets": {
           "standing": {

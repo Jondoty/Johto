@@ -291,9 +291,9 @@
         ]
       },
       "movement": {
-        "rideable": false,
+        "rideable": true,
         "canFly": false,
-        "canSurf": false,
+        "canSurf": true,
         "canRideShoulder": false,
         "swimmingParameters": {
           "depthRangeStart": -1,

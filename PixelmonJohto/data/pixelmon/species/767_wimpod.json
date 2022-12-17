@@ -110,7 +110,7 @@
         "hiddenAbilities": []
       },
       "movement": {
-        "rideable": false,
+        "rideable": true,
         "canFly": false,
         "canSurf": true,
         "canRideShoulder": false,
