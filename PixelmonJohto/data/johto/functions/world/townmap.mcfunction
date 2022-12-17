@@ -1,10 +1,10 @@
 team join black @s
 
-#Runs a score assigning a player an area and running a title
+#Runs a score assigning a player an area. Some routes may be split into multiple sections.
 scoreboard players set @s[x=-1099,y=0,z=-252,dx=102,dy=100,dz=189] TownMap 153
 scoreboard players set @s[x=-1111,y=0,z=95,dx=276,dy=240,dz=280] TownMap 116
 scoreboard players set @s[x=-1152,y=0,z=-588,dx=190,dy=240,dz=128] TownMap 81
-scoreboard players set @s[x=-1207,y=0,z=-17,dx=301,dy=240,dz=898] TownMap 107
+scoreboard players set @s[x=-1207,y=0,z=-17,dx=301,dy=240,dz=498] TownMap 107
 scoreboard players set @s[x=-1267,y=60,z=68,dx=22,dy=180,dz=46] TownMap 125
 scoreboard players set @s[x=-1343,y=0,z=-143,dx=126,dy=240,dz=157] TownMap 89
 scoreboard players set @s[x=-1343,y=0,z=-301,dx=126,dy=240,dz=157] TownMap 80
@@ -161,10 +161,75 @@ scoreboard players set @s[x=870,y=0,z=-280,dx=281,dy=240,dz=57] TownMap 43
 scoreboard players set @s[x=870,y=0,z=-480,dx=281,dy=240,dz=199] TownMap 42
 scoreboard players set @s[x=870,y=0,z=-525,dx=281,dy=240,dz=44] TownMap 41
 
+#--------------------------------------------------------------------------------------------------------------------------------
+
+#Gyms
+scoreboard players set @s[x=-1217,y=60,z=527,dx=56,dy=50,dz=97] TownMap 40
+title @s[x=-1217,y=60,z=527,dx=56,dy=50,dz=97] actionbar {"text":"Cianwood City Gym"}
+
+scoreboard players set @s[x=-1153,y=60,z=527,dx=55,dy=50,dz=87] TownMap 47
+title @s[x=-1153,y=60,z=527,dx=55,dy=50,dz=87] actionbar {"text":"Olivine City Gym"}
+
+scoreboard players set @s[x=-1090,y=60,z=526,dx=60,dy=50,dz=101] TownMap 53
+title @s[x=-1090,y=60,z=526,dx=60,dy=50,dz=101] actionbar {"text":"Ecruteak City Gym"}
+
+scoreboard players set @s[x=-1011,y=60,z=524,dx=117,dy=50,dz=104] TownMap 32
+title @s[x=-1011,y=60,z=524,dx=117,dy=50,dz=104] actionbar {"text":"Goldenrod City Gym"}
+
+scoreboard players set @s[x=-885,y=60,z=524,dx=69,dy=50,dz=86] TownMap 26
+title @s[x=-885,y=60,z=524,dx=69,dy=50,dz=86] actionbar {"text":"Azalea Town Gym"}
+
+scoreboard players set @s[x=-820,y=60,z=525,dx=57,dy=50,dz=83] TownMap 14
+title @s[x=-820,y=60,z=525,dx=57,dy=50,dz=83] actionbar {"text":"Violet City Gym"}
+
+scoreboard players set @s[x=-884,y=60,z=635,dx=61,dy=50,dz=102] TownMap 63
+title @s[x=-884,y=60,z=635,dx=61,dy=50,dz=102] actionbar {"text":"Blackthorn City Gym"}
+
+scoreboard players set @s[x=-820,y=60,z=636,dx=63,dy=50,dz=101] TownMap 58
+title @s[x=-820,y=60,z=636,dx=63,dy=50,dz=101] actionbar {"text":"Mahogany Town Gym"}
+
+#Kanto
+scoreboard players set @s[x=-1171,y=60,z=637,dx=48,dy=50,dz=80] TownMap 120
+title @s[x=-1171,y=60,z=637,dx=48,dy=50,dz=80] actionbar {"text":"Fuchsia City Gym"}
+
+scoreboard players set @s[x=-1122,y=60,z=637,dx=47,dy=50,dz=81] TownMap 90
+title @s[x=-1122,y=60,z=637,dx=47,dy=50,dz=81] actionbar {"text":"Celadon City Gym"}
+
+scoreboard players set @s[x=-1074,y=60,z=638,dx=48,dy=50,dz=79] TownMap 74
+title @s[x=-1074,y=60,z=638,dx=48,dy=50,dz=79] actionbar {"text":"Vermillion City Gym"}
+
+scoreboard players set @s[x=-1027,y=60,z=637,dx=44,dy=50,dz=64] TownMap 123
+title @s[x=-1027,y=60,z=637,dx=44,dy=50,dz=64] actionbar {"text":"Cerulean City Gym"}
+
+scoreboard players set @s[x=-1208,y=60,z=733,dx=45,dy=50,dz=65] TownMap 123
+title @s[x=-1208,y=60,z=733,dx=45,dy=50,dz=65] actionbar {"text":"Cerulean City Gym"}
+
+scoreboard players set @s[x=-980,y=60,z=636,dx=48,dy=50,dz=66] TownMap 97
+title @s[x=-980,y=60,z=636,dx=48,dy=50,dz=66] actionbar {"text":"Pewter City Gym"}
+
+scoreboard players set @s[x=-1156,y=60,z=734,dx=49,dy=50,dz=78] TownMap 136
+title @s[x=-1156,y=60,z=734,dx=49,dy=50,dz=78] actionbar {"text":"Viridian City Gym"}
+
+scoreboard players set @s[x=-1092,y=60,z=733,dx=75,dy=50,dz=60] TownMap 73
+title @s[x=-1092,y=60,z=733,dx=75,dy=50,dz=60] actionbar {"text":"Cinnabar Island Gym"}
+
+scoreboard players set @s[x=-1005,y=60,z=733,dx=73,dy=50,dz=65] TownMap 148
+title @s[x=-1005,y=60,z=733,dx=73,dy=50,dz=65] actionbar {"text":"Saffron City Gym"}
+
+
+#Elite Four
+scoreboard players set @s[x=-1379,y=62,z=366,dx=128,dy=60,dz=436] TownMap 152
+title @s[x=-1379,y=62,z=366,dx=128,dy=60,dz=436] actionbar {"text":"Elite Four"}
+
+
+#--------------------------------------------------------------------------------------------------------------------------------
+
+
+#Titles based on player's current location
 title @s[x=-1099,y=0,z=-252,dx=102,dy=100,dz=189] actionbar {"text":"Sinjoh Ruins"}
 title @s[x=-1111,y=0,z=95,dx=276,dy=240,dz=280] actionbar {"text":"Route 28"}
 title @s[x=-1152,y=0,z=-588,dx=190,dy=240,dz=128] actionbar {"text":"Route 27"}
-title @s[x=-1207,y=0,z=-17,dx=301,dy=240,dz=898] actionbar {"text":"Mt. Silver"}
+title @s[x=-1207,y=0,z=-17,dx=301,dy=240,dz=498] actionbar {"text":"Mt. Silver"}
 title @s[x=-1267,y=60,z=68,dx=22,dy=180,dz=46] actionbar {"text":"Victory Road"}
 title @s[x=-1343,y=0,z=-143,dx=126,dy=240,dz=157] actionbar {"text":"Route 26"}
 title @s[x=-1343,y=0,z=-301,dx=126,dy=240,dz=157] actionbar {"text":"Route 26"}
@@ -273,7 +338,7 @@ title @s[x=-744,y=0,z=507,dx=162,dy=240,dz=147] actionbar {"text":"Dragon's Den"
 title @s[x=-771,y=0,z=-577,dx=121,dy=240,dz=132] actionbar {"text":"New Bark Town"}
 title @s[x=-775,y=0,z=125,dx=202,dy=240,dz=176] actionbar {"text":"Blackthorn City"}
 title @s[x=-83,y=0,z=220,dx=318,dy=240,dz=180] actionbar {"text":"Mt. Mortar"}
-title @s[x=-875,y=0,z=475,dx=280,dy=240,dz=173] actionbar {"text":"Route 44"}
+#title @s[x=-875,y=0,z=475,dx=280,dy=240,dz=173] actionbar {"text":"Route 44"}
 title @s[x=-96,y=0,z=120,dx=135,dy=240,dz=99] actionbar {"text":"Route 42"}
 title @s[x=-961,y=0,z=-588,dx=207,dy=240,dz=128] actionbar {"text":"Route 27"}
 title @s[x=100,y=0,z=-90,dx=90,dy=240,dz=190] actionbar {"text":"Violet City"}
