@@ -1,0 +1,8 @@
+replace-m-c-villagers: false
+spawn-structures: false
+spawn-bird-shrines: false
+spawn-celebi-shrines: false
+ilex-shrine-spawn-rate: 0.0
+ice-shrine-spawn-rates: 0.0
+waypoint-spawn-rate: 0.0
+always-spawn-in-village: true
