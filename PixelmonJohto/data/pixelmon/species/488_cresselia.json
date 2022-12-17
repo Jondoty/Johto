@@ -1,0 +1,470 @@
+{
+  "name": "Cresselia",
+  "dex": 488,
+  "defaultForms": [
+    ""
+  ],
+  "forms": [
+    {
+      "name": "",
+      "experienceGroup": "SLOW",
+      "dimensions": {
+        "height": 1.5,
+        "width": 1.0,
+        "length": 1,
+        "eyeHeight": 1.5,
+        "hoverHeight": 1.5
+      },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Confusion",
+              "Double Team"
+            ]
+          },
+          {
+            "level": 6,
+            "attacks": [
+              "Mist"
+            ]
+          },
+          {
+            "level": 12,
+            "attacks": [
+              "Aurora Beam"
+            ]
+          },
+          {
+            "level": 18,
+            "attacks": [
+              "Psybeam"
+            ]
+          },
+          {
+            "level": 24,
+            "attacks": [
+              "Psycho Shift"
+            ]
+          },
+          {
+            "level": 30,
+            "attacks": [
+              "Slash"
+            ]
+          },
+          {
+            "level": 36,
+            "attacks": [
+              "Psycho Cut"
+            ]
+          },
+          {
+            "level": 42,
+            "attacks": [
+              "Moonlight"
+            ]
+          },
+          {
+            "level": 48,
+            "attacks": [
+              "Safeguard"
+            ]
+          },
+          {
+            "level": 54,
+            "attacks": [
+              "Psychic"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Moonblast"
+            ]
+          },
+          {
+            "level": 66,
+            "attacks": [
+              "Future Sight"
+            ]
+          },
+          {
+            "level": 72,
+            "attacks": [
+              "Lunar Dance"
+            ]
+          }
+        ],
+        "tutorMoves": [
+          "Expanding Force"
+        ],
+        "eggMoves": [],
+        "tmMoves8": [
+          "Hyper Beam",
+          "Giga Impact",
+          "Solar Beam",
+          "Thunder Wave",
+          "Light Screen",
+          "Reflect",
+          "Safeguard",
+          "Rest",
+          "Snore",
+          "Protect",
+          "Icy Wind",
+          "Attract",
+          "Rain Dance",
+          "Sunny Day",
+          "Facade",
+          "Swift",
+          "Helping Hand",
+          "Power Swap",
+          "Guard Swap",
+          "Psycho Cut",
+          "Trick Room",
+          "Magic Room",
+          "Round"
+        ],
+        "trMoves": [
+          "Body Slam",
+          "Ice Beam",
+          "Psychic",
+          "Substitute",
+          "Psyshock",
+          "Endure",
+          "Sleep Talk",
+          "Shadow Ball",
+          "Future Sight",
+          "Trick",
+          "Skill Swap",
+          "Calm Mind",
+          "Energy Ball",
+          "Zen Headbutt",
+          "Grass Knot",
+          "Stored Power",
+          "Ally Switch"
+        ],
+        "hmMoves": [],
+        "transferMoves": [
+          "Captivate",
+          "Charge Beam",
+          "Confide",
+          "Dream Eater",
+          "Flash",
+          "Frustration",
+          "Fury Cutter",
+          "Gravity",
+          "Hidden Power",
+          "Magic Coat",
+          "Mud-Slap",
+          "Natural Gift",
+          "Psych Up",
+          "Recycle",
+          "Return",
+          "Secret Power",
+          "Signal Beam",
+          "Swagger",
+          "Telekinesis",
+          "Toxic"
+        ],
+        "tmMoves7": [
+          "Psyshock",
+          "Calm Mind",
+          "Toxic",
+          "Hidden Power",
+          "Sunny Day",
+          "Ice Beam",
+          "Hyper Beam",
+          "Light Screen",
+          "Protect",
+          "Rain Dance",
+          "Safeguard",
+          "Frustration",
+          "Solar Beam",
+          "Return",
+          "Psychic",
+          "Shadow Ball",
+          "Double Team",
+          "Reflect",
+          "Facade",
+          "Rest",
+          "Attract",
+          "Round",
+          "Energy Ball",
+          "Charge Beam",
+          "Giga Impact",
+          "Thunder Wave",
+          "Psych Up",
+          "Dream Eater",
+          "Grass Knot",
+          "Swagger",
+          "Sleep Talk",
+          "Substitute",
+          "Trick Room",
+          "Confide"
+        ],
+        "tmMoves6": [
+          "Psyshock",
+          "Calm Mind",
+          "Toxic",
+          "Hidden Power",
+          "Sunny Day",
+          "Ice Beam",
+          "Hyper Beam",
+          "Light Screen",
+          "Protect",
+          "Rain Dance",
+          "Safeguard",
+          "Frustration",
+          "Solar Beam",
+          "Return",
+          "Psychic",
+          "Shadow Ball",
+          "Double Team",
+          "Reflect",
+          "Facade",
+          "Rest",
+          "Attract",
+          "Round",
+          "Energy Ball",
+          "Charge Beam",
+          "Giga Impact",
+          "Flash",
+          "Thunder Wave",
+          "Psych Up",
+          "Dream Eater",
+          "Grass Knot",
+          "Swagger",
+          "Sleep Talk",
+          "Substitute",
+          "Trick Room",
+          "Secret Power",
+          "Confide"
+        ],
+        "tmMoves5": [
+          "Psyshock",
+          "Calm Mind",
+          "Toxic",
+          "Hidden Power",
+          "Sunny Day",
+          "Ice Beam",
+          "Hyper Beam",
+          "Light Screen",
+          "Protect",
+          "Rain Dance",
+          "Telekinesis",
+          "Safeguard",
+          "Frustration",
+          "Solar Beam",
+          "Return",
+          "Psychic",
+          "Shadow Ball",
+          "Double Team",
+          "Reflect",
+          "Facade",
+          "Rest",
+          "Attract",
+          "Round",
+          "Energy Ball",
+          "Charge Beam",
+          "Giga Impact",
+          "Flash",
+          "Thunder Wave",
+          "Psych Up",
+          "Dream Eater",
+          "Grass Knot",
+          "Swagger",
+          "Substitute",
+          "Trick Room"
+        ],
+        "tmMoves4": [
+          "Calm Mind",
+          "Toxic",
+          "Hidden Power",
+          "Sunny Day",
+          "Ice Beam",
+          "Hyper Beam",
+          "Light Screen",
+          "Protect",
+          "Rain Dance",
+          "Safeguard",
+          "Frustration",
+          "Solar Beam",
+          "Return",
+          "Psychic",
+          "Shadow Ball",
+          "Double Team",
+          "Reflect",
+          "Facade",
+          "Secret Power",
+          "Rest",
+          "Attract",
+          "Skill Swap",
+          "Energy Ball",
+          "Charge Beam",
+          "Endure",
+          "Recycle",
+          "Giga Impact",
+          "Flash",
+          "Thunder Wave",
+          "Psych Up",
+          "Captivate",
+          "Sleep Talk",
+          "Natural Gift",
+          "Dream Eater",
+          "Grass Knot",
+          "Swagger",
+          "Substitute",
+          "Trick Room"
+        ],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+      },
+      "abilities": {
+        "abilities": [
+          "Levitate"
+        ],
+        "hiddenAbilities": []
+      },
+      "movement": {
+        "rideable": true,
+        "canFly": false,
+        "canSurf": false,
+        "canRideShoulder": false,
+        "ridingOffsets": {
+          "standing": {
+            "x": 0.0,
+            "y": -1.1,
+            "z": -0.2
+          },
+          "moving": {
+            "x": 0.0,
+            "y": -1.1,
+            "z": -0.2
+          }
+        },
+        "flyingParameters": {
+          "flyHeightMin": 0,
+          "flyHeightMax": 0,
+          "flySpeedModifier": 1.0,
+          "flyRefreshRateY": 0,
+          "flyRefreshRateXZ": 0,
+          "flyRefreshRateSpeed": 0,
+          "flightTimeMin": 0,
+          "flightTimeMax": 0,
+          "flapRate": 0,
+          "landingMaterials": "LEAVES_AND_GRASS"
+        },
+        "mountedFlyingParameters": {
+          "upperAngleLimit": 0,
+          "lowerAngleLimit": 0,
+          "maxFlySpeed": 0,
+          "decelerationRate": 0,
+          "hoverDecelerationRate": 0,
+          "accelerationRate": 0,
+          "strafeAccelerationRate": 0,
+          "strafeRollConversion": 0,
+          "turnRate": 0,
+          "pitchRate": 0,
+          "staysHorizontalFlying": true
+        }
+      },
+      "aggression": {
+        "timid": 80,
+        "passive": 0,
+        "aggressive": 20
+      },
+      "battleStats": {
+        "hp": 120,
+        "attack": 70,
+        "defense": 120,
+        "specialAttack": 75,
+        "specialDefense": 130,
+        "speed": 85
+      },
+      "tags": [
+        "legendary"
+      ],
+      "spawn": {
+        "baseExp": 210,
+        "baseFriendship": 100,
+        "spawnLevel": 70,
+        "spawnLevelRange": 0,
+        "spawnLocations": [
+          "LAND"
+        ]
+      },
+      "possibleGenders": [
+        "MALE",
+        "FEMALE"
+      ],
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "pixelmon:pokemon/488_cresselia/all/base/none/texture.png",
+              "sprite": "pixelmon:pokemon/488_cresselia/all/base/none/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "pixelmon:pokemon/488_cresselia/all/base/none/model.pqc"
+                ]
+              },
+              "sounds": [
+                "pixelmon.mob.cresselia",
+                "pixelmon.mob.cresselia"
+              ]
+            },
+            {
+              "name": "shiny",
+              "texture": "pixelmon:pokemon/488_cresselia/all/base/shiny/texture.png",
+              "sprite": "pixelmon:pokemon/488_cresselia/all/base/shiny/sprite.png",
+              "particle": "arcanery:shiny"
+            },
+            {
+              "name": "rainbow",
+              "texture": "pixelmon:pokemon/488_cresselia/all/base/rainbow/texture.png",
+              "sprite": "pixelmon:pokemon/488_cresselia/all/base/rainbow/sprite.png",
+              "particle": ""
+            },
+            {
+              "name": "spirit",
+              "texture": "pixelmon:pokemon/488_cresselia/all/base/spirit/texture.png",
+              "sprite": "pixelmon:pokemon/488_cresselia/all/base/spirit/sprite.png",
+              "particle": ""
+            }
+          ]
+        }
+      ],
+      "eggGroups": [
+        "UNDISCOVERED"
+      ],
+      "types": [
+        "PSYCHIC"
+      ],
+      "preEvolutions": [],
+      "defaultBaseForm": "",
+      "megaItems": [],
+      "megas": [],
+      "gigantamax": {
+        "canHaveFactor": false,
+        "canGigantamax": false
+      },
+      "eggCycles": 121,
+      "weight": 85.6,
+      "catchRate": 3,
+      "malePercentage": 0,
+      "evolutions": [],
+      "evYields": {
+        "specialDefense": 3
+      }
+    }
+  ],
+  "generation": 4
+}

@@ -1,0 +1,408 @@
+{
+  "name": "Mandibuzz",
+  "dex": 630,
+  "defaultForms": [
+    ""
+  ],
+  "forms": [
+    {
+      "name": "",
+      "experienceGroup": "SLOW",
+      "dimensions": {
+        "height": 1.4,
+        "width": 1.2,
+        "length": 1,
+        "eyeHeight": 1.4,
+        "hoverHeight": 1.4
+      },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Bone Rush",
+              "Flatter",
+              "Gust",
+              "Leer",
+              "Pluck",
+              "Sky Attack",
+              "Toxic"
+            ]
+          },
+          {
+            "level": 18,
+            "attacks": [
+              "Tailwind"
+            ]
+          },
+          {
+            "level": 24,
+            "attacks": [
+              "Knock Off"
+            ]
+          },
+          {
+            "level": 30,
+            "attacks": [
+              "Iron Defense"
+            ]
+          },
+          {
+            "level": 36,
+            "attacks": [
+              "Whirlwind"
+            ]
+          },
+          {
+            "level": 42,
+            "attacks": [
+              "Air Slash"
+            ]
+          },
+          {
+            "level": 48,
+            "attacks": [
+              "Dark Pulse"
+            ]
+          },
+          {
+            "level": 57,
+            "attacks": [
+              "Nasty Plot"
+            ]
+          },
+          {
+            "level": 64,
+            "attacks": [
+              "Defog"
+            ]
+          },
+          {
+            "level": 72,
+            "attacks": [
+              "Attract"
+            ]
+          },
+          {
+            "level": 80,
+            "attacks": [
+              "Brave Bird"
+            ]
+          }
+        ],
+        "tutorMoves": [
+          "Dual Wingbeat",
+          "Lash Out"
+        ],
+        "eggMoves": [
+          "Mean Look",
+          "Roost",
+          "Toxic"
+        ],
+        "tmMoves8": [
+          "Fly",
+          "Hyper Beam",
+          "Giga Impact",
+          "Rest",
+          "Thief",
+          "Snore",
+          "Protect",
+          "Scary Face",
+          "Steel Wing",
+          "Attract",
+          "Rain Dance",
+          "Sunny Day",
+          "Facade",
+          "Swift",
+          "Fake Tears",
+          "Rock Tomb",
+          "U-turn",
+          "Payback",
+          "Assurance",
+          "Round",
+          "Retaliate",
+          "Snarl",
+          "Air Slash"
+        ],
+        "trMoves": [
+          "Substitute",
+          "Endure",
+          "Sleep Talk",
+          "Shadow Ball",
+          "Heat Wave",
+          "Taunt",
+          "Iron Defense",
+          "Dark Pulse",
+          "Brave Bird",
+          "Nasty Plot",
+          "Foul Play"
+        ],
+        "hmMoves": [],
+        "transferMoves": [
+          "Aerial Ace",
+          "Block",
+          "Confide",
+          "Cut",
+          "Double Team",
+          "Embargo",
+          "Feint Attack",
+          "Frustration",
+          "Fury Attack",
+          "Hidden Power",
+          "Incinerate",
+          "Mirror Move",
+          "Psych Up",
+          "Punishment",
+          "Return",
+          "Rock Smash",
+          "Secret Power",
+          "Snatch",
+          "Swagger",
+          "Torment"
+        ],
+        "tmMoves7": [
+          "Toxic",
+          "Hidden Power",
+          "Sunny Day",
+          "Taunt",
+          "Hyper Beam",
+          "Protect",
+          "Rain Dance",
+          "Roost",
+          "Frustration",
+          "Return",
+          "Shadow Ball",
+          "Double Team",
+          "Rock Tomb",
+          "Aerial Ace",
+          "Torment",
+          "Facade",
+          "Rest",
+          "Attract",
+          "Thief",
+          "Round",
+          "Steel Wing",
+          "Embargo",
+          "Payback",
+          "Giga Impact",
+          "Fly",
+          "Psych Up",
+          "Swagger",
+          "Sleep Talk",
+          "U-turn",
+          "Substitute",
+          "Snarl",
+          "Dark Pulse",
+          "Confide"
+        ],
+        "tmMoves6": [
+          "Toxic",
+          "Hidden Power",
+          "Sunny Day",
+          "Taunt",
+          "Hyper Beam",
+          "Protect",
+          "Rain Dance",
+          "Roost",
+          "Frustration",
+          "Return",
+          "Shadow Ball",
+          "Double Team",
+          "Rock Tomb",
+          "Aerial Ace",
+          "Torment",
+          "Facade",
+          "Rest",
+          "Attract",
+          "Thief",
+          "Round",
+          "Steel Wing",
+          "Incinerate",
+          "Embargo",
+          "Payback",
+          "Retaliate",
+          "Giga Impact",
+          "Psych Up",
+          "Swagger",
+          "Sleep Talk",
+          "U-turn",
+          "Substitute",
+          "Secret Power",
+          "Snarl",
+          "Dark Pulse",
+          "Confide"
+        ],
+        "tmMoves5": [
+          "Toxic",
+          "Hidden Power",
+          "Sunny Day",
+          "Taunt",
+          "Hyper Beam",
+          "Protect",
+          "Rain Dance",
+          "Frustration",
+          "Return",
+          "Shadow Ball",
+          "Double Team",
+          "Rock Tomb",
+          "Aerial Ace",
+          "Torment",
+          "Facade",
+          "Rest",
+          "Attract",
+          "Thief",
+          "Round",
+          "Incinerate",
+          "Embargo",
+          "Payback",
+          "Retaliate",
+          "Giga Impact",
+          "Psych Up",
+          "Swagger",
+          "Pluck",
+          "U-turn",
+          "Substitute",
+          "Rock Smash",
+          "Snarl"
+        ],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+      },
+      "abilities": {
+        "abilities": [
+          "BigPecks",
+          "Overcoat"
+        ],
+        "hiddenAbilities": [
+          "WeakArmor"
+        ]
+      },
+      "movement": {
+        "rideable": true,
+        "canFly": false,
+        "canSurf": false,
+        "canRideShoulder": false,
+        "ridingOffsets": {
+          "standing": {
+            "x": 0.0,
+            "y": -0.35,
+            "z": -0.2
+          },
+          "moving": {
+            "x": 0.0,
+            "y": -0.9,
+            "z": -0.1
+          }
+        },
+        "flyingParameters": {
+          "flyHeightMin": 5,
+          "flyHeightMax": 25,
+          "flySpeedModifier": 1.4,
+          "flyRefreshRateY": 100,
+          "flyRefreshRateXZ": 100,
+          "flyRefreshRateSpeed": 100,
+          "flightTimeMin": 0,
+          "flightTimeMax": 20,
+          "flapRate": 5,
+          "landingMaterials": "LEAVES_AND_GRASS"
+        },
+        "mountedFlyingParameters": {
+          "upperAngleLimit": 0,
+          "lowerAngleLimit": 0,
+          "maxFlySpeed": 0,
+          "decelerationRate": 0,
+          "hoverDecelerationRate": 0,
+          "accelerationRate": 0,
+          "strafeAccelerationRate": 0,
+          "strafeRollConversion": 0,
+          "turnRate": 0,
+          "pitchRate": 0,
+          "staysHorizontalFlying": true
+        }
+      },
+      "aggression": {
+        "timid": 80,
+        "passive": 0,
+        "aggressive": 20
+      },
+      "battleStats": {
+        "hp": 110,
+        "attack": 65,
+        "defense": 105,
+        "specialAttack": 55,
+        "specialDefense": 95,
+        "speed": 80
+      },
+      "tags": [],
+      "spawn": {
+        "baseExp": 179,
+        "baseFriendship": 35,
+        "spawnLevel": 55,
+        "spawnLevelRange": 8,
+        "spawnLocations": [
+          "AIR_PERSISTENT"
+        ]
+      },
+      "possibleGenders": [
+        "MALE",
+        "FEMALE"
+      ],
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "pixelmon:pokemon/630_mandibuzz/all/base/none/texture.png",
+              "sprite": "pixelmon:pokemon/630_mandibuzz/all/base/none/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "pixelmon:pokemon/630_mandibuzz/all/base/none/model.pqc"
+                ],
+                "yRotation": 10
+              },
+              "sounds": []
+            },
+            {
+              "name": "shiny",
+              "texture": "pixelmon:pokemon/630_mandibuzz/all/base/shiny/texture.png",
+              "sprite": "pixelmon:pokemon/630_mandibuzz/all/base/shiny/sprite.png",
+              "particle": "arcanery:shiny"
+            }
+          ]
+        }
+      ],
+      "eggGroups": [
+        "FLYING"
+      ],
+      "types": [
+        "DARK",
+        "FLYING"
+      ],
+      "preEvolutions": [
+        "Vullaby"
+      ],
+      "defaultBaseForm": "",
+      "megaItems": [],
+      "megas": [],
+      "gigantamax": {
+        "canHaveFactor": false,
+        "canGigantamax": false
+      },
+      "eggCycles": 21,
+      "weight": 39.5,
+      "catchRate": 60,
+      "malePercentage": 0,
+      "evolutions": [],
+      "evYields": {
+        "specialAttack": 2
+      }
+    }
+  ],
+  "generation": 5
+}

@@ -1,0 +1,375 @@
+{
+  "name": "Klinklang",
+  "dex": 601,
+  "defaultForms": [
+    ""
+  ],
+  "forms": [
+    {
+      "name": "",
+      "experienceGroup": "MEDIUM_SLOW",
+      "dimensions": {
+        "height": 0.8,
+        "width": 0.8,
+        "length": 1,
+        "eyeHeight": 0.8,
+        "hoverHeight": 0.8
+      },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Bind",
+              "Charge",
+              "Gear Up",
+              "Magnetic Flux",
+              "Thunder Shock",
+              "Vise Grip"
+            ]
+          },
+          {
+            "level": 12,
+            "attacks": [
+              "Charge Beam"
+            ]
+          },
+          {
+            "level": 16,
+            "attacks": [
+              "Metal Sound"
+            ]
+          },
+          {
+            "level": 20,
+            "attacks": [
+              "Autotomize"
+            ]
+          },
+          {
+            "level": 24,
+            "attacks": [
+              "Discharge"
+            ]
+          },
+          {
+            "level": 28,
+            "attacks": [
+              "Screech"
+            ]
+          },
+          {
+            "level": 32,
+            "attacks": [
+              "Gear Grind"
+            ]
+          },
+          {
+            "level": 36,
+            "attacks": [
+              "Lock-On"
+            ]
+          },
+          {
+            "level": 42,
+            "attacks": [
+              "Shift Gear"
+            ]
+          },
+          {
+            "level": 48,
+            "attacks": [
+              "Zap Cannon"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Hyper Beam"
+            ]
+          },
+          {
+            "level": 64,
+            "attacks": [
+              "Electric Terrain"
+            ]
+          }
+        ],
+        "tutorMoves": [
+          "Rising Voltage",
+          "Steel Beam",
+          "Steel Roller"
+        ],
+        "eggMoves": [],
+        "tmMoves8": [
+          "Hyper Beam",
+          "Giga Impact",
+          "Thunder Wave",
+          "Screech",
+          "Rest",
+          "Snore",
+          "Protect",
+          "Sandstorm",
+          "Facade",
+          "Assurance",
+          "Trick Room",
+          "Round",
+          "Volt Switch",
+          "Electric Terrain"
+        ],
+        "trMoves": [
+          "Thunderbolt",
+          "Thunder",
+          "Substitute",
+          "Endure",
+          "Sleep Talk",
+          "Uproar",
+          "Iron Defense",
+          "Power Gem",
+          "Flash Cannon",
+          "Ally Switch",
+          "Wild Charge"
+        ],
+        "hmMoves": [],
+        "transferMoves": [
+          "Confide",
+          "Double Team",
+          "Frustration",
+          "Gravity",
+          "Hidden Power",
+          "Magic Coat",
+          "Magnet Rise",
+          "Mirror Shot",
+          "Recycle",
+          "Return",
+          "Rock Polish",
+          "Rock Smash",
+          "Secret Power",
+          "Shock Wave",
+          "Signal Beam",
+          "Swagger",
+          "Telekinesis",
+          "Toxic"
+        ],
+        "tmMoves7": [
+          "Toxic",
+          "Hidden Power",
+          "Hyper Beam",
+          "Protect",
+          "Frustration",
+          "Thunderbolt",
+          "Thunder",
+          "Return",
+          "Double Team",
+          "Sandstorm",
+          "Facade",
+          "Rest",
+          "Round",
+          "Charge Beam",
+          "Giga Impact",
+          "Rock Polish",
+          "Volt Switch",
+          "Thunder Wave",
+          "Swagger",
+          "Sleep Talk",
+          "Substitute",
+          "Flash Cannon",
+          "Trick Room",
+          "Wild Charge",
+          "Confide"
+        ],
+        "tmMoves6": [
+          "Toxic",
+          "Hidden Power",
+          "Hyper Beam",
+          "Protect",
+          "Frustration",
+          "Thunderbolt",
+          "Thunder",
+          "Return",
+          "Double Team",
+          "Sandstorm",
+          "Facade",
+          "Rest",
+          "Round",
+          "Charge Beam",
+          "Giga Impact",
+          "Rock Polish",
+          "Volt Switch",
+          "Thunder Wave",
+          "Swagger",
+          "Sleep Talk",
+          "Substitute",
+          "Flash Cannon",
+          "Trick Room",
+          "Wild Charge",
+          "Secret Power",
+          "Confide"
+        ],
+        "tmMoves5": [
+          "Toxic",
+          "Hidden Power",
+          "Hyper Beam",
+          "Protect",
+          "Frustration",
+          "Thunderbolt",
+          "Thunder",
+          "Return",
+          "Double Team",
+          "Sandstorm",
+          "Facade",
+          "Rest",
+          "Round",
+          "Charge Beam",
+          "Giga Impact",
+          "Rock Polish",
+          "Volt Switch",
+          "Thunder Wave",
+          "Swagger",
+          "Substitute",
+          "Flash Cannon",
+          "Trick Room",
+          "Wild Charge",
+          "Rock Smash"
+        ],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+      },
+      "abilities": {
+        "abilities": [
+          "Plus",
+          "Minus"
+        ],
+        "hiddenAbilities": [
+          "ClearBody"
+        ]
+      },
+      "movement": {
+        "rideable": true,
+        "canFly": false,
+        "canSurf": false,
+        "canRideShoulder": false,
+        "ridingOffsets": {
+          "standing": {
+            "x": 0.1,
+            "y": -1.05,
+            "z": 0.0
+          },
+          "moving": {
+            "x": 0.1,
+            "y": -1.05,
+            "z": 0.0
+          }
+        },
+        "flyingParameters": {
+          "flyHeightMin": 0,
+          "flyHeightMax": 0,
+          "flySpeedModifier": 1.0,
+          "flyRefreshRateY": 0,
+          "flyRefreshRateXZ": 0,
+          "flyRefreshRateSpeed": 0,
+          "flightTimeMin": 0,
+          "flightTimeMax": 0,
+          "flapRate": 0,
+          "landingMaterials": "LEAVES_AND_GRASS"
+        },
+        "mountedFlyingParameters": {
+          "upperAngleLimit": 0,
+          "lowerAngleLimit": 0,
+          "maxFlySpeed": 0,
+          "decelerationRate": 0,
+          "hoverDecelerationRate": 0,
+          "accelerationRate": 0,
+          "strafeAccelerationRate": 0,
+          "strafeRollConversion": 0,
+          "turnRate": 0,
+          "pitchRate": 0,
+          "staysHorizontalFlying": true
+        }
+      },
+      "aggression": {
+        "timid": 80,
+        "passive": 0,
+        "aggressive": 20
+      },
+      "battleStats": {
+        "hp": 60,
+        "attack": 100,
+        "defense": 115,
+        "specialAttack": 70,
+        "specialDefense": 85,
+        "speed": 90
+      },
+      "tags": [],
+      "spawn": {
+        "baseExp": 234,
+        "baseFriendship": 70,
+        "spawnLevel": 49,
+        "spawnLevelRange": 11,
+        "spawnLocations": [
+          "LAND",
+          "UNDERGROUND"
+        ]
+      },
+      "possibleGenders": [
+        "MALE",
+        "FEMALE"
+      ],
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "texture": "pixelmon:pokemon/601_klinklang/all/base/none/texture.png",
+              "sprite": "pixelmon:pokemon/601_klinklang/all/base/none/sprite.png",
+              "particle": "",
+              "modelLocator": {
+                "factoryType": "NORMAL",
+                "pqc": [
+                  "pixelmon:pokemon/601_klinklang/all/base/none/model.pqc"
+                ]
+              },
+              "sounds": []
+            },
+            {
+              "name": "shiny",
+              "texture": "pixelmon:pokemon/601_klinklang/all/base/shiny/texture.png",
+              "sprite": "pixelmon:pokemon/601_klinklang/all/base/shiny/sprite.png",
+              "particle": "arcanery:shiny"
+            }
+          ]
+        }
+      ],
+      "eggGroups": [
+        "MINERAL"
+      ],
+      "types": [
+        "STEEL"
+      ],
+      "preEvolutions": [
+        "Klang",
+        "Klink"
+      ],
+      "defaultBaseForm": "",
+      "megaItems": [],
+      "megas": [],
+      "gigantamax": {
+        "canHaveFactor": false,
+        "canGigantamax": false
+      },
+      "eggCycles": 21,
+      "weight": 81.0,
+      "catchRate": 30,
+      "malePercentage": -1,
+      "evolutions": [],
+      "evYields": {
+        "defense": 3
+      }
+    }
+  ],
+  "generation": 5
+}
