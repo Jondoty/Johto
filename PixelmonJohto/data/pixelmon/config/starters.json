@@ -1,0 +1,37 @@
+{
+  "starters": [
+  ],
+  "chanceSpecs": [
+    {
+      "spec": "level:5",
+      "rate": 1
+    },
+    {
+      "spec": "ribbon:destiny",
+      "rate": 1
+    },
+    {
+      "spec": "shiny",
+      "rate": 4096
+    }
+  ],
+  "options": [
+
+  ],
+  "pageColors": [
+    {
+      "page": 0,
+      "color": {
+        "r": 203,
+        "g": 0,
+        "b": 11,
+        "a": 255
+      }
+    }
+  ],
+  "loop": false,
+  "text": [
+    "gui.starter.trademark4",
+    "gui.starter.trademark5"
+  ]
+}
