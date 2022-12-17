@@ -16,19 +16,19 @@ tellraw @a[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,scores={Cooldown=0,BillGP=4,Talk
 tellraw @a[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,scores={Cooldown=0,BillGP=5,TalkTime=0}] {"text":"<Bill's Grandfather> Do you know that hugely popular Pokemon? The Pokemon that has a yellow body and red cheeks. I would love to see what it looks like before it evolves."}
 tellraw @a[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,scores={Cooldown=0,BillGP=6,TalkTime=0}] {"text":"<Bill's Grandfather> Thanks for showing me so many cute Pokemon. I really enjoyed myself. I'm glad I've lived such a long life."}
 
-scoreboard players set @a[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,scores={Cooldown=0}] Cooldown 45
+scoreboard players set @a[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,scores={Cooldown=0}] Cooldown 90
 
 
 
 #Tags Pokemon that were thrown out
-scoreboard players set @e[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,nbt={ndex:108s},type=pixelmon:pixelmon] BillGP 1
-scoreboard players set @e[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,nbt={ndex:43s},type=pixelmon:pixelmon] BillGP 2
-scoreboard players set @e[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,nbt={ndex:120s},type=pixelmon:pixelmon] BillGP 3
-scoreboard players set @e[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,nbt={ndex:58s},type=pixelmon:pixelmon] BillGP 4
-scoreboard players set @e[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,nbt={ndex:172s},type=pixelmon:pixelmon] BillGP 5
+scoreboard players set @e[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,nbt={ndex:108},type=pixelmon:pixelmon] BillGP 1
+scoreboard players set @e[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,nbt={ndex:43},type=pixelmon:pixelmon] BillGP 2
+scoreboard players set @e[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,nbt={ndex:120},type=pixelmon:pixelmon] BillGP 3
+scoreboard players set @e[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,nbt={ndex:58},type=pixelmon:pixelmon] BillGP 4
+scoreboard players set @e[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,nbt={ndex:172},type=pixelmon:pixelmon] BillGP 5
 
 #Pikachu (incorrect, but special message)
-scoreboard players set @e[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,nbt={ndex:25s}] BillGP 6
+scoreboard players set @e[x=-3072,y=63,z=1005,dx=21,dy=5,dz=12,nbt={ndex:25}] BillGP 6
 
 
 
