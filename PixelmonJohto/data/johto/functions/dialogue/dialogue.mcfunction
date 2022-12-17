@@ -1335,6 +1335,11 @@ tag @s[scores={DialogueTrigger=53,TalkTime=44..}] add Dialogue53
 
 #execute as @s[x=-83,y=45,z=169,distance=..20,tag=!Dialogue54,score_TalkTime=0] run /tp @e[x=-803,y=92,z=-242,dy=3,type=pixelmon:npc_chatting] -83 45 169
 
+#Sets up Electrode Statues
+execute as @s[scores={DialogueTrigger=54,TalkTime=1}] run data merge entity @e[x=-817,y=92,z=-157,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:101}
+execute as @s[scores={DialogueTrigger=54,TalkTime=1}] run data merge entity @e[x=-817,y=92,z=-152,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:101}
+execute as @s[scores={DialogueTrigger=54,TalkTime=1}] run data merge entity @e[x=-817,y=92,z=-147,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:101}
+
 tellraw @s[scores={DialogueTrigger=54,TalkTime=1}] {"text":"<Lance> Are you all right?"}
 tellraw @s[scores={DialogueTrigger=54,TalkTime=8}] {"text":"<Lance> Your Pokémon are hurt and tired. Here, give them some of my medicine."}
 execute as @s[scores={DialogueTrigger=54,TalkTime=13}] run pokeheal @s
@@ -1473,10 +1478,10 @@ tag @s[scores={DialogueTrigger=62,TalkTime=20..}] add Dialogue62
 
 execute as @s[scores={DialogueTrigger=63,TalkTime=1}] run clear @s minecraft:nether_brick
 
-#Sets up Electrode Statues
-execute as @s[scores={DialogueTrigger=63,TalkTime=1}] run data merge entity @e[x=-817,y=92,z=-157,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:101}
-execute as @s[scores={DialogueTrigger=63,TalkTime=1}] run data merge entity @e[x=-817,y=92,z=-152,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:101}
-execute as @s[scores={DialogueTrigger=63,TalkTime=1}] run data merge entity @e[x=-817,y=92,z=-147,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:101}
+#Sets up Electrode Statues if missing
+execute as @s[scores={DialogueTrigger=63,TalkTime=1}] run data merge entity @e[x=-92,y=45,z=186,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:101}
+execute as @s[scores={DialogueTrigger=63,TalkTime=1}] run data merge entity @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:101}
+execute as @s[scores={DialogueTrigger=63,TalkTime=1}] run data merge entity @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:101}
 
 tellraw @s[scores={DialogueTrigger=63,TalkTime=1}] {"text":"<Ariana> It's too bad. If you were to join Team Rocket, you could become an Executive."}
 tellraw @s[scores={DialogueTrigger=63,TalkTime=11}] {"text":"<Ariana> ...This hideout is done for... But that's fine."}
@@ -1532,23 +1537,23 @@ execute as @s[scores={DialogueTrigger=63,TalkTime=147}] run tp @e[x=-118,y=45,z=
 
 #tps in Electrode 1
 execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run data merge entity @e[x=-92,y=45,z=186,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:1999}
-execute as @s[scores={DialogueTrigger=63,TalkTime=147}] run execute at @e[x=-92,y=45,z=186,dx=1,dy=5,dz=1,type=armor_stand] run pokespawn Electrode lvl:22 gr:7
-execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=186,dx=1,dy=5,dz=1,type=armor_stand] run data merge entity @e[limit=1,x=-92,y=45,z=186,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] {NoAI:1}
-execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=186,dx=1,dy=5,dz=1,type=armor_stand] run tp @e[x=-92,y=45,z=186,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] ~ ~ ~ 180 ~
+execute as @s[scores={DialogueTrigger=63,TalkTime=147}] run execute at @e[x=-92,y=45,z=186,dx=1,dy=5,dz=1,type=pixelmon:statue] run pokespawn Electrode lvl:22 gr:7
+execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=186,dx=1,dy=5,dz=1,type=pixelmon:statue] run data merge entity @e[limit=1,x=-92,y=45,z=186,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] {NoAI:1}
+execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=186,dx=1,dy=5,dz=1,type=pixelmon:statue] run tp @e[x=-92,y=45,z=186,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] ~ ~ ~ 180 ~
 
 #tps in Electrode 2
 execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run data merge entity @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:1999}
-execute as @s[scores={DialogueTrigger=63,TalkTime=147}] run execute at @e[x=-92,y=45,z=194,dx=1,dy=5,dz=1,type=armor_stand] run pokespawn Electrode lvl:22 gr:7
-execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=194,dx=1,dy=5,dz=1,type=armor_stand] run data merge entity @e[limit=1,x=-92,y=45,z=194,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] {NoAI:1}
-execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=194,dx=1,dy=5,dz=1,type=armor_stand] run tp @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] ~ ~ ~ 180 ~
+execute as @s[scores={DialogueTrigger=63,TalkTime=147}] run execute at @e[x=-92,y=45,z=194,dx=1,dy=5,dz=1,type=pixelmon:statue] run pokespawn Electrode lvl:22 gr:7
+execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=194,dx=1,dy=5,dz=1,type=pixelmon:statue] run data merge entity @e[limit=1,x=-92,y=45,z=194,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] {NoAI:1}
+execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=194,dx=1,dy=5,dz=1,type=pixelmon:statue] run tp @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] ~ ~ ~ 180 ~
 
 #tps in Electrode 3
 execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run data merge entity @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:1999}
-execute as @s[scores={DialogueTrigger=63,TalkTime=147}] run execute at @e[x=-92,y=45,z=202,dx=1,dy=5,dz=1,type=armor_stand] run pokespawn Electrode lvl:22 gr:7
-execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=202,dx=1,dy=5,dz=1,type=armor_stand] run data merge entity @e[limit=1,x=-92,y=45,z=202,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] {NoAI:1}
-execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=202,dx=1,dy=5,dz=1,type=armor_stand] run tp @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] ~ ~ ~ 180 ~
+execute as @s[scores={DialogueTrigger=63,TalkTime=147}] run execute at @e[x=-92,y=45,z=202,dx=1,dy=5,dz=1,type=pixelmon:statue] run pokespawn Electrode lvl:22 gr:7
+execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=202,dx=1,dy=5,dz=1,type=pixelmon:statue] run data merge entity @e[limit=1,x=-92,y=45,z=202,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] {NoAI:1}
+execute as @s[scores={DialogueTrigger=63,TalkTime=148}] run execute at @e[x=-92,y=45,z=202,dx=1,dy=5,dz=1,type=pixelmon:statue] run tp @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,type=pixelmon:pixelmon] ~ ~ ~ 180 ~
 
-tag @s[scores={DialogueTrigger=63,TalkTime=148..}] add Dialogue63
+tag @s[scores={DialogueTrigger=63,TalkTime=149..}] add Dialogue63
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Lance generator room final talk

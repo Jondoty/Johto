@@ -488,8 +488,8 @@ execute if block -944 183 285 pixelmon:timespace_altar{FlutePlayed:1b} run score
 
 
 #Bellsprout Tower swaying pillar in middle
-execute if entity @a[x=57,y=70,z=18,distance=..100] run setblock -848 70 -197 minecraft:redstone_block
-execute if entity @a[x=57,y=70,z=18,distance=..50] run setblock -848 70 -197 minecraft:air
+execute if entity @a[x=57,y=70,z=18,distance=..50] run setblock -819 65 -265 minecraft:air
+execute unless entity @a[x=57,y=70,z=18,distance=..50] run setblock -819 65 -265 minecraft:redstone_block
 
 
 
@@ -834,8 +834,15 @@ execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58
 execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58,tag=!Dialogue63] run data merge entity @e[x=-128,y=45,z=168,distance=..2,type=pixelmon:statue,limit=1] {ndex:24}
 execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58,tag=!Dialogue63] run data merge entity @e[x=-128,y=45,z=164,distance=..2,type=pixelmon:statue,limit=1] {ndex:149}
 
+#Prior to battle-ready
+execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue53,tag=!Dialogue61] run data merge entity @e[x=-128,y=45,z=168,distance=..2,type=pixelmon:statue,limit=1] {ndex:1999}
+execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue53,tag=!Dialogue61] run data merge entity @e[x=-128,y=45,z=164,distance=..2,type=pixelmon:statue,limit=1] {ndex:1999}
+
 #Dialogue63 - Ariana post-battle
 scoreboard players set @a[x=-141,y=44,z=157,dx=16,dy=5,dz=15,scores={TalkTime=0},tag=!Dialogue63,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 63
+
+#Dialogue64 - After defeating all Electrode in the room (no Pokemon found)
+execute unless entity @e[x=-149,y=44,z=177,dx=63,dy=5,dz=35,type=pixelmon:pixelmon] as @a[x=-149,y=44,z=177,dx=63,dy=5,dz=35,scores={TalkTime=0},tag=Dialogue63] run scoreboard players set @s[tag=!Dialogue64] DialogueTrigger 64
 
 #Dialogue76 - Route 43 gate gift
 scoreboard players set @a[x=-183,y=64,z=352,distance=..5,tag=Dialogue64,tag=!Dialogue76,scores={TalkTime=0}] DialogueTrigger 76
@@ -1753,10 +1760,9 @@ execute if block -105 37 187 minecraft:iron_bars if entity @a[x=-107,y=33,z=181,
 
 
 #Rocket HQ Generator Room
-#TEST
-execute if block -122 45 175 minecraft:air if entity @a[x=-124,y=44,z=168,dx=12,dy=5,dz=12,tag=!Dialogue63,scores={TalkTime=0}] run fill -122 45 175 -114 48 175 minecraft:iron_bars
+execute if entity @a[x=-124,y=45,z=169,dx=12,dy=5,dz=11,tag=Dialogue63,scores={TalkTime=0}] run fill -122 45 175 -114 48 175 minecraft:air
+execute unless entity @a[x=-124,y=45,z=169,dx=12,dy=5,dz=11,tag=Dialogue63,scores={TalkTime=0}] run fill -122 45 175 -114 48 175 minecraft:iron_bars
 
-execute if block -122 45 175 minecraft:iron_bars if entity @a[x=-124,y=44,z=168,distance=..25,tag=Dialogue63,scores={TalkTime=0}] run fill -122 45 175 -114 48 175 minecraft:air
 
 
 #Elite Four Gates
