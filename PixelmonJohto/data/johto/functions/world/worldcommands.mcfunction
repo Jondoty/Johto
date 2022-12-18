@@ -1717,8 +1717,9 @@ execute at @a[x=-164,y=63,z=213,distance=..15,tag=Dialogue53] run fill -160 63 2
 
 
 #Battle Tower blocked until player has beaten ELite Four
-tellraw @a[x=903,y=64,z=-42,dx=2,dy=2,dz=10,scores={IP=0}] ["",{"text":"Only Elite Four Champions may enter!","color":"white","italic":true}]
-execute at @a[x=903,y=64,z=-42,dx=2,dy=2,dz=10,scores={IP=0}] run tp @a[x=903,y=64,z=-42,dx=2,dy=2,dz=4,scores={IP=0}] ~ ~ ~-5
+tellraw @a[x=903,y=64,z=-42,dx=2,dy=2,dz=10,scores={IP=0,Cooldown=0}] ["",{"text":"Only Elite Four Champions may enter!","color":"white","italic":true}]
+scoreboard players add @a[x=903,y=64,z=-42,dx=2,dy=2,dz=10,scores={IP=0,Cooldown=0}] Cooldown 30
+execute at @a[x=903,y=64,z=-42,dx=2,dy=2,dz=10,scores={IP=0}] run tp @a[x=903,y=64,z=-42,dx=2,dy=2,dz=10,scores={IP=0}] ~ ~ ~-5
 
 
 #Viridian City Sleeping Snorlax

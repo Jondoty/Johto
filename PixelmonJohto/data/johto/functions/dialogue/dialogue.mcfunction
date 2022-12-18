@@ -724,7 +724,7 @@ execute as @s[scores={DialogueTrigger=28,TalkTime=1}] run clear @s minecraft:net
 execute as @s[scores={DialogueTrigger=28,TalkTime=1}] run tag @s add GymVictory
 execute as @s[scores={DialogueTrigger=28,TalkTime=1}] run scoreboard players set @s click 1
 
-execute as @s[scores={DialogueTrigger=28,TalkTime=1..75}] run execute at @e[x=-972,y=64,z=602,dy=3,type=pixelmon:npc_trainer] run particle minecraft:dripping_water ~-0.15 ~1.55 ~-0.5 0.25 0 0 3 1 normal
+execute as @s[scores={DialogueTrigger=28,TalkTime=1..75}] run execute at @e[x=-972,y=64,z=602,dy=3,type=pixelmon:npc_trainer] run particle minecraft:dripping_water ~-0.05 ~1.55 ~-0.5 0.10 0 0 3 1 normal
 tellraw @s[scores={DialogueTrigger=28,TalkTime=5}] {"text":"<Whitney> Sob... "}
 tellraw @s[scores={DialogueTrigger=28,TalkTime=14}] {"text":"<Whitney> ...Waaaaaaah! "}
 tellraw @s[scores={DialogueTrigger=28,TalkTime=21}] {"text":"<Whitney> You're mean! You shouldn't be so serious! "}
@@ -1188,6 +1188,11 @@ tag @s[scores={DialogueTrigger=47,TalkTime=32..}] add Dialogue47
 
 execute as @s[scores={DialogueTrigger=48,TalkTime=1}] run scoreboard players set @s click 1
 
+execute as @s[scores={DialogueTrigger=48,TalkTime=1..22}] run effect give @s minecraft:slowness 10 10 true
+execute as @s[scores={DialogueTrigger=48,TalkTime=1..22}] run effect give @s minecraft:jump_boost 10 128 true
+execute as @s[scores={DialogueTrigger=48,TalkTime=23}] run effect clear @s minecraft:slowness
+execute as @s[scores={DialogueTrigger=48,TalkTime=23}] run effect clear @s minecraft:jump_boost
+
 tellraw @s[scores={DialogueTrigger=48,TalkTime=5}] {"text":"<Rocket Grunt> Hold it there, kiddo!"}
 tellraw @s[scores={DialogueTrigger=48,TalkTime=12}] {"text":"<Rocket Grunt> The toll is $1000 to go through."}
 
@@ -1197,6 +1202,7 @@ execute as @s[scores={DialogueTrigger=48,TalkTime=18}] run data merge entity @e[
 
 tellraw @s[scores={DialogueTrigger=48,TalkTime=23}] {"text":"<Rocket Grunt> Thank you very much!"}
 
+execute as @s[scores={DialogueTrigger=48,TalkTime=23}] run scoreboard players set @s click 1
 tag @s[scores={DialogueTrigger=48,TalkTime=23..}] add Dialogue48
 
 #Grunts tp away after Rocket HQ is beaten
@@ -4081,7 +4087,7 @@ tellraw @s[scores={DialogueTrigger=195,TalkTime=1}] {"text":"<Bill's Grandfather
 tellraw @s[scores={DialogueTrigger=195,TalkTime=10}] {"text":"<Bill's Grandfather> He's in Johto. He does something with PCs, so I'm house-sitting."}
 execute as @s[scores={DialogueTrigger=195,TalkTime=10}] run scoreboard players set @s BillGP 1
 
-tag @s[scores={DialogueTrigger=195,TalkTime=10..}] add Dialogue195
+tag @s[scores={DialogueTrigger=195,TalkTime=20..}] add Dialogue195
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

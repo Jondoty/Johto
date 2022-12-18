@@ -80,8 +80,8 @@ execute at @e[tag=GymLeader,type=pixelmon:npc_trainer] run scoreboard players se
 
 
 #Silver Trainer Battle
-execute at @e[name=Silver,type=pixelmon:npc_trainer] run playsound rivalbattle record @a[tag=Temp,distance=..15,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-execute at @e[name=Silver,type=pixelmon:npc_trainer] run scoreboard players set @a[tag=Temp,distance=..15,scores={MusicCooldown=0}] MusicCooldown 178
+execute at @e[name=Silver,type=pixelmon:npc_trainer] run playsound rivalbattle record @a[tag=Temp,distance=..15,scores={MusicCooldown=0,DialogueTrigger=0}] ~ ~ ~ 1 1 1
+execute at @e[name=Silver,type=pixelmon:npc_trainer] run scoreboard players set @a[tag=Temp,distance=..15,scores={MusicCooldown=0,DialogueTrigger=0}] MusicCooldown 178
 
 #Silver Chatting NPC
 execute at @e[name=Silver,type=pixelmon:npc_chatting] run playsound rivaltalk record @a[tag=Temp,distance=..15,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
