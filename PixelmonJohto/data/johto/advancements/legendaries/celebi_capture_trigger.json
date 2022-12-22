@@ -20,5 +20,8 @@
                 "pokemon" : "celebi"
             }
         }
-    }
+    },
+  "rewards": {
+    "function": "johto:catch/celebi"
+  }
 }

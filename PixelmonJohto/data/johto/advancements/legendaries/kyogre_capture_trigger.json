@@ -10,7 +10,8 @@
         "description" : {
             "translate" : "advancements.kyogre_capture.description"
         },
-        "hidden": true
+        "hidden": true,
+        "announce_to_chat": false
     },
     "parent" : "pixelmon:legendaries/legendary_capture_trigger",
     "criteria" : {
@@ -20,5 +21,8 @@
                 "pokemon" : "kyogre"
             }
         }
-    }
+    },
+  "rewards": {
+    "function": "johto:catch/kyogre"
+  }
 }

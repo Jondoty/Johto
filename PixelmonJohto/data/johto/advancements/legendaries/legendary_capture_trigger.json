@@ -10,7 +10,8 @@
             "translate": "advancements.legendary_capture.description"
         },
         "background": "pixelmon:textures/gui/advancements/backgrounds/ruinswall.png",
-        "hidden": false
+        "hidden": false,
+        "announce_to_chat": false
     },
     "criteria": {
         "legendary_capture": {
