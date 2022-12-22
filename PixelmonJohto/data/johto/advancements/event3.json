@@ -8,7 +8,7 @@
             "text": "Discover the Legendary Beast statues"
         },
         "icon": {
-            "item": "minecraft:golden_helmet"
+            "item": "pixelmon:rare_bone"
         },
         "frame": "task",
         "show_toast": true,

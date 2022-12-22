@@ -8,7 +8,7 @@
             "text": "Board the S.S. Aqua for Kanto"
         },
         "icon": {
-            "item": "minecraft:music_disc_chirp"
+            "item": "pixelmon:ss_ticket"
         },
         "frame": "task",
         "show_toast": true,
