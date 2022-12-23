@@ -784,7 +784,8 @@ execute as @a[scores={TriggerCommand=99..112}] run function johto:triggers/gamec
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #tellraw @a[scores={TriggerCommand=0..1000}] {"text":"Success!"}
-scoreboard players set @a[scores={TriggerCommand=0..49}] TriggerCommand 0
+scoreboard players set @a[scores={TriggerCommand=0..11}] TriggerCommand 0
+scoreboard players set @a[scores={TriggerCommand=15..49}] TriggerCommand 0
 scoreboard players set @a[scores={TriggerCommand=53..1000}] TriggerCommand 0
 
 

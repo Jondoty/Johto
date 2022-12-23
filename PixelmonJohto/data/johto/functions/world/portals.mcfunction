@@ -58,13 +58,13 @@ tellraw @a[x=-654,y=64,z=331,dx=3,dy=3,tag=!Dialogue77] {"text":"Only those who 
 tp @a[x=-654,y=64,z=331,dx=3,dy=3,tag=!Dialogue77] ~ ~ ~-10
 
 #Beaten Clair
-playsound door ambient @a[x=-654,y=64,z=331,dx=3,dy=3,tag=Dialogue77] ~ ~ ~ 100 1 1
-scoreboard players set @a[x=-654,y=64,z=331,dx=3,dy=3,tag=Dialogue77] click 1
-tp @a[x=-654,y=64,z=331,dx=3,dy=3,tag=Dialogue77] -665 74 629 ~180 ~
+playsound door ambient @a[scores={TalkTime=0},x=-654,y=64,z=331,dx=3,dy=3,tag=Dialogue77] ~ ~ ~ 100 1 1
+scoreboard players set @a[scores={TalkTime=0},x=-654,y=64,z=331,dx=3,dy=3,tag=Dialogue77] click 1
+tp @a[scores={TalkTime=0},x=-654,y=64,z=331,dx=3,dy=3,tag=Dialogue77] -665 74 629 ~180 ~
 
-playsound door ambient @a[x=-667,y=74,z=631,dx=3,dy=3] ~ ~ ~ 100 1 1
-scoreboard players set @a[x=-667,y=74,z=631,dx=3,dy=3] click 1
-tp @a[x=-667,y=74,z=631,dx=3,dy=3] -652 64 329 ~180 ~
+playsound door ambient @a[scores={TalkTime=0},x=-667,y=74,z=631,dx=3,dy=3] ~ ~ ~ 100 1 1
+scoreboard players set @a[scores={TalkTime=0},x=-667,y=74,z=631,dx=3,dy=3] click 1
+tp @a[scores={TalkTime=0},x=-667,y=74,z=631,dx=3,dy=3] -652 64 329 ~180 ~
 
 
 

@@ -71,11 +71,11 @@ tp @e[x=467,y=63,z=60,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,tag=!Eligible] ~ ~-
 
 #Prompts the Judging dialogue when Eligible Pokemon is found
 
-execute at @e[x=467,y=63,z=60,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,tag=Eligible] run execute as @a[x=467,y=63,z=60,dx=18,dy=5,dz=8,tag=Dialogue198,scores={Cooldown=0}] run tag @s[tag=!Dialogue199,scores={TalkTime=0}] remove Dialogue199
-execute at @e[x=467,y=63,z=60,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,tag=Eligible] run execute as @a[x=467,y=63,z=60,dx=18,dy=5,dz=8,tag=Dialogue198,scores={Cooldown=0}] run tellraw @s[tag=!Dialogue199,scores={TalkTime=0}] {"text":"Submit this Pokemon to be judged?"}
-execute at @e[x=467,y=63,z=60,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,tag=Eligible] run execute as @a[x=467,y=63,z=60,dx=18,dy=5,dz=8,tag=Dialogue198,scores={Cooldown=0}] run tellraw @s[tag=!Dialogue199,scores={TalkTime=0}] ["",{"text":"[","color":"green"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 27"}},{"text":"]","color":"green"}]
-execute at @e[x=467,y=63,z=60,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,tag=Eligible] run execute as @a[x=467,y=63,z=60,dx=18,dy=5,dz=8,tag=Dialogue198,scores={Cooldown=0}] run scoreboard players enable @s[tag=!Dialogue199,scores={TalkTime=0}] TriggerCommand
-execute at @e[x=467,y=63,z=60,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,tag=Eligible] run execute as @a[x=467,y=63,z=60,dx=18,dy=5,dz=8,tag=Dialogue198,scores={Cooldown=0}] run scoreboard players set @s[tag=!Dialogue199,scores={TalkTime=0}] Cooldown 45
+execute if entity @e[x=467,y=63,z=60,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,tag=Eligible] as @a[x=467,y=63,z=60,dx=18,dy=5,dz=8,tag=Dialogue198,scores={Cooldown=0}] run tag @s[tag=!Dialogue199,scores={TalkTime=0}] remove Dialogue199
+execute if entity @e[x=467,y=63,z=60,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,tag=Eligible] as @a[x=467,y=63,z=60,dx=18,dy=5,dz=8,tag=Dialogue198,scores={Cooldown=0}] run tellraw @s[tag=!Dialogue199,scores={TalkTime=0}] {"text":"Submit this Pokemon to be judged?"}
+execute if entity @e[x=467,y=63,z=60,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,tag=Eligible] as @a[x=467,y=63,z=60,dx=18,dy=5,dz=8,tag=Dialogue198,scores={Cooldown=0}] run tellraw @s[tag=!Dialogue199,scores={TalkTime=0}] ["",{"text":"[","color":"green"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 27"}},{"text":"]","color":"green"}]
+execute if entity @e[x=467,y=63,z=60,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,tag=Eligible] as @a[x=467,y=63,z=60,dx=18,dy=5,dz=8,tag=Dialogue198,scores={Cooldown=0}] run scoreboard players enable @s[tag=!Dialogue199,scores={TalkTime=0}] TriggerCommand
+execute if entity @e[x=467,y=63,z=60,dx=18,dy=5,dz=8,type=pixelmon:pixelmon,tag=Eligible] as @a[x=467,y=63,z=60,dx=18,dy=5,dz=8,tag=Dialogue198,scores={Cooldown=0}] run scoreboard players set @s[tag=!Dialogue199,scores={TalkTime=0}] Cooldown 45
 
 
 

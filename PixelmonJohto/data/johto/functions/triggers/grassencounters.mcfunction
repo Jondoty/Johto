@@ -164,14 +164,14 @@ scoreboard players set @a[scores={Entei=1..,Raikou=1..}] DogEncounter 2
 
 
 
-tag @a[scores={TallGrass=1..}] add GrassRoll
-scoreboard players set @a[scores={TallGrass=1..}] Air 0
-scoreboard players set @a[scores={TallGrass=1..}] TallGrass 0
 
 
 tag @a[scores={TallGrass=1..}] remove DogEncounterSuccess
 tag @a[scores={TallGrass=1..}] remove EonEncounterSuccess
 
+tag @a[scores={TallGrass=1..}] remove GrassRoll
+scoreboard players set @a[scores={TallGrass=1..}] Air 0
+scoreboard players set @a[scores={TallGrass=1..}] TallGrass 0
 
 
 

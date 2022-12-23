@@ -11,10 +11,10 @@ scoreboard players add @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={Dialo
 #tp @s[x=617,y=65,z=-697,dy=1,dz=2,type=item,tag=!GSBall] ~ ~ ~-3
 
 execute as @s[scores={DialogueTrigger=110,TalkTime=1}] run tellraw @a[x=617,y=65,z=-696,distance=..30] {"text":"The shrine reacted with the GS Ball!"}
-execute as @s[scores={DialogueTrigger=110,TalkTime=1}] run kill @s[x=617,y=65,z=-697,dy=1,dz=2,type=item]
+execute as @s[scores={DialogueTrigger=110,TalkTime=1}] run kill @e[x=617,y=65,z=-697,dy=1,dz=2,type=item]
 execute as @s[scores={DialogueTrigger=110,TalkTime=1}] run playsound block.portal.trigger ambient @a[x=617,y=65,z=-696,distance=..30] ~ ~ ~ 1000 1 1
 
-execute as @s[scores={DialogueTrigger=110,TalkTime=10}] run execute at @s[x=617,y=63,z=-699,dy=3,type=armor_stand] run pokespawn celebi lvl:30
+execute as @s[scores={DialogueTrigger=110,TalkTime=10}] run execute at @e[x=617,y=63,z=-699,dy=3,type=armor_stand] run pokespawn celebi lvl:30
 execute as @s[scores={DialogueTrigger=110,TalkTime=10}] run playsound celebi record @a[x=617,y=65,z=-696,distance=..30] ~ ~ ~ 1000 1 1
 execute as @s[scores={DialogueTrigger=110,TalkTime=10}] run particle cloud 617 65 -697 1 1 1 1 100
 execute as @s[scores={DialogueTrigger=110,TalkTime=10}] run tellraw @a[x=617,y=65,z=-696,distance=..30] {"text":"A Celebi has spawned in the Ilex Forest!"}
@@ -36,7 +36,7 @@ scoreboard players set @s[scores={DialogueTrigger=110},tag=Dialogue110] Dialogue
 execute as @s[scores={DialogueTrigger=150,TalkTime=1}] run clear @a[scores={TriggerCommand=50}] pixelmon:blue_orb
 execute as @s[scores={DialogueTrigger=150,TalkTime=1}] run scoreboard players set @a[scores={TriggerCommand=50}] Kyogre 1
 execute as @s[scores={DialogueTrigger=150,TalkTime=1}] run tellraw @a[scores={TriggerCommand=50}] {"text":"Your Orb is reacting to the Tower!"}
-execute as @s[scores={DialogueTrigger=150,TalkTime=1}] run advancement grant @s[scores={TriggerCommand=50}] only johto:event6
+execute as @s[scores={DialogueTrigger=150,TalkTime=1}] run advancement grant @a[scores={TriggerCommand=50}] only johto:event6
 execute as @s[scores={DialogueTrigger=150,TalkTime=1}] run scoreboard players set @a[scores={TriggerCommand=50}] TriggerCommand 0
 
 execute as @s[scores={DialogueTrigger=150,TalkTime=1}] run summon minecraft:item -1173 64 -230 {Item:{id:"pixelmon:blue_orb",Count:1},Age:-32768,PickupDelay:32767,Tags:["Despawn"]}
@@ -51,11 +51,11 @@ execute as @s[scores={DialogueTrigger=150,TalkTime=1}] run playsound block.porta
 #Clones in red glass
 execute as @s[scores={DialogueTrigger=150,TalkTime=1}] run clone -824 65 -177 -869 65 -222 -1195 63 -231 replace
 
-execute as @s[scores={DialogueTrigger=150,TalkTime=7}] run execute at @s[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53,type=armor_stand] run particle cloud ~ ~ ~ 1 1 1 1 500
-execute as @s[scores={DialogueTrigger=150,TalkTime=7}] run kill @s[x=-1173,y=63,z=-230,dy=2,dz=25,tag=Despawn,type=minecraft:item]
+execute as @s[scores={DialogueTrigger=150,TalkTime=7}] run execute at @e[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53,type=armor_stand] run particle cloud ~ ~ ~ 1 1 1 1 500
+execute as @s[scores={DialogueTrigger=150,TalkTime=7}] run kill @e[x=-1173,y=63,z=-230,dy=2,dz=25,tag=Despawn,type=minecraft:item]
 
 #Summons Kyogre
-execute as @s[scores={DialogueTrigger=150,TalkTime=7}] run execute at @s[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53,type=armor_stand] run pokespawn Kyogre lvl:50 gr:7
+execute as @s[scores={DialogueTrigger=150,TalkTime=7}] run execute at @e[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53,type=armor_stand] run pokespawn Kyogre lvl:50 gr:7
 execute as @s[scores={DialogueTrigger=150,TalkTime=7}] run playsound kyogre hostile @a[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53] ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=150,TalkTime=7}] run data merge entity @e[limit=1,x=-1196,y=63,z=-230,dx=46,dy=20,dz=53,type=pixelmon:pixelmon,name=Kyogre] {Rotation:[179.99f,0.0f]}
 
@@ -71,7 +71,7 @@ scoreboard players set @s[scores={DialogueTrigger=150},tag=Dialogue150] Dialogue
 execute as @s[scores={DialogueTrigger=151,TalkTime=1}] run clear @a[scores={TriggerCommand=51}] pixelmon:red_orb
 execute as @s[scores={DialogueTrigger=151,TalkTime=1}] run scoreboard players set @a[scores={TriggerCommand=51}] Groudon 1
 execute as @s[scores={DialogueTrigger=151,TalkTime=1}] run tellraw @a[scores={TriggerCommand=51}] {"text":"Your Orb is reacting to the Tower!"}
-execute as @s[scores={DialogueTrigger=151,TalkTime=1}] run advancement grant @s[scores={TriggerCommand=51}] only johto:event6
+execute as @s[scores={DialogueTrigger=151,TalkTime=1}] run advancement grant @a[scores={TriggerCommand=51}] only johto:event6
 execute as @s[scores={DialogueTrigger=151,TalkTime=1}] run scoreboard players set @a[scores={TriggerCommand=51}] TriggerCommand 0
 
 execute as @s[scores={DialogueTrigger=151,TalkTime=1}] run summon minecraft:item -1173 64 -230 {Item:{id:"pixelmon:red_orb",Count:1},Age:-32768,PickupDelay:32767,Tags:["Despawn"]}
@@ -86,11 +86,11 @@ execute as @s[scores={DialogueTrigger=151,TalkTime=1}] run fill -861 64 -303 -86
 #Clones in blue glass
 execute as @s[scores={DialogueTrigger=151,TalkTime=1}] run clone -824 64 -177 -869 64 -222 -1195 63 -231 replace
 
-execute as @s[scores={DialogueTrigger=151,TalkTime=7}] run execute at @s[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53,type=armor_stand] run particle cloud ~ ~-2 ~ 1 1 1 1 500
-execute as @s[scores={DialogueTrigger=151,TalkTime=7}] run kill @s[x=-1173,y=63,z=-230,dy=2,dz=25,tag=Despawn,type=minecraft:item]
+execute as @s[scores={DialogueTrigger=151,TalkTime=7}] run execute at @e[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53,type=armor_stand] run particle cloud ~ ~-2 ~ 1 1 1 1 500
+execute as @s[scores={DialogueTrigger=151,TalkTime=7}] run kill @e[x=-1173,y=63,z=-230,dy=2,dz=25,tag=Despawn,type=minecraft:item]
 
 #Summons Groudon
-execute as @s[scores={DialogueTrigger=151,TalkTime=7}] run execute at @s[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53,type=armor_stand] run pokespawn Groudon lvl:50
+execute as @s[scores={DialogueTrigger=151,TalkTime=7}] run execute at @e[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53,type=armor_stand] run pokespawn Groudon lvl:50
 execute as @s[scores={DialogueTrigger=151,TalkTime=7}] run playsound groudon hostile @a[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53] ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=151,TalkTime=7}] run data merge entity @e[limit=1,x=-1196,y=63,z=-230,dx=46,dy=20,dz=53,type=pixelmon:pixelmon,name=Groudon] {Rotation:[179.99f,0.0f]}
 
@@ -123,11 +123,11 @@ execute as @s[scores={DialogueTrigger=152,TalkTime=1}] run fill -861 64 -303 -86
 #Clones in yellow glass
 execute as @s[scores={DialogueTrigger=152,TalkTime=1}] run clone -824 66 -177 -869 66 -222 -1196 63 -231 replace
 
-execute as @s[scores={DialogueTrigger=152,TalkTime=7}] run execute at @s[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53,type=armor_stand] run particle cloud ~ ~ ~ 1 1 1 1 500
-execute as @s[scores={DialogueTrigger=152,TalkTime=7}] run kill @s[x=-1173,y=63,z=-230,dy=2,dz=25,tag=Despawn,type=minecraft:item]
+execute as @s[scores={DialogueTrigger=152,TalkTime=7}] run execute at @e[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53,type=armor_stand] run particle cloud ~ ~ ~ 1 1 1 1 500
+execute as @s[scores={DialogueTrigger=152,TalkTime=7}] run kill @e[x=-1173,y=63,z=-230,dy=2,dz=25,tag=Despawn,type=minecraft:item]
 
 #Summons Rayquaza
-execute as @s[scores={DialogueTrigger=152,TalkTime=7}] run execute at @s[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53,type=armor_stand] run pokespawn Rayquaza lvl:50
+execute as @s[scores={DialogueTrigger=152,TalkTime=7}] run execute at @e[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53,type=armor_stand] run pokespawn Rayquaza lvl:50
 execute as @s[scores={DialogueTrigger=152,TalkTime=7}] run playsound rayquaza hostile @a[x=-1196,y=63,z=-239,dx=46,dy=20,dz=53] ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=152,TalkTime=7}] run data merge entity @e[limit=1,x=-1196,y=63,z=-230,dx=46,dy=20,dz=53,type=pixelmon:pixelmon,name=Rayquaza] {Rotation:[179.99f,0.0f]}
 
@@ -152,7 +152,7 @@ scoreboard players set @s[scores={DialogueTrigger=152},tag=Dialogue152] Dialogue
 #execute @a[x=-1038,y=50,z=-98,distance=..3,tag=!Dialogue176,score_TalkTime=0] run execute @s[tag=!SinnohLegend] run tellraw @s[tag=Dialogue172] {"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 12"}}
 
 #Tags Arceus for display
-execute as @s[scores={DialogueTrigger=173,TalkTime=3}] run scoreboard players set @s[x=-1060,y=46,z=-143,dx=40,dy=15,dz=70,type=pixelmon:pixelmon,nbt={ndex:493}] Arceus 1
+execute as @s[scores={DialogueTrigger=173,TalkTime=3}] run scoreboard players set @e[x=-1060,y=46,z=-143,dx=40,dy=15,dz=70,type=pixelmon:pixelmon,nbt={ndex:493}] Arceus 1
 
 execute as @s[scores={DialogueTrigger=173,TalkTime=1}] run setblock -702 94 -242 minecraft:redstone_block
 execute as @s[scores={DialogueTrigger=173,TalkTime=1}] run setblock -701 94 -242 minecraft:redstone_block
@@ -171,7 +171,7 @@ execute as @s[scores={DialogueTrigger=173,TalkTime=13}] run playsound block.port
 
 #Gives player Pokemon}
 execute as @s[scores={DialogueTrigger=173,TalkTime=23}] run particle cloud -1044 51 -93 1 1 1 0.15 100
-execute as @s[scores={DialogueTrigger=173,TalkTime=23}] run kill @s[x=-1044,y=50,z=-93,distance=..1,type=item]
+execute as @s[scores={DialogueTrigger=173,TalkTime=23}] run kill @e[x=-1044,y=50,z=-93,distance=..1,type=item]
 execute as @s[scores={DialogueTrigger=173,TalkTime=23}] run playsound entity.generic.explode ambient @a[scores={TriggerCommand=12}] ~ ~ ~ 10 1 1
 execute as @s[scores={DialogueTrigger=173,TalkTime=23}] run tellraw @a[scores={TriggerCommand=12}] {"text":"The mysterious round object took the shape of a Pokémon!"}
 execute as @s[scores={DialogueTrigger=173,TalkTime=23}] run pokegive @a[scores={TriggerCommand=12},tag=!SinnohLegend] Dialga lvl:1 gr:7
@@ -220,7 +220,7 @@ scoreboard players set @s[scores={DialogueTrigger=173},tag=Dialogue173] Dialogue
 #execute @a[x=-1050,y=50,z=-98,distance=..3,tag=!Dialogue176,score_TalkTime=0] run execute @s[tag=!SinnohLegend] run tellraw @s[tag=Dialogue172] {"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 13"}}
 
 #Tags Arceus for display
-execute as @s[scores={DialogueTrigger=174,TalkTime=3}] run scoreboard players set @s[x=-1060,y=46,z=-143,dx=40,dy=15,dz=70,type=pixelmon:pixelmon,nbt={ndex:493}] Arceus 1
+execute as @s[scores={DialogueTrigger=174,TalkTime=3}] run scoreboard players set @e[x=-1060,y=46,z=-143,dx=40,dy=15,dz=70,type=pixelmon:pixelmon,nbt={ndex:493}] Arceus 1
 
 execute as @s[scores={DialogueTrigger=174,TalkTime=1}] run setblock -702 94 -242 minecraft:redstone_block
 execute as @s[scores={DialogueTrigger=174,TalkTime=1}] run setblock -701 94 -242 minecraft:redstone_block
@@ -239,7 +239,7 @@ execute as @s[scores={DialogueTrigger=174,TalkTime=13}] run playsound block.port
 
 #Gives player Pokemon
 execute as @s[scores={DialogueTrigger=174,TalkTime=23}] run particle cloud -1044 51 -93 1 1 1 0.15 100
-execute as @s[scores={DialogueTrigger=174,TalkTime=23}] run kill @s[x=-1044,y=50,z=-93,distance=..1,type=item]
+execute as @s[scores={DialogueTrigger=174,TalkTime=23}] run kill @e[x=-1044,y=50,z=-93,distance=..1,type=item]
 execute as @s[scores={DialogueTrigger=174,TalkTime=23}] run playsound entity.generic.explode ambient @a[scores={TriggerCommand=13}] ~ ~ ~ 10 1 1
 execute as @s[scores={DialogueTrigger=174,TalkTime=23}] run tellraw @a[scores={TriggerCommand=13}] {"text":"The mysterious round object took the shape of a Pokémon!"}
 execute as @s[scores={DialogueTrigger=174,TalkTime=23}] run pokegive @a[scores={TriggerCommand=13},tag=!SinnohLegend] Palkia lvl:1 gr:7
@@ -284,7 +284,7 @@ scoreboard players set @s[scores={DialogueTrigger=174},tag=Dialogue174] Dialogue
 #execute @a[x=-1044,y=50,z=-85,distance=..3,tag=!Dialogue176,score_TalkTime=0] run execute @s[tag=!SinnohLegend] run tellraw @s[tag=Dialogue172] {"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 14"}}
 
 #Tags Arceus for display
-execute as @s[scores={DialogueTrigger=175,TalkTime=3}] run scoreboard players set @s[x=-1060,y=46,z=-143,dx=40,dy=15,dz=70,type=pixelmon:pixelmon,nbt={ndex:493}] Arceus 1
+execute as @s[scores={DialogueTrigger=175,TalkTime=3}] run scoreboard players set @e[x=-1060,y=46,z=-143,dx=40,dy=15,dz=70,type=pixelmon:pixelmon,nbt={ndex:493}] Arceus 1
 
 execute as @s[scores={DialogueTrigger=175,TalkTime=1}] run setblock -702 94 -242 minecraft:redstone_block
 execute as @s[scores={DialogueTrigger=175,TalkTime=1}] run setblock -701 94 -242 minecraft:redstone_block
@@ -303,7 +303,7 @@ execute as @s[scores={DialogueTrigger=175,TalkTime=13}] run playsound block.port
 
 #Gives player Pokemon
 execute as @s[scores={DialogueTrigger=175,TalkTime=23}] run particle cloud -1044 51 -93 1 1 1 0.15 100
-execute as @s[scores={DialogueTrigger=175,TalkTime=23}] run kill @s[x=-1044,y=50,z=-93,distance=..1,type=item]
+execute as @s[scores={DialogueTrigger=175,TalkTime=23}] run kill @e[x=-1044,y=50,z=-93,distance=..1,type=item]
 execute as @s[scores={DialogueTrigger=175,TalkTime=23}] run playsound entity.generic.explode ambient @a[scores={TriggerCommand=14}] ~ ~ ~ 10 1 1
 execute as @s[scores={DialogueTrigger=175,TalkTime=23}] run tellraw @a[scores={TriggerCommand=14}] {"text":"The mysterious round object took the shape of a Pokémon!"}
 execute as @s[scores={DialogueTrigger=175,TalkTime=23}] run pokegive @a[scores={TriggerCommand=14},tag=!SinnohLegend] Giratina lvl:1 gr:7

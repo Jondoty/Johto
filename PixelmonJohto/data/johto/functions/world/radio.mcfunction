@@ -9,25 +9,25 @@ scoreboard players set @s[scores={MusicState=0},nbt={Inventory:[{tag:{display:{N
 
 
 #Tags Legendary and Gym Leaders
-execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:384s,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:380s,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:243s,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:484s,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:151s,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:146s,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:150s,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:245s,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:250s,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:249s,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:144s,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:145s,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:382s,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:283s,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:281s,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:244s,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:483s,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:487s,OwnerUUID:""}] add Legendary
-execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!ArceusBattle,nbt={ndex:493s,OwnerUUID:""}] add ArceusBattle
+execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:384,OwnerUUID:""}] add Legendary
+execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:380,OwnerUUID:""}] add Legendary
+execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:243,OwnerUUID:""}] add Legendary
+execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:484,OwnerUUID:""}] add Legendary
+execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:151,OwnerUUID:""}] add Legendary
+execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:146,OwnerUUID:""}] add Legendary
+execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:150,OwnerUUID:""}] add Legendary
+execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:245,OwnerUUID:""}] add Legendary
+execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:250,OwnerUUID:""}] add Legendary
+execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:249,OwnerUUID:""}] add Legendary
+execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:144,OwnerUUID:""}] add Legendary
+execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:145,OwnerUUID:""}] add Legendary
+execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:382,OwnerUUID:""}] add Legendary
+execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:283,OwnerUUID:""}] add Legendary
+execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:281,OwnerUUID:""}] add Legendary
+execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:244,OwnerUUID:""}] add Legendary
+execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:483,OwnerUUID:""}] add Legendary
+execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!Legendary,nbt={ndex:487,OwnerUUID:""}] add Legendary
+execute at @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!ArceusBattle,nbt={ndex:493,OwnerUUID:""}] add ArceusBattle
 
 tag @e[type=pixelmon:npc_trainer,tag=!GymLeader,name=Bugsy] add GymLeader
 tag @e[type=pixelmon:npc_trainer,tag=!GymLeader,name=Whitney] add GymLeader
@@ -68,8 +68,11 @@ scoreboard players set @s[x=-1222,y=0,z=500,dx=470,dy=240,dz=342,scores={MusicCo
 
 
 #Kanto Gym Leaders
-execute at @e[x=-1220,y=60,z=633,dx=313,dy=100,dz=196,tag=GymLeader,type=pixelmon:npc_trainer] run playsound gymbattlekanto record @a[tag=Temp,distance=..15,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-execute at @e[x=-1220,y=60,z=633,dx=313,dy=100,dz=196,tag=GymLeader,type=pixelmon:npc_trainer] run scoreboard players set @a[tag=Temp,distance=..15,scores={MusicCooldown=0}] MusicCooldown 117
+execute at @e[x=-1220,y=60,z=633,dx=313,dy=100,dz=196,tag=GymLeader,type=pixelmon:npc_trainer] run playsound gymbattlekanto record @a[name=!Sabrina,tag=Temp,distance=..15,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+execute at @e[x=-1220,y=60,z=633,dx=313,dy=100,dz=196,tag=GymLeader,type=pixelmon:npc_trainer] run scoreboard players set @a[name=!Sabrina,tag=Temp,distance=..15,scores={MusicCooldown=0}] MusicCooldown 117
+
+execute at @e[x=-1220,y=60,z=633,dx=313,dy=100,dz=196,tag=GymLeader,type=pixelmon:npc_trainer] run playsound gymbattlekanto record @a[name=Sabrina,tag=Temp,x=-978,y=63,z=758,dx=19,dy=5,dz=15,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+execute at @e[x=-1220,y=60,z=633,dx=313,dy=100,dz=196,tag=GymLeader,type=pixelmon:npc_trainer] run scoreboard players set @a[name=Sabrina,tag=Temp,x=-978,y=63,z=758,dx=19,dy=5,dz=15,scores={MusicCooldown=0}] MusicCooldown 117
 
 
 
@@ -122,8 +125,8 @@ scoreboard players set @s[scores={MusicCooldown=0,DialogueTrigger=198..199}] Mus
 
 
 #Giovanni's Cave radio broadcast
-playsound rockettakeover record @s[scores={MusicCooldown=0,DialogueTrigger=164,TalkTime_min=166..}] ~ ~ ~ 1 1 1
-scoreboard players set @s[scores={MusicCooldown=0,DialogueTrigger=164,TalkTime_min=166..}] MusicCooldown 122
+playsound rockettakeover record @s[scores={MusicCooldown=0,DialogueTrigger=164,TalkTime=166..}] ~ ~ ~ 1 1 1
+scoreboard players set @s[scores={MusicCooldown=0,DialogueTrigger=164,TalkTime=166..}] MusicCooldown 122
 
 
 #Guide Gent tour music

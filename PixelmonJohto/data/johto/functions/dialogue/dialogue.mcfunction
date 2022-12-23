@@ -125,7 +125,7 @@ tellraw @s[scores={DialogueTrigger=2,TalkTime=2}] ["",{"text":"<Mom> Oh, "},{"se
 tellraw @s[scores={DialogueTrigger=2,TalkTime=8}] {"text":"<Mom> Our neighbor, Professor Elm, was looking for you."}
 tellraw @s[scores={DialogueTrigger=2,TalkTime=17}] {"text":"<Mom> He said he wanted you to do something for him."}
 
-tag @s[scores={DialogueTrigger=2,TalkTime=103..}] add Dialogue2
+tag @s[scores={DialogueTrigger=2,TalkTime=17..}] add Dialogue2
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Professor Elm's first Dialogue
@@ -764,7 +764,7 @@ tag @s[scores={DialogueTrigger=28,TalkTime=123..}] add Dialogue28
 tellraw @s[scores={DialogueTrigger=29,TalkTime=1}] {"text":"<Shop Clerk> Oh, you're better than Whitney. Do you now about that moving tree?"}
 tellraw @s[scores={DialogueTrigger=29,TalkTime=11}] {"text":"<Shop Clerk> If you wet it with a Squirtbottle, it attacks."}
 tellraw @s[scores={DialogueTrigger=29,TalkTime=20}] {"text":"<Shop Clerk> But since you have some Badges, you should be OK."}
-execute as @s[scores={DialogueTrigger=29,TalkTime=24}] run give @s minecraft:rabbit_foot{display:{Name:'[{"text":" Squirtbottle","italic":false}]',Lore:['[{"text":"A bottle used for","italic":false}]','[{"text":"wattering plants","italic":false}]']}} 1
+execute as @s[scores={DialogueTrigger=29,TalkTime=24}] run give @s minecraft:rabbit_foot{display:{Name:'[{"text":"Squirtbottle","italic":false}]',Lore:['[{"text":"A bottle used for","italic":false}]','[{"text":"wattering plants","italic":false}]']}} 1
 execute as @s[scores={DialogueTrigger=29,TalkTime=24}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=29,TalkTime=30}] {"text":"<Shop Clerk> Lalala lalalala. Have plenty of water, my lovely!"}
 
@@ -1041,7 +1041,7 @@ execute as @s[scores={DialogueTrigger=42,TalkTime=20}] run playsound minecraft:b
 tellraw @s[scores={DialogueTrigger=42,TalkTime=23}] {"text":"<Jasmine> ... Amphy, how are you feeling?"}
 
 execute as @s[scores={DialogueTrigger=42,TalkTime=30}] run data merge entity @e[limit=1,x=706,y=119,z=-38,distance=..2,type=pixelmon:statue] {statueTexture: 0s}
-execute as @s[scores={DialogueTrigger=42,TalkTime=30}] run playsound minecraft:ampharos ambient @s ~ ~ ~ 1 1 1
+execute as @s[scores={DialogueTrigger=42,TalkTime=30}] run playsound minecraft:ampharos ambient @s ~ ~ ~ 10 1 1
 
 #Lights up Lighthouse
 #execute as @s[scores={DialogueTrigger=42,TalkTime=30}] run fill 682 80 -60 724 77 -21 minecraft:redstone_block 0 replace sandstone
@@ -1218,7 +1218,7 @@ tag @s[scores={DialogueTrigger=48,TalkTime=23..}] add Dialogue48
 #execute as @s[x=-169,y=65,z=645,distance=..100,tag=!Dialogue49,score_TalkTime=0] run data merge entity @e[x=-765,y=66,z=-244,dy=3,type=pixelmon:statue,limit=1] {ndex: 1999}
 
 execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run particle cloud -167 62 632 3 3 3 1 200
-execute at @s[scores={DialogueTrigger=49,TalkTime=1}] run data merge entity @e[type=pixelmon:statue,x=-167,y=62,z=632,distance=..5,limit=1] {ndex:1999}
+execute at @s[scores={DialogueTrigger=49,TalkTime=1}] run data merge entity @e[type=pixelmon:statue,x=-167,y=62,z=632,distance=..5,limit=1] {ndex: 1999}
 #Bugged, /pokebattle doesn't seem to work
 #execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run pokebattle @s Gyarados,s,lvl:30,gr:7
 execute at @s[scores={DialogueTrigger=49,TalkTime=1}] run pokespawn Gyarados growth:7 shiny lvl:30
@@ -1751,6 +1751,7 @@ tellraw @s[scores={DialogueTrigger=72,TalkTime=18}] {"text":"<Archer> Like Giova
 execute as @s[scores={DialogueTrigger=72,TalkTime=28}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=72,TalkTime=28}] at @s run tp @s ~ ~ ~-26
 execute as @s[scores={DialogueTrigger=72,TalkTime=28}] run tp @e[x=-781,y=92,z=-242,dy=3,type=pixelmon:npc_chatting] 503 55 -271
+execute as @s[scores={DialogueTrigger=72,TalkTime=28}] run scoreboard players set @s click 1
 
 tellraw @s[scores={DialogueTrigger=72,TalkTime=35}] ["",{"text":"<Director> "},{"selector":"@s"},{"text":", thank you!"}]
 tellraw @s[scores={DialogueTrigger=72,TalkTime=41}] {"text":"<Director> Your courageous actions have saved Pokémon nationwide."}
@@ -2144,12 +2145,12 @@ tag @s[scores={DialogueTrigger=95,TalkTime=30..}] add Dialogue95
 #Hall of Fame Lance opening dialogue
 #scoreboard players set @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,tag=!Dialogue96] DialogueTrigger 96
 
-execute as @s[scores={DialogueTrigger=96,TalkTime=1}] run scoreboard players set @s click 1
+#execute as @s[scores={DialogueTrigger=96,TalkTime=1}] run scoreboard players set @s click 1
 tellraw @s[scores={DialogueTrigger=96,TalkTime=1}] {"text":"<Lance> This is where we honor the League Champions for all eternity."}
 tellraw @s[scores={DialogueTrigger=96,TalkTime=10}] {"text":"<Lance> Their courageous Pokémon are also inducted."}
-tellraw @s[scores={DialogueTrigger=96,TalkTime=18}] {"text":"<Lance> Do you want to register you and your partners in the Hall of Fame?"}
-tellraw @s[scores={DialogueTrigger=96,TalkTime=18}] ["",{"text":"["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 43"}},{"text":"] \u0020 \u0020 ["},{"text":"No","color":"red","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 44"}},{"text":"]"}]
-execute as @s[scores={DialogueTrigger=96,TalkTime=18}] run scoreboard players enable @s TriggerCommand
+#tellraw @s[scores={DialogueTrigger=96,TalkTime=18}] {"text":"<Lance> Do you want to register you and your partners in the Hall of Fame?"}
+#tellraw @s[scores={DialogueTrigger=96,TalkTime=18}] ["",{"text":"["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 43"}},{"text":"] \u0020 \u0020 ["},{"text":"No","color":"red","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 44"}},{"text":"]"}]
+#execute as @s[scores={DialogueTrigger=96,TalkTime=18}] run scoreboard players enable @s TriggerCommand
 
 tag @s[scores={DialogueTrigger=96,TalkTime=18..}] add Dialogue96
 
@@ -2178,6 +2179,8 @@ tellraw @s[scores={DialogueTrigger=98,TalkTime=28}] {"text":"Builders: Jond, Mys
 tellraw @s[scores={DialogueTrigger=98,TalkTime=38}] {"text":"Map is based off of: Pokémon Crystal, Heartgold, Soulsilver and a splash of Let's Go."}
 tellraw @s[scores={DialogueTrigger=98,TalkTime=48}] ["",{"text":"Check out my other projects if you enjoyed!\nPixelmon Kalos: "},{"text":"curseforge.com/minecraft/worlds/pixelmon-kalos","color":"aqua","clickEvent":{"action":"run_command","value":"https://www.curseforge.com/minecraft/worlds/pixelmon-kalos"}}]
 
+#runs legendary reset function
+execute as @s[scores={DialogueTrigger=98,TalkTime=58}] run function johto:triggers/legendreset
 
 #tps player to Hall of Fame (tps as close to the statues as you can)
 execute as @s[scores={DialogueTrigger=98,TalkTime=58}] run execute as @e[x=-803,y=64,z=-284,dy=3,type=armor_stand,scores={HOFCount=0}] run tp @a[scores={DialogueTrigger=98},tag=Dialogue97] -1019 65 -336 0 20
@@ -2196,12 +2199,9 @@ execute as @s[scores={DialogueTrigger=98,TalkTime=58}] run scoreboard players se
 execute as @s[scores={DialogueTrigger=98,TalkTime=66}] run scoreboard players add @e[x=-803,y=64,z=-284,dy=3,type=armor_stand] HOFCount 1
 execute as @s[scores={DialogueTrigger=98,TalkTime=66}] run scoreboard players set @e[x=-803,y=64,z=-284,dy=3,type=armor_stand] SpawnStatue 0
 
-tellraw @s[scores={DialogueTrigger=98,TalkTime=66}] ["",{"text":"Your Party has been inducted into the Hall of Fame! Take a look at them at the Indigo Plateau!","color":"gray","italic":true}]
+#tellraw @s[scores={DialogueTrigger=98,TalkTime=66}] ["",{"text":"Your Party has been inducted into the Hall of Fame! Take a look at them at the Indigo Plateau!","color":"gray","italic":true}]
 execute as @s[scores={DialogueTrigger=98,TalkTime=67}] run tag @s remove Dialogue97
 execute as @s[scores={DialogueTrigger=98,TalkTime=67}] run tp @s -721 69 -493
-
-#runs legendary reset function
-execute as @s[scores={DialogueTrigger=98,TalkTime=74},tag=Dialogue97] run function johto:triggers/legendreset
 
 tag @s[scores={DialogueTrigger=98,TalkTime=75..}] add Dialogue98
 
@@ -2268,7 +2268,7 @@ tag @s[scores={DialogueTrigger=102,TalkTime=60..}] add Dialogue102
 #Whirl Islands Lugia Spawn
 #scoreboard players set @a[x=1242,y=30,z=209,dx=14,dy=10,dz=8,score_LugiaCD=0,tag=!Dialogue103] DialogueTrigger 103 {Inventory:[{id:"minecraft:prismarine_shard"}]}
 
-execute as @s[scores={DialogueTrigger=103,TalkTime=1}] run clear @s minecraft:prismarine_shard
+execute as @s[scores={DialogueTrigger=103,TalkTime=1}] run clear @s pixelmon:silver_wing
 
 execute as @s[scores={DialogueTrigger=103,TalkTime=1}] run stopsound @s record
 execute as @s[scores={DialogueTrigger=103,TalkTime=1}] run playsound lugiaspawn record @s ~ ~ ~ 1000 1 1
@@ -2324,7 +2324,7 @@ tellraw @s[scores={DialogueTrigger=106,TalkTime=1}] ["",{"text":"<Nurse Joy> "},
 tellraw @s[scores={DialogueTrigger=106,TalkTime=8}] {"text":"<Nurse Joy> Congratulations!"}
 tellraw @s[scores={DialogueTrigger=106,TalkTime=13}] {"text":"<Nurse Joy> As a special deal, a GS Ball has been sent just for you!"}
 tellraw @s[scores={DialogueTrigger=106,TalkTime=21}] {"text":"<Nurse Joy> Please accept it!"}
-execute as @s[scores={DialogueTrigger=106,TalkTime=24}] run give @s pixelmon:gs_ball{display:{Lore:['[{"text":"A mysterious Ball.","italic":false}]','[{"text":"It seems to have some","italic":false}]','[{"text":"connection to Ilex Forest.","italic":false}]']}} 1
+execute as @s[scores={DialogueTrigger=106,TalkTime=24}] run give @s pixelmon:poke_ball{PokeBallID:"gs_ball",display:{Lore:['[{"text":"A mysterious Ball.","italic":false}]','[{"text":"It seems to have some","italic":false}]','[{"text":"connection to Ilex Forest.","italic":false}]']}} 1
 execute as @s[scores={DialogueTrigger=106,TalkTime=24}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=106,TalkTime=29}] {"text":"<Nurse Joy> Please do come again!"}
 
@@ -2334,7 +2334,7 @@ tag @s[scores={DialogueTrigger=106,TalkTime=29..}] add Dialogue106
 #Kurt inspecting the GS Ball
 #scoreboard players set @a[x=354,y=63,z=-704,dx=19,dy=5,dz=8,tag=!Dialogue107] DialogueTrigger 107 {Inventory:[{id:"pixelmon:gs_ball"}]}
 
-execute as @s[scores={DialogueTrigger=107,TalkTime=1}] run clear @s pixelmon:gs_ball
+execute as @s[scores={DialogueTrigger=107,TalkTime=1}] run clear @s pixelmon:gs_ball{PokeBallID:"gs_ball"}
 tellraw @s[scores={DialogueTrigger=107,TalkTime=1}] {"text":"<Kurt> Wh-what is that? I've never seen one before."}
 tellraw @s[scores={DialogueTrigger=107,TalkTime=10}] {"text":"<Kurt> It looks a lot like a Poke Ball, but it appears to be something else."}
 tellraw @s[scores={DialogueTrigger=107,TalkTime=21}] {"text":"<Kurt> Let me check it for you. "}
@@ -2354,7 +2354,7 @@ tellraw @s[scores={DialogueTrigger=108,TalkTime=27}] {"text":"<Kurt> Ilex Forest
 tellraw @s[scores={DialogueTrigger=108,TalkTime=34}] {"text":"<Kurt> What is going on? ..."}
 tellraw @s[scores={DialogueTrigger=108,TalkTime=42}] ["",{"text":"<Kurt> "},{"selector":"@s"},{"text":", here's your GS Ball back!"}]
 tellraw @s[scores={DialogueTrigger=108,TalkTime=50}] {"text":"<Kurt> Could you go see why Ilex Forest is so restless? "}
-execute as @s[scores={DialogueTrigger=108,TalkTime=53}] run give @s pixelmon:gs_ball{display:{Lore:['[{"text":"A mysterious Ball.","italic":false}]','[{"text":"It seems to have some","italic":false}]','[{"text":"connection to Ilex Forest.","italic":false}]']}} 1
+execute as @s[scores={DialogueTrigger=108,TalkTime=53}] run give @s pixelmon:poke_ball{PokeBallID:"gs_ball",display:{Lore:['[{"text":"A mysterious Ball.","italic":false}]','[{"text":"It seems to have some","italic":false}]','[{"text":"connection to Ilex Forest.","italic":false}]']}} 1
 execute as @s[scores={DialogueTrigger=108,TalkTime=53}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 #Enables particles in the Ilex Forest
@@ -2815,7 +2815,7 @@ tellraw @s[scores={DialogueTrigger=134,TalkTime=1}] {"text":"<Poke Fan> I love C
 tellraw @s[scores={DialogueTrigger=134,TalkTime=9}] {"text":"<Poke Fan> So I'm making due with a Poke Doll that I found."}
 tellraw @s[scores={DialogueTrigger=134,TalkTime=18}] {"text":"<Poke Fan> Oh, I see now. The girl who lost this Poke Doll is sad..."}
 tellraw @s[scores={DialogueTrigger=134,TalkTime=27}] {"text":"<Poke Fan> OK. Could you take this Poke Doll back to that poor little girl?"}
-execute as @s[scores={DialogueTrigger=134,TalkTime=31}] run tp @e[x=-2697,y=65,z=-39,distance=..2,type=pixelmon:statue] -738 75 -242
+execute as @s[scores={DialogueTrigger=134,TalkTime=31}] run data merge entity @e[x=-2697,y=65,z=-39,distance=..2,type=pixelmon:statue,limit=1] {ndex:1999}
 execute as @s[scores={DialogueTrigger=134,TalkTime=31}] run give @s minecraft:music_disc_13{display:{Name:'[{"text":"Clefairy Doll","italic":false}]',Lore:['[{"text":"The Poké Doll lost","italic":false}]','[{"text":"by the Copycat.","italic":false}]']},HideFlags:36} 1
 execute as @s[scores={DialogueTrigger=134,TalkTime=31}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=134,TalkTime=36}] {"text":"<Poke Fan> I'll befriend a real Clefairy on my own one day. No worries!"}
@@ -3236,7 +3236,7 @@ tag @s[scores={DialogueTrigger=157,TalkTime=38..}] add Dialogue157
 execute as @s[scores={DialogueTrigger=158,TalkTime=1}] run playsound articuno hostile @s ~ ~ ~ 10 1 1
 execute as @s[scores={DialogueTrigger=158,TalkTime=1}] run particle cloud -2054 19 -835 1 1 1 1 500
 execute as @s[scores={DialogueTrigger=158,TalkTime=1}] run execute at @e[type=armor_stand,x=-2054,y=19,z=-835,distance=..1] run pokespawn Articuno gr:7 lvl:50
-execute as @s[scores={DialogueTrigger=158,TalkTime=1}] run tp @e[type=pixelmon:statue,x=-2054,y=19,z=-835,distance=..1] -767 79 -244
+execute as @s[scores={DialogueTrigger=158,TalkTime=1}] run data merge entity @e[type=pixelmon:statue,x=-2054,y=19,z=-835,distance=..1,limit=1] {ndex: 1999}
 execute as @s[scores={DialogueTrigger=158,TalkTime=1}] run scoreboard players set @s Articuno 1
 
 tag @s[scores={DialogueTrigger=158,TalkTime=1..}] add Dialogue158
@@ -3253,7 +3253,7 @@ execute as @s[scores={DialogueTrigger=159,TalkTime=1}] run playsound zapdos host
 execute as @s[scores={DialogueTrigger=159,TalkTime=1}] run pokebattle @s Zapdos
 #execute as @s[scores={DialogueTrigger=159,TalkTime=1}] run pokebattle @s Zapdos,gr:7 lvl:50
 execute as @s[scores={DialogueTrigger=159,TalkTime=1}] run particle cloud -3239 64 571 1 1 1 0.15 1000
-execute as @s[scores={DialogueTrigger=159,TalkTime=1}] run tp @e[type=pixelmon:statue,x=-3239,y=64,z=571,distance=..1] -773 79 -244
+execute as @s[scores={DialogueTrigger=159,TalkTime=1}] run data merge entity @e[type=pixelmon:statue,x=-3239,y=64,z=571,distance=..1,limit=1] {ndex: 1999}
 execute as @s[scores={DialogueTrigger=159,TalkTime=1}] run scoreboard players set @s Zapdos 1
 
 tag @s[scores={DialogueTrigger=159,TalkTime=1..}] add Dialogue159
@@ -3264,7 +3264,7 @@ tag @s[scores={DialogueTrigger=159,TalkTime=1..}] add Dialogue159
 execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run playsound moltres hostile @s ~ ~ ~ 10 1 1
 execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run particle cloud -965 100 304 1 1 1 0.15 1000
 execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run execute at @e[type=armor_stand,x=-965,y=100,z=304,distance=..1] run pokespawn Moltres gr:7 lvl:50
-execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run tp @e[type=pixelmon:statue,x=-965,y=100,z=304,distance=..5] -779 79 -244
+execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run data merge entity @e[type=pixelmon:statue,x=-965,y=100,z=304,distance=..5,limit=1] {ndex: 1999}
 execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run scoreboard players set @s Moltres 1
 execute as @s[scores={DialogueTrigger=160,TalkTime=1..5}] run particle flame -965 100 304 0 0 0 1 10
 
@@ -3379,7 +3379,7 @@ tellraw @s[scores={DialogueTrigger=163,TalkTime=164}] ["",{"text":"<"},{"text":"
 execute as @s[scores={DialogueTrigger=163,TalkTime=172}] run particle cloud 278 64 726.0 1 1 1 1 100
 execute as @s[scores={DialogueTrigger=163,TalkTime=172}] run tp @e[x=278,y=63,z=726,dy=3,type=pixelmon:npc_chatting] -731 71 -242
 
-tag @s[scores={DialogueTrigger=163,TalkTime=8..}] add Dialogue163
+tag @s[scores={DialogueTrigger=163,TalkTime=172..}] add Dialogue163
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Lyra after hearing Silver/Giovanni story
@@ -3411,7 +3411,7 @@ tellraw @s[scores={DialogueTrigger=164,TalkTime=53}] ["",{"text":"<"},{"text":"G
 tellraw @s[scores={DialogueTrigger=164,TalkTime=60}] ["",{"text":"<"},{"text":"Giovanni","color":"gray"},{"text":"> Anyway, I have to warn you that this is not a place for kids like you."}]
 tellraw @s[scores={DialogueTrigger=164,TalkTime=69}] {"text":"<Lyra> Huh? That's the guy we just saw arguing with that boy!"}
 tellraw @s[scores={DialogueTrigger=164,TalkTime=78}] ["",{"text":"<"},{"text":"Giovanni","color":"gray"},{"text":"> You have a certain look..."}]
-tellraw @s[scores={DialogueTrigger=164,TalkTime=85}] ["",{"text":"<"},{"text":"Giovanni","color":"gray"},{"text":"> It reminds me of the kid who stood in front of my three years ago..."}]
+tellraw @s[scores={DialogueTrigger=164,TalkTime=85}] ["",{"text":"<"},{"text":"Giovanni","color":"gray"},{"text":"> It reminds me of the kid who stood in front of me three years ago..."}]
 tellraw @s[scores={DialogueTrigger=164,TalkTime=95}] ["",{"text":"<"},{"text":"Giovanni","color":"gray"},{"text":"> You have the same eyes..."}]
 tellraw @s[scores={DialogueTrigger=164,TalkTime=102}] ["",{"text":"<"},{"text":"Giovanni","color":"gray"},{"text":"> .... I'm on my way to Goldenrod City to answer the call and join my team."}]
 tellraw @s[scores={DialogueTrigger=164,TalkTime=111}] ["",{"text":"<"},{"text":"Giovanni","color":"gray"},{"text":"> Are you going to get in my way?"}]
@@ -3422,7 +3422,7 @@ tellraw @s[scores={DialogueTrigger=164,TalkTime=142}] {"text":"<Lyra> The radio 
 tellraw @s[scores={DialogueTrigger=164,TalkTime=150}] {"text":"<Lyra> Team Rocket has occupied the Radio Tower at Goldenrod City!"}
 tellraw @s[scores={DialogueTrigger=164,TalkTime=160}] ["",{"text":"<Lyra> It can't be! "},{"selector":"@s"},{"text":", you solved this case already!"}]
 
-#Plays Team Rocket music}
+#Plays Team Rocket music
 execute as @s[scores={DialogueTrigger=164,TalkTime=166}] run scoreboard players set @s click 1
 
 tellraw @s[scores={DialogueTrigger=164,TalkTime=169}] ["",{"text":"\u266a\u266b\u266c "},{"text":"[Radio: Pokémon Music] ","color":"aqua"},{"text":"<Team Rocket> ...This is the Radio Tower. This is the Radio Tower. We are pleased to declare Team Rocket's revival.","italic":true},{"text":"\u266a\u266b\u266c"}]
@@ -3517,7 +3517,7 @@ execute as @s[scores={DialogueTrigger=166,TalkTime=10}] run tp @e[x=-705,y=85,z=
 #Summons visual-only Azure flute
 execute as @s[scores={DialogueTrigger=166,TalkTime=7}] run summon minecraft:item 176 64 -141 {Item:{id:"pixelmon:azure_flute",Count:1,tag:{display:{Lore:["A flute that puts out echoing","sounds that do not seem to be of","this world. No one knows who made","it. It seems to call to the","highest mountains."]}}},Age:-32768,PickupDelay:32767}
 
-tag @s[scores={DialogueTrigger=166,TalkTime=7..}] add Dialogue166
+tag @s[scores={DialogueTrigger=166,TalkTime=10..}] add Dialogue166
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Archeologist giving Azure Flute
@@ -3529,7 +3529,7 @@ tellraw @s[scores={DialogueTrigger=167,TalkTime=19}] {"text":"<Archaeologist> Yo
 
 #Kill ground Flute
 execute as @s[scores={DialogueTrigger=167,TalkTime=24}] run kill @e[x=176,y=63,z=-141,dy=2,type=item]
-execute as @s[scores={DialogueTrigger=167,TalkTime=24}] run give @s stone{display:{Name:'[{"text":"Azure Flute","italic":false,"color":"yellow"}]',Lore:['[{"text":"A flute that puts out echoing","italic":false}]','[{"text":"sounds that do not seem to be of","italic":false}]','[{"text":"this world. No one knows who made","italic":false}]','[{"text":"it. It seems to call to the","italic":false}]','[{"text":"highest mountains.","italic":false}]']}} 1
+execute as @s[scores={DialogueTrigger=167,TalkTime=24}] run give @s pixelmon:azure_flute{display:{Name:'[{"text":"Azure Flute","italic":false,"color":"yellow"}]',Lore:['[{"text":"A flute that puts out echoing","italic":false}]','[{"text":"sounds that do not seem to be of","italic":false}]','[{"text":"this world. No one knows who made","italic":false}]','[{"text":"it. It seems to call to the","italic":false}]','[{"text":"highest mountains.","italic":false}]']}} 1
 execute as @s[scores={DialogueTrigger=167,TalkTime=24}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tellraw @s[scores={DialogueTrigger=167,TalkTime=27}] {"text":"<Archaeologist> The Flute is said to call upon the mythical Pokemon Arceus atop Mt. Coronet, but that is unreachable to us..."}
@@ -3636,7 +3636,7 @@ tellraw @s[scores={DialogueTrigger=171,TalkTime=100}] {"text":"<Cynthia> Call it
 execute as @s[scores={DialogueTrigger=171,TalkTime=110}] run particle cloud -1081 61 -224 1 1 1 1 100
 execute as @s[scores={DialogueTrigger=171,TalkTime=110}] run tp @e[x=-1081,y=61,z=-224,distance=..1,limit=1,type=pixelmon:npc_chatting] -815 65 -235
 
-tag @s[scores={DialogueTrigger=171,TalkTime=58..}] add Dialogue171
+tag @s[scores={DialogueTrigger=171,TalkTime=111..}] add Dialogue171
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Sinjoh Altar Cynthia
@@ -4397,9 +4397,6 @@ tag @s[scores={DialogueTrigger=199,TalkTime=38..}] add Dialogue199
 #Odd Egg Rolls
 #scoreboard players set @a[score_TalkTime=0] DialogueTrigger 200 {Inventory:[{id:"minecraft:egg"}]}
 
-#Removes dialogue tag
-execute as @s[scores={DialogueTrigger=200}] run tag @s remove Dialogue200
-
 #Rolls a Random Number for player
 execute as @s[scores={DialogueTrigger=200,TalkTime=1}] run scoreboard players set @e[x=-867,y=69,z=-207,dy=4,dz=2] rng 0
 execute as @s[scores={DialogueTrigger=200,TalkTime=1}] run scoreboard players add @e[x=-867,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 1
@@ -4432,7 +4429,7 @@ execute as @s[nbt={Inventory:[{id:"minecraft:egg"}]},scores={DialogueTrigger=200
 
 tellraw @s[scores={DialogueTrigger=200,TalkTime=2}] ["",{"text":"You recieved an ","italic":true},{"text":"Odd Egg","italic":true,"color":"aqua","hoverEvent":{"action":"show_text","value":"A gift Egg. The Pokémon it hatches into has a higher-than-usual chance of being Shiny."}},{"text":"!","italic":true}]
 
-tag @s[scores={DialogueTrigger=200,TalkTime=2..}] add Dialogue200
+tag @s[scores={DialogueTrigger=200,TalkTime=4..}] add Dialogue200
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Safari Zone clone in commands

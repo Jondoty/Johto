@@ -384,7 +384,8 @@ execute as @a[scores={EscapeRopeUse=1..}] run function johto:world/escaperope
 
 
 #Odd Egg item converts to Pixelmon dialogue
-scoreboard players set @a[scores={TalkTime=0},nbt={Inventory:[{id:"minecraft:egg"}]}] DialogueTrigger 200
+tag @a[scores={TalkTime=0},nbt={Inventory:[{id:"minecraft:egg"}]},tag=Dialogue200] remove Dialogue200
+scoreboard players set @a[scores={TalkTime=0},nbt={Inventory:[{id:"minecraft:egg"}]},tag=!Dialogue200] DialogueTrigger 200
 
 #Radio tip
 tellraw @a[tag=!RadioTip,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}}] ["",{"text":"Tip: If you want to hear music within the map as you play, download the optional Music Pack!\n[","italic":true,"color":"gray"},{"text":"Click Here","italic":true,"color":"aqua","clickEvent":{"action":"open_url","value":"http://johto.jond.tv/"}},{"text":"] to download.\n[","italic":true,"color":"gray"},{"text":"Learn More","italic":true,"color":"yellow","clickEvent":{"action":"open_url","value":"https://minecraft.fandom.com/wiki/Tutorials/Loading_a_resource_pack"}},{"text":"] about how to enable a Resource Pack.","italic":true,"color":"gray"}]
@@ -407,10 +408,10 @@ spawnpoint @a[x=-256,y=64,z=-489,distance=..5] -256 64 -489
 scoreboard players set @a[x=15,y=64,z=-106,distance=..5,scores={FlyViolet=0}] FlyViolet 1
 spawnpoint @a[x=15,y=64,z=-109,distance=..5] 15 64 -109
 
-scoreboard players set @a[distance=..5,scores={FlyAzalea=0}] FlyAzalea 1
+scoreboard players set @a[x=330,y=64,z=-728,distance=..5,scores={FlyAzalea=0}] FlyAzalea 1
 spawnpoint @a[x=330,y=64,z=-728,distance=..5] 330 64 -728
 
-scoreboard players set @a[distance=..5,scores={FlyGoldenrod=0}] FlyGoldenrod 1
+scoreboard players set @a[x=499,y=64,z=-424,distance=..5,scores={FlyGoldenrod=0}] FlyGoldenrod 1
 spawnpoint @a[x=499,y=64,z=-424,distance=..5] 499 64 -424
 
 scoreboard players set @a[x=341,y=64,z=186,distance=..5,scores={FlyEcruteak=0}] FlyEcruteak 1
@@ -438,14 +439,14 @@ spawnpoint @a[x=-999,y=64,z=62,distance=..5] -999 64 62
 
 scoreboard players set @a[x=-1258,y=64,z=15,distance=..5,scores={FlyVictory=0}] FlyVictory 1
 
-scoreboard players set @a[x=-1292,y=84,z=322,distance=..5,scores={FlyVictory=0}] FlyVictory 1
+scoreboard players set @a[x=-1292,y=84,z=322,distance=..5,scores={FlyVictory=0}] FlyIndigo 1
 spawnpoint @a[x=-1292,y=84,z=322,distance=..5] -1292 84 322
 
 scoreboard players set @a[x=-1704,y=64,z=-899,distance=..5,scores={FlyCinnabar=0}] FlyCinnabar 1
 spawnpoint @a[x=-1704,y=64,z=-899,distance=..5] -1704 64 -899
 
-scoreboard players set @a[x=-1715,y=64,z=-321,distance=..5,scores={FlyPallet=0}] FlyPallet 1
-spawnpoint @a[x=-1715,y=64,z=-321,distance=..5] -1715 64 -321
+scoreboard players set @a[x=-1715,y=64,z=-321,distance=..15,scores={FlyPallet=0}] FlyPallet 1
+spawnpoint @a[x=-1715,y=64,z=-321,distance=..15] -1715 64 -321
 
 scoreboard players set @a[x=-1701,y=64,z=7,distance=..5,scores={FlyViridian=0}] FlyViridian 1
 spawnpoint @a[x=-1701,y=64,z=7,distance=..5] -1701 64 7
@@ -507,7 +508,7 @@ execute as @a[scores={DialogueTrigger=1..500}] run function johto:dialogue/dialo
 
 
 #Runs secondary World-based dialogues
-execute as @e[x=-801,y=64,z=-287,dy=3,scores={DialogueTrigger=1..500}] run function johto:dialogue/worlddialogues
+execute as @e[x=-801,y=64,z=-287,dy=3,scores={DialogueTrigger=1..}] run function johto:dialogue/worlddialogues
 
 
 #Dialogue 1 - Oak Welcome
@@ -527,7 +528,7 @@ scoreboard players set @a[x=-693,y=63,z=-490,dx=20,dy=5,dz=20,scores={TalkTime=0
 #Sets starters to regular models if in town
 execute as @a[x=-704,y=62,z=-508,dx=50,dy=3,dz=50,scores={StarterPick=1}] run data merge entity @e[x=-687,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue,limit=1] {ndex: 152}
 execute as @a[x=-704,y=62,z=-508,dx=50,dy=3,dz=50,scores={StarterPick=2}] run data merge entity @e[x=-689,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue,limit=1] {ndex: 155}
-execute as @a[x=-704,y=62,z=-508,dx=50,dy=3,dz=50,scores={StarterPick=3}] run data merge entity @e[x=-685,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue,limit=1] {ndex: 159}
+execute as @a[x=-704,y=62,z=-508,dx=50,dy=3,dz=50,scores={StarterPick=3}] run data merge entity @e[x=-685,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue,limit=1] {ndex: 158}
 
 #Sets first starters as invisible
 execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={StarterPick=1}] run data merge entity @e[x=-687,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue,limit=1] {ndex: 1999}
@@ -575,8 +576,8 @@ scoreboard players set @a[x=54,y=103,z=22,dx=12,dy=5,dz=10,tag=!Dialogue9,scores
 #Dialogue10 - Sprout Tower Elder post-battle
 scoreboard players set @a[x=56,y=103,z=33,distance=0..25,scores={TalkTime=0},tag=!Dialogue10,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 10
 
-#Dialogue11 - Violet City Falkner post-battle
-scoreboard players set @a[x=-791,y=64,z=595,distance=0..20,scores={TalkTime=0},tag=!Dialogue11] DialogueTrigger 11
+#Dialogue11 - Violet City Falkner pre-battle
+scoreboard players set @a[x=-791,y=64,z=595,distance=0..13,scores={TalkTime=0},tag=!Dialogue11] DialogueTrigger 11
 
 #Dialogue12 - Violet City Dalkner post-battle
 scoreboard players set @a[x=-791,y=64,z=595,distance=0..20,scores={TalkTime=0},nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 12
@@ -648,8 +649,8 @@ execute at @a[x=402,y=64,z=-734,distance=0..15,scores={StarterPick=3,TalkTime=0}
 #---------------------
 
 #Dialogue21 Pre-Bugsy
-execute as @a[x=623,y=64,z=-714,distance=5,tag=!Bugsy,scores={Cooldown=0}] run tellraw @s {"text":"<Charcoal Apprentice> My Farfetch'd ran off! I could really use the help of an experienced trainer..."}
-execute as @a[x=623,y=64,z=-714,distance=5,tag=!Bugsy,scores={Cooldown=0}] run scoreboard players set @s Cooldown 60
+execute as @a[x=623,y=64,z=-714,distance=..5,tag=!Bugsy,scores={Cooldown=0}] run tellraw @s {"text":"<Charcoal Apprentice> My Farfetch'd ran off! I could really use the help of an experienced trainer..."}
+execute as @a[x=623,y=64,z=-714,distance=..5,tag=!Bugsy,scores={Cooldown=0}] run scoreboard players set @s Cooldown 60
 
 #Dialogue21 - Ilex Forest Farfetch'd Lost
 scoreboard players set @a[x=623,y=64,z=-714,distance=0..5,tag=!Dialogue21,tag=Bugsy,scores={Farfetchd=0}] DialogueTrigger 21
@@ -663,7 +664,7 @@ execute as @a[limit=1,x=513,y=60,z=-793,dx=187,dy=10,dz=228] run function johto:
 #---------------------
 
 #Dialogue22 - Ilex Forest Farfetch'd Found
-execute if entity @e[x=622,y=64,z=-714,distance=..3,type=minecraft:armor_stand,tag=Farfetchd] run scoreboard players set @a[distance=..6,tag=!Dialogue22,scores={Farfetchd=1}] DialogueTrigger 22
+execute as @a[x=622,y=64,z=-714,distance=..6,tag=!Dialogue22,scores={Farfetchd=1}] if entity @e[x=622,y=64,z=-714,distance=..5,type=minecraft:armor_stand,tag=Farfetchd] run scoreboard players set @s DialogueTrigger 22
 
 #Dialogue23 - Goldenrod City Bike Shop
 scoreboard players set @a[x=419,y=63,z=-433,dx=12,dy=7,dz=11,tag=!Dialogue23] DialogueTrigger 23
@@ -1003,7 +1004,7 @@ scoreboard players set @a[x=-255,y=63,z=-198,dx=20,dy=5,dz=8,scores={TalkTime=0,
 scoreboard players set @a[x=498,y=64,z=-414,distance=..5,scores={TalkTime=0,IP=1..},tag=!Dialogue106] DialogueTrigger 106
 
 #Dialogue107 - Azalea Town Kurt's House GS Ball inspect
-scoreboard players set @a[x=354,y=63,z=-704,dx=19,dy=5,dz=8,tag=!Dialogue107,nbt={Inventory:[{id:"pixelmon:gs_ball"}]}] DialogueTrigger 107
+scoreboard players set @a[x=354,y=63,z=-704,dx=19,dy=5,dz=8,tag=!Dialogue107,nbt={Inventory:[{id:"pixelmon:poke_ball",tag:{PokeBallID:"gs_ball"}}]}] DialogueTrigger 107
 
 #Dialogue108 - Azalea Town Kurt GS Ball inspected
 scoreboard players set @a[x=354,y=63,z=-704,dx=19,dy=5,dz=8,scores={TalkTime=0},tag=Dialogue107,tag=GSBallReady,tag=!Dialogue108] DialogueTrigger 108
@@ -1084,7 +1085,7 @@ scoreboard players set @a[x=-2725,y=69,z=368,dx=10,dy=5,dz=9,scores={TalkTime=0}
 
 #Dialogue134 - Vermilion City Poke Fan
 scoreboard players set @a[x=-2696,y=64,z=-37,distance=..5,scores={TalkTime=0},tag=Dialogue133,tag=!Dialogue134] DialogueTrigger 134
-execute at @a[x=-2697,y=65,z=-39,distance=..20,scores={TalkTime=0},tag=!Dialogue133] run tp @e[x=-738,y=74,z=-242,dy=2,type=pixelmon:statue] -2697 65 -39
+execute at @a[x=-2697,y=65,z=-39,distance=..20,scores={TalkTime=0},tag=!Dialogue133] run data merge entity @e[x=-2697,y=65,z=-39,distance=..2,type=pixelmon:statue,limit=1] {ndex:35}
 
 #Dialogue135 - Returning Copycat Doll
 scoreboard players set @a[x=-2725,y=69,z=368,dx=10,dy=5,dz=9,scores={TalkTime=0},tag=Dialogue134,tag=!Dialogue135,nbt={Inventory:[{id:"minecraft:music_disc_13"}]}] DialogueTrigger 135
@@ -1159,7 +1160,7 @@ scoreboard players set @a[x=160,y=60,z=-295,dx=121,dy=30,dz=205,scores={TalkTime
 execute at @p[x=178,y=64,z=-127,distance=..120,tag=!Red] run tp @e[x=-697,y=85,z=-242,dy=2,type=pixelmon:npc_chatting] 178 65 -127
 
 #Dialogue167 - Ruins of Alph after giving player Azure flute
-scoreboard players set @s[x=174,y=64,z=-141,distance=..10,scores={TalkTime=0},tag=Red,tag=!Dialogue167] DialogueTrigger 167
+scoreboard players set @a[x=174,y=64,z=-141,distance=..10,scores={TalkTime=0},tag=Red,tag=!Dialogue167] DialogueTrigger 167
 
 #Dialogue168 - Ruins of Alph starting the Sinjoh event
 execute at @e[x=174,y=63,z=-141,distance=..20,type=pixelmon:pixelmon,name=Arceus] run scoreboard players set @p[distance=..15,scores={TalkTime=0,Arceus=1},tag=Dialogue167,tag=!Dialogue168,tag=Red] DialogueTrigger 168
@@ -1316,13 +1317,13 @@ scoreboard players set @a[x=-682,y=63,z=-482,distance=..25,scores={TalkTime=0},t
 
 #Legendary Dog Grass commands
 #Resets Grass score
-execute at @a[tag=GrassRoll] run execute if block ~ ~ ~ minecraft:air run scoreboard players set @s Air 1
+execute as @a[tag=!GrassRoll] at @s if block ~ ~ ~ minecraft:grass run scoreboard players set @s Air 1
 tag @a[scores={Air=1},tag=GrassRoll] remove GrassRoll
 
 #Grass Encounter Roll function
-execute at @a[scores={DogEncounter=1},tag=!GrassRoll] run execute if block ~ ~ ~ minecraft:tall_grass run scoreboard players set @s TallGrass 1
-execute at @a[scores={EonEncounter=1},tag=!GrassRoll] run execute if block ~ ~ ~ minecraft:tall_grass run scoreboard players set @s TallGrass 1
-execute as @a[tag=!GrassRoll,scores={TallGrass=1..}] run function johto:triggers/grassencounters
+execute as @a[scores={DogEncounter=1},tag=!GrassRoll] at @s if block ~ ~ ~ minecraft:grass run scoreboard players set @s TallGrass 1
+execute as @a[scores={EonEncounter=1},tag=!GrassRoll] at @s if block ~ ~ ~ minecraft:grass run scoreboard players set @s TallGrass 1
+execute as @a[scores={TallGrass=1..},tag=!GrassRoll] run function johto:triggers/grassencounters
 
 
 #Mewtwo
@@ -1352,15 +1353,18 @@ execute at @a[x=120,y=13,z=-852,distance=..50,tag=!Dialogue105] if entity @e[x=-
 #Dialogue110
 #GS Ball Spawn In
 #/particle minecraft:dust 1 0 1 1 ~ ~1 ~ 0 0 0 1 50 force @a[distance=..50]
-execute as @e[x=617,y=65,z=-697,dy=1,dz=2,type=item] run execute as @p[tag=Dialogue109,distance=..10] run tag @e[x=617,y=65,z=-697,dy=1,dz=2,nbt={Item:{id:"pixelmon:gs_ball"}}] add GSBall
-execute as @e[x=617,y=65,z=-697,dy=1,dz=2,tag=GSBall] run execute as @p[tag=Dialogue109,distance=..10] run scoreboard players set @e[x=-803,y=64,z=-287,dy=3,type=armor_stand] DialogueTrigger 110
-tp @e[x=617,y=65,z=-697,dy=1,dz=2,type=item,tag=!GSBall] ~ ~ ~-3
-tag @e[x=-803,y=64,z=-287,dy=3,type=armor_stand,tag=Dialogue110] remove Dialogue110
+#starts dialogue
+execute if entity @e[x=617,y=65,z=-697,dy=1,dz=2,nbt={Item:{id:"pixelmon:poke_ball",Count:1b,tag:{PokeBallID:"gs_ball"}}}] if entity @a[tag=Dialogue109,x=617,y=65,z=-697,distance=..10] run scoreboard players set @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=0}] DialogueTrigger 110
+tag @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,tag=Dialogue110] remove Dialogue110
+
+#TPs out items that aren't the GS Ball
+#execute unless entity @e[x=617,y=65,z=-697,dy=1,dz=2,nbt={Item:{id:"pixelmon:poke_ball",Count:1b,tag:{PokeBallID:"gs_ball"}}}] as @e[x=617,y=65,z=-697,dy=1,dz=2,type=item] run at @s run tp @s ~ ~ ~-3
+#execute unless entity @e[x=617,y=65,z=-697,dy=1,dz=2,nbt={Item:{id:"pixelmon:poke_ball",Count:1b,tag:{PokeBallID:"gs_ball"}}}] unless entity @a[tag=Dialogue109,x=617,y=65,z=-697,distance=..10] as @e[x=617,y=65,z=-697,dy=1,dz=2,type=item] run at @s run tp @s ~ ~ ~-3
 
 
 #Dialogue132
 #Jirachi at any Pokemon Center after all badges
-execute at @e[type=armor_stand,name=Mystery_Gift] run execute as @a[distance=..6,tag=AllGyms,scores={TalkTime=0}] run scoreboard players set @s[tag=!Dialogue132] DialogueTrigger 132
+execute at @e[type=armor_stand,tag=Mystery_Gift] run scoreboard players set @s[distance=..6,tag=AllGyms,scores={TalkTime=0},tag=!Dialogue132] DialogueTrigger 132
 
 #Dialogue140
 #Olivine City Manaphy Egg
@@ -1410,52 +1414,47 @@ execute as @a[x=112,y=32,z=391,distance=..25,nbt={Inventory:[{id:"minecraft:neth
 #----------------------------------------
 
 #Researcher hint saying to throw out Arceus
-#TEST
-execute if entity @a[x=174,y=63,z=-141,distance=..10,scores={Arceus=1..,Cooldown=0},tag=!Dialogue168] run tellraw @a[x=174,y=63,z=-141,distance=..10,scores={Arceus=1..,Cooldown=0},tag=!Dialogue168] {"text":"<Archaeologist> You encountered Arceus!? That is amazing! Did you catch it? Can I see it?"}
-execute if entity @a[x=174,y=63,z=-141,distance=..10,scores={Arceus=1..,Cooldown=0},tag=!Dialogue168] run scoreboard players set @a[x=174,y=63,z=-141,distance=..10,scores={Arceus=1..,Cooldown=0},tag=!Dialogue168] Cooldown 15
+execute if entity @a[x=174,y=63,z=-141,distance=..10,scores={Arceus=1..,Cooldown=0},tag=!Dialogue168] run tellraw @a[x=174,y=63,z=-141,distance=..10,scores={Arceus=1..,Cooldown=0,TalkTime=0},tag=!Dialogue168] {"text":"<Archaeologist> You encountered Arceus!? That is amazing! Did you catch it? Can I see it?"}
+execute if entity @a[x=174,y=63,z=-141,distance=..10,scores={Arceus=1..,Cooldown=0},tag=!Dialogue168] run scoreboard players set @a[x=174,y=63,z=-141,distance=..10,scores={Arceus=1..,Cooldown=0,TalkTime=0},tag=!Dialogue168] Cooldown 15
 
 
 #Dialogue173 - Dialga
-execute at @a[x=-1060,y=46,z=-143,dx=40,dy=15,dz=70,tag=Dialogue172,scores={TriggerCommand=12}] run scoreboard players set @e[x=-799,y=64,z=-287,dy=3,type=armor_stand,scores={TalkTime=0,DialogueTrigger=0}] DialogueTrigger 173
+execute if entity @a[x=-1060,y=46,z=-143,dx=40,dy=15,dz=70,tag=Dialogue172,scores={TriggerCommand=12}] run scoreboard players set @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={TalkTime=0,DialogueTrigger=0}] DialogueTrigger 173
 
 #Dialogue174 - Palkia
-execute at @a[x=-1060,y=46,z=-143,dx=40,dy=15,dz=70,tag=Dialogue172,scores={TriggerCommand=13}] run scoreboard players set @e[x=-799,y=64,z=-287,dy=3,type=armor_stand,scores={TalkTime=0,DialogueTrigger=0}] DialogueTrigger 174
+execute if entity @a[x=-1060,y=46,z=-143,dx=40,dy=15,dz=70,tag=Dialogue172,scores={TriggerCommand=13}] run scoreboard players set @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={TalkTime=0,DialogueTrigger=0}] DialogueTrigger 174
 
 #Dialogue175 - Giratina
-execute at @a[x=-1060,y=46,z=-143,dx=40,dy=15,dz=70,tag=Dialogue172,scores={TriggerCommand=14}] run scoreboard players set @e[x=-799,y=64,z=-287,dy=3,type=armor_stand,scores={TalkTime=0,DialogueTrigger=0}] DialogueTrigger 175
+execute if entity @a[x=-1060,y=46,z=-143,dx=40,dy=15,dz=70,tag=Dialogue172,scores={TriggerCommand=14}] run scoreboard players set @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={TalkTime=0,DialogueTrigger=0}] DialogueTrigger 175
 
 #Sinjoh Ruins Pick a Legend
-tag @e[x=-799,y=64,z=-287,dy=3,type=armor_stand,scores={TalkTime=0,DialogueTrigger=0},tag=Dialogue173] remove Dialogue173
-tag @e[x=-799,y=64,z=-287,dy=3,type=armor_stand,scores={TalkTime=0,DialogueTrigger=0},tag=Dialogue174] remove Dialogue174
-tag @e[x=-799,y=64,z=-287,dy=3,type=armor_stand,scores={TalkTime=0,DialogueTrigger=0},tag=Dialogue175] remove Dialogue175
+tag @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={TalkTime=0,DialogueTrigger=0},tag=Dialogue173] remove Dialogue173
+tag @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={TalkTime=0,DialogueTrigger=0},tag=Dialogue174] remove Dialogue174
+tag @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={TalkTime=0,DialogueTrigger=0},tag=Dialogue175] remove Dialogue175
 
 
 #Sinjoh Ruins Shrine Dialga Pick
-#TEST
-execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] if entity @a[x=-1038,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run scoreboard players enable @a[x=-1038,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend] TriggerCommand
-execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] if entity @a[x=-1038,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run tellraw @a[x=-1038,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend] {"text":"<Cynthia> So you choose Dialga, the Guardian of Time?"}
-execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] if entity @a[x=-1038,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run tellraw @a[x=-1038,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend] {"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 12"}}
-execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] if entity @a[x=-1038,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run scoreboard players set @a[x=-1038,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend] Cooldown 15
+execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] as @a[x=-1038,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run scoreboard players enable @s TriggerCommand
+execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] as @a[x=-1038,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run tellraw @s {"text":"<Cynthia> So you choose Dialga, the Guardian of Time?"}
+execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] as @a[x=-1038,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run tellraw @s {"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 12"}}
+execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] as @a[x=-1038,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run scoreboard players set @s Cooldown 15
 
 #Palkia Pick
-#TEST
-execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] if entity @a[x=-1050,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run scoreboard players enable @a[x=-1050,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend] TriggerCommand
-execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] if entity @a[x=-1050,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run tellraw @a[x=-1050,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend] {"text":"<Cynthia> So you choose Palkia, the master of space and dimensions?"}
-execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] if entity @a[x=-1050,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run tellraw @a[x=-1050,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend] {"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 13"}}
-execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] if entity @a[x=-1050,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run scoreboard players set @a[x=-1038,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend] Cooldown 15
+execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] as @a[x=-1050,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run scoreboard players enable @s TriggerCommand
+execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] as @a[x=-1050,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run tellraw @s {"text":"<Cynthia> So you choose Palkia, the master of space and dimensions?"}
+execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] as @a[x=-1050,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run tellraw @s {"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 13"}}
+execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] as @a[x=-1050,y=50,z=-98,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run scoreboard players set @s Cooldown 15
 
 #Giratina Pick
-#TEST
-execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] if entity @a[x=-1044,y=50,z=-85,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run scoreboard players enable @s[x=-1044,y=50,z=-85,distance=..2,tag=Dialogue172,tag=!SinnohLegend] TriggerCommand
-execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] if entity @a[x=-1044,y=50,z=-85,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run tellraw @s[x=-1044,y=50,z=-85,distance=..2,tag=Dialogue172,tag=!SinnohLegend] {"text":"<Cynthia> So you choose Giratina, the ruler of the Distortion World?"}
-execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] if entity @a[x=-1044,y=50,z=-85,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run tellraw @s[x=-1044,y=50,z=-85,distance=..2,tag=Dialogue172,tag=!SinnohLegend] {"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 14"}}
-execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] if entity @a[x=-1044,y=50,z=-85,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run scoreboard players set @a[x=-1044,y=50,z=-85,distance=..2,tag=Dialogue172,tag=!SinnohLegend] Cooldown 15
+execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] as @a[x=-1044,y=50,z=-85,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run scoreboard players enable @s TriggerCommand
+execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] as @a[x=-1044,y=50,z=-85,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run tellraw @s {"text":"<Cynthia> So you choose Giratina, the ruler of the Distortion World?"}
+execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] as @a[x=-1044,y=50,z=-85,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run tellraw @s {"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 14"}}
+execute if entity @e[x=-1059,y=50,z=-103,dx=30,dy=4,dz=30,type=pixelmon:pixelmon,name=Arceus] as @a[x=-1044,y=50,z=-85,distance=..2,tag=Dialogue172,tag=!SinnohLegend,scores={Cooldown=0,TalkTime=0}] run scoreboard players set @s Cooldown 15
 
 #Sinjoh Ruins Abra prompt to leave
-#TEST
-execute if entity @a[x=-1073,y=61,z=-216,distance=..2,scores={TalkTime=0,Cooldown=15},tag=Dialogue176] run scoreboard players enable @a[x=-1073,y=61,z=-216,distance=..2,scores={TalkTime=0,Cooldown=15},tag=Dialogue176] TriggerCommand
-execute if entity @a[x=-1073,y=61,z=-216,distance=..2,scores={TalkTime=0,Cooldown=15},tag=Dialogue176] run tellraw @a[x=-1073,y=61,z=-216,distance=..2,scores={TalkTime=0,Cooldown=15},tag=Dialogue176] ["",{"text":"Would you like Abra to return you home?\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 26"}},{"text":"]"}]
-execute if entity @a[x=-1073,y=61,z=-216,distance=..2,scores={TalkTime=0,Cooldown=15},tag=Dialogue176] run scoreboard players set @a[x=-1073,y=61,z=-216,distance=..2,scores={TalkTime=0,Cooldown=15},tag=Dialogue176] Cooldown 0
+execute as @a[x=-1073,y=61,z=-216,distance=..2,scores={TalkTime=0,Cooldown=0},tag=Dialogue176] run scoreboard players enable @s TriggerCommand
+execute as @a[x=-1073,y=61,z=-216,distance=..2,scores={TalkTime=0,Cooldown=0},tag=Dialogue176] run tellraw @s ["",{"text":"Would you like Abra to return you home?\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 26"}},{"text":"]"}]
+execute as @a[x=-1073,y=61,z=-216,distance=..2,scores={TalkTime=0,Cooldown=0},tag=Dialogue176] run scoreboard players set @s Cooldown 30
 
 
 #Saffron City Porygon Guy give
@@ -1475,16 +1474,14 @@ execute as @a[x=-3111,y=64,z=989,distance=..5,scores={TalkTime=0},tag=!Dialogue2
 
 
 #Celebi's hint to seeing the Ilex Shrine
-#TEST
 execute if entity @a[x=617,y=64,z=-699,distance=..7,tag=!Dialogue165,scores={TalkTime=0,Celebi=1..,Cooldown=0}] run tellraw @a[x=617,y=64,z=-699,distance=..15,tag=!Dialogue165,scores={TalkTime=0,Celebi=1..,Cooldown=0}] {"text":"Celebi seems interested to see the shrine.","italic":true}
 execute if entity @a[x=617,y=64,z=-699,distance=..7,tag=!Dialogue165,scores={TalkTime=0,Celebi=1..,Cooldown=0}] run scoreboard players set @a[x=617,y=64,z=-699,distance=..7,tag=!Dialogue165,scores={TalkTime=0,Celebi=1..,Cooldown=0}] Cooldown 30
 
 
 #Celebi to return player home
-#TEST
-execute if entity @a[x=105,y=54,z=731,distance=..3,tag=!Dialogue165,tag=Dialogue164,scores={TalkTime=0,Cooldown=0}] run scoreboard players enable @a[x=105,y=54,z=731,distance=..3,tag=!Dialogue165,tag=Dialogue164,scores={TalkTime=0,Cooldown=0}] TriggerCommand
-execute if entity @a[x=105,y=54,z=731,distance=..3,tag=!Dialogue165,tag=Dialogue164,scores={TalkTime=0,Cooldown=0}] run tellraw @a[x=105,y=54,z=731,distance=..3,tag=!Dialogue165,tag=Dialogue164,scores={TalkTime=0,Cooldown=0}] ["",{"text":"Would you like Celebi to take you to your time?\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 42"}},{"text":"]"}]
-execute if entity @a[x=105,y=54,z=731,distance=..3,tag=!Dialogue165,tag=Dialogue164,scores={TalkTime=0,Cooldown=0}] run scoreboard players set @a[x=105,y=54,z=731,distance=..3,tag=!Dialogue165,tag=Dialogue164,scores={TalkTime=0,Cooldown=0}] Cooldown 30
+execute as @a[x=105,y=54,z=731,distance=..3,tag=!Dialogue165,tag=Dialogue164,scores={TalkTime=0,Cooldown=0}] run scoreboard players enable @s TriggerCommand
+execute as @a[x=105,y=54,z=731,distance=..3,tag=!Dialogue165,tag=Dialogue164,scores={TalkTime=0,Cooldown=0}] run tellraw @s ["",{"text":"Would you like Celebi to take you to your time?\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 42"}},{"text":"]"}]
+execute as @a[x=105,y=54,z=731,distance=..3,tag=!Dialogue165,tag=Dialogue164,scores={TalkTime=0,Cooldown=0}] run scoreboard players set @s Cooldown 30
 
 
 
@@ -1495,11 +1492,19 @@ execute if block -944 183 285 pixelmon:timespace_altar if entity @a[x=-944,y=182
 
 #Alter post-Red
 execute if block -944 183 285 minecraft:air if entity @a[x=-944,y=182,z=285,distance=..25,tag=Red] run tp @e[x=-944,y=182,z=285,dy=3,type=pixelmon:npc_trainer,name=Red] -711 86 -242
-execute if block -944 183 285 minecraft:air if entity @a[x=-944,y=182,z=285,distance=..25,tag=Red] run clone -730 75 -242 -730 78 -242 -944 182 285
+execute if block -944 183 285 minecraft:air if entity @a[x=-944,y=182,z=285,distance=..25,tag=Red] run clone -730 75 -242 -730 78 -242 -944 183 285
 
 #Enables pre-Arceus particles near altar
 execute if block -944 183 285 pixelmon:timespace_altar if entity @a[x=-967,y=174,z=189,dx=50,dy=30,dz=140] run setblock -861 64 -293 minecraft:iron_block
 execute if block -944 183 285 pixelmon:timespace_altar if entity @a[x=-967,y=174,z=189,dx=50,dy=30,dz=140,nbt={Inventory:[{id:"pixelmon:azure_flute"}]}] run setblock -861 64 -293 minecraft:redstone_block
+
+#Adds a score if player is near a Palkia/Dialga/Giratina near the altar for reset tracking
+execute if entity @e[x=-944,y=183,z=285,distance=..10,nbt={ndex:483}] run scoreboard players set @a[x=-944,y=183,z=285,distance=..15,tag=SinnohLegend,scores={Dialga=0}] Dialga 1
+execute if entity @e[x=-944,y=183,z=285,distance=..10,nbt={ndex:484}] run scoreboard players set @a[x=-944,y=183,z=285,distance=..15,tag=SinnohLegend,scores={Palkia=0}] Palkia 1
+execute if entity @e[x=-944,y=183,z=285,distance=..10,nbt={ndex:487}] run scoreboard players set @a[x=-944,y=183,z=285,distance=..15,tag=SinnohLegend,scores={Giratina=0}] Giratina 1
+
+#Resets the shrine if player holds a Red Chain and block is unbound by a chain currently
+execute if block -944 183 285 pixelmon:timespace_altar{ChainIn:0b} if entity @a[x=-944,y=183,z=285,distance=..5,nbt={SelectedItem:{id:"pixelmon:red_chain"}}] run clone -730 75 -242 -730 78 -242 -944 183 285
 
 #Arceus cry when summoned
 #execute as @e[x=-967,y=174,z=189,dx=50,dy=30,dz=140,type=pixelmon:pixelmon,nbt={ndex: 493},scores={Cooldown=0}] scoreboard players set @s[tag=!Temp] Cooldown 0
@@ -1755,7 +1760,7 @@ execute if block 480 55 -321 minecraft:iron_block if entity @a[x=480,y=54,z=-326
 
 #Rocket HQ Admin Room Gate
 #TEST
-execute if block -105 37 187 minecraft:air if entity @a[x=-107,y=33,z=181,distance=..25] run fill -105 37 187 -98 34 187 minecraft:iron_bars
+execute if block -105 37 187 minecraft:air if entity @a[x=-107,y=33,z=181,distance=..25,scores={TalkTime=0}] run fill -105 37 187 -98 34 187 minecraft:iron_bars
 
 execute if block -105 37 187 minecraft:iron_bars if entity @a[x=-107,y=33,z=181,dx=11,dy=5,dz=12,tag=Dialogue56,tag=Dialogue57,scores={TalkTime=0}] run fill -105 37 187 -98 34 187 minecraft:air
 
@@ -1763,7 +1768,7 @@ execute if block -105 37 187 minecraft:iron_bars if entity @a[x=-107,y=33,z=181,
 #Rocket HQ Generator Room
 execute if entity @a[x=-124,y=45,z=169,dx=12,dy=5,dz=11,tag=Dialogue63,scores={TalkTime=0}] run fill -122 45 175 -114 48 175 minecraft:air
 execute unless entity @a[x=-124,y=45,z=169,dx=12,dy=5,dz=11,tag=Dialogue63,scores={TalkTime=0}] run fill -122 45 175 -114 48 175 minecraft:iron_bars
-
+execute if entity @a[x=-124,y=45,z=169,dx=12,dy=5,dz=11,scores={TalkTime=1..,DialogueTrigger=63}] run fill -122 45 175 -114 48 175 minecraft:air
 
 
 #Elite Four Gates
@@ -1797,11 +1802,11 @@ execute if block -1288 73 675 minecraft:quartz_pillar if entity @a[x=-1287,y=73,
 execute if block -1288 73 675 minecraft:quartz_pillar if entity @a[x=-1287,y=73,z=675,distance=..15,tag=Dialogue93] run fill -1287 76 675 -1289 73 675 air
 
 #Lance
-execute if block -1288 78 750 minecraft:air if entity @a[x=-1293,y=77,z=738,distance=..15] run clone -730 64 -328 -726 68 -328 -1290 78 750
+execute if block -1288 78 750 minecraft:air if entity @a[x=-1292,y=77,z=744,dx=8,dy=5,dz=6] run clone -730 64 -328 -726 68 -328 -1290 78 750
 
-execute if block -1290 78 750 minecraft:quartz_pillar if entity @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95] run playsound minecraft:entity.iron_golem.death ambient @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95,scores={Cooldown=0}] ~ ~ ~ 1 1 1
-execute if block -1290 78 750 minecraft:quartz_pillar if entity @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95] run scoreboard players set @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95,scores={Cooldown=0}] Cooldown 10
-execute if block -1290 78 750 minecraft:quartz_pillar if entity @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95] run fill -1290 78 750 -1286 82 750 air
+execute if block -1290 78 750 minecraft:quartz_pillar if entity @a[x=-1292,y=77,z=744,dx=8,dy=5,dz=6,tag=Dialogue95] run playsound minecraft:entity.iron_golem.death ambient @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95,scores={Cooldown=0}] ~ ~ ~ 1 1 1
+execute if block -1290 78 750 minecraft:quartz_pillar if entity @a[x=-1292,y=77,z=744,dx=8,dy=5,dz=6,tag=Dialogue95] run scoreboard players set @a[x=-1293,y=77,z=738,dx=10,dy=5,dz=12,tag=Dialogue95,scores={Cooldown=0}] Cooldown 30
+execute if block -1290 78 750 minecraft:quartz_pillar if entity @a[x=-1292,y=77,z=744,dx=8,dy=5,dz=6,tag=Dialogue95] run fill -1290 78 750 -1286 82 750 air
 
 
 
@@ -1836,23 +1841,22 @@ execute if block -1341 73 675 minecraft:quartz_pillar if entity @a[x=-1342,y=73,
 execute if block -1341 73 675 minecraft:quartz_pillar if entity @a[x=-1342,y=73,z=675,distance=..15,tag=Dialogue93] run fill -1342 73 675 -1340 76 675 air
 
 #Lance
-execute if block -1341 78 750 minecraft:air if entity @a[x=-1341,y=78,z=750,distance=..15] run clone -730 64 -328 -726 68 -328 -1343 78 750
+execute if block -1341 78 750 minecraft:air if entity @a[x=-1345,y=77,z=744,dx=8,dy=5,dz=6] run clone -730 64 -328 -726 68 -328 -1343 78 750
 
-execute if block -1341 78 750 minecraft:quartz_pillar if entity @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95] run playsound minecraft:entity.iron_golem.death ambient @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95,scores={Cooldown=0}] ~ ~ ~ 1 1 1
-execute if block -1341 78 750 minecraft:quartz_pillar if entity @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95] run scoreboard players set @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95,scores={Cooldown=0}] Cooldown 10
-execute if block -1341 78 750 minecraft:quartz_pillar if entity @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95] run fill -1343 78 750 -1339 82 750 air
+execute if block -1341 78 750 minecraft:quartz_pillar if entity @a[x=-1345,y=77,z=744,dx=8,dy=5,dz=6,tag=Dialogue95] run playsound minecraft:entity.iron_golem.death ambient @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95,scores={Cooldown=0}] ~ ~ ~ 1 1 1
+execute if block -1341 78 750 minecraft:quartz_pillar if entity @a[x=-1345,y=77,z=744,dx=8,dy=5,dz=6,tag=Dialogue95] run scoreboard players set @a[x=-1341,y=78,z=750,distance=..5,tag=Dialogue95,scores={Cooldown=0}] Cooldown 30
+execute if block -1341 78 750 minecraft:quartz_pillar if entity @a[x=-1345,y=77,z=744,dx=8,dy=5,dz=6,tag=Dialogue95] run fill -1343 78 750 -1339 82 750 air
 
 
 
 #Tps player from Rematched Hall of Fame to real Hall of Fame room
-#TEST
+execute at @a[x=-1354,y=77,z=751,dx=24,dy=10,dz=34] run clone -730 64 -328 -726 68 -328 -1343 78 750
 execute at @a[x=-1354,y=77,z=751,dx=24,dy=10,dz=34] run tp @a[x=-1354,y=77,z=751,dx=24,dy=10,dz=34] ~53 ~ ~
 
 
 
 
 #Whirlpools
-#TEST
 #Whirl Islands
 #Northeast whirlpool
 execute if entity @a[x=912,y=61,z=-364,distance=..25,tag=!Dialogue64] run clone -714 66 -333 -720 72 -327 909 58 -367

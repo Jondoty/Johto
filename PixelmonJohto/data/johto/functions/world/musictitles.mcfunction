@@ -99,8 +99,8 @@ title @s[x=332,y=0,z=-67,dx=130,dy=240,dz=103,scores={MusicTitles=1..73}] action
 title @s[x=332,y=0,z=-67,dx=130,dy=240,dz=103,scores={MusicTitles=75..199}] actionbar {"text":"Route 36"}
 title @s[x=191,y=0,z=-89,dx=140,dy=240,dz=100,scores={MusicTitles=1..73}] actionbar {"text":"Route 36"}
 title @s[x=191,y=0,z=-89,dx=140,dy=240,dz=100,scores={MusicTitles=75..199}] actionbar {"text":"Route 36"}
-title @s[x=349,y=0,z=-266,dx=239,dy=240,dz=198,scores={MusicTitles=1..72}] actionbar {"text":"Route 35"}
-title @s[x=349,y=0,z=-266,dx=239,dy=240,dz=198,scores={MusicTitles=74..199}] actionbar {"text":"Route 35"}
+title @s[x=349,y=58,z=-266,dx=239,dy=240,dz=198,scores={MusicTitles=1..72}] actionbar {"text":"Route 35"}
+title @s[x=349,y=58,z=-266,dx=239,dy=240,dz=198,scores={MusicTitles=74..199}] actionbar {"text":"Route 35"}
 title @s[x=411,y=0,z=-715,dx=104,dy=240,dz=253,scores={MusicTitles=1..71}] actionbar {"text":"Route 34"}
 title @s[x=411,y=0,z=-715,dx=104,dy=240,dz=253,scores={MusicTitles=73..199}] actionbar {"text":"Route 34"}
 title @s[x=50,y=61,z=-793,dx=234,dy=240,dz=121,scores={MusicTitles=1..70}] actionbar {"text":"Route 33"}
@@ -542,8 +542,8 @@ execute as @s[x=332,y=0,z=-67,dx=130,dy=240,dz=103,scores={MusicTitles=1..72,Mus
 execute as @s[x=332,y=0,z=-67,dx=130,dy=240,dz=103,scores={MusicTitles=76..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=191,y=0,z=-89,dx=140,dy=240,dz=100,scores={MusicTitles=1..72,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=191,y=0,z=-89,dx=140,dy=240,dz=100,scores={MusicTitles=76..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
-execute as @s[x=349,y=0,z=-266,dx=239,dy=240,dz=198,scores={MusicTitles=1..72,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
-execute as @s[x=349,y=0,z=-266,dx=239,dy=240,dz=198,scores={MusicTitles=76..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
+execute as @s[x=349,y=58,z=-266,dx=239,dy=240,dz=198,scores={MusicTitles=1..72,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
+execute as @s[x=349,y=58,z=-266,dx=239,dy=240,dz=198,scores={MusicTitles=76..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=411,y=0,z=-715,dx=104,dy=240,dz=253,scores={MusicTitles=1..71,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=411,y=0,z=-715,dx=104,dy=240,dz=253,scores={MusicTitles=73..,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
 execute as @s[x=50,y=61,z=-793,dx=234,dy=240,dz=121,scores={MusicTitles=1..70,MusicCooldown=1..},tag=!Indoors] run function johto:tools/forceclick
@@ -800,7 +800,7 @@ scoreboard players set @s[x=611,y=0,z=166,dx=86,dy=240,dz=139] MusicTitles 76
 scoreboard players set @s[x=319,y=0,z=37,dx=82,dy=240,dz=126] MusicTitles 75
 scoreboard players set @s[x=332,y=0,z=-67,dx=130,dy=240,dz=103] MusicTitles 74
 scoreboard players set @s[x=191,y=0,z=-89,dx=140,dy=240,dz=100] MusicTitles 74
-scoreboard players set @s[x=349,y=0,z=-266,dx=239,dy=240,dz=198] MusicTitles 73
+scoreboard players set @s[x=349,y=58,z=-266,dx=239,dy=240,dz=198] MusicTitles 73
 scoreboard players set @s[x=411,y=0,z=-715,dx=104,dy=240,dz=253] MusicTitles 72
 scoreboard players set @s[x=50,y=61,z=-793,dx=234,dy=240,dz=121] MusicTitles 71
 scoreboard players set @s[x=75,y=60,z=-300,dx=84,dy=240,dz=133] MusicTitles 70

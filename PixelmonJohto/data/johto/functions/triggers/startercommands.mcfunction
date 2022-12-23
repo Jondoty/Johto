@@ -132,11 +132,13 @@ scoreboard players set @s Articuno 0
 scoreboard players set @s ArticunoCD 0
 scoreboard players set @s Celebi 0
 scoreboard players set @s DialgaCD 0
+scoreboard players set @s Dialga 0
 scoreboard players set @s Entei 0
 scoreboard players set @s EnteiCD 0
 scoreboard players set @s EonEncounter 0
 scoreboard players set @s Farfetchd 0
 scoreboard players set @s GiratinaCD 0
+scoreboard players set @s Giratina 0
 scoreboard players set @s GroudonCD 0
 scoreboard players set @s Gyarados 0
 scoreboard players set @s HoohCD 0
@@ -154,6 +156,7 @@ scoreboard players set @s MewtwoCD 0
 scoreboard players set @s Moltres 0
 scoreboard players set @s MoltresCD 0
 scoreboard players set @s PalkiaCD 0
+scoreboard players set @s Palkia 0
 scoreboard players set @s Raikou 0
 scoreboard players set @s RaikouCD 0
 scoreboard players set @s RayquazaCD 0
