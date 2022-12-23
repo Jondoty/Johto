@@ -16,22 +16,22 @@ execute as @s run scoreboard players add @e[x=-867,y=69,z=-202,dy=4,dz=2,sort=ra
 
 
 #If number matches the player's ZoneCounter Score, add a DogEncounterSuccess tag
-execute as @s[scores={ZoneCounter=0}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=0}] run tag @s add DogEncounterSuccess
-execute as @s[scores={ZoneCounter=1}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=1}] run tag @s add DogEncounterSuccess
-execute as @s[scores={ZoneCounter=2}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=2}] run tag @s add DogEncounterSuccess
-execute as @s[scores={ZoneCounter=3}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=3}] run tag @s add DogEncounterSuccess
-execute as @s[scores={ZoneCounter=4}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=4}] run tag @s add DogEncounterSuccess
-execute as @s[scores={ZoneCounter=5}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=5}] run tag @s add DogEncounterSuccess
-execute as @s[scores={ZoneCounter=6}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=6}] run tag @s add DogEncounterSuccess
-execute as @s[scores={ZoneCounter=7}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=7}] run tag @s add DogEncounterSuccess
-execute as @s[scores={ZoneCounter=8}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=8}] run tag @s add DogEncounterSuccess
-execute as @s[scores={ZoneCounter=9}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=9}] run tag @s add DogEncounterSuccess
-execute as @s[scores={ZoneCounter=10}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=10}] run tag @s add DogEncounterSuccess
-execute as @s[scores={ZoneCounter=11}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=11}] run tag @s add DogEncounterSuccess
-execute as @s[scores={ZoneCounter=12}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=12}] run tag @s add DogEncounterSuccess
-execute as @s[scores={ZoneCounter=13}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=13}] run tag @s add DogEncounterSuccess
-execute as @s[scores={ZoneCounter=14}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=14}] run tag @s add DogEncounterSuccess
-execute as @s[scores={ZoneCounter=15}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=15}] run tag @s add DogEncounterSuccess
+execute as @s[scores={DogEncounter=1,ZoneCounter=0}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=0}] run tag @s add DogEncounterSuccess
+execute as @s[scores={DogEncounter=1,ZoneCounter=1}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=1}] run tag @s add DogEncounterSuccess
+execute as @s[scores={DogEncounter=1,ZoneCounter=2}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=2}] run tag @s add DogEncounterSuccess
+execute as @s[scores={DogEncounter=1,ZoneCounter=3}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=3}] run tag @s add DogEncounterSuccess
+execute as @s[scores={DogEncounter=1,ZoneCounter=4}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=4}] run tag @s add DogEncounterSuccess
+execute as @s[scores={DogEncounter=1,ZoneCounter=5}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=5}] run tag @s add DogEncounterSuccess
+execute as @s[scores={DogEncounter=1,ZoneCounter=6}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=6}] run tag @s add DogEncounterSuccess
+execute as @s[scores={DogEncounter=1,ZoneCounter=7}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=7}] run tag @s add DogEncounterSuccess
+execute as @s[scores={DogEncounter=1,ZoneCounter=8}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=8}] run tag @s add DogEncounterSuccess
+execute as @s[scores={DogEncounter=1,ZoneCounter=9}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=9}] run tag @s add DogEncounterSuccess
+execute as @s[scores={DogEncounter=1,ZoneCounter=10}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=10}] run tag @s add DogEncounterSuccess
+execute as @s[scores={DogEncounter=1,ZoneCounter=11}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=11}] run tag @s add DogEncounterSuccess
+execute as @s[scores={DogEncounter=1,ZoneCounter=12}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=12}] run tag @s add DogEncounterSuccess
+execute as @s[scores={DogEncounter=1,ZoneCounter=13}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=13}] run tag @s add DogEncounterSuccess
+execute as @s[scores={DogEncounter=1,ZoneCounter=14}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=14}] run tag @s add DogEncounterSuccess
+execute as @s[scores={DogEncounter=1,ZoneCounter=15}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=15}] run tag @s add DogEncounterSuccess
 
 
 #With Success tag, spawn a legend. Will start with Entei, if player has Entei score, second is Raikou
@@ -72,22 +72,22 @@ execute as @s run scoreboard players add @e[x=-867,y=69,z=-202,dy=4,dz=2,sort=ra
 
 
 #If number matches the player's ZoneCounter Score, add a EonEncounterSuccess tag
-execute as @s[scores={ZoneCounter=0}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=0}] run tag @s add EonEncounterSuccess
-execute as @s[scores={ZoneCounter=1}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=1}] run tag @s add EonEncounterSuccess
-execute as @s[scores={ZoneCounter=2}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=2}] run tag @s add EonEncounterSuccess
-execute as @s[scores={ZoneCounter=3}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=3}] run tag @s add EonEncounterSuccess
-execute as @s[scores={ZoneCounter=4}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=4}] run tag @s add EonEncounterSuccess
-execute as @s[scores={ZoneCounter=5}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=5}] run tag @s add EonEncounterSuccess
-execute as @s[scores={ZoneCounter=6}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=6}] run tag @s add EonEncounterSuccess
-execute as @s[scores={ZoneCounter=7}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=7}] run tag @s add EonEncounterSuccess
-execute as @s[scores={ZoneCounter=8}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=8}] run tag @s add EonEncounterSuccess
-execute as @s[scores={ZoneCounter=9}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=9}] run tag @s add EonEncounterSuccess
-execute as @s[scores={ZoneCounter=10}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=10}] run tag @s add EonEncounterSuccess
-execute as @s[scores={ZoneCounter=11}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=11}] run tag @s add EonEncounterSuccess
-execute as @s[scores={ZoneCounter=12}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=12}] run tag @s add EonEncounterSuccess
-execute as @s[scores={ZoneCounter=13}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=13}] run tag @s add EonEncounterSuccess
-execute as @s[scores={ZoneCounter=14}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=14}] run tag @s add EonEncounterSuccess
-execute as @s[scores={ZoneCounter=15}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=15}] run tag @s add EonEncounterSuccess
+execute as @s[scores={EonEncounter=1,ZoneCounter=0}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=0}] run tag @s add EonEncounterSuccess
+execute as @s[scores={EonEncounter=1,ZoneCounter=1}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=1}] run tag @s add EonEncounterSuccess
+execute as @s[scores={EonEncounter=1,ZoneCounter=2}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=2}] run tag @s add EonEncounterSuccess
+execute as @s[scores={EonEncounter=1,ZoneCounter=3}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=3}] run tag @s add EonEncounterSuccess
+execute as @s[scores={EonEncounter=1,ZoneCounter=4}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=4}] run tag @s add EonEncounterSuccess
+execute as @s[scores={EonEncounter=1,ZoneCounter=5}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=5}] run tag @s add EonEncounterSuccess
+execute as @s[scores={EonEncounter=1,ZoneCounter=6}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=6}] run tag @s add EonEncounterSuccess
+execute as @s[scores={EonEncounter=1,ZoneCounter=7}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=7}] run tag @s add EonEncounterSuccess
+execute as @s[scores={EonEncounter=1,ZoneCounter=8}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=8}] run tag @s add EonEncounterSuccess
+execute as @s[scores={EonEncounter=1,ZoneCounter=9}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=9}] run tag @s add EonEncounterSuccess
+execute as @s[scores={EonEncounter=1,ZoneCounter=10}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=10}] run tag @s add EonEncounterSuccess
+execute as @s[scores={EonEncounter=1,ZoneCounter=11}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=11}] run tag @s add EonEncounterSuccess
+execute as @s[scores={EonEncounter=1,ZoneCounter=12}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=12}] run tag @s add EonEncounterSuccess
+execute as @s[scores={EonEncounter=1,ZoneCounter=13}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=13}] run tag @s add EonEncounterSuccess
+execute as @s[scores={EonEncounter=1,ZoneCounter=14}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=14}] run tag @s add EonEncounterSuccess
+execute as @s[scores={EonEncounter=1,ZoneCounter=15}] if entity @e[x=-867,y=69,z=-202,dy=4,scores={rng=15}] run tag @s add EonEncounterSuccess
 
 
 #With Success tag, spawn a legend. Will start with Latias, if player has Latias score, second is Latios
