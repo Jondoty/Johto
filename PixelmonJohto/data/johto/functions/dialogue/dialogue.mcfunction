@@ -93,7 +93,7 @@ tellraw @s[scores={DialogueTrigger=1,TalkTime=16}] {"text":"<Professor Oak> My n
 #Pokémon spawn sound
 execute as @s[scores={DialogueTrigger=1,TalkTime=22}] run particle cloud -964.5 66 -406.0 1 1 1 1 100
 #execute as @s[scores={DialogueTrigger=1,TalkTime=22}] run tp @e[x=-744,y=74,z=-242,dy=3,type=pixelmon:statue] -964.5 66 -406.0
-execute as @s[scores={DialogueTrigger=1,TalkTime=22}] run data merge entity @e[x=-965,y=65,z=-407,dz=2,dy=2,limit=1,type=pixelmon:statue] {ndex: 194}
+execute as @s[scores={DialogueTrigger=1,TalkTime=22}] run data merge entity @e[x=-965,y=65,z=-407,dz=2,dy=2,limit=1,type=pixelmon:statue] {ndex:194}
 
 tellraw @s[scores={DialogueTrigger=1,TalkTime=25}] {"text":"<Professor Oak> This world is inhabited by creatures that we call Pokémon."}
 tellraw @s[scores={DialogueTrigger=1,TalkTime=33}] {"text":"<Professor Oak> People and Pokémon live together by supporting each other."}
@@ -1218,10 +1218,10 @@ tag @s[scores={DialogueTrigger=48,TalkTime=23..}] add Dialogue48
 #execute as @s[x=-169,y=65,z=645,distance=..100,tag=!Dialogue49,score_TalkTime=0] run data merge entity @e[x=-765,y=66,z=-244,dy=3,type=pixelmon:statue,limit=1] {ndex: 1999}
 
 execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run particle cloud -167 62 632 3 3 3 1 200
-execute at @s[scores={DialogueTrigger=49,TalkTime=1}] run data merge entity @e[type=pixelmon:statue,x=-167,y=62,z=632,distance=..5,limit=1] {ndex: 1999}
+execute at @s[scores={DialogueTrigger=49,TalkTime=1}] run data merge entity @e[type=pixelmon:statue,x=-167,y=62,z=632,distance=..5,limit=1] {ndex:1999,palette:"none"}
 #Bugged, /pokebattle doesn't seem to work
 #execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run pokebattle @s Gyarados,s,lvl:30,gr:7
-execute at @s[scores={DialogueTrigger=49,TalkTime=1}] run pokespawn Gyarados growth:7 shiny lvl:30
+execute at @s[scores={DialogueTrigger=49,TalkTime=1}] run pokespawn Gyarados growth:6 shiny lvl:30
 execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run playsound gyarados hostile @s ~ ~ ~ 1 1 1
 execute as @s[scores={DialogueTrigger=49,TalkTime=1}] run give @s pixelmon:red_scale{display:{Name:'[{"text":"Red Scale","italic":false,"color":"dark_red"}]',Lore:['[{"text":"A scale from the red Gyarados.","italic":false}]']}} 1
 execute as @s[scores={DialogueTrigger=49,TalkTime=2}] run playsound shiny hostile @s ~ ~ ~ 1 1 1
@@ -4128,7 +4128,7 @@ tellraw @s[scores={DialogueTrigger=198,TalkTime=1}] {"text":"<Park Worker> Remem
 execute as @s[scores={DialogueTrigger=198,TalkTime=1}] run spawnpoint @s 477 64 61
 execute as @s[scores={DialogueTrigger=198,TalkTime=1}] run scoreboard players set @s click 1
 execute as @s[scores={DialogueTrigger=198,TalkTime=1}] run tag @s remove Dialogue199
-execute as @s[scores={DialogueTrigger=198,TalkTime=1}] run give @s pixelmon:sport_ball 45
+execute as @s[scores={DialogueTrigger=198,TalkTime=1}] run give @s pixelmon:poke_ball{PokeBallID:"sport_ball"} 45
 tellraw @s[scores={DialogueTrigger=198,TalkTime=10}] {"text":"<Park Worker> You can check your IVs as you catch the Pokemon. Submit the highest total stats at the end!"}
 tellraw @s[scores={DialogueTrigger=198,TalkTime=20}] {"text":"<Park Worker> You have 20 minutes from now until judging, or just come back and talk to me to start it early! Good luck!"}
 execute as @s[scores={DialogueTrigger=198,TalkTime=20}] run scoreboard players set @s BugContest 1
@@ -4372,8 +4372,8 @@ execute as @s[scores={DialogueTrigger=199,TalkTime=33}] run give @s[tag=Third] p
 
 
 #Clears Sport Ball stuff
-execute as @s[scores={DialogueTrigger=199,TalkTime=34..35}] run clear @s pixelmon:sport_ball_lid
-execute as @s[scores={DialogueTrigger=199,TalkTime=34..35}] run clear @s pixelmon:sport_ball
+execute as @s[scores={DialogueTrigger=199,TalkTime=34..35}] run clear @s pixelmon:poke_ball_lid{PokeBallID:"sport_ball"}
+execute as @s[scores={DialogueTrigger=199,TalkTime=34..35}] run clear @s pixelmon:poke_ball{PokeBallID:"sport_ball"}
 
 
 #Tps the NPCs and statues out
@@ -4465,7 +4465,7 @@ execute as @s[scores={DialogueTrigger=201,TalkTime=98}] run tp @s 1468 74 -41 18
 execute as @s[scores={DialogueTrigger=201,TalkTime=121}] run spawnpoint @s 1591 84 -87
 execute as @s[scores={DialogueTrigger=201,TalkTime=121}] run tp @s 1591 84 -87 -180 1
 execute as @s[scores={DialogueTrigger=201,TalkTime=121}] run scoreboard players set @s SafariState 1
-execute as @s[scores={DialogueTrigger=201,TalkTime=121}] run give @s pixelmon:safari_ball 64
+execute as @s[scores={DialogueTrigger=201,TalkTime=121}] run give @s pixelmon:poke_ball{PokeBallID:"safari_ball"} 64
 execute as @s[scores={DialogueTrigger=201,TalkTime=121}] run setblock 1595 81 -129 minecraft:redstone_block
 execute as @s[scores={DialogueTrigger=201,TalkTime=121}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=5,dz=10,type=armor_stand] BiomeID 0
 tellraw @s[scores={DialogueTrigger=201,TalkTime=121}] ["",{"text":"Enjoy your stay in the Safari Zone! Come back to the start when you are ready to leave."}]
@@ -4514,8 +4514,8 @@ execute as @s[scores={DialogueTrigger=202,TalkTime=1..65}] run function johto:wo
 
 
 #Final cleanup
-execute as @s[scores={DialogueTrigger=202,TalkTime=65}] run clear @s pixelmon:safari_ball
-execute as @s[scores={DialogueTrigger=202,TalkTime=65}] run clear @s pixelmon:safari_ball_lid
+execute as @s[scores={DialogueTrigger=202,TalkTime=65}] run clear @s pixelmon:poke_ball_lid{PokeBallID:"safari_ball"}
+execute as @s[scores={DialogueTrigger=202,TalkTime=65}] run clear @s pixelmon:poke_ball{PokeBallID:"safari_ball"}
 execute as @s[scores={DialogueTrigger=202,TalkTime=65}] run scoreboard players set @e[x=-879,y=64,z=-180,dy=5,dz=10,type=armor_stand] BiomeID 0
 execute as @s[scores={DialogueTrigger=202,TalkTime=65}] run tag @e[x=-792,y=65,z=-284,dy=3,type=armor_stand] remove SafariActive
 execute as @s[scores={DialogueTrigger=202,TalkTime=65}] run scoreboard players set @s SafariState 0
