@@ -111,6 +111,105 @@ execute if entity @a[scores={DialogueTrigger=104,TalkTime=1..13}] run particle m
 execute if entity @a[scores={DialogueTrigger=104,TalkTime=1..13}] run particle minecraft:dust 0 0 1 1 251 154 308 10 10 10 1 33
 
 
+#--------------------------------------------------------------------------------------------------Sinjoh Ruins-----------------------------------------------------------------------------------------------------------------------------------
+#Archeologist Running to Ruins
+#execute if entity @e[x=-792,y=65,z=-284,dy=3,tag=HikerRun] run data merge entity @e[limit=1,x=206,y=64,z=-149,dx=1,dz=3,type=pixelmon:npc_chatting] {Motion:[0.0,0.0,0.35],Rotation:[0.0f,0.0f]}
+#execute if entity @e[x=-792,y=65,z=-284,dy=3,tag=HikerRun] run data merge entity @e[limit=1,x=191,y=64,z=-149,dx=14,type=pixelmon:npc_chatting] {Motion:[0.35,0.0,0.0],Rotation:[270f,0.0f]}
+#execute if entity @e[x=-792,y=65,z=-284,dy=3,tag=HikerRun] run data merge entity @e[limit=1,x=191,y=64,z=-149,dx=1,dz=8,type=pixelmon:npc_chatting] {Motion:[0.0,0.0,-0.35],Rotation:[180f,0.0f]}
+#execute if entity @e[x=-792,y=65,z=-284,dy=3,tag=HikerRun] run data merge entity @e[limit=1,x=174,y=64,z=-141,dx=17,type=pixelmon:npc_chatting] {Motion:[0.35,0.0,0.0],Rotation:[270f,0.0f]}
+#execute if entity @e[x=-792,y=65,z=-284,dy=3,tag=HikerRun] run tp @e[x=205,y=64,z=-146,dx=4,dy=3,dz=1,type=pixelmon:npc_chatting] -705 86 -242
+#execute if entity @e[x=-705,y=86,z=-242,dy=3] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=HikerRun] run tag @e[x=-792,y=65,z=-284,dy=3,type=armor_stand] remove HikerRun
+
+#Fake Ruins of Alph Particles
+execute as @a[scores={DialogueTrigger=169,TalkTime=1..38}] run particle minecraft:enchant -973 59 -144 10 10 10 1 10
+execute as @a[scores={DialogueTrigger=169,TalkTime=13..38}] run particle minecraft:enchant -973 59 -144 10 10 10 1 100
+execute as @a[scores={DialogueTrigger=169,TalkTime=27..38}] run particle minecraft:enchant -961 59 -141 2 2 2 1 50
+execute as @a[scores={DialogueTrigger=169,TalkTime=27..38}] run particle minecraft:enchant ~ ~ ~ 2 2 2 1 50
+
+
+#--------------------------------------------------------------------------------------------------
+#Legendary-spawn common particles
+
+#Active extea particles
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=173..175,TalkTime=1..45}] run particle minecraft:enchant -1044 55 -93 15 10 15 1 200
+
+#Arceus-centered particles
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=173..175,TalkTime=1..45}] at @e[type=pixelmon:pixelmon,scores={Arceus=1..}] run particle minecraft:enchant ~ ~ ~ 2 2 2 0 50
+
+#Arceus hovers in the center
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=173..175,TalkTime=1..44}] run data merge entity @e[x=-1060,y=46,z=-143,dx=40,dy=15,dz=70,nbt={ndex:493},limit=1] {NoAI:1,NoGravity:1b}
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=173..175,TalkTime=1..10}] run tp @e[x=-1060,y=46,z=-143,dx=40,dy=15,dz=70,nbt={ndex:493},limit=1] -1044 54 -93 -180 0
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=173..175,TalkTime=45..}] run data merge entity @e[x=-1044,y=55,z=-93,distance=..5,nbt={ndex:493},limit=1] {NoAI:0,NoGravity:0b}
+
+#Center Spot Beam
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=173..175,TalkTime=12..23}] run particle minecraft:enchant -1044 51 -93 0 10 0 0 75
+
+#Item descending particle beam
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=173..175,TalkTime=12..23}] at @e[type=item,x=-1044,y=51,z=-93,dy=10] run particle dust 1 1 1 1 ~ ~1 ~ 0 1 0 0.5 1 normal
+
+#Egg Center Downward Motion
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=173..175,TalkTime=12..30}] run data merge entity @e[type=item,x=-1044,y=51,z=-93,dy=10,limit=1] {Motion:[0.0,-0.10,0.0]}
+
+
+
+#Arceus Final Sparks
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=173..175,TalkTime=40..45}] at @e[type=pixelmon:pixelmon,scores={Arceus=1..}] run particle minecraft:firework ~ ~10 ~ 1 2 2 1 100
+
+
+#--------------------------------------------------------------------------------------------------
+#Dialga-specific spawn sequence
+
+#Palkia Egg downward motion
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=173,TalkTime=35..45}] run data merge entity @e[type=item,x=-1050,y=51,z=-98,dy=10,limit=1] {Motion:[0.0,-0.10,0.0]}
+
+#Giratina Egg Downward Motion
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=173,TalkTime=30..45}] run data merge entity @e[type=item,x=-1044,y=51,z=-85,dy=11,limit=1] {Motion:[0.0,-0.10,0.0]}
+
+#Giratina Spot Beam
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=173,TalkTime=30..45}] run particle minecraft:enchant -1044 51 -85 0 10 0 0 75
+
+#Palkia Spot Beam
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=173,TalkTime=35..45}] run particle minecraft:enchant -1050 51 -98 0 10 0 0 75
+
+
+
+#--------------------------------------------------------------------------------------------------
+#Palkia-unique spawn sequence
+
+#Dialga Egg downward motion
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=174,TalkTime=35..45}] run data merge entity @e[type=item,x=-1038,y=51,z=-98,dy=10,limit=1] {Motion:[0.0,-0.10,0.0]}
+
+#Giratina Egg Downward Motion
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=174,TalkTime=30..45}] run data merge entity @e[type=item,x=-1044,y=51,z=-85,dy=11,limit=1] {Motion:[0.0,-0.10,0.0]}
+
+#Giratina Spot Beam
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=174,TalkTime=30..45}] run particle minecraft:enchant -1044 51 -85 0 10 0 0 75
+
+#Dialga Spot Beam
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=174,TalkTime=35..45}] run particle minecraft:enchant -1038 51 -98 0 10 0 0 75
+
+
+#--------------------------------------------------------------------------------------------------
+#Giratina-specific spawn sequence
+
+#Dialga Egg downward motion
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=175,TalkTime=30..45}] run data merge entity @e[type=item,x=-1038,y=51,z=-98,dy=10,limit=1] {Motion:[0.0,-0.10,0.0]}
+
+#Dialga Spot Beam
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=175,TalkTime=30..45}] run particle minecraft:enchant -1038 51 -98 0 10 0 0 75
+
+#Palkia Egg downward motion
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=175,TalkTime=30..45}] run data merge entity @e[type=item,x=-1050,y=51,z=-98,dy=10,limit=1] {Motion:[0.0,-0.10,0.0]}
+
+#Palkia Spot Beam
+execute as @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={DialogueTrigger=175,TalkTime=35..45}] run particle minecraft:enchant -1050 51 -98 0 10 0 0 75
+
+
+#-------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
 
 #Cycling Road Blocks
 #Celadon Side

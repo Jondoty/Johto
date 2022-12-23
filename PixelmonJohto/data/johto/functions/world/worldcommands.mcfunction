@@ -1392,7 +1392,7 @@ execute as @a[x=-2054,y=19,z=-835,distance=..50,scores={Articuno=0,TalkTime=0}] 
 #Dialogue159
 #Power Plant Zapdos
 scoreboard players set @a[x=-3239,y=64,z=571,distance=..5,scores={Zapdos=0,TalkTime=0},tag=AllGyms,tag=!Dialogue159] DialogueTrigger 159
-execute as @a[x=-3239,y=64,z=571,distance=..50,scores={Zapdos=0,TalkTime=0},tag=AllGyms] run tp @e[x=-773,y=79,z=-244,distance=..2,type=pixelmon:statue] -3239 64 571
+execute as @a[x=-3239,y=64,z=571,distance=..50,scores={Zapdos=0,TalkTime=0},tag=AllGyms] run data merge entity @e[x=-3239,y=64,z=571,distance=..2,type=pixelmon:statue,limit=1] {ndex:1999}
 
 #Dialogue160
 #Victory Road Moltres
@@ -1407,7 +1407,7 @@ execute as @a[x=112,y=32,z=391,distance=..25,nbt={Inventory:[{id:"minecraft:neth
 
 #Researcher hint saying to throw out Arceus
 execute if entity @a[x=174,y=63,z=-141,distance=..10,scores={Arceus=1..,Cooldown=0},tag=!Dialogue168] run tellraw @a[x=174,y=63,z=-141,distance=..10,scores={Arceus=1..,Cooldown=0,TalkTime=0},tag=!Dialogue168] {"text":"<Archaeologist> You encountered Arceus!? That is amazing! Did you catch it? Can I see it?"}
-execute if entity @a[x=174,y=63,z=-141,distance=..10,scores={Arceus=1..,Cooldown=0},tag=!Dialogue168] run scoreboard players set @a[x=174,y=63,z=-141,distance=..10,scores={Arceus=1..,Cooldown=0,TalkTime=0},tag=!Dialogue168] Cooldown 15
+execute if entity @a[x=174,y=63,z=-141,distance=..10,scores={Arceus=1..,Cooldown=0},tag=!Dialogue168] run scoreboard players set @a[x=174,y=63,z=-141,distance=..10,scores={Arceus=1..,Cooldown=0,TalkTime=0},tag=!Dialogue168] Cooldown 30
 
 
 #Dialogue173 - Dialga

@@ -659,7 +659,7 @@ tellraw @s[scores={DialogueTrigger=23,TalkTime=6}] {"text":"<Bicycle Clerk> I mo
 tellraw @s[scores={DialogueTrigger=23,TalkTime=14}] {"text":"<Bicycle Clerk> Could you ride a Bicycle and advertise for me?"}
 tellraw @s[scores={DialogueTrigger=23,TalkTime=21}] {"text":"<Bicycle Clerk> Really? Great!"}
 tellraw @s[scores={DialogueTrigger=23,TalkTime=28}] {"text":"<Bicycle Clerk> Give me your name and phone number, and I'll loan you a Bicycle."}
-execute as @s[scores={DialogueTrigger=23,TalkTime=33}] run give @s pixelmon:mach_bike{display:{Name:"Bicycle",Lore:["Color: BLUE","","A folding Bike that enables","a rider to get around much","faster than with Running Shoes."]}}
+execute as @s[scores={DialogueTrigger=23,TalkTime=33}] run summon minecraft:item 424 65 -425 {Item:{id:"pixelmon:mach_bike",Count:1},Age:-32768}
 execute as @s[scores={DialogueTrigger=23,TalkTime=33}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=23,TalkTime=37}] {"text":"<Bicycle Clerk> My Bicycles are first-rate! You can ride them anywhere."}
 execute as @s[scores={DialogueTrigger=23,TalkTime=37}] run scoreboard players set @s Bicycle 1
@@ -3515,7 +3515,7 @@ execute as @s[scores={DialogueTrigger=166,TalkTime=10}] run tp @e[x=178,y=64,z=-
 execute as @s[scores={DialogueTrigger=166,TalkTime=10}] run tp @e[x=-705,y=85,z=-242,dy=3,type=pixelmon:npc_chatting] 174 64 -141
 
 #Summons visual-only Azure flute
-execute as @s[scores={DialogueTrigger=166,TalkTime=7}] run summon minecraft:item 176 64 -141 {Item:{id:"pixelmon:azure_flute",Count:1,tag:{display:{Lore:["A flute that puts out echoing","sounds that do not seem to be of","this world. No one knows who made","it. It seems to call to the","highest mountains."]}}},Age:-32768,PickupDelay:32767}
+execute as @s[scores={DialogueTrigger=166,TalkTime=7}] run summon minecraft:item 176 64 -141 {Item:{id:"pixelmon:azure_flute",Count:1b},Age:-32768,PickupDelay:32767}
 
 tag @s[scores={DialogueTrigger=166,TalkTime=10..}] add Dialogue166
 
@@ -3548,10 +3548,13 @@ tellraw @s[scores={DialogueTrigger=168,TalkTime=31}] {"text":"<Archaeologist> Ca
 tellraw @s[scores={DialogueTrigger=168,TalkTime=39}] {"text":"<Archaeologist> Please! You must! I am trembling with excitement."}
 tellraw @s[scores={DialogueTrigger=168,TalkTime=48}] {"text":"<Archaeologist> I think something is about to happen!"}
 
-#Enables Walking into portal
-execute as @s[scores={DialogueTrigger=168,TalkTime=48}] run setblock -689 90 -242 minecraft:redstone_block
+execute as @s[scores={DialogueTrigger=168,TalkTime=58}] run particle cloud 174 64 -141 1 1 1 1 100
+execute as @s[scores={DialogueTrigger=168,TalkTime=58}] run tp @e[x=174,y=64,z=-141,distance=..3,type=pixelmon:npc_chatting] -705 86 -242
 
-tag @s[scores={DialogueTrigger=168,TalkTime=48..}] add Dialogue168
+#Enables Walking into portal
+#execute as @s[scores={DialogueTrigger=168,TalkTime=48}] run tag @e[x=-792,y=65,z=-284,dy=3,type=armor_stand] add HikerRun
+
+tag @s[scores={DialogueTrigger=168,TalkTime=58..}] add Dialogue168
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Inside fake ruins, tps into Sinjoh Ruins
 #scoreboard players set @a[x=-992,y=0,z=-172,dx=45,dy=70,dz=60,score_TalkTime=0] DialogueTrigger 169
@@ -3559,21 +3562,21 @@ tag @s[scores={DialogueTrigger=168,TalkTime=48..}] add Dialogue168
 tellraw @s[scores={DialogueTrigger=169,TalkTime=1}] {"text":"<Archaeologist> Hmm. I have been studying the ruins for many years, but something feels...different."}
 
 #Enables Particles 1
-execute as @s[scores={DialogueTrigger=169,TalkTime=1}] run setblock -691 91 -242 minecraft:redstone_block
+#execute as @s[scores={DialogueTrigger=169,TalkTime=1}] run setblock -691 91 -242 minecraft:redstone_block
 
 tellraw @s[scores={DialogueTrigger=169,TalkTime=13}] {"text":"<Archaeologist> Wow! The Unown pictures on the wall... It feels like they're staring at me!"}
 
 #Enables Particles 2
-execute as @s[scores={DialogueTrigger=169,TalkTime=13}] run setblock -692 91 -242 minecraft:redstone_block
-execute as @s[scores={DialogueTrigger=169,TalkTime=13}] run setblock -689 89 -270 minecraft:iron_block
+#execute as @s[scores={DialogueTrigger=169,TalkTime=13}] run setblock -692 91 -242 minecraft:redstone_block
 
 tellraw @s[scores={DialogueTrigger=169,TalkTime=27}] {"text":"<Archaeologist> What is this? There is something eerie that is making my legs shiver. I can't stop them!"}
 
 #Enables Particles 3
-execute as @s[scores={DialogueTrigger=169,TalkTime=27}] run fill -693 91 -242 -694 91 -242 minecraft:redstone_block
+#execute as @s[scores={DialogueTrigger=169,TalkTime=27}] run fill -693 91 -242 -694 91 -242 minecraft:redstone_block
 
 execute as @s[scores={DialogueTrigger=169,TalkTime=37}] run effect give @s minecraft:blindness 7 1
 execute as @s[scores={DialogueTrigger=169,TalkTime=38}] run tp @s -1042 61 -181 -90 ~
+execute as @s[scores={DialogueTrigger=169,TalkTime=38}] run playsound minecraft:block.portal.travel ambient @s ~ ~ ~ 1 1 1
 
 #Disables particles
 execute as @s[scores={DialogueTrigger=169,TalkTime=38}] run fill -694 91 -242 -691 91 -242 air

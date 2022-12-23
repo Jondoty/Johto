@@ -154,51 +154,37 @@ scoreboard players set @s[scores={DialogueTrigger=152},tag=Dialogue152] Dialogue
 #Tags Arceus for display
 execute as @s[scores={DialogueTrigger=173,TalkTime=3}] run scoreboard players set @e[x=-1060,y=46,z=-143,dx=40,dy=15,dz=70,type=pixelmon:pixelmon,nbt={ndex:493}] Arceus 1
 
-execute as @s[scores={DialogueTrigger=173,TalkTime=1}] run setblock -702 94 -242 minecraft:redstone_block
-execute as @s[scores={DialogueTrigger=173,TalkTime=1}] run setblock -701 94 -242 minecraft:redstone_block
-execute as @s[scores={DialogueTrigger=173,TalkTime=1}] run setblock -713 94 -242 minecraft:redstone_block
 execute as @s[scores={DialogueTrigger=173,TalkTime=1}] run stopsound @a[scores={TriggerCommand=12}] record
 execute as @s[scores={DialogueTrigger=173,TalkTime=1}] run scoreboard players set @a[scores={TriggerCommand=12}] MusicCooldown 740
 execute as @s[scores={DialogueTrigger=173,TalkTime=1}] run playsound azureflute ambient @a[scores={TriggerCommand=12}] ~ ~ ~ 100 1 1
-execute as @s[scores={DialogueTrigger=173,TalkTime=1}] run data merge entity @e[limit=1,scores={Arceus=1},type=pixelmon:pixelmon] {NoAI:1}
+#execute as @s[scores={DialogueTrigger=173,TalkTime=1}] run data merge entity @e[x=-1044,y=55,z=-93,distance=..5,nbt={ndex:493},limit=1] {NoAI:1,NoGravity:1b}
 
-execute as @s[scores={DialogueTrigger=173,TalkTime=12}] run setblock -703 94 -242 minecraft:redstone_block
-execute as @s[scores={DialogueTrigger=173,TalkTime=12}] run setblock -708 94 -242 minecraft:redstone_block
-execute as @s[scores={DialogueTrigger=173,TalkTime=12}] run setblock -707 94 -242 minecraft:redstone_block
 execute as @s[scores={DialogueTrigger=173,TalkTime=12}] run playsound arceus ambient @a[scores={TriggerCommand=12}] ~ ~ ~ 100 1 1
 execute as @s[scores={DialogueTrigger=173,TalkTime=12}] run summon minecraft:item -1044 60 -93 {Item:{id:"minecraft:egg",Count:1},Age:-32768,PickupDelay:32767,NoGravity:1b}
 execute as @s[scores={DialogueTrigger=173,TalkTime=13}] run playsound block.portal.travel ambient @a[scores={TriggerCommand=12}] ~ ~ ~ 100 1 1
 
 #Gives player Pokemon}
 execute as @s[scores={DialogueTrigger=173,TalkTime=23}] run particle cloud -1044 51 -93 1 1 1 0.15 100
-execute as @s[scores={DialogueTrigger=173,TalkTime=23}] run kill @e[x=-1044,y=50,z=-93,distance=..1,type=item]
+execute as @s[scores={DialogueTrigger=173,TalkTime=23}] run kill @e[x=-1044,y=50,z=-93,dy=3,type=minecraft:item]
 execute as @s[scores={DialogueTrigger=173,TalkTime=23}] run playsound entity.generic.explode ambient @a[scores={TriggerCommand=12}] ~ ~ ~ 10 1 1
 execute as @s[scores={DialogueTrigger=173,TalkTime=23}] run tellraw @a[scores={TriggerCommand=12}] {"text":"The mysterious round object took the shape of a Pokémon!"}
 execute as @s[scores={DialogueTrigger=173,TalkTime=23}] run pokegive @a[scores={TriggerCommand=12},tag=!SinnohLegend] Dialga lvl:1 gr:7
 execute as @s[scores={DialogueTrigger=173,TalkTime=23}] run tag @a[scores={TriggerCommand=12}] add SinnohLegend
 
-#Turns on motion data tp down item}
-execute as @s[scores={DialogueTrigger=173,TalkTime=30}] run setblock -712 94 -242 minecraft:redstone_block
-execute as @s[scores={DialogueTrigger=173,TalkTime=30}] run setblock -710 94 -242 minecraft:redstone_block
 
 #Spawns secondary Egg No 1}
-execute as @s[scores={DialogueTrigger=173,TalkTime=30}] run setblock -704 94 -242 minecraft:redstone_block
 execute as @s[scores={DialogueTrigger=173,TalkTime=30}] run playsound arceus ambient @a[scores={TriggerCommand=12}] ~ ~ ~ 100 1 1
 execute as @s[scores={DialogueTrigger=173,TalkTime=30}] run summon minecraft:item -1044 60 -85 {Item:{id:"pixelmon:griseous_orb",Count:1,tag:{display:{Lore:["A glowing orb containing","the essence of Giratina"]}}},Age:-32768,NoGravity:1b}
 
 #Spawns secondary Egg No 2}
-execute as @s[scores={DialogueTrigger=173,TalkTime=35}] run setblock -706 94 -242 minecraft:redstone_block
 execute as @s[scores={DialogueTrigger=173,TalkTime=35}] run playsound arceus ambient @a[scores={TriggerCommand=12}] ~ ~ ~ 100 1 1
 execute as @s[scores={DialogueTrigger=173,TalkTime=35}] run summon minecraft:item -1050 60 -98 {Item:{id:"pixelmon:lustrous_orb",Count:1,tag:{display:{Lore:["A glowing orb containing","the essence of Palkia"]}}},Age:-32768,NoGravity:1b}
 
 execute as @s[scores={DialogueTrigger=173,TalkTime=40}] run playsound block.portal.trigger ambient @a[scores={TriggerCommand=12}] ~ ~ ~ 100 1 1
 execute as @s[scores={DialogueTrigger=173,TalkTime=40}] run playsound arceus ambient @a[scores={TriggerCommand=12}] ~ ~ ~ 100 1 1
-execute as @s[scores={DialogueTrigger=173,TalkTime=40}] run setblock -709 94 -242 minecraft:redstone_block
 
-execute as @s[scores={DialogueTrigger=173,TalkTime=45}] run scoreboard players set @a[scores={TriggerCommand=12}] VillagerClick 0
-execute as @s[scores={DialogueTrigger=173,TalkTime=45}] run fill -701 94 -242 -713 94 -242 minecraft:iron_block
 
-execute as @s[scores={DialogueTrigger=173,TalkTime=45}] run data merge entity @e[limit=1,scores={Arceus=1},type=pixelmon:pixelmon] {NoAI:0}
+#execute as @s[scores={DialogueTrigger=173,TalkTime=45}] run data merge entity @e[x=-1044,y=55,z=-93,distance=..5,nbt={ndex:493},limit=1] {NoAI:0,NoGravity:0b}
 execute as @s[scores={DialogueTrigger=173,TalkTime=48}] run scoreboard players set @a[scores={TriggerCommand=12}] click 1
 execute as @s[scores={DialogueTrigger=173,TalkTime=48}] run scoreboard players set @a[scores={TriggerCommand=12}] TriggerCommand 0
 
@@ -222,51 +208,36 @@ scoreboard players set @s[scores={DialogueTrigger=173},tag=Dialogue173] Dialogue
 #Tags Arceus for display
 execute as @s[scores={DialogueTrigger=174,TalkTime=3}] run scoreboard players set @e[x=-1060,y=46,z=-143,dx=40,dy=15,dz=70,type=pixelmon:pixelmon,nbt={ndex:493}] Arceus 1
 
-execute as @s[scores={DialogueTrigger=174,TalkTime=1}] run setblock -702 94 -242 minecraft:redstone_block
-execute as @s[scores={DialogueTrigger=174,TalkTime=1}] run setblock -701 94 -242 minecraft:redstone_block
-execute as @s[scores={DialogueTrigger=174,TalkTime=1}] run setblock -713 94 -242 minecraft:redstone_block
 execute as @s[scores={DialogueTrigger=174,TalkTime=1}] run stopsound @a[scores={TriggerCommand=13}] record
 execute as @s[scores={DialogueTrigger=174,TalkTime=1}] run scoreboard players set @a[scores={TriggerCommand=13}] MusicCooldown 740
 execute as @s[scores={DialogueTrigger=174,TalkTime=1}] run playsound azureflute ambient @a[scores={TriggerCommand=13}] ~ ~ ~ 100 1 1
-execute as @s[scores={DialogueTrigger=174,TalkTime=1}] run data merge entity @e[limit=1,scores={Arceus=1},type=pixelmon:pixelmon] {NoAI:1}
+#execute as @s[scores={DialogueTrigger=174,TalkTime=1}] run data merge entity @e[x=-1044,y=55,z=-93,distance=..5,nbt={ndex:493},limit=1] {NoAI:1,NoGravity:1b}
 
-execute as @s[scores={DialogueTrigger=174,TalkTime=12}] run setblock -703 94 -242 minecraft:redstone_block
-execute as @s[scores={DialogueTrigger=174,TalkTime=12}] run setblock -708 94 -242 minecraft:redstone_block
-execute as @s[scores={DialogueTrigger=174,TalkTime=12}] run setblock -707 94 -242 minecraft:redstone_block
 execute as @s[scores={DialogueTrigger=174,TalkTime=12}] run playsound arceus ambient @a[scores={TriggerCommand=13}] ~ ~ ~ 100 1 1
 execute as @s[scores={DialogueTrigger=174,TalkTime=12}] run summon minecraft:item -1044 60 -93 {Item:{id:"minecraft:egg",Count:1},Age:-32768,PickupDelay:32767,NoGravity:1b}
 execute as @s[scores={DialogueTrigger=174,TalkTime=13}] run playsound block.portal.travel ambient @a[scores={TriggerCommand=13}] ~ ~ ~ 100 1 1
 
 #Gives player Pokemon
 execute as @s[scores={DialogueTrigger=174,TalkTime=23}] run particle cloud -1044 51 -93 1 1 1 0.15 100
-execute as @s[scores={DialogueTrigger=174,TalkTime=23}] run kill @e[x=-1044,y=50,z=-93,distance=..1,type=item]
+execute as @s[scores={DialogueTrigger=174,TalkTime=23}] run kill @e[x=-1044,y=50,z=-93,dy=4,type=item]
 execute as @s[scores={DialogueTrigger=174,TalkTime=23}] run playsound entity.generic.explode ambient @a[scores={TriggerCommand=13}] ~ ~ ~ 10 1 1
 execute as @s[scores={DialogueTrigger=174,TalkTime=23}] run tellraw @a[scores={TriggerCommand=13}] {"text":"The mysterious round object took the shape of a Pokémon!"}
 execute as @s[scores={DialogueTrigger=174,TalkTime=23}] run pokegive @a[scores={TriggerCommand=13},tag=!SinnohLegend] Palkia lvl:1 gr:7
 execute as @s[scores={DialogueTrigger=174,TalkTime=23}] run tag @a[scores={TriggerCommand=13}] add SinnohLegend
 
-#Turns on motion data tp down item
-execute as @s[scores={DialogueTrigger=174,TalkTime=30}] run setblock -711 94 -242 minecraft:redstone_block
-execute as @s[scores={DialogueTrigger=174,TalkTime=30}] run setblock -710 94 -242 minecraft:redstone_block
 
 #Spawns secondary Egg No 1
-execute as @s[scores={DialogueTrigger=174,TalkTime=30}] run setblock -704 94 -242 minecraft:redstone_block
 execute as @s[scores={DialogueTrigger=174,TalkTime=30}] run playsound arceus ambient @a[scores={TriggerCommand=13}] ~ ~ ~ 100 1 1
 execute as @s[scores={DialogueTrigger=174,TalkTime=30}] run summon minecraft:item -1044 60 -85 {Item:{id:"pixelmon:griseous_orb",Count:1,tag:{display:{Lore:["A glowing orb containing","the essence of Giratina"]}}},Age:-32768,NoGravity:1b}
 
 #Spawns secondary Egg No 2
-execute as @s[scores={DialogueTrigger=174,TalkTime=35}] run setblock -705 94 -242 minecraft:redstone_block
 execute as @s[scores={DialogueTrigger=174,TalkTime=35}] run playsound arceus ambient @a[scores={TriggerCommand=13}] ~ ~ ~ 100 1 1
 execute as @s[scores={DialogueTrigger=174,TalkTime=35}] run summon minecraft:item -1038 60 -98 {Item:{id:"pixelmon:adamant_orb",Count:1,tag:{display:{Lore:["A glowing orb containing","the essence of Dialga"]}}},Age:-32768,NoGravity:1b}
 
 execute as @s[scores={DialogueTrigger=174,TalkTime=40}] run playsound block.portal.trigger ambient @a[scores={TriggerCommand=13}] ~ ~ ~ 100 1 1
 execute as @s[scores={DialogueTrigger=174,TalkTime=40}] run playsound arceus ambient @a[scores={TriggerCommand=13}] ~ ~ ~ 100 1 1
-execute as @s[scores={DialogueTrigger=174,TalkTime=40}] run setblock -709 94 -242 minecraft:redstone_block
 
-execute as @s[scores={DialogueTrigger=174,TalkTime=45}] run scoreboard players set @a[scores={TriggerCommand=13}] VillagerClick 0
-execute as @s[scores={DialogueTrigger=174,TalkTime=45}] run fill -701 94 -242 -713 94 -242 minecraft:iron_block
-
-execute as @s[scores={DialogueTrigger=174,TalkTime=45}] run data merge entity @e[limit=1,scores={Arceus=1},type=pixelmon:pixelmon] {NoAI:0}
+#execute as @s[scores={DialogueTrigger=174,TalkTime=45}] run data merge entity @e[x=-1044,y=55,z=-93,distance=..5,nbt={ndex:493},limit=1] {NoAI:0,NoGravity:0b}
 execute as @s[scores={DialogueTrigger=174,TalkTime=48}] run scoreboard players set @a[scores={TriggerCommand=13}] click 1
 execute as @s[scores={DialogueTrigger=174,TalkTime=48}] run scoreboard players set @a[scores={TriggerCommand=13}] TriggerCommand 0
 
@@ -286,51 +257,36 @@ scoreboard players set @s[scores={DialogueTrigger=174},tag=Dialogue174] Dialogue
 #Tags Arceus for display
 execute as @s[scores={DialogueTrigger=175,TalkTime=3}] run scoreboard players set @e[x=-1060,y=46,z=-143,dx=40,dy=15,dz=70,type=pixelmon:pixelmon,nbt={ndex:493}] Arceus 1
 
-execute as @s[scores={DialogueTrigger=175,TalkTime=1}] run setblock -702 94 -242 minecraft:redstone_block
-execute as @s[scores={DialogueTrigger=175,TalkTime=1}] run setblock -701 94 -242 minecraft:redstone_block
-execute as @s[scores={DialogueTrigger=175,TalkTime=1}] run setblock -713 94 -242 minecraft:redstone_block
 execute as @s[scores={DialogueTrigger=175,TalkTime=1}] run stopsound @a[scores={TriggerCommand=14}] record
 execute as @s[scores={DialogueTrigger=175,TalkTime=1}] run scoreboard players set @a[scores={TriggerCommand=14}] MusicCooldown 740
 execute as @s[scores={DialogueTrigger=175,TalkTime=1}] run playsound azureflute ambient @a[scores={TriggerCommand=14}] ~ ~ ~ 100 1 1
-execute as @s[scores={DialogueTrigger=175,TalkTime=1}] run data merge entity @e[limit=1,scores={Arceus=1},type=pixelmon:pixelmon] {NoAI:1}
 
-execute as @s[scores={DialogueTrigger=175,TalkTime=12}] run setblock -703 94 -242 minecraft:redstone_block
-execute as @s[scores={DialogueTrigger=175,TalkTime=12}] run setblock -708 94 -242 minecraft:redstone_block
-execute as @s[scores={DialogueTrigger=175,TalkTime=12}] run setblock -707 94 -242 minecraft:redstone_block
+
 execute as @s[scores={DialogueTrigger=175,TalkTime=12}] run playsound arceus ambient @a[scores={TriggerCommand=14}] ~ ~ ~ 100 1 1
 execute as @s[scores={DialogueTrigger=175,TalkTime=12}] run summon minecraft:item -1044 60 -93 {Item:{id:"minecraft:egg",Count:1},Age:-32768,PickupDelay:32767,NoGravity:1b}
 execute as @s[scores={DialogueTrigger=175,TalkTime=13}] run playsound block.portal.travel ambient @a[scores={TriggerCommand=14}] ~ ~ ~ 100 1 1
 
 #Gives player Pokemon
 execute as @s[scores={DialogueTrigger=175,TalkTime=23}] run particle cloud -1044 51 -93 1 1 1 0.15 100
-execute as @s[scores={DialogueTrigger=175,TalkTime=23}] run kill @e[x=-1044,y=50,z=-93,distance=..1,type=item]
+execute as @s[scores={DialogueTrigger=175,TalkTime=23}] run kill @e[x=-1044,y=50,z=-93,dy=4,type=item]
 execute as @s[scores={DialogueTrigger=175,TalkTime=23}] run playsound entity.generic.explode ambient @a[scores={TriggerCommand=14}] ~ ~ ~ 10 1 1
 execute as @s[scores={DialogueTrigger=175,TalkTime=23}] run tellraw @a[scores={TriggerCommand=14}] {"text":"The mysterious round object took the shape of a Pokémon!"}
 execute as @s[scores={DialogueTrigger=175,TalkTime=23}] run pokegive @a[scores={TriggerCommand=14},tag=!SinnohLegend] Giratina lvl:1 gr:7
 execute as @s[scores={DialogueTrigger=175,TalkTime=23}] run tag @a[scores={TriggerCommand=14}] add SinnohLegend
 
-#Turns on motion data tp down item
-execute as @s[scores={DialogueTrigger=175,TalkTime=30}] run setblock -712 94 -242 minecraft:redstone_block
-execute as @s[scores={DialogueTrigger=175,TalkTime=30}] run setblock -711 94 -242 minecraft:redstone_block
 
 #Spawns secondary Egg No 1
-execute as @s[scores={DialogueTrigger=175,TalkTime=30}] run setblock -705 94 -242 minecraft:redstone_block
 execute as @s[scores={DialogueTrigger=175,TalkTime=30}] run playsound arceus ambient @a[scores={TriggerCommand=14}] ~ ~ ~ 100 1 1
 execute as @s[scores={DialogueTrigger=175,TalkTime=30}] run summon minecraft:item -1038 60 -98 {Item:{id:"pixelmon:adamant_orb",Count:1,tag:{display:{Lore:["A glowing orb containing","the essence of Dialga"]}}},Age:-32768,NoGravity:1b}
 
 #Spawns secondary Egg No 2
-execute as @s[scores={DialogueTrigger=175,TalkTime=35}] run setblock -706 94 -242 minecraft:redstone_block
 execute as @s[scores={DialogueTrigger=175,TalkTime=35}] run playsound arceus ambient @a[scores={TriggerCommand=14}] ~ ~ ~ 100 1 1
 execute as @s[scores={DialogueTrigger=175,TalkTime=35}] run summon minecraft:item -1050 60 -98 {Item:{id:"pixelmon:lustrous_orb",Count:1,tag:{display:{Lore:["A glowing orb containing","the essence of Palkia"]}}},Age:-32768,NoGravity:1b}
 
 execute as @s[scores={DialogueTrigger=175,TalkTime=40}] run playsound block.portal.trigger ambient @a[scores={TriggerCommand=14}] ~ ~ ~ 100 1 1
 execute as @s[scores={DialogueTrigger=175,TalkTime=40}] run playsound arceus ambient @a[scores={TriggerCommand=14}] ~ ~ ~ 100 1 1
-execute as @s[scores={DialogueTrigger=175,TalkTime=40}] run setblock -709 94 -242 minecraft:redstone_block
 
-execute as @s[scores={DialogueTrigger=175,TalkTime=45}] run scoreboard players set @a[scores={TriggerCommand=14}] VillagerClick 0
-execute as @s[scores={DialogueTrigger=175,TalkTime=45}] run fill -701 94 -242 -713 94 -242 minecraft:iron_block
 
-execute as @s[scores={DialogueTrigger=175,TalkTime=45}] run data merge entity @e[limit=1,scores={Arceus=1},type=pixelmon:pixelmon] {NoAI:0}
 execute as @s[scores={DialogueTrigger=175,TalkTime=48}] run scoreboard players set @a[scores={TriggerCommand=14}] click 1
 execute as @s[scores={DialogueTrigger=175,TalkTime=48}] run scoreboard players set @a[scores={TriggerCommand=14}] TriggerCommand 0
 
