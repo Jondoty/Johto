@@ -1315,16 +1315,8 @@ scoreboard players set @a[x=-682,y=63,z=-482,distance=..25,scores={TalkTime=0},t
 scoreboard players set @a[x=-682,y=63,z=-482,distance=..25,scores={TalkTime=0},tag=Dialogue3,nbt={Inventory:[{id:"pixelmon:water_stone_sword"}]}] TriggerCommand 84
 
 
-#Legendary Dog Grass commands
-#Resets Grass score
-execute as @a[tag=!GrassRoll] at @s if block ~ ~ ~ minecraft:grass run scoreboard players set @s Air 1
-tag @a[scores={Air=1},tag=GrassRoll] remove GrassRoll
-
-#Grass Encounter Roll function
-execute as @a[scores={DogEncounter=1},tag=!GrassRoll] at @s if block ~ ~ ~ minecraft:grass run scoreboard players set @s TallGrass 1
-execute as @a[scores={EonEncounter=1},tag=!GrassRoll] at @s if block ~ ~ ~ minecraft:grass run scoreboard players set @s TallGrass 1
-execute as @a[scores={TallGrass=1..},tag=!GrassRoll] run function johto:triggers/grassencounters
-
+#Legendary Dog & Eon Grass commands 3.0
+execute as @a[tag=!GrassCooldown] at @s run execute if block ~ ~ ~ minecraft:grass run function johto:triggers/roaminglegends
 
 #Mewtwo
 execute as @a[x=-2564,y=48,z=829,dx=18,dy=10,dz=29,scores={Mewtwo=0}] run playsound mewtwo hostile @s ~ ~ ~ 1000 1 1
