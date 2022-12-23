@@ -1,5 +1,29 @@
 {
   "starters": [
+    {
+      "spec": "Chikorita",
+      "chanceSpecs": [],
+      "page": 0,
+      "x": 1,
+      "y": 0,
+      "scale": 1
+    },
+    {
+      "spec": "Cyndaquil",
+      "chanceSpecs": [],
+      "page": 0,
+      "x": 1,
+      "y": 2,
+      "scale": 1
+    },
+    {
+      "spec": "Totodile",
+      "chanceSpecs": [],
+      "page": 0,
+      "x": 1,
+      "y": 4,
+      "scale": 1
+    }
   ],
   "chanceSpecs": [
     {
@@ -29,7 +53,7 @@
       }
     }
   ],
-  "loop": false,
+  "loop": true,
   "text": [
     "gui.starter.trademark4",
     "gui.starter.trademark5"
