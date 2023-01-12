@@ -1855,8 +1855,6 @@ execute as @s[scores={DialogueTrigger=76,TalkTime=22}] run give @s pixelmon:tm_g
 execute as @s[scores={DialogueTrigger=76,TalkTime=22}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 
 tag @s[scores={DialogueTrigger=76,TalkTime=22..}] add Dialogue76
-scoreboard players set @s[tag=Dialogue76] TalkTime 0
-scoreboard players set @s[tag=Dialogue76] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Blackthorn City Clair pre-battle
