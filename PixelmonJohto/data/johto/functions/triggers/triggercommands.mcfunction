@@ -536,7 +536,7 @@ execute as @a[scores={TriggerCommand=82}] run tellraw @s ["",{"text":"<Professor
 execute as @a[scores={TriggerCommand=82}] run scoreboard players enable @s TriggerCommand
 execute as @a[scores={TriggerCommand=82}] run tellraw @s ["",{"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 83"}}]
 execute as @a[scores={TriggerCommand=82}] run tellraw @s ["",{"text":"[No]","color":"red","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 86"}}]
-execute as @a[scores={TriggerCommand=82}] run clear @s #pixelmon:leaf_stone_sword
+execute as @a[scores={TriggerCommand=82}] run clear @s pixelmon:leaf_stone_sword
 execute as @a[scores={TriggerCommand=82}] run playsound chickorita ambient @s ~ ~ ~ 10 1 1
 execute as @a[scores={TriggerCommand=82}] run scoreboard players set @s TriggerCommand 0
 
