@@ -1,1813 +1,1395 @@
-scoreboard players enable @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=33] TriggerHOF
-tag @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Shiny,nbt={palette:"shiny"}] add Shiny
-
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:1}] HOFCount 1
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:2}] HOFCount 2
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:3}] HOFCount 3
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:4}] HOFCount 4
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:5}] HOFCount 5
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:6}] HOFCount 6
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:7}] HOFCount 7
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:8}] HOFCount 8
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:9}] HOFCount 9
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:10}] HOFCount 10
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:11}] HOFCount 11
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:12}] HOFCount 12
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:13}] HOFCount 13
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:14}] HOFCount 14
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:15}] HOFCount 15
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:16}] HOFCount 16
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:17}] HOFCount 17
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:18}] HOFCount 18
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:19}] HOFCount 19
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:20}] HOFCount 20
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:21}] HOFCount 21
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:22}] HOFCount 22
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:23}] HOFCount 23
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:24}] HOFCount 24
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:25}] HOFCount 25
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:26}] HOFCount 26
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:27}] HOFCount 27
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:28}] HOFCount 28
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:29}] HOFCount 29
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:30}] HOFCount 30
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:31}] HOFCount 31
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:32}] HOFCount 32
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:33}] HOFCount 33
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:34}] HOFCount 34
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:35}] HOFCount 35
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:36}] HOFCount 36
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:37}] HOFCount 37
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:38}] HOFCount 38
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:39}] HOFCount 39
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:40}] HOFCount 40
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:41}] HOFCount 41
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:42}] HOFCount 42
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:43}] HOFCount 43
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:44}] HOFCount 44
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:45}] HOFCount 45
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:46}] HOFCount 46
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:47}] HOFCount 47
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:48}] HOFCount 48
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:49}] HOFCount 49
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:50}] HOFCount 50
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:51}] HOFCount 51
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:52}] HOFCount 52
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:53}] HOFCount 53
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:54}] HOFCount 54
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:55}] HOFCount 55
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:56}] HOFCount 56
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:57}] HOFCount 57
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:58}] HOFCount 58
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:59}] HOFCount 59
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:60}] HOFCount 60
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:61}] HOFCount 61
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:62}] HOFCount 62
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:63}] HOFCount 63
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:64}] HOFCount 64
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:65}] HOFCount 65
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:66}] HOFCount 66
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:67}] HOFCount 67
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:68}] HOFCount 68
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:69}] HOFCount 69
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:70}] HOFCount 70
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:71}] HOFCount 71
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:72}] HOFCount 72
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:73}] HOFCount 73
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:74}] HOFCount 74
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:75}] HOFCount 75
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:76}] HOFCount 76
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:77}] HOFCount 77
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:78}] HOFCount 78
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:79}] HOFCount 79
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:80}] HOFCount 80
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:81}] HOFCount 81
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:82}] HOFCount 82
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:83}] HOFCount 83
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:84}] HOFCount 84
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:85}] HOFCount 85
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:86}] HOFCount 86
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:87}] HOFCount 87
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:88}] HOFCount 88
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:89}] HOFCount 89
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:90}] HOFCount 90
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:91}] HOFCount 91
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:92}] HOFCount 92
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:93}] HOFCount 93
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:94}] HOFCount 94
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:95}] HOFCount 95
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:96}] HOFCount 96
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:97}] HOFCount 97
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:98}] HOFCount 98
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:99}] HOFCount 99
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:100}] HOFCount 100
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:101}] HOFCount 101
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:102}] HOFCount 102
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:103}] HOFCount 103
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:104}] HOFCount 104
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:105}] HOFCount 105
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:106}] HOFCount 106
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:107}] HOFCount 107
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:108}] HOFCount 108
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:109}] HOFCount 109
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:110}] HOFCount 110
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:111}] HOFCount 111
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:112}] HOFCount 112
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:113}] HOFCount 113
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:114}] HOFCount 114
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:115}] HOFCount 115
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:116}] HOFCount 116
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:117}] HOFCount 117
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:118}] HOFCount 118
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:119}] HOFCount 119
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:120}] HOFCount 120
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:121}] HOFCount 121
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:122}] HOFCount 122
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:123}] HOFCount 123
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:124}] HOFCount 124
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:125}] HOFCount 125
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:126}] HOFCount 126
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:127}] HOFCount 127
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:128}] HOFCount 128
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:129}] HOFCount 129
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:130}] HOFCount 130
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:131}] HOFCount 131
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:132}] HOFCount 132
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:133}] HOFCount 133
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:134}] HOFCount 134
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:135}] HOFCount 135
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:136}] HOFCount 136
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:137}] HOFCount 137
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:138}] HOFCount 138
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:139}] HOFCount 139
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:140}] HOFCount 140
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:141}] HOFCount 141
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:142}] HOFCount 142
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:143}] HOFCount 143
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:144}] HOFCount 144
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:145}] HOFCount 145
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:146}] HOFCount 146
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:147}] HOFCount 147
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:148}] HOFCount 148
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:149}] HOFCount 149
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:150}] HOFCount 150
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:151}] HOFCount 151
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:152}] HOFCount 152
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:153}] HOFCount 153
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:154}] HOFCount 154
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:155}] HOFCount 155
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:156}] HOFCount 156
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:157}] HOFCount 157
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:158}] HOFCount 158
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:159}] HOFCount 159
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:160}] HOFCount 160
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:161}] HOFCount 161
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:162}] HOFCount 162
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:163}] HOFCount 163
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:164}] HOFCount 164
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:165}] HOFCount 165
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:166}] HOFCount 166
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:167}] HOFCount 167
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:168}] HOFCount 168
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:169}] HOFCount 169
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:170}] HOFCount 170
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:171}] HOFCount 171
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:172}] HOFCount 172
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:173}] HOFCount 173
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:174}] HOFCount 174
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:175}] HOFCount 175
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:176}] HOFCount 176
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:177}] HOFCount 177
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:178}] HOFCount 178
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:179}] HOFCount 179
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:180}] HOFCount 180
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:181}] HOFCount 181
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:182}] HOFCount 182
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:183}] HOFCount 183
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:184}] HOFCount 184
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:185}] HOFCount 185
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:186}] HOFCount 186
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:187}] HOFCount 187
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:188}] HOFCount 188
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:189}] HOFCount 189
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:190}] HOFCount 190
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:191}] HOFCount 191
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:192}] HOFCount 192
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:193}] HOFCount 193
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:194}] HOFCount 194
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:195}] HOFCount 195
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:196}] HOFCount 196
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:197}] HOFCount 197
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:198}] HOFCount 198
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:199}] HOFCount 199
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:200}] HOFCount 200
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:201}] HOFCount 201
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:202}] HOFCount 202
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:203}] HOFCount 203
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:204}] HOFCount 204
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:205}] HOFCount 205
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:206}] HOFCount 206
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:207}] HOFCount 207
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:208}] HOFCount 208
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:209}] HOFCount 209
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:210}] HOFCount 210
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:211}] HOFCount 211
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:212}] HOFCount 212
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:213}] HOFCount 213
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:214}] HOFCount 214
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:215}] HOFCount 215
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:216}] HOFCount 216
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:217}] HOFCount 217
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:218}] HOFCount 218
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:219}] HOFCount 219
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:220}] HOFCount 220
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:221}] HOFCount 221
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:222}] HOFCount 222
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:223}] HOFCount 223
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:224}] HOFCount 224
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:225}] HOFCount 225
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:226}] HOFCount 226
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:227}] HOFCount 227
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:228}] HOFCount 228
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:229}] HOFCount 229
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:230}] HOFCount 230
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:231}] HOFCount 231
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:232}] HOFCount 232
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:233}] HOFCount 233
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:234}] HOFCount 234
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:235}] HOFCount 235
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:236}] HOFCount 236
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:237}] HOFCount 237
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:238}] HOFCount 238
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:239}] HOFCount 239
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:240}] HOFCount 240
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:241}] HOFCount 241
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:242}] HOFCount 242
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:243}] HOFCount 243
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:244}] HOFCount 244
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:245}] HOFCount 245
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:246}] HOFCount 246
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:247}] HOFCount 247
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:248}] HOFCount 248
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:249}] HOFCount 249
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:250}] HOFCount 250
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:251}] HOFCount 251
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:252}] HOFCount 252
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:253}] HOFCount 253
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:254}] HOFCount 254
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:255}] HOFCount 255
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:256}] HOFCount 256
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:257}] HOFCount 257
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:258}] HOFCount 258
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:259}] HOFCount 259
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:260}] HOFCount 260
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:261}] HOFCount 261
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:262}] HOFCount 262
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:263}] HOFCount 263
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:264}] HOFCount 264
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:265}] HOFCount 265
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:266}] HOFCount 266
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:267}] HOFCount 267
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:268}] HOFCount 268
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:269}] HOFCount 269
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:270}] HOFCount 270
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:271}] HOFCount 271
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:272}] HOFCount 272
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:273}] HOFCount 273
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:274}] HOFCount 274
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:275}] HOFCount 275
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:276}] HOFCount 276
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:277}] HOFCount 277
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:278}] HOFCount 278
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:279}] HOFCount 279
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:280}] HOFCount 280
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:281}] HOFCount 281
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:282}] HOFCount 282
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:283}] HOFCount 283
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:284}] HOFCount 284
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:285}] HOFCount 285
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:286}] HOFCount 286
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:287}] HOFCount 287
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:288}] HOFCount 288
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:289}] HOFCount 289
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:290}] HOFCount 290
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:291}] HOFCount 291
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:292}] HOFCount 292
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:293}] HOFCount 293
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:294}] HOFCount 294
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:295}] HOFCount 295
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:296}] HOFCount 296
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:297}] HOFCount 297
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:298}] HOFCount 298
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:299}] HOFCount 299
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:300}] HOFCount 300
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:301}] HOFCount 301
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:302}] HOFCount 302
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:303}] HOFCount 303
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:304}] HOFCount 304
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:305}] HOFCount 305
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:306}] HOFCount 306
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:307}] HOFCount 307
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:308}] HOFCount 308
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:309}] HOFCount 309
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:310}] HOFCount 310
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:311}] HOFCount 311
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:312}] HOFCount 312
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:313}] HOFCount 313
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:314}] HOFCount 314
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:315}] HOFCount 315
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:316}] HOFCount 316
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:317}] HOFCount 317
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:318}] HOFCount 318
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:319}] HOFCount 319
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:320}] HOFCount 320
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:321}] HOFCount 321
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:322}] HOFCount 322
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:323}] HOFCount 323
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:324}] HOFCount 324
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:325}] HOFCount 325
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:326}] HOFCount 326
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:327}] HOFCount 327
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:328}] HOFCount 328
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:329}] HOFCount 329
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:330}] HOFCount 330
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:331}] HOFCount 331
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:332}] HOFCount 332
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:333}] HOFCount 333
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:334}] HOFCount 334
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:335}] HOFCount 335
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:336}] HOFCount 336
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:337}] HOFCount 337
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:338}] HOFCount 338
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:339}] HOFCount 339
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:340}] HOFCount 340
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:341}] HOFCount 341
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:342}] HOFCount 342
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:343}] HOFCount 343
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:344}] HOFCount 344
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:345}] HOFCount 345
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:346}] HOFCount 346
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:347}] HOFCount 347
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:348}] HOFCount 348
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:349}] HOFCount 349
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:350}] HOFCount 350
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:351}] HOFCount 351
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:352}] HOFCount 352
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:353}] HOFCount 353
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:354}] HOFCount 354
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:355}] HOFCount 355
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:356}] HOFCount 356
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:357}] HOFCount 357
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:358}] HOFCount 358
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:359}] HOFCount 359
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:360}] HOFCount 360
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:361}] HOFCount 361
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:362}] HOFCount 362
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:363}] HOFCount 363
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:364}] HOFCount 364
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:365}] HOFCount 365
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:366}] HOFCount 366
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:367}] HOFCount 367
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:368}] HOFCount 368
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:369}] HOFCount 369
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:370}] HOFCount 370
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:371}] HOFCount 371
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:372}] HOFCount 372
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:373}] HOFCount 373
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:374}] HOFCount 374
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:375}] HOFCount 375
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:376}] HOFCount 376
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:377}] HOFCount 377
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:378}] HOFCount 378
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:379}] HOFCount 379
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:380}] HOFCount 380
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:381}] HOFCount 381
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:382}] HOFCount 382
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:383}] HOFCount 383
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:384}] HOFCount 384
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:385}] HOFCount 385
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:386}] HOFCount 386
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:387}] HOFCount 387
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:388}] HOFCount 388
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:389}] HOFCount 389
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:390}] HOFCount 390
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:391}] HOFCount 391
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:392}] HOFCount 392
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:393}] HOFCount 393
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:394}] HOFCount 394
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:395}] HOFCount 395
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:396}] HOFCount 396
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:397}] HOFCount 397
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:398}] HOFCount 398
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:399}] HOFCount 399
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:400}] HOFCount 400
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:401}] HOFCount 401
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:402}] HOFCount 402
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:403}] HOFCount 403
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:404}] HOFCount 404
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:405}] HOFCount 405
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:406}] HOFCount 406
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:407}] HOFCount 407
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:408}] HOFCount 408
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:409}] HOFCount 409
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:410}] HOFCount 410
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:411}] HOFCount 411
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:412}] HOFCount 412
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:413}] HOFCount 413
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:414}] HOFCount 414
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:415}] HOFCount 415
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:416}] HOFCount 416
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:417}] HOFCount 417
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:418}] HOFCount 418
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:419}] HOFCount 419
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:420}] HOFCount 420
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:421}] HOFCount 421
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:422}] HOFCount 422
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:423}] HOFCount 423
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:424}] HOFCount 424
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:425}] HOFCount 425
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:426}] HOFCount 426
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:427}] HOFCount 427
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:428}] HOFCount 428
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:429}] HOFCount 429
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:430}] HOFCount 430
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:431}] HOFCount 431
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:432}] HOFCount 432
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:433}] HOFCount 433
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:434}] HOFCount 434
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:435}] HOFCount 435
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:436}] HOFCount 436
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:437}] HOFCount 437
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:438}] HOFCount 438
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:439}] HOFCount 439
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:440}] HOFCount 440
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:441}] HOFCount 441
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:442}] HOFCount 442
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:443}] HOFCount 443
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:444}] HOFCount 444
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:445}] HOFCount 445
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:446}] HOFCount 446
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:447}] HOFCount 447
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:448}] HOFCount 448
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:449}] HOFCount 449
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:450}] HOFCount 450
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:451}] HOFCount 451
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:452}] HOFCount 452
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:453}] HOFCount 453
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:454}] HOFCount 454
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:455}] HOFCount 455
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:456}] HOFCount 456
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:457}] HOFCount 457
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:458}] HOFCount 458
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:459}] HOFCount 459
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:460}] HOFCount 460
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:461}] HOFCount 461
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:462}] HOFCount 462
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:463}] HOFCount 463
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:464}] HOFCount 464
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:465}] HOFCount 465
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:466}] HOFCount 466
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:467}] HOFCount 467
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:468}] HOFCount 468
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:469}] HOFCount 469
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:470}] HOFCount 470
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:471}] HOFCount 471
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:472}] HOFCount 472
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:473}] HOFCount 473
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:474}] HOFCount 474
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:475}] HOFCount 475
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:476}] HOFCount 476
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:477}] HOFCount 477
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:478}] HOFCount 478
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:479}] HOFCount 479
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:480}] HOFCount 480
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:481}] HOFCount 481
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:482}] HOFCount 482
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:483}] HOFCount 483
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:484}] HOFCount 484
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:485}] HOFCount 485
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:486}] HOFCount 486
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:487}] HOFCount 487
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:488}] HOFCount 488
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:489}] HOFCount 489
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:490}] HOFCount 490
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:491}] HOFCount 491
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:492}] HOFCount 492
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:493}] HOFCount 493
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:494}] HOFCount 494
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:495}] HOFCount 495
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:496}] HOFCount 496
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:497}] HOFCount 497
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:498}] HOFCount 498
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:499}] HOFCount 499
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:500}] HOFCount 500
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:501}] HOFCount 501
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:502}] HOFCount 502
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:503}] HOFCount 503
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:504}] HOFCount 504
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:505}] HOFCount 505
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:506}] HOFCount 506
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:507}] HOFCount 507
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:508}] HOFCount 508
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:509}] HOFCount 509
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:510}] HOFCount 510
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:511}] HOFCount 511
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:512}] HOFCount 512
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:513}] HOFCount 513
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:514}] HOFCount 514
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:515}] HOFCount 515
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:516}] HOFCount 516
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:517}] HOFCount 517
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:518}] HOFCount 518
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:519}] HOFCount 519
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:520}] HOFCount 520
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:521}] HOFCount 521
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:522}] HOFCount 522
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:523}] HOFCount 523
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:524}] HOFCount 524
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:525}] HOFCount 525
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:526}] HOFCount 526
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:527}] HOFCount 527
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:528}] HOFCount 528
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:529}] HOFCount 529
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:530}] HOFCount 530
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:531}] HOFCount 531
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:532}] HOFCount 532
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:533}] HOFCount 533
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:534}] HOFCount 534
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:535}] HOFCount 535
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:536}] HOFCount 536
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:537}] HOFCount 537
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:538}] HOFCount 538
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:539}] HOFCount 539
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:540}] HOFCount 540
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:541}] HOFCount 541
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:542}] HOFCount 542
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:543}] HOFCount 543
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:544}] HOFCount 544
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:545}] HOFCount 545
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:546}] HOFCount 546
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:547}] HOFCount 547
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:548}] HOFCount 548
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:549}] HOFCount 549
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:550}] HOFCount 550
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:551}] HOFCount 551
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:552}] HOFCount 552
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:553}] HOFCount 553
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:554}] HOFCount 554
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:555}] HOFCount 555
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:556}] HOFCount 556
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:557}] HOFCount 557
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:558}] HOFCount 558
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:559}] HOFCount 559
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:560}] HOFCount 560
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:561}] HOFCount 561
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:562}] HOFCount 562
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:563}] HOFCount 563
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:564}] HOFCount 564
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:565}] HOFCount 565
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:566}] HOFCount 566
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:567}] HOFCount 567
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:568}] HOFCount 568
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:569}] HOFCount 569
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:570}] HOFCount 570
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:571}] HOFCount 571
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:572}] HOFCount 572
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:573}] HOFCount 573
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:574}] HOFCount 574
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:575}] HOFCount 575
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:576}] HOFCount 576
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:577}] HOFCount 577
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:578}] HOFCount 578
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:579}] HOFCount 579
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:580}] HOFCount 580
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:581}] HOFCount 581
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:582}] HOFCount 582
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:583}] HOFCount 583
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:584}] HOFCount 584
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:585}] HOFCount 585
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:586}] HOFCount 586
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:587}] HOFCount 587
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:588}] HOFCount 588
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:589}] HOFCount 589
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:590}] HOFCount 590
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:591}] HOFCount 591
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:592}] HOFCount 592
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:593}] HOFCount 593
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:594}] HOFCount 594
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:595}] HOFCount 595
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:596}] HOFCount 596
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:597}] HOFCount 597
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:598}] HOFCount 598
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:599}] HOFCount 599
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:600}] HOFCount 600
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:601}] HOFCount 601
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:602}] HOFCount 602
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:603}] HOFCount 603
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:604}] HOFCount 604
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:605}] HOFCount 605
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:606}] HOFCount 606
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:607}] HOFCount 607
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:608}] HOFCount 608
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:609}] HOFCount 609
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:610}] HOFCount 610
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:611}] HOFCount 611
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:612}] HOFCount 612
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:613}] HOFCount 613
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:614}] HOFCount 614
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:615}] HOFCount 615
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:616}] HOFCount 616
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:617}] HOFCount 617
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:618}] HOFCount 618
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:619}] HOFCount 619
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:620}] HOFCount 620
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:621}] HOFCount 621
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:622}] HOFCount 622
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:623}] HOFCount 623
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:624}] HOFCount 624
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:625}] HOFCount 625
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:626}] HOFCount 626
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:627}] HOFCount 627
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:628}] HOFCount 628
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:629}] HOFCount 629
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:630}] HOFCount 630
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:631}] HOFCount 631
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:632}] HOFCount 632
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:633}] HOFCount 633
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:634}] HOFCount 634
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:635}] HOFCount 635
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:636}] HOFCount 636
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:637}] HOFCount 637
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:638}] HOFCount 638
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:639}] HOFCount 639
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:640}] HOFCount 640
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:641}] HOFCount 641
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:642}] HOFCount 642
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:643}] HOFCount 643
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:644}] HOFCount 644
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:645}] HOFCount 645
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:646}] HOFCount 646
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:647}] HOFCount 647
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:648}] HOFCount 648
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:649}] HOFCount 649
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:650}] HOFCount 650
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:651}] HOFCount 651
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:652}] HOFCount 652
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:653}] HOFCount 653
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:654}] HOFCount 654
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:655}] HOFCount 655
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:656}] HOFCount 656
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:657}] HOFCount 657
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:658}] HOFCount 658
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:659}] HOFCount 659
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:660}] HOFCount 660
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:661}] HOFCount 661
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:662}] HOFCount 662
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:663}] HOFCount 663
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:664}] HOFCount 664
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:665}] HOFCount 665
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:666}] HOFCount 666
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:667}] HOFCount 667
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:668}] HOFCount 668
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:669}] HOFCount 669
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:670}] HOFCount 670
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:671}] HOFCount 671
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:672}] HOFCount 672
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:673}] HOFCount 673
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:674}] HOFCount 674
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:675}] HOFCount 675
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:676}] HOFCount 676
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:677}] HOFCount 677
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:678}] HOFCount 678
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:679}] HOFCount 679
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:680}] HOFCount 680
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:681}] HOFCount 681
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:682}] HOFCount 682
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:683}] HOFCount 683
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:684}] HOFCount 684
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:685}] HOFCount 685
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:686}] HOFCount 686
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:687}] HOFCount 687
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:688}] HOFCount 688
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:689}] HOFCount 689
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:690}] HOFCount 690
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:691}] HOFCount 691
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:692}] HOFCount 692
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:693}] HOFCount 693
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:694}] HOFCount 694
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:695}] HOFCount 695
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:696}] HOFCount 696
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:697}] HOFCount 697
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:698}] HOFCount 698
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:699}] HOFCount 699
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:700}] HOFCount 700
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:701}] HOFCount 701
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:702}] HOFCount 702
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:703}] HOFCount 703
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:704}] HOFCount 704
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:705}] HOFCount 705
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:706}] HOFCount 706
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:707}] HOFCount 707
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:708}] HOFCount 708
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:709}] HOFCount 709
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:710}] HOFCount 710
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:711}] HOFCount 711
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:712}] HOFCount 712
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:713}] HOFCount 713
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:714}] HOFCount 714
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:715}] HOFCount 715
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:716}] HOFCount 716
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:717}] HOFCount 717
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:718}] HOFCount 718
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:719}] HOFCount 719
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:720}] HOFCount 720
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:721}] HOFCount 721
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:722}] HOFCount 722
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:723}] HOFCount 723
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:724}] HOFCount 724
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:725}] HOFCount 725
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:726}] HOFCount 726
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:727}] HOFCount 727
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:728}] HOFCount 728
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:729}] HOFCount 729
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:730}] HOFCount 730
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:731}] HOFCount 731
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:732}] HOFCount 732
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:733}] HOFCount 733
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:734}] HOFCount 734
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:735}] HOFCount 735
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:736}] HOFCount 736
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:737}] HOFCount 737
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:738}] HOFCount 738
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:739}] HOFCount 739
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:740}] HOFCount 740
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:741}] HOFCount 741
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:742}] HOFCount 742
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:743}] HOFCount 743
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:744}] HOFCount 744
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:745}] HOFCount 745
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:746}] HOFCount 746
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:747}] HOFCount 747
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:748}] HOFCount 748
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:749}] HOFCount 749
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:750}] HOFCount 750
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:751}] HOFCount 751
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:752}] HOFCount 752
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:753}] HOFCount 753
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:754}] HOFCount 754
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:755}] HOFCount 755
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:756}] HOFCount 756
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:757}] HOFCount 757
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:758}] HOFCount 758
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:759}] HOFCount 759
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:760}] HOFCount 760
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:761}] HOFCount 761
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:762}] HOFCount 762
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:763}] HOFCount 763
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:764}] HOFCount 764
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:765}] HOFCount 765
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:766}] HOFCount 766
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:767}] HOFCount 767
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:768}] HOFCount 768
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:769}] HOFCount 769
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:770}] HOFCount 770
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:771}] HOFCount 771
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:772}] HOFCount 772
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:773}] HOFCount 773
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:774}] HOFCount 774
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:775}] HOFCount 775
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:776}] HOFCount 776
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:777}] HOFCount 777
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:778}] HOFCount 778
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:779}] HOFCount 779
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:780}] HOFCount 780
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:781}] HOFCount 781
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:782}] HOFCount 782
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:783}] HOFCount 783
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:784}] HOFCount 784
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:785}] HOFCount 785
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:786}] HOFCount 786
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:787}] HOFCount 787
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:788}] HOFCount 788
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:789}] HOFCount 789
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:790}] HOFCount 790
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:791}] HOFCount 791
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:792}] HOFCount 792
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:793}] HOFCount 793
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:794}] HOFCount 794
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:795}] HOFCount 795
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:796}] HOFCount 796
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:797}] HOFCount 797
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:798}] HOFCount 798
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:799}] HOFCount 799
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:800}] HOFCount 800
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:801}] HOFCount 801
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:802}] HOFCount 802
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:803}] HOFCount 803
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:804}] HOFCount 804
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:805}] HOFCount 805
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:806}] HOFCount 806
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:807}] HOFCount 807
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:808}] HOFCount 808
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:809}] HOFCount 809
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:810}] HOFCount 810
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:811}] HOFCount 811
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:812}] HOFCount 812
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:813}] HOFCount 813
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:814}] HOFCount 814
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:815}] HOFCount 815
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:816}] HOFCount 816
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:817}] HOFCount 817
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:818}] HOFCount 818
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:819}] HOFCount 819
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:820}] HOFCount 820
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:821}] HOFCount 821
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:822}] HOFCount 822
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:823}] HOFCount 823
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:824}] HOFCount 824
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:825}] HOFCount 825
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:826}] HOFCount 826
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:827}] HOFCount 827
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:828}] HOFCount 828
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:829}] HOFCount 829
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:830}] HOFCount 830
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:831}] HOFCount 831
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:832}] HOFCount 832
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:833}] HOFCount 833
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:834}] HOFCount 834
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:835}] HOFCount 835
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:836}] HOFCount 836
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:837}] HOFCount 837
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:838}] HOFCount 838
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:839}] HOFCount 839
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:840}] HOFCount 840
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:841}] HOFCount 841
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:842}] HOFCount 842
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:843}] HOFCount 843
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:844}] HOFCount 844
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:845}] HOFCount 845
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:846}] HOFCount 846
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:847}] HOFCount 847
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:848}] HOFCount 848
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:849}] HOFCount 849
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:850}] HOFCount 850
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:851}] HOFCount 851
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:852}] HOFCount 852
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:853}] HOFCount 853
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:854}] HOFCount 854
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:855}] HOFCount 855
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:856}] HOFCount 856
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:857}] HOFCount 857
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:858}] HOFCount 858
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:859}] HOFCount 859
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:860}] HOFCount 860
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:861}] HOFCount 861
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:862}] HOFCount 862
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:863}] HOFCount 863
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:864}] HOFCount 864
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:865}] HOFCount 865
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:866}] HOFCount 866
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:867}] HOFCount 867
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:868}] HOFCount 868
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:869}] HOFCount 869
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:870}] HOFCount 870
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:871}] HOFCount 871
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:872}] HOFCount 872
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:873}] HOFCount 873
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:874}] HOFCount 874
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:875}] HOFCount 875
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:876}] HOFCount 876
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:877}] HOFCount 877
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:878}] HOFCount 878
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:879}] HOFCount 879
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:880}] HOFCount 880
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:881}] HOFCount 881
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:882}] HOFCount 882
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:883}] HOFCount 883
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:884}] HOFCount 884
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:885}] HOFCount 885
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:886}] HOFCount 886
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:887}] HOFCount 887
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:888}] HOFCount 888
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:889}] HOFCount 889
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:890}] HOFCount 890
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:891}] HOFCount 891
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:892}] HOFCount 892
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:893}] HOFCount 893
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:894}] HOFCount 894
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:895}] HOFCount 895
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:896}] HOFCount 896
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:897}] HOFCount 897
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:898}] HOFCount 898
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:899}] HOFCount 899
-scoreboard players set @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,tag=!Talked,nbt={ndex:900}] HOFCount 900
+#If Pokemon is present, sets a display to work with
+execute as @s run setblock -873 66 -229 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{Growth:8b}} replace
 
 
-#Activates first message
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=1..},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"Found your "},{"selector":"@s"},{"text":"! Click below to confirm."}]
+#Determines a Pokemon's national Dex number
+execute as @s[nbt={ndex:1}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1}}
+execute as @s[nbt={ndex:2}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:2}}
+execute as @s[nbt={ndex:3}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:3}}
+execute as @s[nbt={ndex:4}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:4}}
+execute as @s[nbt={ndex:5}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:5}}
+execute as @s[nbt={ndex:6}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:6}}
+execute as @s[nbt={ndex:7}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:7}}
+execute as @s[nbt={ndex:8}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:8}}
+execute as @s[nbt={ndex:9}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:9}}
+execute as @s[nbt={ndex:10}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:10}}
+execute as @s[nbt={ndex:11}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:11}}
+execute as @s[nbt={ndex:12}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:12}}
+execute as @s[nbt={ndex:13}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:13}}
+execute as @s[nbt={ndex:14}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:14}}
+execute as @s[nbt={ndex:15}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:15}}
+execute as @s[nbt={ndex:16}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:16}}
+execute as @s[nbt={ndex:17}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:17}}
+execute as @s[nbt={ndex:18}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:18}}
+execute as @s[nbt={ndex:19}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:19}}
+execute as @s[nbt={ndex:20}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:20}}
+execute as @s[nbt={ndex:21}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:21}}
+execute as @s[nbt={ndex:22}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:22}}
+execute as @s[nbt={ndex:23}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:23}}
+execute as @s[nbt={ndex:24}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:24}}
+execute as @s[nbt={ndex:25}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:25}}
+execute as @s[nbt={ndex:26}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:26}}
+execute as @s[nbt={ndex:27}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:27}}
+execute as @s[nbt={ndex:28}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:28}}
+execute as @s[nbt={ndex:29}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:29}}
+execute as @s[nbt={ndex:30}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:30}}
+execute as @s[nbt={ndex:31}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:31}}
+execute as @s[nbt={ndex:32}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:32}}
+execute as @s[nbt={ndex:33}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:33}}
+execute as @s[nbt={ndex:34}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:34}}
+execute as @s[nbt={ndex:35}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:35}}
+execute as @s[nbt={ndex:36}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:36}}
+execute as @s[nbt={ndex:37}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:37}}
+execute as @s[nbt={ndex:38}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:38}}
+execute as @s[nbt={ndex:39}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:39}}
+execute as @s[nbt={ndex:40}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:40}}
+execute as @s[nbt={ndex:41}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:41}}
+execute as @s[nbt={ndex:42}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:42}}
+execute as @s[nbt={ndex:43}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:43}}
+execute as @s[nbt={ndex:44}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:44}}
+execute as @s[nbt={ndex:45}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:45}}
+execute as @s[nbt={ndex:46}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:46}}
+execute as @s[nbt={ndex:47}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:47}}
+execute as @s[nbt={ndex:48}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:48}}
+execute as @s[nbt={ndex:49}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:49}}
+execute as @s[nbt={ndex:50}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:50}}
+execute as @s[nbt={ndex:51}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:51}}
+execute as @s[nbt={ndex:52}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:52}}
+execute as @s[nbt={ndex:53}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:53}}
+execute as @s[nbt={ndex:54}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:54}}
+execute as @s[nbt={ndex:55}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:55}}
+execute as @s[nbt={ndex:56}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:56}}
+execute as @s[nbt={ndex:57}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:57}}
+execute as @s[nbt={ndex:58}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:58}}
+execute as @s[nbt={ndex:59}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:59}}
+execute as @s[nbt={ndex:60}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:60}}
+execute as @s[nbt={ndex:61}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:61}}
+execute as @s[nbt={ndex:62}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:62}}
+execute as @s[nbt={ndex:63}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:63}}
+execute as @s[nbt={ndex:64}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:64}}
+execute as @s[nbt={ndex:65}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:65}}
+execute as @s[nbt={ndex:66}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:66}}
+execute as @s[nbt={ndex:67}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:67}}
+execute as @s[nbt={ndex:68}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:68}}
+execute as @s[nbt={ndex:69}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:69}}
+execute as @s[nbt={ndex:70}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:70}}
+execute as @s[nbt={ndex:71}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:71}}
+execute as @s[nbt={ndex:72}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:72}}
+execute as @s[nbt={ndex:73}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:73}}
+execute as @s[nbt={ndex:74}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:74}}
+execute as @s[nbt={ndex:75}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:75}}
+execute as @s[nbt={ndex:76}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:76}}
+execute as @s[nbt={ndex:77}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:77}}
+execute as @s[nbt={ndex:78}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:78}}
+execute as @s[nbt={ndex:79}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:79}}
+execute as @s[nbt={ndex:80}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:80}}
+execute as @s[nbt={ndex:81}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:81}}
+execute as @s[nbt={ndex:82}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:82}}
+execute as @s[nbt={ndex:83}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:83}}
+execute as @s[nbt={ndex:84}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:84}}
+execute as @s[nbt={ndex:85}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:85}}
+execute as @s[nbt={ndex:86}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:86}}
+execute as @s[nbt={ndex:87}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:87}}
+execute as @s[nbt={ndex:88}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:88}}
+execute as @s[nbt={ndex:89}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:89}}
+execute as @s[nbt={ndex:90}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:90}}
+execute as @s[nbt={ndex:91}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:91}}
+execute as @s[nbt={ndex:92}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:92}}
+execute as @s[nbt={ndex:93}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:93}}
+execute as @s[nbt={ndex:94}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:94}}
+execute as @s[nbt={ndex:95}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:95}}
+execute as @s[nbt={ndex:96}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:96}}
+execute as @s[nbt={ndex:97}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:97}}
+execute as @s[nbt={ndex:98}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:98}}
+execute as @s[nbt={ndex:99}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:99}}
+execute as @s[nbt={ndex:100}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:100}}
+execute as @s[nbt={ndex:101}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:101}}
+execute as @s[nbt={ndex:102}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:102}}
+execute as @s[nbt={ndex:103}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:103}}
+execute as @s[nbt={ndex:104}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:104}}
+execute as @s[nbt={ndex:105}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:105}}
+execute as @s[nbt={ndex:106}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:106}}
+execute as @s[nbt={ndex:107}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:107}}
+execute as @s[nbt={ndex:108}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:108}}
+execute as @s[nbt={ndex:109}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:109}}
+execute as @s[nbt={ndex:110}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:110}}
+execute as @s[nbt={ndex:111}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:111}}
+execute as @s[nbt={ndex:112}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:112}}
+execute as @s[nbt={ndex:113}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:113}}
+execute as @s[nbt={ndex:114}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:114}}
+execute as @s[nbt={ndex:115}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:115}}
+execute as @s[nbt={ndex:116}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:116}}
+execute as @s[nbt={ndex:117}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:117}}
+execute as @s[nbt={ndex:118}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:118}}
+execute as @s[nbt={ndex:119}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:119}}
+execute as @s[nbt={ndex:120}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:120}}
+execute as @s[nbt={ndex:121}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:121}}
+execute as @s[nbt={ndex:122}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:122}}
+execute as @s[nbt={ndex:123}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:123}}
+execute as @s[nbt={ndex:124}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:124}}
+execute as @s[nbt={ndex:125}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:125}}
+execute as @s[nbt={ndex:126}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:126}}
+execute as @s[nbt={ndex:127}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:127}}
+execute as @s[nbt={ndex:128}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:128}}
+execute as @s[nbt={ndex:129}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:129}}
+execute as @s[nbt={ndex:130}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:130}}
+execute as @s[nbt={ndex:131}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:131}}
+execute as @s[nbt={ndex:132}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:132}}
+execute as @s[nbt={ndex:133}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:133}}
+execute as @s[nbt={ndex:134}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:134}}
+execute as @s[nbt={ndex:135}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:135}}
+execute as @s[nbt={ndex:136}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:136}}
+execute as @s[nbt={ndex:137}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:137}}
+execute as @s[nbt={ndex:138}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:138}}
+execute as @s[nbt={ndex:139}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:139}}
+execute as @s[nbt={ndex:140}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:140}}
+execute as @s[nbt={ndex:141}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:141}}
+execute as @s[nbt={ndex:142}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:142}}
+execute as @s[nbt={ndex:143}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:143}}
+execute as @s[nbt={ndex:144}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:144}}
+execute as @s[nbt={ndex:145}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:145}}
+execute as @s[nbt={ndex:146}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:146}}
+execute as @s[nbt={ndex:147}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:147}}
+execute as @s[nbt={ndex:148}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:148}}
+execute as @s[nbt={ndex:149}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:149}}
+execute as @s[nbt={ndex:150}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:150}}
+execute as @s[nbt={ndex:151}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:151}}
+execute as @s[nbt={ndex:152}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:152}}
+execute as @s[nbt={ndex:153}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:153}}
+execute as @s[nbt={ndex:154}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:154}}
+execute as @s[nbt={ndex:155}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:155}}
+execute as @s[nbt={ndex:156}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:156}}
+execute as @s[nbt={ndex:157}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:157}}
+execute as @s[nbt={ndex:158}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:158}}
+execute as @s[nbt={ndex:159}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:159}}
+execute as @s[nbt={ndex:160}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:160}}
+execute as @s[nbt={ndex:161}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:161}}
+execute as @s[nbt={ndex:162}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:162}}
+execute as @s[nbt={ndex:163}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:163}}
+execute as @s[nbt={ndex:164}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:164}}
+execute as @s[nbt={ndex:165}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:165}}
+execute as @s[nbt={ndex:166}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:166}}
+execute as @s[nbt={ndex:167}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:167}}
+execute as @s[nbt={ndex:168}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:168}}
+execute as @s[nbt={ndex:169}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:169}}
+execute as @s[nbt={ndex:170}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:170}}
+execute as @s[nbt={ndex:171}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:171}}
+execute as @s[nbt={ndex:172}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:172}}
+execute as @s[nbt={ndex:173}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:173}}
+execute as @s[nbt={ndex:174}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:174}}
+execute as @s[nbt={ndex:175}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:175}}
+execute as @s[nbt={ndex:176}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:176}}
+execute as @s[nbt={ndex:177}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:177}}
+execute as @s[nbt={ndex:178}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:178}}
+execute as @s[nbt={ndex:179}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:179}}
+execute as @s[nbt={ndex:180}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:180}}
+execute as @s[nbt={ndex:181}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:181}}
+execute as @s[nbt={ndex:182}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:182}}
+execute as @s[nbt={ndex:183}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:183}}
+execute as @s[nbt={ndex:184}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:184}}
+execute as @s[nbt={ndex:185}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:185}}
+execute as @s[nbt={ndex:186}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:186}}
+execute as @s[nbt={ndex:187}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:187}}
+execute as @s[nbt={ndex:188}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:188}}
+execute as @s[nbt={ndex:189}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:189}}
+execute as @s[nbt={ndex:190}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:190}}
+execute as @s[nbt={ndex:191}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:191}}
+execute as @s[nbt={ndex:192}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:192}}
+execute as @s[nbt={ndex:193}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:193}}
+execute as @s[nbt={ndex:194}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:194}}
+execute as @s[nbt={ndex:195}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:195}}
+execute as @s[nbt={ndex:196}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:196}}
+execute as @s[nbt={ndex:197}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:197}}
+execute as @s[nbt={ndex:198}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:198}}
+execute as @s[nbt={ndex:199}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:199}}
+execute as @s[nbt={ndex:200}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:200}}
+execute as @s[nbt={ndex:201}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:201}}
+execute as @s[nbt={ndex:202}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:202}}
+execute as @s[nbt={ndex:203}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:203}}
+execute as @s[nbt={ndex:204}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:204}}
+execute as @s[nbt={ndex:205}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:205}}
+execute as @s[nbt={ndex:206}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:206}}
+execute as @s[nbt={ndex:207}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:207}}
+execute as @s[nbt={ndex:208}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:208}}
+execute as @s[nbt={ndex:209}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:209}}
+execute as @s[nbt={ndex:210}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:210}}
+execute as @s[nbt={ndex:211}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:211}}
+execute as @s[nbt={ndex:212}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:212}}
+execute as @s[nbt={ndex:213}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:213}}
+execute as @s[nbt={ndex:214}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:214}}
+execute as @s[nbt={ndex:215}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:215}}
+execute as @s[nbt={ndex:216}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:216}}
+execute as @s[nbt={ndex:217}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:217}}
+execute as @s[nbt={ndex:218}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:218}}
+execute as @s[nbt={ndex:219}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:219}}
+execute as @s[nbt={ndex:220}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:220}}
+execute as @s[nbt={ndex:221}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:221}}
+execute as @s[nbt={ndex:222}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:222}}
+execute as @s[nbt={ndex:223}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:223}}
+execute as @s[nbt={ndex:224}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:224}}
+execute as @s[nbt={ndex:225}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:225}}
+execute as @s[nbt={ndex:226}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:226}}
+execute as @s[nbt={ndex:227}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:227}}
+execute as @s[nbt={ndex:228}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:228}}
+execute as @s[nbt={ndex:229}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:229}}
+execute as @s[nbt={ndex:230}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:230}}
+execute as @s[nbt={ndex:231}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:231}}
+execute as @s[nbt={ndex:232}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:232}}
+execute as @s[nbt={ndex:233}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:233}}
+execute as @s[nbt={ndex:234}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:234}}
+execute as @s[nbt={ndex:235}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:235}}
+execute as @s[nbt={ndex:236}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:236}}
+execute as @s[nbt={ndex:237}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:237}}
+execute as @s[nbt={ndex:238}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:238}}
+execute as @s[nbt={ndex:239}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:239}}
+execute as @s[nbt={ndex:240}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:240}}
+execute as @s[nbt={ndex:241}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:241}}
+execute as @s[nbt={ndex:242}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:242}}
+execute as @s[nbt={ndex:243}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:243}}
+execute as @s[nbt={ndex:244}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:244}}
+execute as @s[nbt={ndex:245}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:245}}
+execute as @s[nbt={ndex:246}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:246}}
+execute as @s[nbt={ndex:247}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:247}}
+execute as @s[nbt={ndex:248}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:248}}
+execute as @s[nbt={ndex:249}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:249}}
+execute as @s[nbt={ndex:250}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:250}}
+execute as @s[nbt={ndex:251}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:251}}
+execute as @s[nbt={ndex:252}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:252}}
+execute as @s[nbt={ndex:253}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:253}}
+execute as @s[nbt={ndex:254}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:254}}
+execute as @s[nbt={ndex:255}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:255}}
+execute as @s[nbt={ndex:256}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:256}}
+execute as @s[nbt={ndex:257}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:257}}
+execute as @s[nbt={ndex:258}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:258}}
+execute as @s[nbt={ndex:259}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:259}}
+execute as @s[nbt={ndex:260}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:260}}
+execute as @s[nbt={ndex:261}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:261}}
+execute as @s[nbt={ndex:262}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:262}}
+execute as @s[nbt={ndex:263}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:263}}
+execute as @s[nbt={ndex:264}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:264}}
+execute as @s[nbt={ndex:265}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:265}}
+execute as @s[nbt={ndex:266}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:266}}
+execute as @s[nbt={ndex:267}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:267}}
+execute as @s[nbt={ndex:268}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:268}}
+execute as @s[nbt={ndex:269}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:269}}
+execute as @s[nbt={ndex:270}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:270}}
+execute as @s[nbt={ndex:271}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:271}}
+execute as @s[nbt={ndex:272}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:272}}
+execute as @s[nbt={ndex:273}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:273}}
+execute as @s[nbt={ndex:274}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:274}}
+execute as @s[nbt={ndex:275}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:275}}
+execute as @s[nbt={ndex:276}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:276}}
+execute as @s[nbt={ndex:277}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:277}}
+execute as @s[nbt={ndex:278}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:278}}
+execute as @s[nbt={ndex:279}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:279}}
+execute as @s[nbt={ndex:280}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:280}}
+execute as @s[nbt={ndex:281}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:281}}
+execute as @s[nbt={ndex:282}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:282}}
+execute as @s[nbt={ndex:283}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:283}}
+execute as @s[nbt={ndex:284}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:284}}
+execute as @s[nbt={ndex:285}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:285}}
+execute as @s[nbt={ndex:286}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:286}}
+execute as @s[nbt={ndex:287}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:287}}
+execute as @s[nbt={ndex:288}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:288}}
+execute as @s[nbt={ndex:289}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:289}}
+execute as @s[nbt={ndex:290}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:290}}
+execute as @s[nbt={ndex:291}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:291}}
+execute as @s[nbt={ndex:292}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:292}}
+execute as @s[nbt={ndex:293}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:293}}
+execute as @s[nbt={ndex:294}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:294}}
+execute as @s[nbt={ndex:295}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:295}}
+execute as @s[nbt={ndex:296}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:296}}
+execute as @s[nbt={ndex:297}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:297}}
+execute as @s[nbt={ndex:298}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:298}}
+execute as @s[nbt={ndex:299}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:299}}
+execute as @s[nbt={ndex:300}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:300}}
+execute as @s[nbt={ndex:301}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:301}}
+execute as @s[nbt={ndex:302}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:302}}
+execute as @s[nbt={ndex:303}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:303}}
+execute as @s[nbt={ndex:304}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:304}}
+execute as @s[nbt={ndex:305}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:305}}
+execute as @s[nbt={ndex:306}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:306}}
+execute as @s[nbt={ndex:307}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:307}}
+execute as @s[nbt={ndex:308}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:308}}
+execute as @s[nbt={ndex:309}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:309}}
+execute as @s[nbt={ndex:310}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:310}}
+execute as @s[nbt={ndex:311}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:311}}
+execute as @s[nbt={ndex:312}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:312}}
+execute as @s[nbt={ndex:313}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:313}}
+execute as @s[nbt={ndex:314}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:314}}
+execute as @s[nbt={ndex:315}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:315}}
+execute as @s[nbt={ndex:316}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:316}}
+execute as @s[nbt={ndex:317}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:317}}
+execute as @s[nbt={ndex:318}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:318}}
+execute as @s[nbt={ndex:319}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:319}}
+execute as @s[nbt={ndex:320}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:320}}
+execute as @s[nbt={ndex:321}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:321}}
+execute as @s[nbt={ndex:322}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:322}}
+execute as @s[nbt={ndex:323}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:323}}
+execute as @s[nbt={ndex:324}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:324}}
+execute as @s[nbt={ndex:325}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:325}}
+execute as @s[nbt={ndex:326}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:326}}
+execute as @s[nbt={ndex:327}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:327}}
+execute as @s[nbt={ndex:328}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:328}}
+execute as @s[nbt={ndex:329}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:329}}
+execute as @s[nbt={ndex:330}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:330}}
+execute as @s[nbt={ndex:331}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:331}}
+execute as @s[nbt={ndex:332}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:332}}
+execute as @s[nbt={ndex:333}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:333}}
+execute as @s[nbt={ndex:334}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:334}}
+execute as @s[nbt={ndex:335}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:335}}
+execute as @s[nbt={ndex:336}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:336}}
+execute as @s[nbt={ndex:337}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:337}}
+execute as @s[nbt={ndex:338}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:338}}
+execute as @s[nbt={ndex:339}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:339}}
+execute as @s[nbt={ndex:340}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:340}}
+execute as @s[nbt={ndex:341}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:341}}
+execute as @s[nbt={ndex:342}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:342}}
+execute as @s[nbt={ndex:343}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:343}}
+execute as @s[nbt={ndex:344}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:344}}
+execute as @s[nbt={ndex:345}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:345}}
+execute as @s[nbt={ndex:346}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:346}}
+execute as @s[nbt={ndex:347}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:347}}
+execute as @s[nbt={ndex:348}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:348}}
+execute as @s[nbt={ndex:349}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:349}}
+execute as @s[nbt={ndex:350}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:350}}
+execute as @s[nbt={ndex:351}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:351}}
+execute as @s[nbt={ndex:352}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:352}}
+execute as @s[nbt={ndex:353}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:353}}
+execute as @s[nbt={ndex:354}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:354}}
+execute as @s[nbt={ndex:355}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:355}}
+execute as @s[nbt={ndex:356}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:356}}
+execute as @s[nbt={ndex:357}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:357}}
+execute as @s[nbt={ndex:358}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:358}}
+execute as @s[nbt={ndex:359}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:359}}
+execute as @s[nbt={ndex:360}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:360}}
+execute as @s[nbt={ndex:361}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:361}}
+execute as @s[nbt={ndex:362}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:362}}
+execute as @s[nbt={ndex:363}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:363}}
+execute as @s[nbt={ndex:364}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:364}}
+execute as @s[nbt={ndex:365}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:365}}
+execute as @s[nbt={ndex:366}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:366}}
+execute as @s[nbt={ndex:367}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:367}}
+execute as @s[nbt={ndex:368}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:368}}
+execute as @s[nbt={ndex:369}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:369}}
+execute as @s[nbt={ndex:370}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:370}}
+execute as @s[nbt={ndex:371}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:371}}
+execute as @s[nbt={ndex:372}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:372}}
+execute as @s[nbt={ndex:373}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:373}}
+execute as @s[nbt={ndex:374}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:374}}
+execute as @s[nbt={ndex:375}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:375}}
+execute as @s[nbt={ndex:376}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:376}}
+execute as @s[nbt={ndex:377}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:377}}
+execute as @s[nbt={ndex:378}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:378}}
+execute as @s[nbt={ndex:379}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:379}}
+execute as @s[nbt={ndex:380}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:380}}
+execute as @s[nbt={ndex:381}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:381}}
+execute as @s[nbt={ndex:382}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:382}}
+execute as @s[nbt={ndex:383}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:383}}
+execute as @s[nbt={ndex:384}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:384}}
+execute as @s[nbt={ndex:385}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:385}}
+execute as @s[nbt={ndex:386}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:386}}
+execute as @s[nbt={ndex:387}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:387}}
+execute as @s[nbt={ndex:388}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:388}}
+execute as @s[nbt={ndex:389}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:389}}
+execute as @s[nbt={ndex:390}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:390}}
+execute as @s[nbt={ndex:391}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:391}}
+execute as @s[nbt={ndex:392}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:392}}
+execute as @s[nbt={ndex:393}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:393}}
+execute as @s[nbt={ndex:394}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:394}}
+execute as @s[nbt={ndex:395}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:395}}
+execute as @s[nbt={ndex:396}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:396}}
+execute as @s[nbt={ndex:397}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:397}}
+execute as @s[nbt={ndex:398}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:398}}
+execute as @s[nbt={ndex:399}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:399}}
+execute as @s[nbt={ndex:400}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:400}}
+execute as @s[nbt={ndex:401}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:401}}
+execute as @s[nbt={ndex:402}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:402}}
+execute as @s[nbt={ndex:403}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:403}}
+execute as @s[nbt={ndex:404}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:404}}
+execute as @s[nbt={ndex:405}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:405}}
+execute as @s[nbt={ndex:406}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:406}}
+execute as @s[nbt={ndex:407}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:407}}
+execute as @s[nbt={ndex:408}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:408}}
+execute as @s[nbt={ndex:409}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:409}}
+execute as @s[nbt={ndex:410}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:410}}
+execute as @s[nbt={ndex:411}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:411}}
+execute as @s[nbt={ndex:412}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:412}}
+execute as @s[nbt={ndex:413}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:413}}
+execute as @s[nbt={ndex:414}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:414}}
+execute as @s[nbt={ndex:415}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:415}}
+execute as @s[nbt={ndex:416}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:416}}
+execute as @s[nbt={ndex:417}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:417}}
+execute as @s[nbt={ndex:418}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:418}}
+execute as @s[nbt={ndex:419}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:419}}
+execute as @s[nbt={ndex:420}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:420}}
+execute as @s[nbt={ndex:421}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:421}}
+execute as @s[nbt={ndex:422}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:422}}
+execute as @s[nbt={ndex:423}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:423}}
+execute as @s[nbt={ndex:424}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:424}}
+execute as @s[nbt={ndex:425}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:425}}
+execute as @s[nbt={ndex:426}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:426}}
+execute as @s[nbt={ndex:427}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:427}}
+execute as @s[nbt={ndex:428}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:428}}
+execute as @s[nbt={ndex:429}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:429}}
+execute as @s[nbt={ndex:430}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:430}}
+execute as @s[nbt={ndex:431}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:431}}
+execute as @s[nbt={ndex:432}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:432}}
+execute as @s[nbt={ndex:433}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:433}}
+execute as @s[nbt={ndex:434}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:434}}
+execute as @s[nbt={ndex:435}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:435}}
+execute as @s[nbt={ndex:436}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:436}}
+execute as @s[nbt={ndex:437}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:437}}
+execute as @s[nbt={ndex:438}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:438}}
+execute as @s[nbt={ndex:439}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:439}}
+execute as @s[nbt={ndex:440}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:440}}
+execute as @s[nbt={ndex:441}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:441}}
+execute as @s[nbt={ndex:442}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:442}}
+execute as @s[nbt={ndex:443}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:443}}
+execute as @s[nbt={ndex:444}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:444}}
+execute as @s[nbt={ndex:445}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:445}}
+execute as @s[nbt={ndex:446}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:446}}
+execute as @s[nbt={ndex:447}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:447}}
+execute as @s[nbt={ndex:448}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:448}}
 
 
-#Sets gives trigger text
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=1},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 1"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=2},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 2"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=3},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 3"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=4},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 4"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=5},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 5"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=6},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 6"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=7},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 7"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=8},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 8"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=9},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 9"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=10},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 10"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=11},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 11"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=12},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 12"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=13},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 13"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=14},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 14"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=15},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 15"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=16},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 16"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=17},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 17"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=18},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 18"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=19},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 19"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=20},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 20"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=21},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 21"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=22},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 22"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=23},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 23"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=24},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 24"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=25},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 25"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=26},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 26"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=27},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 27"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=28},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 28"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=29},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 29"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=30},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 30"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=31},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 31"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=32},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 32"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=33},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 33"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=34},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 34"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=35},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 35"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=36},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 36"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=37},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 37"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=38},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 38"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=39},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 39"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=40},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 40"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=41},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 41"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=42},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 42"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=43},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 43"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=44},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 44"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=45},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 45"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=46},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 46"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=47},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 47"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=48},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 48"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=49},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 49"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=50},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 50"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=51},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 51"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=52},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 52"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=53},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 53"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=54},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 54"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=55},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 55"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=56},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 56"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=57},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 57"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=58},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 58"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=59},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 59"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=60},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 60"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=61},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 61"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=62},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 62"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=63},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 63"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=64},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 64"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=65},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 65"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=66},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 66"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=67},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 67"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=68},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 68"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=69},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 69"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=70},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 70"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=71},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 71"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=72},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 72"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=73},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 73"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=74},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 74"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=75},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 75"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=76},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 76"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=77},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 77"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=78},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 78"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=79},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 79"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=80},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 80"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=81},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 81"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=82},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 82"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=83},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 83"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=84},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 84"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=85},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 85"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=86},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 86"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=87},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 87"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=88},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 88"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=89},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 89"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=90},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 90"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=91},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 91"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=92},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 92"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=93},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 93"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=94},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 94"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=95},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 95"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=96},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 96"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=97},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 97"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=98},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 98"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=99},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 99"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=100},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 100"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=101},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 101"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=102},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 102"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=103},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 103"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=104},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 104"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=105},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 105"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=106},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 106"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=107},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 107"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=108},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 108"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=109},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 109"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=110},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 110"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=111},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 111"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=112},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 112"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=113},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 113"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=114},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 114"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=115},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 115"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=116},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 116"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=117},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 117"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=118},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 118"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=119},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 119"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=120},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 120"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=121},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 121"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=122},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 122"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=123},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 123"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=124},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 124"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=125},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 125"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=126},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 126"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=127},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 127"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=128},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 128"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=129},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 129"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=130},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 130"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=131},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 131"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=132},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 132"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=133},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 133"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=134},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 134"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=135},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 135"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=136},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 136"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=137},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 137"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=138},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 138"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=139},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 139"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=140},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 140"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=141},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 141"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=142},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 142"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=143},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 143"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=144},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 144"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=145},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 145"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=146},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 146"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=147},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 147"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=148},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 148"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=149},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 149"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=150},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 150"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=151},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 151"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=152},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 152"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=153},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 153"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=154},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 154"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=155},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 155"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=156},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 156"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=157},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 157"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=158},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 158"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=159},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 159"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=160},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 160"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=161},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 161"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=162},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 162"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=163},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 163"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=164},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 164"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=165},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 165"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=166},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 166"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=167},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 167"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=168},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 168"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=169},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 169"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=170},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 170"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=171},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 171"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=172},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 172"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=173},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 173"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=174},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 174"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=175},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 175"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=176},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 176"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=177},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 177"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=178},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 178"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=179},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 179"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=180},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 180"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=181},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 181"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=182},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 182"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=183},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 183"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=184},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 184"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=185},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 185"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=186},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 186"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=187},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 187"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=188},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 188"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=189},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 189"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=190},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 190"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=191},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 191"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=192},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 192"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=193},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 193"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=194},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 194"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=195},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 195"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=196},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 196"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=197},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 197"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=198},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 198"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=199},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 199"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=200},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 200"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=201},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 201"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=202},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 202"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=203},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 203"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=204},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 204"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=205},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 205"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=206},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 206"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=207},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 207"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=208},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 208"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=209},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 209"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=210},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 210"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=211},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 211"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=212},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 212"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=213},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 213"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=214},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 214"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=215},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 215"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=216},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 216"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=217},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 217"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=218},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 218"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=219},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 219"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=220},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 220"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=221},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 221"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=222},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 222"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=223},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 223"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=224},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 224"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=225},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 225"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=226},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 226"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=227},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 227"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=228},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 228"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=229},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 229"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=230},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 230"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=231},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 231"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=232},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 232"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=233},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 233"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=234},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 234"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=235},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 235"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=236},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 236"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=237},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 237"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=238},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 238"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=239},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 239"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=240},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 240"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=241},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 241"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=242},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 242"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=243},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 243"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=244},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 244"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=245},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 245"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=246},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 246"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=247},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 247"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=248},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 248"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=249},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 249"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=250},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 250"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=251},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 251"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=252},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 252"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=253},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 253"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=254},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 254"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=255},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 255"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=256},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 256"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=257},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 257"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=258},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 258"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=259},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 259"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=260},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 260"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=261},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 261"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=262},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 262"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=263},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 263"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=264},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 264"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=265},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 265"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=266},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 266"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=267},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 267"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=268},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 268"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=269},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 269"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=270},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 270"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=271},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 271"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=272},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 272"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=273},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 273"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=274},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 274"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=275},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 275"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=276},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 276"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=277},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 277"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=278},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 278"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=279},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 279"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=280},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 280"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=281},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 281"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=282},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 282"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=283},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 283"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=284},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 284"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=285},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 285"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=286},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 286"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=287},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 287"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=288},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 288"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=289},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 289"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=290},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 290"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=291},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 291"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=292},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 292"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=293},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 293"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=294},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 294"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=295},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 295"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=296},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 296"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=297},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 297"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=298},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 298"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=299},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 299"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=300},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 300"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=301},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 301"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=302},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 302"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=303},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 303"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=304},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 304"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=305},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 305"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=306},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 306"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=307},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 307"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=308},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 308"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=309},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 309"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=310},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 310"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=311},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 311"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=312},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 312"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=313},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 313"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=314},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 314"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=315},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 315"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=316},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 316"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=317},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 317"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=318},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 318"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=319},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 319"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=320},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 320"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=321},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 321"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=322},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 322"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=323},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 323"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=324},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 324"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=325},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 325"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=326},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 326"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=327},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 327"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=328},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 328"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=329},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 329"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=330},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 330"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=331},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 331"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=332},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 332"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=333},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 333"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=334},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 334"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=335},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 335"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=336},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 336"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=337},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 337"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=338},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 338"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=339},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 339"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=340},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 340"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=341},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 341"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=342},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 342"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=343},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 343"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=344},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 344"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=345},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 345"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=346},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 346"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=347},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 347"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=348},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 348"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=349},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 349"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=350},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 350"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=351},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 351"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=352},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 352"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=353},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 353"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=354},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 354"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=355},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 355"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=356},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 356"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=357},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 357"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=358},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 358"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=359},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 359"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=360},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 360"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=361},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 361"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=362},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 362"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=363},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 363"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=364},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 364"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=365},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 365"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=366},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 366"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=367},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 367"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=368},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 368"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=369},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 369"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=370},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 370"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=371},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 371"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=372},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 372"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=373},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 373"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=374},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 374"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=375},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 375"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=376},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 376"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=377},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 377"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=378},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 378"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=379},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 379"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=380},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 380"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=381},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 381"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=382},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 382"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=383},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 383"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=384},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 384"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=385},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 385"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=386},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 386"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=387},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 387"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=388},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 388"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=389},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 389"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=390},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 390"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=391},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 391"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=392},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 392"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=393},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 393"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=394},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 394"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=395},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 395"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=396},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 396"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=397},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 397"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=398},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 398"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=399},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 399"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=400},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 400"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=401},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 401"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=402},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 402"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=403},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 403"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=404},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 404"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=405},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 405"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=406},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 406"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=407},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 407"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=408},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 408"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=409},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 409"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=410},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 410"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=411},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 411"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=412},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 412"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=413},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 413"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=414},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 414"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=415},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 415"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=416},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 416"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=417},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 417"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=418},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 418"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=419},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 419"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=420},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 420"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=421},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 421"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=422},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 422"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=423},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 423"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=424},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 424"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=425},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 425"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=426},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 426"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=427},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 427"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=428},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 428"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=429},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 429"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=430},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 430"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=431},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 431"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=432},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 432"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=433},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 433"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=434},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 434"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=435},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 435"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=436},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 436"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=437},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 437"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=438},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 438"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=439},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 439"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=440},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 440"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=441},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 441"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=442},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 442"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=443},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 443"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=444},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 444"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=445},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 445"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=446},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 446"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=447},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 447"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=448},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 448"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=449},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 449"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=450},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 450"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=451},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 451"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=452},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 452"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=453},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 453"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=454},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 454"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=455},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 455"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=456},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 456"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=457},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 457"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=458},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 458"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=459},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 459"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=460},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 460"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=461},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 461"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=462},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 462"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=463},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 463"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=464},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 464"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=465},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 465"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=466},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 466"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=467},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 467"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=468},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 468"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=469},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 469"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=470},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 470"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=471},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 471"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=472},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 472"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=473},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 473"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=474},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 474"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=475},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 475"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=476},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 476"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=477},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 477"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=478},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 478"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=479},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 479"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=480},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 480"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=481},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 481"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=482},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 482"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=483},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 483"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=484},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 484"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=485},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 485"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=486},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 486"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=487},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 487"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=488},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 488"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=489},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 489"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=490},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 490"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=491},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 491"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=492},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 492"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=493},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 493"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=494},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 494"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=495},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 495"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=496},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 496"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=497},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 497"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=498},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 498"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=499},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 499"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=500},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 500"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=501},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 501"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=502},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 502"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=503},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 503"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=504},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 504"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=505},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 505"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=506},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 506"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=507},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 507"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=508},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 508"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=509},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 509"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=510},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 510"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=511},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 511"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=512},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 512"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=513},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 513"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=514},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 514"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=515},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 515"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=516},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 516"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=517},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 517"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=518},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 518"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=519},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 519"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=520},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 520"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=521},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 521"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=522},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 522"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=523},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 523"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=524},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 524"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=525},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 525"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=526},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 526"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=527},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 527"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=528},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 528"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=529},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 529"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=530},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 530"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=531},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 531"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=532},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 532"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=533},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 533"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=534},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 534"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=535},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 535"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=536},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 536"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=537},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 537"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=538},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 538"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=539},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 539"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=540},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 540"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=541},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 541"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=542},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 542"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=543},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 543"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=544},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 544"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=545},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 545"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=546},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 546"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=547},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 547"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=548},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 548"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=549},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 549"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=550},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 550"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=551},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 551"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=552},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 552"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=553},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 553"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=554},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 554"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=555},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 555"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=556},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 556"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=557},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 557"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=558},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 558"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=559},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 559"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=560},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 560"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=561},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 561"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=562},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 562"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=563},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 563"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=564},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 564"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=565},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 565"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=566},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 566"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=567},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 567"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=568},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 568"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=569},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 569"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=570},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 570"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=571},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 571"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=572},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 572"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=573},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 573"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=574},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 574"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=575},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 575"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=576},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 576"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=577},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 577"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=578},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 578"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=579},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 579"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=580},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 580"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=581},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 581"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=582},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 582"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=583},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 583"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=584},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 584"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=585},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 585"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=586},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 586"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=587},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 587"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=588},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 588"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=589},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 589"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=590},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 590"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=591},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 591"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=592},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 592"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=593},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 593"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=594},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 594"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=595},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 595"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=596},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 596"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=597},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 597"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=598},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 598"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=599},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 599"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=600},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 600"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=601},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 601"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=602},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 602"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=603},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 603"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=604},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 604"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=605},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 605"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=606},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 606"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=607},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 607"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=608},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 608"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=609},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 609"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=610},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 610"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=611},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 611"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=612},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 612"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=613},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 613"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=614},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 614"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=615},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 615"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=616},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 616"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=617},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 617"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=618},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 618"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=619},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 619"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=620},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 620"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=621},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 621"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=622},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 622"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=623},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 623"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=624},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 624"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=625},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 625"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=626},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 626"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=627},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 627"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=628},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 628"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=629},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 629"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=630},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 630"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=631},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 631"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=632},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 632"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=633},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 633"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=634},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 634"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=635},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 635"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=636},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 636"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=637},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 637"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=638},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 638"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=639},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 639"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=640},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 640"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=641},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 641"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=642},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 642"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=643},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 643"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=644},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 644"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=645},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 645"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=646},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 646"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=647},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 647"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=648},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 648"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=649},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 649"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=650},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 650"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=651},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 651"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=652},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 652"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=653},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 653"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=654},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 654"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=655},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 655"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=656},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 656"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=657},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 657"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=658},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 658"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=659},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 659"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=660},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 660"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=661},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 661"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=662},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 662"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=663},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 663"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=664},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 664"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=665},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 665"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=666},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 666"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=667},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 667"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=668},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 668"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=669},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 669"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=670},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 670"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=671},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 671"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=672},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 672"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=673},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 673"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=674},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 674"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=675},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 675"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=676},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 676"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=677},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 677"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=678},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 678"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=679},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 679"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=680},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 680"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=681},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 681"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=682},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 682"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=683},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 683"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=684},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 684"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=685},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 685"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=686},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 686"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=687},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 687"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=688},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 688"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=689},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 689"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=690},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 690"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=691},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 691"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=692},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 692"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=693},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 693"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=694},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 694"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=695},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 695"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=696},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 696"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=697},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 697"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=698},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 698"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=699},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 699"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=700},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 700"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=701},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 701"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=702},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 702"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=703},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 703"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=704},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 704"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=705},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 705"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=706},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 706"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=707},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 707"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=708},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 708"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=709},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 709"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=710},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 710"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=711},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 711"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=712},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 712"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=713},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 713"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=714},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 714"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=715},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 715"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=716},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 716"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=717},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 717"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=718},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 718"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=719},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 719"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=720},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 720"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=721},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 721"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=722},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 722"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=723},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 723"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=724},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 724"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=725},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 725"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=726},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 726"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=727},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 727"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=728},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 728"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=729},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 729"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=730},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 730"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=731},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 731"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=732},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 732"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=733},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 733"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=734},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 734"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=735},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 735"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=736},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 736"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=737},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 737"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=738},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 738"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=739},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 739"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=740},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 740"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=741},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 741"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=742},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 742"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=743},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 743"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=744},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 744"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=745},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 745"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=746},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 746"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=747},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 747"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=748},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 748"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=749},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 749"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=750},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 750"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=751},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 751"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=752},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 752"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=753},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 753"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=754},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 754"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=755},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 755"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=756},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 756"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=757},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 757"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=758},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 758"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=759},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 759"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=760},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 760"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=761},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 761"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=762},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 762"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=763},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 763"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=764},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 764"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=765},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 765"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=766},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 766"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=767},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 767"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=768},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 768"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=769},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 769"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=770},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 770"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=771},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 771"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=772},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 772"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=773},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 773"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=774},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 774"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=775},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 775"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=776},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 776"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=777},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 777"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=778},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 778"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=779},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 779"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=780},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 780"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=781},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 781"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=782},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 782"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=783},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 783"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=784},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 784"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=785},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 785"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=786},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 786"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=787},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 787"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=788},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 788"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=789},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 789"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=790},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 790"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=791},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 791"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=792},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 792"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=793},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 793"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=794},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 794"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=795},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 795"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=796},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 796"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=797},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 797"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=798},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 798"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=799},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 799"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=800},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 800"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=801},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 801"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=802},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 802"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=803},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 803"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=804},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 804"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=805},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 805"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=806},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 806"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=807},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 807"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=808},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 808"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=809},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 809"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=810},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 810"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=811},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 811"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=812},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 812"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=813},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 813"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=814},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 814"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=815},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 815"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=816},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 816"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=817},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 817"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=818},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 818"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=819},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 819"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=820},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 820"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=821},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 821"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=822},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 822"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=823},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 823"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=824},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 824"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=825},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 825"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=826},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 826"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=827},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 827"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=828},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 828"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=829},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 829"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=830},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 830"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=831},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 831"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=832},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 832"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=833},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 833"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=834},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 834"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=835},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 835"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=836},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 836"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=837},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 837"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=838},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 838"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=839},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 839"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=840},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 840"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=841},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 841"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=842},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 842"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=843},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 843"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=844},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 844"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=845},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 845"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=846},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 846"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=847},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 847"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=848},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 848"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=849},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 849"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=850},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 850"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=851},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 851"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=852},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 852"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=853},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 853"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=854},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 854"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=855},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 855"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=856},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 856"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=857},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 857"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=858},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 858"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=859},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 859"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=860},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 860"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=861},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 861"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=862},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 862"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=863},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 863"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=864},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 864"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=865},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 865"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=866},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 866"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=867},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 867"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=868},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 868"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=869},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 869"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=870},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 870"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=871},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 871"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=872},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 872"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=873},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 873"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=874},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 874"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=875},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 875"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=876},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 876"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=877},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 877"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=878},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 878"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=879},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 879"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=880},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 880"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=881},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 881"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=882},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 882"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=883},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 883"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=884},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 884"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=885},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 885"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=886},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 886"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=887},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 887"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=888},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 888"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=889},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 889"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=890},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 890"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=891},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 891"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=892},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 892"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=893},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 893"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=894},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 894"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=895},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 895"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=896},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 896"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=897},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 897"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=898},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 898"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=899},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 899"}}]
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=900},tag=!Talked] run tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=36] ["",{"text":"[Confirm]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerHOF set 900"}}]
+execute as @s[nbt={ndex:451}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:451}}
+execute as @s[nbt={ndex:452}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:452}}
+execute as @s[nbt={ndex:453}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:453}}
+execute as @s[nbt={ndex:454}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:454}}
+execute as @s[nbt={ndex:455}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:455}}
+execute as @s[nbt={ndex:456}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:456}}
+execute as @s[nbt={ndex:457}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:457}}
+execute as @s[nbt={ndex:458}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:458}}
+execute as @s[nbt={ndex:459}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:459}}
+execute as @s[nbt={ndex:460}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:460}}
+execute as @s[nbt={ndex:461}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:461}}
+execute as @s[nbt={ndex:462}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:462}}
+execute as @s[nbt={ndex:463}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:463}}
+execute as @s[nbt={ndex:464}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:464}}
+execute as @s[nbt={ndex:465}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:465}}
+execute as @s[nbt={ndex:466}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:466}}
+execute as @s[nbt={ndex:467}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:467}}
+execute as @s[nbt={ndex:468}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:468}}
+execute as @s[nbt={ndex:469}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:469}}
+execute as @s[nbt={ndex:470}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:470}}
+execute as @s[nbt={ndex:471}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:471}}
+execute as @s[nbt={ndex:472}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:472}}
+execute as @s[nbt={ndex:473}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:473}}
+execute as @s[nbt={ndex:474}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:474}}
+execute as @s[nbt={ndex:475}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:475}}
+execute as @s[nbt={ndex:476}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:476}}
+execute as @s[nbt={ndex:477}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:477}}
+execute as @s[nbt={ndex:478}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:478}}
+execute as @s[nbt={ndex:479}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:479}}
+execute as @s[nbt={ndex:480}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:480}}
+execute as @s[nbt={ndex:481}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:481}}
+execute as @s[nbt={ndex:482}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:482}}
+execute as @s[nbt={ndex:483}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:483}}
+execute as @s[nbt={ndex:484}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:484}}
+execute as @s[nbt={ndex:485}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:485}}
+execute as @s[nbt={ndex:486}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:486}}
+execute as @s[nbt={ndex:487}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:487}}
+execute as @s[nbt={ndex:488}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:488}}
+execute as @s[nbt={ndex:489}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:489}}
+execute as @s[nbt={ndex:490}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:490}}
+execute as @s[nbt={ndex:491}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:491}}
+execute as @s[nbt={ndex:492}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:492}}
+execute as @s[nbt={ndex:493}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:493}}
+execute as @s[nbt={ndex:494}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:494}}
+execute as @s[nbt={ndex:495}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:495}}
+execute as @s[nbt={ndex:496}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:496}}
+execute as @s[nbt={ndex:497}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:497}}
+execute as @s[nbt={ndex:498}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:498}}
+execute as @s[nbt={ndex:499}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:499}}
+execute as @s[nbt={ndex:500}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:500}}
+execute as @s[nbt={ndex:501}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:501}}
+execute as @s[nbt={ndex:502}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:502}}
+execute as @s[nbt={ndex:503}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:503}}
+execute as @s[nbt={ndex:504}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:504}}
+execute as @s[nbt={ndex:505}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:505}}
+execute as @s[nbt={ndex:506}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:506}}
+execute as @s[nbt={ndex:507}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:507}}
+execute as @s[nbt={ndex:508}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:508}}
+execute as @s[nbt={ndex:509}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:509}}
+execute as @s[nbt={ndex:510}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:510}}
+execute as @s[nbt={ndex:511}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:511}}
+execute as @s[nbt={ndex:512}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:512}}
+execute as @s[nbt={ndex:513}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:513}}
+execute as @s[nbt={ndex:514}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:514}}
+execute as @s[nbt={ndex:515}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:515}}
+execute as @s[nbt={ndex:516}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:516}}
+execute as @s[nbt={ndex:517}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:517}}
+execute as @s[nbt={ndex:518}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:518}}
+execute as @s[nbt={ndex:519}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:519}}
+execute as @s[nbt={ndex:520}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:520}}
+execute as @s[nbt={ndex:521}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:521}}
+execute as @s[nbt={ndex:522}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:522}}
+execute as @s[nbt={ndex:523}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:523}}
+execute as @s[nbt={ndex:524}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:524}}
+execute as @s[nbt={ndex:525}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:525}}
+execute as @s[nbt={ndex:526}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:526}}
+execute as @s[nbt={ndex:527}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:527}}
+execute as @s[nbt={ndex:528}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:528}}
+execute as @s[nbt={ndex:529}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:529}}
+execute as @s[nbt={ndex:530}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:530}}
+execute as @s[nbt={ndex:531}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:531}}
+execute as @s[nbt={ndex:532}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:532}}
+execute as @s[nbt={ndex:533}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:533}}
+execute as @s[nbt={ndex:534}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:534}}
+execute as @s[nbt={ndex:535}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:535}}
+execute as @s[nbt={ndex:536}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:536}}
+execute as @s[nbt={ndex:537}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:537}}
+execute as @s[nbt={ndex:538}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:538}}
+execute as @s[nbt={ndex:539}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:539}}
+execute as @s[nbt={ndex:540}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:540}}
+execute as @s[nbt={ndex:541}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:541}}
+execute as @s[nbt={ndex:542}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:542}}
+execute as @s[nbt={ndex:543}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:543}}
+execute as @s[nbt={ndex:544}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:544}}
+execute as @s[nbt={ndex:545}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:545}}
+execute as @s[nbt={ndex:546}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:546}}
+execute as @s[nbt={ndex:547}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:547}}
+execute as @s[nbt={ndex:548}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:548}}
+execute as @s[nbt={ndex:549}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:549}}
+execute as @s[nbt={ndex:550}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:550}}
+execute as @s[nbt={ndex:551}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:551}}
+execute as @s[nbt={ndex:552}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:552}}
+execute as @s[nbt={ndex:553}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:553}}
+execute as @s[nbt={ndex:554}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:554}}
+execute as @s[nbt={ndex:555}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:555}}
+execute as @s[nbt={ndex:556}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:556}}
+execute as @s[nbt={ndex:557}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:557}}
+execute as @s[nbt={ndex:558}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:558}}
+execute as @s[nbt={ndex:559}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:559}}
+execute as @s[nbt={ndex:560}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:560}}
+execute as @s[nbt={ndex:561}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:561}}
+execute as @s[nbt={ndex:562}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:562}}
+execute as @s[nbt={ndex:563}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:563}}
+execute as @s[nbt={ndex:564}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:564}}
+execute as @s[nbt={ndex:565}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:565}}
+execute as @s[nbt={ndex:566}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:566}}
+execute as @s[nbt={ndex:567}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:567}}
+execute as @s[nbt={ndex:568}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:568}}
+execute as @s[nbt={ndex:569}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:569}}
+execute as @s[nbt={ndex:570}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:570}}
+execute as @s[nbt={ndex:571}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:571}}
+execute as @s[nbt={ndex:572}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:572}}
+execute as @s[nbt={ndex:573}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:573}}
+execute as @s[nbt={ndex:574}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:574}}
+execute as @s[nbt={ndex:575}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:575}}
+execute as @s[nbt={ndex:576}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:576}}
+execute as @s[nbt={ndex:577}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:577}}
+execute as @s[nbt={ndex:578}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:578}}
+execute as @s[nbt={ndex:579}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:579}}
+execute as @s[nbt={ndex:580}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:580}}
+execute as @s[nbt={ndex:581}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:581}}
+execute as @s[nbt={ndex:582}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:582}}
+execute as @s[nbt={ndex:583}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:583}}
+execute as @s[nbt={ndex:584}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:584}}
+execute as @s[nbt={ndex:585}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:585}}
+execute as @s[nbt={ndex:586}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:586}}
+execute as @s[nbt={ndex:587}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:587}}
+execute as @s[nbt={ndex:588}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:588}}
+execute as @s[nbt={ndex:589}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:589}}
+execute as @s[nbt={ndex:590}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:590}}
+execute as @s[nbt={ndex:591}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:591}}
+execute as @s[nbt={ndex:592}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:592}}
+execute as @s[nbt={ndex:593}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:593}}
+execute as @s[nbt={ndex:594}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:594}}
+execute as @s[nbt={ndex:595}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:595}}
+execute as @s[nbt={ndex:596}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:596}}
+execute as @s[nbt={ndex:597}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:597}}
+execute as @s[nbt={ndex:598}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:598}}
+execute as @s[nbt={ndex:599}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:599}}
+execute as @s[nbt={ndex:600}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:600}}
+execute as @s[nbt={ndex:601}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:601}}
+execute as @s[nbt={ndex:602}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:602}}
+execute as @s[nbt={ndex:603}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:603}}
+execute as @s[nbt={ndex:604}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:604}}
+execute as @s[nbt={ndex:605}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:605}}
+execute as @s[nbt={ndex:606}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:606}}
+execute as @s[nbt={ndex:607}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:607}}
+execute as @s[nbt={ndex:608}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:608}}
+execute as @s[nbt={ndex:609}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:609}}
+execute as @s[nbt={ndex:610}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:610}}
+execute as @s[nbt={ndex:611}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:611}}
+execute as @s[nbt={ndex:612}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:612}}
+execute as @s[nbt={ndex:613}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:613}}
+execute as @s[nbt={ndex:614}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:614}}
+execute as @s[nbt={ndex:615}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:615}}
+execute as @s[nbt={ndex:616}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:616}}
+execute as @s[nbt={ndex:617}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:617}}
+execute as @s[nbt={ndex:618}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:618}}
+execute as @s[nbt={ndex:619}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:619}}
+execute as @s[nbt={ndex:620}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:620}}
+execute as @s[nbt={ndex:621}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:621}}
+execute as @s[nbt={ndex:622}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:622}}
+execute as @s[nbt={ndex:623}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:623}}
+execute as @s[nbt={ndex:624}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:624}}
+execute as @s[nbt={ndex:625}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:625}}
+execute as @s[nbt={ndex:626}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:626}}
+execute as @s[nbt={ndex:627}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:627}}
+execute as @s[nbt={ndex:628}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:628}}
+execute as @s[nbt={ndex:629}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:629}}
+execute as @s[nbt={ndex:630}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:630}}
+execute as @s[nbt={ndex:631}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:631}}
+execute as @s[nbt={ndex:632}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:632}}
+execute as @s[nbt={ndex:633}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:633}}
+execute as @s[nbt={ndex:634}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:634}}
+execute as @s[nbt={ndex:635}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:635}}
+execute as @s[nbt={ndex:636}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:636}}
+execute as @s[nbt={ndex:637}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:637}}
+execute as @s[nbt={ndex:638}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:638}}
+execute as @s[nbt={ndex:639}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:639}}
+execute as @s[nbt={ndex:640}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:640}}
+execute as @s[nbt={ndex:641}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:641}}
+execute as @s[nbt={ndex:642}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:642}}
+execute as @s[nbt={ndex:643}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:643}}
+execute as @s[nbt={ndex:644}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:644}}
+execute as @s[nbt={ndex:645}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:645}}
+execute as @s[nbt={ndex:646}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:646}}
+execute as @s[nbt={ndex:647}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:647}}
+execute as @s[nbt={ndex:648}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:648}}
+execute as @s[nbt={ndex:649}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:649}}
+execute as @s[nbt={ndex:650}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:650}}
+execute as @s[nbt={ndex:651}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:651}}
+execute as @s[nbt={ndex:652}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:652}}
+execute as @s[nbt={ndex:653}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:653}}
+execute as @s[nbt={ndex:654}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:654}}
+execute as @s[nbt={ndex:655}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:655}}
+execute as @s[nbt={ndex:656}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:656}}
+execute as @s[nbt={ndex:657}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:657}}
+execute as @s[nbt={ndex:658}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:658}}
+execute as @s[nbt={ndex:659}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:659}}
+execute as @s[nbt={ndex:660}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:660}}
+execute as @s[nbt={ndex:661}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:661}}
+execute as @s[nbt={ndex:662}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:662}}
+execute as @s[nbt={ndex:663}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:663}}
+execute as @s[nbt={ndex:664}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:664}}
+execute as @s[nbt={ndex:665}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:665}}
+execute as @s[nbt={ndex:666}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:666}}
+execute as @s[nbt={ndex:667}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:667}}
+execute as @s[nbt={ndex:668}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:668}}
+execute as @s[nbt={ndex:669}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:669}}
+execute as @s[nbt={ndex:670}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:670}}
+execute as @s[nbt={ndex:671}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:671}}
+execute as @s[nbt={ndex:672}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:672}}
+execute as @s[nbt={ndex:673}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:673}}
+execute as @s[nbt={ndex:674}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:674}}
+execute as @s[nbt={ndex:675}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:675}}
+execute as @s[nbt={ndex:676}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:676}}
+execute as @s[nbt={ndex:677}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:677}}
+execute as @s[nbt={ndex:678}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:678}}
+execute as @s[nbt={ndex:679}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:679}}
+execute as @s[nbt={ndex:680}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:680}}
+execute as @s[nbt={ndex:681}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:681}}
+execute as @s[nbt={ndex:682}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:682}}
+execute as @s[nbt={ndex:683}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:683}}
+execute as @s[nbt={ndex:684}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:684}}
+execute as @s[nbt={ndex:685}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:685}}
+execute as @s[nbt={ndex:686}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:686}}
+execute as @s[nbt={ndex:687}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:687}}
+execute as @s[nbt={ndex:688}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:688}}
+execute as @s[nbt={ndex:689}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:689}}
+execute as @s[nbt={ndex:690}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:690}}
+execute as @s[nbt={ndex:691}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:691}}
+execute as @s[nbt={ndex:692}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:692}}
+execute as @s[nbt={ndex:693}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:693}}
+execute as @s[nbt={ndex:694}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:694}}
+execute as @s[nbt={ndex:695}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:695}}
+execute as @s[nbt={ndex:696}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:696}}
+execute as @s[nbt={ndex:697}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:697}}
+execute as @s[nbt={ndex:698}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:698}}
+execute as @s[nbt={ndex:699}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:699}}
+execute as @s[nbt={ndex:700}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:700}}
+execute as @s[nbt={ndex:701}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:701}}
+execute as @s[nbt={ndex:702}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:702}}
+execute as @s[nbt={ndex:703}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:703}}
+execute as @s[nbt={ndex:704}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:704}}
+execute as @s[nbt={ndex:705}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:705}}
+execute as @s[nbt={ndex:706}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:706}}
+execute as @s[nbt={ndex:707}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:707}}
+execute as @s[nbt={ndex:708}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:708}}
+execute as @s[nbt={ndex:709}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:709}}
+execute as @s[nbt={ndex:710}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:710}}
+execute as @s[nbt={ndex:711}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:711}}
+execute as @s[nbt={ndex:712}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:712}}
+execute as @s[nbt={ndex:713}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:713}}
+execute as @s[nbt={ndex:714}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:714}}
+execute as @s[nbt={ndex:715}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:715}}
+execute as @s[nbt={ndex:716}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:716}}
+execute as @s[nbt={ndex:717}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:717}}
+execute as @s[nbt={ndex:718}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:718}}
+execute as @s[nbt={ndex:719}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:719}}
+execute as @s[nbt={ndex:720}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:720}}
+execute as @s[nbt={ndex:721}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:721}}
+execute as @s[nbt={ndex:722}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:722}}
+execute as @s[nbt={ndex:723}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:723}}
+execute as @s[nbt={ndex:724}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:724}}
+execute as @s[nbt={ndex:725}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:725}}
+execute as @s[nbt={ndex:726}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:726}}
+execute as @s[nbt={ndex:727}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:727}}
+execute as @s[nbt={ndex:728}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:728}}
+execute as @s[nbt={ndex:729}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:729}}
+execute as @s[nbt={ndex:730}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:730}}
+execute as @s[nbt={ndex:731}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:731}}
+execute as @s[nbt={ndex:732}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:732}}
+execute as @s[nbt={ndex:733}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:733}}
+execute as @s[nbt={ndex:734}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:734}}
+execute as @s[nbt={ndex:735}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:735}}
+execute as @s[nbt={ndex:736}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:736}}
+execute as @s[nbt={ndex:737}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:737}}
+execute as @s[nbt={ndex:738}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:738}}
+execute as @s[nbt={ndex:739}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:739}}
+execute as @s[nbt={ndex:740}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:740}}
+execute as @s[nbt={ndex:741}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:741}}
+execute as @s[nbt={ndex:742}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:742}}
+execute as @s[nbt={ndex:743}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:743}}
+execute as @s[nbt={ndex:744}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:744}}
+execute as @s[nbt={ndex:745}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:745}}
+execute as @s[nbt={ndex:746}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:746}}
+execute as @s[nbt={ndex:747}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:747}}
+execute as @s[nbt={ndex:748}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:748}}
+execute as @s[nbt={ndex:749}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:749}}
+execute as @s[nbt={ndex:750}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:750}}
+execute as @s[nbt={ndex:751}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:751}}
+execute as @s[nbt={ndex:752}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:752}}
+execute as @s[nbt={ndex:753}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:753}}
+execute as @s[nbt={ndex:754}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:754}}
+execute as @s[nbt={ndex:755}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:755}}
+execute as @s[nbt={ndex:756}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:756}}
+execute as @s[nbt={ndex:757}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:757}}
+execute as @s[nbt={ndex:758}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:758}}
+execute as @s[nbt={ndex:759}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:759}}
+execute as @s[nbt={ndex:760}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:760}}
+execute as @s[nbt={ndex:761}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:761}}
+execute as @s[nbt={ndex:762}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:762}}
+execute as @s[nbt={ndex:763}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:763}}
+execute as @s[nbt={ndex:764}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:764}}
+execute as @s[nbt={ndex:765}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:765}}
+execute as @s[nbt={ndex:766}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:766}}
+execute as @s[nbt={ndex:767}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:767}}
+execute as @s[nbt={ndex:768}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:768}}
+execute as @s[nbt={ndex:769}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:769}}
+execute as @s[nbt={ndex:770}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:770}}
+execute as @s[nbt={ndex:771}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:771}}
+execute as @s[nbt={ndex:772}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:772}}
+execute as @s[nbt={ndex:773}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:773}}
+execute as @s[nbt={ndex:774}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:774}}
+execute as @s[nbt={ndex:775}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:775}}
+execute as @s[nbt={ndex:776}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:776}}
+execute as @s[nbt={ndex:777}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:777}}
+execute as @s[nbt={ndex:778}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:778}}
+execute as @s[nbt={ndex:779}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:779}}
+execute as @s[nbt={ndex:780}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:780}}
+execute as @s[nbt={ndex:781}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:781}}
+execute as @s[nbt={ndex:782}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:782}}
+execute as @s[nbt={ndex:783}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:783}}
+execute as @s[nbt={ndex:784}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:784}}
+execute as @s[nbt={ndex:785}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:785}}
+execute as @s[nbt={ndex:786}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:786}}
+execute as @s[nbt={ndex:787}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:787}}
+execute as @s[nbt={ndex:788}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:788}}
+execute as @s[nbt={ndex:789}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:789}}
+execute as @s[nbt={ndex:790}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:790}}
+execute as @s[nbt={ndex:791}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:791}}
+execute as @s[nbt={ndex:792}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:792}}
+execute as @s[nbt={ndex:793}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:793}}
+execute as @s[nbt={ndex:794}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:794}}
+execute as @s[nbt={ndex:795}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:795}}
+execute as @s[nbt={ndex:796}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:796}}
+execute as @s[nbt={ndex:797}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:797}}
+execute as @s[nbt={ndex:798}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:798}}
+execute as @s[nbt={ndex:799}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:799}}
+execute as @s[nbt={ndex:800}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:800}}
+execute as @s[nbt={ndex:801}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:801}}
+execute as @s[nbt={ndex:802}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:802}}
+execute as @s[nbt={ndex:803}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:803}}
+execute as @s[nbt={ndex:804}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:804}}
+execute as @s[nbt={ndex:805}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:805}}
+execute as @s[nbt={ndex:806}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:806}}
+execute as @s[nbt={ndex:807}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:807}}
+execute as @s[nbt={ndex:808}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:808}}
+execute as @s[nbt={ndex:809}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:809}}
+execute as @s[nbt={ndex:810}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:810}}
+execute as @s[nbt={ndex:811}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:811}}
+execute as @s[nbt={ndex:812}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:812}}
+execute as @s[nbt={ndex:813}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:813}}
+execute as @s[nbt={ndex:814}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:814}}
+execute as @s[nbt={ndex:815}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:815}}
+execute as @s[nbt={ndex:816}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:816}}
+execute as @s[nbt={ndex:817}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:817}}
+execute as @s[nbt={ndex:818}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:818}}
+execute as @s[nbt={ndex:819}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:819}}
+execute as @s[nbt={ndex:820}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:820}}
+execute as @s[nbt={ndex:821}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:821}}
+execute as @s[nbt={ndex:822}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:822}}
+execute as @s[nbt={ndex:823}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:823}}
+execute as @s[nbt={ndex:824}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:824}}
+execute as @s[nbt={ndex:825}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:825}}
+execute as @s[nbt={ndex:826}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:826}}
+execute as @s[nbt={ndex:827}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:827}}
+execute as @s[nbt={ndex:828}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:828}}
+execute as @s[nbt={ndex:829}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:829}}
+execute as @s[nbt={ndex:830}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:830}}
+execute as @s[nbt={ndex:831}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:831}}
+execute as @s[nbt={ndex:832}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:832}}
+execute as @s[nbt={ndex:833}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:833}}
+execute as @s[nbt={ndex:834}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:834}}
+execute as @s[nbt={ndex:835}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:835}}
+execute as @s[nbt={ndex:836}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:836}}
+execute as @s[nbt={ndex:837}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:837}}
+execute as @s[nbt={ndex:838}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:838}}
+execute as @s[nbt={ndex:839}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:839}}
+execute as @s[nbt={ndex:840}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:840}}
+execute as @s[nbt={ndex:841}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:841}}
+execute as @s[nbt={ndex:842}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:842}}
+execute as @s[nbt={ndex:843}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:843}}
+execute as @s[nbt={ndex:844}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:844}}
+execute as @s[nbt={ndex:845}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:845}}
+execute as @s[nbt={ndex:846}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:846}}
+execute as @s[nbt={ndex:847}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:847}}
+execute as @s[nbt={ndex:848}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:848}}
+execute as @s[nbt={ndex:849}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:849}}
+execute as @s[nbt={ndex:850}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:850}}
+execute as @s[nbt={ndex:851}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:851}}
+execute as @s[nbt={ndex:852}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:852}}
+execute as @s[nbt={ndex:853}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:853}}
+execute as @s[nbt={ndex:854}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:854}}
+execute as @s[nbt={ndex:855}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:855}}
+execute as @s[nbt={ndex:856}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:856}}
+execute as @s[nbt={ndex:857}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:857}}
+execute as @s[nbt={ndex:858}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:858}}
+execute as @s[nbt={ndex:859}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:859}}
+execute as @s[nbt={ndex:860}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:860}}
+execute as @s[nbt={ndex:861}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:861}}
+execute as @s[nbt={ndex:862}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:862}}
+execute as @s[nbt={ndex:863}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:863}}
+execute as @s[nbt={ndex:864}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:864}}
+execute as @s[nbt={ndex:865}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:865}}
+execute as @s[nbt={ndex:866}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:866}}
+execute as @s[nbt={ndex:867}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:867}}
+execute as @s[nbt={ndex:868}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:868}}
+execute as @s[nbt={ndex:869}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:869}}
+execute as @s[nbt={ndex:870}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:870}}
+execute as @s[nbt={ndex:871}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:871}}
+execute as @s[nbt={ndex:872}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:872}}
+execute as @s[nbt={ndex:873}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:873}}
+execute as @s[nbt={ndex:874}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:874}}
+execute as @s[nbt={ndex:875}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:875}}
+execute as @s[nbt={ndex:876}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:876}}
+execute as @s[nbt={ndex:877}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:877}}
+execute as @s[nbt={ndex:878}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:878}}
+execute as @s[nbt={ndex:879}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:879}}
+execute as @s[nbt={ndex:880}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:880}}
+execute as @s[nbt={ndex:881}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:881}}
+execute as @s[nbt={ndex:882}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:882}}
+execute as @s[nbt={ndex:883}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:883}}
+execute as @s[nbt={ndex:884}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:884}}
+execute as @s[nbt={ndex:885}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:885}}
+execute as @s[nbt={ndex:886}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:886}}
+execute as @s[nbt={ndex:887}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:887}}
+execute as @s[nbt={ndex:888}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:888}}
+execute as @s[nbt={ndex:889}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:889}}
+execute as @s[nbt={ndex:890}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:890}}
+execute as @s[nbt={ndex:891}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:891}}
+execute as @s[nbt={ndex:892}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:892}}
+execute as @s[nbt={ndex:893}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:893}}
+execute as @s[nbt={ndex:894}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:894}}
+execute as @s[nbt={ndex:895}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:895}}
+execute as @s[nbt={ndex:896}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:896}}
+execute as @s[nbt={ndex:897}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:897}}
+execute as @s[nbt={ndex:898}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:898}}
+execute as @s[nbt={ndex:899}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:899}}
+execute as @s[nbt={ndex:900}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:900}}
+execute as @s[nbt={ndex:901}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:901}}
+execute as @s[nbt={ndex:902}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:902}}
+execute as @s[nbt={ndex:903}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:903}}
+execute as @s[nbt={ndex:904}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:904}}
+execute as @s[nbt={ndex:905}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:905}}
+execute as @s[nbt={ndex:906}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:906}}
+execute as @s[nbt={ndex:907}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:907}}
+execute as @s[nbt={ndex:908}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:908}}
+execute as @s[nbt={ndex:909}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:909}}
+execute as @s[nbt={ndex:910}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:910}}
+execute as @s[nbt={ndex:911}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:911}}
+execute as @s[nbt={ndex:912}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:912}}
+execute as @s[nbt={ndex:913}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:913}}
+execute as @s[nbt={ndex:914}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:914}}
+execute as @s[nbt={ndex:915}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:915}}
+execute as @s[nbt={ndex:916}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:916}}
+execute as @s[nbt={ndex:917}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:917}}
+execute as @s[nbt={ndex:918}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:918}}
+execute as @s[nbt={ndex:919}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:919}}
+execute as @s[nbt={ndex:920}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:920}}
+execute as @s[nbt={ndex:921}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:921}}
+execute as @s[nbt={ndex:922}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:922}}
+execute as @s[nbt={ndex:923}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:923}}
+execute as @s[nbt={ndex:924}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:924}}
+execute as @s[nbt={ndex:925}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:925}}
+execute as @s[nbt={ndex:926}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:926}}
+execute as @s[nbt={ndex:927}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:927}}
+execute as @s[nbt={ndex:928}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:928}}
+execute as @s[nbt={ndex:929}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:929}}
+execute as @s[nbt={ndex:930}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:930}}
+execute as @s[nbt={ndex:931}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:931}}
+execute as @s[nbt={ndex:932}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:932}}
+execute as @s[nbt={ndex:933}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:933}}
+execute as @s[nbt={ndex:934}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:934}}
+execute as @s[nbt={ndex:935}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:935}}
+execute as @s[nbt={ndex:936}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:936}}
+execute as @s[nbt={ndex:937}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:937}}
+execute as @s[nbt={ndex:938}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:938}}
+execute as @s[nbt={ndex:939}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:939}}
+execute as @s[nbt={ndex:940}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:940}}
+execute as @s[nbt={ndex:941}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:941}}
+execute as @s[nbt={ndex:942}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:942}}
+execute as @s[nbt={ndex:943}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:943}}
+execute as @s[nbt={ndex:944}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:944}}
+execute as @s[nbt={ndex:945}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:945}}
+execute as @s[nbt={ndex:946}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:946}}
+execute as @s[nbt={ndex:947}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:947}}
+execute as @s[nbt={ndex:948}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:948}}
+execute as @s[nbt={ndex:949}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:949}}
+execute as @s[nbt={ndex:950}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:950}}
+execute as @s[nbt={ndex:951}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:951}}
+execute as @s[nbt={ndex:952}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:952}}
+execute as @s[nbt={ndex:953}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:953}}
+execute as @s[nbt={ndex:954}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:954}}
+execute as @s[nbt={ndex:955}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:955}}
+execute as @s[nbt={ndex:956}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:956}}
+execute as @s[nbt={ndex:957}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:957}}
+execute as @s[nbt={ndex:958}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:958}}
+execute as @s[nbt={ndex:959}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:959}}
+execute as @s[nbt={ndex:960}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:960}}
+execute as @s[nbt={ndex:961}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:961}}
+execute as @s[nbt={ndex:962}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:962}}
+execute as @s[nbt={ndex:963}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:963}}
+execute as @s[nbt={ndex:964}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:964}}
+execute as @s[nbt={ndex:965}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:965}}
+execute as @s[nbt={ndex:966}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:966}}
+execute as @s[nbt={ndex:967}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:967}}
+execute as @s[nbt={ndex:968}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:968}}
+execute as @s[nbt={ndex:969}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:969}}
+execute as @s[nbt={ndex:970}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:970}}
+execute as @s[nbt={ndex:971}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:971}}
+execute as @s[nbt={ndex:972}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:972}}
+execute as @s[nbt={ndex:973}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:973}}
+execute as @s[nbt={ndex:974}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:974}}
+execute as @s[nbt={ndex:975}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:975}}
+execute as @s[nbt={ndex:976}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:976}}
+execute as @s[nbt={ndex:977}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:977}}
+execute as @s[nbt={ndex:978}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:978}}
+execute as @s[nbt={ndex:979}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:979}}
+execute as @s[nbt={ndex:980}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:980}}
+execute as @s[nbt={ndex:981}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:981}}
+execute as @s[nbt={ndex:982}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:982}}
+execute as @s[nbt={ndex:983}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:983}}
+execute as @s[nbt={ndex:984}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:984}}
+execute as @s[nbt={ndex:985}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:985}}
+execute as @s[nbt={ndex:986}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:986}}
+execute as @s[nbt={ndex:987}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:987}}
+execute as @s[nbt={ndex:988}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:988}}
+execute as @s[nbt={ndex:989}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:989}}
+execute as @s[nbt={ndex:990}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:990}}
+execute as @s[nbt={ndex:991}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:991}}
+execute as @s[nbt={ndex:992}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:992}}
+execute as @s[nbt={ndex:993}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:993}}
+execute as @s[nbt={ndex:994}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:994}}
+execute as @s[nbt={ndex:995}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:995}}
+execute as @s[nbt={ndex:996}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:996}}
+execute as @s[nbt={ndex:997}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:997}}
+execute as @s[nbt={ndex:998}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:998}}
+execute as @s[nbt={ndex:999}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:999}}
+execute as @s[nbt={ndex:1000}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1000}}
+execute as @s[nbt={ndex:1001}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1001}}
+execute as @s[nbt={ndex:1002}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1002}}
+execute as @s[nbt={ndex:1003}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1003}}
+execute as @s[nbt={ndex:1004}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1004}}
+execute as @s[nbt={ndex:1005}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1005}}
+execute as @s[nbt={ndex:1006}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1006}}
+execute as @s[nbt={ndex:1007}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1007}}
+execute as @s[nbt={ndex:1008}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1008}}
+execute as @s[nbt={ndex:1009}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1009}}
+execute as @s[nbt={ndex:1010}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1010}}
+execute as @s[nbt={ndex:1011}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1011}}
+execute as @s[nbt={ndex:1012}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1012}}
+execute as @s[nbt={ndex:1013}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1013}}
+execute as @s[nbt={ndex:1014}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1014}}
+execute as @s[nbt={ndex:1015}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1015}}
+execute as @s[nbt={ndex:1016}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1016}}
+execute as @s[nbt={ndex:1017}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1017}}
+execute as @s[nbt={ndex:1018}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1018}}
+execute as @s[nbt={ndex:1019}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1019}}
+execute as @s[nbt={ndex:1020}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1020}}
+execute as @s[nbt={ndex:1021}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1021}}
+execute as @s[nbt={ndex:1022}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1022}}
+execute as @s[nbt={ndex:1023}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1023}}
+execute as @s[nbt={ndex:1024}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1024}}
+execute as @s[nbt={ndex:1025}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1025}}
+execute as @s[nbt={ndex:1026}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1026}}
+execute as @s[nbt={ndex:1027}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1027}}
+execute as @s[nbt={ndex:1028}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1028}}
+execute as @s[nbt={ndex:1029}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1029}}
+execute as @s[nbt={ndex:1030}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1030}}
+execute as @s[nbt={ndex:1031}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1031}}
+execute as @s[nbt={ndex:1032}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1032}}
+execute as @s[nbt={ndex:1033}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1033}}
+execute as @s[nbt={ndex:1034}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1034}}
+execute as @s[nbt={ndex:1035}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1035}}
+execute as @s[nbt={ndex:1036}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1036}}
+execute as @s[nbt={ndex:1037}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1037}}
+execute as @s[nbt={ndex:1038}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1038}}
+execute as @s[nbt={ndex:1039}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1039}}
+execute as @s[nbt={ndex:1040}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1040}}
+execute as @s[nbt={ndex:1041}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1041}}
+execute as @s[nbt={ndex:1042}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1042}}
+execute as @s[nbt={ndex:1043}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1043}}
+execute as @s[nbt={ndex:1044}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1044}}
+execute as @s[nbt={ndex:1045}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1045}}
+execute as @s[nbt={ndex:1046}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1046}}
+execute as @s[nbt={ndex:1047}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1047}}
+execute as @s[nbt={ndex:1048}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1048}}
+execute as @s[nbt={ndex:1049}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1049}}
+execute as @s[nbt={ndex:1050}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1050}}
+execute as @s[nbt={ndex:1051}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1051}}
+execute as @s[nbt={ndex:1052}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1052}}
+execute as @s[nbt={ndex:1053}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1053}}
+execute as @s[nbt={ndex:1054}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1054}}
+execute as @s[nbt={ndex:1055}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1055}}
+execute as @s[nbt={ndex:1056}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1056}}
+execute as @s[nbt={ndex:1057}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1057}}
+execute as @s[nbt={ndex:1058}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1058}}
+execute as @s[nbt={ndex:1059}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1059}}
+execute as @s[nbt={ndex:1060}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1060}}
+execute as @s[nbt={ndex:1061}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1061}}
+execute as @s[nbt={ndex:1062}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1062}}
+execute as @s[nbt={ndex:1063}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1063}}
+execute as @s[nbt={ndex:1064}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1064}}
+execute as @s[nbt={ndex:1065}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1065}}
+execute as @s[nbt={ndex:1066}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1066}}
+execute as @s[nbt={ndex:1067}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1067}}
+execute as @s[nbt={ndex:1068}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1068}}
+execute as @s[nbt={ndex:1069}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1069}}
+execute as @s[nbt={ndex:1070}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1070}}
+execute as @s[nbt={ndex:1071}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1071}}
+execute as @s[nbt={ndex:1072}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1072}}
+execute as @s[nbt={ndex:1073}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1073}}
+execute as @s[nbt={ndex:1074}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1074}}
+execute as @s[nbt={ndex:1075}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1075}}
+execute as @s[nbt={ndex:1076}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1076}}
+execute as @s[nbt={ndex:1077}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1077}}
+execute as @s[nbt={ndex:1078}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1078}}
+execute as @s[nbt={ndex:1079}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1079}}
+execute as @s[nbt={ndex:1080}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1080}}
+execute as @s[nbt={ndex:1081}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1081}}
+execute as @s[nbt={ndex:1082}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1082}}
+execute as @s[nbt={ndex:1083}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1083}}
+execute as @s[nbt={ndex:1084}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1084}}
+execute as @s[nbt={ndex:1085}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1085}}
+execute as @s[nbt={ndex:1086}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1086}}
+execute as @s[nbt={ndex:1087}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1087}}
+execute as @s[nbt={ndex:1088}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1088}}
+execute as @s[nbt={ndex:1089}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1089}}
+execute as @s[nbt={ndex:1090}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1090}}
+execute as @s[nbt={ndex:1091}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1091}}
+execute as @s[nbt={ndex:1092}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1092}}
+execute as @s[nbt={ndex:1093}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1093}}
+execute as @s[nbt={ndex:1094}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1094}}
+execute as @s[nbt={ndex:1095}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1095}}
+execute as @s[nbt={ndex:1096}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1096}}
+execute as @s[nbt={ndex:1097}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1097}}
+execute as @s[nbt={ndex:1098}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1098}}
+execute as @s[nbt={ndex:1099}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1099}}
+execute as @s[nbt={ndex:1100}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1100}}
+execute as @s[nbt={ndex:1101}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1101}}
+execute as @s[nbt={ndex:1102}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1102}}
+execute as @s[nbt={ndex:1103}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1103}}
+execute as @s[nbt={ndex:1104}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1104}}
+execute as @s[nbt={ndex:1105}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1105}}
+execute as @s[nbt={ndex:1106}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1106}}
+execute as @s[nbt={ndex:1107}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1107}}
+execute as @s[nbt={ndex:1108}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1108}}
+execute as @s[nbt={ndex:1109}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1109}}
+execute as @s[nbt={ndex:1110}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1110}}
+execute as @s[nbt={ndex:1111}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1111}}
+execute as @s[nbt={ndex:1112}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1112}}
+execute as @s[nbt={ndex:1113}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1113}}
+execute as @s[nbt={ndex:1114}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1114}}
+execute as @s[nbt={ndex:1115}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1115}}
+execute as @s[nbt={ndex:1116}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1116}}
+execute as @s[nbt={ndex:1117}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1117}}
+execute as @s[nbt={ndex:1118}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1118}}
+execute as @s[nbt={ndex:1119}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1119}}
+execute as @s[nbt={ndex:1120}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1120}}
+execute as @s[nbt={ndex:1121}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1121}}
+execute as @s[nbt={ndex:1122}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1122}}
+execute as @s[nbt={ndex:1123}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1123}}
+execute as @s[nbt={ndex:1124}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1124}}
+execute as @s[nbt={ndex:1125}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1125}}
+execute as @s[nbt={ndex:1126}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1126}}
+execute as @s[nbt={ndex:1127}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1127}}
+execute as @s[nbt={ndex:1128}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1128}}
+execute as @s[nbt={ndex:1129}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1129}}
+execute as @s[nbt={ndex:1130}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1130}}
+execute as @s[nbt={ndex:1131}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1131}}
+execute as @s[nbt={ndex:1132}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1132}}
+execute as @s[nbt={ndex:1133}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1133}}
+execute as @s[nbt={ndex:1134}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1134}}
+execute as @s[nbt={ndex:1135}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1135}}
+execute as @s[nbt={ndex:1136}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1136}}
+execute as @s[nbt={ndex:1137}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1137}}
+execute as @s[nbt={ndex:1138}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1138}}
+execute as @s[nbt={ndex:1139}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1139}}
+execute as @s[nbt={ndex:1140}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1140}}
+execute as @s[nbt={ndex:1141}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1141}}
+execute as @s[nbt={ndex:1142}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1142}}
+execute as @s[nbt={ndex:1143}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1143}}
+execute as @s[nbt={ndex:1144}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1144}}
+execute as @s[nbt={ndex:1145}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1145}}
+execute as @s[nbt={ndex:1146}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1146}}
+execute as @s[nbt={ndex:1147}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1147}}
+execute as @s[nbt={ndex:1148}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1148}}
+execute as @s[nbt={ndex:1149}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1149}}
+execute as @s[nbt={ndex:1150}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1150}}
+execute as @s[nbt={ndex:1151}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1151}}
+execute as @s[nbt={ndex:1152}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1152}}
+execute as @s[nbt={ndex:1153}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1153}}
+execute as @s[nbt={ndex:1154}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1154}}
+execute as @s[nbt={ndex:1155}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1155}}
+execute as @s[nbt={ndex:1156}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1156}}
+execute as @s[nbt={ndex:1157}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1157}}
+execute as @s[nbt={ndex:1158}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1158}}
+execute as @s[nbt={ndex:1159}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1159}}
+execute as @s[nbt={ndex:1160}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1160}}
+execute as @s[nbt={ndex:1161}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1161}}
+execute as @s[nbt={ndex:1162}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1162}}
+execute as @s[nbt={ndex:1163}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1163}}
+execute as @s[nbt={ndex:1164}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1164}}
+execute as @s[nbt={ndex:1165}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1165}}
+execute as @s[nbt={ndex:1166}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1166}}
+execute as @s[nbt={ndex:1167}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1167}}
+execute as @s[nbt={ndex:1168}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1168}}
+execute as @s[nbt={ndex:1169}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1169}}
+execute as @s[nbt={ndex:1170}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1170}}
+execute as @s[nbt={ndex:1171}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1171}}
+execute as @s[nbt={ndex:1172}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1172}}
+execute as @s[nbt={ndex:1173}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1173}}
+execute as @s[nbt={ndex:1174}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1174}}
+execute as @s[nbt={ndex:1175}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1175}}
+execute as @s[nbt={ndex:1176}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1176}}
+execute as @s[nbt={ndex:1177}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1177}}
+execute as @s[nbt={ndex:1178}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1178}}
+execute as @s[nbt={ndex:1179}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1179}}
+execute as @s[nbt={ndex:1180}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1180}}
+execute as @s[nbt={ndex:1181}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1181}}
+execute as @s[nbt={ndex:1182}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1182}}
+execute as @s[nbt={ndex:1183}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1183}}
+execute as @s[nbt={ndex:1184}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1184}}
+execute as @s[nbt={ndex:1185}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1185}}
+execute as @s[nbt={ndex:1186}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1186}}
+execute as @s[nbt={ndex:1187}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1187}}
+execute as @s[nbt={ndex:1188}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1188}}
+execute as @s[nbt={ndex:1189}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1189}}
+execute as @s[nbt={ndex:1190}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1190}}
+execute as @s[nbt={ndex:1191}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1191}}
+execute as @s[nbt={ndex:1192}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1192}}
+execute as @s[nbt={ndex:1193}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1193}}
+execute as @s[nbt={ndex:1194}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1194}}
+execute as @s[nbt={ndex:1195}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1195}}
+execute as @s[nbt={ndex:1196}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1196}}
+execute as @s[nbt={ndex:1197}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1197}}
+execute as @s[nbt={ndex:1198}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1198}}
+execute as @s[nbt={ndex:1199}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1199}}
+execute as @s[nbt={ndex:1200}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1200}}
+execute as @s[nbt={ndex:1201}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1201}}
+execute as @s[nbt={ndex:1202}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1202}}
+execute as @s[nbt={ndex:1203}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1203}}
+execute as @s[nbt={ndex:1204}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1204}}
+execute as @s[nbt={ndex:1205}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1205}}
+execute as @s[nbt={ndex:1206}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1206}}
+execute as @s[nbt={ndex:1207}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1207}}
+execute as @s[nbt={ndex:1208}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1208}}
+execute as @s[nbt={ndex:1209}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1209}}
+execute as @s[nbt={ndex:1210}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1210}}
+execute as @s[nbt={ndex:1211}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1211}}
+execute as @s[nbt={ndex:1212}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1212}}
+execute as @s[nbt={ndex:1213}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1213}}
+execute as @s[nbt={ndex:1214}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1214}}
+execute as @s[nbt={ndex:1215}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1215}}
+execute as @s[nbt={ndex:1216}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1216}}
+execute as @s[nbt={ndex:1217}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1217}}
+execute as @s[nbt={ndex:1218}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1218}}
+execute as @s[nbt={ndex:1219}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1219}}
+execute as @s[nbt={ndex:1220}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1220}}
+execute as @s[nbt={ndex:1221}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1221}}
+execute as @s[nbt={ndex:1222}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1222}}
+execute as @s[nbt={ndex:1223}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1223}}
+execute as @s[nbt={ndex:1224}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1224}}
+execute as @s[nbt={ndex:1225}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1225}}
+execute as @s[nbt={ndex:1226}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1226}}
+execute as @s[nbt={ndex:1227}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1227}}
+execute as @s[nbt={ndex:1228}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1228}}
+execute as @s[nbt={ndex:1229}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1229}}
+execute as @s[nbt={ndex:1230}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1230}}
+execute as @s[nbt={ndex:1231}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1231}}
+execute as @s[nbt={ndex:1232}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1232}}
+execute as @s[nbt={ndex:1233}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1233}}
+execute as @s[nbt={ndex:1234}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1234}}
+execute as @s[nbt={ndex:1235}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1235}}
+execute as @s[nbt={ndex:1236}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1236}}
+execute as @s[nbt={ndex:1237}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1237}}
+execute as @s[nbt={ndex:1238}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1238}}
+execute as @s[nbt={ndex:1239}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1239}}
+execute as @s[nbt={ndex:1240}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1240}}
+execute as @s[nbt={ndex:1241}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1241}}
+execute as @s[nbt={ndex:1242}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1242}}
+execute as @s[nbt={ndex:1243}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1243}}
+execute as @s[nbt={ndex:1244}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1244}}
+execute as @s[nbt={ndex:1245}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1245}}
+execute as @s[nbt={ndex:1246}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1246}}
+execute as @s[nbt={ndex:1247}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1247}}
+execute as @s[nbt={ndex:1248}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1248}}
+execute as @s[nbt={ndex:1249}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1249}}
+execute as @s[nbt={ndex:1250}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:1250}}
 
-#Add Talked tag
-execute as @e[x=-1300,y=77,z=751,dx=24,dy=10,dz=33,type=pixelmon:pixelmon,scores={HOFCount=1..},tag=!Talked] run tag @s add Talked
+
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Determines a Pokemon's form if applicable
+execute as @s[nbt={Variant:"alolan"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"alolan"}}
+execute as @s[nbt={Variant:"galarian"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"galarian"}}
+execute as @s[nbt={Variant:"hisuian"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"hisuian"}}
+execute as @s[nbt={Variant:"origin"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"origin"}}
+
+
+#Arceus
+execute as @s[nbt={Variant:"normal"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"normal"}}
+execute as @s[nbt={Variant:"grass"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"grass"}}
+execute as @s[nbt={Variant:"fire"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"fire"}}
+execute as @s[nbt={Variant:"water"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"water"}}
+execute as @s[nbt={Variant:"flying"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"flying"}}
+execute as @s[nbt={Variant:"bug"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"bug"}}
+execute as @s[nbt={Variant:"poison"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"poison"}}
+execute as @s[nbt={Variant:"electric"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"electric"}}
+execute as @s[nbt={Variant:"psychic"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"psychic"}}
+execute as @s[nbt={Variant:"rock"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"rock"}}
+execute as @s[nbt={Variant:"ground"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"ground"}}
+execute as @s[nbt={Variant:"dark"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"dark"}}
+execute as @s[nbt={Variant:"ghost"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"ghost"}}
+execute as @s[nbt={Variant:"steel"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"steel"}}
+execute as @s[nbt={Variant:"fighting"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"fighting"}}
+execute as @s[nbt={Variant:"ice"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"ice"}}
+execute as @s[nbt={Variant:"dragon"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"dragon"}}
+execute as @s[nbt={Variant:"fairy"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"fairy"}}
+
+#Basculin
+execute as @s[nbt={Variant:"red"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"red"}}
+execute as @s[nbt={Variant:"blue"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"blue"}}
+
+#Bidoof
+execute as @s[nbt={Variant:"sirdoofusiii"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"sirdoofusiii"}}
+
+#Burmy
+execute as @s[nbt={Variant:"plant"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"plant"}}
+execute as @s[nbt={Variant:"sandy"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"sandy"}}
+execute as @s[nbt={Variant:"trash"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"trash"}}
+
+#Deerling
+execute as @s[nbt={Variant:"spring"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"spring"}}
+execute as @s[nbt={Variant:"summer"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"summer"}}
+execute as @s[nbt={Variant:"autumn"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"autumn"}}
+execute as @s[nbt={Variant:"winter"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"winter"}}
+
+#Deoxys
+execute as @s[nbt={Variant:"attack"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"attack"}}
+execute as @s[nbt={Variant:"defense"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"defense"}}
+execute as @s[nbt={Variant:"speed"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"speed"}}
+
+#Genesect
+execute as @s[nbt={Variant:"burn"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"burn"}}
+execute as @s[nbt={Variant:"chill"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"chill"}}
+execute as @s[nbt={Variant:"douse"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"douse"}}
+execute as @s[nbt={Variant:"shock"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"shock"}}
+
+#Hoopa
+execute as @s[nbt={Variant:"confined"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"Confined"}}
+execute as @s[nbt={Variant:"unbound"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"Unbound"}}
+
+#Oricorio
+execute as @s[nbt={Variant:"baile"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"baile"}}
+execute as @s[nbt={Variant:"pompom"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"pompom"}}
+execute as @s[nbt={Variant:"pau"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"pau"}}
+execute as @s[nbt={Variant:"sensu"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"sensu"}}
+
+#Pichu
+execute as @s[nbt={Variant:"Spiky"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"spiky"}}
+
+#Rotom
+execute as @s[nbt={Variant:"heat"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"heat"}}
+execute as @s[nbt={Variant:"wash"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"wash"}}
+execute as @s[nbt={Variant:"frost"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"frost"}}
+execute as @s[nbt={Variant:"fan"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"fan"}}
+execute as @s[nbt={Variant:"mow"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"mow"}}
+
+#Shellos
+execute as @s[nbt={Variant:"west"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"west"}}
+execute as @s[nbt={Variant:"east"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"east"}}
+
+#Genies
+execute as @s[nbt={Variant:"therian"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"therian"}}
+
+#Unown
+execute as @s[nbt={Variant:"a"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"a"}}
+execute as @s[nbt={Variant:"b"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"b"}}
+execute as @s[nbt={Variant:"c"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"c"}}
+execute as @s[nbt={Variant:"d"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"d"}}
+execute as @s[nbt={Variant:"e"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"e"}}
+execute as @s[nbt={Variant:"f"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"f"}}
+execute as @s[nbt={Variant:"g"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"g"}}
+execute as @s[nbt={Variant:"h"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"h"}}
+execute as @s[nbt={Variant:"i"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"i"}}
+execute as @s[nbt={Variant:"j"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"j"}}
+execute as @s[nbt={Variant:"k"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"k"}}
+execute as @s[nbt={Variant:"l"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"l"}}
+execute as @s[nbt={Variant:"m"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"m"}}
+execute as @s[nbt={Variant:"n"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"n"}}
+execute as @s[nbt={Variant:"o"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"o"}}
+execute as @s[nbt={Variant:"p"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"p"}}
+execute as @s[nbt={Variant:"q"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"q"}}
+execute as @s[nbt={Variant:"r"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"r"}}
+execute as @s[nbt={Variant:"s"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"s"}}
+execute as @s[nbt={Variant:"t"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"t"}}
+execute as @s[nbt={Variant:"u"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"u"}}
+execute as @s[nbt={Variant:"v"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"v"}}
+execute as @s[nbt={Variant:"w"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"w"}}
+execute as @s[nbt={Variant:"x"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"x"}}
+execute as @s[nbt={Variant:"y"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"y"}}
+execute as @s[nbt={Variant:"z"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"z"}}
+execute as @s[nbt={Variant:"exclamation"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"exclamation"}}
+execute as @s[nbt={Variant:"question"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Variant:"question"}}
+
+
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Determines if a Pokemon is shiny or not
+execute as @s[nbt={palette:"shiny"}] run data merge block -873 66 -229 {PokeDisplayPokemon:{palette:"shiny"}}
+
+#Determines a Pokemon's gender
+execute as @s[nbt={Gender:1b}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Gender:1b}}
+execute as @s[nbt={Gender:0b}] run data merge block -873 66 -229 {PokeDisplayPokemon:{Gender:0b}}
+
+
+
+#Edge Cases
+#Hippopotas & Hippowdon
+execute as @s[nbt={ndex:449}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:449,palette:"none",Variant:"",NBT_VERSION:2b}}
+execute as @s[nbt={ndex:450}] run data merge block -873 66 -229 {PokeDisplayPokemon:{ndex:450,palette:"none",Variant:"",NBT_VERSION:2b}}
+
+
+#Teleports Pokemon away to not interfere
+tellraw @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=34] ["",{"text":"Your "},{"selector":"@e[x=-1300,y=77,z=751,dx=24,dy=10,dz=34,type=pixelmon:pixelmon]"},{"text":" has been recorded!"}]
+tp @s ~ ~-1000 ~
+
+#
