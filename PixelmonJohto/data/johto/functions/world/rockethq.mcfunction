@@ -187,51 +187,59 @@ execute if entity @a[x=-135,y=53,z=210,dx=2,dy=5,dz=9,tag=!TrapGrunt1] run tag @
 
 
 #Particles on Electrode
-execute at @e[x=-149,y=44,z=177,dx=63,dy=5,dz=35,type=pixelmon:statue,nbt={ndex:101}] run particle dust 1 0.99 0.64 1 ~ ~ ~ 1 1 1 1 10 normal
+execute if block -92 46 203 pixelmon:poke_display run particle dust 1 0.99 0.64 1 -92 46 203 1 1 1 1 10 normal
+execute if block -92 46 195 pixelmon:poke_display run particle dust 1 0.99 0.64 1 -92 46 195 1 1 1 1 10 normal
+execute if block -92 46 187 pixelmon:poke_display run particle dust 1 0.99 0.64 1 -92 46 187 1 1 1 1 10 normal
+execute if block -143 46 187 pixelmon:poke_display run particle dust 1 0.99 0.64 1 -143 46 187 1 1 1 1 10 normal
+execute if block -143 46 195 pixelmon:poke_display run particle dust 1 0.99 0.64 1 -143 46 195 1 1 1 1 10 normal
+execute if block -143 46 203 pixelmon:poke_display run particle dust 1 0.99 0.64 1 -143 46 203 1 1 1 1 10 normal
 execute at @e[x=-149,y=44,z=177,dx=63,dy=5,dz=35,type=pixelmon:pixelmon,nbt={ndex:101}] run particle dust 1 0.99 0.64 1 ~ ~ ~ 1 1 1 1 10 normal
 
 #South-side
-#On (Electrode is present)
+#On (Pokemon Electrode is present)
 execute unless entity @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,nbt={ndex:101}] run tp @e[x=-92,y=45,z=202,distance=..5,type=pixelmon:pixelmon,nbt={ndex:101}] -91.0 46.0 203.0 180 ~
-execute if entity @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,nbt={ndex:101}] run data merge entity @e[x=-144,y=45,z=202,dx=1,dy=2,dz=1,type=pixelmon:statue,nbt={ndex:1999},limit=1] {ndex:101}
+execute if entity @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,nbt={ndex:101}] run setblock -143 46 203 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:101,Growth:7b}} replace
+execute if block -92 46 203 pixelmon:poke_display run setblock -143 46 203 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:101,Growth:7b}} replace
 execute if entity @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,nbt={ndex:101}] run fill -125 43 197 -141 44 203 minecraft:redstone_block replace minecraft:lapis_block
 execute if entity @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,nbt={ndex:101}] run fill -111 43 199 -94 44 203 minecraft:redstone_block replace minecraft:lapis_block
 
-execute if entity @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,nbt={ndex:101}] run particle dust 1 0.99 0.64 1 -136 46.1 203.0 4 0.1 0.1 1 10 normal
-execute if entity @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,nbt={ndex:101}] run particle dust 1 0.99 0.64 1 -100 46.1 203.0 4 0.1 0.1 1 10 normal
+execute if entity @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,nbt={ndex:101}] run particle dust 1 0.99 0.64 1 -136 46.1 203.5 4 0.1 0.1 1 10 normal
+execute if entity @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,nbt={ndex:101}] run particle dust 1 0.99 0.64 1 -100 46.1 203.5 4 0.1 0.1 1 10 normal
 
 #Off
-execute unless entity @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,nbt={ndex:101}] run data merge entity @e[x=-144,y=45,z=202,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:1999}
+execute unless entity @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,nbt={ndex:101}] run setblock -143 46 203 minecraft:air
 execute unless entity @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,nbt={ndex:101}] run fill -125 43 197 -141 44 203 minecraft:lapis_block replace minecraft:redstone_block
 execute unless entity @e[x=-92,y=45,z=202,dx=1,dy=2,dz=1,nbt={ndex:101}] run fill -111 43 199 -94 44 203 minecraft:lapis_block replace minecraft:redstone_block
 
 #Middle
 #On
 execute unless entity @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,nbt={ndex:101}] run tp @e[x=-92,y=45,z=194,distance=..5,type=pixelmon:pixelmon,nbt={ndex:101}] -91.0 46.0 195.0 180 ~
-execute if entity @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,nbt={ndex:101}] run data merge entity @e[x=-144,y=45,z=194,dx=1,dy=2,dz=1,type=pixelmon:statue,nbt={ndex:1999},limit=1] {ndex:101}
+execute if entity @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,nbt={ndex:101}] run setblock -143 46 195 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:101,Growth:7b}} replace
+execute if block -92 46 195 pixelmon:poke_display run setblock -143 46 195 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:101,Growth:7b}} replace
 execute if entity @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,nbt={ndex:101}] run fill -126 43 194 -141 44 195 minecraft:redstone_block replace minecraft:lapis_block
 execute if entity @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,nbt={ndex:101}] run fill -110 43 196 -94 44 194 minecraft:redstone_block replace minecraft:lapis_block
 
-execute if entity @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,nbt={ndex:101}] run particle dust 1 0.99 0.64 1 -136 46.1 195.0 4 0.1 0.1 1 10 normal
-execute if entity @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,nbt={ndex:101}] run particle dust 1 0.99 0.64 1 -100 46.1 195.0 4 0.1 0.1 1 10 normal
+execute if entity @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,nbt={ndex:101}] run particle dust 1 0.99 0.64 1 -136 46.1 195.5 4 0.1 0.1 1 10 normal
+execute if entity @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,nbt={ndex:101}] run particle dust 1 0.99 0.64 1 -100 46.1 195.5 4 0.1 0.1 1 10 normal
 
 #Off
-execute unless entity @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,nbt={ndex:101}] run data merge entity @e[x=-144,y=45,z=194,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:1999}
+execute unless entity @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,nbt={ndex:101}] run setblock -143 46 195 minecraft:air
 execute unless entity @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,nbt={ndex:101}] run fill -126 43 194 -141 44 195 minecraft:lapis_block replace minecraft:redstone_block
 execute unless entity @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,nbt={ndex:101}] run fill -110 43 196 -94 44 194 minecraft:lapis_block replace minecraft:redstone_block
 
 #North
 #On
 execute unless entity @e[x=-92,y=45,z=186,dx=1,dy=2,dz=1,nbt={ndex:101}] run tp @e[x=-92,y=45,z=186,distance=..5,type=pixelmon:pixelmon,nbt={ndex:101}] -91.0 46.0 187.0 180 ~
-execute if entity @e[x=-92,y=45,z=186,dx=1,dy=2,dz=1,nbt={ndex:101}] run data merge entity @e[x=-144,y=45,z=186,dx=1,dy=2,dz=1,type=pixelmon:statue,nbt={ndex:1999},limit=1] {ndex:101}
+execute if entity @e[x=-92,y=45,z=186,dx=1,dy=2,dz=1,nbt={ndex:101}] run setblock -143 46 187 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:101,Growth:7b}} replace
+execute if block -92 46 187 pixelmon:poke_display run setblock -143 46 187 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:101,Growth:7b}} replace
 execute if entity @e[x=-92,y=45,z=186,dx=1,dy=2,dz=1,nbt={ndex:101}] run fill -144 44 186 -124 43 192 minecraft:redstone_block replace minecraft:lapis_block
 execute if entity @e[x=-92,y=45,z=186,dx=1,dy=2,dz=1,nbt={ndex:101}] run fill -111 43 193 -94 44 186 minecraft:redstone_block replace minecraft:lapis_block
 
-execute if entity @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,nbt={ndex:101}] run particle dust 1 0.99 0.64 1 -136 46.1 187.0 4 0.1 0.1 1 10 normal
-execute if entity @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,nbt={ndex:101}] run particle dust 1 0.99 0.64 1 -100 46.1 187.0 4 0.1 0.1 1 10 normal
+execute if entity @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,nbt={ndex:101}] run particle dust 1 0.99 0.64 1 -136 46.1 187.5 4 0.1 0.1 1 10 normal
+execute if entity @e[x=-92,y=45,z=194,dx=1,dy=2,dz=1,nbt={ndex:101}] run particle dust 1 0.99 0.64 1 -100 46.1 187.5 4 0.1 0.1 1 10 normal
 
 #Off
-execute unless entity @e[x=-92,y=45,z=186,dx=1,dy=2,dz=1,nbt={ndex:101}] run data merge entity @e[x=-144,y=45,z=186,dx=1,dy=2,dz=1,type=pixelmon:statue,limit=1] {ndex:1999}
+execute unless entity @e[x=-92,y=45,z=186,dx=1,dy=2,dz=1,nbt={ndex:101}] run setblock -143 46 187 minecraft:air
 execute unless entity @e[x=-92,y=45,z=186,dx=1,dy=2,dz=1,nbt={ndex:101}] run fill -144 44 186 -124 43 192 minecraft:lapis_block replace minecraft:redstone_block
 execute unless entity @e[x=-92,y=45,z=186,dx=1,dy=2,dz=1,nbt={ndex:101}] run fill -111 43 193 -94 44 186 minecraft:lapis_block replace minecraft:redstone_block
 

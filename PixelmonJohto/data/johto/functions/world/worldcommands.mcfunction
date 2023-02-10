@@ -6,8 +6,6 @@
 #temp to tp corrputed trainer into void
 #tp @e[x=-172.50,y=64.00,z=598.50,type=pixelmon:npc_trainer,distance=..4] ~ ~-1000 ~
 
-#Adds a Persistent tag to statues for finding non-persistent statues to kill on commands
-#tag @e[type=pixelmon:statue,tag=!Persistent] add Persistent
 
 #---------------------
 #Despawns items that may be broken and pop up elsewhere in the map
@@ -42,7 +40,7 @@ execute as @a[x=-780,y=64,z=-245,distance=..20,tag=!InitialTags] run function jo
 execute as @a[scores={TriggerCommand=1..}] run function johto:triggers/triggercommands
 
 #Hall of Fame Function
-execute as @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=34,tag=Dialogue97] run function johto:world/halloffame/halloffame
+execute as @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=34,tag=Dialogue97,scores={TalkTime=0}] run function johto:world/halloffame/halloffame
 
 #Removes Cooldown score if present
 scoreboard players remove @a[scores={Cooldown=1..}] Cooldown 1
@@ -526,14 +524,14 @@ scoreboard players set @a[x=-693,y=63,z=-490,dx=20,dy=5,dz=20,scores={TalkTime=0
 scoreboard players set @a[x=-693,y=63,z=-490,dx=20,dy=5,dz=20,scores={TalkTime=0,StarterPick=1..},tag=!Dialogue4] DialogueTrigger 4
 
 #Sets starters to regular models if in town
-execute as @a[x=-704,y=62,z=-508,dx=50,dy=3,dz=50,scores={StarterPick=1}] run data merge entity @e[x=-687,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue,limit=1] {ndex: 152}
-execute as @a[x=-704,y=62,z=-508,dx=50,dy=3,dz=50,scores={StarterPick=2}] run data merge entity @e[x=-689,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue,limit=1] {ndex: 155}
-execute as @a[x=-704,y=62,z=-508,dx=50,dy=3,dz=50,scores={StarterPick=3}] run data merge entity @e[x=-685,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue,limit=1] {ndex: 158}
+execute as @a[x=-704,y=62,z=-508,dx=50,dy=3,dz=50,scores={StarterPick=1}] run setblock -687 65 -478 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:152,Growth:3b}} replace
+execute as @a[x=-704,y=62,z=-508,dx=50,dy=3,dz=50,scores={StarterPick=2}] run setblock -689 65 -478 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:155,Growth:3b}} replace
+execute as @a[x=-704,y=62,z=-508,dx=50,dy=3,dz=50,scores={StarterPick=3}] run setblock -685 65 -478 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:158,Growth:3b}} replace
 
 #Sets first starters as invisible
-execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={StarterPick=1}] run data merge entity @e[x=-687,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue,limit=1] {ndex: 1999}
-execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={StarterPick=2}] run data merge entity @e[x=-689,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue,limit=1] {ndex: 1999}
-execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={StarterPick=3}] run data merge entity @e[x=-685,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue,limit=1] {ndex: 1999}
+execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={StarterPick=1}] run setblock -687 65 -478 minecraft:air
+execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={StarterPick=2}] run setblock -689 65 -478 minecraft:air
+execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,scores={StarterPick=3}] run setblock -685 65 -478 minecraft:air
 
 #---------------------
 
@@ -560,9 +558,9 @@ execute as @a[x=-300,y=64,z=-509,distance=0..10,tag=Dialogue6,tag=!Dialogue7,sco
 scoreboard players set @a[x=-693,y=63,z=-490,dx=20,dy=5,dz=20,tag=!Dialogue8,tag=Dialogue5,scores={TalkTime=0}] DialogueTrigger 8
 
 #Silver's Starters invisible
-execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,tag=Dialogue5,scores={StarterPick=1}] run effect give @e[x=-689,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue] minecraft:invisibility 10 1 true
-execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,tag=Dialogue5,scores={StarterPick=2}] run effect give @e[x=-685,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue] minecraft:invisibility 10 1 true
-execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,tag=Dialogue5,scores={StarterPick=3}] run effect give @e[x=-687,y=64,z=-478,dy=2,dz=2,type=pixelmon:statue] minecraft:invisibility 10 1 true
+execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,tag=Dialogue5,scores={StarterPick=1}] run setblock -687 65 -478 minecraft:air
+execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,tag=Dialogue5,scores={StarterPick=2}] run setblock -689 65 -478 minecraft:air
+execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,tag=Dialogue5,scores={StarterPick=3}] run setblock -685 65 -478 minecraft:air
 
 #Toggles Silver outside Elm's Lab
 execute as @a[x=-665,y=64,z=-493,distance=0..100,tag=Dialogue6] run tp @e[x=-665,y=63,z=-493,dy=2,type=pixelmon:npc_chatting] -758 93 -242
@@ -655,9 +653,6 @@ execute as @a[x=623,y=64,z=-714,distance=..5,tag=!Bugsy,scores={Cooldown=0}] run
 #Dialogue21 - Ilex Forest Farfetch'd Lost
 scoreboard players set @a[x=623,y=64,z=-714,distance=0..5,tag=!Dialogue21,tag=Bugsy,scores={Farfetchd=0}] DialogueTrigger 21
 
-#Turns Farfetch'd invisible if player doesn't have Bugsy tag
-#execute as @a[x=513,y=0,z=-793,dx=187,dy=240,dz=228,tag=!Bugsy] run effect give @e[type=pixelmon:statue,distance=..25] minecraft:invisibility 5 1 true
-
 #Runs Farfetch'd chasing function
 execute as @a[limit=1,x=513,y=60,z=-793,dx=187,dy=10,dz=228] run function johto:world/farfetchd
 
@@ -689,8 +684,8 @@ scoreboard players set @a[x=420,y=63,z=-307,dx=8,dy=5,dz=8,tag=!Dialogue29,tag=W
 #Dialogue30 - Route 36 Sudowoodo Spawn
 scoreboard players set @a[x=332,y=64,z=-16,distance=0..10,tag=Dialogue29,tag=!Dialogue30] DialogueTrigger 30
 
-#tps in Sudowoodo
-execute at @a[x=332,y=64,z=-16,distance=0..30,tag=!Dialogue30,scores={TalkTime=0}] run data merge entity @e[x=331,y=63,z=-18,dx=3,dy=3,dz=3,type=pixelmon:statue,limit=1] {ndex: 185}
+#Sets up Sudowoodo
+execute at @a[x=332,y=64,z=-16,distance=0..30,tag=!Dialogue30,scores={TalkTime=0}] run setblock 333 64 -17 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:185,Growth:7b}} replace
 
 #Dialogue31 - Ecruteak City Silver at Dance Theatre
 scoreboard players set @a[x=343,y=64,z=216,distance=..3,tag=!Dialogue31,scores={TalkTime=0}] DialogueTrigger 31
@@ -717,9 +712,9 @@ execute as @a[x=441,y=64,z=312,distance=..20,tag=Dialogue34,tag=!Dialogue35,scor
 #---------------------
 #Dialogue36 - Burned Tower Legendary Dogs
 scoreboard players set @a[x=444,y=58,z=328,distance=..5,tag=!Dialogue36] DialogueTrigger 36
-execute if entity @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run data merge entity @e[limit=1,x=439,y=58,z=328,distance=..2,type=pixelmon:statue] {ndex:243,statueTexture:1b,Animate:0b}
-execute if entity @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run data merge entity @e[limit=1,x=446,y=58,z=328,distance=..2,type=pixelmon:statue] {ndex:244,statueTexture:1b,Animate:0b}
-execute if entity @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run data merge entity @e[limit=1,x=443,y=58,z=328,distance=..2,type=pixelmon:statue] {ndex:245,statueTexture:1b,Animate:0b}
+execute if entity @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run setblock 439 59 328 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:2004,Growth:2b},PokeDisplayTextureMode:1} replace
+execute if entity @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run setblock 446 59 328 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:2005,Growth:2b},PokeDisplayTextureMode:1} replace
+execute if entity @a[x=444,y=58,z=328,distance=..20,tag=!Dialogue36,scores={TalkTime=0}] run setblock 443 59 328 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:2006,Growth:2b},PokeDisplayTextureMode:1} replace
 
 #---------------------
 #Dialogue37 - Ecruteak City Gym Morty pre-battle
@@ -770,7 +765,8 @@ execute as @p[x=-187,y=64,z=352,distance=..30,tag=Dialogue64] run tp @e[x=-184,y
 #---------------------
 #Route 49 - Lake of Rage Shiny Gyarados
 scoreboard players set @a[x=-169,y=65,z=645,distance=..30,scores={TalkTime=0},tag=!Dialogue49] DialogueTrigger 49
-execute if entity @a[x=-169,y=65,z=645,distance=..100,tag=!Dialogue49,scores={TalkTime=0}] run data merge entity @e[x=-167,y=62,z=632,distance=..5,type=pixelmon:statue,limit=1] {ndex:130,palette:"shiny"}
+execute if entity @a[x=-169,y=65,z=645,distance=..100,tag=!Dialogue49,scores={TalkTime=0}] run setblock -167 62 632 pixelmon:poke_display[facing=north,waterlogged=true]{PokeDisplayPokemon:{ndex:130,Growth:6b,palette:"shiny"}} replace
+
 
 #Dialogue50 - Mr. Pokemon Red Scale trade prompt
 scoreboard players set @a[x=-255,y=63,z=-198,dx=20,dy=5,dz=8,scores={DialogueTrigger=0},tag=!Dialogue50,nbt={Inventory:[{id:"pixelmon:red_scale"}]}] DialogueTrigger 50
@@ -782,7 +778,7 @@ execute as @a[x=-159,y=64,z=590,distance=..50,tag=Dialogue49,tag=!Dialogue51] ru
 #---------------------
 #Dialogue53
 scoreboard players set @a[x=-164,y=63,z=196,dx=19,dy=6,dz=20,tag=Dialogue52,tag=!Dialogue53] DialogueTrigger 53
-execute at @a[x=-155,y=64,z=208,distance=..30,tag=Dialogue52,scores={TalkTime=0},tag=!Dialogue53] run data merge entity @e[x=-156,y=63,z=200,distance=..3,type=pixelmon:statue,limit=1] {ndex: 149,Growth: 6b,statueTexture:0s}
+execute at @a[x=-155,y=64,z=208,distance=..30,tag=Dialogue52,scores={TalkTime=0},tag=!Dialogue53] run setblock -156 64 200 pixelmon:poke_display[facing=east]{PokeDisplayPokemon:{ndex:149,Growth:6b},PokeDisplayTextureMode:0} replace
 execute at @a[x=-155,y=64,z=208,distance=..30,tag=Dialogue52,scores={TalkTime=0},tag=!Dialogue53] run tp @e[x=-805,y=92,z=-242,dy=3,type=pixelmon:npc_chatting] -155 64 202
 
 #Mahogany Town Rocket HQ Occupied by Rockets
@@ -832,12 +828,13 @@ scoreboard players set @a[x=-141,y=44,z=157,dx=16,dy=5,dz=15,tag=Dialogue58,tag=
 execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58,tag=!Dialogue63] run tp @e[x=-797,y=92,z=-242,dy=3,type=pixelmon:npc_chatting] -128 45 159
 execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58,tag=!Dialogue63] run tp @e[x=-795,y=92,z=-242,dy=3,type=pixelmon:npc_chatting] -128 45 171
 execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58,tag=!Dialogue63] run tp @e[x=-793,y=92,z=-242,dy=3,type=pixelmon:npc_trainer] -134 45 170
-execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58,tag=!Dialogue63] run data merge entity @e[x=-128,y=45,z=168,distance=..2,type=pixelmon:statue,limit=1] {ndex:24}
-execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58,tag=!Dialogue63] run data merge entity @e[x=-128,y=45,z=164,distance=..2,type=pixelmon:statue,limit=1] {ndex:149}
+execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58,tag=!Dialogue63] run setblock -128 45 168 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:24,Growth:3b}} replace
+execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue58,tag=!Dialogue63] run setblock -128 45 164 pixelmon:poke_display[facing=south]{PokeDisplayPokemon:{ndex:149,Growth:3b}} replace
+
 
 #Prior to battle-ready
-execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue53,tag=!Dialogue61] run data merge entity @e[x=-128,y=45,z=168,distance=..2,type=pixelmon:statue,limit=1] {ndex:1999}
-execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue53,tag=!Dialogue61] run data merge entity @e[x=-128,y=45,z=164,distance=..2,type=pixelmon:statue,limit=1] {ndex:1999}
+execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue53,tag=!Dialogue61] run setblock -128 45 168 minecraft:air
+execute at @a[x=-133,y=45,z=166,distance=..30,scores={TalkTime=0},tag=Dialogue53,tag=!Dialogue61] run setblock -128 45 164 minecraft:air
 
 #Dialogue63 - Ariana post-battle
 scoreboard players set @a[x=-141,y=44,z=157,dx=16,dy=5,dz=15,scores={TalkTime=0},tag=!Dialogue63,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 63
@@ -1284,7 +1281,7 @@ execute at @a[x=445,y=64,z=304,distance=..10,scores={DogEncounter=1..},tag=!Dial
 
 #Dialouge227 - Cianwood City Suicune & Eusine
 scoreboard players set @a[x=1249,y=63,z=-300,dx=9,dy=5,dz=10,tag=Dialogue226,tag=!Dialogue227] DialogueTrigger 227
-execute at @a[x=1256,y=64,z=-296,distance=..50,scores={TalkTime=0,DogEncounter=1..},tag=Dialogue226,tag=!Dialogue227] run data merge entity @e[x=1256,y=64,z=-296,distance=..3,type=pixelmon:statue,limit=1] {ndex:245}
+execute at @a[x=1256,y=64,z=-296,distance=..50,scores={TalkTime=0,DogEncounter=1..},tag=Dialogue226,tag=!Dialogue227] run setblock 1256 64 -296 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:245,Growth:7b}} replace
 
 #Dialogue228 - Cianwood City Eucine post-battle
 scoreboard players set @a[x=1256,y=64,z=-296,distance=..20,scores={TalkTime=0},tag=!Dialogue228,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] DialogueTrigger 228
@@ -1292,19 +1289,19 @@ execute at @a[x=1251,y=64,z=-307,distance=..20,scores={TalkTime=0},tag=Dialogue2
 
 #Dialogue229 - Mt. Mortar Suicune encounter
 scoreboard players set @a[x=80,y=64,z=152,distance=..5,scores={TalkTime=0},tag=Dialogue228,tag=!Dialogue229] DialogueTrigger 229
-execute at @a[x=80,y=64,z=152,distance=..50,scores={TalkTime=0},tag=Dialogue228,tag=!Dialogue229] run data merge entity @e[x=80,y=64,z=152,distance=..3,type=pixelmon:statue,limit=1] {ndex:245}
+execute at @a[x=80,y=64,z=152,distance=..50,scores={TalkTime=0},tag=Dialogue228,tag=!Dialogue229] run setblock 80 64 152 pixelmon:poke_display[facing=east]{PokeDisplayPokemon:{ndex:245,Growth:7b}} replace
 
 #Dialogue230 - Vermilion City Suicune
 scoreboard players set @a[x=-2823,y=64,z=-96,distance=..10,scores={TalkTime=0},tag=Dialogue229,tag=!Dialogue230] DialogueTrigger 230
-execute at @a[x=-2823,y=64,z=-96,distance=..50,scores={TalkTime=0},tag=Dialogue229,tag=!Dialogue230] run data merge entity @e[x=-2823,y=64,z=-96,distance=..3,type=pixelmon:statue,limit=1] {ndex:245}
+execute at @a[x=-2823,y=64,z=-96,distance=..50,scores={TalkTime=0},tag=Dialogue229,tag=!Dialogue230] run setblock -2823 64 -96 pixelmon:poke_display[facing=east]{PokeDisplayPokemon:{ndex:245,Growth:7b}} replace
 
 #Dialogue231 - Route 14 Suicune
 scoreboard players set @a[x=-2971,y=64,z=-470,distance=..10,scores={TalkTime=0},tag=Dialogue230,tag=!Dialogue231] DialogueTrigger 231
-execute at @a[x=-2981,y=64,z=-470,distance=..50,scores={TalkTime=0},tag=Dialogue230,tag=!Dialogue231] run data merge entity @e[x=-2981,y=64,z=-470,distance=..3,type=pixelmon:statue,limit=1] {ndex:245}
+execute at @a[x=-2981,y=64,z=-470,distance=..50,scores={TalkTime=0},tag=Dialogue230,tag=!Dialogue231] run setblock -2981 64 -470 pixelmon:poke_display[facing=east]{PokeDisplayPokemon:{ndex:245,Growth:7b}} replace
 
 #Dialogue232 - Route 25 Suicune pre-catch
 scoreboard players set @a[x=-3094,y=64,z=989,distance=..10,tag=!Dialogue232,tag=Dialogue231] DialogueTrigger 232
-execute at @a[x=-3094,y=64,z=989,distance=..50,scores={TalkTime=0},tag=Dialogue231,tag=!Dialogue233] run data merge entity @e[x=-3111,y=64,z=989,distance=..3,type=pixelmon:statue,limit=1] {ndex:245}
+execute at @a[x=-3094,y=64,z=989,distance=..50,scores={TalkTime=0},tag=Dialogue231,tag=!Dialogue233] run setblock -3111 64 989 pixelmon:poke_display[facing=east]{PokeDisplayPokemon:{ndex:245,Growth:7b}} replace
 
 #-------------------------------------------------------------------------------------------------------------------------
 #Legendary/Mythical/Story Pokemon Commands
@@ -1337,10 +1334,9 @@ scoreboard players set @a[x=251,y=154,z=308,dx=11,dy=5,dz=11,tag=!Dialogue104,nb
 #Dialogue105
 #Union Cave Friday Lapras
 execute at @a[x=120,y=13,z=-852,distance=..10,tag=!Dialogue105] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run scoreboard players set @a[x=120,y=13,z=-852,distance=..10,tag=!Dialogue105] DialogueTrigger 105
-#execute at @a[x=120,y=13,z=-852,distance=..50,tag=!Dialogue105] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run tp @e[x=-785,y=78,z=-244,dy=3,type=pixelmon:statue] 120 13 -852
-execute at @a[x=120,y=13,z=-852,distance=..50,tag=!Dialogue105] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run data merge entity @e[x=120,y=13,z=-852,distance=..5,type=pixelmon:statue,limit=1] {ndex: 131}
-execute at @a[x=120,y=13,z=-852,distance=..50,tag=!Dialogue105] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1..4}] run data merge entity @e[x=120,y=13,z=-852,distance=..5,type=pixelmon:statue,limit=1] {ndex: 1999}
-execute at @a[x=120,y=13,z=-852,distance=..50,tag=!Dialogue105] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=6..7}] run data merge entity @e[x=120,y=13,z=-852,distance=..5,type=pixelmon:statue,limit=1] {ndex: 1999}
+execute at @a[x=120,y=13,z=-852,distance=..50,tag=!Dialogue105] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=5}] run setblock 120 12 -852 pixelmon:poke_display[facing=north,waterlogged=true]{PokeDisplayPokemon:{ndex:131,Growth:7b}} replace
+execute at @a[x=120,y=13,z=-852,distance=..50,tag=!Dialogue105] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=1..4}] run setblock 120 12 -852 minecraft:water
+execute at @a[x=120,y=13,z=-852,distance=..50,tag=!Dialogue105] if entity @e[x=-799,y=64,z=-284,dy=3,type=armor_stand,scores={WeekdayTrack=6..7}] run setblock 120 12 -852 minecraft:water
 
 #Dialogue110
 #GS Ball Spawn In
@@ -1387,16 +1383,17 @@ scoreboard players set @a[x=-1726,y=63,z=-319,dx=23,dy=5,dz=25,scores={TalkTime=
 #Dialogue158
 #Seafoam Islands Articuno
 scoreboard players set @a[x=-2065,y=17,z=-847,dx=23,dy=3,dz=15,scores={Articuno=0,TalkTime=0},tag=!Dialogue158] DialogueTrigger 158
-execute as @a[x=-2054,y=19,z=-835,distance=..50,scores={Articuno=0,TalkTime=0}] run tp @e[x=-767,y=79,z=-244,distance=..2,type=pixelmon:statue] -2054 19 -835
+execute as @a[x=-2054,y=19,z=-835,distance=..50,scores={Articuno=0,TalkTime=0}] run setblock -2054 19 -835 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:144,Growth:7b}} replace
 
 #Dialogue159
 #Power Plant Zapdos
 scoreboard players set @a[x=-3239,y=64,z=571,distance=..5,scores={Zapdos=0,TalkTime=0},tag=AllGyms,tag=!Dialogue159] DialogueTrigger 159
-execute as @a[x=-3239,y=64,z=571,distance=..50,scores={Zapdos=0,TalkTime=0},tag=AllGyms] run data merge entity @e[x=-3239,y=64,z=571,distance=..2,type=pixelmon:statue,limit=1] {ndex:1999}
+execute as @a[x=-3239,y=64,z=571,distance=..50,scores={Zapdos=0,TalkTime=0},tag=AllGyms] run setblock -3239 64 571 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:145,Growth:7b}} replace
 
 #Dialogue160
 #Victory Road Moltres
 scoreboard players set @a[x=-965,y=100,z=304,distance=..7,scores={Moltres=0,TalkTime=0},tag=!Dialogue160] DialogueTrigger 160
+#sets up block in portals function
 
 #Mt. Mortar Tyrogue give
 execute as @a[x=112,y=32,z=391,distance=..25,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] run pokegive @s Tyrogue
@@ -1457,7 +1454,7 @@ execute as @a[x=-2682,y=64,z=278,distance=..20,nbt={Inventory:[{id:"pixelmon:por
 #----------------------------------------
 
 #Viridian City Snorlax setup
-execute as @a[x=-2894,y=64,z=-53,distance=..50,scores={TalkTime=0},tag=!Dialogue142] run data merge entity @e[x=-2902,y=64,z=-59,distance=..5,type=pixelmon:statue,limit=1,nbt={ndex:1999}] {ndex:2002}
+execute as @a[x=-2894,y=64,z=-53,distance=..50,scores={TalkTime=0},tag=!Dialogue142] run setblock -2902 64 -59 pixelmon:poke_display[facing=north]{PokeDisplayPokemon:{ndex:2002,Growth:7b}} replace
 
 #Dialogue233
 #Suicune Spawn
