@@ -1,5 +1,5 @@
 #Kurt villager invisible effect
-effect give @e[type=villager,name=Kurt] minecraft:invisibility 10000 1 true
+#effect give @e[type=villager,name=Kurt] minecraft:invisibility 10000 1 true
 
 #Invisible villager in Sinjoh Ruins Abra
 effect give @e[x=-1073,y=60,z=-216,distance=..2,type=minecraft:villager] minecraft:invisibility 10000 1 true
@@ -24,6 +24,10 @@ tag @a[tag=PokemonMusicTalk] remove PokemonMusicTalk
 
 #Removes Radio Tower takeover talk dialogue
 tag @a[tag=Dialogue224] remove Dialogue224
+
+
+#Oak and Mary's Talkshow Cooldown
+tag @a[tag=PokeTalkCooldown] remove PokeTalkCooldown
 
 
 #Silver Entity StarterPick Sets

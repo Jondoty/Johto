@@ -59,21 +59,42 @@ execute as @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={RadioSelect=1}] run 
 
 
 #Slot 3 - Unown Station, Ruins of Alph only
-execute as @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={RadioSelect=3}] run playsound unownstation record @s[scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-execute as @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={RadioSelect=3}] run title @s actionbar ["",{"text":"Radio: "},{"text":"Unown Station","obfuscated":true}]
-execute as @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={RadioSelect=3}] run scoreboard players set @s[scores={MusicCooldown=0}] MusicCooldown 39
+#execute as @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={RadioSelect=3}] run playsound unownstation record @s[scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+#execute as @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={RadioSelect=3}] run title @s actionbar ["",{"text":"Radio: "},{"text":"Unown Station","obfuscated":true}]
+#execute as @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={RadioSelect=3}] run scoreboard players set @s[scores={MusicCooldown=0}] MusicCooldown 39
 
 
 #Use slot for Oak and Mary's radio station?
 #Swarms are post-game
-#Mary: We're reaching out to all you Pokémon fans out there! Here is the leading expert on Pokémon, Professor Oak, and of course myself, Mary!
-#Mary: This is breaking news! A bunch of {Pokemon} have decided to make an appearance at {Location}! If you're a Trainer who's really wanted to find {Pokemon}, hurry over to {Location}! That's the end of the breaking news!
+execute as @s[scores={RadioSelect=3,IP=0},tag=RadioCard] run tellraw @a {"text":"<Mary> We're reaching out to all you Pokémon fans out there! Here is the leading expert on Pokémon, Professor Oak, and of course myself, Mary!"}
 
-#execute as @s[scores={RadioSelect=3},tag=RadioCard] run
+#Rolls for a Swarm species if rng=0 and player tunes into this station
+#SwarmActive score should prevent the rolling from going multiple times within a day. Resets with DailyCommands function
+execute as @s[scores={RadioSelect=3,IP=1..},tag=RadioCard] if entity @e[x=-864,y=69,z=-207,dy=3,tag=!SwarmActive] run scoreboard players set @e[x=-864,y=69,z=-207,dy=4,dz=2] rng 0
+execute as @s[scores={RadioSelect=3,IP=1..},tag=RadioCard] if entity @e[x=-864,y=69,z=-207,dy=3,tag=!SwarmActive] run scoreboard players add @e[x=-864,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 1
+execute as @s[scores={RadioSelect=3,IP=1..},tag=RadioCard] if entity @e[x=-864,y=69,z=-207,dy=3,tag=!SwarmActive] run scoreboard players add @e[x=-864,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 2
+execute as @s[scores={RadioSelect=3,IP=1..},tag=RadioCard] if entity @e[x=-864,y=69,z=-207,dy=3,tag=!SwarmActive] run scoreboard players add @e[x=-864,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 4
+execute as @s[scores={RadioSelect=3,IP=1..},tag=RadioCard] if entity @e[x=-864,y=69,z=-207,dy=3,tag=!SwarmActive] run scoreboard players add @e[x=-864,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 8
+execute as @s[scores={RadioSelect=3,IP=1..},tag=RadioCard] if entity @e[x=-864,y=69,z=-207,dy=3,tag=!SwarmActive] run scoreboard players add @e[x=-864,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 16
+execute as @s[scores={RadioSelect=3,IP=1..},tag=RadioCard] if entity @e[x=-864,y=69,z=-207,dy=3,tag=!SwarmActive] run scoreboard players add @e[x=-864,y=69,z=-207,dy=4,dz=2,sort=random,limit=1] rng 32
+
+#Ensures the armor stands have an equal value and reflect equal Pokemon and zones
+execute as @s[scores={RadioSelect=3,IP=1..},tag=RadioCard] run scoreboard players operation @e[x=-864,y=69,z=-207,dy=3] rng = @e[x=-864,y=69,z=-205,dy=3] rng
+
+
+execute as @s[scores={RadioSelect=3,IP=1..},tag=RadioCard] run tag @e[x=-864,y=69,z=-207,dy=4,dz=2] add SwarmActive
+execute as @s[scores={RadioSelect=3,IP=1..},tag=RadioCard] run function johto:world/swarmspawns
+execute as @s[scores={RadioSelect=3,IP=1..},tag=RadioCard,tag=!PokeTalkCooldown] run tellraw @s ["",{"text":"<Mary> This is breaking news! A bunch of "},{"selector":"@e[x=-864,y=69,z=-205,dy=3]"},{"text":" have decided to make an appearance at "},{"selector":"@e[x=-864,y=69,z=-207,dy=3]"},{"text":"! If you're a Trainer who's really wanted to find "},{"selector":"@e[x=-864,y=69,z=-205,dy=3]"},{"text":", hurry over to "},{"selector":"@e[x=-864,y=69,z=-207,dy=3]"},{"text":"!"}]
+execute as @s[scores={RadioSelect=3},tag=RadioCard] run tag @s add PokeTalkCooldown
+execute as @s[scores={RadioSelect=3},tag=RadioCard] run playsound pokemontalk record @s[scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+execute as @s[scores={RadioSelect=3},tag=RadioCard] run scoreboard players set @s[scores={MusicCooldown=0}] MusicCooldown 56
 
 
 #Without
 execute as @s[scores={RadioSelect=3},tag=!RadioCard] run title @s actionbar {"text":"Station 3: This station requires a Radio Card from Goldenrod to listen"}
+
+
+
 
 #Slot 4 - Lucky Number Show
 execute as @s[scores={RadioSelect=4},tag=RadioCard] run title @s actionbar {"text":"Radio: Lucky Number Show"}

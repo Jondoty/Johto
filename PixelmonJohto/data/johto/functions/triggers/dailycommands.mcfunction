@@ -85,6 +85,10 @@ tag @a[tag=FishermanTalk2] remove FishermanTalk2
 
 
 
+#Resets any present Swarm Spawns
+tag @e[x=-864,y=69,z=-207,dy=4,dz=2] remove SwarmActive
+scoreboard players set @e[x=-864,y=69,z=-207,dy=4,dz=2] rng 0
+tag @a remove PokeTalkCooldown
 
 
 

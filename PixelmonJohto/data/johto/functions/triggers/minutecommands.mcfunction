@@ -25,9 +25,8 @@ execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=UnownSpawning] run se
 function johto:world/cuttrees
 
 
-#TEST IN SINGLEPLAYER
 #Runs a Poke-Loot regeneration function if enabled, should be one-time-only by default, adds tag to regenerate daily by default
-#execute as @p run function johto:data/pokeloot
+execute if entity @e[x=-793,y=65,z=-284,dy=3,tag=RepeatedLoot] as @p run function johto:data/pokeloot
 
 #Gives player AllGyms tag and achievement
 advancement grant @a[tag=Clair,tag=Pryce,tag=Jasmine,tag=Chuck,tag=Morty,tag=Whitney,tag=Bugsy,tag=Falkner,tag=Brock,tag=Misty,tag=Surge,tag=Erika,tag=Janine,tag=Sabrina,tag=Blaine,tag=Blue,tag=!AllGyms] only johto:event11
@@ -36,6 +35,11 @@ tag @a[tag=Clair,tag=Pryce,tag=Jasmine,tag=Chuck,tag=Morty,tag=Whitney,tag=Bugsy
 
 #All Week Siblings achievement
 advancement grant @a[tag=Dialogue187,tag=Dialogue188,tag=Dialogue189,tag=Dialogue190,tag=Dialogue191,tag=Dialogue192,tag=Dialogue193] only johto:weeksiblings
+
+
+#Runs Swarm Spawns
+function johto:world/swarmspawns
+
 
 ##Returns the Azure Flute to player
 #execute as @a[scores={ArceusCD=1}] run playsound minecraft:entity.lightning.thunder ambient @s ~ ~ ~ 10 1 1
