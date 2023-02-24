@@ -312,183 +312,7 @@ execute as @a[scores={TriggerCommand=56}] run scoreboard players set @s TriggerC
 
 
 
-##57 - Moltres Reset
-##scoreboard players set @a TriggerCommand 57 {Inventory:[{id:"minecraft:chainmail_helmet"}]}
-#execute as @a[scores={TriggerCommand=57}] run clear @s minecraft:chainmail_helmet
-#execute as @a[scores={TriggerCommand=57}] run tellraw @s {"text":"You can encounter Moltres again in a half an hour.","italic":true}
-#execute as @a[scores={TriggerCommand=57}] run scoreboard players set @s Moltres 0
-#execute as @a[scores={TriggerCommand=57}] run tag @s remove Dialogue160
-#execute as @a[scores={TriggerCommand=57}] run scoreboard players set @s MoltresCD 7
-#execute as @a[scores={TriggerCommand=57}] run scoreboard players set @s TriggerCommand 0
-#
-#
-##58 - Articuno Reset
-##scoreboard players set @a TriggerCommand 58 {Inventory:[{id:"minecraft:chainmail_boots"}]}
-#execute as @a[scores={TriggerCommand=58}] run clear @s minecraft:chainmail_boots
-#execute as @a[scores={TriggerCommand=58}] run tellraw @s {"text":"You can encounter Articuno again in a half an hour.","italic":true}
-#execute as @a[scores={TriggerCommand=58}] run scoreboard players set @s Articuno 0
-#execute as @a[scores={TriggerCommand=58}] run tag @s remove Dialogue158
-#execute as @a[scores={TriggerCommand=58}] run scoreboard players set @s ArticunoCD 7
-#execute as @a[scores={TriggerCommand=58}] run scoreboard players set @s TriggerCommand 0
-#
-#
-##59 - Zapdos Reset
-##scoreboard players set @a TriggerCommand 59 {Inventory:[{id:"minecraft:chainmail_chestplate"}]}
-#execute as @a[scores={TriggerCommand=59}] run clear @s minecraft:chainmail_chestplate
-#execute as @a[scores={TriggerCommand=59}] run tellraw @s {"text":"You can encounter Zapdos again in a half an hour.","italic":true}
-#execute as @a[scores={TriggerCommand=59}] run scoreboard players set @s Zapdos 0
-#execute as @a[scores={TriggerCommand=59}] run tag @s remove Dialogue159
-#execute as @a[scores={TriggerCommand=59}] run scoreboard players set @s ZapdosCD 7
-#execute as @a[scores={TriggerCommand=59}] run scoreboard players set @s TriggerCommand 0
-#
-#
-##60 - Arceus Reset
-##scoreboard players set @a TriggerCommand 60 {Inventory:[{id:"minecraft:diamond_chestplate"}]}
-#execute as @a[scores={TriggerCommand=60}] run clear @s minecraft:diamond_chestplate
-#execute as @a[scores={TriggerCommand=60}] run tellraw @s {"text":"You can encounter Arceus again, and will be given another flute, in a half an hour.","italic":true}
-#execute as @a[scores={TriggerCommand=60}] run scoreboard players set @s ArceusCD 7
-#execute as @a[scores={TriggerCommand=60}] run scoreboard players set @s TriggerCommand 0
-#
-#
-##61 - Rayquaza Reset
-##scoreboard players set @a TriggerCommand 61 {Inventory:[{id:"minecraft:iron_leggings"}]}
-#execute as @a[scores={TriggerCommand=61}] run clear @s minecraft:iron_leggings
-#execute as @a[scores={TriggerCommand=61}] run give @s minecraft:diamond_horse_armor{display:{Name:"Jade Orb",Lore:["A shiny green orb that is said","to have a legend tied to it. It's","known to have a deep connection","with the Hoenn region."]},ench:[{id:"2",lvl:"1"}]}
-#execute as @a[scores={TriggerCommand=61}] run tellraw @s {"text":"You can encounter Rayquaza again in a half an hour.","italic":true}
-#execute as @a[scores={TriggerCommand=61}] run scoreboard players set @s RayquazaCD 6
-#execute as @a[scores={TriggerCommand=61}] run scoreboard players set @s TriggerCommand 0
-#
-#
-##62 - Kyogre Reset
-##scoreboard players set @a TriggerCommand 62 {Inventory:[{id:"minecraft:iron_chestplate"}]}
-#execute as @a[scores={TriggerCommand=62}] run clear @s minecraft:iron_chestplate
-#execute as @a[scores={TriggerCommand=62}] run give @s minecraft:iron_horse_armor{display:{Name:"Blue Orb",Lore:["A shiny blue orb that is said","to have a legend tied to it. It's","known to have a deep connection","with the Hoenn region."]},ench:[{id:"2",lvl:"1"}]}
-#execute as @a[scores={TriggerCommand=62}] run tellraw @s {"text":"You can encounter Kyogre again in a half an hour.","italic":true}
-#execute as @a[scores={TriggerCommand=62}] run scoreboard players set @s KyogreCD 6
-#execute as @a[scores={TriggerCommand=62}] run scoreboard players set @s TriggerCommand 0
-#
-#
-##63 - Groudon Reset
-##scoreboard players set @a TriggerCommand 63 {Inventory:[{id:"minecraft:iron_helmet"}]}
-#execute as @a[scores={TriggerCommand=63}] run clear @s minecraft:iron_helmet
-#execute as @a[scores={TriggerCommand=63}] run give @s minecraft:golden_horse_armor{display:{Name:"Red Orb",Lore:["A shiny red orb that is said","to have a legend tied to it. It's","known to have a deep connection","with the Hoenn region."]},ench:[{id:"2",lvl:"1"}]}
-#execute as @a[scores={TriggerCommand=63}] run tellraw @s {"text":"You can encounter Groudon again in a half an hour.","italic":true}
-#execute as @a[scores={TriggerCommand=63}] run scoreboard players set @s GroudonCD 6
-#execute as @a[scores={TriggerCommand=63}] run scoreboard players set @s TriggerCommand 0
-#
-#
-##64 - Mew Reset
-##scoreboard players set @a TriggerCommand 64 {Inventory:[{id:"minecraft:diamond_boots"}]}
-#execute as @a[scores={TriggerCommand=64}] run clear @s minecraft:diamond_boots
-#execute as @a[scores={TriggerCommand=64}] run scoreboard players set @s Mew 0
-#execute as @a[scores={TriggerCommand=64}] run tellraw @s {"text":"You can encounter Mew again in a half an hour.","italic":true}
-#execute as @a[scores={TriggerCommand=64}] run scoreboard players set @s MewCD 6
-#execute as @a[scores={TriggerCommand=64}] run scoreboard players set @s TriggerCommand 0
-#
-#
-##65 - Mewtwo Reset
-##scoreboard players set @a TriggerCommand 65 {Inventory:[{id:"minecraft:chainmail_leggings"}]}
-#execute as @a[scores={TriggerCommand=65}] run clear @s minecraft:chainmail_leggings
-#execute as @a[scores={TriggerCommand=65}] run scoreboard players set @s Mewtwo 0
-#execute as @a[scores={TriggerCommand=65}] run tellraw @s {"text":"You can encounter Mewtwo again in a half an hour.","italic":true}
-#execute as @a[scores={TriggerCommand=65}] run scoreboard players set @s MewtwoCD 6
-#execute as @a[scores={TriggerCommand=65}] run scoreboard players set @s TriggerCommand 0
-#
-#
-##66 - Ho-Oh Reset
-##scoreboard players set @a TriggerCommand 66 {Inventory:[{id:"minecraft:iron_boots"}]}
-#execute as @a[scores={TriggerCommand=66}] run clear @s minecraft:iron_boots
-#execute as @a[scores={TriggerCommand=66}] run give @s minecraft:prismarine_crystals{display:{Name:'[{"text":"Rainbow Wing","italic":false,"color":"gray"}]',Lore:['[{"text":"A strange, rainbow feather","italic":false}]','[{"text":"that sparkles.","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 1
-#execute as @a[scores={TriggerCommand=66}] run tellraw @s {"text":"You can encounter Ho-Oh again in a half an hour.","italic":true}
-#execute as @a[scores={TriggerCommand=66}] run tag @s remove Dialogue104
-#execute as @a[scores={TriggerCommand=66}] run scoreboard players set @s HoohCD 6
-#execute as @a[scores={TriggerCommand=66}] run scoreboard players set @s TriggerCommand 0
-#
-#
-##67 - Lugia Reset
-##scoreboard players set @a TriggerCommand 67 {Inventory:[{id:"minecraft:golden_leggings"}]}
-#execute as @a[scores={TriggerCommand=67}] run clear @s minecraft:golden_leggings
-#execute as @a[scores={TriggerCommand=67}] run give @s minecraft:prismarine_shard{display:{Name:'[{"text":"Silver Wing","italic":false,"color":"dark_gray"}]',Lore:['[{"text":"A strange, silvery feather","italic":false}]','[{"text":"that sparkles","italic":false}]']},Enchantments:[{id:bane_of_arthropods,lvl:1}],HideFlags:1} 1
-#execute as @a[scores={TriggerCommand=67}] run tellraw @s {"text":"You can encounter Lugia again in a half an hour.","italic":true}
-#execute as @a[scores={TriggerCommand=67}] run tag @s remove Dialogue103
-#execute as @a[scores={TriggerCommand=67}] run scoreboard players set @s LugiaCD 6
-#execute as @a[scores={TriggerCommand=67}] run scoreboard players set @s TriggerCommand 0
-#
-#
-##68 - Suicune Reset
-##scoreboard players set @a TriggerCommand 68 {Inventory:[{id:"minecraft:golden_helmet"}]}
-#execute as @a[scores={TriggerCommand=68}] run clear @s minecraft:golden_helmet
-#execute as @a[scores={TriggerCommand=68}] run scoreboard players set @s DogEncounter 1
-#execute as @a[scores={TriggerCommand=68}] run scoreboard players set @s Suicune 0
-#execute as @a[scores={TriggerCommand=68}] run tellraw @s {"text":"You can encounter Suicune again in a half an hour.","italic":true}
-#execute as @a[scores={TriggerCommand=68}] run scoreboard players set @s SuicuneCD 6
-#execute as @a[scores={TriggerCommand=68}] run scoreboard players set @s TriggerCommand 0
-#
-#
-##69 - Entei Reset
-##scoreboard players set @a TriggerCommand 69 {Inventory:[{id:"minecraft:golden_chestplate"}]}
-#execute as @a[scores={TriggerCommand=69}] run clear @s golden_chestplate
-#execute as @a[scores={TriggerCommand=69}] run scoreboard players set @s DogEncounter 1
-#execute as @a[scores={TriggerCommand=69}] run tellraw @s {"text":"You can encounter Entei again in a half an hour.","italic":true}
-#execute as @a[scores={TriggerCommand=69}] run scoreboard players set @s Entei 0
-#execute as @a[scores={TriggerCommand=69}] run scoreboard players set @s EnteiCD 6
-#execute as @a[scores={TriggerCommand=69}] run scoreboard players set @s TriggerCommand 0
-#
-#
-##70 - Raikou Reset
-##scoreboard players set @a TriggerCommand 70 {Inventory:[{id:"minecraft:golden_boots"}]}
-#execute as @a[scores={TriggerCommand=70}] run clear @s minecraft:golden_boots
-#execute as @a[scores={TriggerCommand=70}] run scoreboard players set @s DogEncounter 1
-#execute as @a[scores={TriggerCommand=70}] run tellraw @s {"text":"You can encounter Raikou again in a half an hour.","italic":true}
-#execute as @a[scores={TriggerCommand=70}] run scoreboard players set @s Raikou 0
-#execute as @a[scores={TriggerCommand=70}] run scoreboard players set @s RaikouCD 6
-#execute as @a[scores={TriggerCommand=70}] run scoreboard players set @s TriggerCommand 0
-#
-#
-##71 - Latios Reset
-##scoreboard players set @a TriggerCommand 71 {Inventory:[{id:"minecraft:leather_chestplate"}]}
-#execute as @a[scores={TriggerCommand=71}] run clear @s minecraft:leather_chestplate
-#execute as @a[scores={TriggerCommand=71}] run tellraw @s {"text":"You can encounter Latios again in a half an hour.","italic":true}
-#execute as @a[scores={TriggerCommand=71}] run scoreboard players set @s Latios 0
-#execute as @a[scores={TriggerCommand=71}] run scoreboard players set @s LatiosCD 7
-#execute as @a[scores={TriggerCommand=71}] run scoreboard players set @s TriggerCommand 0
-#
-#
-##72 - Latias Reset
-##scoreboard players set @a TriggerCommand 72 {Inventory:[{id:"pixelmon:aluminium_boots"}]}
-#execute as @a[scores={TriggerCommand=72}] run clear @s pixelmon:aluminium_boots
-#execute as @a[scores={TriggerCommand=72}] run tellraw @s {"text":"You can encounter Latias again in a half an hour.","italic":true}
-#execute as @a[scores={TriggerCommand=72}] run scoreboard players set @s Latias 0
-#execute as @a[scores={TriggerCommand=72}] run scoreboard players set @s LatiasCD 7
-#execute as @a[scores={TriggerCommand=72}] run scoreboard players set @s TriggerCommand 0
-#
-#
-##73 - Giratina Reset
-##scoreboard players set @a TriggerCommand 73 {Inventory:[{id:"minecraft:diamond_leggings"}]}
-#execute as @a[scores={TriggerCommand=73}] run clear @s minecraft:diamond_leggings
-#execute as @a[scores={TriggerCommand=73}] run tellraw @s {"text":"You can encounter Giratina again in a half an hour.","italic":true}
-#execute as @a[scores={TriggerCommand=73}] run give @s pixelmon:griseous_orb{display:{Lore:["A glowing orb containing","the essence of Giratina"]}}
-#execute as @a[scores={TriggerCommand=73}] run scoreboard players set @s GiratinaCD 7
-#execute as @a[scores={TriggerCommand=73}] run scoreboard players set @s TriggerCommand 0
-#
-#
-##74 - Palkia Reset
-##scoreboard players set @a TriggerCommand 74 {Inventory:[{id:"minecraft:diamond_helmet"}]}
-#execute as @a[scores={TriggerCommand=74}] run clear @s minecraft:diamond_helmet
-#execute as @a[scores={TriggerCommand=74}] run tellraw @s {"text":"You can encounter Palkia again in a half an hour.","italic":true}
-#execute as @a[scores={TriggerCommand=74}] run give @s pixelmon:lustrous_orb{display:{Lore:["A glowing orb containing","the essence of Palkia"]}}
-#execute as @a[scores={TriggerCommand=74}] run scoreboard players set @s PalkiaCD 7
-#execute as @a[scores={TriggerCommand=74}] run scoreboard players set @s TriggerCommand 0
-#
-#
-##75 - Dialga Reset
-##scoreboard players set @a TriggerCommand 75 {Inventory:[{id:"minecraft:leather_helmet"}]}
-#execute as @a[scores={TriggerCommand=75}] run clear @s minecraft:leather_helmet
-#execute as @a[scores={TriggerCommand=75}] run tellraw @s {"text":"You can encounter Dialga again in a half an hour.","italic":true}
-#execute as @a[scores={TriggerCommand=75}] run give @s pixelmon:adamant_orb{display:{Lore:["A glowing orb containing","the essence of Dialga"]}}
-#execute as @a[scores={TriggerCommand=75}] run scoreboard players set @s DialgaCD 7
-#execute as @a[scores={TriggerCommand=75}] run scoreboard players set @s TriggerCommand 0
-
+#57-75, previous Legendary Resets
 
 #76 - Runs Lucky Number Show
 execute as @a[scores={TriggerCommand=76}] run scoreboard players set @s DialogueTrigger 185
@@ -780,7 +604,467 @@ execute as @a[scores={TriggerCommand=99..112}] run scoreboard players enable @s 
 execute as @a[scores={TriggerCommand=99..112}] run function johto:triggers/gamecorner/coinbal
 
 
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+#Battle Tower
+
+#Displays the player's Battle Point Balance anytime a Battle Tower ranged trigger is ran
+execute as @a[scores={TriggerCommand=115..166}] run function johto:world/battletower/pointbal
+#Redoes the ability to buy many items at once
+execute as @a[scores={TriggerCommand=115..166}] run scoreboard players enable @s TriggerCommand
+
+#115
+#Training Items 1
+execute as @a[scores={TriggerCommand=115}] run team join Red @e[x=-862,y=69,z=-193,dz=14,dy=4]
+execute as @a[scores={TriggerCommand=115}] run data merge entity @e[x=-862,y=69,z=-179,dy=3,limit=1] {CustomName:'{"text":"Protein"}'}
+execute as @a[scores={TriggerCommand=115,BattlePoints=1..}] run team join Green @e[x=-862,y=69,z=-179,dy=3]
+execute as @a[scores={TriggerCommand=115}] run data merge entity @e[x=-862,y=69,z=-181,dy=3,limit=1] {CustomName:'{"text":"Iron"}'}
+execute as @a[scores={TriggerCommand=115,BattlePoints=1..}] run team join Green @e[x=-862,y=69,z=-181,dy=3]
+execute as @a[scores={TriggerCommand=115}] run data merge entity @e[x=-862,y=69,z=-183,dy=3,limit=1] {CustomName:'{"text":"Carbos"}'}
+execute as @a[scores={TriggerCommand=115,BattlePoints=1..}] run team join Green @e[x=-862,y=69,z=-183,dy=3]
+execute as @a[scores={TriggerCommand=115}] run data merge entity @e[x=-862,y=69,z=-185,dy=3,limit=1] {CustomName:'{"text":"Calcium"}'}
+execute as @a[scores={TriggerCommand=115,BattlePoints=1..}] run team join Green @e[x=-862,y=69,z=-185,dy=3]
+execute as @a[scores={TriggerCommand=115}] run scoreboard players enable @s TriggerCommand
+execute as @a[scores={TriggerCommand=115}] run tellraw @s ["",{"text":"What would you like to purchase?\n["},{"selector":"@e[x=-862,y=68,z=-179,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 117"},"hoverEvent":{"action":"show_text","contents":"1BP, Raises a single Pokémon's base Attack stat"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-181,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 118"},"hoverEvent":{"action":"show_text","contents":"1BP, Raises a single Pokémon's base Defense stat"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-183,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 119"},"hoverEvent":{"action":"show_text","contents":"1BP, Raises a single Pokémon's base Speed stat"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-185,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 120"},"hoverEvent":{"action":"show_text","contents":"1BP, Raises a single Pokémon's base Sp. Attack stat"}},{"text":"] ["},{"text":">>>","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 116"},"hoverEvent":{"action":"show_text","contents":"Next page"}},{"text":"]"}]
+
+#116
+#Page 2
+execute as @a[scores={TriggerCommand=116}] run team join Red @e[x=-862,y=69,z=-193,dz=14,dy=4]
+execute as @a[scores={TriggerCommand=116}] run data merge entity @e[x=-862,y=69,z=-179,dy=3,limit=1] {CustomName:'{"text":"Zinc"}'}
+execute as @a[scores={TriggerCommand=116,BattlePoints=1..}] run team join Green @e[x=-862,y=69,z=-179,dy=3]
+execute as @a[scores={TriggerCommand=116}] run data merge entity @e[x=-862,y=69,z=-181,dy=3,limit=1] {CustomName:'{"text":"HP Up"}'}
+execute as @a[scores={TriggerCommand=116,BattlePoints=1..}] run team join Green @e[x=-862,y=69,z=-181,dy=3]
+execute as @a[scores={TriggerCommand=116}] run data merge entity @e[x=-862,y=69,z=-183,dy=3,limit=1] {CustomName:'{"text":"Rare Candy"}'}
+execute as @a[scores={TriggerCommand=116,BattlePoints=48..}] run team join Green @e[x=-862,y=69,z=-183,dy=3]
+execute as @a[scores={TriggerCommand=116}] run scoreboard players enable @s TriggerCommand
+execute as @a[scores={TriggerCommand=116}] run tellraw @s ["",{"text":"["},{"text":"<<<","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 115"},"hoverEvent":{"action":"show_text","contents":"Previous page"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-179,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 121"},"hoverEvent":{"action":"show_text","contents":"1BP, Raises a single Pokémon's base Sp. Defence stat"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-181,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 122"},"hoverEvent":{"action":"show_text","contents":"1BP, Raises a single Pokémon's base HP stat"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-183,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 123"},"hoverEvent":{"action":"show_text","contents":"48BP, Raises a single Pokémon's Level by one"}},{"text":"]"}]
+
+#117
+#Protein Buy
+execute as @a[scores={TriggerCommand=117,BattlePoints=..0}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=117,BattlePoints=1..}] run give @s pixelmon:protein
+execute as @a[scores={TriggerCommand=117,BattlePoints=1..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=117,BattlePoints=1..}] run scoreboard players remove @s BattlePoints 1
+
+#118
+#Iron Buy
+execute as @a[scores={TriggerCommand=118,BattlePoints=..0}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=118,BattlePoints=1..}] run give @s pixelmon:iron
+execute as @a[scores={TriggerCommand=118,BattlePoints=1..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=118,BattlePoints=1..}] run scoreboard players remove @s BattlePoints 1
+
+#119
+#Carbos Buy
+execute as @a[scores={TriggerCommand=119,BattlePoints=..0}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=119,BattlePoints=1..}] run give @s pixelmon:carbos
+execute as @a[scores={TriggerCommand=119,BattlePoints=1..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=119,BattlePoints=1..}] run scoreboard players remove @s BattlePoints 1
+
+#120
+#Calcium Buy
+execute as @a[scores={TriggerCommand=120,BattlePoints=..0}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=120,BattlePoints=1..}] run give @s pixelmon:calcium
+execute as @a[scores={TriggerCommand=120,BattlePoints=1..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=120,BattlePoints=1..}] run scoreboard players remove @s BattlePoints 1
+
+#121
+#Zinc Buy
+execute as @a[scores={TriggerCommand=121,BattlePoints=..0}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=121,BattlePoints=1..}] run give @s pixelmon:zinc
+execute as @a[scores={TriggerCommand=121,BattlePoints=1..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=121,BattlePoints=1..}] run scoreboard players remove @s BattlePoints 1
+
+#122
+#HP Up Buy
+execute as @a[scores={TriggerCommand=122,BattlePoints=..0}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=122,BattlePoints=1..}] run give @s pixelmon:hp_up
+execute as @a[scores={TriggerCommand=122,BattlePoints=1..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=122,BattlePoints=1..}] run scoreboard players remove @s BattlePoints 1
+
+#123
+#Rare Candy Buy
+execute as @a[scores={TriggerCommand=123,BattlePoints=..0}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=123,BattlePoints=1..}] run give @s pixelmon:rare_candy
+execute as @a[scores={TriggerCommand=123,BattlePoints=1..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=123,BattlePoints=1..}] run scoreboard players remove @s BattlePoints 48
+
+#--------------------------------------
+
+#124
+#Training Items No 2
+execute as @a[scores={TriggerCommand=124}] run team join Red @e[x=-862,y=69,z=-193,dz=14,dy=4]
+execute as @a[scores={TriggerCommand=124}] run data merge entity @e[x=-862,y=69,z=-179,dy=3,limit=1] {CustomName:'{"text":"Power Bracer"}'}
+execute as @a[scores={TriggerCommand=124,BattlePoints=16..}] run team join Green @e[x=-862,y=69,z=-179,dy=3]
+execute as @a[scores={TriggerCommand=124}] run data merge entity @e[x=-862,y=69,z=-181,dy=3,limit=1] {CustomName:'{"text":"Power Belt"}'}
+execute as @a[scores={TriggerCommand=124,BattlePoints=16..}] run team join Green @e[x=-862,y=69,z=-181,dy=3]
+execute as @a[scores={TriggerCommand=124}] run data merge entity @e[x=-862,y=69,z=-183,dy=3,limit=1] {CustomName:'{"text":"Power Lens"}'}
+execute as @a[scores={TriggerCommand=124,BattlePoints=16..}] run team join Green @e[x=-862,y=69,z=-183,dy=3]
+execute as @a[scores={TriggerCommand=124}] run data merge entity @e[x=-862,y=69,z=-185,dy=3,limit=1] {CustomName:'{"text":"Power Band"}'}
+execute as @a[scores={TriggerCommand=124,BattlePoints=16..}] run team join Green @e[x=-862,y=69,z=-185,dy=3]
+execute as @a[scores={TriggerCommand=124}] run scoreboard players enable @s TriggerCommand
+execute as @a[scores={TriggerCommand=124}] run tellraw @s ["",{"text":"What would you like to purchase?\n["},{"selector":"@e[x=-862,y=68,z=-179,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 126"},"hoverEvent":{"action":"show_text","contents":"16 BP, Lowers Speed, increases EV for Attack"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-181,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 127"},"hoverEvent":{"action":"show_text","contents":"16 BP, Lowers Speed, increases EV for Defense"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-183,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 128"},"hoverEvent":{"action":"show_text","contents":"16 BP, Lowers Speed, increases EV for Sp. Attack"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-185,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 129"},"hoverEvent":{"action":"show_text","contents":"16 BP, Lowers Speed, increases EV for Sp. Defense"}},{"text":"] ["},{"text":">>>","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 125"},"hoverEvent":{"action":"show_text","contents":"Next page"}},{"text":"]"}]
+
+#125
+#Page 2
+execute as @a[scores={TriggerCommand=125}] run team join Red @e[x=-862,y=69,z=-193,dz=14,dy=4]
+execute as @a[scores={TriggerCommand=125}] run data merge entity @e[x=-862,y=69,z=-179,dy=3,limit=1] {CustomName:'{"text":"Power Anklet"}'}
+execute as @a[scores={TriggerCommand=125,BattlePoints=16..}] run team join Green @e[x=-862,y=69,z=-179,dy=3]
+execute as @a[scores={TriggerCommand=125}] run data merge entity @e[x=-862,y=69,z=-181,dy=3,limit=1] {CustomName:'{"text":"Power Weight"}'}
+execute as @a[scores={TriggerCommand=125,BattlePoints=16..}] run team join Green @e[x=-862,y=69,z=-181,dy=3]
+execute as @a[scores={TriggerCommand=125}] run scoreboard players enable @s TriggerCommand
+execute as @a[scores={TriggerCommand=125}] run tellraw @s ["",{"text":"["},{"text":"<<<","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 124"},"hoverEvent":{"action":"show_text","contents":"Previous page"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-179,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 130"},"hoverEvent":{"action":"show_text","contents":"16 BP, Lowers Speed, increases EV for Speed"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-181,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 131"},"hoverEvent":{"action":"show_text","contents":"16 BP, Lowers Speed, increases EV for HP"}},{"text":"] "}]
+
+#126
+#Power Bracer Buy
+execute as @a[scores={TriggerCommand=126,BattlePoints=..15}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=126,BattlePoints=16..}] run give @s pixelmon:power_bracer
+execute as @a[scores={TriggerCommand=126,BattlePoints=16..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=126,BattlePoints=16..}] run scoreboard players remove @s BattlePoints 16
+
+#127
+#Power Belt
+execute as @a[scores={TriggerCommand=127,BattlePoints=..15}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=127,BattlePoints=16..}] run give @s pixelmon:power_belt
+execute as @a[scores={TriggerCommand=127,BattlePoints=16..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=127,BattlePoints=16..}] run scoreboard players remove @s BattlePoints 16
+
+#128
+#Power Lens
+execute as @a[scores={TriggerCommand=128,BattlePoints=..15}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=128,BattlePoints=16..}] run give @s pixelmon:power_lens
+execute as @a[scores={TriggerCommand=128,BattlePoints=16..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=128,BattlePoints=16..}] run scoreboard players remove @s BattlePoints 16
+
+#129
+#Power Band
+execute as @a[scores={TriggerCommand=129,BattlePoints=..15}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=129,BattlePoints=16..}] run give @s pixelmon:power_band
+execute as @a[scores={TriggerCommand=129,BattlePoints=16..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=129,BattlePoints=16..}] run scoreboard players remove @s BattlePoints 16
+
+
+#130
+#Power Anklet
+execute as @a[scores={TriggerCommand=130,BattlePoints=..15}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=130,BattlePoints=16..}] run give @s pixelmon:power_anklet
+execute as @a[scores={TriggerCommand=130,BattlePoints=16..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=130,BattlePoints=16..}] run scoreboard players remove @s BattlePoints 16
+
+
+#131
+#Power Weight
+execute as @a[scores={TriggerCommand=131,BattlePoints=..15}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=131,BattlePoints=16..}] run give @s pixelmon:power_weight
+execute as @a[scores={TriggerCommand=131,BattlePoints=16..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=131,BattlePoints=16..}] run scoreboard players remove @s BattlePoints 16
+
+#--------------------------------------
+#Fighting Items No 1
+
+#132
+#Prompt
+execute as @a[scores={TriggerCommand=132}] run team join Red @e[x=-862,y=69,z=-193,dz=14,dy=4]
+execute as @a[scores={TriggerCommand=132}] run data merge entity @e[x=-862,y=69,z=-179,dy=3,limit=1] {CustomName:'{"text":"Toxic Orb"}'}
+execute as @a[scores={TriggerCommand=132,BattlePoints=16..}] run team join Green @e[x=-862,y=69,z=-179,dy=3]
+execute as @a[scores={TriggerCommand=132}] run data merge entity @e[x=-862,y=69,z=-181,dy=3,limit=1] {CustomName:'{"text":"Flame Orb"}'}
+execute as @a[scores={TriggerCommand=132,BattlePoints=16..}] run team join Green @e[x=-862,y=69,z=-181,dy=3]
+execute as @a[scores={TriggerCommand=132}] run data merge entity @e[x=-862,y=69,z=-183,dy=3,limit=1] {CustomName:'{"text":"White Herb"}'}
+execute as @a[scores={TriggerCommand=132,BattlePoints=32..}] run team join Green @e[x=-862,y=69,z=-183,dy=3]
+execute as @a[scores={TriggerCommand=132}] run data merge entity @e[x=-862,y=69,z=-185,dy=3,limit=1] {CustomName:'{"text":"Power Herb"}'}
+execute as @a[scores={TriggerCommand=132,BattlePoints=32..}] run team join Green @e[x=-862,y=69,z=-185,dy=3]
+execute as @a[scores={TriggerCommand=132}] run data merge entity @e[x=-862,y=69,z=-187,dy=3,limit=1] {CustomName:'{"text":"Brightpowder"}'}
+execute as @a[scores={TriggerCommand=132,BattlePoints=48..}] run team join Green @e[x=-862,y=69,z=-187,dy=3]
+execute as @a[scores={TriggerCommand=132}] run scoreboard players enable @s TriggerCommand
+execute as @a[scores={TriggerCommand=132}] run tellraw @s ["",{"text":"What would you like to purchase?\n["},{"selector":"@e[x=-862,y=68,z=-179,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 133"},"hoverEvent":{"action":"show_text","contents":"16BP, Induces Poison status to holder"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-181,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 134"},"hoverEvent":{"action":"show_text","contents":"16BP, Induces Burn status to holder"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-183,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 135"},"hoverEvent":{"action":"show_text","contents":"32BP, Cures any status effect; can only be used once"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-185,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 136"},"hoverEvent":{"action":"show_text","contents":"32BP, Allows user to omit first turn of charge-up required moves; can only be used once"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-187,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 137"},"hoverEvent":{"action":"show_text","contents":"48BP, Raises Evasiveness"}},{"text":"]"}]
+
+
+#133
+#Toxic Orb
+execute as @a[scores={TriggerCommand=133,BattlePoints=..15}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=133,BattlePoints=16..}] run give @s pixelmon:toxic_orb
+execute as @a[scores={TriggerCommand=133,BattlePoints=16..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=133,BattlePoints=16..}] run scoreboard players remove @s BattlePoints 16
+
+#134
+#Flame Orb
+execute as @a[scores={TriggerCommand=134,BattlePoints=..15}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=134,BattlePoints=16..}] run give @s pixelmon:flame_orb
+execute as @a[scores={TriggerCommand=134,BattlePoints=16..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=134,BattlePoints=16..}] run scoreboard players remove @s BattlePoints 16
+
+#135
+#White Herb
+execute as @a[scores={TriggerCommand=135,BattlePoints=..31}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=135,BattlePoints=32..}] run give @s pixelmon:white_herb
+execute as @a[scores={TriggerCommand=135,BattlePoints=32..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=135,BattlePoints=32..}] run scoreboard players remove @s BattlePoints 32
+
+#136
+#Power Herb
+execute as @a[scores={TriggerCommand=136,BattlePoints=..31}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=136,BattlePoints=32..}] run give @s pixelmon:power_herb
+execute as @a[scores={TriggerCommand=136,BattlePoints=32..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=136,BattlePoints=32..}] run scoreboard players remove @s BattlePoints 32
+
+#137
+#Brightpowder
+execute as @a[scores={TriggerCommand=137,BattlePoints=..47}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=137,BattlePoints=48..}] run give @s pixelmon:bright_powder
+execute as @a[scores={TriggerCommand=137,BattlePoints=48..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=137,BattlePoints=48..}] run scoreboard players remove @s BattlePoints 48
+
+#--------------------------------------
+#Fighting Items No 2
+
+#138
+#Prompt
+execute as @a[scores={TriggerCommand=138}] run team join Red @e[x=-862,y=69,z=-193,dz=14,dy=4]
+execute as @a[scores={TriggerCommand=138}] run data merge entity @e[x=-862,y=69,z=-179,dy=3,limit=1] {CustomName:'{"text":"Choice Band"}'}
+execute as @a[scores={TriggerCommand=138,BattlePoints=48..}] run team join Green @e[x=-862,y=69,z=-179,dy=3]
+execute as @a[scores={TriggerCommand=138}] run data merge entity @e[x=-862,y=69,z=-181,dy=3,limit=1] {CustomName:'{"text":"Focus Band"}'}
+execute as @a[scores={TriggerCommand=138,BattlePoints=48..}] run team join Green @e[x=-862,y=69,z=-181,dy=3]
+execute as @a[scores={TriggerCommand=138}] run data merge entity @e[x=-862,y=69,z=-183,dy=3,limit=1] {CustomName:'{"text":"Scope Lens"}'}
+execute as @a[scores={TriggerCommand=138,BattlePoints=48..}] run team join Green @e[x=-862,y=69,z=-183,dy=3]
+execute as @a[scores={TriggerCommand=138}] run data merge entity @e[x=-862,y=69,z=-185,dy=3,limit=1] {CustomName:'{"text":"Muscle Band"}'}
+execute as @a[scores={TriggerCommand=138,BattlePoints=48..}] run team join Green @e[x=-862,y=69,z=-185,dy=3]
+execute as @a[scores={TriggerCommand=138}] run scoreboard players enable @s TriggerCommand
+execute as @a[scores={TriggerCommand=138}] run tellraw @s ["",{"text":"What would you like to purchase?\n["},{"selector":"@e[x=-862,y=68,z=-179,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 140"},"hoverEvent":{"action":"show_text","contents":"48 BP, Boosts Attack by x1.5, but only allows the use of one attack until the Pokémon is called back"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-181,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 141"},"hoverEvent":{"action":"show_text","contents":"48 BP, May prevent fainting by leaving the user with 1 HP from a KOing move"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-183,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 142"},"hoverEvent":{"action":"show_text","contents":"48 BP, Increases chances of landing a Critical Hit"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-185,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 143"},"hoverEvent":{"action":"show_text","contents":"48 BP, Increases damage of Physical moves by 10%"}},{"text":"] ["},{"text":">>>","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 139"},"hoverEvent":{"action":"show_text","contents":"Next page"}},{"text":"]"}]
+
+#139
+#Page 2
+execute as @a[scores={TriggerCommand=139}] run team join Red @e[x=-862,y=69,z=-193,dz=14,dy=4]
+execute as @a[scores={TriggerCommand=139}] run data merge entity @e[x=-862,y=69,z=-179,dy=3,limit=1] {CustomName:'{"text":"Focus Sash"}'}
+execute as @a[scores={TriggerCommand=139,BattlePoints=48..}] run team join Green @e[x=-862,y=69,z=-179,dy=3]
+execute as @a[scores={TriggerCommand=139}] run data merge entity @e[x=-862,y=69,z=-181,dy=3,limit=1] {CustomName:'{"text":"Choice Scarf"}'}
+execute as @a[scores={TriggerCommand=139,BattlePoints=48..}] run team join Green @e[x=-862,y=69,z=-181,dy=3]
+execute as @a[scores={TriggerCommand=139}] run data merge entity @e[x=-862,y=69,z=-183,dy=3,limit=1] {CustomName:'{"text":"Razor Claw"}'}
+execute as @a[scores={TriggerCommand=139,BattlePoints=48..}] run team join Green @e[x=-862,y=69,z=-183,dy=3]
+execute as @a[scores={TriggerCommand=139}] run data merge entity @e[x=-862,y=69,z=-185,dy=3,limit=1] {CustomName:'{"text":"Razor Fang"}'}
+execute as @a[scores={TriggerCommand=139,BattlePoints=48..}] run team join Green @e[x=-862,y=69,z=-185,dy=3]
+execute as @a[scores={TriggerCommand=139}] run scoreboard players enable @s TriggerCommand
+execute as @a[scores={TriggerCommand=139}] run tellraw @s ["",{"text":"["},{"text":"<<<","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 138"},"hoverEvent":{"action":"show_text","contents":"Previous page"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-179,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 144"},"hoverEvent":{"action":"show_text","contents":"48 BP, Leaves 1 HP if hit by a KOing move when HP is full"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-181,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 145"},"hoverEvent":{"action":"show_text","contents":"48 BP, Raises Speed by x1.5, but only allows the use of one attack until the Pokémon is called back"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-183,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 146"},"hoverEvent":{"action":"show_text","contents":"48 BP, Raises chances of landing a Critical Hit"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-185,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 147"},"hoverEvent":{"action":"show_text","contents":"48BP, Raises chance of causing the foe to Flinch"}},{"text":"]"}]
+
+
+#140
+#Choice Band, 48
+execute as @a[scores={TriggerCommand=140,BattlePoints=..47}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=140,BattlePoints=48..}] run give @s pixelmon:choice_band
+execute as @a[scores={TriggerCommand=140,BattlePoints=48..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=140,BattlePoints=48..}] run scoreboard players remove @s BattlePoints 48
+
+#141
+#Focus Band, 48
+execute as @a[scores={TriggerCommand=141,BattlePoints=..47}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=141,BattlePoints=48..}] run give @s pixelmon:focus_band
+execute as @a[scores={TriggerCommand=141,BattlePoints=48..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=141,BattlePoints=48..}] run scoreboard players remove @s BattlePoints 48
+
+#142
+#Scope Lens, 48
+execute as @a[scores={TriggerCommand=142,BattlePoints=..47}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=142,BattlePoints=48..}] run give @s pixelmon:scope_lens
+execute as @a[scores={TriggerCommand=142,BattlePoints=48..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=142,BattlePoints=48..}] run scoreboard players remove @s BattlePoints 48
+
+#143
+#Muscle Band, 48
+execute as @a[scores={TriggerCommand=143,BattlePoints=..47}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=143,BattlePoints=48..}] run give @s pixelmon:muscle_band
+execute as @a[scores={TriggerCommand=143,BattlePoints=48..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=143,BattlePoints=48..}] run scoreboard players remove @s BattlePoints 48
+
+#144
+#Focus Sash, 48
+execute as @a[scores={TriggerCommand=144,BattlePoints=..47}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=144,BattlePoints=48..}] run give @s pixelmon:focus_sash
+execute as @a[scores={TriggerCommand=144,BattlePoints=48..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=144,BattlePoints=48..}] run scoreboard players remove @s BattlePoints 48
+
+#145
+#Choice Scarf, 48
+execute as @a[scores={TriggerCommand=145,BattlePoints=..47}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=145,BattlePoints=48..}] run give @s pixelmon:choice_scarf
+execute as @a[scores={TriggerCommand=145,BattlePoints=48..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=145,BattlePoints=48..}] run scoreboard players remove @s BattlePoints 48
+
+#146
+#Razor Claw, 48
+execute as @a[scores={TriggerCommand=146,BattlePoints=..47}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=146,BattlePoints=48..}] run give @s pixelmon:razor_claw
+execute as @a[scores={TriggerCommand=146,BattlePoints=48..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=146,BattlePoints=48..}] run scoreboard players remove @s BattlePoints 48
+
+#147
+#Razor Fang, 48
+execute as @a[scores={TriggerCommand=147,BattlePoints=..47}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=147,BattlePoints=48..}] run give @s pixelmon:razor_fang
+execute as @a[scores={TriggerCommand=147,BattlePoints=48..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=147,BattlePoints=48..}] run scoreboard players remove @s BattlePoints 48
+
+#--------------------------------------
+#TM Counter No 1
+
+#148
+#Prompt
+execute as @a[scores={TriggerCommand=148}] run team join Red @e[x=-862,y=69,z=-193,dz=14,dy=4]
+execute as @a[scores={TriggerCommand=148}] run data merge entity @e[x=-862,y=69,z=-179,dy=3,limit=1] {CustomName:'{"text":"Toxic"}'}
+execute as @a[scores={TriggerCommand=148,BattlePoints=32..}] run team join Green @e[x=-862,y=69,z=-179,dy=3]
+execute as @a[scores={TriggerCommand=148}] run data merge entity @e[x=-862,y=69,z=-181,dy=3,limit=1] {CustomName:'{"text":"Thunder Wave"}'}
+execute as @a[scores={TriggerCommand=148,BattlePoints=32..}] run team join Green @e[x=-862,y=69,z=-181,dy=3]
+execute as @a[scores={TriggerCommand=148}] run data merge entity @e[x=-862,y=69,z=-183,dy=3,limit=1] {CustomName:'{"text":"Will-O-Wisp"}'}
+execute as @a[scores={TriggerCommand=148,BattlePoints=32..}] run team join Green @e[x=-862,y=69,z=-183,dy=3]
+execute as @a[scores={TriggerCommand=148}] run data merge entity @e[x=-862,y=69,z=-185,dy=3,limit=1] {CustomName:'{"text":"Attract"}'}
+execute as @a[scores={TriggerCommand=148,BattlePoints=32..}] run team join Green @e[x=-862,y=69,z=-185,dy=3]
+execute as @a[scores={TriggerCommand=148}] run scoreboard players enable @s TriggerCommand
+execute as @a[scores={TriggerCommand=148}] run tellraw @s ["",{"text":"What would you like to purchase?\n["},{"selector":"@e[x=-862,y=68,z=-179,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 150"},"hoverEvent":{"action":"show_text","contents":"32 BP, A move that leaves the target badly poisoned. Its poison damage worsens every turn."}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-181,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 151"},"hoverEvent":{"action":"show_text","contents":"32 BP, A weak electric charge is launched at the foe. It causes paralysis if it hits."}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-183,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 152"},"hoverEvent":{"action":"show_text","contents":"32 BP, The user shoots a sinister, bluish white flame at the foe to inflict a burn."}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-185,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 153"},"hoverEvent":{"action":"show_text","contents":"32 BP, If it is the opposite gender of the user, the foe becomes infatuated and less likely to attack."}},{"text":"] ["},{"text":">>>","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 149"},"hoverEvent":{"action":"show_text","contents":"Next page"}},{"text":"]"}]
+
+#149
+#Page 2
+execute as @a[scores={TriggerCommand=149}] run team join Red @e[x=-862,y=69,z=-193,dz=14,dy=4]
+execute as @a[scores={TriggerCommand=149}] run data merge entity @e[x=-862,y=69,z=-179,dy=3,limit=1] {CustomName:'{"text":"Aerial Ace"}'}
+execute as @a[scores={TriggerCommand=149,BattlePoints=40..}] run team join Green @e[x=-862,y=69,z=-179,dy=3]
+execute as @a[scores={TriggerCommand=149}] run data merge entity @e[x=-862,y=69,z=-181,dy=3,limit=1] {CustomName:'{"text":"Brick Break"}'}
+execute as @a[scores={TriggerCommand=149,BattlePoints=40..}] run team join Green @e[x=-862,y=69,z=-181,dy=3]
+execute as @a[scores={TriggerCommand=149}] run data merge entity @e[x=-862,y=69,z=-183,dy=3,limit=1] {CustomName:'{"text":"Bulk Up"}'}
+execute as @a[scores={TriggerCommand=149,BattlePoints=40..}] run team join Green @e[x=-862,y=69,z=-183,dy=3]
+execute as @a[scores={TriggerCommand=149}] run data merge entity @e[x=-862,y=69,z=-185,dy=3,limit=1] {CustomName:'{"text":"Calm Mind"}'}
+execute as @a[scores={TriggerCommand=149,BattlePoints=48..}] run team join Green @e[x=-862,y=69,z=-185,dy=3]
+execute as @a[scores={TriggerCommand=149}] run scoreboard players enable @s TriggerCommand
+execute as @a[scores={TriggerCommand=149}] run tellraw @s ["",{"text":"["},{"text":"<<<","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 148"},"hoverEvent":{"action":"show_text","contents":"Previous page"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-179,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 154"},"hoverEvent":{"action":"show_text","contents":"40 BP, The user confounds the foe with speed, then slashes. The attack lands without fail."}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-181,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 155"},"hoverEvent":{"action":"show_text","contents":"40 BP, The user attacks with tough fists, etc. It can also break any barrier such as Light Screen and Reflect."}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-183,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 156"},"hoverEvent":{"action":"show_text","contents":"40 BP, The user tenses its muscles to bulk up its body, boosting both its Attack and Defense stats."}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-185,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 157"},"hoverEvent":{"action":"show_text","contents":"48BP, The user quietly focuses its mind and calms its spirit to raise its Sp. Atk and Sp. Def stats."}},{"text":"]"}]
+
+#150
+#Toxic, 32
+execute as @a[scores={TriggerCommand=150,BattlePoints=..31}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=150,BattlePoints=32..}] run give @s pixelmon:tm_gen4{tm:6}
+execute as @a[scores={TriggerCommand=150,BattlePoints=32..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=150,BattlePoints=32..}] run scoreboard players remove @s BattlePoints 32
+
+#151
+#Thunder Wave, 32
+execute as @a[scores={TriggerCommand=151,BattlePoints=..31}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=151,BattlePoints=32..}] run give @s pixelmon:tm_gen4{tm:73}
+execute as @a[scores={TriggerCommand=151,BattlePoints=32..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=151,BattlePoints=32..}] run scoreboard players remove @s BattlePoints 32
+
+#152
+#Will-O-Wisp, 32
+execute as @a[scores={TriggerCommand=152,BattlePoints=..31}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=152,BattlePoints=32..}] run give @s pixelmon:tm_gen4{tm:61}
+execute as @a[scores={TriggerCommand=152,BattlePoints=32..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=152,BattlePoints=32..}] run scoreboard players remove @s BattlePoints 32
+
+#153
+#Attract, 32
+execute as @a[scores={TriggerCommand=153,BattlePoints=..31}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=153,BattlePoints=32..}] run give @s pixelmon:tm_gen4{tm:45}
+execute as @a[scores={TriggerCommand=153,BattlePoints=32..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=153,BattlePoints=32..}] run scoreboard players remove @s BattlePoints 32
+
+#154
+#Aerial Ace, 40
+execute as @a[scores={TriggerCommand=154,BattlePoints=..39}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=154,BattlePoints=40..}] run give @s pixelmon:tm_gen4{tm:40}
+execute as @a[scores={TriggerCommand=154,BattlePoints=40..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=154,BattlePoints=40..}] run scoreboard players remove @s BattlePoints 40
+
+#155
+#Brick Break, 40
+execute as @a[scores={TriggerCommand=155,BattlePoints=..39}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=155,BattlePoints=40..}] run give @s pixelmon:tm_gen4{tm:31}
+execute as @a[scores={TriggerCommand=155,BattlePoints=40..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=155,BattlePoints=40..}] run scoreboard players remove @s BattlePoints 40
+
+#156
+#Bulk Up, 40
+execute as @a[scores={TriggerCommand=156,BattlePoints=..39}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=156,BattlePoints=40..}] run give @s pixelmon:tm_gen4{tm:8}
+execute as @a[scores={TriggerCommand=156,BattlePoints=40..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=156,BattlePoints=40..}] run scoreboard players remove @s BattlePoints 40
+
+#157
+#Calm Mind, 48
+execute as @a[scores={TriggerCommand=157,BattlePoints=..47}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=157,BattlePoints=48..}] run give @s pixelmon:tm_gen4{tm:4}
+execute as @a[scores={TriggerCommand=157,BattlePoints=48..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=157,BattlePoints=48..}] run scoreboard players remove @s BattlePoints 48
+
+#--------------------------------------
+#TM Counter No 2
+
+#158
+#Prompt
+execute as @a[scores={TriggerCommand=158}] run team join Red @e[x=-862,y=69,z=-193,dz=14,dy=4]
+execute as @a[scores={TriggerCommand=158}] run data merge entity @e[x=-862,y=69,z=-179,dy=3,limit=1] {CustomName:'{"text":"X-Scissor"}'}
+execute as @a[scores={TriggerCommand=158,BattlePoints=64..}] run team join Green @e[x=-862,y=69,z=-179,dy=3]
+execute as @a[scores={TriggerCommand=158}] run data merge entity @e[x=-862,y=69,z=-181,dy=3,limit=1] {CustomName:'{"text":"Shadow Ball"}'}
+execute as @a[scores={TriggerCommand=158,BattlePoints=64..}] run team join Green @e[x=-862,y=69,z=-181,dy=3]
+execute as @a[scores={TriggerCommand=158}] run data merge entity @e[x=-862,y=69,z=-183,dy=3,limit=1] {CustomName:'{"text":"Energy Ball"}'}
+execute as @a[scores={TriggerCommand=158,BattlePoints=64..}] run team join Green @e[x=-862,y=69,z=-183,dy=3]
+execute as @a[scores={TriggerCommand=158}] run data merge entity @e[x=-862,y=69,z=-185,dy=3,limit=1] {CustomName:'{"text":"Sludge Bomb"}'}
+execute as @a[scores={TriggerCommand=158,BattlePoints=80..}] run team join Green @e[x=-862,y=69,z=-185,dy=3]
+execute as @a[scores={TriggerCommand=158}] run scoreboard players enable @s TriggerCommand
+execute as @a[scores={TriggerCommand=158}] run tellraw @s ["",{"text":"What would you like to purchase?\n["},{"selector":"@e[x=-862,y=68,z=-179,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 160"},"hoverEvent":{"action":"show_text","contents":"64 BP, The user slashes at the foe by crossing its scythes or claws as if they were a pair of scissors."}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-181,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 161"},"hoverEvent":{"action":"show_text","contents":"64 BP, The user hurls a shadowy blob at the foe. It may also lower the foe's Sp. Def stat."}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-183,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 162"},"hoverEvent":{"action":"show_text","contents":"64 BP, The user draws power from nature and fires it at the foe. It may also lower the target's Sp. Def."}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-185,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 163"},"hoverEvent":{"action":"show_text","contents":"80 BP, The user attacks by hurling filthy sludge at the foe. It may also poison the target."}},{"text":"] ["},{"text":">>>","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 159"},"hoverEvent":{"action":"show_text","contents":"Next page"}},{"text":"]"}]
+
+#159
+#Page 2
+execute as @a[scores={TriggerCommand=159}] run team join Red @e[x=-862,y=69,z=-193,dz=14,dy=4]
+execute as @a[scores={TriggerCommand=159}] run data merge entity @e[x=-862,y=69,z=-179,dy=3,limit=1] {CustomName:'{"text":"Dragon Pulse"}'}
+execute as @a[scores={TriggerCommand=159,BattlePoints=80..}] run team join Green @e[x=-862,y=69,z=-179,dy=3]
+execute as @a[scores={TriggerCommand=159}] run data merge entity @e[x=-862,y=69,z=-181,dy=3,limit=1] {CustomName:'{"text":"Stone Edge"}'}
+execute as @a[scores={TriggerCommand=159,BattlePoints=80..}] run team join Green @e[x=-862,y=69,z=-181,dy=3]
+execute as @a[scores={TriggerCommand=159}] run data merge entity @e[x=-862,y=69,z=-183,dy=3,limit=1] {CustomName:'{"text":"Earthquake"}'}
+execute as @a[scores={TriggerCommand=159,BattlePoints=80..}] run team join Green @e[x=-862,y=69,z=-183,dy=3]
+execute as @a[scores={TriggerCommand=159}] run scoreboard players enable @s TriggerCommand
+execute as @a[scores={TriggerCommand=159}] run tellraw @s ["",{"text":"["},{"text":"<<<","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 158"},"hoverEvent":{"action":"show_text","contents":"Previous page"}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-179,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 164"},"hoverEvent":{"action":"show_text","contents":"80 BP, The foe is attacked with a shock wave generated by the user's gaping mouth."}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-181,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 165"},"hoverEvent":{"action":"show_text","contents":"80 BP, The user stabs the foe with a sharpened stone. It has a high critical-hit ratio."}},{"text":"] ["},{"selector":"@e[x=-862,y=68,z=-183,dy=3]","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 166"},"hoverEvent":{"action":"show_text","contents":"80 BP, The user sets off an earthquake that hits all the Pokémon in the battle."}},{"text":"]"}]
+
+#160
+#X-Scissor, 64
+execute as @a[scores={TriggerCommand=160,BattlePoints=..63}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=160,BattlePoints=64..}] run give @s pixelmon:tm_gen4{tm:81}
+execute as @a[scores={TriggerCommand=160,BattlePoints=64..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=160,BattlePoints=64..}] run scoreboard players remove @s BattlePoints 64
+
+#161
+#Shadow Ball, 64
+execute as @a[scores={TriggerCommand=161,BattlePoints=..63}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=161,BattlePoints=64..}] run give @s pixelmon:tm_gen4{tm:30}
+execute as @a[scores={TriggerCommand=161,BattlePoints=64..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=161,BattlePoints=64..}] run scoreboard players remove @s BattlePoints 64
+
+#162
+#Energy Ball, 64
+execute as @a[scores={TriggerCommand=162,BattlePoints=..63}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=162,BattlePoints=64..}] run give @s pixelmon:tm_gen4{tm:53}
+execute as @a[scores={TriggerCommand=162,BattlePoints=64..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=162,BattlePoints=64..}] run scoreboard players remove @s BattlePoints 64
+
+#163
+#Sludge Bomb, 80
+execute as @a[scores={TriggerCommand=163,BattlePoints=..79}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=163,BattlePoints=80..}] run give @s pixelmon:tm_gen4{tm:36}
+execute as @a[scores={TriggerCommand=163,BattlePoints=80..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=163,BattlePoints=80..}] run scoreboard players remove @s BattlePoints 80
+
+#164
+#Dragon Pulse, 80
+execute as @a[scores={TriggerCommand=164,BattlePoints=..79}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=164,BattlePoints=80..}] run give @s pixelmon:tm_gen4{tm:59}
+execute as @a[scores={TriggerCommand=164,BattlePoints=80..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=164,BattlePoints=80..}] run scoreboard players remove @s BattlePoints 80
+
+#165
+#Stone Edge, 80
+execute as @a[scores={TriggerCommand=165,BattlePoints=..79}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=165,BattlePoints=80..}] run give @s pixelmon:tm_gen4{tm:71}
+execute as @a[scores={TriggerCommand=165,BattlePoints=80..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=165,BattlePoints=80..}] run scoreboard players remove @s BattlePoints 80
+
+#166
+#Earthquake, 80
+execute as @a[scores={TriggerCommand=166,BattlePoints=..79}] run tellraw @s {"text":"You don't have enough points for that item!"}
+execute as @a[scores={TriggerCommand=166,BattlePoints=80..}] run give @s pixelmon:tm_gen4{tm:26}
+execute as @a[scores={TriggerCommand=166,BattlePoints=80..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=166,BattlePoints=80..}] run scoreboard players remove @s BattlePoints 80
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #tellraw @a[scores={TriggerCommand=0..1000}] {"text":"Success!"}

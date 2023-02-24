@@ -6,6 +6,13 @@
 #temp to tp corrputed trainer into void
 #tp @e[x=-172.50,y=64.00,z=598.50,type=pixelmon:npc_trainer,distance=..4] ~ ~-1000 ~
 
+#---------------------
+#Runs infolist command for non-ops
+scoreboard players enable @a Info
+scoreboard players enable @a info
+execute as @a[scores={Info=1..}] run function tools:infolist
+execute as @a[scores={info=1..}] run function tools:infolist
+
 
 #---------------------
 #Despawns items that may be broken and pop up elsewhere in the map
@@ -44,6 +51,10 @@ execute as @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=34,tag=Dialogue97,scores={TalkTi
 
 #Removes Cooldown score if present
 scoreboard players remove @a[scores={Cooldown=1..}] Cooldown 1
+
+#Adds Sprint cooldown to Walk-based Cooldown score.
+scoreboard players operation @a CooldownWalk += @a[scores={CooldownSprint=1..}] CooldownSprint
+scoreboard players set @a[scores={CooldownSprint=1..}] CooldownSprint 0
 
 #Runs relog function if player is found with relog score
 execute as @a[scores={relog=1..}] run function johto:triggers/relog
@@ -1538,6 +1549,35 @@ execute at @e[x=511,y=54,z=-344,dx=15,dy=6,dz=19,type=pixelmon:pixelmon] run sco
 execute as @a[x=513,y=54,z=-335,distance=..4,tag=!BeautyCD,scores={TalkTime=0,Cooldown=0}] run scoreboard players enable @s TriggerCommand
 execute as @a[x=513,y=54,z=-335,distance=..4,tag=!BeautyCD,scores={TalkTime=0,Cooldown=0}] run tellraw @s ["",{"text":"<Beauty Salon Clerk> Welcome! Would you like me to give your Pokemon a makeover?\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 40"}},{"text":"]"}]
 execute as @a[x=513,y=54,z=-335,distance=..4,tag=!BeautyCD,scores={TalkTime=0,Cooldown=0}] run scoreboard players set @s Cooldown 120
+
+#---------------------
+#Battle Tower Shopkeepers
+
+#Tms 1
+execute as @a[x=923,y=64,z=55,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s TriggerCommand 148
+execute as @a[x=923,y=64,z=55,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s CooldownWalk 0
+
+#Tms 2
+execute as @a[x=882,y=64,z=55,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s TriggerCommand 158
+execute as @a[x=882,y=64,z=55,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s CooldownWalk 0
+
+#Fighting Items No 2
+execute as @a[x=927,y=64,z=61,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s TriggerCommand 138
+execute as @a[x=927,y=64,z=61,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s CooldownWalk 0
+
+#Fighting Items No 1
+execute as @a[x=927,y=64,z=72,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s TriggerCommand 132
+execute as @a[x=927,y=64,z=72,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s CooldownWalk 0
+
+#Battle Items No 2
+execute as @a[x=878,y=64,z=61,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s TriggerCommand 124
+execute as @a[x=878,y=64,z=61,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s CooldownWalk 0
+
+#Battle Items No 1
+execute as @a[x=878,y=64,z=72,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s TriggerCommand 115
+execute as @a[x=878,y=64,z=72,distance=..3,scores={CooldownWalk=1000..}] run scoreboard players set @s CooldownWalk 0
+
+
 
 #-------------------------------------------------------------------------------------------------------------------------
 #Spawnpoints at Pokemon Centers
