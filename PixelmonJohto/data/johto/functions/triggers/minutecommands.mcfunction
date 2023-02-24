@@ -240,4 +240,9 @@ execute if entity @e[x=-867,y=69,z=-212,dy=3,type=armor_stand,tag=UnownSpawning]
 
 
 
+#Informs the player of a broken map if no armor stands can be found at spawn
+execute unless entity @e[x=-880,y=64,z=-336,dx=182,dy=100,dz=182,type=armor_stand] run tellraw @a ["",{"text":"It appears either your spawn chunks are no longer loaded or the armor stands at spawn have been killed.\n"},{"text":"If you have ran \"/kill @e\", the map is now broken and will require a new copy of the Johto/region folder to fix your save. ","color":"gray"},{"text":"\nIf this command was not ran, your spawn chunks, and thus the map, have issues loading. Use the command \"/trigger info\" for more information."}]
+
+
+
 #
