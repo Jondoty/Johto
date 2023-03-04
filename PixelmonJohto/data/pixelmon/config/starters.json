@@ -4,7 +4,7 @@
       "spec": "Chikorita",
       "chanceSpecs": [],
       "page": 0,
-      "x": 1,
+      "x": 5,
       "y": 0,
       "scale": 1
     },
@@ -12,16 +12,16 @@
       "spec": "Cyndaquil",
       "chanceSpecs": [],
       "page": 0,
-      "x": 1,
-      "y": 2,
+      "x": 7,
+      "y": 0,
       "scale": 1
     },
     {
       "spec": "Totodile",
       "chanceSpecs": [],
       "page": 0,
-      "x": 1,
-      "y": 4,
+      "x": 9,
+      "y": 0,
       "scale": 1
     }
   ],
