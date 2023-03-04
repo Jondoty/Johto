@@ -1,0 +1,27 @@
+{
+  "id": "Entei",
+  "spawnInfos": [
+    {
+      "spec": "species:Entei level:70",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "tags": [
+        "legendary"
+      ],
+      "interval": "legendary",
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "mountainous",
+          "biomesoplenty:volcano",
+          "biomesoplenty:volcanic_plains"
+        ]
+      },
+      "rarity": 0.0
+    }
+  ]
+}

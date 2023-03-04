@@ -1,0 +1,25 @@
+{
+  "id": "Glastrier",
+  "spawnInfos": [
+    {
+      "spec": "species:Glastrier level:70",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "tags": [
+        "legendary"
+      ],
+      "interval": "legendary",
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "minecraft:snowy_tundra"
+        ]
+      },
+      "rarity": 0.0
+    }
+  ]
+}

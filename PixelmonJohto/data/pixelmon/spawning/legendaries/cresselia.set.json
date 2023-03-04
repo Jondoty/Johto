@@ -1,0 +1,46 @@
+{
+  "id": "Cresselia",
+  "spawnInfos": [
+    {
+      "spec": "species:Cresselia level:70",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "tags": [
+        "legendary"
+      ],
+      "interval": "legendary",
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "minecraft:tall_birch_forest"
+        ],
+        "moonPhase": 0
+      },
+      "rarity": 0.0
+    },
+    {
+      "spec": "species:Cresselia palette:spirit level:70",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "tags": [
+        "legendary"
+      ],
+      "interval": "legendary",
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "MIDNIGHT"
+        ],
+        "stringBiomes": [
+          "pixelmon:ultra_forest"
+        ]
+      },
+      "rarity": 0.0
+    }
+  ]
+}
