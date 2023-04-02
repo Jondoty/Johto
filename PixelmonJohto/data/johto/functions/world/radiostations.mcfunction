@@ -66,7 +66,7 @@ execute as @s[x=160,y=0,z=-295,dx=121,dy=240,dz=205,scores={RadioSelect=1}] run 
 
 #Use slot for Oak and Mary's radio station?
 #Swarms are post-game
-execute as @s[scores={RadioSelect=3,IP=0},tag=RadioCard] run tellraw @a {"text":"<Mary> We're reaching out to all you Pokémon fans out there! Here is the leading expert on Pokémon, Professor Oak, and of course myself, Mary!"}
+execute as @s[scores={RadioSelect=3,IP=0},tag=RadioCard] run tellraw @s {"text":"<Mary> We're reaching out to all you Pokémon fans out there! Here is the leading expert on Pokémon, Professor Oak, and of course myself, Mary!"}
 
 #Rolls for a Swarm species if rng=0 and player tunes into this station
 #SwarmActive score should prevent the rolling from going multiple times within a day. Resets with DailyCommands function
