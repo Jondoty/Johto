@@ -35,6 +35,23 @@
       "rarity": 35.0
     },
 
+    {
+      "spec": "species:Weedle"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 3,
+      "maxLevel": 4,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": -245, "maxX": -63, "minZ": -161, "maxZ": -117,
+        "times": [ "DAWN", "DUSK", "DAY" ],
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 30.0
+    },
+
 
     {
       "spec": "species:Weedle"

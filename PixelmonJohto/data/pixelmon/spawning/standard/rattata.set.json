@@ -47,6 +47,29 @@
     },
 
 
+    {
+      "spec": "species:Rattata"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 2,
+      "maxLevel": 5,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:chilan_berry",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "minX": -245, "maxX": -63, "minZ": -161, "maxZ": -117,
+        "times": [ "NIGHT" ],
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 40.0
+    },
+
 
 
     {

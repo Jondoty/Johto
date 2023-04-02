@@ -2,8 +2,7 @@
   "id": "Teddiursa Sweet Scent",
   "spawnInfos": [
     {
-      "spec": "species:Teddiursa"
-      ,
+      "spec": "species:Teddiursa",
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -12,14 +11,13 @@
       "typeID": "pokemon",
       "condition": {
         "stringBiomes": [
-          "hills"
+          "all forests"
         ]
       },
-      "rarity": 0.0
+      "rarity": 130.0
     },
     {
-      "spec": "species:Ursaring"
-      ,
+      "spec": "species:Ursaring",
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -28,10 +26,10 @@
       "typeID": "pokemon",
       "condition": {
         "stringBiomes": [
-          "hills"
+          "all forests"
         ]
       },
-      "rarity": 0.0
+      "rarity": 5.0
     }
   ]
 }

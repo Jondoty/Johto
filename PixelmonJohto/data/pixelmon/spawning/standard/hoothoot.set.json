@@ -45,6 +45,25 @@
       "stringLocationTypes": [
         "Land"
       ],
+      "minLevel": 2,
+      "maxLevel": 5,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": -245, "maxX": -63, "minZ": -161, "maxZ": -117,
+        "times": [ "NIGHT" ],
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 20.0
+    },
+
+
+
+    {
+      "spec": "species:Hoothoot"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
       "minLevel": 12,
       "maxLevel": 14,
       "typeID": "pokemon",

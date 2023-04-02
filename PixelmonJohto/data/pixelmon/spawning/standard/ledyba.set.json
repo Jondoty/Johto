@@ -25,6 +25,24 @@
       "stringLocationTypes": [
         "Land"
       ],
+      "minLevel": 2,
+      "maxLevel": 5,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": -245, "maxX": -63, "minZ": -161, "maxZ": -117,
+        "times": [ "DAWN", "DUSK" ],
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 30.0
+    },
+
+
+    {
+      "spec": "species:Ledyba"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
       "minLevel": 12,
       "maxLevel": 15,
       "typeID": "pokemon",

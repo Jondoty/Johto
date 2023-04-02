@@ -40,6 +40,22 @@
       "stringLocationTypes": [
         "Land"
       ],
+      "minLevel": 3,
+      "maxLevel": 5,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": -245, "maxX": -63, "minZ": -161, "maxZ": -117,
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 20.0
+    },
+
+    {
+      "spec": "species:Bellsprout"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
       "minLevel": 22,
       "maxLevel": 26,
       "typeID": "pokemon",
