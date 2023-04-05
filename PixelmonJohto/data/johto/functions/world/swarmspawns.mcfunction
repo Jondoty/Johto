@@ -413,24 +413,24 @@ execute unless block 425 62 -652 pixelmon:pixelmon_spawner if entity @e[x=-864,y
 execute unless block 425 62 -598 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=29..31},tag=SwarmActive] run clone -826 65 -151 -826 65 -151 425 62 -598
 execute unless block 424 62 -669 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=29..31},tag=SwarmActive] run clone -826 65 -151 -826 65 -151 424 62 -669
 
-execute if block 493 62 -508 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 494 62 -564 minecraft:air
-execute if block 482 62 -593 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 493 62 -508 minecraft:air
-execute if block 471 62 -665 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 482 62 -593 minecraft:air
-execute if block 470 62 -651 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 471 62 -665 minecraft:air
-execute if block 465 62 -638 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 470 62 -651 minecraft:air
-execute if block 461 62 -521 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 465 62 -638 minecraft:air
-execute if block 452 62 -630 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 461 62 -521 minecraft:air
-execute if block 449 62 -645 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 452 62 -630 minecraft:air
-execute if block 449 62 -610 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 449 62 -645 minecraft:air
-execute if block 446 62 -610 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 449 62 -610 minecraft:air
-execute if block 446 62 -521 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 446 62 -610 minecraft:air
-execute if block 446 62 -505 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 446 62 -521 minecraft:air
-execute if block 436 62 -632 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 446 62 -505 minecraft:air
-execute if block 436 62 -618 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 436 62 -632 minecraft:air
-execute if block 425 62 -652 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 436 62 -618 minecraft:air
-execute if block 425 62 -598 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 425 62 -652 minecraft:air
-execute if block 424 62 -669 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 425 62 -598 minecraft:air
-execute if block 494 62 -564 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 424 62 -669 minecraft:air
+execute if block 494 62 -564 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 494 62 -564 minecraft:air
+execute if block 493 62 -508 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 493 62 -508 minecraft:air
+execute if block 482 62 -593 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 482 62 -593 minecraft:air
+execute if block 471 62 -665 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 471 62 -665 minecraft:air
+execute if block 470 62 -651 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 470 62 -651 minecraft:air
+execute if block 465 62 -638 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 465 62 -638 minecraft:air
+execute if block 461 62 -521 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 461 62 -521 minecraft:air
+execute if block 452 62 -630 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 452 62 -630 minecraft:air
+execute if block 449 62 -645 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 449 62 -645 minecraft:air
+execute if block 449 62 -610 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 449 62 -610 minecraft:air
+execute if block 446 62 -610 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 446 62 -610 minecraft:air
+execute if block 446 62 -521 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 446 62 -521 minecraft:air
+execute if block 446 62 -505 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 446 62 -505 minecraft:air
+execute if block 436 62 -632 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 436 62 -632 minecraft:air
+execute if block 436 62 -618 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 436 62 -618 minecraft:air
+execute if block 425 62 -652 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 425 62 -652 minecraft:air
+execute if block 425 62 -598 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 425 62 -598 minecraft:air
+execute if block 424 62 -669 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=0},tag=!SwarmActive] run setblock 424 62 -669 minecraft:air
 
 #R9 Sableye
 execute unless block -2955 62 771 pixelmon:pixelmon_spawner if entity @e[x=-864,y=69,z=-207,dy=3,scores={rng=32..34},tag=SwarmActive] run clone -827 65 -151 -827 65 -151 -2955 62 771
