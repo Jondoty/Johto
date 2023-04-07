@@ -3296,8 +3296,8 @@ tag @s[scores={DialogueTrigger=161,TalkTime=2..}] add Dialogue161
 #execute as @s[score_TriggerCommand_min=41,score_TriggerCommand=41] run scoreboard players set @s DialogueTrigger 162
 
 #Prevents player from leaving
-execute as @s[scores={DialogueTrigger=162,TalkTime=1}] run tp @s[x=615,y=63,z=-711,dx=5,dy=10,dz=5] ~ ~ ~3
-execute as @s[scores={DialogueTrigger=162,TalkTime=1}] run tp @s[x=628,y=63,z=-703,dx=10,dy=10,dz=4] ~-3 ~ ~
+execute as @s[scores={DialogueTrigger=162,TalkTime=1}] at @s run tp @s[x=615,y=63,z=-711,dx=5,dy=10,dz=5] ~ ~ ~3
+execute as @s[scores={DialogueTrigger=162,TalkTime=1}] at @s run tp @s[x=628,y=63,z=-703,dx=10,dy=10,dz=4] ~-3 ~ ~
 
 #tp Lyra and Marill in
 execute as @s[scores={DialogueTrigger=162,TalkTime=1}] run setblock 621 64 -700 pixelmon:poke_display[facing=west]{PokeDisplayPokemon:{ndex:183,Growth:7b}} replace
