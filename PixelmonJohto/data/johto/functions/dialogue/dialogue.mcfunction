@@ -3477,8 +3477,8 @@ execute as @s[scores={DialogueTrigger=165,TalkTime=81}] run tp @s 617 64 -700
 #execute as @s[scores={DialogueTrigger=165,TalkTime=70..82}] run
 
 #turns back on keeping player near Lyra
-execute as @s[scores={DialogueTrigger=165,TalkTime=158}] run tp @s[x=628,y=63,z=-703,dx=10,dy=10,dz=4] ~-3 ~ ~
-execute as @s[scores={DialogueTrigger=165,TalkTime=158}] run tp @s[x=615,y=63,z=-711,dx=5,dy=10,dz=5] ~ ~ ~3
+execute as @s[scores={DialogueTrigger=165,TalkTime=158}] at @s run tp @s[x=628,y=63,z=-703,dx=10,dy=10,dz=4] ~-3 ~ ~
+execute as @s[scores={DialogueTrigger=165,TalkTime=158}] at @s run tp @s[x=615,y=63,z=-711,dx=5,dy=10,dz=5] ~ ~ ~3
 
 #re-tps Lyra in
 execute as @s[scores={DialogueTrigger=165,TalkTime=84}] run tp @e[x=-725,y=70,z=-242,dy=3,type=pixelmon:npc_chatting] 621 64 -701
