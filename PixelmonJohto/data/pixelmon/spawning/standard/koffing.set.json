@@ -5,8 +5,8 @@
       "spec": "species:Koffing"
       ,
       "stringLocationTypes": [
-        "Land",
-        "Underground"
+        "Indoors",
+        "Land"
       ],
       "minLevel": 14,
       "maxLevel": 16,
@@ -19,7 +19,7 @@
       ],
       "condition": {
         "minX": 432, "maxX": 452, "minY": 63, "maxY": 70, "minZ": 309, "maxZ": 329,
-        "neededNearbyBlocks": ["minecraft:planks"]
+        "neededNearbyBlocks": ["minecraft:oak_planks"]
       },
       "rarity": 35.0
     },
@@ -27,7 +27,7 @@
       "spec": "species:Koffing"
       ,
       "stringLocationTypes": [
-        "Underground",
+        "Indoors",
         "Land"
       ],
       "minLevel": 14,
@@ -52,7 +52,7 @@
       "spec": "species:Koffing"
       ,
       "stringLocationTypes": [
-        "Underground",
+        "Indoors",
         "Land"
       ],
       "minLevel": 39,
@@ -66,7 +66,7 @@
       ],
       "condition": {
         "minX": -1583, "maxX": -1468, "minY": 42, "maxY": 59, "minZ": -895, "maxZ": -826,
-        "neededNearbyBlocks": ["minecraft:wool"]
+        "neededNearbyBlocks": ["minecraft:white_wool","minecraft:orange_wool","minecraft:magenta_wool","minecraft:light_blue_wool","minecraft:yellow_wool","minecraft:lime_wool","minecraft:pink_wool","minecraft:gray_wool","minecraft:light_gray_wool","minecraft:cyan_wool","minecraft:purple_wool","minecraft:blue_wool","minecraft:brown_wool","minecraft:red_wool","minecraft:black_wool","minecraft:green_wool"]
       },
       "rarity": 40.0
     },
@@ -74,7 +74,7 @@
       "spec": "species:Koffing"
       ,
       "stringLocationTypes": [
-        "Underground",
+        "Indoors",
         "Land"
       ],
       "minLevel": 39,
@@ -88,7 +88,7 @@
       ],
       "condition": {
       "minX": -1583, "maxX": -1468, "minY": 0, "maxY": 41, "minZ": -895, "maxZ": -826,
-        "neededNearbyBlocks": ["minecraft:planks"]
+        "neededNearbyBlocks": ["minecraft:oak_planks"]
       },
       "rarity": 30.0
     }

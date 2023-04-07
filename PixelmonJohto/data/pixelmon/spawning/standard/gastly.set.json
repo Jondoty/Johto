@@ -5,7 +5,8 @@
       "spec": "species:Gastly"
       ,
       "stringLocationTypes": [
-        "Underground"
+        "Indoors",
+        "Land"
       ],
       "minLevel": 5,
       "maxLevel": 6,
@@ -13,7 +14,7 @@
       "condition": {
         "minX": 45, "maxX": 74, "minY": 83, "maxY": 110, "minZ": 5, "maxZ": 34,
         "times": [ "NIGHT" ],
-        "neededNearbyBlocks": ["minecraft:planks"]
+        "neededNearbyBlocks": ["minecraft:oak_planks"]
       },
       "rarity": 85.0
     },
@@ -24,7 +25,8 @@
       "spec": "species:Gastly"
       ,
       "stringLocationTypes": [
-        "Underground"
+        "Indoors",
+        "Land"
       ],
       "minLevel": 20,
       "maxLevel": 24,
@@ -32,7 +34,7 @@
       "condition": {
         "minX": 240, "maxX": 273, "minY": 70, "maxY": 112, "minZ": 297, "maxZ": 330,
         "times": [ "NIGHT" ],
-        "neededNearbyBlocks": ["minecraft:planks"]
+        "neededNearbyBlocks": ["minecraft:oak_planks"]
       },
       "rarity": 80.0
     },

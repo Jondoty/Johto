@@ -5,8 +5,8 @@
       "spec": "species:Weezing"
       ,
       "stringLocationTypes": [
-        "Land",
-        "Underground"
+        "Indoors",
+        "Land"
       ],
       "minLevel": 39,
       "maxLevel": 44,
@@ -19,7 +19,7 @@
       ],
       "condition": {
         "minX": -1583, "maxX": -1468, "minY": 42, "maxY": 59, "minZ": -895, "maxZ": -826,
-        "neededNearbyBlocks": ["minecraft:wool"]
+        "neededNearbyBlocks": ["minecraft:white_wool","minecraft:orange_wool","minecraft:magenta_wool","minecraft:light_blue_wool","minecraft:yellow_wool","minecraft:lime_wool","minecraft:pink_wool","minecraft:gray_wool","minecraft:light_gray_wool","minecraft:cyan_wool","minecraft:purple_wool","minecraft:blue_wool","minecraft:brown_wool","minecraft:red_wool","minecraft:black_wool","minecraft:green_wool"]
       },
       "rarity": 5.0
     },
@@ -27,8 +27,8 @@
       "spec": "species:Weezing"
       ,
       "stringLocationTypes": [
-        "Land",
-        "Underground"
+        "Indoors",
+        "Land"
       ],
       "minLevel": 39,
       "maxLevel": 44,
@@ -41,7 +41,7 @@
       ],
       "condition": {
       "minX": -1583, "maxX": -1468, "minY": 0, "maxY": 41, "minZ": -895, "maxZ": -826,
-        "neededNearbyBlocks": ["minecraft:planks"]
+        "neededNearbyBlocks": ["minecraft:oak_planks"]
       },
       "rarity": 10.0
     }

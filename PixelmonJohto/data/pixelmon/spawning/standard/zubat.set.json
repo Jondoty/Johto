@@ -225,22 +225,22 @@
     {
       "spec": "species:Zubat",
       "stringLocationTypes": [
-        "Land",
-        "Underground"
+        "Indoors",
+        "Land"
       ],
       "minLevel": 14,
       "maxLevel": 16,
       "typeID": "pokemon",
       "condition": {
         "minX": 432, "maxX": 452, "minY": 63, "maxY": 70, "minZ": 309, "maxZ": 329,
-        "neededNearbyBlocks": ["minecraft:planks"]
+        "neededNearbyBlocks": ["minecraft:oak_planks"]
       },
       "rarity": 10.0
     },
     {
       "spec": "species:Zubat",
       "stringLocationTypes": [
-        "Underground",
+        "Indoors",
         "Land"
       ],
       "minLevel": 14,

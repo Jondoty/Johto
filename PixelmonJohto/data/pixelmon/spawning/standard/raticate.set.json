@@ -262,7 +262,7 @@
       ],
       "condition": {
         "minX": 432, "maxX": 452, "minY": 63, "maxY": 70, "minZ": 309, "maxZ": 329,
-        "neededNearbyBlocks": ["minecraft:planks"]
+        "neededNearbyBlocks": ["minecraft:oak_planks"]
       },
       "rarity": 5.0
     },
@@ -375,7 +375,7 @@
       ],
       "condition": {
       "minX": -1583, "maxX": -1468, "minY": 0, "maxY": 41, "minZ": -895, "maxZ": -826,
-        "neededNearbyBlocks": ["minecraft:planks"]
+        "neededNearbyBlocks": ["minecraft:oak_planks"]
       },
       "rarity": 20.0
     },
