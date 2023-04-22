@@ -1008,7 +1008,7 @@ tag @s[scores={DialogueTrigger=40,TalkTime=39..}] add Dialogue40
 #Dialogue41
 #execute as @s[x=1221,y=63,z=-491,dx=19,dy=5,dz=10,tag=Dialogue40] run scoreboard players set @s[tag=!Dialogue41] DialogueTrigger 41
 
-tellraw @s[scores={DialogueTrigger=41,TalkTime=3}] {"text":"<Pharmacy Doctor> Your Pokémon appear to be fine. It something worrying you? ..."}
+tellraw @s[scores={DialogueTrigger=41,TalkTime=3}] {"text":"<Pharmacy Doctor> Your Pokémon appear to be fine. Is something worrying you? ..."}
 tellraw @s[scores={DialogueTrigger=41,TalkTime=13}] {"text":"<Pharmacy Doctor> The Lighthouse Pokémon is in trouble?"}
 tellraw @s[scores={DialogueTrigger=41,TalkTime=20}] {"text":"<Pharmacy Doctor> I got it! This ought to do the trick."}
 execute as @s[scores={DialogueTrigger=41,TalkTime=23}] run give @s music_disc_11{display:{Name:'[{"text":"Secretpotion","italic":false,"color":"aqua"}]',Lore:['[{"text":"A fantastic medicine dispensed by","italic":false}]','[{"text":"the pharmacy in Cianwood City.","italic":false}]','[{"text":"It fully heals a Pokémon of","italic":false}]','[{"text":"any ailment.","italic":false}]']},HideFlags:127} 1
