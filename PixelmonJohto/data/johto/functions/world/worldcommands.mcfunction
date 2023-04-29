@@ -1364,7 +1364,7 @@ tag @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,tag=Dialogue110] remove Dialogue
 
 #Dialogue132
 #Jirachi at any Pokemon Center after all badges
-execute at @e[type=armor_stand,tag=Mystery_Gift] run scoreboard players set @s[distance=..6,tag=AllGyms,scores={TalkTime=0},tag=!Dialogue132] DialogueTrigger 132
+execute at @e[type=armor_stand,tag=Mystery_Gift] run scoreboard players set @a[distance=..6,scores={TalkTime=0},tag=AllGyms,tag=!Dialogue132] DialogueTrigger 132
 
 #Dialogue140
 #Olivine City Manaphy Egg
