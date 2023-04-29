@@ -139,11 +139,11 @@ tellraw @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,scores={BugContest=1..}] ["",{"text":
 playsound door ambient @a[x=466,y=64,z=63,dy=2,dz=2,scores={BugContest=0}] ~ ~ ~ 100 1 1
 playsound door ambient @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,scores={BugContest=0}] ~ ~ ~ 10 1 1
 
-tp @a[x=466,y=64,z=63,dy=2,dz=2,scores={BugContest=1..}] ~5 ~ ~
+execute as @a[x=466,y=64,z=63,dy=2,dz=2,scores={BugContest=1..}] at @s run tp @s ~5 ~ ~
 scoreboard players set @a[x=466,y=64,z=63,dy=2,dz=2,scores={BugContest=0}] click 1
 tp @a[x=466,y=64,z=63,dy=2,dz=2,scores={BugContest=0}] 430 64 -13
 
-tp @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,scores={BugContest=1..}] ~ ~ ~5
+execute as @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,scores={BugContest=1..}] at @s run tp @s ~ ~ ~5
 scoreboard players set @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,scores={BugContest=0}] click 1
 tp @a[x=571,y=64,z=-44,dx=2,dy=2,dz=0,scores={BugContest=0}] 511 64 -77
 
@@ -186,7 +186,7 @@ tp @a[x=-945,y=175,z=195,dx=3,dy=3] -1025 86 348
 
 #Magnet Train Goldenrod City
 execute as @a[x=526,y=72,z=-339,dy=3,tag=!MagnetPass,scores={TalkTime=0}] run tellraw @s {"text":"A Magnet Pass is required to ride on the Magnet Train!","italic":true,"color":"gray"}
-execute as @a[x=526,y=72,z=-339,dy=3,tag=!MagnetPass] run tp @s ~ ~ ~6
+execute as @a[x=526,y=72,z=-339,dy=3,tag=!MagnetPass] at @s run tp @s ~ ~ ~6
 
 execute as @a[x=526,y=72,z=-339,dy=3,tag=MagnetPass,scores={TalkTime=0}] run tag @s remove Dialogue207
 execute as @a[x=526,y=72,z=-339,dy=3,tag=MagnetPass,scores={TalkTime=0}] run scoreboard players set @s DialogueTrigger 207
@@ -194,7 +194,7 @@ execute as @a[x=526,y=72,z=-339,dy=3,tag=MagnetPass,scores={TalkTime=0}] run sco
 
 #Magnet Train Saffron City
 execute as @a[x=-2673,y=72,z=408,dy=3,tag=!MagnetPass,scores={TalkTime=0}] run tellraw @s {"text":"A Magnet Pass is required to ride on the Magnet Train!","italic":true,"color":"gray"}
-execute as @a[x=-2673,y=72,z=408,dy=3,tag=!MagnetPass] run tp @s ~ ~ ~6
+execute as @a[x=-2673,y=72,z=408,dy=3,tag=!MagnetPass] at @s run tp @s ~ ~ ~6
 
 execute as @a[x=-2673,y=72,z=408,dy=3,tag=MagnetPass,scores={TalkTime=0}] run tag @s remove Dialogue208
 execute as @a[x=-2673,y=72,z=408,dy=3,tag=MagnetPass,scores={TalkTime=0}] run scoreboard players set @s DialogueTrigger 208
@@ -232,7 +232,7 @@ tp @a[x=-795,y=65,z=529,dx=9,dy=5] 88 64 -64
 #--------------------------------------------------
 #Azalea Town
 tellraw @a[x=355,y=64,z=-762,dx=4,dy=4,tag=!Dialogue16,scores={TalkTime=0}] {"text":"Bugsy is away right now! Kurt should be watching the town.","italic":true}
-tp @a[x=355,y=64,z=-762,dx=4,dy=4,scores={Kurt=0..},tag=!Dialogue16] ~ ~ ~-5
+execute as @a[x=355,y=64,z=-762,dx=4,dy=4,scores={Kurt=0..},tag=!Dialogue16] at @s run tp @s ~ ~ ~-5
 
 playsound door ambient @a[x=355,y=64,z=-762,dx=4,dy=4,tag=Dialogue16,scores={TalkTime=0}] ~ ~ ~ 100 1 1
 tag @a[x=355,y=64,z=-762,dx=4,dy=4,tag=Dialogue16,scores={TalkTime=0}] remove GymVictory
@@ -284,7 +284,7 @@ tp @a[x=-1194,y=65,z=529,dx=9,dy=6] 1269 64 -470
 #--------------------------------------------------
 #Olivine City
 tellraw @a[x=807,y=64,z=16,dx=4,dy=3,tag=!Dialogue42] {"text":"Jasmine is not currently in the gym!","italic":true,"color":"gray"}
-tp @a[x=807,y=64,z=16,dx=4,dy=3,tag=!Dialogue42] ~ ~ ~-10
+execute as @a[x=807,y=64,z=16,dx=4,dy=3,tag=!Dialogue42] at @s run tp @s ~ ~ ~-10
 
 playsound door ambient @a[x=807,y=64,z=16,dx=4,dy=3,tag=Dialogue42] ~ ~ ~ 100 1 1
 tag @a[x=807,y=64,z=16,dx=4,dy=3,tag=Dialogue42] remove GymVictory
@@ -732,7 +732,7 @@ tp @a[x=-1328,y=64,z=115,dx=3,dy=3] -1448 51 533 ~180 ~0
 
 #Before Silver is defeated
 tellraw @a[x=-1450,y=51,z=534,dx=3,dy=3,tag=!Dialogue85,scores={TalkTime=0}] ["",{"text":"<"},{"text":"Silver","color":"red"},{"text":"> Come on, "},{"selector":"@p[x=-1450,y=51,z=534,dx=3,dy=3,tag=!Dialogue85,scores={TalkTime=0}]"},{"text":"! Let's battle!"}]
-tp @a[x=-1450,y=51,z=534,dx=3,dy=3,tag=!Dialogue85] ~ ~ ~-5
+execute as @a[x=-1450,y=51,z=534,dx=3,dy=3,tag=!Dialogue85] at @s run tp @s ~ ~ ~-5
 
 playsound door ambient @a[x=-1450,y=51,z=534,dx=3,dy=3] ~ ~ ~ 100 1 1
 scoreboard players set @a[x=-1450,y=51,z=534,dx=3,dy=3] EscapeRope 0
