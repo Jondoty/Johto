@@ -1127,6 +1127,7 @@ execute as @a[scores={DialogueTrigger=202,TalkTime=11}] run fill 1654 85 6 1777 
 execute as @a[scores={DialogueTrigger=202,TalkTime=11}] run fill 1654 83 6 1777 84 101 minecraft:air
 execute as @a[scores={DialogueTrigger=202,TalkTime=12}] run fill 1654 81 6 1777 82 101 minecraft:air
 execute as @a[scores={DialogueTrigger=202,TalkTime=12}] run fill 1654 79 6 1777 80 101 minecraft:air
+execute as @a[scores={DialogueTrigger=202,TalkTime=12}] run kill @e[x=1406,y=78,z=-90,dx=370,dy=5,dz=190,type=minecraft:item]
 
 #Zone 2 Clear
 execute as @a[scores={DialogueTrigger=202,TalkTime=16}] run fill 1654 105 -90 1777 106 5 minecraft:air
@@ -1143,6 +1144,7 @@ execute as @a[scores={DialogueTrigger=202,TalkTime=21}] run fill 1654 85 -90 177
 execute as @a[scores={DialogueTrigger=202,TalkTime=21}] run fill 1654 83 -90 1777 84 5 minecraft:air
 execute as @a[scores={DialogueTrigger=202,TalkTime=22}] run fill 1654 81 -90 1777 82 5 minecraft:air
 execute as @a[scores={DialogueTrigger=202,TalkTime=22}] run fill 1654 79 -90 1777 80 5 minecraft:air
+execute as @a[scores={DialogueTrigger=202,TalkTime=22}] run kill @e[x=1406,y=78,z=-90,dx=370,dy=5,dz=190,type=minecraft:item]
 
 #Zone 3 Clear
 execute as @a[scores={DialogueTrigger=202,TalkTime=26}] run fill 1530 105 6 1653 106 101 minecraft:air
@@ -1159,6 +1161,7 @@ execute as @a[scores={DialogueTrigger=202,TalkTime=31}] run fill 1530 85 6 1653 
 execute as @a[scores={DialogueTrigger=202,TalkTime=31}] run fill 1530 83 6 1653 84 101 minecraft:air
 execute as @a[scores={DialogueTrigger=202,TalkTime=32}] run fill 1530 81 6 1653 82 101 minecraft:air
 execute as @a[scores={DialogueTrigger=202,TalkTime=32}] run fill 1530 79 6 1653 80 101 minecraft:air
+execute as @a[scores={DialogueTrigger=202,TalkTime=32}] run kill @e[x=1406,y=78,z=-90,dx=370,dy=5,dz=190,type=minecraft:item]
 
 #Zone 4 Clear
 execute as @a[scores={DialogueTrigger=202,TalkTime=36}] run fill 1530 105 -90 1653 106 5 minecraft:air
@@ -1175,6 +1178,7 @@ execute as @a[scores={DialogueTrigger=202,TalkTime=41}] run fill 1530 85 -90 165
 execute as @a[scores={DialogueTrigger=202,TalkTime=41}] run fill 1530 83 -90 1653 84 5 minecraft:air
 execute as @a[scores={DialogueTrigger=202,TalkTime=42}] run fill 1530 81 -90 1653 82 5 minecraft:air
 execute as @a[scores={DialogueTrigger=202,TalkTime=42}] run fill 1530 79 -90 1653 80 5 minecraft:air
+execute as @a[scores={DialogueTrigger=202,TalkTime=42}] run kill @e[x=1406,y=78,z=-90,dx=370,dy=5,dz=190,type=minecraft:item]
 
 #Zone 5 Clear
 execute as @a[scores={DialogueTrigger=202,TalkTime=46}] run fill 1406 105 6 1529 106 101 minecraft:air
@@ -1191,6 +1195,7 @@ execute as @a[scores={DialogueTrigger=202,TalkTime=51}] run fill 1406 85 6 1529 
 execute as @a[scores={DialogueTrigger=202,TalkTime=51}] run fill 1406 83 6 1529 84 101 minecraft:air
 execute as @a[scores={DialogueTrigger=202,TalkTime=52}] run fill 1406 81 6 1529 82 101 minecraft:air
 execute as @a[scores={DialogueTrigger=202,TalkTime=52}] run fill 1406 79 6 1529 80 101 minecraft:air
+execute as @a[scores={DialogueTrigger=202,TalkTime=52}] run kill @e[x=1406,y=78,z=-90,dx=370,dy=5,dz=190,type=minecraft:item]
 
 #Zone 6 Clear
 execute as @a[scores={DialogueTrigger=202,TalkTime=56}] run fill 1406 105 -90 1529 106 5 minecraft:air
@@ -1207,6 +1212,7 @@ execute as @a[scores={DialogueTrigger=202,TalkTime=61}] run fill 1406 85 -90 152
 execute as @a[scores={DialogueTrigger=202,TalkTime=61}] run fill 1406 83 -90 1529 84 5 minecraft:air
 execute as @a[scores={DialogueTrigger=202,TalkTime=62}] run fill 1406 81 -90 1529 82 5 minecraft:air
 execute as @a[scores={DialogueTrigger=202,TalkTime=62}] run fill 1406 79 -90 1529 80 5 minecraft:air
+execute as @a[scores={DialogueTrigger=202,TalkTime=62}] run kill @e[x=1406,y=78,z=-90,dx=370,dy=5,dz=190,type=minecraft:item]
 
 
 
