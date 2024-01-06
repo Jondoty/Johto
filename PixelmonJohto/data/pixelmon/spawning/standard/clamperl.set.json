@@ -4,27 +4,15 @@
     {
       "spec": "species:Clamperl",
       "stringLocationTypes": [
-        "Seafloor"
+        "Underground Water"
       ],
-      "minLevel": 15,
-      "maxLevel": 30,
+      "minLevel": 20,
+      "maxLevel": 35,
       "typeID": "pokemon",
-      "heldItems": [
-        {
-          "itemID": "pixelmon:big_pearl",
-          "percentChance": 5
-        },
-        {
-          "itemID": "pixelmon:pearl",
-          "percentChance": 50
-        }
-      ],
       "condition": {
-        "stringBiomes": [
-          "oceanic"
-        ]
+          "minX": -2330, "maxX": -2060, "minZ": 782, "maxZ": 966, "minY": -30, "maxY": -20
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }
