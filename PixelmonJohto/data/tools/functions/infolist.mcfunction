@@ -1,5 +1,5 @@
 #Current Map Version
-tellraw @s {"text":"1) Map version: Johto 4.0.1"}
+tellraw @s {"text":"1) Map version: Johto 4.1.0"}
 
 #execute as @e[x=-880,y=64,z=-336,dy=3,type=minecraft:armor_stand] run give Jond minecraft:acacia_boat
 
