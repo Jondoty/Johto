@@ -129,7 +129,7 @@ execute as @a[nbt={Inventory:[{Slot:-106b,id:"pixelmon:item_finder"}]}] run func
 execute if entity @a[x=438,y=63,z=-395,dx=3,dy=34,dz=3] run function johto:world/departmentelevator
 
 #Executes shiny particles over Shiny Pokemon
-execute at @a if entity @e[type=pixelmon:pixelmon,nbt={palette:"shiny",Tame:0b},distance=50..] run execute at @e[nbt={palette:"shiny",Tame:0b},type=pixelmon:pixelmon] run particle minecraft:dust 1 1 1 1 ~ ~1 ~ 0 10 0 0.5 50 force @a[distance=..50]
+execute as @e[type=pixelmon:pixelmon,nbt={palette:"shiny",Tame:0b}] at @s run particle minecraft:dust 1 1 1 1 ~ ~1 ~ 0 10 0 0.5 50 force @a
 
 
 #---------------------
