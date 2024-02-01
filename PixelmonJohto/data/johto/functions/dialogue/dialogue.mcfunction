@@ -130,7 +130,6 @@ tag @s[scores={DialogueTrigger=2,TalkTime=17..}] add Dialogue2
 #Professor Elm's first Dialogue
 #scoreboard players set @a[x=-693,y=63,z=-490,dx=20,dy=5,dz=20,tag=!Dialogue3,score_TalkTime=0] DialogueTrigger 3
 
-execute as @s[scores={DialogueTrigger=3,TalkTime=1}] run scoreboard players set @s click 1
 tellraw @s[scores={DialogueTrigger=3,TalkTime=2}] ["",{"text":"<Professor Elm> "},{"selector":"@s"},{"text":"! There you are!"}]
 tellraw @s[scores={DialogueTrigger=3,TalkTime=9}] {"text":"<Professor Elm> I needed to ask you a favor."}
 tellraw @s[scores={DialogueTrigger=3,TalkTime=16}] {"text":"<Professor Elm> I have an acquaintance called Mr. Pokémon."}
@@ -1091,8 +1090,8 @@ tellraw @s[scores={DialogueTrigger=44,TalkTime=47}] {"text":"<Chuck> What? It ha
 tellraw @s[scores={DialogueTrigger=44,TalkTime=54}] {"text":"<Chuck> That's true! Come on. We shall do battle!"}
 
 
-execute as @s[scores={DialogueTrigger=44,TalkTime=59}] run tp @s[x=-1199,y=65,z=614,dx=4,dy=4,dz=4] ~ ~ ~-7
-execute as @s[scores={DialogueTrigger=44,TalkTime=59}] run tp @s[x=-1184,y=65,z=614,dx=4,dy=4,dz=4] ~ ~ ~-7
+execute as @s[scores={DialogueTrigger=44,TalkTime=59}] at @s run tp @s[x=-1199,y=65,z=614,dx=4,dy=4,dz=4] ~ ~ ~-7
+execute as @s[scores={DialogueTrigger=44,TalkTime=59}] at @s run tp @s[x=-1184,y=65,z=614,dx=4,dy=4,dz=4] ~ ~ ~-7
 execute as @s[scores={DialogueTrigger=44,TalkTime=60}] run clone -721 64 -324 -717 67 -320 -1184 65 614
 execute as @s[scores={DialogueTrigger=44,TalkTime=60}] run clone -721 64 -324 -717 67 -320 -1199 65 614
 execute as @s[scores={DialogueTrigger=44,TalkTime=60}] run scoreboard players set @s click 1
@@ -4756,7 +4755,7 @@ execute as @s[x=530,y=0,z=324,dx=442,dy=63,dz=471,scores={DialogueTrigger=214,Ta
 tellraw @s[scores={DialogueTrigger=214,TalkTime=1,SSState=1}] {"text":"Now boarding the S.S. Aqua voyage for Vermilion City!"}
 tellraw @s[scores={DialogueTrigger=214,TalkTime=1,SSState=2}] {"text":"Now boarding the S.S. Aqua voyage for Olivine City!"}
 execute as @s[scores={DialogueTrigger=214,TalkTime=1}] run advancement grant @s only johto:event4
-execute as @s[scores={DialogueTrigger=214,TalkTime=1}] run scoreboard players set @s click 1
+execute as @s[scores={DialogueTrigger=214,TalkTime=1}] run function johto:tools/forceclick
 
 
 
@@ -4781,7 +4780,7 @@ execute as @s[scores={DialogueTrigger=214,TalkTime=797,SSState=2}] run tp @s 758
 
 #State Reset
 execute as @s[scores={DialogueTrigger=214,TalkTime=799}] run scoreboard players set @s SSState 0
-execute as @s[scores={DialogueTrigger=214,TalkTime=799}] run scoreboard players set @s click 1
+execute as @s[scores={DialogueTrigger=214,TalkTime=799}] run function johto:tools/forceclick
 
 
 #If the player sleeps during the voyage
