@@ -169,7 +169,7 @@
           "Scald",
           "Liquidation"
         ],
-        "hmMoves": ["Surf"],
+        "hmMoves": [],
         "transferMoves": [
           "Bide",
           "Confide",
@@ -289,7 +289,7 @@
         ]
       },
       "movement": {
-        "rideable": true,
+        "rideable": false,
         "canFly": false,
         "canSurf": true,
         "canRideShoulder": false,
@@ -345,22 +345,52 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/564_tirtouga/all/base/none/texture.png",
               "sprite": "pixelmon:pokemon/564_tirtouga/all/base/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/564_tirtouga/all/base/none/model.pqc"
-                ]
-              },
-              "sounds": []
+              "sounds": [],
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/564_tirtouga/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/564_tirtouga/all/base/none/texture.png"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/564_tirtouga/all/base/shiny/texture.png",
               "sprite": "pixelmon:pokemon/564_tirtouga/all/base/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/564_tirtouga/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/564_tirtouga/all/base/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             }
           ]
         }
@@ -384,7 +414,7 @@
       "eggCycles": 31,
       "weight": 16.5,
       "catchRate": 45,
-      "malePercentage": 87,
+      "malePercentage": 87.5,
       "evolutions": [
         {
           "level": 37,

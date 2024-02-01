@@ -12,17 +12,17 @@
         "height": 0.4,
         "width": 0.4,
         "length": 1,
-        "eyeHeight": 0.3,
-        "hoverHeight": 0
+        "eyeHeight": 0.4,
+        "hoverHeight": 0.4
       },
       "moves": {
         "levelUpMoves": [
           {
             "level": 0,
             "attacks": [
+              "Leafage",
               "Scratch",
-              "Tail Whip",
-              "Leafage"
+              "Tail Whip"
             ]
           },
           {
@@ -88,11 +88,45 @@
         ],
         "tutorMoves": [],
         "eggMoves": [
-          "Leech Seed",
-          "Copycat",
-          "Sucker Punch",
           "Ally Switch",
-          "Petal Blizzard"
+          "Copycat",
+          "Leech Seed",
+          "Petal Blizzard",
+          "Sucker Punch"
+        ],
+        "tmMoves9": [
+          "Take Down",
+          "Charm",
+          "Fake Tears",
+          "Agility",
+          "Mud-Slap",
+          "Protect",
+          "Acrobatics",
+          "Disarming Voice",
+          "Trailblaze",
+          "Facade",
+          "Swift",
+          "Magical Leaf",
+          "Endure",
+          "Bullet Seed",
+          "U-turn",
+          "Shadow Claw",
+          "Sleep Talk",
+          "Seed Bomb",
+          "Grass Knot",
+          "Rest",
+          "Taunt",
+          "Substitute",
+          "Giga Drain",
+          "Energy Ball",
+          "Play Rough",
+          "Helping Hand",
+          "Grassy Terrain",
+          "Nasty Plot",
+          "Grass Pledge",
+          "Leaf Storm",
+          "Solar Beam",
+          "Tera Blast"
         ],
         "tmMoves8": [],
         "trMoves": [],
@@ -136,7 +170,7 @@
       },
       "tags": [],
       "spawn": {
-        "baseExp": 64,
+        "baseExp": 62,
         "baseFriendship": 50,
         "spawnLevel": 10,
         "spawnLevelRange": 6,
@@ -154,22 +188,57 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/906_sprigatito/all/base/none/texture.png",
               "sprite": "pixelmon:pokemon/906_sprigatito/all/base/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/906_sprigatito/all/base/none/model.pqc"
-                ]
-              },
-              "sounds": []
+              "sounds": [
+                {
+                  "sound": "pixelmon:pixelmon.mob.sprigatito",
+                  "range": 14
+                }
+              ],
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/906_sprigatito/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/906_sprigatito/all/base/none/texture.png"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/906_sprigatito/all/base/shiny/texture.png",
               "sprite": "pixelmon:pokemon/906_sprigatito/all/base/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/906_sprigatito/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/906_sprigatito/all/base/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             }
           ]
         }
@@ -192,8 +261,15 @@
       "eggCycles": 21,
       "weight": 4.1,
       "catchRate": 45,
-      "malePercentage": 87,
-      "evolutions": [],
+      "malePercentage": 87.5,
+      "evolutions": [
+        {
+          "level": 16,
+          "to": "Floragato",
+          "conditions": [],
+          "evoType": "leveling"
+        }
+      ],
       "evYields": {
         "speed": 1
       }

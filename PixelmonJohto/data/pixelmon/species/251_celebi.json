@@ -18,13 +18,6 @@
       "moves": {
         "levelUpMoves": [
           {
-            "level": 100,
-            "attacks": [
-              "Perish Song",
-              "Perish Song"
-            ]
-          },
-          {
             "level": 0,
             "attacks": [
               "Confusion",
@@ -83,6 +76,12 @@
             "level": 90,
             "attacks": [
               "Leaf Storm"
+            ]
+          },
+          {
+            "level": 100,
+            "attacks": [
+              "Perish Song"
             ]
           }
         ],
@@ -152,7 +151,9 @@
           "Dazzling Gleam",
           "Pollen Puff"
         ],
-        "hmMoves": ["Cut"],
+        "hmMoves": [
+          "Cut"
+        ],
         "transferMoves": [
           "Aerial Ace",
           "Charge Beam",
@@ -447,7 +448,8 @@
         "speed": 100
       },
       "tags": [
-        "mythical"
+        "mythical",
+        "transformsonbeastball"
       ],
       "spawn": {
         "baseExp": 64,
@@ -468,33 +470,103 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/251_celebi/all/base/none/texture.png",
               "sprite": "pixelmon:pokemon/251_celebi/all/base/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/251_celebi/all/base/none/model.pqc"
-                ]
-              },
               "sounds": [
-                "pixelmon.mob.celebi",
-                "pixelmon.mob.celebi",
-                "pixelmon.mob.celebi",
-                "pixelmon.mob.celebi"
+                {
+                  "sound": "pixelmon:pixelmon.mob.celebi",
+                  "range": 14
+                },
+                {
+                  "sound": "pixelmon:pixelmon.mob.celebi",
+                  "range": 14
+                },
+                {
+                  "sound": "pixelmon:pixelmon.mob.celebi",
+                  "range": 14
+                },
+                {
+                  "sound": "pixelmon:pixelmon.mob.celebi",
+                  "range": 14
+                }
+              ],
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/251_celebi/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/251_celebi/all/base/none/texture.png"
+                    }
+                  ]
+                }
               ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/251_celebi/all/base/shiny/texture.png",
               "sprite": "pixelmon:pokemon/251_celebi/all/base/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/251_celebi/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/251_celebi/all/base/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             },
             {
               "name": "alien",
-              "texture": "pixelmon:pokemon/251_celebi/all/base/alien/texture.png",
               "sprite": "pixelmon:pokemon/251_celebi/all/base/alien/sprite.png",
-              "particle": ""
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/251_celebi/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/251_celebi/all/base/alien/texture.png"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "valentine",
+              "sprite": "pixelmon:pokemon/251_celebi/all/base/valentine/sprite.png",
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/251_celebi/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/251_celebi/all/base/valentine/texture.png"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }

@@ -155,7 +155,11 @@
           "High Horsepower",
           "Throat Chop"
         ],
-        "hmMoves": ["Surf"],
+        "hmMoves": [
+          "Surf",
+          "Strength",
+          "Rock Smash"
+        ],
         "transferMoves": [
           "Bide",
           "Captivate",
@@ -431,7 +435,7 @@
       "movement": {
         "rideable": true,
         "canFly": false,
-        "canSurf": true,
+        "canSurf": false,
         "canRideShoulder": false,
         "ridingOffsets": {
           "standing": {
@@ -479,25 +483,57 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/128_tauros/all/base/none/texture.png",
               "sprite": "pixelmon:pokemon/128_tauros/all/base/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/128_tauros/all/base/none/model.pqc"
-                ],
-                "yRotation": 25
-              },
               "sounds": [
-                "pixelmon.mob.tauros"
+                {
+                  "sound": "pixelmon:pixelmon.mob.tauros",
+                  "range": 14
+                }
+              ],
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/128_tauros/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/128_tauros/all/base/none/texture.png"
+                    }
+                  ]
+                }
               ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/128_tauros/all/base/shiny/texture.png",
               "sprite": "pixelmon:pokemon/128_tauros/all/base/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/128_tauros/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/128_tauros/all/base/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             }
           ]
         }
@@ -524,6 +560,761 @@
       "evYields": {
         "attack": 1,
         "speed": 1
+      }
+    },
+    {
+      "name": "paldean_combat",
+      "dimensions": {
+        "height": 1.4,
+        "width": 1.4,
+        "length": 1,
+        "eyeHeight": 1.4,
+        "hoverHeight": 1.4
+      },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Tackle",
+              "Tail Whip"
+            ]
+          },
+          {
+            "level": 5,
+            "attacks": [
+              "Work Up"
+            ]
+          },
+          {
+            "level": 10,
+            "attacks": [
+              "Double Kick"
+            ]
+          },
+          {
+            "level": 15,
+            "attacks": [
+              "Assurance"
+            ]
+          },
+          {
+            "level": 20,
+            "attacks": [
+              "Headbutt"
+            ]
+          },
+          {
+            "level": 25,
+            "attacks": [
+              "Scary Face"
+            ]
+          },
+          {
+            "level": 30,
+            "attacks": [
+              "Zen Headbutt"
+            ]
+          },
+          {
+            "level": 35,
+            "attacks": [
+              "Raging Bull"
+            ]
+          },
+          {
+            "level": 40,
+            "attacks": [
+              "Rest"
+            ]
+          },
+          {
+            "level": 45,
+            "attacks": [
+              "Swagger"
+            ]
+          },
+          {
+            "level": 50,
+            "attacks": [
+              "Thrash"
+            ]
+          },
+          {
+            "level": 55,
+            "attacks": [
+              "Double-Edge"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Close Combat"
+            ]
+          }
+        ],
+        "tutorMoves": [],
+        "eggMoves": [
+          "Curse",
+          "Endeavor"
+        ],
+        "tmMoves9": [
+          "Take Down",
+          "Scary Face",
+          "Protect",
+          "Thief",
+          "Trailblaze",
+          "Facade",
+          "Bulldoze",
+          "Rock Tomb",
+          "Endure",
+          "Sunny Day",
+          "Rain Dance",
+          "Sandstorm",
+          "Smart Strike",
+          "Dig",
+          "Zen Headbutt",
+          "Bulk Up",
+          "Body Slam",
+          "Sleep Talk",
+          "Stomping Tantrum",
+          "Rest",
+          "Rock Slide",
+          "Body Press",
+          "Iron Head",
+          "Substitute",
+          "Drill Run",
+          "Surf",
+          "Reversal",
+          "Wild Charge",
+          "Earthquake",
+          "Stone Edge",
+          "Giga Impact",
+          "Outrage",
+          "Hyper Beam",
+          "Close Combat",
+          "Tera Blast"
+        ],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+      },
+      "abilities": {
+        "abilities": [
+          "Intimidate",
+          "AngerPoint"
+        ],
+        "hiddenAbilities": [
+          "CudChew"
+        ]
+      },
+      "movement": {
+        "rideable": false,
+        "canFly": false,
+        "canSurf": false,
+        "canRideShoulder": false
+      },
+      "battleStats": {
+        "hp": 75,
+        "attack": 110,
+        "defense": 105,
+        "specialAttack": 30,
+        "specialDefense": 70,
+        "speed": 100
+      },
+      "tags": [
+        "paldean"
+      ],
+      "spawn": {
+        "baseExp": 172,
+        "baseFriendship": 50,
+        "spawnLevel": 15,
+        "spawnLevelRange": 35,
+        "spawnLocations": [
+          "LAND"
+        ]
+      },
+      "possibleGenders": [
+        "MALE",
+        "FEMALE"
+      ],
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "sprite": "pixelmon:pokemon/128_tauros/all/paldean_combat/none/sprite.png",
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/128_tauros/all/paldean_combat/none/model.pqc",
+                      "texture": "pixelmon:pokemon/128_tauros/all/paldean_combat/none/texture.png"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "shiny",
+              "sprite": "pixelmon:pokemon/128_tauros/all/paldean_combat/shiny/sprite.png",
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/128_tauros/all/paldean_combat/none/model.pqc",
+                      "texture": "pixelmon:pokemon/128_tauros/all/paldean_combat/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "types": [
+        "FIGHTING"
+      ],
+      "weight": 115.0,
+      "evYields": {
+        "attack": 2
+      }
+    },
+    {
+      "name": "paldean_blaze",
+      "dimensions": {
+        "height": 1.4,
+        "width": 1.4,
+        "length": 1,
+        "eyeHeight": 1.4,
+        "hoverHeight": 1.4
+      },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Tackle",
+              "Tail Whip"
+            ]
+          },
+          {
+            "level": 5,
+            "attacks": [
+              "Work Up"
+            ]
+          },
+          {
+            "level": 10,
+            "attacks": [
+              "Double Kick"
+            ]
+          },
+          {
+            "level": 15,
+            "attacks": [
+              "Flame Charge"
+            ]
+          },
+          {
+            "level": 20,
+            "attacks": [
+              "Headbutt"
+            ]
+          },
+          {
+            "level": 25,
+            "attacks": [
+              "Scary Face"
+            ]
+          },
+          {
+            "level": 30,
+            "attacks": [
+              "Zen Headbutt"
+            ]
+          },
+          {
+            "level": 35,
+            "attacks": [
+              "Raging Bull"
+            ]
+          },
+          {
+            "level": 40,
+            "attacks": [
+              "Rest"
+            ]
+          },
+          {
+            "level": 45,
+            "attacks": [
+              "Swagger"
+            ]
+          },
+          {
+            "level": 50,
+            "attacks": [
+              "Thrash"
+            ]
+          },
+          {
+            "level": 55,
+            "attacks": [
+              "Flare Blitz"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Close Combat"
+            ]
+          }
+        ],
+        "tutorMoves": [],
+        "eggMoves": [
+          "Curse",
+          "Endeavor"
+        ],
+        "tmMoves9": [
+          "Take Down",
+          "Scary Face",
+          "Protect",
+          "Thief",
+          "Trailblaze",
+          "Fire Spin",
+          "Facade",
+          "Bulldoze",
+          "Rock Tomb",
+          "Flame Charge",
+          "Endure",
+          "Sunny Day",
+          "Rain Dance",
+          "Sandstorm",
+          "Smart Strike",
+          "Dig",
+          "Zen Headbutt",
+          "Bulk Up",
+          "Body Slam",
+          "Sleep Talk",
+          "Stomping Tantrum",
+          "Rest",
+          "Rock Slide",
+          "Body Press",
+          "Iron Head",
+          "Substitute",
+          "Drill Run",
+          "Will-O-Wisp",
+          "Flamethrower",
+          "Reversal",
+          "Fire Blast",
+          "Wild Charge",
+          "Earthquake",
+          "Stone Edge",
+          "Giga Impact",
+          "Outrage",
+          "Overheat",
+          "Hyper Beam",
+          "Flare Blitz",
+          "Close Combat",
+          "Tera Blast"
+        ],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+      },
+      "abilities": {
+        "abilities": [
+          "Intimidate",
+          "AngerPoint"
+        ],
+        "hiddenAbilities": [
+          "CudChew"
+        ]
+      },
+      "movement": {
+        "rideable": false,
+        "canFly": false,
+        "canSurf": false,
+        "canRideShoulder": false
+      },
+      "battleStats": {
+        "hp": 75,
+        "attack": 110,
+        "defense": 105,
+        "specialAttack": 30,
+        "specialDefense": 70,
+        "speed": 100
+      },
+      "tags": [
+        "paldean"
+      ],
+      "spawn": {
+        "baseExp": 172,
+        "baseFriendship": 50,
+        "spawnLevel": 15,
+        "spawnLevelRange": 35,
+        "spawnLocations": [
+          "LAND"
+        ]
+      },
+      "possibleGenders": [
+        "MALE",
+        "FEMALE"
+      ],
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "sprite": "pixelmon:pokemon/128_tauros/all/paldean_blaze/none/sprite.png",
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/128_tauros/all/paldean_blaze/none/model.pqc",
+                      "texture": "pixelmon:pokemon/128_tauros/all/paldean_blaze/none/texture.png"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "shiny",
+              "sprite": "pixelmon:pokemon/128_tauros/all/paldean_blaze/shiny/sprite.png",
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/128_tauros/all/paldean_blaze/none/model.pqc",
+                      "texture": "pixelmon:pokemon/128_tauros/all/paldean_blaze/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "types": [
+        "FIGHTING",
+        "FIRE"
+      ],
+      "weight": 85.0,
+      "evYields": {
+        "attack": 2
+      }
+    },
+    {
+      "name": "paldean_aqua",
+      "dimensions": {
+        "height": 1.4,
+        "width": 1.4,
+        "length": 1,
+        "eyeHeight": 1.4,
+        "hoverHeight": 1.4
+      },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Tackle",
+              "Tail Whip"
+            ]
+          },
+          {
+            "level": 5,
+            "attacks": [
+              "Work Up"
+            ]
+          },
+          {
+            "level": 10,
+            "attacks": [
+              "Double Kick"
+            ]
+          },
+          {
+            "level": 15,
+            "attacks": [
+              "Aqua Jet"
+            ]
+          },
+          {
+            "level": 20,
+            "attacks": [
+              "Headbutt"
+            ]
+          },
+          {
+            "level": 25,
+            "attacks": [
+              "Scary Face"
+            ]
+          },
+          {
+            "level": 30,
+            "attacks": [
+              "Zen Headbutt"
+            ]
+          },
+          {
+            "level": 35,
+            "attacks": [
+              "Raging Bull"
+            ]
+          },
+          {
+            "level": 40,
+            "attacks": [
+              "Rest"
+            ]
+          },
+          {
+            "level": 45,
+            "attacks": [
+              "Swagger"
+            ]
+          },
+          {
+            "level": 50,
+            "attacks": [
+              "Thrash"
+            ]
+          },
+          {
+            "level": 55,
+            "attacks": [
+              "Wave Crash"
+            ]
+          },
+          {
+            "level": 60,
+            "attacks": [
+              "Close Combat"
+            ]
+          }
+        ],
+        "tutorMoves": [],
+        "eggMoves": [
+          "Curse",
+          "Endeavor"
+        ],
+        "tmMoves9": [
+          "Take Down",
+          "Scary Face",
+          "Protect",
+          "Water Pulse",
+          "Thief",
+          "Trailblaze",
+          "Chilling Water",
+          "Facade",
+          "Bulldoze",
+          "Rock Tomb",
+          "Endure",
+          "Rain Dance",
+          "Sandstorm",
+          "Smart Strike",
+          "Dig",
+          "Zen Headbutt",
+          "Bulk Up",
+          "Body Slam",
+          "Sleep Talk",
+          "Stomping Tantrum",
+          "Rest",
+          "Rock Slide",
+          "Body Press",
+          "Iron Head",
+          "Substitute",
+          "Drill Run",
+          "Liquidation",
+          "Surf",
+          "Reversal",
+          "Hydro Pump",
+          "Wild Charge",
+          "Earthquake",
+          "Stone Edge",
+          "Giga Impact",
+          "Outrage",
+          "Hyper Beam",
+          "Close Combat",
+          "Tera Blast"
+        ],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [],
+        "tmMoves7": [],
+        "tmMoves6": [],
+        "tmMoves5": [],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+      },
+      "abilities": {
+        "abilities": [
+          "Intimidate",
+          "AngerPoint"
+        ],
+        "hiddenAbilities": [
+          "CudChew"
+        ]
+      },
+      "movement": {
+        "rideable": false,
+        "canFly": false,
+        "canSurf": false,
+        "canRideShoulder": false
+      },
+      "battleStats": {
+        "hp": 75,
+        "attack": 110,
+        "defense": 105,
+        "specialAttack": 30,
+        "specialDefense": 70,
+        "speed": 100
+      },
+      "tags": [
+        "paldean"
+      ],
+      "spawn": {
+        "baseExp": 172,
+        "baseFriendship": 50,
+        "spawnLevel": 15,
+        "spawnLevelRange": 35,
+        "spawnLocations": [
+          "LAND"
+        ]
+      },
+      "possibleGenders": [
+        "MALE",
+        "FEMALE"
+      ],
+      "genderProperties": [
+        {
+          "gender": "ALL",
+          "palettes": [
+            {
+              "name": "none",
+              "sprite": "pixelmon:pokemon/128_tauros/all/paldean_aqua/none/sprite.png",
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/128_tauros/all/paldean_aqua/none/model.pqc",
+                      "texture": "pixelmon:pokemon/128_tauros/all/paldean_aqua/none/texture.png"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "shiny",
+              "sprite": "pixelmon:pokemon/128_tauros/all/paldean_aqua/shiny/sprite.png",
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/128_tauros/all/paldean_aqua/none/model.pqc",
+                      "texture": "pixelmon:pokemon/128_tauros/all/paldean_aqua/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "types": [
+        "FIGHTING",
+        "WATER"
+      ],
+      "weight": 110.0,
+      "evYields": {
+        "attack": 2
       }
     }
   ],

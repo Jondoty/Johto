@@ -282,30 +282,74 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/492_shaymin/all/land/none/texture.png",
               "sprite": "pixelmon:pokemon/492_shaymin/all/land/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/492_shaymin/all/land/none/model.pqc"
-                ]
-              },
               "sounds": [
-                "pixelmon.mob.shaymin"
+                {
+                  "sound": "pixelmon:pixelmon.mob.shaymin",
+                  "range": 14
+                }
+              ],
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/492_shaymin/all/land/none/model.pqc",
+                      "texture": "pixelmon:pokemon/492_shaymin/all/land/none/texture.png"
+                    }
+                  ]
+                }
               ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/492_shaymin/all/land/shiny/texture.png",
               "sprite": "pixelmon:pokemon/492_shaymin/all/land/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/492_shaymin/all/land/none/model.pqc",
+                      "texture": "pixelmon:pokemon/492_shaymin/all/land/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             },
             {
               "name": "christmas",
-              "texture": "pixelmon:pokemon/492_shaymin/all/land/christmas/texture.png",
               "sprite": "pixelmon:pokemon/492_shaymin/all/land/christmas/sprite.png",
-              "particle": ""
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/492_shaymin/all/land/none/model.pqc",
+                      "texture": "pixelmon:pokemon/492_shaymin/all/land/christmas/texture.png"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -340,6 +384,226 @@
         "width": 0.5,
         "length": 0.5
       },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Growth"
+            ]
+          },
+          {
+            "level": 10,
+            "attacks": [
+              "Magical Leaf"
+            ]
+          },
+          {
+            "level": 19,
+            "attacks": [
+              "Leech Seed"
+            ]
+          },
+          {
+            "level": 28,
+            "attacks": [
+              "Quick Attack"
+            ]
+          },
+          {
+            "level": 37,
+            "attacks": [
+              "Sweet Scent"
+            ]
+          },
+          {
+            "level": 46,
+            "attacks": [
+              "Natural Gift"
+            ]
+          },
+          {
+            "level": 55,
+            "attacks": [
+              "Worry Seed"
+            ]
+          },
+          {
+            "level": 64,
+            "attacks": [
+              "Air Slash"
+            ]
+          },
+          {
+            "level": 73,
+            "attacks": [
+              "Energy Ball"
+            ]
+          },
+          {
+            "level": 82,
+            "attacks": [
+              "Sweet Kiss"
+            ]
+          },
+          {
+            "level": 91,
+            "attacks": [
+              "Leaf Storm"
+            ]
+          },
+          {
+            "level": 100,
+            "attacks": [
+              "Seed Flare"
+            ]
+          }
+        ],
+        "tutorMoves": [
+          "Covet",
+          "Earth Power",
+          "Endeavor",
+          "Giga Drain",
+          "Laser Focus",
+          "Last Resort",
+          "Seed Bomb",
+          "Snore",
+          "Synthesis",
+          "Worry Seed",
+          "Zen Headbutt"
+        ],
+        "eggMoves": [],
+        "tmMoves8": [],
+        "trMoves": [],
+        "hmMoves": [],
+        "transferMoves": [
+          "Air Slash",
+          "Bullet Seed",
+          "Celebrate",
+          "Defense Curl",
+          "Endure",
+          "Flash",
+          "Grass Whistle",
+          "Headbutt",
+          "Lucky Chant",
+          "Mud-Slap",
+          "Secret Power",
+          "Swift"
+        ],
+        "tmMoves7": [
+          "Toxic",
+          "Hidden Power",
+          "Sunny Day",
+          "Hyper Beam",
+          "Protect",
+          "Safeguard",
+          "Frustration",
+          "Solar Beam",
+          "Return",
+          "Psychic",
+          "Double Team",
+          "Facade",
+          "Rest",
+          "Round",
+          "Energy Ball",
+          "Giga Impact",
+          "Swords Dance",
+          "Psych Up",
+          "Grass Knot",
+          "Swagger",
+          "Sleep Talk",
+          "Substitute",
+          "Nature Power",
+          "Dazzling Gleam",
+          "Confide"
+        ],
+        "tmMoves6": [
+          "Toxic",
+          "Hidden Power",
+          "Sunny Day",
+          "Hyper Beam",
+          "Protect",
+          "Safeguard",
+          "Frustration",
+          "Solar Beam",
+          "Return",
+          "Psychic",
+          "Double Team",
+          "Facade",
+          "Rest",
+          "Round",
+          "Energy Ball",
+          "Giga Impact",
+          "Flash",
+          "Swords Dance",
+          "Psych Up",
+          "Grass Knot",
+          "Swagger",
+          "Sleep Talk",
+          "Substitute",
+          "Secret Power",
+          "Nature Power",
+          "Dazzling Gleam",
+          "Confide"
+        ],
+        "tmMoves5": [
+          "Toxic",
+          "Hidden Power",
+          "Sunny Day",
+          "Hyper Beam",
+          "Protect",
+          "Safeguard",
+          "Frustration",
+          "Solar Beam",
+          "Return",
+          "Psychic",
+          "Double Team",
+          "Facade",
+          "Rest",
+          "Round",
+          "Energy Ball",
+          "Giga Impact",
+          "Flash",
+          "Swords Dance",
+          "Psych Up",
+          "Grass Knot",
+          "Swagger",
+          "Substitute"
+        ],
+        "tmMoves4": [
+          "Toxic",
+          "Bullet Seed",
+          "Hidden Power",
+          "Sunny Day",
+          "Hyper Beam",
+          "Protect",
+          "Giga Drain",
+          "Safeguard",
+          "Frustration",
+          "Solar Beam",
+          "Return",
+          "Psychic",
+          "Double Team",
+          "Facade",
+          "Secret Power",
+          "Rest",
+          "Energy Ball",
+          "Endure",
+          "Giga Impact",
+          "Flash",
+          "Swords Dance",
+          "Psych Up",
+          "Sleep Talk",
+          "Natural Gift",
+          "Grass Knot",
+          "Swagger",
+          "Substitute"
+        ],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+      },
       "abilities": {
         "abilities": [
           "SereneGrace"
@@ -364,27 +628,68 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/492_shaymin/all/sky/none/texture.png",
               "sprite": "pixelmon:pokemon/492_shaymin/all/sky/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/492_shaymin/all/sky/none/model.pqc"
-                ]
-              }
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/492_shaymin/all/sky/none/model.pqc",
+                      "texture": "pixelmon:pokemon/492_shaymin/all/sky/none/texture.png"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/492_shaymin/all/sky/shiny/texture.png",
               "sprite": "pixelmon:pokemon/492_shaymin/all/sky/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/492_shaymin/all/sky/none/model.pqc",
+                      "texture": "pixelmon:pokemon/492_shaymin/all/sky/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             },
             {
               "name": "christmas",
-              "texture": "pixelmon:pokemon/492_shaymin/all/sky/christmas/texture.png",
               "sprite": "pixelmon:pokemon/492_shaymin/all/sky/christmas/sprite.png",
-              "particle": ""
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/492_shaymin/all/sky/none/model.pqc",
+                      "texture": "pixelmon:pokemon/492_shaymin/all/sky/christmas/texture.png"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }

@@ -174,7 +174,11 @@
           "Stone Edge",
           "Throat Chop"
         ],
-        "hmMoves": [],
+        "hmMoves": [
+          "Fly",
+          "Strength",
+          "Rock Smash"
+        ],
         "transferMoves": [
           "Aerial Ace",
           "Air Cutter",
@@ -395,7 +399,7 @@
       },
       "movement": {
         "rideable": true,
-        "canFly": false,
+        "canFly": true,
         "canSurf": false,
         "canRideShoulder": false,
         "ridingOffsets": {
@@ -423,17 +427,23 @@
           "landingMaterials": "LEAVES_AND_GRASS"
         },
         "mountedFlyingParameters": {
-          "upperAngleLimit": 0,
-          "lowerAngleLimit": 0,
-          "maxFlySpeed": 0,
-          "decelerationRate": 0,
-          "hoverDecelerationRate": 0,
-          "accelerationRate": 0,
-          "strafeAccelerationRate": 0,
-          "strafeRollConversion": 0,
-          "turnRate": 0,
-          "pitchRate": 0,
-          "staysHorizontalFlying": true
+          "type": "pixelmon:default",
+          "upper_angle_limit": 20,
+          "lower_angle_limit": -20,
+          "max_fly_speed": 1,
+          "deceleration_rate": 0.07,
+          "hover_deceleration_rate": 0.09,
+          "acceleration_rate": 0.07,
+          "strafe_acceleration_rate": 0.08,
+          "strafe_roll_conversion": 30,
+          "turn_rate": 0.5,
+          "pitch_rate": 0.8,
+          "stays_horizontal_flying": true,
+          "gravity_drop_per_tick": 0.005,
+          "continuous_forward_motion": true,
+          "continuous_forward_motion_ticks": 5,
+          "flying_stamina_charges": 3,
+          "hover_ticks": 100
         }
       },
       "aggression": {
@@ -469,50 +479,173 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/330_flygon/all/base/none/texture.png",
               "sprite": "pixelmon:pokemon/330_flygon/all/base/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/330_flygon/all/base/none/model.pqc"
-                ],
-                "movementThreshold": 0.03,
-                "rotateAngleX": 0,
-                "yRotation": 23.5
-              },
-              "flyingModelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/330_flygon/all/base/none/flying/model.pqc"
-                ],
-                "movementThreshold": 0.03,
-                "rotateAngleX": 0,
-                "yRotation": 27
-              },
-              "sounds": []
+              "sounds": [],
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:flying"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/330_flygon/all/base/none/flying/model.pqc",
+                      "texture": "pixelmon:pokemon/330_flygon/all/base/none/texture.png",
+                      "movement_threshold": 0.03,
+                      "rotate_angle": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "model": "pixelmon:pokemon/330_flygon/all/base/none/flying/model2.pqc",
+                      "texture": "pixelmon:pokemon/330_flygon/all/base/none/texture.png"
+                    }
+                  ]
+                },
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/330_flygon/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/330_flygon/all/base/none/texture.png",
+                      "movement_threshold": 0.03,
+                      "rotate_angle": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ]
+                    },
+                    {
+                      "model": "pixelmon:pokemon/330_flygon/all/base/none/model2.pqc",
+                      "texture": "pixelmon:pokemon/330_flygon/all/base/none/texture.png"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/330_flygon/all/base/shiny/texture.png",
               "sprite": "pixelmon:pokemon/330_flygon/all/base/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:flying"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/330_flygon/all/base/none/flying/model.pqc",
+                      "movement_threshold": 0.03,
+                      "rotate_angle": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "texture": "pixelmon:pokemon/330_flygon/all/base/shiny/texture.png"
+                    },
+                    {
+                      "model": "pixelmon:pokemon/330_flygon/all/base/none/flying/model2.pqc",
+                      "texture": "pixelmon:pokemon/330_flygon/all/base/shiny/texture.png"
+                    }
+                  ]
+                },
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/330_flygon/all/base/none/model.pqc",
+                      "movement_threshold": 0.03,
+                      "rotate_angle": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "texture": "pixelmon:pokemon/330_flygon/all/base/shiny/texture.png"
+                    },
+                    {
+                      "model": "pixelmon:pokemon/330_flygon/all/base/none/model2.pqc",
+                      "texture": "pixelmon:pokemon/330_flygon/all/base/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             },
             {
               "name": "drowned",
-              "texture": "pixelmon:pokemon/330_flygon/all/base/drowned/texture.png",
               "sprite": "pixelmon:pokemon/330_flygon/all/base/drowned/sprite.png",
-              "particle": "",
               "flyingModelLocator": {
-                "factoryType": "NORMAL",
+                "factoryType": "DUAL",
                 "pqc": [
-                  "pixelmon:pokemon/330_flygon/all/base/none/flying/model.pqc"
+                  "pixelmon:pokemon/330_flygon/all/base/none/flying/model.pqc",
+                  "pixelmon:pokemon/330_flygon/all/base/none/flying/model2.pqc"
                 ],
                 "movementThreshold": 0.03,
                 "rotateAngleX": 0,
                 "yRotation": 27,
                 "zRotation": -8
-              }
+              },
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:flying"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/330_flygon/all/base/none/flying/model.pqc",
+                      "movement_threshold": 0.03,
+                      "rotate_angle": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "texture": "pixelmon:pokemon/330_flygon/all/base/drowned/texture.png"
+                    },
+                    {
+                      "model": "pixelmon:pokemon/330_flygon/all/base/none/flying/model2.pqc",
+                      "texture": "pixelmon:pokemon/330_flygon/all/base/drowned/texture.png"
+                    }
+                  ]
+                },
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/330_flygon/all/base/none/model.pqc",
+                      "movement_threshold": 0.03,
+                      "rotate_angle": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "texture": "pixelmon:pokemon/330_flygon/all/base/drowned/texture.png"
+                    },
+                    {
+                      "model": "pixelmon:pokemon/330_flygon/all/base/none/model2.pqc",
+                      "texture": "pixelmon:pokemon/330_flygon/all/base/drowned/texture.png"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }

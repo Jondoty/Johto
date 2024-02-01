@@ -143,7 +143,9 @@
           "Overheat",
           "Flare Blitz"
         ],
-        "hmMoves": [],
+        "hmMoves": [
+          "Rock Smash"
+        ],
         "transferMoves": [
           "Barrier",
           "Belly Drum",
@@ -381,22 +383,52 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/240_magby/all/base/none/texture.png",
               "sprite": "pixelmon:pokemon/240_magby/all/base/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/240_magby/all/base/none/model.pqc"
-                ]
-              },
-              "sounds": []
+              "sounds": [],
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/240_magby/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/240_magby/all/base/none/texture.png"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/240_magby/all/base/shiny/texture.png",
               "sprite": "pixelmon:pokemon/240_magby/all/base/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/240_magby/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/240_magby/all/base/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             }
           ]
         }
@@ -422,17 +454,11 @@
       "evolutions": [
         {
           "level": 30,
-          "to": "Magmar form:base",
-          "conditions": [],
-          "evoType": "leveling"
-        },
-        {
-          "level": 30,
-          "to": "Magmar form:base",
+          "to": "Magmar palette:copper_sulfate",
           "conditions": [
             {
-              "withForms": [
-                "COPPER_CHLORIDE"
+              "withPalettes": [
+                "COPPER_SULFATE"
               ],
               "evoConditionType": "party"
             }
@@ -441,10 +467,10 @@
         },
         {
           "level": 30,
-          "to": "Magmar form:base",
+          "to": "Magmar palette:cupric_chloride",
           "conditions": [
             {
-              "withForms": [
+              "withPalettes": [
                 "CUPRIC_CHLORIDE"
               ],
               "evoConditionType": "party"
@@ -454,10 +480,10 @@
         },
         {
           "level": 30,
-          "to": "Magmar form:base",
+          "to": "Magmar palette:lithium_chloride",
           "conditions": [
             {
-              "withForms": [
+              "withPalettes": [
                 "LITHIUM_CHLORIDE"
               ],
               "evoConditionType": "party"
@@ -467,10 +493,10 @@
         },
         {
           "level": 30,
-          "to": "Magmar form:base",
+          "to": "Magmar palette:magnesium_sulfide",
           "conditions": [
             {
-              "withForms": [
+              "withPalettes": [
                 "MAGNESIUM_SULFIDE"
               ],
               "evoConditionType": "party"
@@ -480,10 +506,10 @@
         },
         {
           "level": 30,
-          "to": "Magmar form:base",
+          "to": "Magmar palette:manganese_chloride",
           "conditions": [
             {
-              "withForms": [
+              "withPalettes": [
                 "MANGANESE_CHLORIDE"
               ],
               "evoConditionType": "party"
@@ -493,10 +519,10 @@
         },
         {
           "level": 30,
-          "to": "Magmar form:base",
+          "to": "Magmar palette:potassium_chloride",
           "conditions": [
             {
-              "withForms": [
+              "withPalettes": [
                 "POTASSIUM_CHLORIDE"
               ],
               "evoConditionType": "party"
@@ -506,10 +532,10 @@
         },
         {
           "level": 30,
-          "to": "Magmar form:base",
+          "to": "Magmar palette:sodium_carbonate",
           "conditions": [
             {
-              "withForms": [
+              "withPalettes": [
                 "SODIUM_CARBONATE"
               ],
               "evoConditionType": "party"
@@ -519,15 +545,21 @@
         },
         {
           "level": 30,
-          "to": "Magmar form:base",
+          "to": "Magmar palette:calcium_carbonate",
           "conditions": [
             {
-              "withForms": [
+              "withPalettes": [
                 "CALCIUM_CARBONATE"
               ],
               "evoConditionType": "party"
             }
           ],
+          "evoType": "leveling"
+        },
+        {
+          "level": 30,
+          "to": "Magmar form:base",
+          "conditions": [],
           "evoType": "leveling"
         }
       ],

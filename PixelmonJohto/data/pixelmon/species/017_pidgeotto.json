@@ -125,7 +125,9 @@
         ],
         "tmMoves8": [],
         "trMoves": [],
-        "hmMoves": [],
+        "hmMoves": [
+          "Fly"
+        ],
         "transferMoves": [
           "Bide",
           "Captivate",
@@ -307,7 +309,7 @@
       },
       "movement": {
         "rideable": false,
-        "canFly": false,
+        "canFly": true,
         "canSurf": false,
         "canRideShoulder": false,
         "flyingParameters": {
@@ -323,17 +325,23 @@
           "landingMaterials": "LEAVES_AND_GRASS"
         },
         "mountedFlyingParameters": {
-          "upperAngleLimit": 35,
-          "lowerAngleLimit": -35,
-          "maxFlySpeed": 1.8,
-          "decelerationRate": 0.25,
-          "hoverDecelerationRate": 0.09,
-          "accelerationRate": 0.08,
-          "strafeAccelerationRate": 0.9,
-          "strafeRollConversion": 30,
-          "turnRate": 1.2,
-          "pitchRate": 1.2,
-          "staysHorizontalFlying": true
+          "type": "pixelmon:default",
+          "upper_angle_limit": 35,
+          "lower_angle_limit": -35,
+          "max_fly_speed": 1.8,
+          "deceleration_rate": 0.25,
+          "hover_deceleration_rate": 0.09,
+          "acceleration_rate": 0.08,
+          "strafe_acceleration_rate": 0.9,
+          "strafe_roll_conversion": 30,
+          "turn_rate": 1.2,
+          "pitch_rate": 1.2,
+          "stays_horizontal_flying": true,
+          "gravity_drop_per_tick": 0.005,
+          "continuous_forward_motion": true,
+          "continuous_forward_motion_ticks": 5,
+          "flying_stamina_charges": 3,
+          "hover_ticks": 100
         }
       },
       "aggression": {
@@ -369,39 +377,113 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/017_pidgeotto/all/base/none/texture.png",
               "sprite": "pixelmon:pokemon/017_pidgeotto/all/base/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/017_pidgeotto/all/base/none/model.pqc"
-                ],
-                "movementThreshold": 0.02
-              },
-              "flyingModelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/017_pidgeotto/all/base/none/flying/model.pqc"
-                ],
-                "animationIncrement": 1.5,
-                "movementThreshold": 0.02
-              },
               "sounds": [
-                "pixelmon.mob.pidgeotto"
+                {
+                  "sound": "pixelmon:pixelmon.mob.pidgeotto",
+                  "range": 14
+                }
+              ],
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:flying"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/017_pidgeotto/all/base/none/flying/model.pqc",
+                      "texture": "pixelmon:pokemon/017_pidgeotto/all/base/none/texture.png",
+                      "movement_threshold": 0.02
+                    }
+                  ]
+                },
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/017_pidgeotto/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/017_pidgeotto/all/base/none/texture.png",
+                      "movement_threshold": 0.02
+                    }
+                  ]
+                }
               ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/017_pidgeotto/all/base/shiny/texture.png",
               "sprite": "pixelmon:pokemon/017_pidgeotto/all/base/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:flying"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/017_pidgeotto/all/base/none/flying/model.pqc",
+                      "movement_threshold": 0.02,
+                      "texture": "pixelmon:pokemon/017_pidgeotto/all/base/shiny/texture.png"
+                    }
+                  ]
+                },
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/017_pidgeotto/all/base/none/model.pqc",
+                      "movement_threshold": 0.02,
+                      "texture": "pixelmon:pokemon/017_pidgeotto/all/base/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             },
             {
               "name": "pink",
-              "texture": "pixelmon:pokemon/017_pidgeotto/all/base/pink/texture.png",
               "sprite": "pixelmon:pokemon/017_pidgeotto/all/base/pink/sprite.png",
-              "particle": ""
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:flying"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/017_pidgeotto/all/base/none/flying/model.pqc",
+                      "movement_threshold": 0.02,
+                      "texture": "pixelmon:pokemon/017_pidgeotto/all/base/pink/texture.png"
+                    }
+                  ]
+                },
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/017_pidgeotto/all/base/none/model.pqc",
+                      "movement_threshold": 0.02,
+                      "texture": "pixelmon:pokemon/017_pidgeotto/all/base/pink/texture.png"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }

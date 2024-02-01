@@ -12,17 +12,17 @@
         "height": 0.4,
         "width": 0.4,
         "length": 1,
-        "eyeHeight": 0.3,
-        "hoverHeight": 0
+        "eyeHeight": 0.4,
+        "hoverHeight": 0.4
       },
       "moves": {
         "levelUpMoves": [
           {
             "level": 0,
             "attacks": [
-              "Tackle",
+              "Ember",
               "Leer",
-              "Ember"
+              "Tackle"
             ]
           },
           {
@@ -82,10 +82,45 @@
         ],
         "tutorMoves": [],
         "eggMoves": [
+          "Belch",
           "Curse",
           "Encore",
-          "Slack Off",
-          "Belch"
+          "Slack Off"
+        ],
+        "tmMoves9": [
+          "Take Down",
+          "Mud-Slap",
+          "Protect",
+          "Fire Fang",
+          "Thunder Fang",
+          "Disarming Voice",
+          "Fire Spin",
+          "Facade",
+          "Snarl",
+          "Flame Charge",
+          "Endure",
+          "Sunny Day",
+          "Dig",
+          "Zen Headbutt",
+          "Body Slam",
+          "Sleep Talk",
+          "Seed Bomb",
+          "Stomping Tantrum",
+          "Rest",
+          "Substitute",
+          "Will-O-Wisp",
+          "Crunch",
+          "Hyper Voice",
+          "Heat Wave",
+          "Encore",
+          "Flamethrower",
+          "Helping Hand",
+          "Fire Blast",
+          "Fire Pledge",
+          "Outrage",
+          "Overheat",
+          "Flare Blitz",
+          "Tera Blast"
         ],
         "tmMoves8": [],
         "trMoves": [],
@@ -129,7 +164,7 @@
       },
       "tags": [],
       "spawn": {
-        "baseExp": 64,
+        "baseExp": 62,
         "baseFriendship": 50,
         "spawnLevel": 10,
         "spawnLevelRange": 6,
@@ -147,22 +182,57 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/909_fuecoco/all/base/none/texture.png",
               "sprite": "pixelmon:pokemon/909_fuecoco/all/base/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/909_fuecoco/all/base/none/model.pqc"
-                ]
-              },
-              "sounds": []
+              "sounds": [
+                {
+                  "sound": "pixelmon:pixelmon.mob.fuecoco",
+                  "range": 14
+                }
+              ],
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/909_fuecoco/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/909_fuecoco/all/base/none/texture.png"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/909_fuecoco/all/base/shiny/texture.png",
               "sprite": "pixelmon:pokemon/909_fuecoco/all/base/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/909_fuecoco/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/909_fuecoco/all/base/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             }
           ]
         }
@@ -184,8 +254,15 @@
       "eggCycles": 21,
       "weight": 9.8,
       "catchRate": 45,
-      "malePercentage": 87,
-      "evolutions": [],
+      "malePercentage": 87.5,
+      "evolutions": [
+        {
+          "level": 16,
+          "to": "Crocalor",
+          "conditions": [],
+          "evoType": "leveling"
+        }
+      ],
       "evYields": {
         "hp": 1
       }

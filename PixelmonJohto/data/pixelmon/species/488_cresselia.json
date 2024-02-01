@@ -93,7 +93,8 @@
           {
             "level": 72,
             "attacks": [
-              "Lunar Dance"
+              "Lunar Dance",
+              "Lunar Blessing"
             ]
           }
         ],
@@ -331,7 +332,7 @@
       },
       "movement": {
         "rideable": true,
-        "canFly": false,
+        "canFly": true,
         "canSurf": false,
         "canRideShoulder": false,
         "ridingOffsets": {
@@ -359,17 +360,23 @@
           "landingMaterials": "LEAVES_AND_GRASS"
         },
         "mountedFlyingParameters": {
-          "upperAngleLimit": 0,
-          "lowerAngleLimit": 0,
-          "maxFlySpeed": 0,
-          "decelerationRate": 0,
-          "hoverDecelerationRate": 0,
-          "accelerationRate": 0,
-          "strafeAccelerationRate": 0,
-          "strafeRollConversion": 0,
-          "turnRate": 0,
-          "pitchRate": 0,
-          "staysHorizontalFlying": true
+          "type": "pixelmon:default",
+          "upper_angle_limit": 20,
+          "lower_angle_limit": -20,
+          "max_fly_speed": 1,
+          "deceleration_rate": 0.07,
+          "hover_deceleration_rate": 0.09,
+          "acceleration_rate": 0.07,
+          "strafe_acceleration_rate": 0.08,
+          "strafe_roll_conversion": 30,
+          "turn_rate": 0.5,
+          "pitch_rate": 0.8,
+          "stays_horizontal_flying": true,
+          "gravity_drop_per_tick": 0.005,
+          "continuous_forward_motion": true,
+          "continuous_forward_motion_ticks": 5,
+          "flying_stamina_charges": 3,
+          "hover_ticks": 100
         }
       },
       "aggression": {
@@ -380,9 +387,9 @@
       "battleStats": {
         "hp": 120,
         "attack": 70,
-        "defense": 120,
+        "defense": 110,
         "specialAttack": 75,
-        "specialDefense": 130,
+        "specialDefense": 120,
         "speed": 85
       },
       "tags": [
@@ -407,37 +414,95 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/488_cresselia/all/base/none/texture.png",
               "sprite": "pixelmon:pokemon/488_cresselia/all/base/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/488_cresselia/all/base/none/model.pqc"
-                ]
-              },
               "sounds": [
-                "pixelmon.mob.cresselia",
-                "pixelmon.mob.cresselia"
+                {
+                  "sound": "pixelmon:pixelmon.mob.cresselia",
+                  "range": 14
+                },
+                {
+                  "sound": "pixelmon:pixelmon.mob.cresselia",
+                  "range": 14
+                }
+              ],
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/488_cresselia/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/488_cresselia/all/base/none/texture.png"
+                    }
+                  ]
+                }
               ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/488_cresselia/all/base/shiny/texture.png",
               "sprite": "pixelmon:pokemon/488_cresselia/all/base/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/488_cresselia/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/488_cresselia/all/base/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             },
             {
               "name": "rainbow",
-              "texture": "pixelmon:pokemon/488_cresselia/all/base/rainbow/texture.png",
               "sprite": "pixelmon:pokemon/488_cresselia/all/base/rainbow/sprite.png",
-              "particle": ""
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/488_cresselia/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/488_cresselia/all/base/rainbow/texture.png"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "name": "spirit",
-              "texture": "pixelmon:pokemon/488_cresselia/all/base/spirit/texture.png",
               "sprite": "pixelmon:pokemon/488_cresselia/all/base/spirit/sprite.png",
-              "particle": ""
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/488_cresselia/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/488_cresselia/all/base/spirit/texture.png"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }

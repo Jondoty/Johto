@@ -158,7 +158,12 @@
           "Heat Crash",
           "Hurricane"
         ],
-        "hmMoves": ["Cut"],
+        "hmMoves": [
+          "Cut",
+          "Fly",
+          "Strength",
+          "Rock Smash"
+        ],
         "transferMoves": [
           "Aerial Ace",
           "Air Cutter",
@@ -490,7 +495,7 @@
       },
       "movement": {
         "rideable": true,
-        "canFly": false,
+        "canFly": true,
         "canSurf": false,
         "canRideShoulder": false,
         "ridingOffsets": {
@@ -518,17 +523,23 @@
           "landingMaterials": "LEAVES_AND_GRASS"
         },
         "mountedFlyingParameters": {
-          "upperAngleLimit": 50,
-          "lowerAngleLimit": -45,
-          "maxFlySpeed": 2,
-          "decelerationRate": 0.3,
-          "hoverDecelerationRate": 0.07,
-          "accelerationRate": 0.05,
-          "strafeAccelerationRate": 0.9,
-          "strafeRollConversion": 30,
-          "turnRate": 1,
-          "pitchRate": 1,
-          "staysHorizontalFlying": true
+          "type": "pixelmon:default",
+          "upper_angle_limit": 50,
+          "lower_angle_limit": -45,
+          "max_fly_speed": 2,
+          "deceleration_rate": 0.3,
+          "hover_deceleration_rate": 0.07,
+          "acceleration_rate": 0.05,
+          "strafe_acceleration_rate": 0.9,
+          "strafe_roll_conversion": 30,
+          "turn_rate": 1,
+          "pitch_rate": 1,
+          "stays_horizontal_flying": true,
+          "gravity_drop_per_tick": 0.005,
+          "continuous_forward_motion": true,
+          "continuous_forward_motion_ticks": 5,
+          "flying_stamina_charges": 3,
+          "hover_ticks": 100
         }
       },
       "aggression": {
@@ -564,39 +575,111 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/006_charizard/all/base/none/texture.png",
               "sprite": "pixelmon:pokemon/006_charizard/all/base/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/006_charizard/all/base/none/model.pqc"
-                ],
-                "yRotation": 24.12
-              },
-              "flyingModelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/006_charizard/all/base/none/flying/model.pqc"
-                ],
-                "animationIncrement": 2
-              },
               "sounds": [
-                "pixelmon.mob.charizard",
-                "pixelmon.mob.charizard"
+                {
+                  "sound": "pixelmon:pixelmon.mob.charizard",
+                  "range": 14
+                },
+                {
+                  "sound": "pixelmon:pixelmon.mob.charizard",
+                  "range": 14
+                }
+              ],
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:flying"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/006_charizard/all/base/none/flying/model.pqc",
+                      "texture": "pixelmon:pokemon/006_charizard/all/base/none/texture.png"
+                    }
+                  ]
+                },
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/006_charizard/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/006_charizard/all/base/none/texture.png"
+                    }
+                  ]
+                }
               ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/006_charizard/all/base/shiny/texture.png",
               "sprite": "pixelmon:pokemon/006_charizard/all/base/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:flying"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/006_charizard/all/base/none/flying/model.pqc",
+                      "texture": "pixelmon:pokemon/006_charizard/all/base/shiny/texture.png"
+                    }
+                  ]
+                },
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/006_charizard/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/006_charizard/all/base/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             },
             {
               "name": "zombie",
-              "texture": "pixelmon:pokemon/006_charizard/all/base/zombie/texture.png",
               "sprite": "pixelmon:pokemon/006_charizard/all/base/zombie/sprite.png",
-              "particle": ""
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:flying"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/006_charizard/all/base/none/flying/model.pqc",
+                      "texture": "pixelmon:pokemon/006_charizard/all/base/zombie/texture.png"
+                    }
+                  ]
+                },
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/006_charizard/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/006_charizard/all/base/zombie/texture.png"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -631,7 +714,7 @@
       "eggCycles": 21,
       "weight": 90.5,
       "catchRate": 45,
-      "malePercentage": 87,
+      "malePercentage": 87.5,
       "evolutions": [],
       "evYields": {
         "specialAttack": 3
@@ -671,22 +754,51 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/006_charizard/all/megax/none/texture.png",
               "sprite": "pixelmon:pokemon/006_charizard/all/megax/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/006_charizard/all/megax/none/model.pqc"
-                ],
-                "yRotation": 24.12
-              }
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/006_charizard/all/megax/none/model.pqc",
+                      "texture": "pixelmon:pokemon/006_charizard/all/megax/none/texture.png"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/006_charizard/all/megax/shiny/texture.png",
               "sprite": "pixelmon:pokemon/006_charizard/all/megax/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/006_charizard/all/megax/none/model.pqc",
+                      "texture": "pixelmon:pokemon/006_charizard/all/megax/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             }
           ]
         }
@@ -725,22 +837,51 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/006_charizard/all/megay/none/texture.png",
               "sprite": "pixelmon:pokemon/006_charizard/all/megay/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/006_charizard/all/megay/none/model.pqc"
-                ],
-                "yRotation": 24.12
-              }
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/006_charizard/all/megay/none/model.pqc",
+                      "texture": "pixelmon:pokemon/006_charizard/all/megay/none/texture.png"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/006_charizard/all/megay/shiny/texture.png",
               "sprite": "pixelmon:pokemon/006_charizard/all/megay/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/006_charizard/all/megay/none/model.pqc",
+                      "texture": "pixelmon:pokemon/006_charizard/all/megay/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             }
           ]
         }
@@ -760,24 +901,53 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/006_charizard/all/gmax/none/texture.png",
-              "emissive": "pixelmon:pokemon/006_charizard/all/gmax/none/emissive.png",
               "sprite": "pixelmon:pokemon/006_charizard/all/gmax/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/006_charizard/all/gmax/none/model.pqc"
-                ],
-                "yRotation": 24.12
-              }
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/006_charizard/all/gmax/none/model.pqc",
+                      "texture": "pixelmon:pokemon/006_charizard/all/gmax/none/texture.png",
+                      "emissive": "pixelmon:pokemon/006_charizard/all/gmax/none/emissive.png"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/006_charizard/all/gmax/shiny/texture.png",
-              "emissive": "pixelmon:pokemon/006_charizard/all/gmax/shiny/emissive.png",
               "sprite": "pixelmon:pokemon/006_charizard/all/gmax/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/006_charizard/all/gmax/none/model.pqc",
+                      "emissive": "pixelmon:pokemon/006_charizard/all/gmax/shiny/emissive.png",
+                      "texture": "pixelmon:pokemon/006_charizard/all/gmax/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             }
           ]
         }

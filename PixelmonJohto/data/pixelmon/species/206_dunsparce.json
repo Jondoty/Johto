@@ -69,41 +69,35 @@
           {
             "level": 32,
             "attacks": [
-              "Body Slam"
+              "Hyper Drill"
             ]
           },
           {
             "level": 36,
             "attacks": [
-              "Take Down"
+              "Roost"
             ]
           },
           {
             "level": 40,
             "attacks": [
-              "Roost"
+              "Dragon Rush"
             ]
           },
           {
             "level": 44,
             "attacks": [
-              "Dragon Rush"
+              "Coil"
             ]
           },
           {
             "level": 48,
             "attacks": [
-              "Coil"
-            ]
-          },
-          {
-            "level": 52,
-            "attacks": [
               "Double-Edge"
             ]
           },
           {
-            "level": 56,
+            "level": 52,
             "attacks": [
               "Endeavor"
             ]
@@ -121,8 +115,7 @@
           "Bite",
           "Curse",
           "Headbutt",
-          "Last Resort",
-          "Magic Coat"
+          "Last Resort"
         ],
         "tmMoves8": [
           "Solar Beam",
@@ -173,7 +166,10 @@
           "Wild Charge",
           "Drill Run"
         ],
-        "hmMoves": [],
+        "hmMoves": [
+          "Strength",
+          "Rock Smash"
+        ],
         "transferMoves": [
           "Bide",
           "Bind",
@@ -487,24 +483,57 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/206_dunsparce/all/base/none/texture.png",
               "sprite": "pixelmon:pokemon/206_dunsparce/all/base/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/206_dunsparce/all/base/none/model.pqc"
-                ]
-              },
               "sounds": [
-                "pixelmon.mob.dunsparce"
+                {
+                  "sound": "pixelmon:pixelmon.mob.dunsparce",
+                  "range": 14
+                }
+              ],
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/206_dunsparce/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/206_dunsparce/all/base/none/texture.png"
+                    }
+                  ]
+                }
               ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/206_dunsparce/all/base/shiny/texture.png",
               "sprite": "pixelmon:pokemon/206_dunsparce/all/base/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/206_dunsparce/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/206_dunsparce/all/base/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             }
           ]
         }

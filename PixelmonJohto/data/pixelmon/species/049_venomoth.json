@@ -362,7 +362,7 @@
       },
       "movement": {
         "rideable": true,
-        "canFly": false,
+        "canFly": true,
         "canSurf": false,
         "canRideShoulder": false,
         "ridingOffsets": {
@@ -390,17 +390,23 @@
           "landingMaterials": "LEAVES_AND_GRASS"
         },
         "mountedFlyingParameters": {
-          "upperAngleLimit": 20,
-          "lowerAngleLimit": -20,
-          "maxFlySpeed": 1.2,
-          "decelerationRate": 0.7,
-          "hoverDecelerationRate": 0.1,
-          "accelerationRate": 0.2,
-          "strafeAccelerationRate": 0.9,
-          "strafeRollConversion": 0,
-          "turnRate": 0.5,
-          "pitchRate": 2,
-          "staysHorizontalFlying": true
+          "type": "pixelmon:default",
+          "upper_angle_limit": 20,
+          "lower_angle_limit": -20,
+          "max_fly_speed": 1.2,
+          "deceleration_rate": 0.7,
+          "hover_deceleration_rate": 0.1,
+          "acceleration_rate": 0.2,
+          "strafe_acceleration_rate": 0.9,
+          "strafe_roll_conversion": 30,
+          "turn_rate": 0.5,
+          "pitch_rate": 2,
+          "stays_horizontal_flying": true,
+          "gravity_drop_per_tick": 0.005,
+          "continuous_forward_motion": false,
+          "continuous_forward_motion_ticks": 5,
+          "flying_stamina_charges": 5,
+          "hover_ticks": 200
         }
       },
       "aggression": {
@@ -436,31 +442,78 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/049_venomoth/all/base/none/texture.png",
               "sprite": "pixelmon:pokemon/049_venomoth/all/base/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/049_venomoth/all/base/none/model.pqc"
-                ]
-              },
               "sounds": [
-                "pixelmon.mob.venomoth",
-                "pixelmon.mob.venomoth"
+                {
+                  "sound": "pixelmon:pixelmon.mob.venomoth",
+                  "range": 14
+                },
+                {
+                  "sound": "pixelmon:pixelmon.mob.venomoth",
+                  "range": 14
+                }
+              ],
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/049_venomoth/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/049_venomoth/all/base/none/texture.png"
+                    }
+                  ]
+                }
               ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/049_venomoth/all/base/shiny/texture.png",
               "sprite": "pixelmon:pokemon/049_venomoth/all/base/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/049_venomoth/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/049_venomoth/all/base/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             },
             {
               "name": "pink",
-              "texture": "pixelmon:pokemon/049_venomoth/all/base/pink/texture.png",
               "sprite": "pixelmon:pokemon/049_venomoth/all/base/pink/sprite.png",
-              "particle": ""
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/049_venomoth/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/049_venomoth/all/base/pink/texture.png"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }

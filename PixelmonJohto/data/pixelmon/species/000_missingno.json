@@ -39,7 +39,31 @@
         "tmMoves4": [],
         "tmMoves3": [],
         "tmMoves2": [],
-        "tmMoves1": [],
+        "tmMoves1": [
+          "Mega Punch",
+          "Razor Wind",
+          "Swords Dance",
+          "Mega Kick",
+          "Toxic",
+          "Take Down",
+          "Double-Edge",
+          "Bubble Beam",
+          "Ice Beam",
+          "Blizzard",
+          "Submission",
+          "Seismic Toss",
+          "Rage",
+          "Thunder",
+          "Earthquake",
+          "Fissure",
+          "Psychic",
+          "Teleport",
+          "Sky Attack",
+          "Rest",
+          "Thunder Wave",
+          "Tri Attack",
+          "Substitute"
+        ],
         "tmMoves": []
       },
       "abilities": {
@@ -87,16 +111,21 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/000_missingno/all/base/none/texture.png",
               "sprite": "pixelmon:pokemon/000_missingno/all/base/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/000_missingno/all/base/none/model.pqc"
-                ]
-              },
-              "sounds": []
+              "sounds": [],
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/000_missingno/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/000_missingno/all/base/none/texture.png"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }

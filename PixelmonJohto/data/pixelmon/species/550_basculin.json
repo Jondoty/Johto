@@ -159,7 +159,12 @@
           "Psychic Fangs",
           "Liquidation"
         ],
-        "hmMoves": ["Cut","Surf"],
+        "hmMoves": [
+          "Cut",
+          "Surf",
+          "Waterfall",
+          "Dive"
+        ],
         "transferMoves": [
           "Chip Away",
           "Confide",
@@ -253,7 +258,7 @@
         ]
       },
       "movement": {
-        "rideable": true,
+        "rideable": false,
         "canFly": false,
         "canSurf": true,
         "canRideShoulder": false,
@@ -298,23 +303,52 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/550_basculin/all/red/none/texture.png",
               "sprite": "pixelmon:pokemon/550_basculin/all/red/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/550_basculin/all/red/none/model.pqc"
-                ],
-                "yRotation": 22
-              },
-              "sounds": []
+              "sounds": [],
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/550_basculin/all/red/none/model.pqc",
+                      "texture": "pixelmon:pokemon/550_basculin/all/red/none/texture.png"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/550_basculin/all/red/shiny/texture.png",
               "sprite": "pixelmon:pokemon/550_basculin/all/red/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/550_basculin/all/red/none/model.pqc",
+                      "texture": "pixelmon:pokemon/550_basculin/all/red/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             }
           ]
         }
@@ -359,22 +393,51 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/550_basculin/all/blue/none/texture.png",
               "sprite": "pixelmon:pokemon/550_basculin/all/blue/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/550_basculin/all/blue/none/model.pqc"
-                ],
-                "yRotation": 22
-              }
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/550_basculin/all/blue/none/model.pqc",
+                      "texture": "pixelmon:pokemon/550_basculin/all/blue/none/texture.png"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/550_basculin/all/blue/shiny/texture.png",
               "sprite": "pixelmon:pokemon/550_basculin/all/blue/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/550_basculin/all/blue/none/model.pqc",
+                      "texture": "pixelmon:pokemon/550_basculin/all/blue/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             }
           ]
         }
@@ -450,7 +513,7 @@
         "eggMoves": [],
         "tmMoves8": [],
         "trMoves": [],
-        "hmMoves": ["Surf"],
+        "hmMoves": [],
         "transferMoves": [],
         "tmMoves7": [],
         "tmMoves6": [],
@@ -518,23 +581,52 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/550_basculin/all/white/none/texture.png",
               "sprite": "pixelmon:pokemon/550_basculin/all/white/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/550_basculin/all/white/none/model.pqc"
-                ],
-                "yRotation": 22
-              },
-              "sounds": []
+              "sounds": [],
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/550_basculin/all/white/none/model.pqc",
+                      "texture": "pixelmon:pokemon/550_basculin/all/white/none/texture.png"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/550_basculin/all/white/shiny/texture.png",
               "sprite": "pixelmon:pokemon/550_basculin/all/white/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/550_basculin/all/white/none/model.pqc",
+                      "texture": "pixelmon:pokemon/550_basculin/all/white/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             }
           ]
         }
@@ -559,11 +651,33 @@
       "malePercentage": 50,
       "evolutions": [
         {
-          "to": "Basculegion",
+          "to": "Basculegion form:male",
           "conditions": [
             {
               "recoil": "294",
               "evoConditionType": "recoil"
+            },
+            {
+              "genders": [
+                "MALE"
+              ],
+              "evoConditionType": "gender"
+            }
+          ],
+          "evoType": "ticking"
+        },
+        {
+          "to": "Basculegion form:female",
+          "conditions": [
+            {
+              "recoil": "294",
+              "evoConditionType": "recoil"
+            },
+            {
+              "genders": [
+                "FEMALE"
+              ],
+              "evoConditionType": "gender"
             }
           ],
           "evoType": "ticking"

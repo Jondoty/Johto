@@ -151,7 +151,12 @@
           "Stone Edge",
           "Body Press"
         ],
-        "hmMoves": ["Cut"],
+        "hmMoves": [
+          "Cut",
+          "Fly",
+          "Strength",
+          "Rock Smash"
+        ],
         "transferMoves": [
           "Confide",
           "Cut",
@@ -359,24 +364,57 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/646_kyurem/all/base/none/texture.png",
               "sprite": "pixelmon:pokemon/646_kyurem/all/base/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/646_kyurem/all/base/none/model.pqc"
-                ]
-              },
               "sounds": [
-                "pixelmon.mob.kyurem"
+                {
+                  "sound": "pixelmon:pixelmon.mob.kyurem",
+                  "range": 14
+                }
+              ],
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/646_kyurem/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/646_kyurem/all/base/none/texture.png"
+                    }
+                  ]
+                }
               ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/646_kyurem/all/base/shiny/texture.png",
               "sprite": "pixelmon:pokemon/646_kyurem/all/base/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/646_kyurem/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/646_kyurem/all/base/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             }
           ]
         }
@@ -414,6 +452,291 @@
         "width": 2.4,
         "length": 2.4
       },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Dragon Breath",
+              "Noble Roar",
+              "Ancient Power",
+              "Freeze-Dry"
+            ]
+          },
+          {
+            "level": 8,
+            "attacks": [
+              "Slash"
+            ]
+          },
+          {
+            "level": 16,
+            "attacks": [
+              "Endeavor"
+            ]
+          },
+          {
+            "level": 24,
+            "attacks": [
+              "Dragon Pulse"
+            ]
+          },
+          {
+            "level": 32,
+            "attacks": [
+              "Ice Beam"
+            ]
+          },
+          {
+            "level": 40,
+            "attacks": [
+              "Hyper Voice"
+            ]
+          },
+          {
+            "level": 48,
+            "attacks": [
+              "Fusion Bolt"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Blizzard"
+            ]
+          },
+          {
+            "level": 64,
+            "attacks": [
+              "Imprison"
+            ]
+          },
+          {
+            "level": 72,
+            "attacks": [
+              "Outrage"
+            ]
+          },
+          {
+            "level": 80,
+            "attacks": [
+              "Freeze Shock"
+            ]
+          },
+          {
+            "level": 88,
+            "attacks": [
+              "Sheer Cold"
+            ]
+          }
+        ],
+        "tutorMoves": [
+          "Draco Meteor",
+          "Dual Wingbeat",
+          "Scale Shot"
+        ],
+        "eggMoves": [],
+        "tmMoves8": [
+          "Fly",
+          "Hyper Beam",
+          "Giga Impact",
+          "Light Screen",
+          "Reflect",
+          "Safeguard",
+          "Rest",
+          "Rock Slide",
+          "Snore",
+          "Protect",
+          "Scary Face",
+          "Icy Wind",
+          "Steel Wing",
+          "Rain Dance",
+          "Sunny Day",
+          "Hail",
+          "Facade",
+          "Swift",
+          "Helping Hand",
+          "Imprison",
+          "Weather Ball",
+          "Rock Tomb",
+          "Icicle Spear",
+          "Payback",
+          "Fling",
+          "Shadow Claw",
+          "Round",
+          "Brutal Swing",
+          "Breaking Swipe"
+        ],
+        "trMoves": [
+          "Ice Beam",
+          "Blizzard",
+          "Psychic",
+          "Substitute",
+          "Outrage",
+          "Endure",
+          "Sleep Talk",
+          "Shadow Ball",
+          "Hyper Voice",
+          "Dragon Claw",
+          "Dragon Dance",
+          "Dragon Pulse",
+          "Focus Blast",
+          "Earth Power",
+          "Zen Headbutt",
+          "Flash Cannon",
+          "Iron Head",
+          "Stone Edge",
+          "Body Press"
+        ],
+        "hmMoves": [],
+        "transferMoves": [
+          "Confide",
+          "Cut",
+          "Double Team",
+          "Dragon Rage",
+          "Dragon Tail",
+          "Echoed Voice",
+          "Frustration",
+          "Hidden Power",
+          "Hone Claws",
+          "Laser Focus",
+          "Return",
+          "Rock Smash",
+          "Roost",
+          "Secret Power",
+          "Signal Beam",
+          "Strength",
+          "Swagger",
+          "Toxic"
+        ],
+        "tmMoves7": [
+          "Dragon Claw",
+          "Toxic",
+          "Hail",
+          "Hidden Power",
+          "Sunny Day",
+          "Ice Beam",
+          "Blizzard",
+          "Hyper Beam",
+          "Light Screen",
+          "Protect",
+          "Rain Dance",
+          "Roost",
+          "Safeguard",
+          "Frustration",
+          "Return",
+          "Psychic",
+          "Shadow Ball",
+          "Double Team",
+          "Reflect",
+          "Rock Tomb",
+          "Facade",
+          "Rest",
+          "Round",
+          "Echoed Voice",
+          "Steel Wing",
+          "Focus Blast",
+          "Fling",
+          "Brutal Swing",
+          "Shadow Claw",
+          "Payback",
+          "Giga Impact",
+          "Stone Edge",
+          "Fly",
+          "Rock Slide",
+          "Dragon Tail",
+          "Swagger",
+          "Sleep Talk",
+          "Substitute",
+          "Flash Cannon",
+          "Confide"
+        ],
+        "tmMoves6": [
+          "Hone Claws",
+          "Dragon Claw",
+          "Toxic",
+          "Hail",
+          "Hidden Power",
+          "Sunny Day",
+          "Ice Beam",
+          "Blizzard",
+          "Hyper Beam",
+          "Light Screen",
+          "Protect",
+          "Rain Dance",
+          "Roost",
+          "Safeguard",
+          "Frustration",
+          "Return",
+          "Psychic",
+          "Shadow Ball",
+          "Double Team",
+          "Reflect",
+          "Rock Tomb",
+          "Facade",
+          "Rest",
+          "Round",
+          "Echoed Voice",
+          "Steel Wing",
+          "Focus Blast",
+          "Fling",
+          "Shadow Claw",
+          "Payback",
+          "Giga Impact",
+          "Stone Edge",
+          "Rock Slide",
+          "Dragon Tail",
+          "Swagger",
+          "Sleep Talk",
+          "Substitute",
+          "Flash Cannon",
+          "Secret Power",
+          "Confide"
+        ],
+        "tmMoves5": [
+          "Hone Claws",
+          "Dragon Claw",
+          "Toxic",
+          "Hail",
+          "Hidden Power",
+          "Sunny Day",
+          "Ice Beam",
+          "Blizzard",
+          "Hyper Beam",
+          "Light Screen",
+          "Protect",
+          "Rain Dance",
+          "Safeguard",
+          "Frustration",
+          "Return",
+          "Psychic",
+          "Shadow Ball",
+          "Double Team",
+          "Reflect",
+          "Rock Tomb",
+          "Facade",
+          "Rest",
+          "Round",
+          "Echoed Voice",
+          "Focus Blast",
+          "Fling",
+          "Shadow Claw",
+          "Payback",
+          "Giga Impact",
+          "Stone Edge",
+          "Rock Slide",
+          "Dragon Tail",
+          "Swagger",
+          "Substitute",
+          "Flash Cannon",
+          "Rock Smash"
+        ],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
+      },
       "abilities": {
         "abilities": [
           "Teravolt"
@@ -433,25 +756,58 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/646_kyurem/all/black/none/texture.png",
               "sprite": "pixelmon:pokemon/646_kyurem/all/black/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/646_kyurem/all/black/none/model.pqc"
-                ]
-              }
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/646_kyurem/all/black/none/model.pqc",
+                      "texture": "pixelmon:pokemon/646_kyurem/all/black/none/texture.png"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/646_kyurem/all/black/shiny/texture.png",
               "sprite": "pixelmon:pokemon/646_kyurem/all/black/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/646_kyurem/all/black/none/model.pqc",
+                      "texture": "pixelmon:pokemon/646_kyurem/all/black/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             }
           ]
         }
-      ]
+      ],
+      "evYields": {
+        "attack": 3
+      }
     },
     {
       "name": "white",
@@ -459,6 +815,291 @@
         "height": 3.6,
         "width": 2.4,
         "length": 2.4
+      },
+      "moves": {
+        "levelUpMoves": [
+          {
+            "level": 0,
+            "attacks": [
+              "Dragon Breath",
+              "Noble Roar",
+              "Ancient Power",
+              "Freeze-Dry"
+            ]
+          },
+          {
+            "level": 8,
+            "attacks": [
+              "Slash"
+            ]
+          },
+          {
+            "level": 16,
+            "attacks": [
+              "Endeavor"
+            ]
+          },
+          {
+            "level": 24,
+            "attacks": [
+              "Dragon Pulse"
+            ]
+          },
+          {
+            "level": 32,
+            "attacks": [
+              "Ice Beam"
+            ]
+          },
+          {
+            "level": 40,
+            "attacks": [
+              "Hyper Voice"
+            ]
+          },
+          {
+            "level": 48,
+            "attacks": [
+              "Fusion Flare"
+            ]
+          },
+          {
+            "level": 56,
+            "attacks": [
+              "Blizzard"
+            ]
+          },
+          {
+            "level": 64,
+            "attacks": [
+              "Imprison"
+            ]
+          },
+          {
+            "level": 72,
+            "attacks": [
+              "Outrage"
+            ]
+          },
+          {
+            "level": 80,
+            "attacks": [
+              "Ice Burn"
+            ]
+          },
+          {
+            "level": 88,
+            "attacks": [
+              "Sheer Cold"
+            ]
+          }
+        ],
+        "tutorMoves": [
+          "Draco Meteor",
+          "Dual Wingbeat",
+          "Scale Shot"
+        ],
+        "eggMoves": [],
+        "tmMoves8": [
+          "Fly",
+          "Hyper Beam",
+          "Giga Impact",
+          "Light Screen",
+          "Reflect",
+          "Safeguard",
+          "Rest",
+          "Rock Slide",
+          "Snore",
+          "Protect",
+          "Scary Face",
+          "Icy Wind",
+          "Steel Wing",
+          "Rain Dance",
+          "Sunny Day",
+          "Hail",
+          "Facade",
+          "Swift",
+          "Helping Hand",
+          "Imprison",
+          "Weather Ball",
+          "Rock Tomb",
+          "Icicle Spear",
+          "Payback",
+          "Fling",
+          "Shadow Claw",
+          "Round",
+          "Brutal Swing",
+          "Breaking Swipe"
+        ],
+        "trMoves": [
+          "Ice Beam",
+          "Blizzard",
+          "Psychic",
+          "Substitute",
+          "Outrage",
+          "Endure",
+          "Sleep Talk",
+          "Shadow Ball",
+          "Hyper Voice",
+          "Dragon Claw",
+          "Dragon Dance",
+          "Dragon Pulse",
+          "Focus Blast",
+          "Earth Power",
+          "Zen Headbutt",
+          "Flash Cannon",
+          "Iron Head",
+          "Stone Edge",
+          "Body Press"
+        ],
+        "hmMoves": [],
+        "transferMoves": [
+          "Confide",
+          "Cut",
+          "Double Team",
+          "Dragon Rage",
+          "Dragon Tail",
+          "Echoed Voice",
+          "Frustration",
+          "Hidden Power",
+          "Hone Claws",
+          "Laser Focus",
+          "Return",
+          "Rock Smash",
+          "Roost",
+          "Secret Power",
+          "Signal Beam",
+          "Strength",
+          "Swagger",
+          "Toxic"
+        ],
+        "tmMoves7": [
+          "Dragon Claw",
+          "Toxic",
+          "Hail",
+          "Hidden Power",
+          "Sunny Day",
+          "Ice Beam",
+          "Blizzard",
+          "Hyper Beam",
+          "Light Screen",
+          "Protect",
+          "Rain Dance",
+          "Roost",
+          "Safeguard",
+          "Frustration",
+          "Return",
+          "Psychic",
+          "Shadow Ball",
+          "Double Team",
+          "Reflect",
+          "Rock Tomb",
+          "Facade",
+          "Rest",
+          "Round",
+          "Echoed Voice",
+          "Steel Wing",
+          "Focus Blast",
+          "Fling",
+          "Brutal Swing",
+          "Shadow Claw",
+          "Payback",
+          "Giga Impact",
+          "Stone Edge",
+          "Fly",
+          "Rock Slide",
+          "Dragon Tail",
+          "Swagger",
+          "Sleep Talk",
+          "Substitute",
+          "Flash Cannon",
+          "Confide"
+        ],
+        "tmMoves6": [
+          "Hone Claws",
+          "Dragon Claw",
+          "Toxic",
+          "Hail",
+          "Hidden Power",
+          "Sunny Day",
+          "Ice Beam",
+          "Blizzard",
+          "Hyper Beam",
+          "Light Screen",
+          "Protect",
+          "Rain Dance",
+          "Roost",
+          "Safeguard",
+          "Frustration",
+          "Return",
+          "Psychic",
+          "Shadow Ball",
+          "Double Team",
+          "Reflect",
+          "Rock Tomb",
+          "Facade",
+          "Rest",
+          "Round",
+          "Echoed Voice",
+          "Steel Wing",
+          "Focus Blast",
+          "Fling",
+          "Shadow Claw",
+          "Payback",
+          "Giga Impact",
+          "Stone Edge",
+          "Rock Slide",
+          "Dragon Tail",
+          "Swagger",
+          "Sleep Talk",
+          "Substitute",
+          "Flash Cannon",
+          "Secret Power",
+          "Confide"
+        ],
+        "tmMoves5": [
+          "Hone Claws",
+          "Dragon Claw",
+          "Toxic",
+          "Hail",
+          "Hidden Power",
+          "Sunny Day",
+          "Ice Beam",
+          "Blizzard",
+          "Hyper Beam",
+          "Light Screen",
+          "Protect",
+          "Rain Dance",
+          "Safeguard",
+          "Frustration",
+          "Return",
+          "Psychic",
+          "Shadow Ball",
+          "Double Team",
+          "Reflect",
+          "Rock Tomb",
+          "Facade",
+          "Rest",
+          "Round",
+          "Echoed Voice",
+          "Focus Blast",
+          "Fling",
+          "Shadow Claw",
+          "Payback",
+          "Giga Impact",
+          "Stone Edge",
+          "Rock Slide",
+          "Dragon Tail",
+          "Swagger",
+          "Substitute",
+          "Flash Cannon",
+          "Rock Smash"
+        ],
+        "tmMoves4": [],
+        "tmMoves3": [],
+        "tmMoves2": [],
+        "tmMoves1": [],
+        "tmMoves": []
       },
       "abilities": {
         "abilities": [
@@ -479,25 +1120,58 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/646_kyurem/all/white/none/texture.png",
               "sprite": "pixelmon:pokemon/646_kyurem/all/white/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/646_kyurem/all/white/none/model.pqc"
-                ]
-              }
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/646_kyurem/all/white/none/model.pqc",
+                      "texture": "pixelmon:pokemon/646_kyurem/all/white/none/texture.png"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "name": "shiny",
-              "texture": "pixelmon:pokemon/646_kyurem/all/white/shiny/texture.png",
               "sprite": "pixelmon:pokemon/646_kyurem/all/white/shiny/sprite.png",
-              "particle": "arcanery:shiny"
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/646_kyurem/all/white/none/model.pqc",
+                      "texture": "pixelmon:pokemon/646_kyurem/all/white/shiny/texture.png"
+                    }
+                  ]
+                }
+              ],
+              "particle": {
+                "probability": 0.1,
+                "options": {
+                  "type": "pixelmon:shiny",
+                  "diameter": 2.5,
+                  "lifetime": 30,
+                  "tint": {
+                    "red": 255,
+                    "green": 215,
+                    "blue": 0,
+                    "alpha": 255
+                  }
+                }
+              }
             }
           ]
         }
-      ]
+      ],
+      "evYields": {
+        "specialAttack": 3
+      }
     }
   ],
   "generation": 5

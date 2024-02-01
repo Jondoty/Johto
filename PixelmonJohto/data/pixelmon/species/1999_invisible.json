@@ -87,16 +87,21 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/1999_invisible/all/base/none/texture.png",
               "sprite": "pixelmon:pokemon/1999_invisible/all/base/none/sprite.png",
-              "particle": "",
-              "modelLocator": {
-                "factoryType": "NORMAL",
-                "pqc": [
-                  "pixelmon:pokemon/1999_invisible/all/base/none/model.pqc"
-                ]
-              },
-              "sounds": []
+              "sounds": [],
+              "models": [
+                {
+                  "model_predicate": {
+                    "type": "pixelmon:always"
+                  },
+                  "models": [
+                    {
+                      "model": "pixelmon:pokemon/1999_invisible/all/base/none/model.pqc",
+                      "texture": "pixelmon:pokemon/1999_invisible/all/base/none/texture.png"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
