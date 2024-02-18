@@ -44,7 +44,10 @@ execute if entity @a[scores={DialogueTrigger=53,TalkTime=22..32}] as @e[x=-157,y
 execute if entity @a[scores={DialogueTrigger=53,TalkTime=22..32}] as @e[x=-159,y=63,z=201,dx=1,dy=2,dz=12,type=pixelmon:npc_chatting] at @s run tp @s ~ ~ ~0.25
 execute if entity @a[scores={DialogueTrigger=53,TalkTime=22..32}] as @e[x=-158,y=64,z=215,distance=..2,type=pixelmon:npc_chatting] at @s run tp @s -158 64 215
 
+#--------------------------------------------------------------------------------------------------DIALOGUES-----------------------------------------------------------------------------------------------------------------------------------
 
+#Dialogue 1, keeps Oak's focus on you constantly
+execute as @a[scores={DialogueTrigger=1,TalkTime=1..}] at @s as @e[type=pixelmon:npc_chatting,distance=..10] at @s run tp @s ~ ~ ~ facing entity @p[distance=..15]
 
 
 
