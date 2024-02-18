@@ -1,0 +1,7 @@
+{
+	"parent": "item/handheld",
+	"overrides": [
+		{ "predicate": {"damaged": 0, "damage": 0}, "model": "hats/malehat"},
+		{ "predicate": {"damaged": 0, "damage": 0.00398406374501992}, "model": "hats/femalehat"}
+	]
+}
