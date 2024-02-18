@@ -1,10 +1,10 @@
 {
 	"__comment": "Designed by Ozzy with Cubik Studio - https://cubik.studio",
 	"textures": {
-		"texture": "custom/malehat",
-		"texture1": "custom/johto1logo"
+		"texture": "item/playeritems/malehat",
+		"texture1": "item/playeritems/johto1logo"
 	},
-	"elements": [ 	 
+	"elements": [
 		{
 			"__comment": "Voxels",
 			"from": [ 3, 4, 5.5 ],

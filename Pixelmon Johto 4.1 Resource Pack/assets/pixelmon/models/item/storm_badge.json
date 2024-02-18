@@ -1,9 +1,9 @@
 {
 	"__comment": "Designed by Ozzy with Cubik Studio - https://cubik.studio",
 	"textures": {
-		"texture": "pixelmon:items/stormbadge"
+		"texture": "minecraft:item/stormbadge"
 	},
-	"elements": [ 	 
+	"elements": [
 		{
 			"__comment": "Voxels",
 			"from": [ 0, 6.25, 4 ],

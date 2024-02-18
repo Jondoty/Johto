@@ -1,9 +1,9 @@
 {
 	"__comment": "Designed by Ozzy with Cubik Studio - https://cubik.studio",
 	"textures": {
-		"texture": "pixelmon:items/plainbadge"
+		"texture": "minecraft:item/plainbadge"
 	},
-	"elements": [ 	 
+	"elements": [
 		{
 			"__comment": "Voxels",
 			"from": [ -0.25, 6.5, 7 ],

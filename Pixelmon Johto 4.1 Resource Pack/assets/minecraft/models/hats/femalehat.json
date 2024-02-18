@@ -1,9 +1,9 @@
 {
 	"__comment": "Designed by Ozzy with Cubik Studio - https://cubik.studio",
 	"textures": {
-		"texture": "custom/femalehat"
+		"texture": "item/playeritems/femalehat"
 	},
-	"elements": [ 	 
+	"elements": [
 		{
 			"__comment": "Voxels",
 			"from": [ 2, 6.5, 6.5 ],

@@ -1,9 +1,9 @@
 {
 	"__comment": "Designed by Ozzy with Cubik Studio - https://cubik.studio",
 	"textures": {
-		"texture": "pixelmon:items/glacierbadge"
+		"texture": "minecraft:item/glacierbadge"
 	},
-	"elements": [ 	 
+	"elements": [
 		{
 			"__comment": "Voxels",
 			"from": [ -0.25, 6.5, 4 ],
