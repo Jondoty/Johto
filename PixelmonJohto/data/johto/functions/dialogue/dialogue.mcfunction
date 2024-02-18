@@ -305,7 +305,7 @@ execute as @s[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,tag=Dialogue5,scores={StarterP
 #scoreboard players set @a[x=54,y=103,z=22,dx=12,dy=5,dz=10,tag=!Dialogue9,score_TalkTime=0] DialogueTrigger 9
 
 #tp Silver in
-execute as @s[scores={DialogueTrigger=9,TalkTime=1}] run tp @e[x=-758,y=88,z=-242,dy=2,name=Silver] 57 104 29
+execute as @s[scores={DialogueTrigger=9,TalkTime=1}] run summon pixelmon:npc_chatting 57 104 29 {Brain: {memories: {}}, HurtByTimestamp: 0, chatNum: 0, Attributes: [{Base: 0.0d, Name: "forge:step_height_addition"}, {Base: 0.699999988079071d, Modifiers: [{Amount: -15.150000602006912d, Operation: 2, Name: "effect.minecraft.slowness 100"}], Name: "minecraft:generic.movement_speed"}, {Base: 0.08d, Name: "forge:entity_gravity"}], Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "Silver", FallDistance: 0.0f, active_effects: [{duration: 19723, show_icon: 0b, CurativeItems: [{id: "minecraft:milk_bucket", Count: 1b}], amplifier: 100b, ambient: 0b, id: "minecraft:slowness", show_particles: 0b}], CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, UUID: [I; 1119152397, 315706694, -1792016176, 300079149], trainerLocation: 2, DefaultGreet: 0b, Motion: [0.0d, -0.0784000015258789d, 0.0d], TextureIndex: 4, TrainerIndex: "evilprofessor", NameIndex: 3, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [0.27535683f, -15.696765f], HandItems: [{}, {}], ChatIndex: 3, ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Profession: -1s, Pos: [-757.5d, 89.0d, -241.5d], Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "silver.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 2s}
 execute as @s[scores={DialogueTrigger=9,TalkTime=1}] run scoreboard players set @s click 1
 
 tellraw @s[scores={DialogueTrigger=9,TalkTime=3}] {"text":"<Elder Li> You are indeed skilled as a trainer. As promised, here is your HM."}
@@ -812,7 +812,7 @@ tellraw @s[scores={DialogueTrigger=31,TalkTime=28}] ["",{"text":"<"},{"text":"Si
 tellraw @s[scores={DialogueTrigger=31,TalkTime=38}] ["",{"text":"<"},{"text":"Silver","color":"red"},{"text":"> Go ahead! But I'm not going back."}]
 tellraw @s[scores={DialogueTrigger=31,TalkTime=46}] ["",{"text":"<"},{"text":"Silver","color":"red"},{"text":"> I don't want to see you win. These Kimono Girls are insanely strong."}]
 execute as @s[scores={DialogueTrigger=31,TalkTime=55}] run particle cloud 343 64 216 1 1 1 1 100
-execute as @s[scores={DialogueTrigger=31,TalkTime=55}] run tp @e[x=343,y=63,z=216,dy=3,type=pixelmon:npc_chatting] -758 85 -242
+execute as @s[scores={DialogueTrigger=31,TalkTime=55}] run tp @e[x=343,y=63,z=216,dy=3,type=pixelmon:npc_chatting] 10000000 -50000 -10000000
 execute as @s[scores={DialogueTrigger=31,TalkTime=55}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=31,TalkTime=55..}] add Dialogue31
@@ -1415,7 +1415,7 @@ tellraw @s[scores={DialogueTrigger=59,TalkTime=68}] ["",{"text":"<"},{"text":"Si
 
 #tp Silver out
 execute as @s[scores={DialogueTrigger=59,TalkTime=76}] run particle cloud -82 34 182 1 1 1 1 100
-execute as @s[scores={DialogueTrigger=59,TalkTime=76}] run tp @e[x=-82,y=33,z=182,dy=3,type=pixelmon:npc_chatting] -772 89 -242
+execute as @s[scores={DialogueTrigger=59,TalkTime=76}] run tp @e[x=-82,y=33,z=182,dy=3,type=pixelmon:npc_chatting] 10000000 -50000 -10000000
 execute as @s[scores={DialogueTrigger=59,TalkTime=76}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=59,TalkTime=76..}] add Dialogue59
@@ -3339,8 +3339,8 @@ execute as @s[scores={DialogueTrigger=162,TalkTime=74}] run playsound celebi amb
 tellraw @s[scores={DialogueTrigger=162,TalkTime=79}] {"text":"<Lyra> Celebi? That explains it! Celebi must have caused all this!"}
 
 #tps Silver and Giovanni in, in distance
-execute as @s[scores={DialogueTrigger=162,TalkTime=84}] run tp @e[x=-731,y=70,z=-242,dy=3,type=pixelmon:npc_chatting] 278 64 726
-execute as @s[scores={DialogueTrigger=162,TalkTime=84}] run tp @e[x=-733,y=70,z=-242,dy=3,type=pixelmon:npc_chatting] 284 64 726
+execute as @s[scores={DialogueTrigger=162,TalkTime=84}] unless entity @e[x=278,y=64,z=726,dy=3,type=pixelmon:npc_chatting] run summon pixelmon:npc_chatting 278 64 726 {Brain: {memories: {}}, HurtByTimestamp: 0, chatNum: 0, Attributes: [{Base: 0.0d, Name: "forge:step_height_addition"}, {Base: 0.699999988079071d, Modifiers: [{Amount: -15.150000602006912d, Operation: 2, Name: "effect.minecraft.slowness 100"}], Name: "minecraft:generic.movement_speed"}, {Base: 0.08d, Name: "forge:entity_gravity"}], Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "Silver", FallDistance: 0.0f, active_effects: [{duration: 19723, show_icon: 0b, CurativeItems: [{id: "minecraft:milk_bucket", Count: 1b}], amplifier: 100b, ambient: 0b, id: "minecraft:slowness", show_particles: 0b}], CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, UUID: [I; 1119152397, 315706694, -1792016176, 300079149], trainerLocation: 2, DefaultGreet: 0b, Motion: [0.0d, -0.0784000015258789d, 0.0d], TextureIndex: 4, TrainerIndex: "evilprofessor", NameIndex: 3, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [0.27535683f, -15.696765f], HandItems: [{}, {}], ChatIndex: 3, ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Profession: -1s, Pos: [-757.5d, 89.0d, -241.5d], Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "silver.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 2s}
+execute as @s[scores={DialogueTrigger=162,TalkTime=84}] unless entity @e[x=284,y=64,z=726,dy=3,type=pixelmon:npc_chatting] run summon pixelmon:npc_chatting 284 64 726 {Brain: {memories: {}}, HurtByTimestamp: 0, chatNum: 0, Attributes: [{Base: 0.0d, Name: "forge:step_height_addition"}, {Base: 0.699999988079071d, Modifiers: [{Amount: -15.150000602006912d, Operation: 2, Name: "effect.minecraft.slowness 100"}], Name: "minecraft:generic.movement_speed"}, {Base: 0.08d, Name: "forge:entity_gravity"}], Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "Giovanni", FallDistance: 0.0f, active_effects: [{duration: 19723, show_icon: 0b, CurativeItems: [{id: "minecraft:milk_bucket", Count: 1b}], amplifier: 100b, ambient: 0b, id: "minecraft:slowness", show_particles: 0b}], CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, UUID: [I; 1119152397, 315706694, -1792016176, 300079149], trainerLocation: 2, DefaultGreet: 0b, Motion: [0.0d, -0.0784000015258789d, 0.0d], TextureIndex: 4, TrainerIndex: "evilprofessor", NameIndex: 3, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [0.27535683f, -15.696765f], HandItems: [{}, {}], ChatIndex: 3, ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Profession: -1s, Pos: [-757.5d, 89.0d, -241.5d], Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "giovanni.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 2s}
 execute as @s[scores={DialogueTrigger=162,TalkTime=84}] run particle cloud 278 64 726.0 1 1 1 1 100
 execute as @s[scores={DialogueTrigger=162,TalkTime=84}] run particle cloud 284 64 726.0 1 1 1 1 100
 
@@ -3370,7 +3370,7 @@ tellraw @s[scores={DialogueTrigger=163,TalkTime=114}] ["",{"text":"<"},{"text":"
 
 #tp Giovanni out
 execute as @s[scores={DialogueTrigger=163,TalkTime=122}] run particle cloud 284 64 726.0 1 1 1 1 100
-execute as @s[scores={DialogueTrigger=163,TalkTime=122}] run tp @e[x=284,y=63,z=726,dy=3,type=pixelmon:npc_chatting] -733 71 -242
+execute as @s[scores={DialogueTrigger=163,TalkTime=122}] run tp @e[x=284,y=63,z=726,dy=3,type=pixelmon:npc_chatting] 10000000 -50000 -10000000
 
 tellraw @s[scores={DialogueTrigger=163,TalkTime=125}] ["",{"text":"<"},{"text":"Silver","color":"red"},{"text":"> I don't want to understand you! I will never become someone like you."}]
 tellraw @s[scores={DialogueTrigger=163,TalkTime=135}] ["",{"text":"<"},{"text":"Silver","color":"red"},{"text":"> A coward when you're alone and acting like a tyrant when you're in front of other cowards!"}]
@@ -3378,12 +3378,13 @@ tellraw @s[scores={DialogueTrigger=163,TalkTime=147}] ["",{"text":"<"},{"text":"
 tellraw @s[scores={DialogueTrigger=163,TalkTime=156}] ["",{"text":"<"},{"text":"Silver","color":"red"},{"text":"> "},{"text":"All by myself!","bold":true}]
 
 execute as @s[scores={DialogueTrigger=163,TalkTime=161}] run execute at @e[x=278,y=63,z=726,dy=3,type=pixelmon:npc_chatting,name=Silver] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,CustomName:'{"text":"!"}',CustomNameVisible:1b}
+execute as @s[scores={DialogueTrigger=163,TalkTime=161}] as @e[x=278,y=63,z=726,dy=3,type=pixelmon:npc_chatting,distance=..10] at @s run tp @s ~ ~ ~ facing entity @p[distance=..15]
 execute as @s[scores={DialogueTrigger=163,TalkTime=164}] run execute at @e[x=278,y=63,z=726,dy=3,type=pixelmon:npc_chatting,name=Silver] run kill @e[distance=..2,type=armor_stand]
 tellraw @s[scores={DialogueTrigger=163,TalkTime=164}] ["",{"text":"<"},{"text":"Silver","color":"red"},{"text":"> \u0020...What are you staring at?"}]
 
 #tps Silver out
 execute as @s[scores={DialogueTrigger=163,TalkTime=172}] run particle cloud 278 64 726.0 1 1 1 1 100
-execute as @s[scores={DialogueTrigger=163,TalkTime=172}] run tp @e[x=278,y=63,z=726,dy=3,type=pixelmon:npc_chatting] -731 71 -242
+execute as @s[scores={DialogueTrigger=163,TalkTime=172}] run tp @e[x=278,y=63,z=726,dy=3,type=pixelmon:npc_chatting] 10000000 -50000 -10000000
 
 tag @s[scores={DialogueTrigger=163,TalkTime=172..}] add Dialogue163
 

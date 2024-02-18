@@ -52,8 +52,9 @@ execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,tag=Dialogue5,scores={StarterP
 execute as @a[x=-693,y=63,z=-490,dx=19,dy=5,dz=19,tag=Dialogue5,scores={StarterPick=3}] run setblock -685 65 -478 minecraft:air
 
 #Toggles Silver outside Elm's Lab
-execute as @a[x=-665,y=64,z=-493,distance=0..100,tag=Dialogue6] run tp @e[x=-665,y=63,z=-493,dy=2,type=pixelmon:npc_chatting] -758 93 -242
-execute as @a[x=-665,y=64,z=-493,distance=0..25,tag=!Dialogue6] run tp @e[x=-758,y=92,z=-242,dy=3,type=pixelmon:npc_chatting] -665 64 -493
+execute if entity @a[x=-665,y=64,z=-493,distance=..25,tag=!Dialogue6] unless entity @e[x=-665,y=63,z=-493,dy=2] run summon pixelmon:npc_chatting -665 64 -493 {Brain: {memories: {}}, HurtByTimestamp: 0, chatNum: 2, Attributes: [{Base: 0.0d, Name: "forge:step_height_addition"}, {Base: 0.699999988079071d, Modifiers: [{Amount: -15.150000602006912d, Operation: 2, UUID: [I; 1896341086, 2095595568, -1811001012, 521537680], Name: "effect.minecraft.slowness 100"}], Name: "minecraft:generic.movement_speed"}, {Base: 0.08d, Name: "forge:entity_gravity"}], Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "...", FallDistance: 0.0f, active_effects: [{duration: 18911, show_icon: 0b, CurativeItems: [{id: "minecraft:milk_bucket", Count: 1b}], amplifier: 100b, ambient: 0b, id: "minecraft:slowness", show_particles: 0b}], CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, UUID: [I; -1117845132, -1192212168, -1892583014, 2097710046], trainerLocation: 2, DefaultGreet: 0b, Motion: [0.0d, -0.0784000015258789d, 0.0d], TextureIndex: 4, TrainerIndex: "skullgruntfemale", NameIndex: 0, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [3.4981956f, -19.930494f], HandItems: [{}, {}], ChatIndex: 1, ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Profession: -1s, Pos: [-757.5d, 93.0d, -241.5d], Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "silver.png", chat1: "What are you staring at?", chat0: "So this is the famous Elm Pokémon Lab...", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 2s}
+
+execute if entity @a[x=-665,y=64,z=-493,distance=..100,tag=Dialogue6] run tp @e[x=-665,y=63,z=-493,dy=2,type=pixelmon:npc_chatting] 10000000 -50000 -10000000
 
 #---------------------
 
@@ -178,7 +179,9 @@ execute at @a[x=332,y=64,z=-16,distance=0..30,tag=!Dialogue30,scores={TalkTime=0
 
 #Dialogue31 - Ecruteak City Silver at Dance Theatre
 scoreboard players set @a[x=343,y=64,z=216,distance=..3,tag=!Dialogue31,scores={TalkTime=0}] DialogueTrigger 31
-execute as @a[x=343,y=64,z=216,distance=..50,tag=!Dialogue31,scores={TalkTime=0}] run tp @e[x=-758,y=84,z=-242,dy=3,type=pixelmon:npc_chatting] 343 64 216
+execute as @a[x=343,y=64,z=216,distance=..50,tag=!Dialogue31,scores={TalkTime=0}] unless entity @e[x=343,y=64,z=216,dy=3,type=pixelmon:npc_chatting] run summon pixelmon:npc_chatting 343 64 216 {Brain: {memories: {}}, HurtByTimestamp: 0, chatNum: 0, Attributes: [{Base: 0.0d, Name: "forge:step_height_addition"}, {Base: 0.699999988079071d, Modifiers: [{Amount: -15.150000602006912d, Operation: 2, Name: "effect.minecraft.slowness 100"}], Name: "minecraft:generic.movement_speed"}, {Base: 0.08d, Name: "forge:entity_gravity"}], Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "Silver", FallDistance: 0.0f, active_effects: [{duration: 19723, show_icon: 0b, CurativeItems: [{id: "minecraft:milk_bucket", Count: 1b}], amplifier: 100b, ambient: 0b, id: "minecraft:slowness", show_particles: 0b}], CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, UUID: [I; 1119152397, 315706694, -1792016176, 300079149], trainerLocation: 2, DefaultGreet: 0b, Motion: [0.0d, -0.0784000015258789d, 0.0d], TextureIndex: 4, TrainerIndex: "evilprofessor", NameIndex: 3, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [0.27535683f, -15.696765f], HandItems: [{}, {}], ChatIndex: 3, ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Profession: -1s, Pos: [-757.5d, 89.0d, -241.5d], Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "silver.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 2s}
+
+
 
 #Dialogue32 - Ecruteak City HM Surf Guy intro
 scoreboard players set @a[x=333,y=64,z=219,dx=20,dy=5,dz=14,tag=!Dialogue32,scores={TalkTime=0}] DialogueTrigger 32
@@ -302,7 +305,8 @@ scoreboard players set @a[x=-91,y=34,z=217,distance=..5,scores={TalkTime=0},tag=
 
 #Dialogue59 - Silver in HQ
 scoreboard players set @a[x=-82,y=34,z=182,distance=..5,tag=!Dialogue59] DialogueTrigger 59
-execute at @a[x=-82,y=34,z=182,distance=..20,tag=!Dialogue59,scores={TalkTime=0}] run tp @e[x=-772,y=88,z=-242,dy=3,type=pixelmon:npc_chatting] -82 34 182
+execute at @a[x=-82,y=34,z=182,distance=..20,tag=!Dialogue59,scores={TalkTime=0}] unless entity @e[x=-82,y=34,z=182,dy=3,type=pixelmon:npc_chatting] run summon pixelmon:npc_chatting -82 34 182 {Brain: {memories: {}}, HurtByTimestamp: 0, chatNum: 0, Attributes: [{Base: 0.0d, Name: "forge:step_height_addition"}, {Base: 0.699999988079071d, Modifiers: [{Amount: -15.150000602006912d, Operation: 2, Name: "effect.minecraft.slowness 100"}], Name: "minecraft:generic.movement_speed"}, {Base: 0.08d, Name: "forge:entity_gravity"}], Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, Name: "Silver", FallDistance: 0.0f, active_effects: [{duration: 19723, show_icon: 0b, CurativeItems: [{id: "minecraft:milk_bucket", Count: 1b}], amplifier: 100b, ambient: 0b, id: "minecraft:slowness", show_particles: 0b}], CanUpdate: 1b, DeathTime: 0s, DefaultName: 0b, Commands: {interactCommands: []}, HandDropChances: [0.085f, 0.085f], PersistenceRequired: 1b, UUID: [I; 1119152397, 315706694, -1792016176, 300079149], trainerLocation: 2, DefaultGreet: 0b, Motion: [0.0d, -0.0784000015258789d, 0.0d], TextureIndex: 4, TrainerIndex: "evilprofessor", NameIndex: 3, Health: 20.0f, LeftHanded: 0b, Air: 300s, OnGround: 1b, Rotation: [0.27535683f, -15.696765f], HandItems: [{}, {}], ChatIndex: 3, ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Profession: -1s, Pos: [-757.5d, 89.0d, -241.5d], Fire: -1s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, CustomSteveTexture: "silver.png", HurtTime: 0s, BaseTrainer: "Steve", Inventory: [], AIMode: 2s}
+
 
 #Dialogue60 - Executive pre-battle
 scoreboard players set @a[x=-117,y=33,z=189,dx=31,dy=5,dz=31,scores={TalkTime=0},tag=!Dialogue60] DialogueTrigger 60
@@ -800,6 +804,64 @@ scoreboard players set @a[x=-682,y=63,z=-482,distance=..25,scores={TalkTime=0},t
 scoreboard players set @a[x=-682,y=63,z=-482,distance=..25,scores={TalkTime=0},tag=Dialogue3,nbt={Inventory:[{id:"pixelmon:leaf_stone_sword"}]}] TriggerCommand 82
 scoreboard players set @a[x=-682,y=63,z=-482,distance=..25,scores={TalkTime=0},tag=Dialogue3,nbt={Inventory:[{id:"pixelmon:water_stone_sword"}]}] TriggerCommand 84
 
+#Checks and runs the command automatically if player already picked a starter
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s PokeHave 0
+
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] store result score @s PokeHave run poketest 1 Cyndaquil
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s Temp 1
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] store result score @s PokeHave run poketest 2 Cyndaquil
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s Temp 1
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] store result score @s PokeHave run poketest 3 Cyndaquil
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s Temp 1
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] store result score @s PokeHave run poketest 4 Cyndaquil
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s Temp 1
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] store result score @s PokeHave run poketest 5 Cyndaquil
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s Temp 1
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] store result score @s PokeHave run poketest 6 Cyndaquil
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s Temp 1
+
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s TriggerCommand 81
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s StarterPick 1
+
+
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s PokeHave 0
+
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] store result score @s PokeHave run poketest 1 Chikorita
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s Temp 1
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] store result score @s PokeHave run poketest 2 Chikorita
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s Temp 1
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] store result score @s PokeHave run poketest 3 Chikorita
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s Temp 1
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] store result score @s PokeHave run poketest 4 Chikorita
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s Temp 1
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] store result score @s PokeHave run poketest 5 Chikorita
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s Temp 1
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] store result score @s PokeHave run poketest 6 Chikorita
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s Temp 1
+
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s TriggerCommand 83
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s StarterPick 2
+
+
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s PokeHave 0
+
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] store result score @s PokeHave run poketest 1 Totodile
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s Temp 1
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] store result score @s PokeHave run poketest 2 Totodile
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s Temp 1
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] store result score @s PokeHave run poketest 3 Totodile
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s Temp 1
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] store result score @s PokeHave run poketest 4 Totodile
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s Temp 1
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] store result score @s PokeHave run poketest 5 Totodile
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s Temp 1
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] store result score @s PokeHave run poketest 6 Totodile
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s Temp 1
+
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s TriggerCommand 85
+execute as @a[x=-682,y=63,z=-482,distance=..25,tag=Dialogue3,scores={StarterPick=0}] run scoreboard players set @s StarterPick 1
+
+#-------------------------------------
 
 #Legendary Dog & Eon Grass commands 3.0
 execute as @a[tag=!GrassCooldown] at @s run execute if block ~ ~ ~ minecraft:grass run function johto:triggers/roaminglegends
