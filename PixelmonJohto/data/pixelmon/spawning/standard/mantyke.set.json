@@ -1,0 +1,18 @@
+{
+  "id": "Mantyke",
+  "spawnInfos": [
+    {
+      "spec": "species:Mantyke",
+      "stringLocationTypes": [
+        "Water"
+      ],
+      "minLevel": 35,
+      "maxLevel": 40,
+      "typeID": "pokemon",
+      "condition": {
+          "minX": 2071, "maxX": 2734, "minZ": 323, "maxZ": 1229, "minY": 0, "maxY": 256
+      },
+      "rarity": 0.0
+    }
+  ]
+}
