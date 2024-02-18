@@ -2,10 +2,10 @@
 #execute as @a[nbt={SelectedItem:{id:"minecraft:iron_hoe",tag:{display:{Lore:['[{"text":"A hat given to you from","italic":false}]','[{"text":"your mother!","italic":false}]']}}}}] run function johto:triggers/hatstore
 
 #Male Hat Give
-#replaceitem entity @p[distance=..10] armor.head minecraft:iron_hoe{Damage:0,display:{Name:'[{"text":"Male Hat","italic":false}]',Lore:['[{"text":"A hat given to you from","italic":false}]','[{"text":"your mother!","italic":false}]']},HideFlags:26,Unbreakable:1}
+#item replace entity @p[distance=..10] armor.head minecraft:iron_hoe{Damage:0,display:{Name:'[{"text":"Male Hat","italic":false}]',Lore:['[{"text":"A hat given to you from","italic":false}]','[{"text":"your mother!","italic":false}]']},HideFlags:26,Unbreakable:1}
 
 #Female Hat Give
-#replaceitem entity @p[distance=..10] armor.head minecraft:iron_hoe{Damage:1,display:{Name:'[{"text":"Female Hat","italic":false}]',Lore:['[{"text":"A hat given to you from","italic":false}]','[{"text":"your mother!","italic":false}]']},HideFlags:26,Unbreakable:1}
+#item replace entity @p[distance=..10] armor.head minecraft:iron_hoe{Damage:1,display:{Name:'[{"text":"Female Hat","italic":false}]',Lore:['[{"text":"A hat given to you from","italic":false}]','[{"text":"your mother!","italic":false}]']},HideFlags:26,Unbreakable:1}
 
 #Adds tag depending on hat player is holding
 tag @s[nbt={SelectedItem:{id:"minecraft:iron_hoe", tag:{display:{Name:'[{"text":"Female Hat","italic":false}]',Lore:['[{"text":"A hat given to you from","italic":false}]','[{"text":"your mother!","italic":false}]']}}}}] add FemaleHat
@@ -18,9 +18,9 @@ clear @s minecraft:iron_hoe
 
 
 #Puts hat back in inventory slot
-replaceitem entity @s[tag=FemaleHat] armor.head minecraft:iron_hoe{Damage:1,display:{Name:'[{"text":"Female Hat","italic":false}]',Lore:['[{"text":"A hat given to you from","italic":false}]','[{"text":"your mother!","italic":false}]']},HideFlags:26,Unbreakable:1}
+item replace entity @s[tag=FemaleHat] armor.head with minecraft:iron_hoe{Damage:1,display:{Name:'[{"text":"Female Hat","italic":false}]',Lore:['[{"text":"A hat given to you from","italic":false}]','[{"text":"your mother!","italic":false}]']},HideFlags:26,Unbreakable:1}
 
-replaceitem entity @s[tag=MaleHat] armor.head minecraft:iron_hoe{Damage:0,display:{Name:'[{"text":"Male Hat","italic":false}]',Lore:['[{"text":"A hat given to you from","italic":false}]','[{"text":"your mother!","italic":false}]']},HideFlags:26,Unbreakable:1}
+item replace entity @s[tag=MaleHat] armor.head with minecraft:iron_hoe{Damage:0,display:{Name:'[{"text":"Male Hat","italic":false}]',Lore:['[{"text":"A hat given to you from","italic":false}]','[{"text":"your mother!","italic":false}]']},HideFlags:26,Unbreakable:1}
 
 
 #Removes Temp Tag

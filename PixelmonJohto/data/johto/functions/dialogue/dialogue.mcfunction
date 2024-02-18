@@ -82,7 +82,7 @@ scoreboard players add @s[scores={DialogueTrigger=1..}] TalkTime 1
 
 
 
-execute as @s[scores={DialogueTrigger=1,TalkTime=1}] run data merge entity @e[limit=1,x=-972,y=63,z=-410,dx=10,dy=10,dz=10,type=pixelmon:npc_chatting] {Rotation:[90f,0.0f]}
+execute as @s[scores={DialogueTrigger=1,TalkTime=1}] at @s as @e[type=pixelmon:npc_chatting,distance=..10] at @s run tp @s ~ ~ ~ facing entity @p[distance=..15]
 execute as @s[scores={DialogueTrigger=1,TalkTime=1}] run scoreboard players set @s click 1
 
 tellraw @s[scores={DialogueTrigger=1,TalkTime=1}] {"text":"<...> Hello! Sorry to keep you waiting!"}
@@ -92,7 +92,7 @@ tellraw @s[scores={DialogueTrigger=1,TalkTime=16}] {"text":"<Professor Oak> My n
 #tp in Pokémon
 #Pokémon spawn sound
 execute as @s[scores={DialogueTrigger=1,TalkTime=22}] run particle cloud -965 66 -407 1 1 1 1 100
-execute as @s[scores={DialogueTrigger=1,TalkTime=22}] run setblock -965 66 -407 pixelmon:poke_display[facing=west]{PokeDisplayPokemon:{ndex:194,Growth:5b}} replace
+execute as @s[scores={DialogueTrigger=1,TalkTime=22}] run summon pixelmon:statue -965 66 -407 {Brain: {memories: {}}, HurtByTimestamp: 0, EVSpeed: 0s, Attributes: [], Moveset: [{MoveID: "Tackle", MovePP: 35b}, {MoveID: "Vine Whip", MovePP: 25b}, {MoveID: "Growth", MovePP: 20b}, {MoveID: "Razor Leaf", MovePP: 25b}], Invulnerable: 0b, statueTexture: 0b, Gender: 1b, ribbon_display2: {receiver: "null", received: 0L, type: "isi"}, AbsorptionAmount: 0.0f, Bred: 0b, FallDistance: 0.0f, InLove: 0, CanUpdate: 1b, IVSpDef: 29b, CaughtBall: "poke_ball", HandDropChances: [0.085f, 0.085f], statueLabel: "", PersistenceRequired: 0b, palette: "none", Ability: "Overgrow", IVDefense: 0b, DoesLevel: 1b, EVDefense: 0s, Air: 300s, PAbilitySlot: 0, DynamaxLevel: 0, HandItems: [{}, {}], Variant: "", ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], statueModelType: 1b, EVSpecialAttack: 0s, Pos: [-964.4921591281891d, 66.0d, -406.5101451575756d], IVSpeed: 1b, Temper: 0, CanPickUpLoot: 0b, Level: -1, HurtTime: 0s, NoGravity: 1b, Tame: 0b, StatsDefense: 16s, IVAttack: 3b, Growth: 5b, PHiddenAbility: 0b, BoundingBoxMode: 2b, FallFlying: 0b, ForcedAge: 0, PersistentData: {}, PortalCooldown: 0, GigantamaxFactor: 0b, Friendship: 70s, statueAnimation: "idle", EatingHaystack: 0b, DeathTime: 0s, eggCycles: -1, EVAttack: 0s, StatsSpecialAttack: 23s, IVHP: 21b, EVHP: 0s, ndex: 194, StatsSpecialDefense: 21s, Age: 0, Nature: 8b, Motion: [0.0d, 0.0d, 0.0d], StatsHP: 35s, Health: 20, Animate: 1b, SpecFlags: [], LeftHanded: 0b, OnGround: 0b, NoAI: 1b, Rotation: [89.3116f, 0.0f], StatsSpeed: 15s, StatsAttack: 18s, statueFrame: 0, Fire: -1s, ArmorItems: [{}, {}, {}, {}], IVSpAtt: 21b, NBT_VERSION: 2b, EVSpecialDefense: 0s, EXP: 0, RelrnMoves: [], ribbons2: []}
 
 tellraw @s[scores={DialogueTrigger=1,TalkTime=25}] {"text":"<Professor Oak> This world is inhabited by creatures that we call Pokémon."}
 tellraw @s[scores={DialogueTrigger=1,TalkTime=33}] {"text":"<Professor Oak> People and Pokémon live together by supporting each other."}
@@ -106,7 +106,7 @@ tellraw @s[scores={DialogueTrigger=1,TalkTime=87}] {"text":"<Professor Oak> A wo
 tellraw @s[scores={DialogueTrigger=1,TalkTime=95}] {"text":"<Professor Oak> Let's go! I'll be seeing you later!"}
 
 #Hides Statue
-execute as @s[scores={DialogueTrigger=1,TalkTime=103}] run setblock -965 66 -407 minecraft:air
+execute as @s[scores={DialogueTrigger=1,TalkTime=103}] run tp @e[type=pixelmon:statue,x=-965,y=66,z=-407,distance=..3] 10000000 -50000 -10000000
 
 #tp player to New Bark Town
 execute as @s[scores={DialogueTrigger=1,TalkTime=103}] run playsound flee ambient @s ~ ~ ~ 100 1 1
@@ -765,8 +765,8 @@ execute as @s[scores={DialogueTrigger=29,TalkTime=24}] run give @s minecraft:rab
 execute as @s[scores={DialogueTrigger=29,TalkTime=24}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=29,TalkTime=30}] {"text":"<Shop Clerk> Lalala lalalala. Have plenty of water, my lovely!"}
 
-execute as @s[scores={DialogueTrigger=29,TalkTime=1}] run replaceitem entity @e[x=421,y=63,z=-300,dy=3,type=pixelmon:npc_chatting] weapon.offhand minecraft:rabbit_foot
-execute as @s[scores={DialogueTrigger=29,TalkTime=24}] run replaceitem entity @e[x=421,y=63,z=-300,dy=3,type=pixelmon:npc_chatting] weapon.offhand air
+execute as @s[scores={DialogueTrigger=29,TalkTime=1}] run item replace entity @e[x=421,y=63,z=-300,dy=3,type=pixelmon:npc_chatting] weapon.offhand with minecraft:rabbit_foot
+execute as @s[scores={DialogueTrigger=29,TalkTime=24}] run item replace entity @e[x=421,y=63,z=-300,dy=3,type=pixelmon:npc_chatting] weapon.offhand with air
 
 tag @s[scores={DialogueTrigger=29,TalkTime=30..}] add Dialogue29
 
@@ -3330,8 +3330,8 @@ execute as @s[scores={DialogueTrigger=162,TalkTime=27}] run tp @e[x=-727,y=70,z=
 tellraw @s[scores={DialogueTrigger=162,TalkTime=30}] {"text":"<Lyra> Where are we...?"}
 tellraw @s[scores={DialogueTrigger=162,TalkTime=37}] {"text":"<Lyra> Ilex Forest has disappeared!"}
 tellraw @s[scores={DialogueTrigger=162,TalkTime=44}] {"text":"<Lyra> ...That's not it. It's more like we have been transported somewhere else...?"}
-execute as @s[scores={DialogueTrigger=162,TalkTime=49}] run replaceitem entity @e[x=267,y=63,z=694,dy=3,type=pixelmon:npc_chatting] weapon.offhand minecraft:carrot_on_a_stick
-execute as @s[scores={DialogueTrigger=162,TalkTime=60}] run replaceitem entity @e[x=267,y=63,z=694,dy=3,type=pixelmon:npc_chatting] weapon.offhand air
+execute as @s[scores={DialogueTrigger=162,TalkTime=49}] run item replace entity @e[x=267,y=63,z=694,dy=3,type=pixelmon:npc_chatting] weapon.offhand with minecraft:carrot_on_a_stick
+execute as @s[scores={DialogueTrigger=162,TalkTime=60}] run item replace entity @e[x=267,y=63,z=694,dy=3,type=pixelmon:npc_chatting] weapon.offhand with air
 tellraw @s[scores={DialogueTrigger=162,TalkTime=54}] {"text":"<Lyra> ... ... ..."}
 tellraw @s[scores={DialogueTrigger=162,TalkTime=59}] ["",{"text":"<Lyra> "},{"selector":"@s"},{"text":", something is strange! I heard the radio mentioning the date from 3 years ago!"}]
 tellraw @s[scores={DialogueTrigger=162,TalkTime=69}] {"text":"<Lyra> Is that... What I am looking at..."}
@@ -4720,9 +4720,9 @@ tag @s[scores={DialogueTrigger=197,TalkTime=17..}] add Dialogue197
 
 tellraw @s[scores={DialogueTrigger=213,TalkTime=1}] {"text":"<Guide Gent> Here... It's my house!"}
 tellraw @s[scores={DialogueTrigger=213,TalkTime=8}] {"text":"<Guide Gent> For your effort keeping up with me, I'll give you a Town Map!"}
-execute as @s[scores={DialogueTrigger=213,TalkTime=5}] run replaceitem entity @e[x=-230,y=63,z=-529,dy=2,distance=..5,type=pixelmon:npc_chatting] weapon.mainhand minecraft:filled_map
+execute as @s[scores={DialogueTrigger=213,TalkTime=5}] run item replace entity @e[x=-230,y=63,z=-529,dy=2,distance=..5,type=pixelmon:npc_chatting] weapon.mainhand with minecraft:filled_map
 execute as @s[scores={DialogueTrigger=213,TalkTime=11}] run function johto:spawn/townmap
-execute as @s[scores={DialogueTrigger=213,TalkTime=11}] run replaceitem entity @e[x=-230,y=63,z=-529,dy=2,distance=..5,type=pixelmon:npc_chatting] weapon.mainhand minecraft:air
+execute as @s[scores={DialogueTrigger=213,TalkTime=11}] run item replace entity @e[x=-230,y=63,z=-529,dy=2,distance=..5,type=pixelmon:npc_chatting] weapon.mainhand with minecraft:air
 execute as @s[scores={DialogueTrigger=213,TalkTime=11}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=213,TalkTime=18}] {"text":"<Guide Gent> It will show you where you are any time you look at it!"}
 execute as @s[scores={DialogueTrigger=213,TalkTime=26}] run scoreboard players set @e[x=-230,y=64,z=-529,distance=..3,type=pixelmon:npc_chatting] DialogueTrigger 6
