@@ -3,8 +3,8 @@
   "durations": [
     {
       "type": "add",
-      "amount": 1.5,
-      "unit": "HOURS"
+      "amount": 3,
+      "unit": "MINUTES"
     }
   ],
   "requirements": [
