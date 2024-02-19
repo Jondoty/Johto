@@ -652,8 +652,25 @@ execute at @p[x=178,y=64,z=-127,distance=..120,tag=!Red] run tp @e[x=-697,y=85,z
 #Dialogue167 - Ruins of Alph after giving player Azure flute
 scoreboard players set @a[x=174,y=64,z=-141,distance=..10,scores={TalkTime=0},tag=Red,tag=!Dialogue167] DialogueTrigger 167
 
-#Dialogue168 - Ruins of Alph starting the Sinjoh event
-execute at @e[x=174,y=63,z=-141,distance=..20,type=pixelmon:pixelmon,name=Arceus] run scoreboard players set @p[distance=..15,scores={TalkTime=0,Arceus=1},tag=Dialogue167,tag=!Dialogue168,tag=Red] DialogueTrigger 168
+#Dialogue168 - Ruins of Alph starting the Sinjoh event when Arceus is in the player's party
+
+execute as @a[x=174,y=64,z=-141,distance=..10,scores={TalkTime=0},tag=Dialogue167,tag=!Dialogue168] run scoreboard players set @s Temp 0
+
+execute as @a[x=174,y=64,z=-141,distance=..10,scores={TalkTime=0},tag=Dialogue167,tag=!Dialogue168] store result score @s PokeHave run poketest 1 Arceus
+execute as @a[x=174,y=64,z=-141,distance=..10,scores={TalkTime=0},tag=Dialogue167,tag=!Dialogue168] run scoreboard players set @s Temp 1
+execute as @a[x=174,y=64,z=-141,distance=..10,scores={TalkTime=0},tag=Dialogue167,tag=!Dialogue168] store result score @s PokeHave run poketest 2 Arceus
+execute as @a[x=174,y=64,z=-141,distance=..10,scores={TalkTime=0},tag=Dialogue167,tag=!Dialogue168] run scoreboard players set @s Temp 1
+execute as @a[x=174,y=64,z=-141,distance=..10,scores={TalkTime=0},tag=Dialogue167,tag=!Dialogue168] store result score @s PokeHave run poketest 3 Arceus
+execute as @a[x=174,y=64,z=-141,distance=..10,scores={TalkTime=0},tag=Dialogue167,tag=!Dialogue168] run scoreboard players set @s Temp 1
+execute as @a[x=174,y=64,z=-141,distance=..10,scores={TalkTime=0},tag=Dialogue167,tag=!Dialogue168] store result score @s PokeHave run poketest 4 Arceus
+execute as @a[x=174,y=64,z=-141,distance=..10,scores={TalkTime=0},tag=Dialogue167,tag=!Dialogue168] run scoreboard players set @s Temp 1
+execute as @a[x=174,y=64,z=-141,distance=..10,scores={TalkTime=0},tag=Dialogue167,tag=!Dialogue168] store result score @s PokeHave run poketest 5 Arceus
+execute as @a[x=174,y=64,z=-141,distance=..10,scores={TalkTime=0},tag=Dialogue167,tag=!Dialogue168] run scoreboard players set @s Temp 1
+execute as @a[x=174,y=64,z=-141,distance=..10,scores={TalkTime=0},tag=Dialogue167,tag=!Dialogue168] store result score @s PokeHave run poketest 6 Arceus
+execute as @a[x=174,y=64,z=-141,distance=..10,scores={TalkTime=0},tag=Dialogue167,tag=!Dialogue168] run scoreboard players set @s Temp 1
+
+execute as @a[x=174,y=64,z=-141,distance=..10,scores={TalkTime=0,Temp=1},tag=Dialogue167,tag=!Dialogue168] run scoreboard players set @s DialogueTrigger 168
+
 
 #Dialogue169 - Sinjoh Fake Ruins
 scoreboard players set @a[x=-992,y=0,z=-172,dx=45,dy=70,dz=60,scores={TalkTime=0}] DialogueTrigger 169
@@ -952,11 +969,6 @@ execute as @a[x=112,y=32,z=391,distance=..25,nbt={Inventory:[{id:"minecraft:neth
 execute as @a[x=112,y=32,z=391,distance=..25,nbt={Inventory:[{id:"minecraft:nether_brick"}]}] run clear @s nether_brick
 
 #----------------------------------------
-
-#Researcher hint saying to throw out Arceus
-execute if entity @a[x=174,y=63,z=-141,distance=..10,scores={Arceus=1..,Cooldown=0},tag=!Dialogue168] run tellraw @a[x=174,y=63,z=-141,distance=..10,scores={Arceus=1..,Cooldown=0,TalkTime=0},tag=!Dialogue168] {"text":"<Archaeologist> You encountered Arceus!? That is amazing! Did you catch it? Can I see it?"}
-execute if entity @a[x=174,y=63,z=-141,distance=..10,scores={Arceus=1..,Cooldown=0},tag=!Dialogue168] run scoreboard players set @a[x=174,y=63,z=-141,distance=..10,scores={Arceus=1..,Cooldown=0,TalkTime=0},tag=!Dialogue168] Cooldown 30
-
 
 #Dialogue173 - Dialga
 execute if entity @a[x=-1060,y=46,z=-143,dx=40,dy=15,dz=70,tag=Dialogue172,scores={TriggerCommand=12}] run scoreboard players set @e[x=-801,y=64,z=-287,dy=3,type=armor_stand,scores={TalkTime=0,DialogueTrigger=0}] DialogueTrigger 173
