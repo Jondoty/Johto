@@ -16,6 +16,10 @@ clear @a[gamemode=adventure] minecraft:spruce_log
 clear @a[gamemode=adventure] pixelmon:tree
 
 
+#Regenerates Rock Smash Rocks
+execute as @e[tag=Regenerate,type=minecraft:armor_stand] at @s unless entity @a[distance=..50] run function johto:spawn/rocksmashrock
+
+
 #Enables Unown Spawning in Ruins of Alph when any puzzle is complete
 #scoreboard players tag @e[x=-792,y=65,z=-284,dy=3,type=armor_stand] add UnownSpawning
 execute as @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=UnownSpawning] run setblock -880 67 -302 minecraft:redstone_block
