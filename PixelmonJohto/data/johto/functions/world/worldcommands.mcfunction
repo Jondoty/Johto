@@ -47,7 +47,7 @@ execute as @a[x=-780,y=64,z=-245,distance=..20,tag=!InitialTags] run function jo
 execute as @a[scores={TriggerCommand=1..}] run function johto:triggers/triggercommands
 
 #Hall of Fame Function
-execute as @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=34,tag=Dialogue97,scores={TalkTime=0}] run function johto:world/halloffame/halloffame
+#execute as @a[x=-1300,y=77,z=751,dx=24,dy=10,dz=34,tag=Dialogue97,scores={TalkTime=0}] run function johto:world/halloffame/halloffame
 
 #Removes Cooldown score if present
 scoreboard players remove @a[scores={Cooldown=1..}] Cooldown 1
@@ -292,11 +292,6 @@ execute as @a[x=478,y=64,z=65,distance=..3,scores={BugContest=1..,Cooldown=0},ta
 execute as @a[x=478,y=64,z=65,distance=..3,scores={BugContest=1..,Cooldown=0},tag=Dialogue198,tag=!Dialouge199] run scoreboard players set @s Cooldown 120
 
 #---------------------
-#Safari Zone Prompt
-execute as @a[x=1587,y=88,z=-106,distance=..5,scores={TalkTime=0,Cooldown=0}] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=!SafariActive] run scoreboard players enable @s TriggerCommand
-execute as @a[x=1587,y=88,z=-106,distance=..5,scores={TalkTime=0,Cooldown=0}] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=!SafariActive] run tellraw @s {"text": "<Safari Clerk> Begin your Safari Zone session? ", "extra": [{"text":"[Yes]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TriggerCommand set 22"}}]}
-execute as @a[x=1587,y=88,z=-106,distance=..5,scores={TalkTime=0,Cooldown=0}] if entity @e[x=-792,y=65,z=-284,dy=3,type=armor_stand,tag=!SafariActive] run scoreboard players set @s Cooldown 120
-
 #Safari Zone Mapping Function
 execute as @a[x=1590,y=74,z=-129,dx=10,dy=5,dz=10] run function johto:world/safariselect
 
