@@ -1,9 +1,9 @@
 #If the player doesn't have Rock Smash
-tellraw @s[tag=!RockSmash] {"text":"It's a cracked boulder. A Pokémon may be able to break it.","italic":true,"color":"gray"}
+tellraw @s[tag=!Dialogue155] {"text":"It's a cracked boulder. A Pokémon may be able to break it.","italic":true,"color":"gray"}
 
 #If the player has obtained the Rock Smash TM after clearing SUdowoodo
-tag @s[tag=RockSmash] add RockSmashUse
-execute as @s[tag=RockSmash] run function johto:world/rocksmash
+tag @s[tag=Dialogue155] add RockSmashUse
+execute as @s[tag=Dialogue155] run function johto:world/rocksmash
 
 
 
