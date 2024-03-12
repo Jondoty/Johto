@@ -1324,7 +1324,103 @@ execute as @a[scores={DialogueTrigger=201,TalkTime=1,IP=0}] run clone -878 70 -1
 execute as @a[scores={DialogueTrigger=201,TalkTime=1,IP=0}] run clone -878 70 -157 -878 70 -157 -841 1 -172
 
 
+#Ensures no bosses should be spawning
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -716 0 -268 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -716 0 -310 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -779 12 -310 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -779 12 -268  {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -716 31 -268 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -716 31 -310 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -779 46 -268 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -779 46 -310 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -716 0 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -779 0 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -716 17 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -779 17 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -716 39 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -779 58 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -779 58 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -716 72 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -716 72 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -716 90 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -779 90 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -850 14 -310 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -850 14 -268 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -850 14 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -850 14 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -779 0 -310 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -779 0 -268 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -716 12 -310 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -716 12 -268 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -779 31 -310 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -779 31 -268 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -716 46 -310 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -716 46 -268 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -779 0 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -716 0 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -779 17 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -716 17 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -779 39 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -779 39 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -716 58 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -716 58 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -779 72 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -779 72 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -716 90 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -779 90 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -841 1 -268 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -841 1 -310 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -841 1 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=1..}] run data merge block -841 1 -172 {bossRatio:1000000f}
 
+#More limited species and levels pool
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -716 0 -268 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -716 0 -310 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -779 12 -310 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -779 12 -268 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -716 31 -268 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -716 31 -310 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -779 46 -268 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -779 46 -310 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -716 0 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -779 0 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -716 17 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -779 17 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -716 39 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -779 58 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -779 58 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -716 72 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -716 72 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -716 90 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -779 90 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -850 14 -310 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -850 14 -268 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -850 14 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -850 14 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -779 0 -310 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -779 0 -268 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -716 12 -310 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -716 12 -268 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -779 31 -310 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -779 31 -268 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -716 46 -310 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -716 46 -268 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -779 0 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -716 0 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -779 17 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -716 17 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -779 39 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -779 39 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -716 58 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -716 58 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -779 72 -172 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -779 72 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -716 90 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -779 90 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -841 1 -268 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -841 1 -310 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -841 1 -214 {bossRatio:1000000f}
+execute as @a[scores={DialogueTrigger=201,TalkTime=2..3,IP=0}] run data merge block -841 1 -172 {bossRatio:1000000f}
 
 
 
