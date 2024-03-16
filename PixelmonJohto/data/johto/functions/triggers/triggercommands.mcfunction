@@ -15,8 +15,13 @@
 
 #1 - 7, old starters
 
+#Mom stops buying you items
+execute as @a[scores={TriggerCommand=1}] run scoreboard players set @s MomState 0
+execute as @a[scores={TriggerCommand=1}] run tellraw @s ["",{"text":"<Mom> Don't waste your money on frivolous things, OK? I know you are sensible like me and that I can count on you!"}]
 
-
+#Mom starts buying you items again
+execute as @a[scores={TriggerCommand=2}] run scoreboard players set @s MomState 1
+execute as @a[scores={TriggerCommand=2}] run tellraw @s ["",{"text":"<Mom> Okay! I'll be on the lookout for some good things for you! I'll give you a call."}]
 
 
 #9 - Battle Tower begin Session

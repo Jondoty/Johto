@@ -4275,6 +4275,7 @@ execute as @s[scores={DialogueTrigger=198,TalkTime=1714}] run effect give @s min
 execute as @s[scores={DialogueTrigger=198,TalkTime=1714}] run tp @s 476 64 61 0 0
 tellraw @s[scores={DialogueTrigger=198,TalkTime=1714}] {"text":"<Park Worker> Please send out which Pokemon you wish to be judged!"}
 execute as @s[scores={DialogueTrigger=198,TalkTime=1714}] run scoreboard players set @s BugPoints 0
+execute as @s[scores={DialogueTrigger=198,TalkTime=1714}] run scoreboard players set @s Cooldown 0
 
 #Tps in random trainers and statues
 execute as @s[scores={DialogueTrigger=198,TalkTime=1715}] run tp @e[sort=random,limit=1,x=-855,y=64,z=-153,dx=5,dy=2,dz=5] 471 64 61
