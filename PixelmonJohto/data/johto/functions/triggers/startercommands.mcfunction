@@ -33,6 +33,14 @@ give @s pixelmon:blackbadgecase
 #Sets Spawnpoint
 spawnpoint @s -723 69 -485
 
+#Sets default language
+tag @s add English
+tag @s remove Japanese
+tag @s remove German
+tag @s remove Spanish
+tag @s remove French
+tag @s remove Italian
+
 
 #Removes event-based tags
 tag @s remove Red
