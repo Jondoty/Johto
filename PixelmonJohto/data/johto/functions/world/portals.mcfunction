@@ -1,10 +1,6 @@
 tellraw @a[tag=!InitialTags] {"text":"Initial scoreboard values required to run the map not found. TPing to spawn...","italic":true,"color":"gray"}
 tp @a[tag=!InitialTags] -780 64 -245
 
-scoreboard players set @a[x=-518,y=65,z=196,distance=..10,scores={ER=1..}] ER 0
-scoreboard players set @a[x=-517,y=64,z=193,distance=..5,scores={EscapeRope=1..}] EscapeRope 0
-scoreboard players set @a[x=-614,y=50,z=333,distance=..10,scores={ER=5}] ER 5
-
 #Lobby to New Bark Town/Oak Welcome area
 scoreboard players set @a[x=-958,y=66,z=-366,dy=2,dz=1,tag=!Dialogue1] DialogueTrigger 1
 playsound door ambient @a[x=-958,y=66,z=-366,dy=2,dz=1,tag=!Dialogue1] ~ ~ ~ 100 1 1
@@ -232,7 +228,7 @@ tp @a[x=-795,y=65,z=529,dx=9,dy=5] 88 64 -64
 #--------------------------------------------------
 #Azalea Town
 tellraw @a[x=355,y=64,z=-762,dx=4,dy=4,tag=!Dialogue16,scores={TalkTime=0}] {"text":"Bugsy is away right now! Kurt should be watching the town.","italic":true}
-execute as @a[x=355,y=64,z=-762,dx=4,dy=4,scores={Kurt=0..},tag=!Dialogue16] at @s run tp @s ~ ~ ~-5
+execute as @a[x=355,y=64,z=-762,dx=4,dy=4,tag=!Dialogue16] at @s run tp @s ~ ~ ~-5
 
 playsound door ambient @a[x=355,y=64,z=-762,dx=4,dy=4,tag=Dialogue16,scores={TalkTime=0}] ~ ~ ~ 100 1 1
 tag @a[x=355,y=64,z=-762,dx=4,dy=4,tag=Dialogue16,scores={TalkTime=0}] remove GymVictory

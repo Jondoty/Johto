@@ -45,40 +45,6 @@ advancement grant @a[tag=Dialogue187,tag=Dialogue188,tag=Dialogue189,tag=Dialogu
 function johto:world/swarmspawns
 
 
-##Returns the Azure Flute to player
-#execute as @a[scores={ArceusCD=1}] run playsound minecraft:entity.lightning.thunder ambient @s ~ ~ ~ 10 1 1
-#execute as @a[scores={ArceusCD=1}] run playsound minecraft:entity.lightning.impact ambient @s ~ ~ ~ 10 1 1
-#execute as @a[scores={ArceusCD=1}] run give @s pixelmon:azure_flute{display:{Lore:["A flute that puts out echoing","sounds that do not seem to be of","this world. No one knows who made","it. It seems to call to the","highest mountains."]}}
-#execute as @a[scores={ArceusCD=1}] run playsound arceus ambient @s ~ ~ ~ 1000 1 1
-#execute as @a[scores={ArceusCD=1}] run scoreboard players remove @s ArceusCD 1
-#
-#
-##Dialga Returning a Red Chain
-#execute as @a[scores={DialgaCD=1}] run playsound minecraft:entity.lightning.thunder ambient @s ~ ~ ~ 10 1 1
-#execute as @a[scores={DialgaCD=1}] run playsound minecraft:entity.lightning.impact ambient @s ~ ~ ~ 10 1 1
-#execute as @a[scores={DialgaCD=1}] run give @s pixelmon:red_chain{display:{Lore:["A chain used in summoning Dialga,","Palkia and Giratina at an alter."]}}
-#execute as @a[scores={DialgaCD=1}] run playsound dialga ambient @s ~ ~ ~ 1000 1 1
-#execute as @a[scores={DialgaCD=1}] run scoreboard players remove @s DialgaCD 1
-#
-#
-##Palkia Returning a Red Chain
-#execute as @a[scores={PalkiaCD=1}] run playsound minecraft:entity.lightning.thunder ambient @s ~ ~ ~ 10 1 1
-#execute as @a[scores={PalkiaCD=1}] run playsound minecraft:entity.lightning.impact ambient @s ~ ~ ~ 10 1 1
-#execute as @a[scores={PalkiaCD=1}] run give @s pixelmon:red_chain{display:{Lore:["A chain used in summoning Dialga,","Palkia and Giratina at an alter."]}}
-#execute as @a[scores={PalkiaCD=1}] run playsound palkia ambient @s ~ ~ ~ 1000 1 1
-#execute as @a[scores={PalkiaCD=1}] run scoreboard players remove @s PalkiaCD 1
-#
-#
-##Giratina Returning a Red Chain
-#execute as @a[scores={GiratinaCD=1}] run playsound minecraft:entity.lightning.thunder ambient @s ~ ~ ~ 10 1 1
-#execute as @a[scores={GiratinaCD=1}] run playsound minecraft:entity.lightning.impact ambient @s ~ ~ ~ 10 1 1
-#execute as @a[scores={GiratinaCD=1}] run give @s pixelmon:red_chain{display:{Lore:["A chain used in summoning Dialga,","Palkia and Giratina at an alter."]}}
-#execute as @a[scores={GiratinaCD=1}] run playsound giratina ambient @s ~ ~ ~ 1000 1 1
-#execute as @a[scores={GiratinaCD=1}] run scoreboard players remove @s GiratinaCD 1
-
-
-
-
 
 
 #Kills Plate Merchant in Goldenrod Underground, post-Arceus encounter

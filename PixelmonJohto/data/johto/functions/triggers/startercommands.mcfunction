@@ -6,9 +6,8 @@ gamerule doFireTick false
 gamerule commandBlockOutput false
 scoreboard objectives setdisplay sidebar
 scoreboard objectives setdisplay list
-gamemode adventure @s[gamemode=survival]
-gamemode adventure @s[gamemode=creative]
-gamemode adventure @s[gamemode=spectator]
+gamemode adventure @s
+recipe give @s *
 
 tag @s add Temp
 
@@ -91,6 +90,7 @@ tag @s remove Erika
 tag @s remove Janine
 tag @s remove Blaine
 tag @s remove Blue
+tag @s remove AllBadges
 
 
 
@@ -102,6 +102,8 @@ scoreboard players set @s TalkTime 0
 scoreboard players set @s KantoStarters 0
 scoreboard players set @s TallGrass 0
 scoreboard players set @s Air 0
+scoreboard players set @s StarterPick 0
+scoreboard players set @s IP 0
 
 
 #World Events
@@ -127,7 +129,9 @@ scoreboard players set @s Sleeping 0
 scoreboard players set @s SSState 0
 scoreboard players set @s TownDisplay 0
 scoreboard players set @s click 0
-
+scoreboard players set @s BillGP 0
+scoreboard players set @s SafariState 0
+scoreboard players set @s StevenCD 0
 
 
 #Pokemon
@@ -135,43 +139,46 @@ scoreboard players set @s click 0
 #PokemonCD = If Pokemon is killed value counts down until hits 0 and resets encounter status
 
 scoreboard players set @s Arceus 0
-scoreboard players set @s ArceusCD 0
 scoreboard players set @s Articuno 0
-scoreboard players set @s ArticunoCD 0
 scoreboard players set @s Celebi 0
-scoreboard players set @s DialgaCD 0
 scoreboard players set @s Dialga 0
 scoreboard players set @s Entei 0
-scoreboard players set @s EnteiCD 0
 scoreboard players set @s EonEncounter 0
 scoreboard players set @s Farfetchd 0
-scoreboard players set @s GiratinaCD 0
 scoreboard players set @s Giratina 0
-scoreboard players set @s GroudonCD 0
 scoreboard players set @s Gyarados 0
-scoreboard players set @s HoohCD 0
 scoreboard players set @s KarpCD 0
-scoreboard players set @s KyogreCD 0
 scoreboard players set @s Latias 0
-scoreboard players set @s LatiasCD 0
 scoreboard players set @s Latios 0
-scoreboard players set @s LatiosCD 0
-scoreboard players set @s LugiaCD 0
+scoreboard players set @s Lugia 0
 scoreboard players set @s Mew 0
-scoreboard players set @s MewCD 0
 scoreboard players set @s Mewtwo 0
-scoreboard players set @s MewtwoCD 0
 scoreboard players set @s Moltres 0
-scoreboard players set @s MoltresCD 0
-scoreboard players set @s PalkiaCD 0
 scoreboard players set @s Palkia 0
 scoreboard players set @s Raikou 0
-scoreboard players set @s RaikouCD 0
-scoreboard players set @s RayquazaCD 0
 scoreboard players set @s Suicune 0
-scoreboard players set @s SuicuneCD 0
 scoreboard players set @s Zapdos 0
-scoreboard players set @s ZapdosCD 0
+
+tag @s remove ArceusCaught
+tag @s remove ArticunoCaught
+tag @s remove CelebiCaught
+tag @s remove DialgaCaught
+tag @s remove EnteiCaught
+tag @s remove GiratinaCaught
+tag @s remove GroudonCaught
+tag @s remove HoohCaught
+tag @s remove KyogreCaught
+tag @s remove LatiasCaught
+tag @s remove LatiosCaught
+tag @s remove LugiaCaught
+tag @s remove MewCaught
+tag @s remove MewtwoCaught
+tag @s remove MoltresCaught
+tag @s remove PalkiaCaught
+tag @s remove RaikouCaught
+tag @s remove RayquazaCaught
+tag @s remove SuicuneCaught
+tag @s remove ZapdosCaught
 
 
 #Fly Map
@@ -203,67 +210,6 @@ scoreboard players set @s FlyViridian 0
 
 
 
-
-
-#Should be legacy but kept in case needed
-scoreboard players set @s BallBreak 0
-scoreboard players set @s Bicycle 0
-scoreboard players set @s BillGP 0
-scoreboard players set @s BugContestCD 0
-scoreboard players set @s BugContestJudge 0
-scoreboard players set @s Bulbasaur 0
-scoreboard players set @s CelebiTimeTravel 0
-scoreboard players set @s Charmander 0
-scoreboard players set @s Clair 0
-scoreboard players set @s Copycat 0
-scoreboard players set @s DarkCave 0
-scoreboard players set @s E4 0
-scoreboard players set @s EggHatch 0
-scoreboard players set @s EggState 0
-scoreboard players set @s EggSteps 0
-scoreboard players set @s EggStepsSprint 0
-scoreboard players set @s ElmTalk 0
-scoreboard players set @s ER 0
-scoreboard players set @s ForceAdventure 1
-scoreboard players set @s GRUnderground 0
-scoreboard players set @s GuideGent 0
-scoreboard players set @s IP 0
-scoreboard players set @s Jasmine 0
-scoreboard players set @s Kurt 0
-scoreboard players set @s LegendaryCD 0
-scoreboard players set @s Marowak 0
-scoreboard players set @s MegaState 0
-scoreboard players set @s Mom 0
-scoreboard players set @s MomTalk 0
-scoreboard players set @s MrPokemon 0
-scoreboard players set @s MusicChangeCD 0
-scoreboard players set @s OrbGet 0
-scoreboard players set @s OrbLine 0
-scoreboard players set @s RadioCard 0
-scoreboard players set @s Red 0
-scoreboard players set @s Repel 0
-scoreboard players set @s RepelSteps 0
-scoreboard players set @s RepelStepsSprint 0
-scoreboard players set @s RocketHQ 0
-scoreboard players set @s SafariDel 0
-scoreboard players set @s SafariGen 0
-scoreboard players set @s SafariState 0
-scoreboard players set @s SafariTalk 0
-scoreboard players set @s Silver 0
-scoreboard players set @s Sinjoh 0
-scoreboard players set @s Snorlax 0
-scoreboard players set @s SpawnStatue 0
-scoreboard players set @s SpawnUnown 0
-scoreboard players set @s Squirtle 0
-scoreboard players set @s SSTime 0
-scoreboard players set @s StarterPick 0
-scoreboard players set @s Steven 0
-scoreboard players set @s StevenCD 0
-scoreboard players set @s Sw 0
-scoreboard players set @s TeamRocket 0
-scoreboard players set @s Trainer 0
-scoreboard players set @s VillagerClick 0
-
 #Mom Items
 tag @s remove MomItem1
 tag @s remove MomItem2
@@ -274,6 +220,29 @@ tag @s remove MomItem6
 tag @s remove MomItem7
 tag @s remove MomItem8
 tag @s remove MomItem9
+
+
+#Chatting NPC loots
+tag @s remove Item1Give
+tag @s remove Item2Give
+tag @s remove Item3Give
+tag @s remove Item4Give
+tag @s remove Item5Give
+tag @s remove Item6Give
+tag @s remove Item7Give
+tag @s remove Item8Give
+tag @s remove Item9Give
+tag @s remove Item10Give
+tag @s remove Item11Give
+tag @s remove Item12Give
+tag @s remove Item13Give
+tag @s remove Item14Give
+tag @s remove Item15Give
+tag @s remove Item16Give
+tag @s remove Item17Give
+tag @s remove Item18Give
+tag @s remove Item19Give
+tag @s remove Item20Give
 
 
 tag @s remove SilverOlivine
@@ -289,10 +258,16 @@ tag @s remove PoliceTalk
 tag @s remove BadgeCaseTip
 tag @s remove ItemFinderTip
 tag @s remove RadioTip
+tag @s remove PokeFlute
 
-recipe give @s *
 
 
+
+tag @s remove TrapGrunt1
+tag @s remove TrapGrunt2
+tag @s remove TrapGrunt3
+tag @s remove TrapGrunt4
+tag @s remove TrapGrunt5
 
 
 
